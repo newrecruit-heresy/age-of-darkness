@@ -1,1 +1,1 @@
-{"catalogue":{"library":false,"id":"vi","name":"Space Wolves","gameSystemId":"sys-41d4-b033-8ca9-9bb0","gameSystemRevision":1,"revision":1,"battleScribeVersion":"2.03","type":"catalogue"}}
+{"catalogue":{"library":false,"id":"vi","name":"Space Wolves","gameSystemId":"sys-41d4-b033-8ca9-9bb0","gameSystemRevision":1,"revision":1,"battleScribeVersion":"2.03","type":"catalogue","catalogueLinks":[{"type":"catalogue","name":"Legiones Astartes","id":"1ca6-41b5-b767-52c0","targetId":"la","importRootEntries":true}]}}

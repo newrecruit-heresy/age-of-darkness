@@ -1,1 +1,1 @@
-{"catalogue":{"library":false,"id":"xvi","name":"Sons of Horus","gameSystemId":"sys-41d4-b033-8ca9-9bb0","gameSystemRevision":1,"revision":1,"battleScribeVersion":"2.03","type":"catalogue"}}
+{"catalogue":{"library":false,"id":"xvi","name":"Sons of Horus","gameSystemId":"sys-41d4-b033-8ca9-9bb0","gameSystemRevision":1,"revision":1,"battleScribeVersion":"2.03","type":"catalogue","catalogueLinks":[{"type":"catalogue","name":"Legiones Astartes","id":"8909-58bb-535c-717a","targetId":"la"}]}}
