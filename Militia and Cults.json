@@ -1,1 +1,12 @@
-{"catalogue":{"library":false,"id":"d064-883c-ecb8-c948","name":"Militia and Cults","gameSystemId":"sys-41d4-b033-8ca9-9bb0","gameSystemRevision":1,"revision":1,"battleScribeVersion":"2.03","type":"catalogue"}}
+{
+    "catalogue": {
+        "library": false,
+        "id": "d064-883c-ecb8-c948",
+        "name": "Militia and Cults",
+        "gameSystemId": "sys-41d4-b033-8ca9-9bb0",
+        "gameSystemRevision": 1,
+        "revision": 1,
+        "battleScribeVersion": "2.03",
+        "type": "catalogue"
+    }
+}

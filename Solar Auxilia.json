@@ -1,1 +1,2698 @@
-{"catalogue":{"library":false,"id":"SolarAuxilia","name":"Solar Auxilia","gameSystemId":"sys-41d4-b033-8ca9-9bb0","gameSystemRevision":1,"revision":1,"battleScribeVersion":"2.03","type":"catalogue","sharedSelectionEntries":[{"type":"unit","import":true,"name":"Legatine Command Section ","hidden":false,"id":"LegatineCommandSection ","categoryLinks":[{"targetId":"high-command","id":"a762-751c-3246-cca8","primary":true,"name":"High Command"}],"costs":[{"name":"Points","typeId":"points","value":0}],"page":"21","publicationId":"liber-imperialis","selectionEntries":[{"type":"model","import":true,"name":"Legate Marshal","hidden":false,"id":"LegateMarshal","costs":[{"name":"Points","typeId":"points","value":69}],"constraints":[{"type":"min","value":1,"field":"selections","scope":"parent","shared":true,"id":"72f6-4fbf-5a86-ad89-min"},{"type":"max","value":1,"field":"selections","scope":"parent","shared":true,"id":"72f6-4fbf-5a86-ad89-max"}]},{"type":"model","import":true,"name":"Lifeward","hidden":false,"id":"Lifeward","costs":[{"name":"Points","typeId":"points","value":14}],"constraints":[{"type":"min","value":4,"field":"selections","scope":"parent","shared":true,"id":"7cea-c628-1c5c-9d99","includeChildSelections":false},{"type":"max","value":9,"field":"selections","scope":"parent","shared":true,"id":"3530-c2be-235a-9939"}]}]},{"type":"unit","import":true,"name":"Tactical Command Section","hidden":false,"id":"TacticalCommandSection","categoryLinks":[{"targetId":"command-category","id":"6a44-922d-5581-2847","primary":true,"name":"Command"}],"page":"22","publicationId":"liber-imperialis","costs":[{"name":"Points","typeId":"points","value":0}],"selectionEntries":[{"type":"model","import":true,"name":"Auxilia Captain","hidden":false,"id":"AuxiliaCaptain","constraints":[{"type":"min","value":1,"field":"selections","scope":"parent","shared":true,"id":"5d46-1f23-1fee-0f6c-min-min","includeChildSelections":false},{"type":"max","value":1,"field":"selections","scope":"parent","shared":true,"id":"5d46-1f23-1fee-0f6c-min-max","includeChildSelections":false}],"costs":[{"name":"Points","typeId":"points","value":52}]}],"entryLinks":[{"import":true,"name":"Companion","hidden":false,"id":"4d87-b179-38a4-1c78","type":"selectionEntry","targetId":"Companion","constraints":[{"type":"min","value":4,"field":"selections","scope":"parent","shared":true,"id":"0276-492d-4872-2867","includeChildSelections":false},{"type":"max","value":9,"field":"selections","scope":"parent","shared":true,"id":"7da3-4367-2848-14c7","includeChildSelections":false}]},{"import":true,"name":"Prime","hidden":false,"id":"ebf6-a856-c4e6-ce1a","type":"selectionEntry","targetId":"prime-command"}]},{"type":"unit","import":true,"name":"Line Command Section","hidden":false,"id":"LineCommandSection","publicationId":"liber-imperialis","page":"23","costs":[{"name":"Points","typeId":"points","value":0}],"selectionEntries":[{"type":"model","import":true,"name":"Troop Master","hidden":false,"id":"TroopMaster","costs":[{"name":"Points","typeId":"points","value":37}],"constraints":[{"type":"min","value":1,"field":"selections","scope":"parent","shared":true,"id":"bb7c-2e26-5a6f-ccb1-min"},{"type":"max","value":1,"field":"selections","scope":"parent","shared":true,"id":"bb7c-2e26-5a6f-ccb1-max"}]}],"entryLinks":[{"import":true,"name":"Veteran","hidden":false,"id":"3061-8fb4-bba9-aac9","type":"selectionEntry","targetId":"VeteranAuxilia","constraints":[{"type":"min","value":4,"field":"selections","scope":"parent","shared":true,"id":"0ae6-f5fe-dab1-2e6b","includeChildSelections":false},{"type":"max","value":9,"field":"selections","scope":"parent","shared":true,"id":"6194-c6a9-4e04-bd01","includeChildSelections":false}]},{"import":true,"name":"Prime","hidden":false,"id":"7829-b3f0-5d48-264f","type":"selectionEntry","targetId":"prime-command"}],"categoryLinks":[{"targetId":"command-category","id":"4337-3a20-646a-5e02","primary":true,"name":"Command"}]},{"type":"unit","import":true,"name":"Veletaris Command Section","hidden":false,"id":"VeletarisCommandSection","publicationId":"liber-imperialis","page":"24","costs":[{"name":"Points","typeId":"points","value":0}],"entryLinks":[{"import":true,"name":"Veletarii","hidden":false,"id":"ec32-9884-abd2-3905","type":"selectionEntry","targetId":"VeletariiStorm","constraints":[{"type":"min","value":4,"field":"selections","scope":"parent","shared":true,"id":"3f45-e4a8-7312-9cde","includeChildSelections":false},{"type":"max","value":9,"field":"selections","scope":"parent","shared":true,"id":"3703-cf1e-f83d-21a3","includeChildSelections":false}]},{"import":true,"name":"Prime","hidden":false,"id":"38e1-b048-9c57-4967","type":"selectionEntry","targetId":"prime-command"}],"selectionEntries":[{"type":"model","import":true,"name":"First Prime","hidden":false,"id":"FirstPrime","costs":[{"name":"Points","typeId":"points","value":43}],"constraints":[{"type":"min","value":1,"field":"selections","scope":"parent","shared":true,"id":"76a3-7587-96b6-4150-min","includeChildSelections":false},{"type":"max","value":1,"field":"selections","scope":"parent","shared":true,"id":"76a3-7587-96b6-4150-max","includeChildSelections":false}]}],"categoryLinks":[{"targetId":"command-category","id":"e66c-e4f0-8a8c-4fdf","primary":true,"name":"Command"}]},{"type":"unit","import":true,"name":"Hermes Command Section","hidden":false,"id":"HermesCommandSection","categoryLinks":[{"targetId":"command-category","id":"0431-9be0-d051-8675","primary":true,"name":"Command"}],"page":"25","publicationId":"liber-imperialis","costs":[{"name":"Points","typeId":"points","value":0}],"selectionEntries":[{"type":"unit","import":true,"name":"Hermes Lead","hidden":false,"id":"HermesLead","costs":[{"name":"Points","typeId":"points","value":57}],"constraints":[{"type":"min","value":1,"field":"selections","scope":"parent","shared":true,"id":"b657-c924-b978-e873-min"},{"type":"max","value":1,"field":"selections","scope":"parent","shared":true,"id":"b657-c924-b978-e873-max"}]},{"type":"model","import":true,"name":"Hermes Pathfinder","hidden":false,"id":"HermesPathfinder","costs":[{"name":"Points","typeId":"points","value":18}],"constraints":[{"type":"min","value":1,"field":"selections","scope":"parent","shared":true,"id":"bd93-0bda-4cac-9a92","includeChildSelections":false},{"type":"max","value":4,"field":"selections","scope":"parent","shared":true,"id":"9c36-c525-6059-8d94","includeChildSelections":false}]}],"entryLinks":[{"import":true,"name":"Prime","hidden":false,"id":"4f9f-d59b-a249-8cad","type":"selectionEntry","targetId":"prime-command"}]},{"type":"unit","import":true,"name":"Artillery Command Section","hidden":false,"id":"ArtilleryCommandSection","page":"26","publicationId":"liber-imperialis","selectionEntries":[{"type":"model","import":true,"name":"Ordnance Master","hidden":false,"id":"OrdnanceMaster","costs":[{"name":"Points","typeId":"points","value":37}],"constraints":[{"type":"min","value":1,"field":"selections","scope":"parent","shared":true,"id":"b64c-ff80-888a-fadc-min","includeChildSelections":false},{"type":"max","value":1,"field":"selections","scope":"parent","shared":true,"id":"b64c-ff80-888a-fadc-max","includeChildSelections":false}]}],"entryLinks":[{"import":true,"name":"Veteran","hidden":false,"id":"61b5-384f-f3ea-b7cd","type":"selectionEntry","targetId":"VeteranAuxilia","constraints":[{"type":"min","value":4,"field":"selections","scope":"parent","shared":true,"id":"c45f-ad04-2e5f-a738","includeChildSelections":false},{"type":"max","value":9,"field":"selections","scope":"parent","shared":true,"id":"eed7-c5a6-2b22-47c0","includeChildSelections":false}]},{"import":true,"name":"Prime","hidden":false,"id":"d538-ec8b-3060-d934","type":"selectionEntry","targetId":"prime-command"},{"import":true,"name":"Artillery Tercio Entry","hidden":false,"id":"3dac-5f8f-b05e-c156","type":"selectionEntry","targetId":"artillery-tercio-entry"}],"categoryLinks":[{"targetId":"command-category","id":"8b36-4a3c-d658-ffe3","primary":true,"name":"Command"}]},{"type":"unit","import":true,"name":"Armoured Command Section","hidden":false,"id":"ArmouredCommandSection","publicationId":"liber-imperialis","costs":[{"name":"Points","typeId":"points","value":150}],"page":"27","categoryLinks":[{"targetId":"command-category","id":"7082-2a50-9da9-aa98","primary":true,"name":"Command"}],"entryLinks":[{"import":true,"name":"Prime","hidden":false,"id":"3e14-720f-226b-c6eb","type":"selectionEntry","targetId":"prime-command"},{"import":true,"name":"Armour Tercio Entry","hidden":false,"id":"9b76-8af4-ac03-5d9f","type":"selectionEntry","targetId":"armour-tercio-entry"}]},{"type":"unit","import":true,"name":"Veletaris Storm Section","hidden":false,"id":"VeletarisStormSection","categoryLinks":[{"targetId":"elites-category","id":"1669-0b24-5a32-3fa6","primary":true,"name":"Elite"}],"page":"28","publicationId":"liber-imperialis","selectionEntries":[{"type":"model","import":true,"name":"Veletarii Prime","hidden":false,"id":"VeletariiPrimeStorm","costs":[{"name":"Points","typeId":"points","value":18}],"constraints":[{"type":"min","value":1,"field":"selections","scope":"parent","shared":true,"id":"a7df-43c1-d0fa-e7e7-min","includeChildSelections":false},{"type":"max","value":1,"field":"selections","scope":"parent","shared":true,"id":"a7df-43c1-d0fa-e7e7-max","includeChildSelections":false}]}],"entryLinks":[{"import":true,"name":"Veletarii","hidden":false,"id":"c68b-da87-6535-c06a","type":"selectionEntry","targetId":"VeletariiStorm","constraints":[{"type":"min","value":9,"field":"selections","scope":"parent","shared":true,"id":"a6c1-b505-9398-cd7f","includeChildSelections":false},{"type":"max","value":19,"field":"selections","scope":"parent","shared":true,"id":"6087-a684-0664-4910","includeChildSelections":false}]}]},{"type":"unit","import":true,"name":"Veletaris Vanguard Section","hidden":false,"id":"VeletarisVanguardSection","categoryLinks":[{"targetId":"elites-category","id":"3ecf-5317-bce8-d406","primary":true,"name":"Elite"}],"page":"29","publicationId":"liber-imperialis","selectionEntries":[{"type":"model","import":true,"name":"Veletarii","hidden":false,"id":"VeletariiVanguard","costs":[{"name":"Points","typeId":"points","value":9}],"constraints":[{"type":"min","value":9,"field":"selections","scope":"parent","shared":true,"id":"3666-376d-610e-41ea","includeChildSelections":false},{"type":"max","value":19,"field":"selections","scope":"parent","shared":true,"id":"2ffd-1a37-67ac-1071","includeChildSelections":false}]},{"type":"model","import":true,"name":"Veletarii Prime","hidden":false,"id":"VeletariiPrimeVanguard","costs":[{"name":"Points","typeId":"points","value":19}],"constraints":[{"type":"min","value":1,"field":"selections","scope":"parent","shared":true,"id":"ac02-36fd-7757-4537-min","includeChildSelections":false},{"type":"max","value":1,"field":"selections","scope":"parent","shared":true,"id":"ac02-36fd-7757-4537-max","includeChildSelections":false}]}]},{"type":"unit","import":true,"name":"Charonite Ogryn Section","hidden":false,"id":"CharoniteOgrynSection","categoryLinks":[{"targetId":"heavy-assault-category","id":"837a-a801-0cde-9ad0","primary":true,"name":"Heavy Assault"}],"publicationId":"liber-imperialis","page":"30","costs":[{"name":"Points","typeId":"points","value":0}],"selectionEntries":[{"type":"model","import":true,"name":"Charonite Ogryn","hidden":false,"id":"CharoniteOgryn","costs":[{"name":"Points","typeId":"points","value":40}],"constraints":[{"type":"min","value":3,"field":"selections","scope":"parent","shared":true,"id":"f542-3359-85a5-c157"},{"type":"max","value":9,"field":"selections","scope":"parent","shared":true,"id":"01aa-f665-4aea-2835"}]}]},{"type":"unit","import":true,"name":"Lasrifle Section","hidden":false,"id":"LasrifleSection","categoryLinks":[{"targetId":"troops-category","id":"6fc1-c56f-6cd8-4ede","primary":true,"name":"Troops"}],"costs":[{"name":"Points","typeId":"points","value":50}],"publicationId":"liber-imperialis","page":"31","selectionEntries":[{"type":"model","import":true,"name":"Las Auxillary","hidden":false,"id":"LasAuxillary","costs":[{"name":"Points","typeId":"points","value":4}],"constraints":[{"type":"min","value":9,"field":"selections","scope":"parent","shared":true,"id":"529e-a70e-df65-8517","includeChildSelections":false},{"type":"max","value":19,"field":"selections","scope":"parent","shared":true,"id":"79d8-d710-a03e-15a3","includeChildSelections":false}]},{"type":"model","import":true,"name":"Las Sergeant","hidden":false,"id":"LasSergeant","costs":[{"name":"Points","typeId":"points","value":14}],"constraints":[{"type":"min","value":1,"field":"selections","scope":"parent","shared":true,"id":"5168-91a3-4f14-9938-min","includeChildSelections":false},{"type":"max","value":1,"field":"selections","scope":"parent","shared":true,"id":"5168-91a3-4f14-9938-max","includeChildSelections":false}]}]},{"type":"unit","import":true,"name":"Basilisk Artillery Tank","hidden":false,"id":"BasiliskArtilleryTank.","categoryLinks":[{"targetId":"support-category","id":"3f5a-d8e9-6eb6-b26d","primary":true,"name":"Support"},{"targetId":"ArtilleryCategory","id":"0b23-5a1c-0204-f0c8","primary":false,"name":"Artillery"}],"costs":[{"name":"Points","typeId":"points","value":120}],"publicationId":"liber-imperialis","page":"32"},{"type":"unit","import":true,"name":"Medusa Artillery Tank","hidden":false,"id":"MedusaArtillery ank","categoryLinks":[{"targetId":"support-category","id":"ce22-971f-519b-eb02","primary":true,"name":"Support"},{"targetId":"ArtilleryCategory","id":"97cc-04a6-6307-4733","primary":false,"name":"Artillery"}],"costs":[{"name":"Points","typeId":"points","value":140}],"publicationId":"liber-imperialis","page":"33"},{"type":"unit","import":true,"name":"Rapier Section","hidden":false,"id":"RapierSection","categoryLinks":[{"targetId":"support-category","id":"d547-a8c8-e808-e1d3","primary":true,"name":"Support"}],"publicationId":"liber-imperialis","page":"34","selectionEntries":[{"type":"model","import":true,"name":"Rapier Crew","hidden":false,"id":"RapierCrew","costs":[{"name":"Points","typeId":"points","value":30}],"constraints":[{"type":"min","value":1,"field":"selections","scope":"parent","shared":true,"id":"f648-8640-4758-e9d7"},{"type":"max","value":4,"field":"selections","scope":"parent","shared":true,"id":"7c98-8214-1acc-2326","includeChildSelections":false}]}]},{"type":"unit","import":true,"name":"Hermes Veletaris Squadron","hidden":false,"id":"HermesVeletarisSquadron","categoryLinks":[{"targetId":"support-category","id":"355c-073d-8d46-15d2","primary":true,"name":"Support"}],"page":"35","publicationId":"liber-imperialis","costs":[{"name":"Points","typeId":"points","value":0}],"selectionEntries":[{"type":"model","import":true,"name":"Hermes Veletaris","hidden":false,"id":"HermesVeletaris","constraints":[{"type":"min","value":2,"field":"selections","scope":"parent","shared":true,"id":"6b11-8472-a8dd-ee77","includeChildSelections":false},{"type":"max","value":6,"field":"selections","scope":"parent","shared":true,"id":"bc32-7818-1e53-002e","includeChildSelections":false}],"costs":[{"name":"Points","typeId":"points","value":40}]}]},{"type":"unit","import":true,"name":"Aethon Heavy Sentinel Squadron","hidden":false,"id":"AethonHeavySentinelSquadron","categoryLinks":[{"targetId":"war-machines-category","id":"1372-ad20-fdb0-e700","primary":true,"name":"War Machine"}],"publicationId":"liber-imperialis","page":"36","costs":[{"name":"Points","typeId":"points","value":0}],"selectionEntries":[{"type":"model","import":true,"name":"Aethon Heavy Sentinel ","hidden":false,"id":"AethonHeavySentinel ","costs":[{"name":"Points","typeId":"points","value":60}],"constraints":[{"type":"min","value":1,"field":"selections","scope":"parent","shared":true,"id":"7eae-f0c7-bc87-bcc2"},{"type":"max","value":3,"field":"selections","scope":"parent","shared":true,"id":"b19c-3395-8c2e-440a"}]}]},{"type":"unit","import":true,"name":"Arvus Lighter","hidden":false,"id":"ArvusLighter","categoryLinks":[{"targetId":"transport-category","id":"3f4c-b58b-5d3e-97c7","primary":true,"name":"Transport"}],"publicationId":"liber-imperialis","page":"38","costs":[{"name":"Points","typeId":"points","value":75}]},{"type":"unit","import":true,"name":"Dracosan Armoured Transport .","hidden":false,"id":"DracosanArmouredTransport .","categoryLinks":[{"targetId":"heavy-transport-category","id":"7f15-8dc5-b757-a9f0","primary":true,"name":"Heavy Transport"}],"page":"39","publicationId":"liber-imperialis","costs":[{"name":"Points","typeId":"points","value":140}]},{"type":"unit","import":true,"name":"Hermes Light Sentinel Squadron.","hidden":false,"id":"HermesLightSentinelSquadron","categoryLinks":[{"targetId":"recon-category","id":"7b16-eb71-bbc9-9456","primary":true,"name":"Recon"}],"publicationId":"liber-imperialis","page":"40","costs":[{"name":"Points","typeId":"points","value":0}],"selectionEntries":[{"type":"model","import":true,"name":"Hermes Light Sentinel ","hidden":false,"id":"HermesLightSentinel ","costs":[{"name":"Points","typeId":"points","value":16}],"constraints":[{"type":"min","value":2,"field":"selections","scope":"parent","shared":true,"id":"df5c-f4f4-35d7-ac4b","includeChildSelections":false},{"type":"max","value":6,"field":"selections","scope":"parent","shared":true,"id":"8ce3-afe8-a1e0-2154","includeChildSelections":false}]}]},{"type":"unit","import":true,"name":"Primaris-Lightning Strike Fighter","hidden":false,"id":"Primaris-LightningStrikeFighter","categoryLinks":[{"targetId":"fast-attack-category","id":"eb65-4f7f-6e6c-250b","primary":true,"name":"Fast Attack"}],"costs":[{"name":"Points","typeId":"points","value":160}],"publicationId":"liber-imperialis","page":"41"},{"type":"unit","import":true,"name":"Thunderbolt Heavy Fighter.","hidden":false,"id":"ThunderboltHeavyFighter","categoryLinks":[{"targetId":"fast-attack-category","id":"32ff-e6cd-cc51-7d27","primary":true,"name":"Fast Attack"}],"publicationId":"liber-imperialis","page":"42","costs":[{"name":"Points","typeId":"points","value":120}]},{"type":"unit","import":true,"name":"Leman Russ Strike Tank.","hidden":false,"id":"LemanRussStrikeTank","categoryLinks":[{"targetId":"armour-category","id":"6da2-814d-c048-195c","primary":true,"name":"Armour"},{"targetId":"SolarAuxArmourCategory","id":"147d-7235-f005-6ec4","primary":false,"name":"SolarAuxArmour"}],"costs":[{"name":"Points","typeId":"points","value":140}],"publicationId":"liber-imperialis","page":"45"},{"type":"unit","import":true,"name":"Leman Russ Assault Tank","hidden":false,"id":"LemanRussAssaultTank","categoryLinks":[{"targetId":"armour-category","id":"920c-a0bd-b494-591c","primary":true,"name":"Armour"},{"targetId":"SolarAuxArmourCategory","id":"baaa-79a4-117e-46de","primary":false,"name":"SolarAuxArmour"}],"page":"44","publicationId":"liber-imperialis","costs":[{"name":"Points","typeId":"points","value":140}]},{"type":"unit","import":true,"name":"Malcador Heavy Tank","hidden":false,"id":"MalcadorHeavyTank","categoryLinks":[{"targetId":"armour-category","id":"774a-375a-61d6-b430","primary":true,"name":"Armour"},{"targetId":"SolarAuxArmourCategory","id":"b65e-7e06-7df5-904a","primary":false,"name":"SolarAuxArmour"}],"costs":[{"name":"Points","typeId":"points","value":215}],"page":"45","publicationId":"liber-imperialis"},{"type":"unit","import":true,"name":"Malcador Infernus Special Weapons Tank..","hidden":false,"id":"MalcadorInfernusSpecialWeaponsTank","categoryLinks":[{"targetId":"armour-category","id":"b1e8-b817-9c6e-0c8a","primary":true,"name":"Armour"}],"publicationId":"liber-imperialis","page":"46","costs":[{"name":"Points","typeId":"points","value":240}]},{"type":"unit","import":true,"name":"Valdor Tank Destroyer","hidden":false,"id":"ValdorTankDestroyer","categoryLinks":[{"targetId":"armour-category","id":"e259-725e-7470-5b7f","primary":true,"name":"Armour"}],"publicationId":"liber-imperialis","costs":[{"name":"Points","typeId":"points","value":225}],"page":"47"},{"type":"unit","import":true,"name":"Stormhammer Super-heavy Assault Tank.","hidden":false,"id":"StormhammerSuper-heavyAssaultTank","categoryLinks":[{"targetId":"lord-of-war-category","id":"cce0-c948-e20c-2efd","primary":true,"name":"Lord of War"}],"publicationId":"liber-imperialis","page":"48","costs":[{"name":"Points","typeId":"points","value":500}]},{"type":"model","import":true,"name":"Veletarii","hidden":false,"id":"VeletariiStorm","costs":[{"name":"Points","typeId":"points","value":8}]},{"type":"model","import":true,"name":"Companion","hidden":false,"id":"Companion","costs":[{"name":"Points","typeId":"points","value":12}]},{"type":"model","import":true,"name":"Veteran","hidden":false,"id":"VeteranAuxilia","costs":[{"name":"Points","typeId":"points","value":7}]},{"type":"upgrade","import":true,"name":"Veletaris Entry","hidden":false,"id":"VeletarisEntry","categoryLinks":[{"name":"Auxillary","hidden":false,"id":"739b-7a36-80e0-75eb","targetId":"auxillary-category","primary":true}],"constraints":[{"type":"min","value":1,"field":"selections","scope":"force","shared":true,"id":"a026-05ea-4f72-2b4e","automatic":false,"includeChildSelections":true},{"type":"max","value":1,"field":"selections","scope":"force","shared":true,"id":"c1a2-ca8f-a519-d84e","automatic":false,"includeChildSelections":true}],"modifiers":[{"type":"set","value":0,"field":"a026-05ea-4f72-2b4e","conditionGroups":[{"type":"or","conditions":[{"type":"instanceOf","value":1,"field":"selections","scope":"ancestor","childId":"primary-detachment","shared":true,"includeChildSelections":true,"includeChildForces":true},{"type":"instanceOf","value":1,"field":"selections","scope":"ancestor","childId":"apex","shared":true,"includeChildSelections":true,"includeChildForces":true}]}]},{"type":"set","value":0,"field":"c1a2-ca8f-a519-d84e","conditionGroups":[{"type":"or","conditions":[{"type":"instanceOf","value":1,"field":"selections","scope":"ancestor","childId":"primary-detachment","shared":true,"includeChildSelections":true,"includeChildForces":true},{"type":"instanceOf","value":1,"field":"selections","scope":"ancestor","childId":"apex","shared":true,"includeChildSelections":true,"includeChildForces":true}]}]}]},{"type":"upgrade","import":true,"name":"Infantry Entry","hidden":false,"id":"infantry-entry","categoryLinks":[{"name":"Auxillary","hidden":false,"id":"17e4-6ac5-b97c-eb40","targetId":"auxillary-category","primary":true}],"constraints":[{"type":"min","value":1,"field":"selections","scope":"force","shared":true,"id":"2d41-c63b-51f5-feb7","automatic":false,"includeChildSelections":true},{"type":"max","value":1,"field":"selections","scope":"force","shared":true,"id":"eee8-3f55-d145-19ff","automatic":false,"includeChildSelections":true}],"modifiers":[{"type":"set","value":0,"field":"2d41-c63b-51f5-feb7","conditionGroups":[{"type":"or","conditions":[{"type":"instanceOf","value":1,"field":"selections","scope":"ancestor","childId":"primary-detachment","shared":true,"includeChildSelections":true,"includeChildForces":true},{"type":"instanceOf","value":1,"field":"selections","scope":"ancestor","childId":"apex","shared":true,"includeChildSelections":true,"includeChildForces":true}]}]},{"type":"set","value":0,"field":"eee8-3f55-d145-19ff","conditionGroups":[{"type":"or","conditions":[{"type":"instanceOf","value":1,"field":"selections","scope":"ancestor","childId":"primary-detachment","shared":true,"includeChildSelections":true,"includeChildForces":true},{"type":"instanceOf","value":1,"field":"selections","scope":"ancestor","childId":"apex","shared":true,"includeChildSelections":true,"includeChildForces":true}]}]}]},{"type":"upgrade","import":true,"name":"Artillery Tercio Entry","hidden":false,"id":"artillery-tercio-entry","constraints":[{"type":"min","value":0,"field":"selections","scope":"roster","shared":true,"id":"660c-3a3b-3d68-bddd","automatic":false,"includeChildSelections":true,"includeChildForces":true},{"type":"max","value":1,"field":"selections","scope":"force","shared":true,"id":"10e1-72a8-7793-f8b5","automatic":false,"includeChildSelections":true},{"type":"min","value":0,"field":"selections","scope":"parent","shared":true,"id":"4ab1-538d-3e67-8e7a-min"},{"type":"max","value":0,"field":"selections","scope":"parent","shared":true,"id":"4ab1-538d-3e67-8e7a-max"}],"modifiers":[{"type":"increment","value":1,"field":"660c-3a3b-3d68-bddd","repeats":[{"value":1,"repeats":1,"field":"forces","scope":"roster","childId":"ArtilleryTercio","shared":false,"roundUp":false,"includeChildSelections":false,"includeChildForces":false}]},{"type":"set","value":1,"field":"4ab1-538d-3e67-8e7a-min","conditions":[{"type":"instanceOf","value":1,"field":"selections","scope":"ancestor","childId":"7227-b6c9-5b61-37fc","shared":true}]},{"type":"set","value":1,"field":"4ab1-538d-3e67-8e7a-max","conditions":[{"type":"instanceOf","value":1,"field":"selections","scope":"ancestor","childId":"7227-b6c9-5b61-37fc","shared":true}]}]},{"type":"upgrade","import":true,"name":"Scout Entry","hidden":false,"id":"scout-entry","categoryLinks":[{"name":"Auxillary","hidden":false,"id":"fdf1-d9a0-111b-a087","targetId":"auxillary-category","primary":true}],"constraints":[{"type":"min","value":1,"field":"selections","scope":"force","shared":true,"id":"d2dc-8961-122c-5571","automatic":false,"includeChildSelections":true},{"type":"max","value":1,"field":"selections","scope":"force","shared":true,"id":"8ab0-ef64-5e5f-7222","automatic":false,"includeChildSelections":true}],"modifiers":[{"type":"set","value":0,"field":"d2dc-8961-122c-5571","conditionGroups":[{"type":"or","conditions":[{"type":"instanceOf","value":1,"field":"selections","scope":"ancestor","childId":"primary-detachment","shared":true,"includeChildSelections":true,"includeChildForces":true},{"type":"instanceOf","value":1,"field":"selections","scope":"ancestor","childId":"apex","shared":true,"includeChildSelections":true,"includeChildForces":true}]}]},{"type":"set","value":0,"field":"8ab0-ef64-5e5f-7222","conditionGroups":[{"type":"or","conditions":[{"type":"instanceOf","value":1,"field":"selections","scope":"ancestor","childId":"primary-detachment","shared":true,"includeChildSelections":true,"includeChildForces":true},{"type":"instanceOf","value":1,"field":"selections","scope":"ancestor","childId":"apex","shared":true,"includeChildSelections":true,"includeChildForces":true}]}]}]},{"type":"upgrade","import":true,"name":"Armour Tercio Entry","hidden":false,"id":"armour-tercio-entry","constraints":[{"type":"min","value":0,"field":"selections","scope":"roster","shared":true,"id":"6b23-8fc8-136b-647a","automatic":false,"includeChildSelections":true,"includeChildForces":true},{"type":"max","value":1,"field":"selections","scope":"parent","shared":true,"id":"df0f-ed6c-183b-5a88","automatic":false,"includeChildSelections":true},{"type":"min","value":1,"field":"selections","scope":"parent","shared":true,"id":"605d-ee37-a137-0d6b-min"},{"type":"max","value":1,"field":"selections","scope":"parent","shared":true,"id":"605d-ee37-a137-0d6b-max"}],"modifiers":[{"type":"increment","value":0,"field":"6b23-8fc8-136b-647a","repeats":[{"value":1,"repeats":1,"field":"forces","scope":"roster","childId":"ArmourTercio","shared":false,"roundUp":false,"includeChildSelections":false,"includeChildForces":true}]}]}],"entryLinks":[{"import":true,"name":"Aethon Heavy Sentinel Squadron","hidden":false,"id":"b0be-3e0f-5fab-e807","type":"selectionEntry","targetId":"AethonHeavySentinelSquadron","entryLinks":[{"import":true,"name":"Basilisk Artillery Tank","hidden":false,"id":"e31e-122f-de27-277f","type":"selectionEntry","targetId":"BasiliskArtilleryTank."}]},{"import":true,"name":"Armoured Command Section","hidden":false,"id":"541f-daca-b6b1-07e3","type":"selectionEntry","targetId":"ArmouredCommandSection"},{"import":true,"name":"Artillery Command Section","hidden":false,"id":"7227-b6c9-5b61-37fc","type":"selectionEntry","targetId":"ArtilleryCommandSection"},{"import":true,"name":"Arvus Lighter","hidden":false,"id":"820c-b197-47b1-5438","type":"selectionEntry","targetId":"ArvusLighter"},{"import":true,"name":"Charonite Ogryn Section","hidden":false,"id":"e50d-f6a5-ffe4-98f2","type":"selectionEntry","targetId":"CharoniteOgrynSection"},{"import":true,"name":"Dracosan Armoured Transport .","hidden":false,"id":"1902-f8a4-b339-fa65","type":"selectionEntry","targetId":"DracosanArmouredTransport ."},{"import":true,"name":"Hermes Command Section","hidden":false,"id":"08fb-1df0-f36b-f906","type":"selectionEntry","targetId":"HermesCommandSection"},{"import":true,"name":"Hermes Veletaris Squadron","hidden":false,"id":"fcf7-4279-a7ee-d8e5","type":"selectionEntry","targetId":"HermesVeletarisSquadron"},{"import":true,"name":"Hermes Light Sentinel Squadron.","hidden":false,"id":"16d0-0c83-bcd8-8bce","type":"selectionEntry","targetId":"HermesLightSentinelSquadron"},{"import":true,"name":"Leman Russ Assault Tank","hidden":false,"id":"1bde-f9cf-68af-32b1","type":"selectionEntry","targetId":"LemanRussAssaultTank"},{"import":true,"name":"Leman Russ Strike Tank.","hidden":false,"id":"b279-1a4a-bc1d-dc9e","type":"selectionEntry","targetId":"LemanRussStrikeTank"},{"import":true,"name":"Lasrifle Section","hidden":false,"id":"3c1b-2a7c-ddbe-805e","type":"selectionEntry","targetId":"LasrifleSection"},{"import":true,"name":"Line Command Section","hidden":false,"id":"a793-165f-ef57-bc76","type":"selectionEntry","targetId":"LineCommandSection"},{"import":true,"name":"Malcador Heavy Tank","hidden":false,"id":"0000-ffc5-c54d-bd66","type":"selectionEntry","targetId":"MalcadorHeavyTank"},{"import":true,"name":"Legatine Command Section ","hidden":false,"id":"a289-896a-538c-53ba","type":"selectionEntry","targetId":"LegatineCommandSection "},{"import":true,"name":"Malcador Infernus Special Weapons Tank..","hidden":false,"id":"1813-ef0e-edbd-98bc","type":"selectionEntry","targetId":"MalcadorInfernusSpecialWeaponsTank"},{"import":true,"name":"Medusa Artillery Tank","hidden":false,"id":"4bda-ea6c-5770-e01a","type":"selectionEntry","targetId":"MedusaArtillery ank"},{"import":true,"name":"Primaris-Lightning Strike Fighter","hidden":false,"id":"6931-0543-0ad5-47d0","type":"selectionEntry","targetId":"Primaris-LightningStrikeFighter"},{"import":true,"name":"Rapier Section","hidden":false,"id":"7f5d-e67e-e4e4-1501","type":"selectionEntry","targetId":"RapierSection"},{"import":true,"name":"Stormhammer Super-heavy Assault Tank.","hidden":false,"id":"be0e-9757-b87e-5bfb","type":"selectionEntry","targetId":"StormhammerSuper-heavyAssaultTank"},{"import":true,"name":"Tactical Command Section","hidden":false,"id":"4985-8fec-1e4e-dc0f","type":"selectionEntry","targetId":"TacticalCommandSection"},{"import":true,"name":"Thunderbolt Heavy Fighter.","hidden":false,"id":"3cd2-f023-d345-39f0","type":"selectionEntry","targetId":"ThunderboltHeavyFighter"},{"import":true,"name":"Valdor Tank Destroyer","hidden":false,"id":"b558-39d3-a6a1-a4ed","type":"selectionEntry","targetId":"ValdorTankDestroyer"},{"import":true,"name":"Veletaris Command Section","hidden":false,"id":"69a7-c9f9-0c77-49b6","type":"selectionEntry","targetId":"VeletarisCommandSection"},{"import":true,"name":"Veletaris Storm Section","hidden":false,"id":"1657-ff71-d5aa-1a2e","type":"selectionEntry","targetId":"VeletarisStormSection"},{"import":true,"name":"Veletaris Vanguard Section","hidden":false,"id":"d111-922d-ef0e-f74b","type":"selectionEntry","targetId":"VeletarisVanguardSection"}],"publicationId":"liber-imperialis","forceEntries":[{"name":"Veletaris Tercio","id":"VeletarisTercio","hidden":false,"page":"18","publicationId":"liber-imperialis","categoryLinks":[{"name":"Veletaris","hidden":false,"id":"bd05-84ee-f4f2-e911","targetId":"VeletrarisCategory","constraints":[{"type":"max","value":2,"field":"selections","scope":"parent","shared":false,"id":"1bc1-dfd6-9c4f-1073","includeChildSelections":false}]},{"name":"Hermes Veletaris","hidden":false,"id":"c832-95cd-e5c5-9e4d","targetId":"HermesVeletarisCategory","constraints":[{"type":"max","value":1,"field":"selections","scope":"parent","shared":false,"id":"ff76-45a6-3593-dbb2","includeChildSelections":false}]},{"name":"Heavy Transport","hidden":false,"id":"c108-2fa6-aaf5-dfa8","targetId":"heavy-transport-category","constraints":[{"type":"max","value":2,"field":"selections","scope":"parent","shared":false,"id":"1146-fe6f-55be-cb45","includeChildSelections":false}]},{"name":"Prime","hidden":false,"id":"7005-ccf7-cda9-e405","targetId":"prime-category","constraints":[{"type":"max","value":1,"field":"selections","scope":"parent","shared":false,"id":"ea6f-d08b-857f-2865","includeChildSelections":false}]},{"name":"Auxillary","hidden":false,"id":"2030-444d-f801-ffc5","targetId":"auxillary-category"},{"name":"Elite","hidden":false,"id":"965b-81fb-27e3-75c6","targetId":"elites-category","type":"categoryEntry","constraints":[{"type":"min","value":0,"field":"selections","scope":"parent","shared":true,"id":"344c-5ad9-f5c1-5a9f"}],"modifiers":[{"type":"increment","value":1,"field":"344c-5ad9-f5c1-5a9f","repeats":[{"value":1,"repeats":1,"field":"selections","scope":"parent","childId":"VeletrarisCategory","shared":true,"roundUp":false}]}]}]},{"name":"Infantry Tercio","id":"InfantryTercio","hidden":false,"page":"18","publicationId":"liber-imperialis","categoryLinks":[{"name":"Infantry","hidden":false,"id":"905f-3352-de29-fc5d","targetId":"InfantryCategory","constraints":[{"type":"max","value":2,"field":"selections","scope":"parent","shared":true,"id":"34f3-8697-eb3c-4c8c"}]},{"name":"Prime","hidden":false,"id":"e5bb-88e5-91f9-28bc","targetId":"prime-category","constraints":[{"type":"max","value":1,"field":"selections","scope":"parent","shared":false,"id":"a826-3027-73fc-055e","includeChildSelections":false}]},{"name":"Hermes Veletaris","hidden":false,"id":"ede0-eaca-e5e1-5569","targetId":"HermesVeletarisCategory","constraints":[{"type":"max","value":1,"field":"selections","scope":"parent","shared":true,"id":"dd6f-3679-daae-fdd8"}]},{"name":"Heavy Transport","hidden":false,"id":"9bfc-f151-512f-2ff9","targetId":"heavy-transport-category","constraints":[{"type":"max","value":2,"field":"selections","scope":"parent","shared":false,"id":"7039-8e26-b41c-a048","includeChildSelections":false}]},{"name":"Auxillary","hidden":false,"id":"e8cc-367c-8e75-fc62","targetId":"auxillary-category"}]},{"name":"Artillery Tercio","id":"ArtilleryTercio","hidden":false,"categoryLinks":[{"name":"Artillery","hidden":false,"id":"4ed0-020a-3c7c-6a57","targetId":"ArtilleryCategory","constraints":[{"type":"min","value":0,"field":"selections","scope":"force","shared":false,"id":"dec0-b0d4-278c-38f1","includeChildSelections":false}],"modifiers":[{"type":"increment","value":1,"field":"dec0-b0d4-278c-38f1","repeats":[{"value":1,"repeats":1,"field":"selections","scope":"force","childId":"support-category","shared":false,"roundUp":false,"includeChildSelections":false}]}]},{"name":"Auxillary","hidden":false,"id":"c3fe-e1d0-1b96-554c","targetId":"auxillary-category"},{"name":"Support","hidden":false,"id":"882b-be75-1075-2eb9","targetId":"support-category","type":"categoryEntry","constraints":[{"type":"max","value":3,"field":"selections","scope":"force","shared":false,"id":"872f-6be2-8b89-dd24","includeChildSelections":false}]}]},{"name":"Scout Tercio","id":"ScoutTercio","hidden":false,"categoryLinks":[{"name":"Aethon","hidden":false,"id":"2a6c-c895-c301-7fdc","targetId":"AethonCategory","constraints":[{"type":"max","value":1,"field":"selections","scope":"parent","shared":false,"id":"bd2d-93ad-08de-a893","includeChildSelections":false}]},{"name":"Hermes Light","hidden":false,"id":"aef1-70b9-335a-1148","targetId":"HermesLightCategory","constraints":[{"type":"max","value":1,"field":"selections","scope":"parent","shared":false,"id":"6e7e-8c7f-881c-8fb0","includeChildSelections":false}]},{"name":"Auxillary","hidden":false,"id":"5b51-51cf-2253-42cf","targetId":"auxillary-category"}]},{"name":"Armour Tercio","id":"ArmourTercio","hidden":false,"categoryLinks":[{"name":"SolarAuxArmour","hidden":false,"id":"0d8a-0407-6d6b-3b87","targetId":"SolarAuxArmourCategory","constraints":[{"type":"min","value":0,"field":"selections","scope":"force","shared":false,"id":"3840-2892-5047-738b","includeChildSelections":false}],"type":"categoryEntry","modifiers":[{"type":"increment","value":1,"field":"3840-2892-5047-738b","repeats":[{"value":1,"repeats":1,"field":"selections","scope":"force","childId":"armour-category","shared":false,"roundUp":false,"includeChildSelections":false}]}]},{"name":"Auxillary","hidden":false,"id":"9877-bc7b-746c-28ef","targetId":"auxillary-category","type":"categoryEntry"},{"name":"Armour","hidden":false,"id":"bcde-2010-f585-eb68","targetId":"armour-category","type":"categoryEntry","constraints":[{"type":"max","value":3,"field":"selections","scope":"force","shared":false,"id":"f8a4-baef-77d2-7a19","includeChildSelections":true}]}],"constraints":[{"type":"max","value":0,"field":"forces","scope":"roster","shared":false,"id":"f2d0-21fe-963c-0dce"}],"modifiers":[{"type":"increment","value":1,"field":"f2d0-21fe-963c-0dce","scope":"roster","repeats":[{"value":1,"repeats":1,"field":"selections","scope":"force","childId":"541f-daca-b6b1-07e3","shared":true,"roundUp":false,"includeChildSelections":true}]}]}],"categoryEntries":[{"name":"Veletaris","id":"VeletrarisCategory","hidden":false},{"name":"Infantry","id":"InfantryCategory","hidden":false},{"name":"Hermes Light","id":"HermesLightCategory","hidden":false},{"name":"Hermes Veletaris","id":"HermesVeletarisCategory","hidden":false},{"name":"Artillery","id":"ArtilleryCategory","hidden":false},{"name":"Aethon","id":"AethonCategory","hidden":false},{"name":"SolarAuxArmour","id":"SolarAuxArmourCategory","hidden":false}]}}
+{
+    "catalogue": {
+        "library": false,
+        "id": "SolarAuxilia",
+        "name": "Solar Auxilia",
+        "gameSystemId": "sys-41d4-b033-8ca9-9bb0",
+        "gameSystemRevision": 1,
+        "revision": 1,
+        "battleScribeVersion": "2.03",
+        "type": "catalogue",
+        "sharedSelectionEntries": [
+            {
+                "type": "unit",
+                "import": true,
+                "name": "Legatine Command Section ",
+                "hidden": false,
+                "id": "LegatineCommandSection ",
+                "categoryLinks": [
+                    {
+                        "targetId": "high-command",
+                        "id": "a762-751c-3246-cca8",
+                        "primary": true,
+                        "name": "High Command"
+                    }
+                ],
+                "costs": [
+                    {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 0
+                    }
+                ],
+                "page": "21",
+                "publicationId": "liber-imperialis",
+                "selectionEntries": [
+                    {
+                        "type": "model",
+                        "import": true,
+                        "name": "Legate Marshal",
+                        "hidden": false,
+                        "id": "LegateMarshal",
+                        "costs": [
+                            {
+                                "name": "Points",
+                                "typeId": "points",
+                                "value": 69
+                            }
+                        ],
+                        "constraints": [
+                            {
+                                "type": "min",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "72f6-4fbf-5a86-ad89-min"
+                            },
+                            {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "72f6-4fbf-5a86-ad89-max"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "model",
+                        "import": true,
+                        "name": "Lifeward",
+                        "hidden": false,
+                        "id": "Lifeward",
+                        "costs": [
+                            {
+                                "name": "Points",
+                                "typeId": "points",
+                                "value": 14
+                            }
+                        ],
+                        "constraints": [
+                            {
+                                "type": "min",
+                                "value": 4,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "7cea-c628-1c5c-9d99",
+                                "includeChildSelections": false
+                            },
+                            {
+                                "type": "max",
+                                "value": 9,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "3530-c2be-235a-9939"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "unit",
+                "import": true,
+                "name": "Tactical Command Section",
+                "hidden": false,
+                "id": "TacticalCommandSection",
+                "categoryLinks": [
+                    {
+                        "targetId": "command-category",
+                        "id": "6a44-922d-5581-2847",
+                        "primary": true,
+                        "name": "Command"
+                    }
+                ],
+                "page": "22",
+                "publicationId": "liber-imperialis",
+                "costs": [
+                    {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 0
+                    }
+                ],
+                "selectionEntries": [
+                    {
+                        "type": "model",
+                        "import": true,
+                        "name": "Auxilia Captain",
+                        "hidden": false,
+                        "id": "AuxiliaCaptain",
+                        "constraints": [
+                            {
+                                "type": "min",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "5d46-1f23-1fee-0f6c-min-min",
+                                "includeChildSelections": false
+                            },
+                            {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "5d46-1f23-1fee-0f6c-min-max",
+                                "includeChildSelections": false
+                            }
+                        ],
+                        "costs": [
+                            {
+                                "name": "Points",
+                                "typeId": "points",
+                                "value": 52
+                            }
+                        ]
+                    }
+                ],
+                "entryLinks": [
+                    {
+                        "import": true,
+                        "name": "Companion",
+                        "hidden": false,
+                        "id": "4d87-b179-38a4-1c78",
+                        "type": "selectionEntry",
+                        "targetId": "Companion",
+                        "constraints": [
+                            {
+                                "type": "min",
+                                "value": 4,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "0276-492d-4872-2867",
+                                "includeChildSelections": false
+                            },
+                            {
+                                "type": "max",
+                                "value": 9,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "7da3-4367-2848-14c7",
+                                "includeChildSelections": false
+                            }
+                        ]
+                    },
+                    {
+                        "import": true,
+                        "name": "Prime",
+                        "hidden": false,
+                        "id": "ebf6-a856-c4e6-ce1a",
+                        "type": "selectionEntry",
+                        "targetId": "prime-command"
+                    }
+                ]
+            },
+            {
+                "type": "unit",
+                "import": true,
+                "name": "Line Command Section",
+                "hidden": false,
+                "id": "LineCommandSection",
+                "publicationId": "liber-imperialis",
+                "page": "23",
+                "costs": [
+                    {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 0
+                    }
+                ],
+                "selectionEntries": [
+                    {
+                        "type": "model",
+                        "import": true,
+                        "name": "Troop Master",
+                        "hidden": false,
+                        "id": "TroopMaster",
+                        "costs": [
+                            {
+                                "name": "Points",
+                                "typeId": "points",
+                                "value": 37
+                            }
+                        ],
+                        "constraints": [
+                            {
+                                "type": "min",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "bb7c-2e26-5a6f-ccb1-min"
+                            },
+                            {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "bb7c-2e26-5a6f-ccb1-max"
+                            }
+                        ]
+                    }
+                ],
+                "entryLinks": [
+                    {
+                        "import": true,
+                        "name": "Veteran",
+                        "hidden": false,
+                        "id": "3061-8fb4-bba9-aac9",
+                        "type": "selectionEntry",
+                        "targetId": "VeteranAuxilia",
+                        "constraints": [
+                            {
+                                "type": "min",
+                                "value": 4,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "0ae6-f5fe-dab1-2e6b",
+                                "includeChildSelections": false
+                            },
+                            {
+                                "type": "max",
+                                "value": 9,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "6194-c6a9-4e04-bd01",
+                                "includeChildSelections": false
+                            }
+                        ]
+                    },
+                    {
+                        "import": true,
+                        "name": "Prime",
+                        "hidden": false,
+                        "id": "7829-b3f0-5d48-264f",
+                        "type": "selectionEntry",
+                        "targetId": "prime-command"
+                    }
+                ],
+                "categoryLinks": [
+                    {
+                        "targetId": "command-category",
+                        "id": "4337-3a20-646a-5e02",
+                        "primary": true,
+                        "name": "Command"
+                    }
+                ]
+            },
+            {
+                "type": "unit",
+                "import": true,
+                "name": "Veletaris Command Section",
+                "hidden": false,
+                "id": "VeletarisCommandSection",
+                "publicationId": "liber-imperialis",
+                "page": "24",
+                "costs": [
+                    {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 0
+                    }
+                ],
+                "entryLinks": [
+                    {
+                        "import": true,
+                        "name": "Veletarii",
+                        "hidden": false,
+                        "id": "ec32-9884-abd2-3905",
+                        "type": "selectionEntry",
+                        "targetId": "VeletariiStorm",
+                        "constraints": [
+                            {
+                                "type": "min",
+                                "value": 4,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "3f45-e4a8-7312-9cde",
+                                "includeChildSelections": false
+                            },
+                            {
+                                "type": "max",
+                                "value": 9,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "3703-cf1e-f83d-21a3",
+                                "includeChildSelections": false
+                            }
+                        ]
+                    },
+                    {
+                        "import": true,
+                        "name": "Prime",
+                        "hidden": false,
+                        "id": "38e1-b048-9c57-4967",
+                        "type": "selectionEntry",
+                        "targetId": "prime-command"
+                    }
+                ],
+                "selectionEntries": [
+                    {
+                        "type": "model",
+                        "import": true,
+                        "name": "First Prime",
+                        "hidden": false,
+                        "id": "FirstPrime",
+                        "costs": [
+                            {
+                                "name": "Points",
+                                "typeId": "points",
+                                "value": 43
+                            }
+                        ],
+                        "constraints": [
+                            {
+                                "type": "min",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "76a3-7587-96b6-4150-min",
+                                "includeChildSelections": false
+                            },
+                            {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "76a3-7587-96b6-4150-max",
+                                "includeChildSelections": false
+                            }
+                        ]
+                    }
+                ],
+                "categoryLinks": [
+                    {
+                        "targetId": "command-category",
+                        "id": "e66c-e4f0-8a8c-4fdf",
+                        "primary": true,
+                        "name": "Command"
+                    }
+                ]
+            },
+            {
+                "type": "unit",
+                "import": true,
+                "name": "Hermes Command Section",
+                "hidden": false,
+                "id": "HermesCommandSection",
+                "categoryLinks": [
+                    {
+                        "targetId": "command-category",
+                        "id": "0431-9be0-d051-8675",
+                        "primary": true,
+                        "name": "Command"
+                    }
+                ],
+                "page": "25",
+                "publicationId": "liber-imperialis",
+                "costs": [
+                    {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 0
+                    }
+                ],
+                "selectionEntries": [
+                    {
+                        "type": "unit",
+                        "import": true,
+                        "name": "Hermes Lead",
+                        "hidden": false,
+                        "id": "HermesLead",
+                        "costs": [
+                            {
+                                "name": "Points",
+                                "typeId": "points",
+                                "value": 57
+                            }
+                        ],
+                        "constraints": [
+                            {
+                                "type": "min",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "b657-c924-b978-e873-min"
+                            },
+                            {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "b657-c924-b978-e873-max"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "model",
+                        "import": true,
+                        "name": "Hermes Pathfinder",
+                        "hidden": false,
+                        "id": "HermesPathfinder",
+                        "costs": [
+                            {
+                                "name": "Points",
+                                "typeId": "points",
+                                "value": 18
+                            }
+                        ],
+                        "constraints": [
+                            {
+                                "type": "min",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "bd93-0bda-4cac-9a92",
+                                "includeChildSelections": false
+                            },
+                            {
+                                "type": "max",
+                                "value": 4,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "9c36-c525-6059-8d94",
+                                "includeChildSelections": false
+                            }
+                        ]
+                    }
+                ],
+                "entryLinks": [
+                    {
+                        "import": true,
+                        "name": "Prime",
+                        "hidden": false,
+                        "id": "4f9f-d59b-a249-8cad",
+                        "type": "selectionEntry",
+                        "targetId": "prime-command"
+                    }
+                ]
+            },
+            {
+                "type": "unit",
+                "import": true,
+                "name": "Artillery Command Section",
+                "hidden": false,
+                "id": "ArtilleryCommandSection",
+                "page": "26",
+                "publicationId": "liber-imperialis",
+                "selectionEntries": [
+                    {
+                        "type": "model",
+                        "import": true,
+                        "name": "Ordnance Master",
+                        "hidden": false,
+                        "id": "OrdnanceMaster",
+                        "costs": [
+                            {
+                                "name": "Points",
+                                "typeId": "points",
+                                "value": 37
+                            }
+                        ],
+                        "constraints": [
+                            {
+                                "type": "min",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "b64c-ff80-888a-fadc-min",
+                                "includeChildSelections": false
+                            },
+                            {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "b64c-ff80-888a-fadc-max",
+                                "includeChildSelections": false
+                            }
+                        ]
+                    }
+                ],
+                "entryLinks": [
+                    {
+                        "import": true,
+                        "name": "Veteran",
+                        "hidden": false,
+                        "id": "61b5-384f-f3ea-b7cd",
+                        "type": "selectionEntry",
+                        "targetId": "VeteranAuxilia",
+                        "constraints": [
+                            {
+                                "type": "min",
+                                "value": 4,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "c45f-ad04-2e5f-a738",
+                                "includeChildSelections": false
+                            },
+                            {
+                                "type": "max",
+                                "value": 9,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "eed7-c5a6-2b22-47c0",
+                                "includeChildSelections": false
+                            }
+                        ]
+                    },
+                    {
+                        "import": true,
+                        "name": "Prime",
+                        "hidden": false,
+                        "id": "d538-ec8b-3060-d934",
+                        "type": "selectionEntry",
+                        "targetId": "prime-command"
+                    },
+                    {
+                        "import": true,
+                        "name": "Artillery Tercio Entry",
+                        "hidden": false,
+                        "id": "3dac-5f8f-b05e-c156",
+                        "type": "selectionEntry",
+                        "targetId": "artillery-tercio-entry"
+                    }
+                ],
+                "categoryLinks": [
+                    {
+                        "targetId": "command-category",
+                        "id": "8b36-4a3c-d658-ffe3",
+                        "primary": true,
+                        "name": "Command"
+                    }
+                ]
+            },
+            {
+                "type": "unit",
+                "import": true,
+                "name": "Armoured Command Section",
+                "hidden": false,
+                "id": "ArmouredCommandSection",
+                "publicationId": "liber-imperialis",
+                "costs": [
+                    {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 150
+                    }
+                ],
+                "page": "27",
+                "categoryLinks": [
+                    {
+                        "targetId": "command-category",
+                        "id": "7082-2a50-9da9-aa98",
+                        "primary": true,
+                        "name": "Command"
+                    }
+                ],
+                "entryLinks": [
+                    {
+                        "import": true,
+                        "name": "Prime",
+                        "hidden": false,
+                        "id": "3e14-720f-226b-c6eb",
+                        "type": "selectionEntry",
+                        "targetId": "prime-command"
+                    },
+                    {
+                        "import": true,
+                        "name": "Armour Tercio Entry",
+                        "hidden": false,
+                        "id": "9b76-8af4-ac03-5d9f",
+                        "type": "selectionEntry",
+                        "targetId": "armour-tercio-entry"
+                    }
+                ]
+            },
+            {
+                "type": "unit",
+                "import": true,
+                "name": "Veletaris Storm Section",
+                "hidden": false,
+                "id": "VeletarisStormSection",
+                "categoryLinks": [
+                    {
+                        "targetId": "elites-category",
+                        "id": "1669-0b24-5a32-3fa6",
+                        "primary": true,
+                        "name": "Elite"
+                    }
+                ],
+                "page": "28",
+                "publicationId": "liber-imperialis",
+                "selectionEntries": [
+                    {
+                        "type": "model",
+                        "import": true,
+                        "name": "Veletarii Prime",
+                        "hidden": false,
+                        "id": "VeletariiPrimeStorm",
+                        "costs": [
+                            {
+                                "name": "Points",
+                                "typeId": "points",
+                                "value": 18
+                            }
+                        ],
+                        "constraints": [
+                            {
+                                "type": "min",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "a7df-43c1-d0fa-e7e7-min",
+                                "includeChildSelections": false
+                            },
+                            {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "a7df-43c1-d0fa-e7e7-max",
+                                "includeChildSelections": false
+                            }
+                        ]
+                    }
+                ],
+                "entryLinks": [
+                    {
+                        "import": true,
+                        "name": "Veletarii",
+                        "hidden": false,
+                        "id": "c68b-da87-6535-c06a",
+                        "type": "selectionEntry",
+                        "targetId": "VeletariiStorm",
+                        "constraints": [
+                            {
+                                "type": "min",
+                                "value": 9,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "a6c1-b505-9398-cd7f",
+                                "includeChildSelections": false
+                            },
+                            {
+                                "type": "max",
+                                "value": 19,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "6087-a684-0664-4910",
+                                "includeChildSelections": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "unit",
+                "import": true,
+                "name": "Veletaris Vanguard Section",
+                "hidden": false,
+                "id": "VeletarisVanguardSection",
+                "categoryLinks": [
+                    {
+                        "targetId": "elites-category",
+                        "id": "3ecf-5317-bce8-d406",
+                        "primary": true,
+                        "name": "Elite"
+                    }
+                ],
+                "page": "29",
+                "publicationId": "liber-imperialis",
+                "selectionEntries": [
+                    {
+                        "type": "model",
+                        "import": true,
+                        "name": "Veletarii",
+                        "hidden": false,
+                        "id": "VeletariiVanguard",
+                        "costs": [
+                            {
+                                "name": "Points",
+                                "typeId": "points",
+                                "value": 9
+                            }
+                        ],
+                        "constraints": [
+                            {
+                                "type": "min",
+                                "value": 9,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "3666-376d-610e-41ea",
+                                "includeChildSelections": false
+                            },
+                            {
+                                "type": "max",
+                                "value": 19,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "2ffd-1a37-67ac-1071",
+                                "includeChildSelections": false
+                            }
+                        ]
+                    },
+                    {
+                        "type": "model",
+                        "import": true,
+                        "name": "Veletarii Prime",
+                        "hidden": false,
+                        "id": "VeletariiPrimeVanguard",
+                        "costs": [
+                            {
+                                "name": "Points",
+                                "typeId": "points",
+                                "value": 19
+                            }
+                        ],
+                        "constraints": [
+                            {
+                                "type": "min",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "ac02-36fd-7757-4537-min",
+                                "includeChildSelections": false
+                            },
+                            {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "ac02-36fd-7757-4537-max",
+                                "includeChildSelections": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "unit",
+                "import": true,
+                "name": "Charonite Ogryn Section",
+                "hidden": false,
+                "id": "CharoniteOgrynSection",
+                "categoryLinks": [
+                    {
+                        "targetId": "heavy-assault-category",
+                        "id": "837a-a801-0cde-9ad0",
+                        "primary": true,
+                        "name": "Heavy Assault"
+                    }
+                ],
+                "publicationId": "liber-imperialis",
+                "page": "30",
+                "costs": [
+                    {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 0
+                    }
+                ],
+                "selectionEntries": [
+                    {
+                        "type": "model",
+                        "import": true,
+                        "name": "Charonite Ogryn",
+                        "hidden": false,
+                        "id": "CharoniteOgryn",
+                        "costs": [
+                            {
+                                "name": "Points",
+                                "typeId": "points",
+                                "value": 40
+                            }
+                        ],
+                        "constraints": [
+                            {
+                                "type": "min",
+                                "value": 3,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "f542-3359-85a5-c157"
+                            },
+                            {
+                                "type": "max",
+                                "value": 9,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "01aa-f665-4aea-2835"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "unit",
+                "import": true,
+                "name": "Lasrifle Section",
+                "hidden": false,
+                "id": "LasrifleSection",
+                "categoryLinks": [
+                    {
+                        "targetId": "troops-category",
+                        "id": "6fc1-c56f-6cd8-4ede",
+                        "primary": true,
+                        "name": "Troops"
+                    }
+                ],
+                "costs": [
+                    {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 50
+                    }
+                ],
+                "publicationId": "liber-imperialis",
+                "page": "31",
+                "selectionEntries": [
+                    {
+                        "type": "model",
+                        "import": true,
+                        "name": "Las Auxillary",
+                        "hidden": false,
+                        "id": "LasAuxillary",
+                        "costs": [
+                            {
+                                "name": "Points",
+                                "typeId": "points",
+                                "value": 4
+                            }
+                        ],
+                        "constraints": [
+                            {
+                                "type": "min",
+                                "value": 9,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "529e-a70e-df65-8517",
+                                "includeChildSelections": false
+                            },
+                            {
+                                "type": "max",
+                                "value": 19,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "79d8-d710-a03e-15a3",
+                                "includeChildSelections": false
+                            }
+                        ]
+                    },
+                    {
+                        "type": "model",
+                        "import": true,
+                        "name": "Las Sergeant",
+                        "hidden": false,
+                        "id": "LasSergeant",
+                        "costs": [
+                            {
+                                "name": "Points",
+                                "typeId": "points",
+                                "value": 14
+                            }
+                        ],
+                        "constraints": [
+                            {
+                                "type": "min",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "5168-91a3-4f14-9938-min",
+                                "includeChildSelections": false
+                            },
+                            {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "5168-91a3-4f14-9938-max",
+                                "includeChildSelections": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "unit",
+                "import": true,
+                "name": "Basilisk Artillery Tank",
+                "hidden": false,
+                "id": "BasiliskArtilleryTank.",
+                "categoryLinks": [
+                    {
+                        "targetId": "support-category",
+                        "id": "3f5a-d8e9-6eb6-b26d",
+                        "primary": true,
+                        "name": "Support"
+                    },
+                    {
+                        "targetId": "ArtilleryCategory",
+                        "id": "0b23-5a1c-0204-f0c8",
+                        "primary": false,
+                        "name": "Artillery"
+                    }
+                ],
+                "costs": [
+                    {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 120
+                    }
+                ],
+                "publicationId": "liber-imperialis",
+                "page": "32"
+            },
+            {
+                "type": "unit",
+                "import": true,
+                "name": "Medusa Artillery Tank",
+                "hidden": false,
+                "id": "MedusaArtillery ank",
+                "categoryLinks": [
+                    {
+                        "targetId": "support-category",
+                        "id": "ce22-971f-519b-eb02",
+                        "primary": true,
+                        "name": "Support"
+                    },
+                    {
+                        "targetId": "ArtilleryCategory",
+                        "id": "97cc-04a6-6307-4733",
+                        "primary": false,
+                        "name": "Artillery"
+                    }
+                ],
+                "costs": [
+                    {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 140
+                    }
+                ],
+                "publicationId": "liber-imperialis",
+                "page": "33"
+            },
+            {
+                "type": "unit",
+                "import": true,
+                "name": "Rapier Section",
+                "hidden": false,
+                "id": "RapierSection",
+                "categoryLinks": [
+                    {
+                        "targetId": "support-category",
+                        "id": "d547-a8c8-e808-e1d3",
+                        "primary": true,
+                        "name": "Support"
+                    }
+                ],
+                "publicationId": "liber-imperialis",
+                "page": "34",
+                "selectionEntries": [
+                    {
+                        "type": "model",
+                        "import": true,
+                        "name": "Rapier Crew",
+                        "hidden": false,
+                        "id": "RapierCrew",
+                        "costs": [
+                            {
+                                "name": "Points",
+                                "typeId": "points",
+                                "value": 30
+                            }
+                        ],
+                        "constraints": [
+                            {
+                                "type": "min",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "f648-8640-4758-e9d7"
+                            },
+                            {
+                                "type": "max",
+                                "value": 4,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "7c98-8214-1acc-2326",
+                                "includeChildSelections": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "unit",
+                "import": true,
+                "name": "Hermes Veletaris Squadron",
+                "hidden": false,
+                "id": "HermesVeletarisSquadron",
+                "categoryLinks": [
+                    {
+                        "targetId": "support-category",
+                        "id": "355c-073d-8d46-15d2",
+                        "primary": true,
+                        "name": "Support"
+                    }
+                ],
+                "page": "35",
+                "publicationId": "liber-imperialis",
+                "costs": [
+                    {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 0
+                    }
+                ],
+                "selectionEntries": [
+                    {
+                        "type": "model",
+                        "import": true,
+                        "name": "Hermes Veletaris",
+                        "hidden": false,
+                        "id": "HermesVeletaris",
+                        "constraints": [
+                            {
+                                "type": "min",
+                                "value": 2,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "6b11-8472-a8dd-ee77",
+                                "includeChildSelections": false
+                            },
+                            {
+                                "type": "max",
+                                "value": 6,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "bc32-7818-1e53-002e",
+                                "includeChildSelections": false
+                            }
+                        ],
+                        "costs": [
+                            {
+                                "name": "Points",
+                                "typeId": "points",
+                                "value": 40
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "unit",
+                "import": true,
+                "name": "Aethon Heavy Sentinel Squadron",
+                "hidden": false,
+                "id": "AethonHeavySentinelSquadron",
+                "categoryLinks": [
+                    {
+                        "targetId": "war-machines-category",
+                        "id": "1372-ad20-fdb0-e700",
+                        "primary": true,
+                        "name": "War Machine"
+                    }
+                ],
+                "publicationId": "liber-imperialis",
+                "page": "36",
+                "costs": [
+                    {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 0
+                    }
+                ],
+                "selectionEntries": [
+                    {
+                        "type": "model",
+                        "import": true,
+                        "name": "Aethon Heavy Sentinel ",
+                        "hidden": false,
+                        "id": "AethonHeavySentinel ",
+                        "costs": [
+                            {
+                                "name": "Points",
+                                "typeId": "points",
+                                "value": 60
+                            }
+                        ],
+                        "constraints": [
+                            {
+                                "type": "min",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "7eae-f0c7-bc87-bcc2"
+                            },
+                            {
+                                "type": "max",
+                                "value": 3,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "b19c-3395-8c2e-440a"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "unit",
+                "import": true,
+                "name": "Arvus Lighter",
+                "hidden": false,
+                "id": "ArvusLighter",
+                "categoryLinks": [
+                    {
+                        "targetId": "transport-category",
+                        "id": "3f4c-b58b-5d3e-97c7",
+                        "primary": true,
+                        "name": "Transport"
+                    }
+                ],
+                "publicationId": "liber-imperialis",
+                "page": "38",
+                "costs": [
+                    {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 75
+                    }
+                ]
+            },
+            {
+                "type": "unit",
+                "import": true,
+                "name": "Dracosan Armoured Transport .",
+                "hidden": false,
+                "id": "DracosanArmouredTransport .",
+                "categoryLinks": [
+                    {
+                        "targetId": "heavy-transport-category",
+                        "id": "7f15-8dc5-b757-a9f0",
+                        "primary": true,
+                        "name": "Heavy Transport"
+                    }
+                ],
+                "page": "39",
+                "publicationId": "liber-imperialis",
+                "costs": [
+                    {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 140
+                    }
+                ]
+            },
+            {
+                "type": "unit",
+                "import": true,
+                "name": "Hermes Light Sentinel Squadron.",
+                "hidden": false,
+                "id": "HermesLightSentinelSquadron",
+                "categoryLinks": [
+                    {
+                        "targetId": "recon-category",
+                        "id": "7b16-eb71-bbc9-9456",
+                        "primary": true,
+                        "name": "Recon"
+                    }
+                ],
+                "publicationId": "liber-imperialis",
+                "page": "40",
+                "costs": [
+                    {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 0
+                    }
+                ],
+                "selectionEntries": [
+                    {
+                        "type": "model",
+                        "import": true,
+                        "name": "Hermes Light Sentinel ",
+                        "hidden": false,
+                        "id": "HermesLightSentinel ",
+                        "costs": [
+                            {
+                                "name": "Points",
+                                "typeId": "points",
+                                "value": 16
+                            }
+                        ],
+                        "constraints": [
+                            {
+                                "type": "min",
+                                "value": 2,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "df5c-f4f4-35d7-ac4b",
+                                "includeChildSelections": false
+                            },
+                            {
+                                "type": "max",
+                                "value": 6,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "8ce3-afe8-a1e0-2154",
+                                "includeChildSelections": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "unit",
+                "import": true,
+                "name": "Primaris-Lightning Strike Fighter",
+                "hidden": false,
+                "id": "Primaris-LightningStrikeFighter",
+                "categoryLinks": [
+                    {
+                        "targetId": "fast-attack-category",
+                        "id": "eb65-4f7f-6e6c-250b",
+                        "primary": true,
+                        "name": "Fast Attack"
+                    }
+                ],
+                "costs": [
+                    {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 160
+                    }
+                ],
+                "publicationId": "liber-imperialis",
+                "page": "41"
+            },
+            {
+                "type": "unit",
+                "import": true,
+                "name": "Thunderbolt Heavy Fighter.",
+                "hidden": false,
+                "id": "ThunderboltHeavyFighter",
+                "categoryLinks": [
+                    {
+                        "targetId": "fast-attack-category",
+                        "id": "32ff-e6cd-cc51-7d27",
+                        "primary": true,
+                        "name": "Fast Attack"
+                    }
+                ],
+                "publicationId": "liber-imperialis",
+                "page": "42",
+                "costs": [
+                    {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 120
+                    }
+                ]
+            },
+            {
+                "type": "unit",
+                "import": true,
+                "name": "Leman Russ Strike Tank.",
+                "hidden": false,
+                "id": "LemanRussStrikeTank",
+                "categoryLinks": [
+                    {
+                        "targetId": "armour-category",
+                        "id": "6da2-814d-c048-195c",
+                        "primary": true,
+                        "name": "Armour"
+                    },
+                    {
+                        "targetId": "SolarAuxArmourCategory",
+                        "id": "147d-7235-f005-6ec4",
+                        "primary": false,
+                        "name": "SolarAuxArmour"
+                    }
+                ],
+                "costs": [
+                    {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 140
+                    }
+                ],
+                "publicationId": "liber-imperialis",
+                "page": "45"
+            },
+            {
+                "type": "unit",
+                "import": true,
+                "name": "Leman Russ Assault Tank",
+                "hidden": false,
+                "id": "LemanRussAssaultTank",
+                "categoryLinks": [
+                    {
+                        "targetId": "armour-category",
+                        "id": "920c-a0bd-b494-591c",
+                        "primary": true,
+                        "name": "Armour"
+                    },
+                    {
+                        "targetId": "SolarAuxArmourCategory",
+                        "id": "baaa-79a4-117e-46de",
+                        "primary": false,
+                        "name": "SolarAuxArmour"
+                    }
+                ],
+                "page": "44",
+                "publicationId": "liber-imperialis",
+                "costs": [
+                    {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 140
+                    }
+                ]
+            },
+            {
+                "type": "unit",
+                "import": true,
+                "name": "Malcador Heavy Tank",
+                "hidden": false,
+                "id": "MalcadorHeavyTank",
+                "categoryLinks": [
+                    {
+                        "targetId": "armour-category",
+                        "id": "774a-375a-61d6-b430",
+                        "primary": true,
+                        "name": "Armour"
+                    },
+                    {
+                        "targetId": "SolarAuxArmourCategory",
+                        "id": "b65e-7e06-7df5-904a",
+                        "primary": false,
+                        "name": "SolarAuxArmour"
+                    }
+                ],
+                "costs": [
+                    {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 215
+                    }
+                ],
+                "page": "45",
+                "publicationId": "liber-imperialis"
+            },
+            {
+                "type": "unit",
+                "import": true,
+                "name": "Malcador Infernus Special Weapons Tank..",
+                "hidden": false,
+                "id": "MalcadorInfernusSpecialWeaponsTank",
+                "categoryLinks": [
+                    {
+                        "targetId": "armour-category",
+                        "id": "b1e8-b817-9c6e-0c8a",
+                        "primary": true,
+                        "name": "Armour"
+                    }
+                ],
+                "publicationId": "liber-imperialis",
+                "page": "46",
+                "costs": [
+                    {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 240
+                    }
+                ]
+            },
+            {
+                "type": "unit",
+                "import": true,
+                "name": "Valdor Tank Destroyer",
+                "hidden": false,
+                "id": "ValdorTankDestroyer",
+                "categoryLinks": [
+                    {
+                        "targetId": "armour-category",
+                        "id": "e259-725e-7470-5b7f",
+                        "primary": true,
+                        "name": "Armour"
+                    }
+                ],
+                "publicationId": "liber-imperialis",
+                "costs": [
+                    {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 225
+                    }
+                ],
+                "page": "47"
+            },
+            {
+                "type": "unit",
+                "import": true,
+                "name": "Stormhammer Super-heavy Assault Tank.",
+                "hidden": false,
+                "id": "StormhammerSuper-heavyAssaultTank",
+                "categoryLinks": [
+                    {
+                        "targetId": "lord-of-war-category",
+                        "id": "cce0-c948-e20c-2efd",
+                        "primary": true,
+                        "name": "Lord of War"
+                    }
+                ],
+                "publicationId": "liber-imperialis",
+                "page": "48",
+                "costs": [
+                    {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 500
+                    }
+                ]
+            },
+            {
+                "type": "model",
+                "import": true,
+                "name": "Veletarii",
+                "hidden": false,
+                "id": "VeletariiStorm",
+                "costs": [
+                    {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 8
+                    }
+                ]
+            },
+            {
+                "type": "model",
+                "import": true,
+                "name": "Companion",
+                "hidden": false,
+                "id": "Companion",
+                "costs": [
+                    {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 12
+                    }
+                ]
+            },
+            {
+                "type": "model",
+                "import": true,
+                "name": "Veteran",
+                "hidden": false,
+                "id": "VeteranAuxilia",
+                "costs": [
+                    {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 7
+                    }
+                ]
+            },
+            {
+                "type": "upgrade",
+                "import": true,
+                "name": "Veletaris Entry",
+                "hidden": false,
+                "id": "VeletarisEntry",
+                "categoryLinks": [
+                    {
+                        "name": "Auxillary",
+                        "hidden": false,
+                        "id": "739b-7a36-80e0-75eb",
+                        "targetId": "auxillary-category",
+                        "primary": true
+                    }
+                ],
+                "constraints": [
+                    {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "shared": true,
+                        "id": "a026-05ea-4f72-2b4e",
+                        "automatic": false,
+                        "includeChildSelections": true
+                    },
+                    {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "shared": true,
+                        "id": "c1a2-ca8f-a519-d84e",
+                        "automatic": false,
+                        "includeChildSelections": true
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "set",
+                        "value": 0,
+                        "field": "a026-05ea-4f72-2b4e",
+                        "conditionGroups": [
+                            {
+                                "type": "or",
+                                "conditions": [
+                                    {
+                                        "type": "instanceOf",
+                                        "value": 1,
+                                        "field": "selections",
+                                        "scope": "ancestor",
+                                        "childId": "primary-detachment",
+                                        "shared": true,
+                                        "includeChildSelections": true,
+                                        "includeChildForces": true
+                                    },
+                                    {
+                                        "type": "instanceOf",
+                                        "value": 1,
+                                        "field": "selections",
+                                        "scope": "ancestor",
+                                        "childId": "apex",
+                                        "shared": true,
+                                        "includeChildSelections": true,
+                                        "includeChildForces": true
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "set",
+                        "value": 0,
+                        "field": "c1a2-ca8f-a519-d84e",
+                        "conditionGroups": [
+                            {
+                                "type": "or",
+                                "conditions": [
+                                    {
+                                        "type": "instanceOf",
+                                        "value": 1,
+                                        "field": "selections",
+                                        "scope": "ancestor",
+                                        "childId": "primary-detachment",
+                                        "shared": true,
+                                        "includeChildSelections": true,
+                                        "includeChildForces": true
+                                    },
+                                    {
+                                        "type": "instanceOf",
+                                        "value": 1,
+                                        "field": "selections",
+                                        "scope": "ancestor",
+                                        "childId": "apex",
+                                        "shared": true,
+                                        "includeChildSelections": true,
+                                        "includeChildForces": true
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "upgrade",
+                "import": true,
+                "name": "Infantry Entry",
+                "hidden": false,
+                "id": "infantry-entry",
+                "categoryLinks": [
+                    {
+                        "name": "Auxillary",
+                        "hidden": false,
+                        "id": "17e4-6ac5-b97c-eb40",
+                        "targetId": "auxillary-category",
+                        "primary": true
+                    }
+                ],
+                "constraints": [
+                    {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "shared": true,
+                        "id": "2d41-c63b-51f5-feb7",
+                        "automatic": false,
+                        "includeChildSelections": true
+                    },
+                    {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "shared": true,
+                        "id": "eee8-3f55-d145-19ff",
+                        "automatic": false,
+                        "includeChildSelections": true
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "set",
+                        "value": 0,
+                        "field": "2d41-c63b-51f5-feb7",
+                        "conditionGroups": [
+                            {
+                                "type": "or",
+                                "conditions": [
+                                    {
+                                        "type": "instanceOf",
+                                        "value": 1,
+                                        "field": "selections",
+                                        "scope": "ancestor",
+                                        "childId": "primary-detachment",
+                                        "shared": true,
+                                        "includeChildSelections": true,
+                                        "includeChildForces": true
+                                    },
+                                    {
+                                        "type": "instanceOf",
+                                        "value": 1,
+                                        "field": "selections",
+                                        "scope": "ancestor",
+                                        "childId": "apex",
+                                        "shared": true,
+                                        "includeChildSelections": true,
+                                        "includeChildForces": true
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "set",
+                        "value": 0,
+                        "field": "eee8-3f55-d145-19ff",
+                        "conditionGroups": [
+                            {
+                                "type": "or",
+                                "conditions": [
+                                    {
+                                        "type": "instanceOf",
+                                        "value": 1,
+                                        "field": "selections",
+                                        "scope": "ancestor",
+                                        "childId": "primary-detachment",
+                                        "shared": true,
+                                        "includeChildSelections": true,
+                                        "includeChildForces": true
+                                    },
+                                    {
+                                        "type": "instanceOf",
+                                        "value": 1,
+                                        "field": "selections",
+                                        "scope": "ancestor",
+                                        "childId": "apex",
+                                        "shared": true,
+                                        "includeChildSelections": true,
+                                        "includeChildForces": true
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "upgrade",
+                "import": true,
+                "name": "Artillery Tercio Entry",
+                "hidden": false,
+                "id": "artillery-tercio-entry",
+                "constraints": [
+                    {
+                        "type": "min",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "roster",
+                        "shared": true,
+                        "id": "660c-3a3b-3d68-bddd",
+                        "automatic": false,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                    },
+                    {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "shared": true,
+                        "id": "10e1-72a8-7793-f8b5",
+                        "automatic": false,
+                        "includeChildSelections": true
+                    },
+                    {
+                        "type": "min",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "4ab1-538d-3e67-8e7a-min"
+                    },
+                    {
+                        "type": "max",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "4ab1-538d-3e67-8e7a-max"
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "increment",
+                        "value": 1,
+                        "field": "660c-3a3b-3d68-bddd",
+                        "repeats": [
+                            {
+                                "value": 1,
+                                "repeats": 1,
+                                "field": "forces",
+                                "scope": "roster",
+                                "childId": "ArtilleryTercio",
+                                "shared": false,
+                                "roundUp": false,
+                                "includeChildSelections": false,
+                                "includeChildForces": false
+                            }
+                        ]
+                    },
+                    {
+                        "type": "set",
+                        "value": 1,
+                        "field": "4ab1-538d-3e67-8e7a-min",
+                        "conditions": [
+                            {
+                                "type": "instanceOf",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "ancestor",
+                                "childId": "7227-b6c9-5b61-37fc",
+                                "shared": true
+                            }
+                        ]
+                    },
+                    {
+                        "type": "set",
+                        "value": 1,
+                        "field": "4ab1-538d-3e67-8e7a-max",
+                        "conditions": [
+                            {
+                                "type": "instanceOf",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "ancestor",
+                                "childId": "7227-b6c9-5b61-37fc",
+                                "shared": true
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "upgrade",
+                "import": true,
+                "name": "Scout Entry",
+                "hidden": false,
+                "id": "scout-entry",
+                "categoryLinks": [
+                    {
+                        "name": "Auxillary",
+                        "hidden": false,
+                        "id": "fdf1-d9a0-111b-a087",
+                        "targetId": "auxillary-category",
+                        "primary": true
+                    }
+                ],
+                "constraints": [
+                    {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "shared": true,
+                        "id": "d2dc-8961-122c-5571",
+                        "automatic": false,
+                        "includeChildSelections": true
+                    },
+                    {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "force",
+                        "shared": true,
+                        "id": "8ab0-ef64-5e5f-7222",
+                        "automatic": false,
+                        "includeChildSelections": true
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "set",
+                        "value": 0,
+                        "field": "d2dc-8961-122c-5571",
+                        "conditionGroups": [
+                            {
+                                "type": "or",
+                                "conditions": [
+                                    {
+                                        "type": "instanceOf",
+                                        "value": 1,
+                                        "field": "selections",
+                                        "scope": "ancestor",
+                                        "childId": "primary-detachment",
+                                        "shared": true,
+                                        "includeChildSelections": true,
+                                        "includeChildForces": true
+                                    },
+                                    {
+                                        "type": "instanceOf",
+                                        "value": 1,
+                                        "field": "selections",
+                                        "scope": "ancestor",
+                                        "childId": "apex",
+                                        "shared": true,
+                                        "includeChildSelections": true,
+                                        "includeChildForces": true
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "set",
+                        "value": 0,
+                        "field": "8ab0-ef64-5e5f-7222",
+                        "conditionGroups": [
+                            {
+                                "type": "or",
+                                "conditions": [
+                                    {
+                                        "type": "instanceOf",
+                                        "value": 1,
+                                        "field": "selections",
+                                        "scope": "ancestor",
+                                        "childId": "primary-detachment",
+                                        "shared": true,
+                                        "includeChildSelections": true,
+                                        "includeChildForces": true
+                                    },
+                                    {
+                                        "type": "instanceOf",
+                                        "value": 1,
+                                        "field": "selections",
+                                        "scope": "ancestor",
+                                        "childId": "apex",
+                                        "shared": true,
+                                        "includeChildSelections": true,
+                                        "includeChildForces": true
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "upgrade",
+                "import": true,
+                "name": "Armour Tercio Entry",
+                "hidden": false,
+                "id": "armour-tercio-entry",
+                "constraints": [
+                    {
+                        "type": "min",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "roster",
+                        "shared": true,
+                        "id": "6b23-8fc8-136b-647a",
+                        "automatic": false,
+                        "includeChildSelections": true,
+                        "includeChildForces": true
+                    },
+                    {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "df0f-ed6c-183b-5a88",
+                        "automatic": false,
+                        "includeChildSelections": true
+                    },
+                    {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "605d-ee37-a137-0d6b-min"
+                    },
+                    {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "605d-ee37-a137-0d6b-max"
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "increment",
+                        "value": 0,
+                        "field": "6b23-8fc8-136b-647a",
+                        "repeats": [
+                            {
+                                "value": 1,
+                                "repeats": 1,
+                                "field": "forces",
+                                "scope": "roster",
+                                "childId": "ArmourTercio",
+                                "shared": false,
+                                "roundUp": false,
+                                "includeChildSelections": false,
+                                "includeChildForces": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "entryLinks": [
+            {
+                "import": true,
+                "name": "Aethon Heavy Sentinel Squadron",
+                "hidden": false,
+                "id": "b0be-3e0f-5fab-e807",
+                "type": "selectionEntry",
+                "targetId": "AethonHeavySentinelSquadron",
+                "entryLinks": [
+                    {
+                        "import": true,
+                        "name": "Basilisk Artillery Tank",
+                        "hidden": false,
+                        "id": "e31e-122f-de27-277f",
+                        "type": "selectionEntry",
+                        "targetId": "BasiliskArtilleryTank."
+                    }
+                ]
+            },
+            {
+                "import": true,
+                "name": "Armoured Command Section",
+                "hidden": false,
+                "id": "541f-daca-b6b1-07e3",
+                "type": "selectionEntry",
+                "targetId": "ArmouredCommandSection"
+            },
+            {
+                "import": true,
+                "name": "Artillery Command Section",
+                "hidden": false,
+                "id": "7227-b6c9-5b61-37fc",
+                "type": "selectionEntry",
+                "targetId": "ArtilleryCommandSection"
+            },
+            {
+                "import": true,
+                "name": "Arvus Lighter",
+                "hidden": false,
+                "id": "820c-b197-47b1-5438",
+                "type": "selectionEntry",
+                "targetId": "ArvusLighter"
+            },
+            {
+                "import": true,
+                "name": "Charonite Ogryn Section",
+                "hidden": false,
+                "id": "e50d-f6a5-ffe4-98f2",
+                "type": "selectionEntry",
+                "targetId": "CharoniteOgrynSection"
+            },
+            {
+                "import": true,
+                "name": "Dracosan Armoured Transport .",
+                "hidden": false,
+                "id": "1902-f8a4-b339-fa65",
+                "type": "selectionEntry",
+                "targetId": "DracosanArmouredTransport ."
+            },
+            {
+                "import": true,
+                "name": "Hermes Command Section",
+                "hidden": false,
+                "id": "08fb-1df0-f36b-f906",
+                "type": "selectionEntry",
+                "targetId": "HermesCommandSection"
+            },
+            {
+                "import": true,
+                "name": "Hermes Veletaris Squadron",
+                "hidden": false,
+                "id": "fcf7-4279-a7ee-d8e5",
+                "type": "selectionEntry",
+                "targetId": "HermesVeletarisSquadron"
+            },
+            {
+                "import": true,
+                "name": "Hermes Light Sentinel Squadron.",
+                "hidden": false,
+                "id": "16d0-0c83-bcd8-8bce",
+                "type": "selectionEntry",
+                "targetId": "HermesLightSentinelSquadron"
+            },
+            {
+                "import": true,
+                "name": "Leman Russ Assault Tank",
+                "hidden": false,
+                "id": "1bde-f9cf-68af-32b1",
+                "type": "selectionEntry",
+                "targetId": "LemanRussAssaultTank"
+            },
+            {
+                "import": true,
+                "name": "Leman Russ Strike Tank.",
+                "hidden": false,
+                "id": "b279-1a4a-bc1d-dc9e",
+                "type": "selectionEntry",
+                "targetId": "LemanRussStrikeTank"
+            },
+            {
+                "import": true,
+                "name": "Lasrifle Section",
+                "hidden": false,
+                "id": "3c1b-2a7c-ddbe-805e",
+                "type": "selectionEntry",
+                "targetId": "LasrifleSection"
+            },
+            {
+                "import": true,
+                "name": "Line Command Section",
+                "hidden": false,
+                "id": "a793-165f-ef57-bc76",
+                "type": "selectionEntry",
+                "targetId": "LineCommandSection"
+            },
+            {
+                "import": true,
+                "name": "Malcador Heavy Tank",
+                "hidden": false,
+                "id": "0000-ffc5-c54d-bd66",
+                "type": "selectionEntry",
+                "targetId": "MalcadorHeavyTank"
+            },
+            {
+                "import": true,
+                "name": "Legatine Command Section ",
+                "hidden": false,
+                "id": "a289-896a-538c-53ba",
+                "type": "selectionEntry",
+                "targetId": "LegatineCommandSection "
+            },
+            {
+                "import": true,
+                "name": "Malcador Infernus Special Weapons Tank..",
+                "hidden": false,
+                "id": "1813-ef0e-edbd-98bc",
+                "type": "selectionEntry",
+                "targetId": "MalcadorInfernusSpecialWeaponsTank"
+            },
+            {
+                "import": true,
+                "name": "Medusa Artillery Tank",
+                "hidden": false,
+                "id": "4bda-ea6c-5770-e01a",
+                "type": "selectionEntry",
+                "targetId": "MedusaArtillery ank"
+            },
+            {
+                "import": true,
+                "name": "Primaris-Lightning Strike Fighter",
+                "hidden": false,
+                "id": "6931-0543-0ad5-47d0",
+                "type": "selectionEntry",
+                "targetId": "Primaris-LightningStrikeFighter"
+            },
+            {
+                "import": true,
+                "name": "Rapier Section",
+                "hidden": false,
+                "id": "7f5d-e67e-e4e4-1501",
+                "type": "selectionEntry",
+                "targetId": "RapierSection"
+            },
+            {
+                "import": true,
+                "name": "Stormhammer Super-heavy Assault Tank.",
+                "hidden": false,
+                "id": "be0e-9757-b87e-5bfb",
+                "type": "selectionEntry",
+                "targetId": "StormhammerSuper-heavyAssaultTank"
+            },
+            {
+                "import": true,
+                "name": "Tactical Command Section",
+                "hidden": false,
+                "id": "4985-8fec-1e4e-dc0f",
+                "type": "selectionEntry",
+                "targetId": "TacticalCommandSection"
+            },
+            {
+                "import": true,
+                "name": "Thunderbolt Heavy Fighter.",
+                "hidden": false,
+                "id": "3cd2-f023-d345-39f0",
+                "type": "selectionEntry",
+                "targetId": "ThunderboltHeavyFighter"
+            },
+            {
+                "import": true,
+                "name": "Valdor Tank Destroyer",
+                "hidden": false,
+                "id": "b558-39d3-a6a1-a4ed",
+                "type": "selectionEntry",
+                "targetId": "ValdorTankDestroyer"
+            },
+            {
+                "import": true,
+                "name": "Veletaris Command Section",
+                "hidden": false,
+                "id": "69a7-c9f9-0c77-49b6",
+                "type": "selectionEntry",
+                "targetId": "VeletarisCommandSection"
+            },
+            {
+                "import": true,
+                "name": "Veletaris Storm Section",
+                "hidden": false,
+                "id": "1657-ff71-d5aa-1a2e",
+                "type": "selectionEntry",
+                "targetId": "VeletarisStormSection"
+            },
+            {
+                "import": true,
+                "name": "Veletaris Vanguard Section",
+                "hidden": false,
+                "id": "d111-922d-ef0e-f74b",
+                "type": "selectionEntry",
+                "targetId": "VeletarisVanguardSection"
+            }
+        ],
+        "publicationId": "liber-imperialis",
+        "forceEntries": [
+            {
+                "name": "Veletaris Tercio",
+                "id": "VeletarisTercio",
+                "hidden": false,
+                "page": "18",
+                "publicationId": "liber-imperialis",
+                "categoryLinks": [
+                    {
+                        "name": "Veletaris",
+                        "hidden": false,
+                        "id": "bd05-84ee-f4f2-e911",
+                        "targetId": "VeletrarisCategory",
+                        "constraints": [
+                            {
+                                "type": "max",
+                                "value": 2,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": false,
+                                "id": "1bc1-dfd6-9c4f-1073",
+                                "includeChildSelections": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Hermes Veletaris",
+                        "hidden": false,
+                        "id": "c832-95cd-e5c5-9e4d",
+                        "targetId": "HermesVeletarisCategory",
+                        "constraints": [
+                            {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": false,
+                                "id": "ff76-45a6-3593-dbb2",
+                                "includeChildSelections": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Heavy Transport",
+                        "hidden": false,
+                        "id": "c108-2fa6-aaf5-dfa8",
+                        "targetId": "heavy-transport-category",
+                        "constraints": [
+                            {
+                                "type": "max",
+                                "value": 2,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": false,
+                                "id": "1146-fe6f-55be-cb45",
+                                "includeChildSelections": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Prime",
+                        "hidden": false,
+                        "id": "7005-ccf7-cda9-e405",
+                        "targetId": "prime-category",
+                        "constraints": [
+                            {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": false,
+                                "id": "ea6f-d08b-857f-2865",
+                                "includeChildSelections": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Auxillary",
+                        "hidden": false,
+                        "id": "2030-444d-f801-ffc5",
+                        "targetId": "auxillary-category"
+                    },
+                    {
+                        "name": "Elite",
+                        "hidden": false,
+                        "id": "965b-81fb-27e3-75c6",
+                        "targetId": "elites-category",
+                        "type": "categoryEntry",
+                        "constraints": [
+                            {
+                                "type": "min",
+                                "value": 0,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "344c-5ad9-f5c1-5a9f"
+                            }
+                        ],
+                        "modifiers": [
+                            {
+                                "type": "increment",
+                                "value": 1,
+                                "field": "344c-5ad9-f5c1-5a9f",
+                                "repeats": [
+                                    {
+                                        "value": 1,
+                                        "repeats": 1,
+                                        "field": "selections",
+                                        "scope": "parent",
+                                        "childId": "VeletrarisCategory",
+                                        "shared": true,
+                                        "roundUp": false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Infantry Tercio",
+                "id": "InfantryTercio",
+                "hidden": false,
+                "page": "18",
+                "publicationId": "liber-imperialis",
+                "categoryLinks": [
+                    {
+                        "name": "Infantry",
+                        "hidden": false,
+                        "id": "905f-3352-de29-fc5d",
+                        "targetId": "InfantryCategory",
+                        "constraints": [
+                            {
+                                "type": "max",
+                                "value": 2,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "34f3-8697-eb3c-4c8c"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Prime",
+                        "hidden": false,
+                        "id": "e5bb-88e5-91f9-28bc",
+                        "targetId": "prime-category",
+                        "constraints": [
+                            {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": false,
+                                "id": "a826-3027-73fc-055e",
+                                "includeChildSelections": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Hermes Veletaris",
+                        "hidden": false,
+                        "id": "ede0-eaca-e5e1-5569",
+                        "targetId": "HermesVeletarisCategory",
+                        "constraints": [
+                            {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": true,
+                                "id": "dd6f-3679-daae-fdd8"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Heavy Transport",
+                        "hidden": false,
+                        "id": "9bfc-f151-512f-2ff9",
+                        "targetId": "heavy-transport-category",
+                        "constraints": [
+                            {
+                                "type": "max",
+                                "value": 2,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": false,
+                                "id": "7039-8e26-b41c-a048",
+                                "includeChildSelections": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Auxillary",
+                        "hidden": false,
+                        "id": "e8cc-367c-8e75-fc62",
+                        "targetId": "auxillary-category"
+                    }
+                ]
+            },
+            {
+                "name": "Artillery Tercio",
+                "id": "ArtilleryTercio",
+                "hidden": false,
+                "categoryLinks": [
+                    {
+                        "name": "Artillery",
+                        "hidden": false,
+                        "id": "4ed0-020a-3c7c-6a57",
+                        "targetId": "ArtilleryCategory",
+                        "constraints": [
+                            {
+                                "type": "min",
+                                "value": 0,
+                                "field": "selections",
+                                "scope": "force",
+                                "shared": false,
+                                "id": "dec0-b0d4-278c-38f1",
+                                "includeChildSelections": false
+                            }
+                        ],
+                        "modifiers": [
+                            {
+                                "type": "increment",
+                                "value": 1,
+                                "field": "dec0-b0d4-278c-38f1",
+                                "repeats": [
+                                    {
+                                        "value": 1,
+                                        "repeats": 1,
+                                        "field": "selections",
+                                        "scope": "force",
+                                        "childId": "support-category",
+                                        "shared": false,
+                                        "roundUp": false,
+                                        "includeChildSelections": false
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Auxillary",
+                        "hidden": false,
+                        "id": "c3fe-e1d0-1b96-554c",
+                        "targetId": "auxillary-category"
+                    },
+                    {
+                        "name": "Support",
+                        "hidden": false,
+                        "id": "882b-be75-1075-2eb9",
+                        "targetId": "support-category",
+                        "type": "categoryEntry",
+                        "constraints": [
+                            {
+                                "type": "max",
+                                "value": 3,
+                                "field": "selections",
+                                "scope": "force",
+                                "shared": false,
+                                "id": "872f-6be2-8b89-dd24",
+                                "includeChildSelections": false
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Scout Tercio",
+                "id": "ScoutTercio",
+                "hidden": false,
+                "categoryLinks": [
+                    {
+                        "name": "Aethon",
+                        "hidden": false,
+                        "id": "2a6c-c895-c301-7fdc",
+                        "targetId": "AethonCategory",
+                        "constraints": [
+                            {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": false,
+                                "id": "bd2d-93ad-08de-a893",
+                                "includeChildSelections": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Hermes Light",
+                        "hidden": false,
+                        "id": "aef1-70b9-335a-1148",
+                        "targetId": "HermesLightCategory",
+                        "constraints": [
+                            {
+                                "type": "max",
+                                "value": 1,
+                                "field": "selections",
+                                "scope": "parent",
+                                "shared": false,
+                                "id": "6e7e-8c7f-881c-8fb0",
+                                "includeChildSelections": false
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Auxillary",
+                        "hidden": false,
+                        "id": "5b51-51cf-2253-42cf",
+                        "targetId": "auxillary-category"
+                    }
+                ]
+            },
+            {
+                "name": "Armour Tercio",
+                "id": "ArmourTercio",
+                "hidden": false,
+                "categoryLinks": [
+                    {
+                        "name": "SolarAuxArmour",
+                        "hidden": false,
+                        "id": "0d8a-0407-6d6b-3b87",
+                        "targetId": "SolarAuxArmourCategory",
+                        "constraints": [
+                            {
+                                "type": "min",
+                                "value": 0,
+                                "field": "selections",
+                                "scope": "force",
+                                "shared": false,
+                                "id": "3840-2892-5047-738b",
+                                "includeChildSelections": false
+                            }
+                        ],
+                        "type": "categoryEntry",
+                        "modifiers": [
+                            {
+                                "type": "increment",
+                                "value": 1,
+                                "field": "3840-2892-5047-738b",
+                                "repeats": [
+                                    {
+                                        "value": 1,
+                                        "repeats": 1,
+                                        "field": "selections",
+                                        "scope": "force",
+                                        "childId": "armour-category",
+                                        "shared": false,
+                                        "roundUp": false,
+                                        "includeChildSelections": false
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Auxillary",
+                        "hidden": false,
+                        "id": "9877-bc7b-746c-28ef",
+                        "targetId": "auxillary-category",
+                        "type": "categoryEntry"
+                    },
+                    {
+                        "name": "Armour",
+                        "hidden": false,
+                        "id": "bcde-2010-f585-eb68",
+                        "targetId": "armour-category",
+                        "type": "categoryEntry",
+                        "constraints": [
+                            {
+                                "type": "max",
+                                "value": 3,
+                                "field": "selections",
+                                "scope": "force",
+                                "shared": false,
+                                "id": "f8a4-baef-77d2-7a19",
+                                "includeChildSelections": true
+                            }
+                        ]
+                    }
+                ],
+                "constraints": [
+                    {
+                        "type": "max",
+                        "value": 0,
+                        "field": "forces",
+                        "scope": "roster",
+                        "shared": false,
+                        "id": "f2d0-21fe-963c-0dce"
+                    }
+                ],
+                "modifiers": [
+                    {
+                        "type": "increment",
+                        "value": 1,
+                        "field": "f2d0-21fe-963c-0dce",
+                        "scope": "roster",
+                        "repeats": [
+                            {
+                                "value": 1,
+                                "repeats": 1,
+                                "field": "selections",
+                                "scope": "force",
+                                "childId": "541f-daca-b6b1-07e3",
+                                "shared": true,
+                                "roundUp": false,
+                                "includeChildSelections": true
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "categoryEntries": [
+            {
+                "name": "Veletaris",
+                "id": "VeletrarisCategory",
+                "hidden": false
+            },
+            {
+                "name": "Infantry",
+                "id": "InfantryCategory",
+                "hidden": false
+            },
+            {
+                "name": "Hermes Light",
+                "id": "HermesLightCategory",
+                "hidden": false
+            },
+            {
+                "name": "Hermes Veletaris",
+                "id": "HermesVeletarisCategory",
+                "hidden": false
+            },
+            {
+                "name": "Artillery",
+                "id": "ArtilleryCategory",
+                "hidden": false
+            },
+            {
+                "name": "Aethon",
+                "id": "AethonCategory",
+                "hidden": false
+            },
+            {
+                "name": "SolarAuxArmour",
+                "id": "SolarAuxArmourCategory",
+                "hidden": false
+            }
+        ]
+    }
+}

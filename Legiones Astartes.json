@@ -1,1 +1,1765 @@
-{"catalogue":{"library":true,"id":"la","name":"Legiones Astartes","gameSystemId":"sys-41d4-b033-8ca9-9bb0","gameSystemRevision":1,"revision":6,"battleScribeVersion":"2.03","sharedSelectionEntries":[{"type":"unit","import":true,"name":"Praetor","hidden":false,"id":"praetor-entry","categoryLinks":[{"name":"High Command","hidden":false,"id":"bb8a-2e47-ef39-020a","targetId":"high-command","primary":true}],"costs":[{"name":"Points","typeId":"points","value":120}],"entryLinks":[{"import":true,"name":"Legion Officer Wargear List","hidden":false,"id":"5cd6-df43-e6ae-141a","type":"selectionEntry","targetId":"legion-officer-wargear"}]},{"type":"unit","import":true,"name":"Centurion","hidden":false,"id":"centurion-entry","categoryLinks":[{"name":"Command","hidden":false,"id":"9c9d-c374-1a35-bdbb","targetId":"command-category","primary":true}],"entryLinks":[{"import":true,"name":"Prime","hidden":false,"id":"57ee-5b7a-0465-47ce","type":"selectionEntry","targetId":"prime-command"},{"import":true,"name":"Consul","hidden":false,"id":"0a28-d08f-6f21-a224","type":"selectionEntryGroup","targetId":"consul-group"},{"import":true,"name":"Legion Officer Wargear List","hidden":false,"id":"7f60-4798-a3bc-4b14","type":"selectionEntry","targetId":"legion-officer-wargear"}]},{"type":"unit","import":true,"name":"Tactical Squad","hidden":false,"id":"tactical-squad","categoryLinks":[{"name":"Troops","hidden":false,"id":"b41a-d1ed-e337-9672","targetId":"troops-category","primary":true}],"entryLinks":[{"import":true,"name":"Prime","hidden":false,"id":"528d-762b-be7c-5d29","type":"selectionEntry","targetId":"prime-troops"}]},{"type":"unit","import":true,"name":"Rhino","hidden":false,"id":"rhino","categoryLinks":[{"targetId":"transport-category","id":"e4a6-04af-1b1f-b936","primary":true,"name":"Transport"}]},{"type":"unit","import":true,"name":"Land Raider Proteus Carrier","hidden":false,"id":"land-raider-proteus-carrier","categoryLinks":[{"targetId":"heavy-transport-category","id":"39d4-18ff-df10-29e4","primary":true,"name":"Heavy Transport"}]},{"type":"upgrade","import":true,"name":"Centurion (Non-Consul)","hidden":false,"id":"centurion-non-consul","entryLinks":[{"import":true,"name":"Auxillary Doubler","hidden":false,"id":"9149-2d5a-b10d-0209","type":"selectionEntry","targetId":"auxillary-doubler"}],"constraints":[{"type":"max","value":1,"field":"selections","scope":"parent","shared":true,"id":"c62e-6684-8763-2e5b"}]},{"type":"upgrade","import":true,"name":"Legion Champion (Upgrade)","hidden":false,"id":"legion-champion-upgrade","categoryLinks":[{"targetId":"champion-category","id":"3d43-f3ec-913d-091d","primary":false,"name":"Legion Champion"}]},{"type":"unit","import":true,"name":"Veteran Assault","hidden":false,"id":"veteran-assault","categoryLinks":[{"targetId":"elites-category","id":"89a3-8784-0d16-5240","primary":true,"name":"Elite"}],"entryLinks":[{"import":true,"name":"Prime","hidden":false,"id":"0e5a-7e76-7314-5983","type":"selectionEntry","targetId":"prime-elites"}]},{"type":"unit","import":true,"name":"Contemptor","hidden":false,"id":"Contemptor","categoryLinks":[{"targetId":"war-machines-category","id":"d00d-833a-6b0f-3b4a","primary":true,"name":"War Machine"}]},{"type":"unit","import":true,"name":"Praetorian Command Squad","hidden":false,"id":"praetorian-command-squad"},{"type":"upgrade","import":true,"name":"Veteran Cadre (Entry)","hidden":false,"id":"veteran-cadre-entry"},{"type":"unit","import":true,"name":"Apothecary","hidden":false,"id":"apothecary-unit","categoryLinks":[{"targetId":"apothecary-category","id":"9553-f276-cfdd-a6b4","primary":true,"name":"Apothecary"}],"entryLinks":[{"import":true,"name":"Prime","hidden":false,"id":"0695-228a-718b-ac6a","type":"selectionEntry","targetId":"prime-troops"},{"import":true,"name":"Legion Sergeant Melee Weapons","hidden":false,"id":"45ca-3bc8-2335-9d6d","type":"selectionEntryGroup","targetId":"legion-sergeant-melee-weapons"},{"import":true,"name":"Legion Pistols","hidden":false,"id":"b35e-db97-473c-ef13","type":"selectionEntryGroup","targetId":"legion-pistols"}]},{"type":"unit","import":true,"name":"Techmarine","hidden":false,"id":"techmarine-unit","categoryLinks":[{"targetId":"techmarine-category","id":"1d01-7bf9-8dcc-3e77","primary":true,"name":"Techmarine"}],"entryLinks":[{"import":true,"name":"Prime","hidden":false,"id":"301b-0b95-2de8-fbaf","type":"selectionEntry","targetId":"prime-troops"}]},{"type":"unit","import":true,"name":"Reconnaissance Squad","hidden":false,"id":"reconnaissance-squad-unit","categoryLinks":[{"targetId":"recon-category","id":"ac07-bc5d-cd62-eb7e","primary":true,"name":"Recon"},{"targetId":"reconnaissance-squad-category","id":"51d3-80fa-173f-6fd9","primary":false,"name":"Reconnaissance Squad"},{"targetId":"support-troops-category","id":"110c-7873-49f1-cc7d","primary":false,"name":"Support Troops"}],"entryLinks":[{"import":true,"name":"Prime","hidden":false,"id":"96cf-8d3a-ac8c-376b","type":"selectionEntry","targetId":"prime-troops"}]},{"type":"unit","import":true,"name":"Rapier Battery","hidden":false,"id":"rapier-battery-unit","categoryLinks":[{"targetId":"support-category","id":"1952-8b6f-c29d-cad3","primary":true,"name":"Support"},{"targetId":"rapier-battery-category","id":"c0de-64ad-e64c-f46d","primary":false,"name":"Rapier Battery"}]},{"type":"unit","import":true,"name":"Arquitor Bombard","hidden":false,"id":"arquitor-bombard","categoryLinks":[{"targetId":"storm-battery-armour","id":"b922-a964-3064-7d5d","primary":false,"name":"Storm Battery Armour"},{"targetId":"armour-category","id":"00f3-f981-2ae1-1336","primary":true,"name":"Armour"}]},{"type":"unit","import":true,"name":"Vindicator Siege Tank","hidden":false,"id":"vindicator-siege-tank-unit","categoryLinks":[{"targetId":"storm-battery-armour","id":"d753-d1a9-2284-0a9d","primary":false,"name":"Storm Battery Armour"},{"targetId":"armour-category","id":"018a-fa85-2fe4-b99b","primary":true,"name":"Armour"}]},{"type":"unit","import":true,"name":"Praetorian Command Squad With Jump Packs","hidden":false,"id":"praetorian-command-squad-with-jump-packs","categoryLinks":[{"targetId":"retinues-category","id":"7b67-6465-bb6b-73eb","primary":true,"name":"Retinues"}]},{"type":"unit","import":true,"name":"Thunderhawk Gunship","hidden":false,"id":"thunderhawk-gunship","costs":[{"name":"Points","typeId":"points","value":650}],"categoryLinks":[{"targetId":"lord-of-war-category","id":"759c-bd7e-fd72-70c5","primary":true,"name":"Lord of War"}]},{"type":"upgrade","import":true,"name":"Gravis Chainfist","hidden":false,"id":"gravis-chainfist","costs":[{"name":"Points","typeId":"points","value":5}],"profiles":[{"name":"Gravis Chainfist","typeId":"weapon","typeName":"Weapon","hidden":false,"id":"gravis-chain-fist-profile","characteristics":[{"name":"Range","typeId":"range","$text":"Melee"},{"name":"Range Strength","typeId":"range-strength","$text":"Melee"},{"name":"Fire Power","typeId":"fire-power","$text":"Melee"},{"name":"Melee Strength","typeId":"melee-strength","$text":"+4"},{"name":"Damage","typeId":"damage","$text":"3"},{"name":"Attacks","typeId":"weapon-attacks","$text":"A"},{"name":"Initiative","typeId":"weapon-initiative","$text":"-1"}]}],"constraints":[{"type":"max","value":1,"field":"selections","scope":"parent","shared":false,"id":"189f-0183-ed82-470f","includeChildSelections":false}]},{"type":"upgrade","import":true,"name":"Gravis Power Fist","hidden":false,"id":"gravis-power-fist","costs":[{"name":"Points","typeId":"points","value":5}],"constraints":[{"type":"max","value":1,"field":"selections","scope":"parent","shared":false,"id":"b676-11e9-bb0c-7a1f","includeChildSelections":false}],"infoLinks":[{"name":"Gravis Power Fist","id":"4689-417c-1fa4-a772","hidden":false,"type":"profile","targetId":"gravis-power-fist-profile"}]},{"type":"upgrade","import":true,"name":"Paired Gravis Power Fists","hidden":false,"id":"paired-gravis-power-fists","costs":[{"name":"Points","typeId":"points","value":5}],"constraints":[{"type":"max","value":1,"field":"selections","scope":"parent","shared":false,"id":"93a6-b0b4-49bf-1ad6","includeChildSelections":false}],"infoLinks":[{"name":"Gravis Power Fist","id":"2585-c087-b31a-207a","hidden":false,"type":"profile","targetId":"gravis-power-fist-profile","modifiers":[{"type":"append","value":"s","field":"name"},{"type":"prepend","value":"Paired","field":"name","join":" "},{"type":"set","value":"+1A","field":"weapon-attacks"}]}]}],"entryLinks":[{"import":true,"name":"Centurion","hidden":false,"id":"79bd-8127-d540-44b2","type":"selectionEntry","targetId":"centurion-entry","categoryLinks":[{"targetId":"command-category","id":"b6bd-6f66-c015-c586","primary":true,"name":"Command"}]},{"import":true,"name":"Centurion","hidden":false,"id":"79bd-8127-d540-44b2","type":"selectionEntry","targetId":"centurion-entry","categoryLinks":[{"targetId":"command-category","id":"b6bd-6f66-c015-c586","primary":true,"name":"Command"}]},{"import":true,"name":"Praetor","hidden":false,"id":"5976-ff82-efbe-8cf5","type":"selectionEntry","targetId":"praetor-entry","categoryLinks":[{"targetId":"high-command","id":"4a3b-8b90-857e-0a12","primary":true,"name":"High Command"}]},{"import":true,"name":"Rhino","hidden":false,"id":"67fe-a994-5a68-ce19","type":"selectionEntry","targetId":"rhino","categoryLinks":[{"targetId":"transport-category","id":"59c9-3909-f082-c371","primary":true,"name":"Transport"}]},{"import":true,"name":"Tactical Squad","hidden":false,"id":"6018-df7d-7b40-70fa","type":"selectionEntry","targetId":"tactical-squad","categoryLinks":[{"targetId":"troops-category","id":"e8f2-20d2-7453-4b4d","primary":true,"name":"Troops"}]},{"import":true,"name":"Land Raider Proteus Carrier","hidden":false,"id":"d5cb-1f64-5547-eacd","type":"selectionEntry","targetId":"land-raider-proteus-carrier","categoryLinks":[{"targetId":"heavy-transport-category","id":"eb48-24d8-88fc-7c3f","primary":true,"name":"Heavy Transport"}]},{"import":true,"name":"Veteran Assault","hidden":false,"id":"4f89-3b67-8440-482a","type":"selectionEntry","targetId":"veteran-assault","categoryLinks":[{"targetId":"elites-category","id":"bd35-cfc7-fe0d-4fb4","primary":true,"name":"Elite"}]},{"import":true,"name":"Contemptor","hidden":false,"id":"2e8a-90bd-25e3-087f","type":"selectionEntry","targetId":"Contemptor","categoryLinks":[{"targetId":"war-machines-category","id":"3a45-fc15-1d75-a71b","primary":true,"name":"War Machine"}]},{"import":true,"name":"Praetorian Command Squad","hidden":false,"id":"6957-1255-3e79-5ed3","type":"selectionEntry","targetId":"praetorian-command-squad","categoryLinks":[{"targetId":"retinues-category","id":"6d8f-4d37-e236-b834","primary":true,"name":"Retinues"}]},{"import":true,"name":"Apothecary","hidden":false,"id":"200a-1932-1192-ccbc","type":"selectionEntry","targetId":"apothecary-unit"},{"import":true,"name":"Techmarine","hidden":false,"id":"b76a-73a6-6405-e9c8","type":"selectionEntry","targetId":"techmarine-unit"},{"import":true,"name":"Arquitor Bombard","hidden":false,"id":"d42d-958c-852c-ed49","type":"selectionEntry","targetId":"arquitor-bombard"},{"import":true,"name":"Rapier Battery","hidden":false,"id":"fbda-ded2-60e6-9a78","type":"selectionEntry","targetId":"rapier-battery-unit"},{"import":true,"name":"Vindicator Siege Tank","hidden":false,"id":"4ac2-902d-787f-f26f","type":"selectionEntry","targetId":"vindicator-siege-tank-unit"},{"import":true,"name":"Reconnaissance Squad","hidden":false,"id":"ceb1-b3b2-2ce7-d7f2","type":"selectionEntry","targetId":"reconnaissance-squad-unit"},{"import":true,"name":"Praetorian Command Squad With Jump Packs","hidden":false,"id":"6b71-3eb9-537f-b70c","type":"selectionEntry","targetId":"praetorian-command-squad-with-jump-packs"},{"import":true,"name":"Thunderhawk Gunship","hidden":false,"id":"6bfd-52cb-9bca-aa8d","type":"selectionEntry","targetId":"thunderhawk-gunship","categoryLinks":[{"targetId":"lord-of-war-category","id":"088b-eb27-f579-32b8","primary":true,"name":"Lord of War"}]}],"sharedSelectionEntryGroups":[{"name":"Consul","id":"consul-group","hidden":false,"constraints":[{"type":"min","value":1,"field":"selections","scope":"parent","shared":true,"id":"13e9-2b7d-66a6-140e","includeChildSelections":false},{"type":"max","value":1,"field":"selections","scope":"parent","shared":true,"id":"5a12-593f-eea6-4925","includeChildSelections":false}],"entryLinks":[{"import":true,"name":"Centurion (Non-Consul)","hidden":false,"id":"ecb4-1eef-b05a-0120","type":"selectionEntry","targetId":"centurion-non-consul"},{"import":true,"name":"Legion Champion (Upgrade)","hidden":false,"id":"3686-4c82-0243-28c6","type":"selectionEntry","targetId":"legion-champion-upgrade"}]},{"name":"Contemptor Arm Weapons","id":"contemptor-arm-weapons","hidden":false,"constraints":[{"type":"min","value":2,"field":"selections","scope":"parent","shared":true,"id":"2efa-b9e9-f870-03a5"},{"type":"max","value":2,"field":"selections","scope":"parent","shared":true,"id":"c3fb-5fd3-7966-02c7"}],"modifiers":[{"type":"set","value":1,"field":"c3fb-5fd3-7966-02c7","conditions":[{"type":"atLeast","value":1,"field":"selections","scope":"parent","childId":"paired-gravis-power-fists","shared":true}]},{"type":"set","value":1,"field":"2efa-b9e9-f870-03a5","conditions":[{"type":"atLeast","value":1,"field":"selections","scope":"parent","childId":"paired-gravis-power-fists","shared":true}]}],"entryLinks":[{"import":true,"name":"Gravis Chainfist","hidden":false,"id":"af12-ab38-9f49-d86b","type":"selectionEntry","targetId":"gravis-chainfist"},{"import":true,"name":"Gravis Power Fist","hidden":false,"id":"ab8e-dea9-fe49-86a6","type":"selectionEntry","targetId":"gravis-power-fist"},{"import":true,"name":"Paired Gravis Power Fists","hidden":false,"id":"10d6-d381-75cd-86cc","type":"selectionEntry","targetId":"paired-gravis-power-fists"}]}],"type":"catalogue","forceEntries":[{"name":"Veteran Cadre","id":"veteran-cadre","hidden":false,"categoryLinks":[{"name":"Elite","hidden":false,"id":"36c8-7da6-d19d-6fb8","targetId":"elites-category","constraints":[{"type":"max","value":1,"field":"selections","scope":"parent","shared":true,"id":"e0d1-67d9-dcdb-64dc"}]},{"name":"Retinues","hidden":false,"id":"6172-0882-601e-65e8","targetId":"retinues-category","constraints":[{"type":"max","value":1,"field":"selections","scope":"parent","shared":true,"id":"c3d1-b5d7-729b-5164"}]},{"name":"Heavy Transport","hidden":false,"id":"a60a-99f6-fe90-0f6f","targetId":"heavy-transport-category","constraints":[{"type":"max","value":1,"field":"selections","scope":"parent","shared":true,"id":"07d0-b677-e7c6-b4a0"}]},{"name":"Auxillary","hidden":false,"id":"10f9-7054-524d-ec21","targetId":"auxillary-category"}]},{"name":"Apothecarion Delegation","id":"apothecarion-delegation","hidden":false,"categoryLinks":[{"name":"Auxillary","hidden":false,"id":"6569-70fa-90ff-40eb","targetId":"auxillary-category"},{"name":"Apothecary","hidden":false,"id":"c1f9-03c3-ff68-159a","targetId":"apothecary-category","constraints":[{"type":"min","value":0,"field":"selections","scope":"parent","shared":true,"id":"bc15-6009-3fa4-61c9"},{"type":"max","value":6,"field":"selections","scope":"parent","shared":false,"id":"06ed-d8de-6443-3442"}]}]},{"name":"Techmarine Covenant","id":"techmarine-covenant","hidden":false,"categoryLinks":[{"name":"Auxillary","hidden":false,"id":"fa56-ae4e-9aff-ce65","targetId":"auxillary-category"},{"name":"Techmarine","hidden":false,"id":"746c-3ca6-618b-21d3","targetId":"techmarine-category","constraints":[{"type":"max","value":6,"field":"selections","scope":"parent","shared":false,"id":"9d71-4a77-3b03-85df"}]}]},{"name":"Recon Demi-Company","id":"recon-demi-company","hidden":false,"categoryLinks":[{"name":"Auxillary","hidden":false,"id":"c87f-5413-996c-7fb4","targetId":"auxillary-category"},{"name":"Reconnaissance Squad","hidden":false,"id":"8bdb-9d99-72fb-8219","targetId":"reconnaissance-squad-category","constraints":[{"type":"max","value":3,"field":"selections","scope":"parent","shared":true,"id":"b54b-4940-ea77-5b8a"}]},{"name":"Fast Attack","hidden":false,"id":"be58-4d5b-b02a-9c35","targetId":"fast-attack-category","constraints":[{"type":"max","value":1,"field":"selections","scope":"parent","shared":true,"id":"07a8-4455-3be2-5b04"}]}]},{"name":"Storm Battery","id":"storm-battery-unit","hidden":false,"categoryLinks":[{"name":"Auxillary","hidden":false,"id":"bb4e-dc96-3bff-297b","targetId":"auxillary-category"},{"name":"Storm Battery Armour","hidden":false,"id":"93d6-b944-f67e-c8cd","targetId":"storm-battery-armour","constraints":[{"type":"min","value":2,"field":"selections","scope":"parent","shared":true,"id":"b81a-d75e-f484-df70"}]},{"name":"Rapier Battery","hidden":false,"id":"0207-1ce7-ad02-2730","targetId":"rapier-battery-category","constraints":[{"type":"min","value":2,"field":"selections","scope":"parent","shared":true,"id":"36ae-6e8b-e36a-b2a7"}]}]}],"categoryEntries":[{"name":"Veteran Cadre","id":"veteran-cadre-category","hidden":false,"constraints":[{"type":"max","value":0,"field":"selections","scope":"roster","shared":false,"id":"7189-a9dc-75cf-c0e9","includeChildSelections":true,"includeChildForces":true}],"modifiers":[{"type":"increment","value":1,"field":"7189-a9dc-75cf-c0e9","repeats":[{"value":1,"repeats":1,"field":"selections","scope":"roster","childId":"champion-category","shared":true,"roundUp":false,"includeChildSelections":true,"includeChildForces":true}]}]},{"name":"Apothecary","id":"apothecary-category","hidden":false},{"name":"Techmarine","id":"techmarine-category","hidden":false},{"name":"Reconnaissance Squad","id":"reconnaissance-squad-category","hidden":false},{"name":"Rapier Battery","id":"rapier-battery-category","hidden":false},{"name":"Storm Battery Armour","id":"storm-battery-armour","hidden":false}],"catalogueLinks":[{"type":"catalogue","name":"Astartes shared wargear","id":"f01f-9dd3-bdde-110e","targetId":"05a0-8d04-800c-0c17"}],"sharedProfiles":[{"name":"Gravis Power Fist","typeId":"weapon","typeName":"Weapon","hidden":false,"id":"gravis-power-fist-profile","characteristics":[{"name":"Range","typeId":"range","$text":"Melee"},{"name":"Range Strength","typeId":"range-strength","$text":"Melee"},{"name":"Fire Power","typeId":"fire-power","$text":"Melee"},{"name":"Melee Strength","typeId":"melee-strength","$text":"+3"},{"name":"Damage","typeId":"damage","$text":"3"},{"name":"Attacks","typeId":"weapon-attacks","$text":"A"},{"name":"Initiative","typeId":"weapon-initiative","$text":"I"}]}]}}
+{
+  "catalogue": {
+    "library": true,
+    "id": "la",
+    "name": "Legiones Astartes",
+    "gameSystemId": "sys-41d4-b033-8ca9-9bb0",
+    "gameSystemRevision": 1,
+    "revision": 6,
+    "battleScribeVersion": "2.03",
+    "sharedSelectionEntries": [
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Praetor",
+        "hidden": false,
+        "id": "praetor-entry",
+        "categoryLinks": [
+          {
+            "name": "High Command",
+            "hidden": false,
+            "id": "bb8a-2e47-ef39-020a",
+            "targetId": "high-command",
+            "primary": true
+          }
+        ],
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 120
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Legion Officer Wargear List",
+            "hidden": false,
+            "id": "5cd6-df43-e6ae-141a",
+            "type": "selectionEntry",
+            "targetId": "legion-officer-wargear"
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Centurion",
+        "hidden": false,
+        "id": "centurion-entry",
+        "categoryLinks": [
+          {
+            "name": "Command",
+            "hidden": false,
+            "id": "9c9d-c374-1a35-bdbb",
+            "targetId": "command-category",
+            "primary": true
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Prime",
+            "hidden": false,
+            "id": "57ee-5b7a-0465-47ce",
+            "type": "selectionEntry",
+            "targetId": "prime-command"
+          },
+          {
+            "import": true,
+            "name": "Consul",
+            "hidden": false,
+            "id": "0a28-d08f-6f21-a224",
+            "type": "selectionEntryGroup",
+            "targetId": "consul-group"
+          },
+          {
+            "import": true,
+            "name": "Legion Officer Wargear List",
+            "hidden": false,
+            "id": "7f60-4798-a3bc-4b14",
+            "type": "selectionEntry",
+            "targetId": "legion-officer-wargear"
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Tactical Squad",
+        "hidden": false,
+        "id": "tactical-squad",
+        "categoryLinks": [
+          {
+            "name": "Troops",
+            "hidden": false,
+            "id": "b41a-d1ed-e337-9672",
+            "targetId": "troops-category",
+            "primary": true
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Prime",
+            "hidden": false,
+            "id": "528d-762b-be7c-5d29",
+            "type": "selectionEntry",
+            "targetId": "prime-troops"
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Rhino",
+        "hidden": false,
+        "id": "rhino",
+        "categoryLinks": [
+          {
+            "targetId": "transport-category",
+            "id": "e4a6-04af-1b1f-b936",
+            "primary": true,
+            "name": "Transport"
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Land Raider Proteus Carrier",
+        "hidden": false,
+        "id": "land-raider-proteus-carrier",
+        "categoryLinks": [
+          {
+            "targetId": "heavy-transport-category",
+            "id": "39d4-18ff-df10-29e4",
+            "primary": true,
+            "name": "Heavy Transport"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Centurion (Non-Consul)",
+        "hidden": false,
+        "id": "centurion-non-consul",
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Auxillary Doubler",
+            "hidden": false,
+            "id": "9149-2d5a-b10d-0209",
+            "type": "selectionEntry",
+            "targetId": "auxillary-doubler"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "c62e-6684-8763-2e5b"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Legion Champion (Upgrade)",
+        "hidden": false,
+        "id": "legion-champion-upgrade",
+        "categoryLinks": [
+          {
+            "targetId": "champion-category",
+            "id": "3d43-f3ec-913d-091d",
+            "primary": false,
+            "name": "Legion Champion"
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Veteran Assault",
+        "hidden": false,
+        "id": "veteran-assault",
+        "categoryLinks": [
+          {
+            "targetId": "elites-category",
+            "id": "89a3-8784-0d16-5240",
+            "primary": true,
+            "name": "Elite"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Prime",
+            "hidden": false,
+            "id": "0e5a-7e76-7314-5983",
+            "type": "selectionEntry",
+            "targetId": "prime-elites"
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Contemptor",
+        "hidden": false,
+        "id": "Contemptor",
+        "categoryLinks": [
+          {
+            "targetId": "war-machines-category",
+            "id": "d00d-833a-6b0f-3b4a",
+            "primary": true,
+            "name": "War Machine"
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Praetorian Command Squad",
+        "hidden": false,
+        "id": "praetorian-command-squad"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Veteran Cadre (Entry)",
+        "hidden": false,
+        "id": "veteran-cadre-entry"
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Apothecary",
+        "hidden": false,
+        "id": "apothecary-unit",
+        "categoryLinks": [
+          {
+            "targetId": "apothecary-category",
+            "id": "9553-f276-cfdd-a6b4",
+            "primary": true,
+            "name": "Apothecary"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Prime",
+            "hidden": false,
+            "id": "0695-228a-718b-ac6a",
+            "type": "selectionEntry",
+            "targetId": "prime-troops"
+          },
+          {
+            "import": true,
+            "name": "Legion Sergeant Melee Weapons",
+            "hidden": false,
+            "id": "45ca-3bc8-2335-9d6d",
+            "type": "selectionEntryGroup",
+            "targetId": "legion-sergeant-melee-weapons"
+          },
+          {
+            "import": true,
+            "name": "Legion Pistols",
+            "hidden": false,
+            "id": "b35e-db97-473c-ef13",
+            "type": "selectionEntryGroup",
+            "targetId": "legion-pistols"
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Techmarine",
+        "hidden": false,
+        "id": "techmarine-unit",
+        "categoryLinks": [
+          {
+            "targetId": "techmarine-category",
+            "id": "1d01-7bf9-8dcc-3e77",
+            "primary": true,
+            "name": "Techmarine"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Prime",
+            "hidden": false,
+            "id": "301b-0b95-2de8-fbaf",
+            "type": "selectionEntry",
+            "targetId": "prime-troops"
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Reconnaissance Squad",
+        "hidden": false,
+        "id": "reconnaissance-squad-unit",
+        "categoryLinks": [
+          {
+            "targetId": "recon-category",
+            "id": "ac07-bc5d-cd62-eb7e",
+            "primary": true,
+            "name": "Recon"
+          },
+          {
+            "targetId": "reconnaissance-squad-category",
+            "id": "51d3-80fa-173f-6fd9",
+            "primary": false,
+            "name": "Reconnaissance Squad"
+          },
+          {
+            "targetId": "support-troops-category",
+            "id": "110c-7873-49f1-cc7d",
+            "primary": false,
+            "name": "Support Troops"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Prime",
+            "hidden": false,
+            "id": "96cf-8d3a-ac8c-376b",
+            "type": "selectionEntry",
+            "targetId": "prime-troops"
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Rapier Battery",
+        "hidden": false,
+        "id": "rapier-battery-unit",
+        "categoryLinks": [
+          {
+            "targetId": "support-category",
+            "id": "1952-8b6f-c29d-cad3",
+            "primary": true,
+            "name": "Support"
+          },
+          {
+            "targetId": "rapier-battery-category",
+            "id": "c0de-64ad-e64c-f46d",
+            "primary": false,
+            "name": "Rapier Battery"
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Arquitor Bombard",
+        "hidden": false,
+        "id": "arquitor-bombard",
+        "categoryLinks": [
+          {
+            "targetId": "storm-battery-armour",
+            "id": "b922-a964-3064-7d5d",
+            "primary": false,
+            "name": "Storm Battery Armour"
+          },
+          {
+            "targetId": "armour-category",
+            "id": "00f3-f981-2ae1-1336",
+            "primary": true,
+            "name": "Armour"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Centreline Mounted",
+            "hidden": false,
+            "id": "9f06-0971-c87e-7a08",
+            "type": "selectionEntryGroup",
+            "targetId": "arquitor-main-weapons",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "8ee5-834b-7432-feda-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "8ee5-834b-7432-feda-max",
+                "includeChildSelections": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Vindicator Siege Tank",
+        "hidden": false,
+        "id": "vindicator-siege-tank-unit",
+        "categoryLinks": [
+          {
+            "targetId": "storm-battery-armour",
+            "id": "d753-d1a9-2284-0a9d",
+            "primary": false,
+            "name": "Storm Battery Armour"
+          },
+          {
+            "targetId": "armour-category",
+            "id": "018a-fa85-2fe4-b99b",
+            "primary": true,
+            "name": "Armour"
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Praetorian Command Squad With Jump Packs",
+        "hidden": false,
+        "id": "praetorian-command-squad-with-jump-packs",
+        "categoryLinks": [
+          {
+            "targetId": "retinues-category",
+            "id": "7b67-6465-bb6b-73eb",
+            "primary": true,
+            "name": "Retinues"
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Thunderhawk Gunship",
+        "hidden": false,
+        "id": "thunderhawk-gunship",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 650
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "lord-of-war-category",
+            "id": "759c-bd7e-fd72-70c5",
+            "primary": true,
+            "name": "Lord of War"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Gravis Chainfist",
+        "hidden": false,
+        "id": "gravis-chainfist",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 5
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Gravis Chainfist",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "gravis-chain-fist-profile",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "Melee"
+              },
+              {
+                "name": "Range Strength",
+                "typeId": "range-strength",
+                "$text": "Melee"
+              },
+              {
+                "name": "Fire Power",
+                "typeId": "fire-power",
+                "$text": "Melee"
+              },
+              {
+                "name": "Melee Strength",
+                "typeId": "melee-strength",
+                "$text": "+4"
+              },
+              {
+                "name": "Damage",
+                "typeId": "damage",
+                "$text": "3"
+              },
+              {
+                "name": "Attacks",
+                "typeId": "weapon-attacks",
+                "$text": "A"
+              },
+              {
+                "name": "Initiative",
+                "typeId": "weapon-initiative",
+                "$text": "-1"
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": false,
+            "id": "189f-0183-ed82-470f",
+            "includeChildSelections": false
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Gravis Power Fist",
+        "hidden": false,
+        "id": "gravis-power-fist",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 5
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": false,
+            "id": "b676-11e9-bb0c-7a1f",
+            "includeChildSelections": false
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Gravis Power Fist",
+            "id": "4689-417c-1fa4-a772",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "gravis-power-fist-profile"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Paired Gravis Power Fists",
+        "hidden": false,
+        "id": "paired-gravis-power-fists",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 5
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": false,
+            "id": "93a6-b0b4-49bf-1ad6",
+            "includeChildSelections": false
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Gravis Power Fist",
+            "id": "2585-c087-b31a-207a",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "gravis-power-fist-profile",
+            "modifiers": [
+              {
+                "type": "append",
+                "value": "s",
+                "field": "name"
+              },
+              {
+                "type": "prepend",
+                "value": "Paired",
+                "field": "name",
+                "join": " "
+              },
+              {
+                "type": "set",
+                "value": "+1A",
+                "field": "weapon-attacks"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "entryLinks": [
+      {
+        "import": true,
+        "name": "Centurion",
+        "hidden": false,
+        "id": "79bd-8127-d540-44b2",
+        "type": "selectionEntry",
+        "targetId": "centurion-entry",
+        "categoryLinks": [
+          {
+            "targetId": "command-category",
+            "id": "b6bd-6f66-c015-c586",
+            "primary": true,
+            "name": "Command"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Centurion",
+        "hidden": false,
+        "id": "79bd-8127-d540-44b2",
+        "type": "selectionEntry",
+        "targetId": "centurion-entry",
+        "categoryLinks": [
+          {
+            "targetId": "command-category",
+            "id": "b6bd-6f66-c015-c586",
+            "primary": true,
+            "name": "Command"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Praetor",
+        "hidden": false,
+        "id": "5976-ff82-efbe-8cf5",
+        "type": "selectionEntry",
+        "targetId": "praetor-entry",
+        "categoryLinks": [
+          {
+            "targetId": "high-command",
+            "id": "4a3b-8b90-857e-0a12",
+            "primary": true,
+            "name": "High Command"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Rhino",
+        "hidden": false,
+        "id": "67fe-a994-5a68-ce19",
+        "type": "selectionEntry",
+        "targetId": "rhino",
+        "categoryLinks": [
+          {
+            "targetId": "transport-category",
+            "id": "59c9-3909-f082-c371",
+            "primary": true,
+            "name": "Transport"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Tactical Squad",
+        "hidden": false,
+        "id": "6018-df7d-7b40-70fa",
+        "type": "selectionEntry",
+        "targetId": "tactical-squad",
+        "categoryLinks": [
+          {
+            "targetId": "troops-category",
+            "id": "e8f2-20d2-7453-4b4d",
+            "primary": true,
+            "name": "Troops"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Land Raider Proteus Carrier",
+        "hidden": false,
+        "id": "d5cb-1f64-5547-eacd",
+        "type": "selectionEntry",
+        "targetId": "land-raider-proteus-carrier",
+        "categoryLinks": [
+          {
+            "targetId": "heavy-transport-category",
+            "id": "eb48-24d8-88fc-7c3f",
+            "primary": true,
+            "name": "Heavy Transport"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Veteran Assault",
+        "hidden": false,
+        "id": "4f89-3b67-8440-482a",
+        "type": "selectionEntry",
+        "targetId": "veteran-assault",
+        "categoryLinks": [
+          {
+            "targetId": "elites-category",
+            "id": "bd35-cfc7-fe0d-4fb4",
+            "primary": true,
+            "name": "Elite"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Contemptor",
+        "hidden": false,
+        "id": "2e8a-90bd-25e3-087f",
+        "type": "selectionEntry",
+        "targetId": "Contemptor",
+        "categoryLinks": [
+          {
+            "targetId": "war-machines-category",
+            "id": "3a45-fc15-1d75-a71b",
+            "primary": true,
+            "name": "War Machine"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Praetorian Command Squad",
+        "hidden": false,
+        "id": "6957-1255-3e79-5ed3",
+        "type": "selectionEntry",
+        "targetId": "praetorian-command-squad",
+        "categoryLinks": [
+          {
+            "targetId": "retinues-category",
+            "id": "6d8f-4d37-e236-b834",
+            "primary": true,
+            "name": "Retinues"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Apothecary",
+        "hidden": false,
+        "id": "200a-1932-1192-ccbc",
+        "type": "selectionEntry",
+        "targetId": "apothecary-unit"
+      },
+      {
+        "import": true,
+        "name": "Techmarine",
+        "hidden": false,
+        "id": "b76a-73a6-6405-e9c8",
+        "type": "selectionEntry",
+        "targetId": "techmarine-unit"
+      },
+      {
+        "import": true,
+        "name": "Arquitor Bombard",
+        "hidden": false,
+        "id": "d42d-958c-852c-ed49",
+        "type": "selectionEntry",
+        "targetId": "arquitor-bombard"
+      },
+      {
+        "import": true,
+        "name": "Rapier Battery",
+        "hidden": false,
+        "id": "fbda-ded2-60e6-9a78",
+        "type": "selectionEntry",
+        "targetId": "rapier-battery-unit"
+      },
+      {
+        "import": true,
+        "name": "Vindicator Siege Tank",
+        "hidden": false,
+        "id": "4ac2-902d-787f-f26f",
+        "type": "selectionEntry",
+        "targetId": "vindicator-siege-tank-unit"
+      },
+      {
+        "import": true,
+        "name": "Reconnaissance Squad",
+        "hidden": false,
+        "id": "ceb1-b3b2-2ce7-d7f2",
+        "type": "selectionEntry",
+        "targetId": "reconnaissance-squad-unit"
+      },
+      {
+        "import": true,
+        "name": "Praetorian Command Squad With Jump Packs",
+        "hidden": false,
+        "id": "6b71-3eb9-537f-b70c",
+        "type": "selectionEntry",
+        "targetId": "praetorian-command-squad-with-jump-packs"
+      },
+      {
+        "import": true,
+        "name": "Thunderhawk Gunship",
+        "hidden": false,
+        "id": "6bfd-52cb-9bca-aa8d",
+        "type": "selectionEntry",
+        "targetId": "thunderhawk-gunship",
+        "categoryLinks": [
+          {
+            "targetId": "lord-of-war-category",
+            "id": "088b-eb27-f579-32b8",
+            "primary": true,
+            "name": "Lord of War"
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Consul",
+        "id": "consul-group",
+        "hidden": false,
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "13e9-2b7d-66a6-140e",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "5a12-593f-eea6-4925",
+            "includeChildSelections": false
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Centurion (Non-Consul)",
+            "hidden": false,
+            "id": "ecb4-1eef-b05a-0120",
+            "type": "selectionEntry",
+            "targetId": "centurion-non-consul"
+          },
+          {
+            "import": true,
+            "name": "Legion Champion (Upgrade)",
+            "hidden": false,
+            "id": "3686-4c82-0243-28c6",
+            "type": "selectionEntry",
+            "targetId": "legion-champion-upgrade"
+          }
+        ]
+      },
+      {
+        "name": "Contemptor Arm Weapons",
+        "id": "contemptor-arm-weapons",
+        "hidden": false,
+        "constraints": [
+          {
+            "type": "min",
+            "value": 2,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "2efa-b9e9-f870-03a5"
+          },
+          {
+            "type": "max",
+            "value": 2,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "c3fb-5fd3-7966-02c7"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": 1,
+            "field": "c3fb-5fd3-7966-02c7",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "paired-gravis-power-fists",
+                "shared": true
+              }
+            ]
+          },
+          {
+            "type": "set",
+            "value": 1,
+            "field": "2efa-b9e9-f870-03a5",
+            "conditions": [
+              {
+                "type": "atLeast",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "paired-gravis-power-fists",
+                "shared": true
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Gravis Chainfist",
+            "hidden": false,
+            "id": "af12-ab38-9f49-d86b",
+            "type": "selectionEntry",
+            "targetId": "gravis-chainfist"
+          },
+          {
+            "import": true,
+            "name": "Gravis Power Fist",
+            "hidden": false,
+            "id": "ab8e-dea9-fe49-86a6",
+            "type": "selectionEntry",
+            "targetId": "gravis-power-fist"
+          },
+          {
+            "import": true,
+            "name": "Paired Gravis Power Fists",
+            "hidden": false,
+            "id": "10d6-d381-75cd-86cc",
+            "type": "selectionEntry",
+            "targetId": "paired-gravis-power-fists"
+          }
+        ]
+      },
+      {
+        "name": "Centreline Mounted",
+        "id": "arquitor-main-weapons",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Morbus Bombard",
+            "hidden": false,
+            "id": "ca11-8ccb-1e2c-a29b",
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Morbus Bombard HE shell",
+                "hidden": false,
+                "id": "d513-1ae0-3474-a731",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fb7d-faa9-8f87-4242-min",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fb7d-faa9-8f87-4242-max",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ff3c-ea2a-f6ae-89ff-min",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ff3c-ea2a-f6ae-89ff-max",
+                    "includeChildSelections": false
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Morbus Bombard HE shell",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "17e1-65b3-0a3a-e52d",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "36"
+                      },
+                      {
+                        "name": "Range Strength",
+                        "typeId": "range-strength",
+                        "$text": "9"
+                      },
+                      {
+                        "name": "Fire Power",
+                        "typeId": "fire-power",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Melee Strength",
+                        "typeId": "melee-strength",
+                        "$text": "-"
+                      },
+                      {
+                        "name": "Damage",
+                        "typeId": "damage",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Attacks",
+                        "typeId": "weapon-attacks",
+                        "$text": "-"
+                      },
+                      {
+                        "name": "Initiative",
+                        "typeId": "weapon-initiative",
+                        "$text": "-"
+                      },
+                      {
+                        "name": "Armour penetration",
+                        "$text": "4"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Morbus Bombard Phosphex shell*",
+                "hidden": false,
+                "id": "6e63-bd9f-7541-ad70",
+                "profiles": [
+                  {
+                    "name": "Morbus Bombard Phosphex shell*",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "f9bd-e0ed-85f0-e9d4",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "24"
+                      },
+                      {
+                        "name": "Range Strength",
+                        "typeId": "range-strength",
+                        "$text": "5"
+                      },
+                      {
+                        "name": "Fire Power",
+                        "typeId": "fire-power",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Melee Strength",
+                        "typeId": "melee-strength",
+                        "$text": "-"
+                      },
+                      {
+                        "name": "Damage",
+                        "typeId": "damage",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Attacks",
+                        "typeId": "weapon-attacks",
+                        "$text": "-"
+                      },
+                      {
+                        "name": "Initiative",
+                        "typeId": "weapon-initiative",
+                        "$text": "-"
+                      },
+                      {
+                        "name": "Armour penetration",
+                        "$text": "3"
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "7e65-b50b-036d-6d71",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1fe1-8612-579d-49e3",
+                    "includeChildSelections": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Graviton-charge Cannon",
+            "hidden": false,
+            "id": "b58c-5e7f-33d3-e953",
+            "profiles": [
+              {
+                "name": "Graviton-charge Cannon",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "f44a-446d-e5ae-d8f1",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": "24"
+                  },
+                  {
+                    "name": "Range Strength",
+                    "typeId": "range-strength",
+                    "$text": "9"
+                  },
+                  {
+                    "name": "Fire Power",
+                    "typeId": "fire-power",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Melee Strength",
+                    "typeId": "melee-strength",
+                    "$text": "-"
+                  },
+                  {
+                    "name": "Damage",
+                    "typeId": "damage",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Attacks",
+                    "typeId": "weapon-attacks",
+                    "$text": "-"
+                  },
+                  {
+                    "name": "Initiative",
+                    "typeId": "weapon-initiative",
+                    "$text": "-"
+                  },
+                  {
+                    "name": "Armour penetration",
+                    "$text": "3"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "type": "category",
+                "name": "Graviton",
+                "hidden": false,
+                "id": "f59f-4f21-29c1-5df3",
+                "targetId": "graviton",
+                "primary": false
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Barrage (X)",
+                "id": "7a90-44ed-7f56-436f",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "barrage",
+                "modifiers": [
+                  {
+                    "type": "append",
+                    "value": "(1)",
+                    "field": "name",
+                    "join": " "
+                  }
+                ]
+              },
+              {
+                "name": "Breaching (X)",
+                "id": "10ea-d2b0-7801-ef9c",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "breaching",
+                "modifiers": [
+                  {
+                    "type": "append",
+                    "value": "(6)",
+                    "field": "name",
+                    "join": " "
+                  }
+                ]
+              },
+              {
+                "name": "Blast (X)",
+                "id": "492c-329a-0520-0f48",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "blast",
+                "modifiers": [
+                  {
+                    "type": "append",
+                    "value": "(5)",
+                    "field": "name",
+                    "join": " "
+                  }
+                ]
+              },
+              {
+                "name": "Shock (X)",
+                "id": "5e93-5e1e-32a9-eb63",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "shock",
+                "modifiers": [
+                  {
+                    "type": "append",
+                    "value": "(Pinned)",
+                    "field": "name",
+                    "join": " "
+                  }
+                ]
+              },
+              {
+                "name": "Pinning (X)",
+                "id": "00cb-5018-0df6-29b1",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "pinning",
+                "modifiers": [
+                  {
+                    "type": "append",
+                    "value": "(5)",
+                    "field": "name",
+                    "join": " "
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Spicula rocket system",
+            "hidden": false,
+            "id": "26fc-6cf8-ae36-f29d",
+            "profiles": [
+              {
+                "name": "Spicula rocket system",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "a863-e01b-8e73-04d9",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Range Strength",
+                    "typeId": "range-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Fire Power",
+                    "typeId": "fire-power",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Strength",
+                    "typeId": "melee-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Damage",
+                    "typeId": "damage",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Attacks",
+                    "typeId": "weapon-attacks",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Initiative",
+                    "typeId": "weapon-initiative",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Armour penetration",
+                    "$text": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "type": "catalogue",
+    "forceEntries": [
+      {
+        "name": "Veteran Cadre",
+        "id": "veteran-cadre",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Elite",
+            "hidden": false,
+            "id": "36c8-7da6-d19d-6fb8",
+            "targetId": "elites-category",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "e0d1-67d9-dcdb-64dc"
+              }
+            ]
+          },
+          {
+            "name": "Retinues",
+            "hidden": false,
+            "id": "6172-0882-601e-65e8",
+            "targetId": "retinues-category",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c3d1-b5d7-729b-5164"
+              }
+            ]
+          },
+          {
+            "name": "Heavy Transport",
+            "hidden": false,
+            "id": "a60a-99f6-fe90-0f6f",
+            "targetId": "heavy-transport-category",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "07d0-b677-e7c6-b4a0"
+              }
+            ]
+          },
+          {
+            "name": "Auxillary",
+            "hidden": false,
+            "id": "10f9-7054-524d-ec21",
+            "targetId": "auxillary-category"
+          }
+        ]
+      },
+      {
+        "name": "Apothecarion Delegation",
+        "id": "apothecarion-delegation",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Auxillary",
+            "hidden": false,
+            "id": "6569-70fa-90ff-40eb",
+            "targetId": "auxillary-category"
+          },
+          {
+            "name": "Apothecary",
+            "hidden": false,
+            "id": "c1f9-03c3-ff68-159a",
+            "targetId": "apothecary-category",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "bc15-6009-3fa4-61c9"
+              },
+              {
+                "type": "max",
+                "value": 6,
+                "field": "selections",
+                "scope": "parent",
+                "shared": false,
+                "id": "06ed-d8de-6443-3442"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Techmarine Covenant",
+        "id": "techmarine-covenant",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Auxillary",
+            "hidden": false,
+            "id": "fa56-ae4e-9aff-ce65",
+            "targetId": "auxillary-category"
+          },
+          {
+            "name": "Techmarine",
+            "hidden": false,
+            "id": "746c-3ca6-618b-21d3",
+            "targetId": "techmarine-category",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 6,
+                "field": "selections",
+                "scope": "parent",
+                "shared": false,
+                "id": "9d71-4a77-3b03-85df"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Recon Demi-Company",
+        "id": "recon-demi-company",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Auxillary",
+            "hidden": false,
+            "id": "c87f-5413-996c-7fb4",
+            "targetId": "auxillary-category"
+          },
+          {
+            "name": "Reconnaissance Squad",
+            "hidden": false,
+            "id": "8bdb-9d99-72fb-8219",
+            "targetId": "reconnaissance-squad-category",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 3,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b54b-4940-ea77-5b8a"
+              }
+            ]
+          },
+          {
+            "name": "Fast Attack",
+            "hidden": false,
+            "id": "be58-4d5b-b02a-9c35",
+            "targetId": "fast-attack-category",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "07a8-4455-3be2-5b04"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Storm Battery",
+        "id": "storm-battery-unit",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Auxillary",
+            "hidden": false,
+            "id": "bb4e-dc96-3bff-297b",
+            "targetId": "auxillary-category"
+          },
+          {
+            "name": "Storm Battery Armour",
+            "hidden": false,
+            "id": "93d6-b944-f67e-c8cd",
+            "targetId": "storm-battery-armour",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b81a-d75e-f484-df70"
+              }
+            ]
+          },
+          {
+            "name": "Rapier Battery",
+            "hidden": false,
+            "id": "0207-1ce7-ad02-2730",
+            "targetId": "rapier-battery-category",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "36ae-6e8b-e36a-b2a7"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "categoryEntries": [
+      {
+        "name": "Veteran Cadre",
+        "id": "veteran-cadre-category",
+        "hidden": false,
+        "constraints": [
+          {
+            "type": "max",
+            "value": 0,
+            "field": "selections",
+            "scope": "roster",
+            "shared": false,
+            "id": "7189-a9dc-75cf-c0e9",
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "7189-a9dc-75cf-c0e9",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "champion-category",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Apothecary",
+        "id": "apothecary-category",
+        "hidden": false
+      },
+      {
+        "name": "Techmarine",
+        "id": "techmarine-category",
+        "hidden": false
+      },
+      {
+        "name": "Reconnaissance Squad",
+        "id": "reconnaissance-squad-category",
+        "hidden": false
+      },
+      {
+        "name": "Rapier Battery",
+        "id": "rapier-battery-category",
+        "hidden": false
+      },
+      {
+        "name": "Storm Battery Armour",
+        "id": "storm-battery-armour",
+        "hidden": false
+      }
+    ],
+    "catalogueLinks": [
+      {
+        "type": "catalogue",
+        "name": "Astartes shared wargear",
+        "id": "f01f-9dd3-bdde-110e",
+        "targetId": "05a0-8d04-800c-0c17"
+      }
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Gravis Power Fist",
+        "typeId": "weapon",
+        "typeName": "Weapon",
+        "hidden": false,
+        "id": "gravis-power-fist-profile",
+        "characteristics": [
+          {
+            "name": "Range",
+            "typeId": "range",
+            "$text": "Melee"
+          },
+          {
+            "name": "Range Strength",
+            "typeId": "range-strength",
+            "$text": "Melee"
+          },
+          {
+            "name": "Fire Power",
+            "typeId": "fire-power",
+            "$text": "Melee"
+          },
+          {
+            "name": "Melee Strength",
+            "typeId": "melee-strength",
+            "$text": "+3"
+          },
+          {
+            "name": "Damage",
+            "typeId": "damage",
+            "$text": "3"
+          },
+          {
+            "name": "Attacks",
+            "typeId": "weapon-attacks",
+            "$text": "A"
+          },
+          {
+            "name": "Initiative",
+            "typeId": "weapon-initiative",
+            "$text": "I"
+          }
+        ]
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "Firestorm",
+        "id": "firestorm",
+        "hidden": false,
+        "description": "A Model with this Special Rule does not have to make Volley Attacks as Snap Shots.\nWhen a Model with this Special Rule makes Volley Attacks, it is not required to fire Snap Shots. In addition, after making Volley Attacks in Step 4 of the Charge Procedure, a Unit containing any Models with this Special Rule is not required to make a Charge Roll in Step 5. If the Controlling Player chooses not to make a Charge Roll in Step 5 of the Charge Procedure then the Charge Procedure ends immediately. ",
+        "publicationId": "liber-astartes"
+      },
+      {
+        "name": "Melta (X)",
+        "id": "melta",
+        "hidden": false,
+        "publicationId": "liber-astartes",
+        "description": "This Special Rule increases the amount of Damage against Vehicles when Shooting Attacks are made\nwithin a specific range.\nIf at least one Model in a Unit with the Vehicle Type that is targeted by a Shooting Attack made by a Model using a Weapon with this Special Rule is within a range equal to\nor less than the value specified by X, that attack has the Armourbane Special Rule and the Damage of Penetrating Hits caused by that attack is doubled. \n\n"
+      },
+      {
+        "name": "Aflame",
+        "id": "aflame",
+        "hidden": false,
+        "publicationId": "liber-astartes",
+        "description": "A Weapon with this Special Rule causes additional modifiers to a Target's Leadership Characteristic,\nIf a Melee Attack made for a Weapon or Mode] with this Special Rule inflicts one or more wounds on a Target Unit, regardless of whether any Damage is inflicted until the end of the Phase, that Unit is considered to be ‘flame’. If the Controlling Player of a Unit that is aflame is required to make a Leadership Check during that Phase for a Combat that includes that Unit, the value of x on this Special Rule is applied as an additional negative modifier to the Leadership Characteristic being used for that Check. "
+      },
+      {
+        "name": "Overload (X)",
+        "id": "overload",
+        "hidden": false,
+        "publicationId": "liber-astartes"
+      },
+      {
+        "name": "Medic (X)",
+        "id": "medic",
+        "hidden": false,
+        "description": "This Special Rule determines the difficulty of any Recovery Tests made due to other Reactions or Special Rules. \nIf a Unit includes one or more Models with the Medic Special Rule, then certain other Special Rules, or Gambits may allow the Controlling Player Recovery Tests for other Models in the same that the Medic (X) Special Rule does not allow Tests to be made, but simply establishes the Target Number for such Tests - Recovery Tests may\nmade if another Special Rule, Reaction or Gambit allows them (see, for example, the Medic Advanced Reaction).",
+        "publicationId": "liber-astartes"
+      },
+      {
+        "name": "Recovery Tests",
+        "id": "recovery-tests",
+        "hidden": false,
+        "publicationId": "liber-astartes",
+        "description": " A Recovery Test is made when one or m Wounds are allocated to a Model, and is resolved rolling a Dice and comparing the result to.\nIf there is more than one variant of the Special Rule present in a Unit, then the Player chooses which is used to determine Target Number. If the Recovery Test is success single Unsaved Wound allocated the its Damage reduced by 1(to a minimum of 0) If a Recovery Test is failed, then any Unsaved Wounds allocated to the Model are resolved as normal."
+      },
+      {
+        "name": "Shot Selector",
+        "id": "shot-selector",
+        "hidden": false,
+        "publicationId": "liber-astartes",
+        "description": "Weapons with this Special Rule gain one optional additional Special Rule when used to attack.\nWhen a Shooting Attack is made that include Weapons with this Special Rule, at the start of Step 3 of the Shooting Attack procedure, the Attacking Player can select one of the following Special Rules for all Weapons with this Special Rules to gain until the end of this Shooting Attack:\n- Panic (1)\n- Breaching (4+)\n- Suppressive (2) \n\n"
+      },
+      {
+        "name": "Slow and Purposeful",
+        "id": "slow-and-purposeful",
+        "hidden": false,
+        "publicationId": "liber-astartes",
+        "description": "Models with this Special Rule cannot Pursue fleeing enemy Units.\nIn Step 4 of the Resolution Sub-Phase, a Player that has won Combat cannot choose for a Unit that includes and Models with this Special Rule to Pursue, and must instead select another eligible option for that Unit."
+      },
+      {
+        "name": "Void Shields",
+        "id": "void-shields",
+        "hidden": false,
+        "publicationId": "liber-astartes",
+        "description": "A Model with this Special Rule ignores Penetrating Hits as long as it still has active void shields. \nA Model with this Special Rule has a number of void shields equal to the value of X. While a Model with this Special Rule still has void shields, each time that Model suffers a Penetrating Hit as a result of a Shooting Attack, reduce the Damage of that Penetrating Hit to ‘0’ and reduce the number of void shields this Model has by 1. If the number of void shields a Model has is reduced to 0, this Special Rule has no further effect during that battle. "
+      }
+    ]
+  }
+}
