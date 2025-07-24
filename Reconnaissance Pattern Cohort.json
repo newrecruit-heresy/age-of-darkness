@@ -1,0 +1,21 @@
+{
+  "catalogue": {
+    "library": false,
+    "id": "reconnaissance-pattern-cohort",
+    "name": "Reconnaissance Pattern Cohort",
+    "gameSystemId": "sys-41d4-b033-8ca9-9bb0",
+    "gameSystemRevision": 3,
+    "revision": 1,
+    "battleScribeVersion": "2.03",
+    "catalogueLinks": [
+      {
+        "type": "catalogue",
+        "name": "Solar Auxilia",
+        "id": "04a2-360b-5b54-407f",
+        "importRootEntries": true,
+        "targetId": "SolarAuxilia"
+      }
+    ],
+    "type": "catalogue"
+  }
+}

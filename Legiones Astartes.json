@@ -148,11 +148,11 @@
         "entryLinks": [
           {
             "import": true,
-            "name": "Auxillary Doubler",
+            "name": "Officer of the Line (2)",
             "hidden": false,
             "id": "9149-2d5a-b10d-0209",
             "type": "selectionEntry",
-            "targetId": "auxillary-doubler"
+            "targetId": "officer-of-the-line-entry-two"
           }
         ],
         "constraints": [
@@ -1213,7 +1213,6 @@
             ],
             "categoryLinks": [
               {
-                "type": "category",
                 "name": "Graviton",
                 "hidden": false,
                 "id": "f59f-4f21-29c1-5df3",
