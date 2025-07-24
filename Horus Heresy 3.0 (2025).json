@@ -158,8 +158,8 @@
                 "repeats": 1,
                 "field": "selections",
                 "scope": "roster",
-                "childId": "officer-of-the-line-entry-two",
-                "shared": true,
+                "childId": "officer-of-the-line-category",
+                "shared": false,
                 "roundUp": false,
                 "includeChildSelections": true,
                 "includeChildForces": true
@@ -308,6 +308,90 @@
         "name": "Officer of the Line",
         "id": "officer-of-the-line-category",
         "hidden": false
+      },
+      {
+        "name": "Line (1)",
+        "id": "line-category-one",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Line (X)",
+            "id": "e9c8-a78e-f3cc-b927",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "f4ef-50b3-1e38-a10d"
+          }
+        ]
+      },
+      {
+        "name": "Line (2)",
+        "id": "line-category-two",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Line (X)",
+            "id": "08cf-3514-962f-918e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "f4ef-50b3-1e38-a10d"
+          }
+        ]
+      },
+      {
+        "name": "Line (3)",
+        "id": "line-category-othree",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Line (X)",
+            "id": "c3aa-44f3-b763-3194",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "f4ef-50b3-1e38-a10d"
+          }
+        ]
+      },
+      {
+        "name": "Vanguard (1)",
+        "id": "vanguard-category-one",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Vanguard (X)",
+            "id": "2a06-6f82-cdfb-6286",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8822-66c2-a2de-b194"
+          }
+        ]
+      },
+      {
+        "name": "Vanguard (2)",
+        "id": "vanguard-category-2",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Vanguard (X)",
+            "id": "7ee2-3582-57dc-1136",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8822-66c2-a2de-b194"
+          }
+        ]
+      },
+      {
+        "name": "Vanguard (3)",
+        "id": "vanguard-category-3",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Vanguard (X)",
+            "id": "f467-68ca-ef2d-ed62",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8822-66c2-a2de-b194"
+          }
+        ]
       }
     ],
     "forceEntries": [
@@ -955,12 +1039,6 @@
             "hidden": false,
             "id": "0a88-a958-0b24-4ff7",
             "targetId": "heavy-transport-category"
-          },
-          {
-            "name": "High Command",
-            "hidden": false,
-            "id": "7e51-8770-431b-7996",
-            "targetId": "high-command"
           },
           {
             "name": "Recon",
@@ -1841,11 +1919,10 @@
         ],
         "categoryLinks": [
           {
-            "targetId": "officer-of-the-line",
-            "id": "bb34-e1a2-63cd-3594",
+            "targetId": "officer-of-the-line-category",
+            "id": "422a-235e-c209-d04f",
             "primary": true,
-            "name": "Officer of the Line (X)",
-            "type": "rule"
+            "name": "Officer of the Line"
           }
         ]
       },
