@@ -1,0 +1,21 @@
+{
+  "catalogue": {
+    "library": false,
+    "id": "ultima-pattern-cohort",
+    "name": "Ultima Pattern Cohort",
+    "gameSystemId": "sys-41d4-b033-8ca9-9bb0",
+    "gameSystemRevision": 3,
+    "revision": 1,
+    "battleScribeVersion": "2.03",
+    "catalogueLinks": [
+      {
+        "type": "catalogue",
+        "name": "Solar Auxilia",
+        "id": "79f5-5f3b-acf6-678b",
+        "importRootEntries": true,
+        "targetId": "SolarAuxilia"
+      }
+    ],
+    "type": "catalogue"
+  }
+}

@@ -1,1 +1,20 @@
-{"catalogue":{"library":false,"id":"ix","name":"Blood Angels","gameSystemId":"sys-41d4-b033-8ca9-9bb0","gameSystemRevision":2,"revision":1,"battleScribeVersion":"2.03","catalogueLinks":[{"type":"catalogue","name":"Legiones Astartes","id":"48de-2b2f-77f6-c4e6","targetId":"la"}],"type":"catalogue"}}
+{
+    "catalogue": {
+        "library": false,
+        "id": "ix",
+        "name": "Blood Angels",
+        "gameSystemId": "sys-41d4-b033-8ca9-9bb0",
+        "gameSystemRevision": 2,
+        "revision": 1,
+        "battleScribeVersion": "2.03",
+        "catalogueLinks": [
+            {
+                "type": "catalogue",
+                "name": "Legiones Astartes",
+                "id": "48de-2b2f-77f6-c4e6",
+                "targetId": "la"
+            }
+        ],
+        "type": "catalogue"
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "catalogue": {
+    "library": false,
+    "id": "iron-pattern-cohort",
+    "name": "Iron Pattern Cohort",
+    "gameSystemId": "sys-41d4-b033-8ca9-9bb0",
+    "gameSystemRevision": 3,
+    "revision": 1,
+    "battleScribeVersion": "2.03",
+    "catalogueLinks": [
+      {
+        "type": "catalogue",
+        "name": "Solar Auxilia",
+        "id": "0f2e-8796-dd04-ef2b",
+        "importRootEntries": true,
+        "targetId": "SolarAuxilia"
+      }
+    ],
+    "type": "catalogue"
+  }
+}

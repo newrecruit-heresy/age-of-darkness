@@ -1,0 +1,21 @@
+{
+  "catalogue": {
+    "library": false,
+    "id": "siege-pattern-cohort",
+    "name": "Siege Pattern Cohort",
+    "gameSystemId": "sys-41d4-b033-8ca9-9bb0",
+    "gameSystemRevision": 3,
+    "revision": 1,
+    "battleScribeVersion": "2.03",
+    "catalogueLinks": [
+      {
+        "type": "catalogue",
+        "name": "Solar Auxilia",
+        "id": "1840-7ebc-9a6b-d2c9",
+        "importRootEntries": true,
+        "targetId": "SolarAuxilia"
+      }
+    ],
+    "type": "catalogue"
+  }
+}

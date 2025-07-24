@@ -1,1 +1,21 @@
-{"catalogue":{"library":false,"id":"xiv","name":"Death Guard","gameSystemId":"sys-41d4-b033-8ca9-9bb0","gameSystemRevision":1,"revision":1,"battleScribeVersion":"2.03","type":"catalogue","catalogueLinks":[{"type":"catalogue","name":"Legiones Astartes","id":"ab0f-2b17-f1db-85d2","targetId":"la","importRootEntries":true}]}}
+{
+    "catalogue": {
+        "library": false,
+        "id": "xiv",
+        "name": "Death Guard",
+        "gameSystemId": "sys-41d4-b033-8ca9-9bb0",
+        "gameSystemRevision": 1,
+        "revision": 1,
+        "battleScribeVersion": "2.03",
+        "type": "catalogue",
+        "catalogueLinks": [
+            {
+                "type": "catalogue",
+                "name": "Legiones Astartes",
+                "id": "ab0f-2b17-f1db-85d2",
+                "targetId": "la",
+                "importRootEntries": true
+            }
+        ]
+    }
+}

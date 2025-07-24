@@ -1,0 +1,21 @@
+{
+  "catalogue": {
+    "library": false,
+    "id": "solar-pattern-cohort",
+    "name": "Solar Pattern Cohort",
+    "gameSystemId": "sys-41d4-b033-8ca9-9bb0",
+    "gameSystemRevision": 3,
+    "revision": 1,
+    "battleScribeVersion": "2.03",
+    "catalogueLinks": [
+      {
+        "type": "catalogue",
+        "name": "Solar Auxilia",
+        "id": "baca-0ca7-b593-152c",
+        "importRootEntries": true,
+        "targetId": "SolarAuxilia"
+      }
+    ],
+    "type": "catalogue"
+  }
+}
