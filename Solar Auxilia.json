@@ -21,6 +21,12 @@
             "id": "a762-751c-3246-cca8",
             "primary": true,
             "name": "High Command"
+          },
+          {
+            "targetId": "line-category-two",
+            "id": "8bcd-51b2-6318-f554",
+            "primary": false,
+            "name": "Line (2)"
           }
         ],
         "costs": [
@@ -63,6 +69,51 @@
                 "shared": true,
                 "id": "72f6-4fbf-5a86-ad89-max"
               }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Melee and Pistol",
+                "hidden": false,
+                "id": "92a8-6998-a6fd-74df",
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Auxilia Melee Weapons",
+                    "hidden": false,
+                    "id": "977d-9821-1961-1bc3",
+                    "type": "selectionEntryGroup",
+                    "targetId": "auxilia-melee"
+                  },
+                  {
+                    "import": true,
+                    "name": "Auxilia Pistols",
+                    "hidden": false,
+                    "id": "bc1f-e4ad-d174-b38d",
+                    "type": "selectionEntryGroup",
+                    "targetId": "auxilia-pistols"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1fed-a01b-561c-b511-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1fed-a01b-561c-b511-max"
+                  }
+                ]
+              }
             ]
           },
           {
@@ -97,6 +148,209 @@
                 "id": "3530-c2be-235a-9939"
               }
             ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Any Model in this Unit with a lasrifle may have any of the following selected for it:",
+            "id": "6ae7-b590-fab8-19af",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Blast Charger",
+                "hidden": false,
+                "id": "d8f0-5bf9-68de-d3cd",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Bayonet",
+                "hidden": false,
+                "id": "c0bb-0e35-73be-cf85",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1e90-a6e8-3dfe-b7e4",
+                "includeChildSelections": false
+              }
+            ],
+            "collapsible": false,
+            "collective": true,
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "1e90-a6e8-3dfe-b7e4",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "LegatineCommandSection ",
+                    "childId": "ef80-0e71-31d1-6820",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "0e28-8f24-1088-bd63"
+          },
+          {
+            "name": " Any Lifeward in this Unit may have its lasrifle following exchanged for",
+            "id": "4a86-c1da-b037-6630",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Lasrifle",
+                "hidden": false,
+                "id": "ef80-0e71-31d1-6820"
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Melee and Pistol",
+                "hidden": false,
+                "id": "b228-d3c0-a70e-f692",
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Auxilia Melee Weapons",
+                    "hidden": false,
+                    "id": "62bb-37ad-2009-b876",
+                    "type": "selectionEntryGroup",
+                    "targetId": "auxilia-melee"
+                  },
+                  {
+                    "import": true,
+                    "name": "Auxilia Pistols",
+                    "hidden": false,
+                    "id": "d2d2-388a-56b8-912b",
+                    "type": "selectionEntryGroup",
+                    "targetId": "auxilia-pistols"
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "ef80-0e71-31d1-6820",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "78cb-f434-7a96-ce2c-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "78cb-f434-7a96-ce2c-max",
+                "includeChildSelections": false
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "78cb-f434-7a96-ce2c-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "Lifeward",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": true
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "78cb-f434-7a96-ce2c-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "Lifeward",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Auxilia Vexilla",
+            "hidden": false,
+            "id": "e86a-68e1-6997-05a4",
+            "type": "selectionEntry",
+            "targetId": "auxilia-vexilla"
+          },
+          {
+            "import": true,
+            "name": "Cohorts Vexilla",
+            "hidden": false,
+            "id": "ddc8-705d-388f-e1a9",
+            "type": "selectionEntry",
+            "targetId": "cohorts-vexilla"
+          },
+          {
+            "import": true,
+            "name": "Melta bombs",
+            "hidden": false,
+            "id": "3b2b-d65d-0477-6a0c",
+            "type": "selectionEntry",
+            "targetId": "761a-1b86-42ef-8b5e"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "4763-2ec0-d095-686c",
+            "includeChildSelections": false
           }
         ]
       },
@@ -156,6 +410,69 @@
                 "typeId": "points",
                 "value": 52
               }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Officer of the Line (2)",
+                "hidden": false,
+                "id": "6fdc-3e69-a887-80c2",
+                "type": "selectionEntry",
+                "targetId": "officer-of-the-line-entry-two"
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "line-category-one",
+                "id": "facd-4966-9799-4912",
+                "primary": false,
+                "name": "Line (1)"
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Melee and Pistol",
+                "hidden": false,
+                "id": "dcd6-91d7-add6-29bc",
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Auxilia Melee Weapons",
+                    "hidden": false,
+                    "id": "5dad-425f-81f6-3313",
+                    "type": "selectionEntryGroup",
+                    "targetId": "auxilia-melee"
+                  },
+                  {
+                    "import": true,
+                    "name": "Auxilia Pistols",
+                    "hidden": false,
+                    "id": "b9f5-24a4-d9ac-5d34",
+                    "type": "selectionEntryGroup",
+                    "targetId": "auxilia-pistols"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "35d9-5dd4-a10a-9f64-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "35d9-5dd4-a10a-9f64-max"
+                  }
+                ]
+              }
             ]
           }
         ],
@@ -195,6 +512,204 @@
             "id": "ebf6-a856-c4e6-ce1a",
             "type": "selectionEntry",
             "targetId": "prime-command"
+          },
+          {
+            "import": true,
+            "name": "Augury Scanner",
+            "hidden": false,
+            "id": "01ea-a63e-0960-c99c",
+            "type": "selectionEntry",
+            "targetId": "solar-aux-augury-scanner"
+          },
+          {
+            "import": true,
+            "name": "Auxilia Vexilla",
+            "hidden": false,
+            "id": "81fa-8460-927c-1585",
+            "type": "selectionEntry",
+            "targetId": "auxilia-vexilla"
+          },
+          {
+            "import": true,
+            "name": "Cohorts Vexilla",
+            "hidden": false,
+            "id": "2baa-232a-d1b1-0807",
+            "type": "selectionEntry",
+            "targetId": "cohorts-vexilla"
+          },
+          {
+            "import": true,
+            "name": "Melta bombs",
+            "hidden": false,
+            "id": "5874-e6de-063f-01df",
+            "type": "selectionEntry",
+            "targetId": "761a-1b86-42ef-8b5e"
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Any Model in this Unit with a lasrifle may have any of the following selected for it:",
+            "id": "3cca-b0fa-8175-4464",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Blast Charger",
+                "hidden": false,
+                "id": "f2b5-6208-cb1f-d8f3",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Bayonet",
+                "hidden": false,
+                "id": "0d30-bd20-4159-afdb",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1130-bc9b-6d30-c272",
+                "includeChildSelections": false
+              }
+            ],
+            "collapsible": false,
+            "collective": true,
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "1130-bc9b-6d30-c272",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "TacticalCommandSection",
+                    "childId": "1651-0d89-7a2c-896f",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "0e28-8f24-1088-bd63"
+          },
+          {
+            "name": " Any Companion n this Unit may have its lasrifle following exchanged for",
+            "id": "e26d-8976-a222-03dc",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Lasrifle",
+                "hidden": false,
+                "id": "1651-0d89-7a2c-896f"
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Melee and Pistol",
+                "hidden": false,
+                "id": "8070-7fa2-f3af-877b",
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Auxilia Melee Weapons",
+                    "hidden": false,
+                    "id": "4fa5-fe89-b26f-e519",
+                    "type": "selectionEntryGroup",
+                    "targetId": "auxilia-melee"
+                  },
+                  {
+                    "import": true,
+                    "name": "Auxilia Pistols",
+                    "hidden": false,
+                    "id": "0a22-c760-a44c-408d",
+                    "type": "selectionEntryGroup",
+                    "targetId": "auxilia-pistols"
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "ef80-0e71-31d1-6820",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "beaa-b9bf-3edc-aebe-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "beaa-b9bf-3edc-aebe-max",
+                "includeChildSelections": false
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "beaa-b9bf-3edc-aebe-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "4d87-b179-38a4-1c78",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": true
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "beaa-b9bf-3edc-aebe-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "4d87-b179-38a4-1c78",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
@@ -244,6 +759,51 @@
                 "shared": true,
                 "id": "bb7c-2e26-5a6f-ccb1-max"
               }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Melee and Pistol",
+                "hidden": false,
+                "id": "7e49-d538-ab52-2f07",
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Auxilia Melee Weapons",
+                    "hidden": false,
+                    "id": "5fbc-62b0-ce77-4ea0",
+                    "type": "selectionEntryGroup",
+                    "targetId": "auxilia-melee"
+                  },
+                  {
+                    "import": true,
+                    "name": "Auxilia Pistols",
+                    "hidden": false,
+                    "id": "7534-8d0b-72d7-0490",
+                    "type": "selectionEntryGroup",
+                    "targetId": "auxilia-pistols"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9d31-907e-59b9-5066-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "9d31-907e-59b9-5066-max"
+                  }
+                ]
+              }
             ]
           }
         ],
@@ -283,6 +843,38 @@
             "id": "7829-b3f0-5d48-264f",
             "type": "selectionEntry",
             "targetId": "prime-command"
+          },
+          {
+            "import": true,
+            "name": "Melta bombs",
+            "hidden": false,
+            "id": "4cae-e0bc-10c6-8e8a",
+            "type": "selectionEntry",
+            "targetId": "761a-1b86-42ef-8b5e"
+          },
+          {
+            "import": true,
+            "name": "Command Vox",
+            "hidden": false,
+            "id": "0b63-761a-b6fc-6235",
+            "type": "selectionEntry",
+            "targetId": "solar-aux-command-vox"
+          },
+          {
+            "import": true,
+            "name": "Augury Scanner",
+            "hidden": false,
+            "id": "2f7f-c239-a2dc-cb67",
+            "type": "selectionEntry",
+            "targetId": "solar-aux-augury-scanner"
+          },
+          {
+            "import": true,
+            "name": "Auxilia Vexilla",
+            "hidden": false,
+            "id": "82b6-0be7-e6aa-1fb0",
+            "type": "selectionEntry",
+            "targetId": "auxilia-vexilla"
           }
         ],
         "categoryLinks": [
@@ -291,6 +883,76 @@
             "id": "4337-3a20-646a-5e02",
             "primary": true,
             "name": "Command"
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Any Model in this Unit with a lasrifle may have any of the following selected for it:",
+            "id": "229a-ce88-15b8-8e98",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Blast Charger",
+                "hidden": false,
+                "id": "f7cb-31f6-8474-e4c7",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Bayonet",
+                "hidden": false,
+                "id": "0bdc-ffb9-b1b4-9d11",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f874-ddfb-642d-e65a",
+                "includeChildSelections": false
+              }
+            ],
+            "collapsible": false,
+            "collective": true,
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "f874-ddfb-642d-e65a",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "LineCommandSection",
+                    "childId": "3061-8fb4-bba9-aac9",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "0e28-8f24-1088-bd63"
           }
         ]
       },
@@ -345,6 +1007,30 @@
             "id": "38e1-b048-9c57-4967",
             "type": "selectionEntry",
             "targetId": "prime-command"
+          },
+          {
+            "import": true,
+            "name": "Augury Scanner",
+            "hidden": false,
+            "id": "1337-57bf-b547-2258",
+            "type": "selectionEntry",
+            "targetId": "solar-aux-augury-scanner"
+          },
+          {
+            "import": true,
+            "name": "Auxilia Vexilla",
+            "hidden": false,
+            "id": "9d87-fea4-622b-b11d",
+            "type": "selectionEntry",
+            "targetId": "auxilia-vexilla"
+          },
+          {
+            "import": true,
+            "name": "Command Vox",
+            "hidden": false,
+            "id": "a0f0-afc7-ff9c-2eaa",
+            "type": "selectionEntry",
+            "targetId": "solar-aux-command-vox"
           }
         ],
         "selectionEntries": [
@@ -380,6 +1066,66 @@
                 "id": "76a3-7587-96b6-4150-max",
                 "includeChildSelections": false
               }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "The First Prime in this Unit may have its volkite charger exchanged for",
+                "id": "0e7e-49f8-2ca1-7abd",
+                "hidden": false,
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Volkite Charger",
+                    "hidden": false,
+                    "id": "08c3-b0ee-4169-f536"
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Melee and Pistol",
+                    "hidden": false,
+                    "id": "2511-5a42-4a14-4aff",
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Auxilia Melee Weapons",
+                        "hidden": false,
+                        "id": "0485-ea7f-3552-6388",
+                        "type": "selectionEntryGroup",
+                        "targetId": "auxilia-melee"
+                      },
+                      {
+                        "import": true,
+                        "name": "Auxilia Pistols",
+                        "hidden": false,
+                        "id": "8267-2792-62af-5aba",
+                        "type": "selectionEntryGroup",
+                        "targetId": "auxilia-pistols"
+                      }
+                    ]
+                  }
+                ],
+                "defaultSelectionEntryId": "6aa4-98af-d298-678f",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5ff4-682b-cca3-3600-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5ff4-682b-cca3-3600-max"
+                  }
+                ]
+              }
             ]
           }
         ],
@@ -389,6 +1135,97 @@
             "id": "e66c-e4f0-8a8c-4fdf",
             "primary": true,
             "name": "Command"
+          },
+          {
+            "targetId": "vanguard-category-3",
+            "id": "bb6c-69bc-38c5-cde8",
+            "primary": false,
+            "name": "Vanguard (3)"
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Veletarii Weapon",
+            "id": "3ff8-f1fa-74d7-2bcb",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Volkite Charger",
+                "hidden": false,
+                "id": "b203-1fb4-6f4e-83ff"
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Storm Axe",
+                "hidden": false,
+                "id": "eaf9-d412-4364-5092",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 3
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": false,
+                "id": "0598-89b9-6ea1-02ae-min"
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": false,
+                "id": "0598-89b9-6ea1-02ae-max"
+              }
+            ],
+            "collapsible": false,
+            "collective": true,
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "0598-89b9-6ea1-02ae-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "ec32-9884-abd2-3905",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "0598-89b9-6ea1-02ae-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "ec32-9884-abd2-3905",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "0e28-8f24-1088-bd63"
           }
         ]
       },
@@ -492,6 +1329,110 @@
             "type": "selectionEntry",
             "targetId": "prime-command"
           }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Any Model in this Unit may have its multi-laser exchanged for one of the following:",
+            "id": "9529-8101-9337-5ad2",
+            "hidden": false,
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "42df-96ed-0b1c-225e-min"
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "42df-96ed-0b1c-225e-max"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "42df-96ed-0b1c-225e-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "HermesLightCategory",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "42df-96ed-0b1c-225e-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "HermesLightCategory",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Multi-laser",
+                "hidden": false,
+                "id": "67c0-cc90-a19b-cf9c"
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Grenade launcher",
+                "hidden": false,
+                "id": "05c9-424f-e5b4-3c70",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 5
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Volkite caliver",
+                "hidden": false,
+                "id": "f755-a7a3-f0d9-a087"
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Heavy flamer",
+                "hidden": false,
+                "id": "e513-2f4d-37de-1fb7",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 3
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "67c0-cc90-a19b-cf9c"
+          }
         ]
       },
       {
@@ -577,11 +1518,35 @@
           },
           {
             "import": true,
-            "name": "Artillery Tercio Entry",
+            "name": "Command Vox",
             "hidden": false,
-            "id": "3dac-5f8f-b05e-c156",
+            "id": "214c-03bf-1ea5-f115",
             "type": "selectionEntry",
-            "targetId": "artillery-tercio-entry"
+            "targetId": "solar-aux-command-vox"
+          },
+          {
+            "import": true,
+            "name": "Augury Scanner",
+            "hidden": false,
+            "id": "024d-9708-0143-2396",
+            "type": "selectionEntry",
+            "targetId": "solar-aux-augury-scanner"
+          },
+          {
+            "import": true,
+            "name": "Auxilia Vexilla",
+            "hidden": false,
+            "id": "746e-0369-5c63-3fe4",
+            "type": "selectionEntry",
+            "targetId": "auxilia-vexilla"
+          },
+          {
+            "import": true,
+            "name": "Melta bombs",
+            "hidden": false,
+            "id": "d5e4-2506-096a-7eb5",
+            "type": "selectionEntry",
+            "targetId": "761a-1b86-42ef-8b5e"
           }
         ],
         "categoryLinks": [
@@ -590,6 +1555,76 @@
             "id": "8b36-4a3c-d658-ffe3",
             "primary": true,
             "name": "Command"
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Any Model in this Unit with a lasrifle may have any of the following selected for it:",
+            "id": "3ec1-0ff9-9656-3464",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Blast Charger",
+                "hidden": false,
+                "id": "8b20-462c-f1dc-dbed",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Bayonet",
+                "hidden": false,
+                "id": "dd7c-83ec-63b4-6e95",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3ac4-1e75-1690-4c61",
+                "includeChildSelections": false
+              }
+            ],
+            "collapsible": false,
+            "collective": true,
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "3ac4-1e75-1690-4c61",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "7227-b6c9-5b61-37fc",
+                    "childId": "61b5-384f-f3ea-b7cd",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "0e28-8f24-1088-bd63"
           }
         ]
       },
@@ -627,11 +1662,103 @@
           },
           {
             "import": true,
-            "name": "Armour Tercio Entry",
+            "name": "Auxilia Hull Weapons list",
             "hidden": false,
-            "id": "9b76-8af4-ac03-5d9f",
-            "type": "selectionEntry",
-            "targetId": "armour-tercio-entry"
+            "id": "69c0-c90c-43cf-a4c4",
+            "type": "selectionEntryGroup",
+            "targetId": "AuxiliaHullWeaponslist"
+          },
+          {
+            "import": true,
+            "name": "Auxilia Pintle Weapons list",
+            "hidden": false,
+            "id": "6ddf-d67e-8de4-ae60",
+            "type": "selectionEntryGroup",
+            "targetId": "auxilia-pintle-weapons-list"
+          },
+          {
+            "import": true,
+            "name": "This model may have any of the following selected for it:",
+            "hidden": false,
+            "id": "2d72-f0d8-5056-e317",
+            "type": "selectionEntryGroup",
+            "targetId": "solar-aux-vehicle-upgrades"
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "This Model may have its battlecannon exchanged for one of the following:",
+            "id": "armoured-command-section-turret-weapon",
+            "hidden": false,
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Turret Mounted Battlecannon",
+                "hidden": false,
+                "id": "c442-0857-ca67-6a48",
+                "type": "selectionEntry",
+                "targetId": "battlecannon"
+              },
+              {
+                "import": true,
+                "name": "Turret Mounted Volkite Macro-saker",
+                "hidden": false,
+                "id": "9215-88c8-e2e1-f92f",
+                "type": "selectionEntry",
+                "targetId": "turret-mounted-volkite-macro-saker"
+              },
+              {
+                "import": true,
+                "name": "Turret Mounted Vanquisher Cannon and one Co-axial (Vanquisher Cannon) Mounted Heavy Stubber",
+                "hidden": false,
+                "id": "772a-199e-7283-6f9a",
+                "type": "selectionEntry",
+                "targetId": "54aa-e7df-5fab-8314"
+              },
+              {
+                "import": true,
+                "name": "Turret Mounted Twin Lascannon",
+                "hidden": false,
+                "id": "ce3a-057a-df82-8aca",
+                "type": "selectionEntry",
+                "targetId": "turret-mounted-twin-lascannon"
+              },
+              {
+                "import": true,
+                "name": "Turret Mounted Demolisher Cannon",
+                "hidden": false,
+                "id": "8944-b9ad-ddf8-657b",
+                "type": "selectionEntry",
+                "targetId": "vanquisher-cannon"
+              },
+              {
+                "import": true,
+                "name": "Turret Mounted Executioner Plasma Destroyer",
+                "hidden": false,
+                "id": "f2d8-d863-15c1-f237",
+                "type": "selectionEntry",
+                "targetId": "gravis-autocannon"
+              }
+            ],
+            "defaultSelectionEntryId": "c442-0857-ca67-6a48",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "62c9-6ad8-4f0c-74c8-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "62c9-6ad8-4f0c-74c8-max"
+              }
+            ]
           }
         ]
       },
@@ -647,6 +1774,12 @@
             "id": "1669-0b24-5a32-3fa6",
             "primary": true,
             "name": "Elite"
+          },
+          {
+            "targetId": "vanguard-category-3",
+            "id": "2ee5-ad79-3424-9b3e",
+            "primary": false,
+            "name": "Vanguard (3)"
           }
         ],
         "page": "28",
@@ -672,8 +1805,7 @@
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
-                "id": "a7df-43c1-d0fa-e7e7-min",
-                "includeChildSelections": false
+                "id": "0c64-9df2-8c69-6b50-min"
               },
               {
                 "type": "max",
@@ -681,8 +1813,67 @@
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
-                "id": "a7df-43c1-d0fa-e7e7-max",
-                "includeChildSelections": false
+                "id": "0c64-9df2-8c69-6b50-max"
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "The Veletarii Prime in this Unit may have its volkite charger exchanged for:",
+                "id": "92ec-a458-86bf-0c60",
+                "hidden": false,
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Volkite Charger",
+                    "hidden": false,
+                    "id": "6aa4-98af-d298-678f"
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Melee and Pistol",
+                    "hidden": false,
+                    "id": "59d9-5543-40f6-f375",
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Auxilia Melee Weapons",
+                        "hidden": false,
+                        "id": "2f97-6850-063a-d74f",
+                        "type": "selectionEntryGroup",
+                        "targetId": "auxilia-melee"
+                      },
+                      {
+                        "import": true,
+                        "name": "Auxilia Pistols",
+                        "hidden": false,
+                        "id": "d483-8b64-a8c2-34ce",
+                        "type": "selectionEntryGroup",
+                        "targetId": "auxilia-pistols"
+                      }
+                    ]
+                  }
+                ],
+                "defaultSelectionEntryId": "6aa4-98af-d298-678f",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b5ed-5f6a-da59-b007-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b5ed-5f6a-da59-b007-max"
+                  }
+                ]
               }
             ]
           }
@@ -715,6 +1906,107 @@
                 "includeChildSelections": false
               }
             ]
+          },
+          {
+            "import": true,
+            "name": "Vox Interlock",
+            "hidden": false,
+            "id": "9f39-b0b0-6a14-5a04",
+            "type": "selectionEntry",
+            "targetId": "vox-interlock"
+          },
+          {
+            "import": true,
+            "name": "Auxilia Vexilla",
+            "hidden": false,
+            "id": "d515-1c48-892c-b84c",
+            "type": "selectionEntry",
+            "targetId": "auxilia-vexilla"
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Veletarii Weapon",
+            "id": "e3c0-ea4a-aa0e-ad2c",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Volkite Charger",
+                "hidden": false,
+                "id": "f0bd-d1d3-9bc8-3ec7"
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Storm Axe",
+                "hidden": false,
+                "id": "b40d-390a-652c-25cd",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 3
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": false,
+                "id": "7fe5-3c8c-16c6-c843-min"
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": false,
+                "id": "7fe5-3c8c-16c6-c843-max"
+              }
+            ],
+            "collapsible": false,
+            "collective": true,
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "7fe5-3c8c-16c6-c843-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "c68b-da87-6535-c06a",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "7fe5-3c8c-16c6-c843-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "c68b-da87-6535-c06a",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "0e28-8f24-1088-bd63"
           }
         ]
       },
@@ -730,6 +2022,12 @@
             "id": "3ecf-5317-bce8-d406",
             "primary": true,
             "name": "Elite"
+          },
+          {
+            "targetId": "vanguard-category-3",
+            "id": "e6d0-06c4-9324-4e13",
+            "primary": false,
+            "name": "Vanguard (3)"
           }
         ],
         "page": "29",
@@ -789,8 +2087,7 @@
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
-                "id": "ac02-36fd-7757-4537-min",
-                "includeChildSelections": false
+                "id": "8d73-1b54-7dd5-22e9-min"
               },
               {
                 "type": "max",
@@ -798,10 +2095,87 @@
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
-                "id": "ac02-36fd-7757-4537-max",
-                "includeChildSelections": false
+                "id": "8d73-1b54-7dd5-22e9-max"
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "The Veletarii Prime in this Unit may have its heavy flamer exchanged for:",
+                "id": "56ec-a197-0972-3991",
+                "hidden": false,
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Heavy flamer",
+                    "hidden": false,
+                    "id": "098a-133c-03e7-8f95"
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Melee and Pistol",
+                    "hidden": false,
+                    "id": "8959-1233-4da4-eb0e",
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Auxilia Melee Weapons",
+                        "hidden": false,
+                        "id": "2d95-f49c-2716-90fc",
+                        "type": "selectionEntryGroup",
+                        "targetId": "auxilia-melee"
+                      },
+                      {
+                        "import": true,
+                        "name": "Auxilia Pistols",
+                        "hidden": false,
+                        "id": "5e7f-4a28-dadb-925d",
+                        "type": "selectionEntryGroup",
+                        "targetId": "auxilia-pistols"
+                      }
+                    ]
+                  }
+                ],
+                "defaultSelectionEntryId": "098a-133c-03e7-8f95",
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "7a87-9f16-bf66-1e89-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "7a87-9f16-bf66-1e89-max"
+                  }
+                ]
               }
             ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Auxilia Vexilla",
+            "hidden": false,
+            "id": "6e26-fba0-666e-2d4a",
+            "type": "selectionEntry",
+            "targetId": "auxilia-vexilla"
+          },
+          {
+            "import": true,
+            "name": "Vox Interlock",
+            "hidden": false,
+            "id": "f183-703d-e059-3337",
+            "type": "selectionEntry",
+            "targetId": "vox-interlock"
           }
         ]
       },
@@ -953,7 +2327,150 @@
                 "id": "5168-91a3-4f14-9938-max",
                 "includeChildSelections": false
               }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Melta bombs",
+                "hidden": false,
+                "id": "0fab-d404-d13c-fd20",
+                "type": "selectionEntry",
+                "targetId": "761a-1b86-42ef-8b5e"
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Melee and Pistol",
+                "hidden": false,
+                "id": "5a9e-816e-d9c9-0a9f",
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Auxilia Melee Weapons",
+                    "hidden": false,
+                    "id": "979d-9e27-7b40-a6a4",
+                    "type": "selectionEntryGroup",
+                    "targetId": "auxilia-melee"
+                  },
+                  {
+                    "import": true,
+                    "name": "Auxilia Pistols",
+                    "hidden": false,
+                    "id": "ed24-a4b3-ac43-0575",
+                    "type": "selectionEntryGroup",
+                    "targetId": "auxilia-pistols"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5d6a-9264-3266-f678-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "5d6a-9264-3266-f678-max"
+                  }
+                ]
+              }
             ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Any Model in this Unit with a lasrifle may have any of the following selected for it:",
+            "id": "7977-cd2a-118d-55aa",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Blast Charger",
+                "hidden": false,
+                "id": "6d0e-744f-a31f-8fd5",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 1
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Bayonet",
+                "hidden": false,
+                "id": "652c-1a24-924d-1473",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 1
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3a73-d30a-901a-1d58",
+                "includeChildSelections": false
+              }
+            ],
+            "collapsible": false,
+            "collective": true,
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "3a73-d30a-901a-1d58",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "LasrifleSection",
+                    "childId": "LasAuxillary",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "0e28-8f24-1088-bd63"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Auxilia Vexilla",
+            "hidden": false,
+            "id": "0942-0868-846f-8bcf",
+            "type": "selectionEntry",
+            "targetId": "auxilia-vexilla"
+          },
+          {
+            "import": true,
+            "name": "Vox Interlock",
+            "hidden": false,
+            "id": "86f4-c045-9adb-6f1a",
+            "type": "selectionEntry",
+            "targetId": "vox-interlock"
           }
         ]
       },
@@ -985,7 +2502,17 @@
           }
         ],
         "publicationId": "liber-imperialis",
-        "page": "32"
+        "page": "32",
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Auxilia Pintle Weapons list",
+            "hidden": false,
+            "id": "19af-ea1f-0669-8502",
+            "type": "selectionEntryGroup",
+            "targetId": "auxilia-pintle-weapons-list"
+          }
+        ]
       },
       {
         "type": "unit",
@@ -1015,7 +2542,17 @@
           }
         ],
         "publicationId": "liber-imperialis",
-        "page": "33"
+        "page": "33",
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Auxilia Pintle Weapons list",
+            "hidden": false,
+            "id": "6372-4ec2-af61-12eb",
+            "type": "selectionEntryGroup",
+            "targetId": "auxilia-pintle-weapons-list"
+          }
+        ]
       },
       {
         "type": "unit",
@@ -1064,6 +2601,103 @@
                 "shared": true,
                 "id": "7c98-8214-1acc-2326",
                 "includeChildSelections": false
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Each Rapier Carrier in this Unit may have its Gravis multi-laser array exchanged for one of the following:",
+            "id": "solar-aux-rapier-weapon",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Gravis Multi-laser array",
+                "hidden": false,
+                "id": "Gravis-Multi-laser-array"
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Gravis heavy bolter battery",
+                "hidden": false,
+                "id": "Solar-aux-gravis-heavy-bolter-battery",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 5
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Quad launcher (with frag and shatter shells) ",
+                "hidden": false,
+                "id": "Solar-aux-Quad-launcher-with-frag-and-shatter-shells",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 20
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "Gravis-Multi-laser-array",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "819c-ca3e-bbf0-0a09-min"
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "819c-ca3e-bbf0-0a09-max"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "819c-ca3e-bbf0-0a09-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "RapierCrew",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "819c-ca3e-bbf0-0a09-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "RapierCrew",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
               }
             ]
           }
@@ -1127,6 +2761,89 @@
               }
             ]
           }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Any Model in this Unit may have its volkite caliver exchanged for one heavy flamer for +3 Points per Model",
+            "id": "hermes-velataris-weapon",
+            "hidden": false,
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c16c-2f0b-ee22-1e6d-min"
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c16c-2f0b-ee22-1e6d-max"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "c16c-2f0b-ee22-1e6d-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "HermesVeletarisCategory",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "c16c-2f0b-ee22-1e6d-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "HermesVeletarisCategory",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Volkite caliver",
+                "hidden": false,
+                "id": "hermes-volkite-caliver"
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Heavy flamer",
+                "hidden": false,
+                "id": "hermes-heavy-flamer",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 3
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "hermes-volkite-caliver"
+          }
         ]
       },
       {
@@ -1185,6 +2902,219 @@
               }
             ]
           }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Any Model in this Unit may have its multi-laser exchanged for one of the following:",
+            "id": "aeed-6892-98c7-9c32",
+            "hidden": false,
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f529-192a-8bfa-2438-min"
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f529-192a-8bfa-2438-max"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "f529-192a-8bfa-2438-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "AethonHeavySentinel ",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "f529-192a-8bfa-2438-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "AethonHeavySentinel ",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Lascannon",
+                "hidden": false,
+                "id": "0693-ad19-60a0-4578",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 15
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Autocannon",
+                "hidden": false,
+                "id": "e461-e7ae-cccc-15bc",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 10
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Heavy incinerator",
+                "hidden": false,
+                "id": "cc72-0095-72cc-f31d",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 10
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Melta lance",
+                "hidden": false,
+                "id": "6919-3c1d-36fc-4a5a",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 20
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Multi-laser",
+                "hidden": false,
+                "id": "8866-6b0f-dfd0-bbbf"
+              }
+            ],
+            "defaultSelectionEntryId": "8866-6b0f-dfd0-bbbf"
+          },
+          {
+            "name": "Any Model in this Unit may have its Aethon missile battery exchanged for one hunter-killer missile battery for +15 Points per Model.",
+            "id": "d717-e8fc-75a7-510b",
+            "hidden": false,
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "2197-7b63-1151-78a9-min"
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "2197-7b63-1151-78a9-max"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "2197-7b63-1151-78a9-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "AethonHeavySentinel ",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "2197-7b63-1151-78a9-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "AethonHeavySentinel ",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Hunter-killer missile battery",
+                "hidden": false,
+                "id": "c8ca-71d6-dc89-b66c",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 15
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Aethon missile battery",
+                "hidden": false,
+                "id": "4abe-cffe-640c-8417",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 0
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "4abe-cffe-640c-8417"
+          }
         ]
       },
       {
@@ -1208,6 +3138,58 @@
             "name": "Points",
             "typeId": "points",
             "value": 75
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Flare Launcher",
+            "hidden": false,
+            "id": "flare-launcher",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 5
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5a61-1736-1aad-69ed",
+                "includeChildSelections": false
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "This Model may have one Hull (Rear) Mounted multilaser selected for it for +10 Points",
+            "hidden": false,
+            "id": "rear-multi-laser",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 10
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "6cfc-4bd6-08ef-d422",
+                "includeChildSelections": false
+              }
+            ]
           }
         ]
       },
@@ -1233,12 +3215,61 @@
             "typeId": "points",
             "value": 140
           }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "This Model may have its ",
+            "id": "dracosan-hull-weapon",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Hull (Front) Mounted twin lascannon",
+                "hidden": false,
+                "id": "dracosan-twin-lascannon"
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Hull (Front) Mounted demolisher cannon",
+                "hidden": false,
+                "id": "dracosan-demolisher-cannon",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 35
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "dracosan-twin-lascannon",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d9dc-402a-b3ba-3988-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d9dc-402a-b3ba-3988-max"
+              }
+            ]
+          }
         ]
       },
       {
         "type": "unit",
         "import": true,
-        "name": "Hermes Light Sentinel Squadron.",
+        "name": "Hermes Light Sentinel Squadron",
         "hidden": false,
         "id": "HermesLightSentinelSquadron",
         "categoryLinks": [
@@ -1293,6 +3324,89 @@
               }
             ]
           }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Any Model in this Unit may have its muiti-laser exchanged fo",
+            "id": "e565-7089-02bd-8af3",
+            "hidden": false,
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "e563-39e3-fdbb-ddf8-min"
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "e563-39e3-fdbb-ddf8-max"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "e563-39e3-fdbb-ddf8-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "HermesLightCategory",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "e563-39e3-fdbb-ddf8-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "HermesLightCategory",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Multi-laser",
+                "hidden": false,
+                "id": "5abf-dc67-46d4-ff88"
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Grenade launcher",
+                "hidden": false,
+                "id": "9042-f1b3-790f-c354",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 5
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "5abf-dc67-46d4-ff88"
+          }
         ]
       },
       {
@@ -1346,7 +3460,7 @@
       {
         "type": "unit",
         "import": true,
-        "name": "Leman Russ Strike Tank.",
+        "name": "Leman Russ Strike Tank",
         "hidden": false,
         "id": "LemanRussStrikeTank",
         "categoryLinks": [
@@ -1370,8 +3484,96 @@
             "value": 140
           }
         ],
-        "publicationId": "liber-imperialis",
-        "page": "45"
+        "publicationId": "liber-auxilia",
+        "page": "45",
+        "selectionEntryGroups": [
+          {
+            "name": "This Model may have its battlecannon exchanged for one of the following:",
+            "id": "leman-russ-strike-weapons",
+            "hidden": false,
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "0b88-1bc1-a99f-d2fe-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "0b88-1bc1-a99f-d2fe-max",
+                "includeChildSelections": false
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Turret Mounted Battlecannon",
+                "hidden": false,
+                "id": "ad96-5aff-beed-b646",
+                "type": "selectionEntry",
+                "targetId": "battlecannon"
+              },
+              {
+                "import": true,
+                "name": "Turret Mounted Gravis Autocannon",
+                "hidden": false,
+                "id": "bcf8-5089-1847-dcda",
+                "type": "selectionEntry",
+                "targetId": "764c-ffc5-f75b-616c"
+              },
+              {
+                "import": true,
+                "name": "Turret Mounted Vanquisher Cannon and one Co-axial (Vanquisher Cannon) Mounted Heavy Stubber",
+                "hidden": false,
+                "id": "772a-58b2-98e9-5291",
+                "type": "selectionEntry",
+                "targetId": "54aa-e7df-5fab-8314"
+              },
+              {
+                "import": true,
+                "name": "Turret Mounted Twin Lascannon",
+                "hidden": false,
+                "id": "b447-7edf-6718-bb25",
+                "type": "selectionEntry",
+                "targetId": "turret-mounted-twin-lascannon"
+              }
+            ],
+            "defaultSelectionEntryId": "ad96-5aff-beed-b646"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Auxilia Hull Weapons list",
+            "hidden": false,
+            "id": "3c6d-3cd7-da6e-da62",
+            "type": "selectionEntryGroup",
+            "targetId": "AuxiliaHullWeaponslist"
+          },
+          {
+            "import": true,
+            "name": "Auxilia Pintle Weapons list",
+            "hidden": false,
+            "id": "375c-ec55-10bc-3782",
+            "type": "selectionEntryGroup",
+            "targetId": "auxilia-pintle-weapons-list"
+          },
+          {
+            "import": true,
+            "name": "Auxilia Sponson Weapons list",
+            "hidden": false,
+            "id": "02ee-fb3b-bd63-0492",
+            "type": "selectionEntryGroup",
+            "targetId": "auxilia-sponson-weapons-list"
+          }
+        ]
       },
       {
         "type": "unit",
@@ -1394,12 +3596,92 @@
           }
         ],
         "page": "44",
-        "publicationId": "liber-imperialis",
+        "publicationId": "liber-auxilia",
         "costs": [
           {
             "name": "Points",
             "typeId": "points",
             "value": 140
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Auxilia Hull Weapons list",
+            "hidden": false,
+            "id": "0a82-d210-309d-d681",
+            "type": "selectionEntryGroup",
+            "targetId": "AuxiliaHullWeaponslist"
+          },
+          {
+            "import": true,
+            "name": "Auxilia Pintle Weapons list",
+            "hidden": false,
+            "id": "df27-30c6-6d4f-7990",
+            "type": "selectionEntryGroup",
+            "targetId": "auxilia-pintle-weapons-list"
+          },
+          {
+            "import": true,
+            "name": "Auxilia Sponson Weapons list",
+            "hidden": false,
+            "id": "25c0-9254-2e5a-8b89",
+            "type": "selectionEntryGroup",
+            "targetId": "auxilia-sponson-weapons-list"
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "This Model may have its volkite macro-saker exchanged for one of the following:",
+            "id": "leman-russ-assault-weapons",
+            "hidden": false,
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "8e9d-7d4f-186a-d316-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "8e9d-7d4f-186a-d316-max",
+                "includeChildSelections": false
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Turret Mounted Volkite Macro-saker",
+                "hidden": false,
+                "id": "35b1-dd01-cc42-9a77",
+                "type": "selectionEntry",
+                "targetId": "turret-mounted-volkite-macro-saker"
+              },
+              {
+                "import": true,
+                "name": "Turret Mounted Executioner Plasma Destroyer",
+                "hidden": false,
+                "id": "6748-b013-f0a9-5c30",
+                "type": "selectionEntry",
+                "targetId": "gravis-autocannon"
+              },
+              {
+                "import": true,
+                "name": "Turret Mounted Demolisher Cannon",
+                "hidden": false,
+                "id": "cd05-36fe-429d-9ffe",
+                "type": "selectionEntry",
+                "targetId": "vanquisher-cannon"
+              }
+            ],
+            "defaultSelectionEntryId": "35b1-dd01-cc42-9a77"
           }
         ]
       },
@@ -1431,7 +3713,91 @@
           }
         ],
         "page": "45",
-        "publicationId": "liber-imperialis"
+        "publicationId": "liber-imperialis",
+        "selectionEntryGroups": [
+          {
+            "name": "This Model may have its battlecannon exchanged for one of the following:",
+            "id": "b277-261b-7348-ea98",
+            "hidden": false,
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "aba9-d287-02f3-a6f4-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "aba9-d287-02f3-a6f4-max",
+                "includeChildSelections": false
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Hull (Front) Mounted Battlecannon",
+                "hidden": false,
+                "id": "malcador-hull-battlecannon"
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Hull (Front) Mounted Twin Lascannon",
+                "hidden": false,
+                "id": "malcador-hull-twin-lascannon"
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Hull (Front) Mounted Vanquisher Cannon",
+                "hidden": false,
+                "id": "malcador-hull-vanquisher",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 10
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "malcador-hull-battlecannon"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Auxilia Hull Weapons list",
+            "hidden": false,
+            "id": "055e-48c8-4395-523f",
+            "type": "selectionEntryGroup",
+            "targetId": "AuxiliaHullWeaponslist"
+          },
+          {
+            "import": true,
+            "name": "Auxilia Pintle Weapons list",
+            "hidden": false,
+            "id": "6f64-0483-04c4-18c0",
+            "type": "selectionEntryGroup",
+            "targetId": "auxilia-pintle-weapons-list"
+          },
+          {
+            "import": true,
+            "name": "Auxilia Sponson Weapons list",
+            "hidden": false,
+            "id": "8562-98ff-929a-5256",
+            "type": "selectionEntryGroup",
+            "targetId": "auxilia-sponson-weapons-list"
+          }
+        ]
       },
       {
         "type": "unit",
@@ -1454,6 +3820,24 @@
             "name": "Points",
             "typeId": "points",
             "value": 240
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Auxilia Pintle Weapons list",
+            "hidden": false,
+            "id": "2cff-528b-b25b-5908",
+            "type": "selectionEntryGroup",
+            "targetId": "auxilia-pintle-weapons-list"
+          },
+          {
+            "import": true,
+            "name": "Auxilia Sponson Weapons list",
+            "hidden": false,
+            "id": "0cbf-36df-b3f8-0fed",
+            "type": "selectionEntryGroup",
+            "targetId": "auxilia-sponson-weapons-list"
           }
         ]
       },
@@ -1479,7 +3863,84 @@
             "value": 225
           }
         ],
-        "page": "47"
+        "page": "47",
+        "selectionEntryGroups": [
+          {
+            "name": "This Model may have its Sponson (Right) Mounted • This Model may have any of the following selected multi-laser exchanged for one of the following",
+            "id": "3e37-77b4-d6e4-dc45",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Sponson (Right) Mounted heavy bolter",
+                "hidden": false,
+                "id": "7b52-9ab1-ca81-bbfa"
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Sponson (Right) Mounted heavy flamer",
+                "hidden": false,
+                "id": "636c-2117-9725-ba07"
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Sponson (Right) Mounted multi-laser",
+                "hidden": false,
+                "id": "dd1d-7f16-f2a6-13c9"
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Sponson (Right) Mounted autocannon",
+                "hidden": false,
+                "id": "9e14-6381-750b-8248",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 5
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Sponson (Right) Mounted lascannon",
+                "hidden": false,
+                "id": "60e5-2934-6d02-f0ce",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 20
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "9a27-5a8b-6253-9d99-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "9a27-5a8b-6253-9d99-max"
+              }
+            ],
+            "defaultSelectionEntryId": "dd1d-7f16-f2a6-13c9"
+          }
+        ]
       },
       {
         "type": "unit",
@@ -1502,6 +3963,72 @@
             "name": "Points",
             "typeId": "points",
             "value": 500
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Auxilia Pintle Weapons list",
+            "hidden": false,
+            "id": "afd8-81a7-e7d0-9d0f",
+            "type": "selectionEntryGroup",
+            "targetId": "auxilia-pintle-weapons-list"
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": " This Model may have its three Hull (Left) and three Hull (Right) Mounted multi-lasers exchanged for one of the following",
+            "id": "796e-e886-ccb3-44a3",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "3 Hull (Left) Multilasers 3 Hull (Right) Multilasers",
+                "hidden": false,
+                "id": "stormhammer-hull-multilasers"
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "3 Hull (Left) Heavy Flamers 3 Hull (Right) Heavy Flamers",
+                "hidden": false,
+                "id": "9992-68d5-85a3-86f6"
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "3 Hull (Left) Lascannons 3 Hull (Right) Lascannons",
+                "hidden": false,
+                "id": "7a18-aa32-cc8a-ae6b",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 50
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "stormhammer-hull-multilasers"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "284e-8ca2-c8a8-a77e-min"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "284e-8ca2-c8a8-a77e-max"
           }
         ]
       },
@@ -1654,16 +4181,15 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Infantry Entry",
+        "name": "Infantry Tercio Entry",
         "hidden": false,
         "id": "infantry-entry",
         "categoryLinks": [
           {
-            "name": "Auxillary",
-            "hidden": false,
-            "id": "17e4-6ac5-b97c-eb40",
-            "targetId": "auxillary-category",
-            "primary": true
+            "targetId": "InfantryTercioCategory",
+            "id": "1454-8b61-0a15-bd6c",
+            "primary": true,
+            "name": "Infantry Tercio"
           }
         ],
         "constraints": [
@@ -1673,7 +4199,7 @@
             "field": "selections",
             "scope": "force",
             "shared": true,
-            "id": "2d41-c63b-51f5-feb7",
+            "id": "eee8-3f55-d145-19ff-min",
             "automatic": false,
             "includeChildSelections": true
           },
@@ -1683,71 +4209,68 @@
             "field": "selections",
             "scope": "force",
             "shared": true,
-            "id": "eee8-3f55-d145-19ff",
+            "id": "eee8-3f55-d145-19ff-max",
             "automatic": false,
             "includeChildSelections": true
+          },
+          {
+            "type": "max",
+            "value": 0,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "9dd3-a7e5-9fc3-0c65",
+            "includeChildSelections": true,
+            "includeChildForces": true
           }
         ],
         "modifiers": [
           {
-            "type": "set",
-            "value": 0,
-            "field": "2d41-c63b-51f5-feb7",
-            "conditionGroups": [
+            "type": "increment",
+            "value": 1,
+            "field": "9dd3-a7e5-9fc3-0c65",
+            "repeats": [
               {
-                "type": "or",
-                "conditions": [
-                  {
-                    "type": "instanceOf",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "ancestor",
-                    "childId": "primary-detachment",
-                    "shared": true,
-                    "includeChildSelections": true,
-                    "includeChildForces": true
-                  },
-                  {
-                    "type": "instanceOf",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "ancestor",
-                    "childId": "apex",
-                    "shared": true,
-                    "includeChildSelections": true,
-                    "includeChildForces": true
-                  }
-                ]
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "7227-b6c9-5b61-37fc",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": true,
+                "includeChildForces": true
               }
             ]
           },
           {
-            "type": "set",
-            "value": 0,
-            "field": "eee8-3f55-d145-19ff",
+            "type": "increment",
+            "value": 1,
+            "field": "9dd3-a7e5-9fc3-0c65",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "a793-165f-ef57-bc76",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
             "conditionGroups": [
               {
-                "type": "or",
+                "type": "and",
                 "conditions": [
                   {
                     "type": "instanceOf",
                     "value": 1,
                     "field": "selections",
-                    "scope": "ancestor",
-                    "childId": "primary-detachment",
-                    "shared": true,
-                    "includeChildSelections": true,
-                    "includeChildForces": true
-                  },
-                  {
-                    "type": "instanceOf",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "ancestor",
-                    "childId": "apex",
-                    "shared": true,
-                    "includeChildSelections": true,
-                    "includeChildForces": true
+                    "scope": "primary-catalogue",
+                    "childId": "ultima-pattern-cohort",
+                    "shared": true
                   }
                 ]
               }
@@ -1764,13 +4287,12 @@
         "constraints": [
           {
             "type": "min",
-            "value": 0,
+            "value": 1,
             "field": "selections",
-            "scope": "roster",
+            "scope": "force",
             "shared": true,
-            "id": "660c-3a3b-3d68-bddd",
-            "automatic": false,
-            "includeChildSelections": true,
+            "id": "4ab1-538d-3e67-8e7a-min-min",
+            "includeChildSelections": false,
             "includeChildForces": true
           },
           {
@@ -1779,75 +4301,80 @@
             "field": "selections",
             "scope": "force",
             "shared": true,
-            "id": "10e1-72a8-7793-f8b5",
-            "automatic": false,
-            "includeChildSelections": true
-          },
-          {
-            "type": "min",
-            "value": 0,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "4ab1-538d-3e67-8e7a-min"
+            "id": "4ab1-538d-3e67-8e7a-min-max",
+            "includeChildSelections": false,
+            "includeChildForces": true
           },
           {
             "type": "max",
             "value": 0,
             "field": "selections",
-            "scope": "parent",
+            "scope": "roster",
             "shared": true,
-            "id": "4ab1-538d-3e67-8e7a-max"
+            "id": "9d89-e6cc-26b2-87a9",
+            "includeChildSelections": true,
+            "includeChildForces": true
           }
         ],
         "modifiers": [
           {
             "type": "increment",
             "value": 1,
-            "field": "660c-3a3b-3d68-bddd",
+            "field": "9d89-e6cc-26b2-87a9",
             "repeats": [
               {
                 "value": 1,
                 "repeats": 1,
-                "field": "forces",
+                "field": "selections",
                 "scope": "roster",
-                "childId": "ArtilleryTercio",
-                "shared": false,
+                "childId": "7227-b6c9-5b61-37fc",
+                "shared": true,
                 "roundUp": false,
-                "includeChildSelections": false,
-                "includeChildForces": false
+                "includeChildSelections": true,
+                "includeChildForces": true
               }
             ]
           },
           {
-            "type": "set",
+            "type": "increment",
             "value": 1,
-            "field": "4ab1-538d-3e67-8e7a-min",
-            "conditions": [
+            "field": "9d89-e6cc-26b2-87a9",
+            "repeats": [
               {
-                "type": "instanceOf",
                 "value": 1,
+                "repeats": 1,
                 "field": "selections",
-                "scope": "ancestor",
+                "scope": "roster",
                 "childId": "7227-b6c9-5b61-37fc",
-                "shared": true
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "siege-pattern-cohort",
+                    "shared": true
+                  }
+                ]
               }
             ]
-          },
+          }
+        ],
+        "categoryLinks": [
           {
-            "type": "set",
-            "value": 1,
-            "field": "4ab1-538d-3e67-8e7a-max",
-            "conditions": [
-              {
-                "type": "instanceOf",
-                "value": 1,
-                "field": "selections",
-                "scope": "ancestor",
-                "childId": "7227-b6c9-5b61-37fc",
-                "shared": true
-              }
-            ]
+            "targetId": "ArtilleryTercioCategory",
+            "id": "fc68-66bc-478d-b1b4",
+            "primary": true,
+            "name": "Artillery Tercio"
           }
         ]
       },
@@ -1963,7 +4490,7 @@
         "id": "armour-tercio-entry",
         "constraints": [
           {
-            "type": "min",
+            "type": "max",
             "value": 0,
             "field": "selections",
             "scope": "roster",
@@ -1974,50 +4501,732 @@
             "includeChildForces": true
           },
           {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "df0f-ed6c-183b-5a88",
-            "automatic": false,
-            "includeChildSelections": true
-          },
-          {
             "type": "min",
             "value": 1,
             "field": "selections",
-            "scope": "parent",
+            "scope": "force",
             "shared": true,
-            "id": "605d-ee37-a137-0d6b-min"
+            "id": "fef2-7fd9-765d-649d-min",
+            "includeChildSelections": false,
+            "includeChildForces": true
           },
           {
             "type": "max",
             "value": 1,
             "field": "selections",
-            "scope": "parent",
+            "scope": "force",
             "shared": true,
-            "id": "605d-ee37-a137-0d6b-max"
+            "id": "fef2-7fd9-765d-649d-max",
+            "includeChildSelections": false,
+            "includeChildForces": true
           }
         ],
         "modifiers": [
           {
             "type": "increment",
-            "value": 0,
+            "value": 1,
             "field": "6b23-8fc8-136b-647a",
             "repeats": [
               {
                 "value": 1,
                 "repeats": 1,
-                "field": "forces",
+                "field": "selections",
                 "scope": "roster",
-                "childId": "ArmourTercio",
-                "shared": false,
+                "childId": "ArmouredCommandSection",
+                "shared": true,
                 "roundUp": false,
-                "includeChildSelections": false,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "affects": "self.entries.forces.recursive.upgrade"
+          },
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "6b23-8fc8-136b-647a",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "ArmouredCommandSection",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "mechanized-pattern-cohort",
+                    "shared": true
+                  }
+                ]
+              }
+            ],
+            "affects": "self.entries.forces.recursive.upgrade"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "ArmourTercioCategory",
+            "id": "828a-948d-ba90-c123",
+            "primary": true,
+            "name": "Armour Tercio"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Armour Entry",
+        "hidden": false,
+        "id": "ArmourEntry",
+        "categoryLinks": [
+          {
+            "name": "Auxillary",
+            "hidden": false,
+            "id": "49c0-b2ed-c023-39ec",
+            "targetId": "auxillary-category",
+            "primary": false
+          },
+          {
+            "targetId": "ArmourTercioCategory",
+            "id": "28ea-3d6f-178c-d8f5",
+            "primary": true,
+            "name": "Armour Tercio"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "4044-44a2-acdf-9e05-min",
+            "automatic": false,
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "4044-44a2-acdf-9e05-max",
+            "automatic": false,
+            "includeChildSelections": false
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": 0,
+            "field": "4044-44a2-acdf-9e05-min",
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "primary-detachment",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "includeChildForces": true
+                  },
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "apex",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "includeChildForces": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "set",
+            "value": 0,
+            "field": "4044-44a2-acdf-9e05-max",
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "primary-detachment",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "includeChildForces": true
+                  },
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "apex",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "includeChildForces": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "set",
+            "value": 0,
+            "field": "1f36-541f-914c-9e4e",
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "primary-detachment",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "includeChildForces": true
+                  },
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "apex",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "includeChildForces": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Veletaris Tercio Entry",
+        "hidden": false,
+        "id": "veletaris-tercio-entry",
+        "categoryLinks": [
+          {
+            "targetId": "veletaris-tercio-category",
+            "id": "5d1f-2c67-f461-ebc4",
+            "primary": true,
+            "name": "Veletaris Tercio"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "7cbc-f394-610c-e0e7-min",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "7cbc-f394-610c-e0e7-max",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 0,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "7110-8b4d-afef-ce31",
+            "includeChildSelections": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "7110-8b4d-afef-ce31",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "69a7-c9f9-0c77-49b6",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": true,
                 "includeChildForces": true
               }
             ]
+          },
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "7110-8b4d-afef-ce31",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "69a7-c9f9-0c77-49b6",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "solar-pattern-cohort",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Reconnaissance Tercio Entry",
+        "hidden": false,
+        "id": "reconnaissance-tercio-entry",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 0,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "d1c8-e314-f64e-9702",
+            "automatic": false,
+            "includeChildSelections": true,
+            "includeChildForces": true
+          },
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "7b9a-d6d5-6e81-6f84-min",
+            "includeChildSelections": false,
+            "includeChildForces": true
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "7b9a-d6d5-6e81-6f84-max",
+            "includeChildSelections": false,
+            "includeChildForces": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "d1c8-e314-f64e-9702",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "ArmouredCommandSection",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "affects": "self.entries.forces.recursive.upgrade"
+          },
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "d1c8-e314-f64e-9702",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "ArmouredCommandSection",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "mechanized-pattern-cohort",
+                    "shared": true
+                  }
+                ]
+              }
+            ],
+            "affects": "self.entries.forces.recursive.upgrade"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Armour Tercio",
+            "hidden": false,
+            "id": "f34f-ce5e-c5b6-c4e2",
+            "targetId": "ArmourTercioCategory",
+            "primary": true
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Scout Tercio Entry",
+        "hidden": false,
+        "id": "scout-tercio-entry",
+        "categoryLinks": [
+          {
+            "targetId": "scout-tercio-category",
+            "id": "e509-7e73-d20c-71bf",
+            "primary": true,
+            "name": "Scout Tercio"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "d44a-da1d-fa6c-abff-min",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "d44a-da1d-fa6c-abff-max",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 0,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "f4ba-3718-9c59-50d3",
+            "includeChildSelections": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "f4ba-3718-9c59-50d3",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "08fb-1df0-f36b-f906",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
+          },
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "f4ba-3718-9c59-50d3",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "HermesCommandSection",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "reconnaissance-pattern-cohort",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Turret Mounted Demolisher Cannon",
+        "hidden": false,
+        "id": "vanquisher-cannon",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 30
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Turret Mounted Battlecannon",
+        "hidden": false,
+        "id": "battlecannon"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Turret Mounted Battlecannon",
+        "hidden": false,
+        "id": "6c4f-e99b-78f9-09f2"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Turret Mounted Gravis Autocannon",
+        "hidden": false,
+        "id": "764c-ffc5-f75b-616c"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Turret Mounted Vanquisher Cannon and one Co-axial (Vanquisher Cannon) Mounted Heavy Stubber",
+        "hidden": false,
+        "id": "54aa-e7df-5fab-8314",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 10
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Turret Mounted Executioner Plasma Destroyer",
+        "hidden": false,
+        "id": "gravis-autocannon",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 25
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Turret Mounted Volkite Macro-saker",
+        "hidden": false,
+        "id": "turret-mounted-volkite-macro-saker"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Turret Mounted Twin Lascannon",
+        "hidden": false,
+        "id": "turret-mounted-twin-lascannon"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Augury Scanner",
+        "hidden": false,
+        "id": "solar-aux-augury-scanner",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 10
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "ac56-d5fc-c85d-f615",
+            "includeChildSelections": false
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Command Vox",
+        "hidden": false,
+        "id": "solar-aux-command-vox",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 10
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "8ae7-3db4-5cfc-5270",
+            "includeChildSelections": false
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Auxilia Vexilla",
+        "hidden": false,
+        "id": "auxilia-vexilla",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 5
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "1c29-e1cc-c067-2812",
+            "includeChildSelections": false
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Cohorts Vexilla",
+        "hidden": false,
+        "id": "cohorts-vexilla",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 15
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Melta bombs",
+        "hidden": false,
+        "id": "761a-1b86-42ef-8b5e",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "e9f0-74f0-ffee-61aa",
+            "includeChildSelections": false
+          }
+        ],
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 10
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Vox Interlock",
+        "hidden": false,
+        "id": "vox-interlock",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 5
           }
         ]
       }
@@ -2240,6 +5449,46 @@
         "id": "d111-922d-ef0e-f74b",
         "type": "selectionEntry",
         "targetId": "VeletarisVanguardSection"
+      },
+      {
+        "import": true,
+        "name": "Artillery Tercio Entry",
+        "hidden": false,
+        "id": "3d89-3d0f-c18b-3833",
+        "type": "selectionEntry",
+        "targetId": "artillery-tercio-entry"
+      },
+      {
+        "import": true,
+        "name": "Infantry Entry",
+        "hidden": false,
+        "id": "b0f7-21ac-af90-3910",
+        "type": "selectionEntry",
+        "targetId": "infantry-entry"
+      },
+      {
+        "import": true,
+        "name": "Armour Tercio Entry",
+        "hidden": false,
+        "id": "7b27-1dff-b203-18c7",
+        "type": "selectionEntry",
+        "targetId": "armour-tercio-entry"
+      },
+      {
+        "import": true,
+        "name": "Veletaris Tercio Entry",
+        "hidden": false,
+        "id": "314f-1ef7-2b15-e139",
+        "type": "selectionEntry",
+        "targetId": "veletaris-tercio-entry",
+        "categoryLinks": [
+          {
+            "targetId": "veletaris-tercio-category",
+            "id": "f374-0046-d78b-03f8",
+            "primary": true,
+            "name": "Veletaris Tercio"
+          }
+        ]
       }
     ],
     "publicationId": "liber-imperialis",
@@ -2358,6 +5607,13 @@
                 ]
               }
             ]
+          },
+          {
+            "name": "Veletaris Tercio",
+            "hidden": false,
+            "id": "89af-a598-5731-d84d",
+            "targetId": "veletaris-tercio-category",
+            "type": "categoryEntry"
           }
         ],
         "constraints": [
@@ -2504,6 +5760,73 @@
             "hidden": false,
             "id": "e8cc-367c-8e75-fc62",
             "targetId": "auxillary-category"
+          },
+          {
+            "name": "Infantry Tercio",
+            "hidden": false,
+            "id": "e335-a8a2-9c04-24e1",
+            "targetId": "InfantryTercioCategory",
+            "type": "categoryEntry",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "roster",
+                "shared": false,
+                "id": "4bfb-c66f-7fca-9ca0",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "4bfb-c66f-7fca-9ca0",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "roster",
+                    "childId": "a793-165f-ef57-bc76",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": true,
+                    "includeChildForces": true
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "4bfb-c66f-7fca-9ca0",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "roster",
+                    "childId": "infantry-entry",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": true,
+                    "includeChildForces": true
+                  }
+                ],
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "ultima-pattern-cohort",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
           }
         ],
         "constraints": [
@@ -2627,6 +5950,13 @@
                 "includeChildSelections": false
               }
             ]
+          },
+          {
+            "name": "Artillery Tercio",
+            "hidden": false,
+            "id": "a0cc-7a93-9bad-a9be",
+            "targetId": "ArtilleryTercioCategory",
+            "type": "categoryEntry"
           }
         ],
         "publicationId": "liber-auxilia",
@@ -2732,6 +6062,13 @@
             "hidden": false,
             "id": "5b51-51cf-2253-42cf",
             "targetId": "auxillary-category"
+          },
+          {
+            "name": "Scout Tercio",
+            "hidden": false,
+            "id": "0486-39e7-834e-c3ef",
+            "targetId": "scout-tercio-category",
+            "type": "categoryEntry"
           }
         ],
         "publicationId": "liber-auxilia",
@@ -2803,7 +6140,7 @@
       },
       {
         "name": "Armour Tercio",
-        "id": "ArmourTercio",
+        "id": "ArmourTercioForce",
         "hidden": false,
         "categoryLinks": [
           {
@@ -2864,62 +6201,29 @@
                 "includeChildSelections": true
               }
             ]
-          }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 0,
-            "field": "forces",
-            "scope": "roster",
-            "shared": false,
-            "id": "f2d0-21fe-963c-0dce"
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "f2d0-21fe-963c-0dce",
-            "scope": "roster",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "roster",
-                "childId": "541f-daca-b6b1-07e3",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true,
-                "includeChildForces": true
-              }
-            ]
           },
           {
-            "type": "increment",
-            "value": 1,
-            "field": "f2d0-21fe-963c-0dce",
-            "conditions": [
+            "name": "Armour Tercio",
+            "hidden": false,
+            "id": "8eb9-aa35-4777-abee",
+            "targetId": "ArmourTercioCategory",
+            "type": "categoryEntry",
+            "constraints": [
               {
-                "type": "instanceOf",
+                "type": "min",
                 "value": 1,
                 "field": "selections",
-                "scope": "primary-catalogue",
-                "childId": "mechanized-pattern-cohort",
-                "shared": true
-              }
-            ],
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "forces",
-                "scope": "roster",
-                "childId": "ArmourTercio",
+                "scope": "parent",
                 "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true
+                "id": "623c-a04e-9410-4216-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "623c-a04e-9410-4216-max"
               }
             ]
           }
@@ -2978,6 +6282,825 @@
         "name": "SolarAuxArmour",
         "id": "SolarAuxArmourCategory",
         "hidden": false
+      },
+      {
+        "name": "Armour Tercio",
+        "id": "ArmourTercioCategory",
+        "hidden": false
+      },
+      {
+        "name": "Artillery Tercio",
+        "id": "ArtilleryTercioCategory",
+        "hidden": false
+      },
+      {
+        "name": "Infantry Tercio",
+        "id": "InfantryTercioCategory",
+        "hidden": false
+      },
+      {
+        "name": "Veletaris Tercio",
+        "id": "veletaris-tercio-category",
+        "hidden": false
+      },
+      {
+        "name": "Scout Tercio",
+        "id": "scout-tercio-category",
+        "hidden": false
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Auxilia Hull Weapons list",
+        "id": "AuxiliaHullWeaponslist",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Hull Mounted heavy bolter",
+            "hidden": false,
+            "id": "hull-mounted-heavy-bolter"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Hull Mounted heavy flamer",
+            "hidden": false,
+            "id": "hull-mounted-heavy-flamer"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Hull Mounted multi-laser",
+            "hidden": false,
+            "id": "hull-mounted-multi-laser"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Hull Mounted autocannon",
+            "hidden": false,
+            "id": "hull-mounted-autocannon",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 5
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Hull Mounted lascannon",
+            "hidden": false,
+            "id": "hull-mounted-lascannon",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 10
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Hull Mounted Demolisher cannon",
+            "hidden": true,
+            "id": "hull-mounted-demolisher-cannon",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 40
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "0000-ffc5-c54d-bd66",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "865a-d29c-1bb0-f2ef-min"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "865a-d29c-1bb0-f2ef-max"
+          }
+        ]
+      },
+      {
+        "name": "Auxilia Sponson Weapons list",
+        "id": "auxilia-sponson-weapons-list",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Two Sponson heavy bolters",
+            "hidden": false,
+            "id": "55ac-8f14-0a4e-aadd"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Two Sponson Mounted heavy flamers",
+            "hidden": false,
+            "id": "38fc-2b4e-c304-bf57"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Two Sponson Mounted multi-lasers",
+            "hidden": false,
+            "id": "39f9-c348-e1c2-7b30"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Two Sponson Mounted autocannons",
+            "hidden": false,
+            "id": "bdff-1bff-d1e3-8fc8",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 10
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Two Sponson Mounted lascannons",
+            "hidden": false,
+            "id": "1e33-7101-0fa3-0641",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 20
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "d9a0-aae7-3d44-4166-min"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "d9a0-aae7-3d44-4166-max"
+          }
+        ]
+      },
+      {
+        "name": "Auxilia Pintle Weapons list",
+        "id": "auxilia-pintle-weapons-list",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Pintle Mounted heavy flamer",
+            "hidden": false,
+            "id": "edc3-69d0-22e2-bc91",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 10
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Pintle Mounted multi-laser",
+            "hidden": false,
+            "id": "58d2-d3f9-d599-f609",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 10
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Pintle Mounted heavy stubber",
+            "hidden": false,
+            "id": "3878-47b5-d57d-f614",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 5
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "767e-0b44-f41d-1855"
+          }
+        ]
+      },
+      {
+        "name": "This model may have any of the following selected for it:",
+        "id": "solar-aux-vehicle-upgrades",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "One Hull (Front) Mounted Hunter Killer Missile",
+            "hidden": false,
+            "id": "solar-aux-hunter-killer",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 5
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "43f6-8773-6569-463f"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Searchlights",
+            "hidden": false,
+            "id": "solar-aux-searchlights",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "de38-f6b3-5de8-f82e"
+              }
+            ],
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 5
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Dozer Blade",
+            "hidden": false,
+            "id": "solar-aux-dozer-blade",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 5
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b9b7-e974-a881-0ab2"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "be0e-9757-b87e-5bfb",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Flare shield",
+            "hidden": true,
+            "id": "solar-aux-flare-shield",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 20
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "949a-596d-7e10-c06a"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "scope": "parent",
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "ArmouredCommandSection",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "b558-39d3-a6a1-a4ed",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "0000-ffc5-c54d-bd66",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "1813-ef0e-edbd-98bc",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "be0e-9757-b87e-5bfb",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Auxilia Melee Weapons",
+        "id": "auxilia-melee",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Charnabal Sabre",
+            "hidden": false,
+            "id": "7d96-c102-7eb7-2aef",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 3
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 0,
+                "field": "points",
+                "conditionGroups": [
+                  {
+                    "type": "and",
+                    "conditions": [
+                      {
+                        "type": "notInstanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "VeletariiPrimeStorm",
+                        "shared": true,
+                        "includeChildSelections": true
+                      },
+                      {
+                        "type": "notInstanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "VeletariiPrimeVanguard",
+                        "shared": true,
+                        "includeChildSelections": true
+                      },
+                      {
+                        "type": "notInstanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "FirstPrime",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Charnabal Tabar",
+            "hidden": true,
+            "id": "97df-b9c1-3cdf-afb7",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "VeletariiPrimeStorm",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "VeletariiPrimeVanguard",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "FirstPrime",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Power sword",
+            "hidden": false,
+            "id": "a607-bb6f-e0e2-b7b6",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 5
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Power fist",
+            "hidden": false,
+            "id": "f0f7-4e35-21cb-e97b",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 10
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Thunder hammer",
+            "hidden": true,
+            "id": "c650-1f81-6127-9d37",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 10
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "AuxiliaCaptain",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "4985-8fec-1e4e-dc0f",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "LegateMarshal",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "OrdnanceMaster",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "de1e-bb36-db13-d521-min"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "de1e-bb36-db13-d521-max"
+          }
+        ],
+        "defaultSelectionEntryId": "7d96-c102-7eb7-2aef"
+      },
+      {
+        "name": "Auxilia Pistols",
+        "id": "auxilia-pistols",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Las pistol",
+            "hidden": true,
+            "id": "dfde-ff5c-0576-ee49",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": false,
+                "field": "hidden",
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "VeletariiPrimeStorm",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "VeletariiPrimeVanguard",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "FirstPrime",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "LegateMarshal",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "Lifeward",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "AuxiliaCaptain",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "4d87-b179-38a4-1c78",
+                        "shared": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Blast pistol",
+            "hidden": false,
+            "id": "e858-1ded-093b-9c5f",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 3
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Needle pistol",
+            "hidden": false,
+            "id": "bcd4-2991-df2d-8ad5",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 5
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Volkite serpenta",
+            "hidden": false,
+            "id": "38ae-274b-42d5-980e",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 5
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Plasma pistol",
+            "hidden": false,
+            "id": "bdb7-714e-100f-b1a1",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 5
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Hand flamer",
+            "hidden": false,
+            "id": "e979-fd8d-8e50-85d6",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 5
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "d1be-3579-584c-5dc0"
+          }
+        ],
+        "defaultSelectionEntryId": "e858-1ded-093b-9c5f"
       }
     ]
   }
