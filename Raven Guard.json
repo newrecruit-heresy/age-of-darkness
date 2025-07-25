@@ -1,1 +1,21 @@
-{"catalogue":{"library":false,"id":"xix","name":"Raven Guard","gameSystemId":"sys-41d4-b033-8ca9-9bb0","gameSystemRevision":1,"revision":1,"battleScribeVersion":"2.03","type":"catalogue","catalogueLinks":[{"type":"catalogue","name":"Legiones Astartes","id":"9450-2f6d-58c0-5244","targetId":"la","importRootEntries":true}]}}
+{
+    "catalogue": {
+        "library": false,
+        "id": "xix",
+        "name": "Raven Guard",
+        "gameSystemId": "sys-41d4-b033-8ca9-9bb0",
+        "gameSystemRevision": 1,
+        "revision": 1,
+        "battleScribeVersion": "2.03",
+        "type": "catalogue",
+        "catalogueLinks": [
+            {
+                "type": "catalogue",
+                "name": "Legiones Astartes",
+                "id": "9450-2f6d-58c0-5244",
+                "targetId": "la",
+                "importRootEntries": true
+            }
+        ]
+    }
+}
