@@ -883,6 +883,12 @@
             "id": "4337-3a20-646a-5e02",
             "primary": true,
             "name": "Command"
+          },
+          {
+            "targetId": "infantry-command-category",
+            "id": "f56c-a96e-24bf-9f47",
+            "primary": false,
+            "name": "Infantry Command"
           }
         ],
         "selectionEntryGroups": [
@@ -1241,6 +1247,12 @@
             "id": "0431-9be0-d051-8675",
             "primary": true,
             "name": "Command"
+          },
+          {
+            "targetId": "reconnaissance-command-categery",
+            "id": "cbd0-fed0-0165-6a1d",
+            "primary": false,
+            "name": "Reconnaissance Command"
           }
         ],
         "page": "25",
@@ -3264,6 +3276,16 @@
               }
             ]
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Auxilia Pintle Weapons list",
+            "hidden": false,
+            "id": "a3dd-d16e-bb59-dfd8",
+            "type": "selectionEntryGroup",
+            "targetId": "auxilia-pintle-weapons-list"
+          }
         ]
       },
       {
@@ -3709,11 +3731,11 @@
           {
             "name": "Points",
             "typeId": "points",
-            "value": 215
+            "value": 180
           }
         ],
         "page": "45",
-        "publicationId": "liber-imperialis",
+        "publicationId": "faq-and-errata-1.0",
         "selectionEntryGroups": [
           {
             "name": "This Model may have its battlecannon exchanged for one of the following:",
@@ -3813,13 +3835,13 @@
             "name": "Armour"
           }
         ],
-        "publicationId": "liber-imperialis",
+        "publicationId": "faq-and-errata-1.0",
         "page": "46",
         "costs": [
           {
             "name": "Points",
             "typeId": "points",
-            "value": 240
+            "value": 205
           }
         ],
         "entryLinks": [
@@ -3855,12 +3877,12 @@
             "name": "Armour"
           }
         ],
-        "publicationId": "liber-imperialis",
+        "publicationId": "faq-and-errata-1.0",
         "costs": [
           {
             "name": "Points",
             "typeId": "points",
-            "value": 225
+            "value": 190
           }
         ],
         "page": "47",
@@ -4181,206 +4203,6 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Infantry Tercio Entry",
-        "hidden": false,
-        "id": "infantry-entry",
-        "categoryLinks": [
-          {
-            "targetId": "InfantryTercioCategory",
-            "id": "1454-8b61-0a15-bd6c",
-            "primary": true,
-            "name": "Infantry Tercio"
-          }
-        ],
-        "constraints": [
-          {
-            "type": "min",
-            "value": 1,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "eee8-3f55-d145-19ff-min",
-            "automatic": false,
-            "includeChildSelections": true
-          },
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "eee8-3f55-d145-19ff-max",
-            "automatic": false,
-            "includeChildSelections": true
-          },
-          {
-            "type": "max",
-            "value": 0,
-            "field": "selections",
-            "scope": "roster",
-            "shared": true,
-            "id": "9dd3-a7e5-9fc3-0c65",
-            "includeChildSelections": true,
-            "includeChildForces": true
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "9dd3-a7e5-9fc3-0c65",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "roster",
-                "childId": "7227-b6c9-5b61-37fc",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true,
-                "includeChildForces": true
-              }
-            ]
-          },
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "9dd3-a7e5-9fc3-0c65",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "roster",
-                "childId": "a793-165f-ef57-bc76",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true,
-                "includeChildForces": true
-              }
-            ],
-            "conditionGroups": [
-              {
-                "type": "and",
-                "conditions": [
-                  {
-                    "type": "instanceOf",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "primary-catalogue",
-                    "childId": "ultima-pattern-cohort",
-                    "shared": true
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Artillery Tercio Entry",
-        "hidden": false,
-        "id": "artillery-tercio-entry",
-        "constraints": [
-          {
-            "type": "min",
-            "value": 1,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "4ab1-538d-3e67-8e7a-min-min",
-            "includeChildSelections": false,
-            "includeChildForces": true
-          },
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "4ab1-538d-3e67-8e7a-min-max",
-            "includeChildSelections": false,
-            "includeChildForces": true
-          },
-          {
-            "type": "max",
-            "value": 0,
-            "field": "selections",
-            "scope": "roster",
-            "shared": true,
-            "id": "9d89-e6cc-26b2-87a9",
-            "includeChildSelections": true,
-            "includeChildForces": true
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "9d89-e6cc-26b2-87a9",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "roster",
-                "childId": "7227-b6c9-5b61-37fc",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true,
-                "includeChildForces": true
-              }
-            ]
-          },
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "9d89-e6cc-26b2-87a9",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "roster",
-                "childId": "7227-b6c9-5b61-37fc",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true,
-                "includeChildForces": true
-              }
-            ],
-            "conditionGroups": [
-              {
-                "type": "and",
-                "conditions": [
-                  {
-                    "type": "instanceOf",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "primary-catalogue",
-                    "childId": "siege-pattern-cohort",
-                    "shared": true
-                  }
-                ]
-              }
-            ]
-          }
-        ],
-        "categoryLinks": [
-          {
-            "targetId": "ArtilleryTercioCategory",
-            "id": "fc68-66bc-478d-b1b4",
-            "primary": true,
-            "name": "Artillery Tercio"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
         "name": "Scout Entry",
         "hidden": false,
         "id": "scout-entry",
@@ -4485,549 +4307,6 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "Armour Tercio Entry",
-        "hidden": false,
-        "id": "armour-tercio-entry",
-        "constraints": [
-          {
-            "type": "max",
-            "value": 0,
-            "field": "selections",
-            "scope": "roster",
-            "shared": true,
-            "id": "6b23-8fc8-136b-647a",
-            "automatic": false,
-            "includeChildSelections": true,
-            "includeChildForces": true
-          },
-          {
-            "type": "min",
-            "value": 1,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "fef2-7fd9-765d-649d-min",
-            "includeChildSelections": false,
-            "includeChildForces": true
-          },
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "fef2-7fd9-765d-649d-max",
-            "includeChildSelections": false,
-            "includeChildForces": true
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "6b23-8fc8-136b-647a",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "roster",
-                "childId": "ArmouredCommandSection",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true,
-                "includeChildForces": true
-              }
-            ],
-            "affects": "self.entries.forces.recursive.upgrade"
-          },
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "6b23-8fc8-136b-647a",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "roster",
-                "childId": "ArmouredCommandSection",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true,
-                "includeChildForces": true
-              }
-            ],
-            "conditionGroups": [
-              {
-                "type": "and",
-                "conditions": [
-                  {
-                    "type": "instanceOf",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "primary-catalogue",
-                    "childId": "mechanized-pattern-cohort",
-                    "shared": true
-                  }
-                ]
-              }
-            ],
-            "affects": "self.entries.forces.recursive.upgrade"
-          }
-        ],
-        "categoryLinks": [
-          {
-            "targetId": "ArmourTercioCategory",
-            "id": "828a-948d-ba90-c123",
-            "primary": true,
-            "name": "Armour Tercio"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Armour Entry",
-        "hidden": false,
-        "id": "ArmourEntry",
-        "categoryLinks": [
-          {
-            "name": "Auxillary",
-            "hidden": false,
-            "id": "49c0-b2ed-c023-39ec",
-            "targetId": "auxillary-category",
-            "primary": false
-          },
-          {
-            "targetId": "ArmourTercioCategory",
-            "id": "28ea-3d6f-178c-d8f5",
-            "primary": true,
-            "name": "Armour Tercio"
-          }
-        ],
-        "constraints": [
-          {
-            "type": "min",
-            "value": 1,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "4044-44a2-acdf-9e05-min",
-            "automatic": false,
-            "includeChildSelections": false
-          },
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "4044-44a2-acdf-9e05-max",
-            "automatic": false,
-            "includeChildSelections": false
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "set",
-            "value": 0,
-            "field": "4044-44a2-acdf-9e05-min",
-            "conditionGroups": [
-              {
-                "type": "or",
-                "conditions": [
-                  {
-                    "type": "instanceOf",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "ancestor",
-                    "childId": "primary-detachment",
-                    "shared": true,
-                    "includeChildSelections": true,
-                    "includeChildForces": true
-                  },
-                  {
-                    "type": "instanceOf",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "ancestor",
-                    "childId": "apex",
-                    "shared": true,
-                    "includeChildSelections": true,
-                    "includeChildForces": true
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "set",
-            "value": 0,
-            "field": "4044-44a2-acdf-9e05-max",
-            "conditionGroups": [
-              {
-                "type": "or",
-                "conditions": [
-                  {
-                    "type": "instanceOf",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "ancestor",
-                    "childId": "primary-detachment",
-                    "shared": true,
-                    "includeChildSelections": true,
-                    "includeChildForces": true
-                  },
-                  {
-                    "type": "instanceOf",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "ancestor",
-                    "childId": "apex",
-                    "shared": true,
-                    "includeChildSelections": true,
-                    "includeChildForces": true
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "set",
-            "value": 0,
-            "field": "1f36-541f-914c-9e4e",
-            "conditionGroups": [
-              {
-                "type": "or",
-                "conditions": [
-                  {
-                    "type": "instanceOf",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "ancestor",
-                    "childId": "primary-detachment",
-                    "shared": true,
-                    "includeChildSelections": true,
-                    "includeChildForces": true
-                  },
-                  {
-                    "type": "instanceOf",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "ancestor",
-                    "childId": "apex",
-                    "shared": true,
-                    "includeChildSelections": true,
-                    "includeChildForces": true
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Veletaris Tercio Entry",
-        "hidden": false,
-        "id": "veletaris-tercio-entry",
-        "categoryLinks": [
-          {
-            "targetId": "veletaris-tercio-category",
-            "id": "5d1f-2c67-f461-ebc4",
-            "primary": true,
-            "name": "Veletaris Tercio"
-          }
-        ],
-        "constraints": [
-          {
-            "type": "min",
-            "value": 1,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "7cbc-f394-610c-e0e7-min",
-            "includeChildSelections": false
-          },
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "7cbc-f394-610c-e0e7-max",
-            "includeChildSelections": false
-          },
-          {
-            "type": "max",
-            "value": 0,
-            "field": "selections",
-            "scope": "roster",
-            "shared": true,
-            "id": "7110-8b4d-afef-ce31",
-            "includeChildSelections": true
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "7110-8b4d-afef-ce31",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "roster",
-                "childId": "69a7-c9f9-0c77-49b6",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true,
-                "includeChildForces": true
-              }
-            ]
-          },
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "7110-8b4d-afef-ce31",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "roster",
-                "childId": "69a7-c9f9-0c77-49b6",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true,
-                "includeChildForces": true
-              }
-            ],
-            "conditionGroups": [
-              {
-                "type": "and",
-                "conditions": [
-                  {
-                    "type": "instanceOf",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "primary-catalogue",
-                    "childId": "solar-pattern-cohort",
-                    "shared": true
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Reconnaissance Tercio Entry",
-        "hidden": false,
-        "id": "reconnaissance-tercio-entry",
-        "constraints": [
-          {
-            "type": "max",
-            "value": 0,
-            "field": "selections",
-            "scope": "roster",
-            "shared": true,
-            "id": "d1c8-e314-f64e-9702",
-            "automatic": false,
-            "includeChildSelections": true,
-            "includeChildForces": true
-          },
-          {
-            "type": "min",
-            "value": 1,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "7b9a-d6d5-6e81-6f84-min",
-            "includeChildSelections": false,
-            "includeChildForces": true
-          },
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "7b9a-d6d5-6e81-6f84-max",
-            "includeChildSelections": false,
-            "includeChildForces": true
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "d1c8-e314-f64e-9702",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "roster",
-                "childId": "ArmouredCommandSection",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true,
-                "includeChildForces": true
-              }
-            ],
-            "affects": "self.entries.forces.recursive.upgrade"
-          },
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "d1c8-e314-f64e-9702",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "roster",
-                "childId": "ArmouredCommandSection",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true,
-                "includeChildForces": true
-              }
-            ],
-            "conditionGroups": [
-              {
-                "type": "and",
-                "conditions": [
-                  {
-                    "type": "instanceOf",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "primary-catalogue",
-                    "childId": "mechanized-pattern-cohort",
-                    "shared": true
-                  }
-                ]
-              }
-            ],
-            "affects": "self.entries.forces.recursive.upgrade"
-          }
-        ],
-        "categoryLinks": [
-          {
-            "name": "Armour Tercio",
-            "hidden": false,
-            "id": "f34f-ce5e-c5b6-c4e2",
-            "targetId": "ArmourTercioCategory",
-            "primary": true
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Scout Tercio Entry",
-        "hidden": false,
-        "id": "scout-tercio-entry",
-        "categoryLinks": [
-          {
-            "targetId": "scout-tercio-category",
-            "id": "e509-7e73-d20c-71bf",
-            "primary": true,
-            "name": "Scout Tercio"
-          }
-        ],
-        "constraints": [
-          {
-            "type": "min",
-            "value": 1,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "d44a-da1d-fa6c-abff-min",
-            "includeChildSelections": false
-          },
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "force",
-            "shared": true,
-            "id": "d44a-da1d-fa6c-abff-max",
-            "includeChildSelections": false
-          },
-          {
-            "type": "max",
-            "value": 0,
-            "field": "selections",
-            "scope": "roster",
-            "shared": true,
-            "id": "f4ba-3718-9c59-50d3",
-            "includeChildSelections": true
-          }
-        ],
-        "modifiers": [
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "f4ba-3718-9c59-50d3",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "roster",
-                "childId": "08fb-1df0-f36b-f906",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true,
-                "includeChildForces": true
-              }
-            ]
-          },
-          {
-            "type": "increment",
-            "value": 1,
-            "field": "f4ba-3718-9c59-50d3",
-            "repeats": [
-              {
-                "value": 1,
-                "repeats": 1,
-                "field": "selections",
-                "scope": "roster",
-                "childId": "HermesCommandSection",
-                "shared": true,
-                "roundUp": false,
-                "includeChildSelections": true,
-                "includeChildForces": true
-              }
-            ],
-            "conditionGroups": [
-              {
-                "type": "and",
-                "conditions": [
-                  {
-                    "type": "instanceOf",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "primary-catalogue",
-                    "childId": "reconnaissance-pattern-cohort",
-                    "shared": true
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
         "name": "Turret Mounted Demolisher Cannon",
         "hidden": false,
         "id": "vanquisher-cannon",
@@ -5045,13 +4324,6 @@
         "name": "Turret Mounted Battlecannon",
         "hidden": false,
         "id": "battlecannon"
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Turret Mounted Battlecannon",
-        "hidden": false,
-        "id": "6c4f-e99b-78f9-09f2"
       },
       {
         "type": "upgrade",
@@ -5256,7 +4528,15 @@
         "hidden": false,
         "id": "541f-daca-b6b1-07e3",
         "type": "selectionEntry",
-        "targetId": "ArmouredCommandSection"
+        "targetId": "ArmouredCommandSection",
+        "categoryLinks": [
+          {
+            "targetId": "armoured-command-category",
+            "id": "9969-b333-8e61-29c6",
+            "primary": false,
+            "name": "Armoured Command"
+          }
+        ]
       },
       {
         "import": true,
@@ -5264,7 +4544,15 @@
         "hidden": false,
         "id": "7227-b6c9-5b61-37fc",
         "type": "selectionEntry",
-        "targetId": "ArtilleryCommandSection"
+        "targetId": "ArtilleryCommandSection",
+        "categoryLinks": [
+          {
+            "targetId": "artillery-command-category",
+            "id": "b860-7e49-ea56-1a61",
+            "primary": false,
+            "name": "Artillery Command"
+          }
+        ]
       },
       {
         "import": true,
@@ -5308,7 +4596,7 @@
       },
       {
         "import": true,
-        "name": "Hermes Light Sentinel Squadron.",
+        "name": "Hermes Light Sentinel Squadron",
         "hidden": false,
         "id": "16d0-0c83-bcd8-8bce",
         "type": "selectionEntry",
@@ -5324,7 +4612,7 @@
       },
       {
         "import": true,
-        "name": "Leman Russ Strike Tank.",
+        "name": "Leman Russ Strike Tank",
         "hidden": false,
         "id": "b279-1a4a-bc1d-dc9e",
         "type": "selectionEntry",
@@ -5432,7 +4720,15 @@
         "hidden": false,
         "id": "69a7-c9f9-0c77-49b6",
         "type": "selectionEntry",
-        "targetId": "VeletarisCommandSection"
+        "targetId": "VeletarisCommandSection",
+        "categoryLinks": [
+          {
+            "targetId": "veletaris-command-category",
+            "id": "150c-9733-260f-61d4",
+            "primary": false,
+            "name": "Veletaris Command"
+          }
+        ]
       },
       {
         "import": true,
@@ -5449,46 +4745,6 @@
         "id": "d111-922d-ef0e-f74b",
         "type": "selectionEntry",
         "targetId": "VeletarisVanguardSection"
-      },
-      {
-        "import": true,
-        "name": "Artillery Tercio Entry",
-        "hidden": false,
-        "id": "3d89-3d0f-c18b-3833",
-        "type": "selectionEntry",
-        "targetId": "artillery-tercio-entry"
-      },
-      {
-        "import": true,
-        "name": "Infantry Entry",
-        "hidden": false,
-        "id": "b0f7-21ac-af90-3910",
-        "type": "selectionEntry",
-        "targetId": "infantry-entry"
-      },
-      {
-        "import": true,
-        "name": "Armour Tercio Entry",
-        "hidden": false,
-        "id": "7b27-1dff-b203-18c7",
-        "type": "selectionEntry",
-        "targetId": "armour-tercio-entry"
-      },
-      {
-        "import": true,
-        "name": "Veletaris Tercio Entry",
-        "hidden": false,
-        "id": "314f-1ef7-2b15-e139",
-        "type": "selectionEntry",
-        "targetId": "veletaris-tercio-entry",
-        "categoryLinks": [
-          {
-            "targetId": "veletaris-tercio-category",
-            "id": "f374-0046-d78b-03f8",
-            "primary": true,
-            "name": "Veletaris Tercio"
-          }
-        ]
       }
     ],
     "publicationId": "liber-imperialis",
@@ -5607,13 +4863,6 @@
                 ]
               }
             ]
-          },
-          {
-            "name": "Veletaris Tercio",
-            "hidden": false,
-            "id": "89af-a598-5731-d84d",
-            "targetId": "veletaris-tercio-category",
-            "type": "categoryEntry"
           }
         ],
         "constraints": [
@@ -5760,73 +5009,6 @@
             "hidden": false,
             "id": "e8cc-367c-8e75-fc62",
             "targetId": "auxillary-category"
-          },
-          {
-            "name": "Infantry Tercio",
-            "hidden": false,
-            "id": "e335-a8a2-9c04-24e1",
-            "targetId": "InfantryTercioCategory",
-            "type": "categoryEntry",
-            "constraints": [
-              {
-                "type": "max",
-                "value": 0,
-                "field": "selections",
-                "scope": "roster",
-                "shared": false,
-                "id": "4bfb-c66f-7fca-9ca0",
-                "includeChildSelections": true,
-                "includeChildForces": true
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "increment",
-                "value": 1,
-                "field": "4bfb-c66f-7fca-9ca0",
-                "repeats": [
-                  {
-                    "value": 1,
-                    "repeats": 1,
-                    "field": "selections",
-                    "scope": "roster",
-                    "childId": "a793-165f-ef57-bc76",
-                    "shared": true,
-                    "roundUp": false,
-                    "includeChildSelections": true,
-                    "includeChildForces": true
-                  }
-                ]
-              },
-              {
-                "type": "increment",
-                "value": 1,
-                "field": "4bfb-c66f-7fca-9ca0",
-                "repeats": [
-                  {
-                    "value": 1,
-                    "repeats": 1,
-                    "field": "selections",
-                    "scope": "roster",
-                    "childId": "infantry-entry",
-                    "shared": true,
-                    "roundUp": false,
-                    "includeChildSelections": true,
-                    "includeChildForces": true
-                  }
-                ],
-                "conditions": [
-                  {
-                    "type": "instanceOf",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "primary-catalogue",
-                    "childId": "ultima-pattern-cohort",
-                    "shared": true
-                  }
-                ]
-              }
-            ]
           }
         ],
         "constraints": [
@@ -5850,7 +5032,7 @@
                 "repeats": 1,
                 "field": "selections",
                 "scope": "roster",
-                "childId": "a793-165f-ef57-bc76",
+                "childId": "infantry-command-category",
                 "shared": true,
                 "roundUp": false,
                 "includeChildSelections": true,
@@ -5950,13 +5132,6 @@
                 "includeChildSelections": false
               }
             ]
-          },
-          {
-            "name": "Artillery Tercio",
-            "hidden": false,
-            "id": "a0cc-7a93-9bad-a9be",
-            "targetId": "ArtilleryTercioCategory",
-            "type": "categoryEntry"
           }
         ],
         "publicationId": "liber-auxilia",
@@ -5966,8 +5141,10 @@
             "value": 0,
             "field": "forces",
             "scope": "roster",
-            "shared": false,
-            "id": "72f3-1e86-6cd2-0cc7"
+            "shared": true,
+            "id": "72f3-1e86-6cd2-0cc7",
+            "includeChildSelections": true,
+            "includeChildForces": true
           }
         ],
         "modifiers": [
@@ -5981,7 +5158,7 @@
                 "repeats": 1,
                 "field": "selections",
                 "scope": "roster",
-                "childId": "7227-b6c9-5b61-37fc",
+                "childId": "artillery-command-category",
                 "shared": true,
                 "roundUp": false,
                 "includeChildSelections": true,
@@ -6010,7 +5187,7 @@
                 "field": "forces",
                 "scope": "roster",
                 "childId": "ArtilleryTercio",
-                "shared": true,
+                "shared": false,
                 "roundUp": false,
                 "includeChildSelections": true
               }
@@ -6067,8 +5244,7 @@
             "name": "Scout Tercio",
             "hidden": false,
             "id": "0486-39e7-834e-c3ef",
-            "targetId": "scout-tercio-category",
-            "type": "categoryEntry"
+            "targetId": "scout-tercio-category"
           }
         ],
         "publicationId": "liber-auxilia",
@@ -6183,7 +5359,150 @@
             "name": "Auxillary",
             "hidden": false,
             "id": "9877-bc7b-746c-28ef",
-            "targetId": "auxillary-category"
+            "targetId": "auxillary-category",
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "364a-e249-642b-fedf",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "mechanized-pattern-cohort",
+                    "shared": true
+                  }
+                ],
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "forces",
+                    "scope": "roster",
+                    "childId": "ArmourTercioForce",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": true
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "364a-e249-642b-fedf",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "siege-pattern-cohort",
+                    "shared": true,
+                    "includeChildSelections": false,
+                    "includeChildForces": false
+                  }
+                ],
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "forces",
+                    "scope": "roster",
+                    "childId": "ArtilleryTercio",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": false,
+                    "includeChildForces": false
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "364a-e249-642b-fedf",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "ultima-pattern-cohort",
+                    "shared": true
+                  }
+                ],
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "forces",
+                    "scope": "roster",
+                    "childId": "InfantryTercio",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": false
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "364a-e249-642b-fedf",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "reconnaissance-pattern-cohort",
+                    "shared": true
+                  }
+                ],
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "forces",
+                    "scope": "roster",
+                    "childId": "ScoutTercio",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": true
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "364a-e249-642b-fedf",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "primary-catalogue",
+                    "childId": "solar-pattern-cohort",
+                    "shared": true,
+                    "includeChildSelections": false,
+                    "includeChildForces": false
+                  }
+                ],
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "forces",
+                    "scope": "roster",
+                    "childId": "VeletarisTercio",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": false,
+                    "includeChildForces": true
+                  }
+                ]
+              }
+            ]
           },
           {
             "name": "Armour",
@@ -6201,29 +5520,64 @@
                 "includeChildSelections": true
               }
             ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 0,
+            "field": "forces",
+            "scope": "roster",
+            "shared": true,
+            "id": "2bf5-b5ad-6d49-dc82",
+            "includeChildForces": true,
+            "includeChildSelections": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "2bf5-b5ad-6d49-dc82",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "armoured-command-category",
+                "shared": false,
+                "roundUp": false,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ],
+            "affects": "self.entries.forces.recursive"
           },
           {
-            "name": "Armour Tercio",
-            "hidden": false,
-            "id": "8eb9-aa35-4777-abee",
-            "targetId": "ArmourTercioCategory",
-            "type": "categoryEntry",
-            "constraints": [
+            "type": "increment",
+            "value": 1,
+            "field": "2bf5-b5ad-6d49-dc82",
+            "conditions": [
               {
-                "type": "min",
+                "type": "instanceOf",
                 "value": 1,
                 "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "623c-a04e-9410-4216-min"
-              },
+                "scope": "primary-catalogue",
+                "childId": "mechanized-pattern-cohort",
+                "shared": true
+              }
+            ],
+            "repeats": [
               {
-                "type": "max",
                 "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "623c-a04e-9410-4216-max"
+                "repeats": 1,
+                "field": "forces",
+                "scope": "roster",
+                "childId": "ArmourTercioForce",
+                "shared": false,
+                "roundUp": false,
+                "includeChildSelections": true
               }
             ]
           }
@@ -6284,28 +5638,33 @@
         "hidden": false
       },
       {
-        "name": "Armour Tercio",
-        "id": "ArmourTercioCategory",
-        "hidden": false
-      },
-      {
-        "name": "Artillery Tercio",
-        "id": "ArtilleryTercioCategory",
-        "hidden": false
-      },
-      {
-        "name": "Infantry Tercio",
-        "id": "InfantryTercioCategory",
-        "hidden": false
-      },
-      {
-        "name": "Veletaris Tercio",
-        "id": "veletaris-tercio-category",
-        "hidden": false
-      },
-      {
         "name": "Scout Tercio",
         "id": "scout-tercio-category",
+        "hidden": false
+      },
+      {
+        "name": "Armoured Command",
+        "id": "armoured-command-category",
+        "hidden": false
+      },
+      {
+        "name": "Artillery Command",
+        "id": "artillery-command-category",
+        "hidden": false
+      },
+      {
+        "name": "Infantry Command",
+        "id": "infantry-command-category",
+        "hidden": false
+      },
+      {
+        "name": "Veletaris Command",
+        "id": "veletaris-command-category",
+        "hidden": false
+      },
+      {
+        "name": "Reconnaissance Command",
+        "id": "reconnaissance-command-categery",
         "hidden": false
       }
     ],
