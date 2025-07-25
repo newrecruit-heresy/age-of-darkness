@@ -1194,6 +1194,14 @@
         "name": "Liber Questoris",
         "id": "liber-questoris",
         "hidden": false
+      },
+      {
+        "name": "Faqs and Errata for the Age of Darkness Third Edition",
+        "id": "faq-and-errata-1.0",
+        "hidden": false,
+        "shortName": "faq1",
+        "publisherUrl": "https://assets.warhammer-community.com/eng_25-07_warhammer_the_horus_heresy_faqs_and_errata_age_of_darkness_third_edition-gnfitfl8tz-q06xgstexv.pdf",
+        "publicationDate": "7/25/2025"
       }
     ],
     "profileTypes": [
