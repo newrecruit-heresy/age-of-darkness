@@ -3,7 +3,7 @@
     "id": "sys-41d4-b033-8ca9-9bb0",
     "name": "The Horus Heresy 3.0 (2025)",
     "battleScribeVersion": "2.03",
-    "revision": 3,
+    "revision": 1,
     "categoryEntries": [
       {
         "name": "High Command",
@@ -257,7 +257,7 @@
       },
       {
         "name": "Conversion",
-        "id": "conversion",
+        "id": "conversion-category",
         "hidden": false
       },
       {
@@ -584,7 +584,7 @@
       },
       {
         "name": "Light Transport",
-        "id": "light-transport",
+        "id": "light-transport-category",
         "hidden": false,
         "infoLinks": [
           {
@@ -622,7 +622,7 @@
       },
       {
         "name": "Deep Strike",
-        "id": "deep-strike",
+        "id": "deep-strike-category",
         "hidden": false,
         "infoLinks": [
           {
@@ -650,7 +650,7 @@
       },
       {
         "name": "Assault Vehicle",
-        "id": "assault-vehicle",
+        "id": "assault-vehicle-category",
         "hidden": false,
         "rules": [
           {
@@ -714,7 +714,7 @@
       },
       {
         "name": "Move Through Cover",
-        "id": "move-through-cover",
+        "id": "move-through-cover-category",
         "hidden": false,
         "rules": [
           {
@@ -844,7 +844,7 @@
       },
       {
         "name": "Pistol",
-        "id": "pistol",
+        "id": "pistol-category",
         "hidden": false
       },
       {
@@ -1010,7 +1010,7 @@
         "hidden": false,
         "infoLinks": [
           {
-            "name": "Overoad",
+            "name": "Overload (X)",
             "id": "3005-2b97-6e82-82f6",
             "hidden": false,
             "type": "rule",
