@@ -1741,7 +1741,7 @@
                 "hidden": false,
                 "id": "8944-b9ad-ddf8-657b",
                 "type": "selectionEntry",
-                "targetId": "vanquisher-cannon"
+                "targetId": "turret-mounted-demolisher-cannon"
               },
               {
                 "import": true,
@@ -1749,7 +1749,7 @@
                 "hidden": false,
                 "id": "f2d8-d863-15c1-f237",
                 "type": "selectionEntry",
-                "targetId": "gravis-autocannon"
+                "targetId": "turret-mounted-executioner"
               }
             ],
             "defaultSelectionEntryId": "c442-0857-ca67-6a48",
@@ -3141,6 +3141,18 @@
             "id": "3f4c-b58b-5d3e-97c7",
             "primary": true,
             "name": "Transport"
+          },
+          {
+            "targetId": "flyer",
+            "id": "9270-c886-0543-0dd3",
+            "primary": false,
+            "name": "Vehicle (Flyer)"
+          },
+          {
+            "targetId": "transport-tag-category",
+            "id": "7181-1a79-bea1-4b72",
+            "primary": false,
+            "name": "Vehicle (Transport)"
           }
         ],
         "publicationId": "liber-imperialis",
@@ -3544,14 +3556,6 @@
               },
               {
                 "import": true,
-                "name": "Turret Mounted Gravis Autocannon",
-                "hidden": false,
-                "id": "bcf8-5089-1847-dcda",
-                "type": "selectionEntry",
-                "targetId": "764c-ffc5-f75b-616c"
-              },
-              {
-                "import": true,
                 "name": "Turret Mounted Vanquisher Cannon and one Co-axial (Vanquisher Cannon) Mounted Heavy Stubber",
                 "hidden": false,
                 "id": "772a-58b2-98e9-5291",
@@ -3565,6 +3569,14 @@
                 "id": "b447-7edf-6718-bb25",
                 "type": "selectionEntry",
                 "targetId": "turret-mounted-twin-lascannon"
+              },
+              {
+                "import": true,
+                "name": "Turret Mounted Gravis Autocannon",
+                "hidden": false,
+                "id": "f911-1273-31f2-5fd8",
+                "type": "selectionEntry",
+                "targetId": "turret-mounted-gravis-autocannon"
               }
             ],
             "defaultSelectionEntryId": "ad96-5aff-beed-b646"
@@ -3692,7 +3704,7 @@
                 "hidden": false,
                 "id": "6748-b013-f0a9-5c30",
                 "type": "selectionEntry",
-                "targetId": "gravis-autocannon"
+                "targetId": "turret-mounted-executioner"
               },
               {
                 "import": true,
@@ -3700,7 +3712,7 @@
                 "hidden": false,
                 "id": "cd05-36fe-429d-9ffe",
                 "type": "selectionEntry",
-                "targetId": "vanquisher-cannon"
+                "targetId": "turret-mounted-demolisher-cannon"
               }
             ],
             "defaultSelectionEntryId": "35b1-dd01-cc42-9a77"
@@ -4309,7 +4321,7 @@
         "import": true,
         "name": "Turret Mounted Demolisher Cannon",
         "hidden": false,
-        "id": "vanquisher-cannon",
+        "id": "turret-mounted-demolisher-cannon",
         "costs": [
           {
             "name": "Points",
@@ -4330,7 +4342,7 @@
         "import": true,
         "name": "Turret Mounted Gravis Autocannon",
         "hidden": false,
-        "id": "764c-ffc5-f75b-616c"
+        "id": "turret-mounted-gravis-autocannon"
       },
       {
         "type": "upgrade",
@@ -4351,7 +4363,7 @@
         "import": true,
         "name": "Turret Mounted Executioner Plasma Destroyer",
         "hidden": false,
-        "id": "gravis-autocannon",
+        "id": "turret-mounted-executioner",
         "costs": [
           {
             "name": "Points",
@@ -4460,31 +4472,6 @@
             "name": "Points",
             "typeId": "points",
             "value": 15
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Melta bombs",
-        "hidden": false,
-        "id": "761a-1b86-42ef-8b5e",
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "e9f0-74f0-ffee-61aa",
-            "includeChildSelections": false
-          }
-        ],
-        "costs": [
-          {
-            "name": "Points",
-            "typeId": "points",
-            "value": 10
           }
         ]
       },

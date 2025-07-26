@@ -5,7 +5,7 @@
     "name": "Astartes shared wargear",
     "gameSystemId": "sys-41d4-b033-8ca9-9bb0",
     "gameSystemRevision": 4,
-    "revision": 3,
+    "revision": 1,
     "battleScribeVersion": "2.03",
     "type": "catalogue",
     "sharedSelectionEntries": [
@@ -14,45 +14,7 @@
         "import": true,
         "name": "Legion Officer Wargear List",
         "hidden": false,
-        "id": "legion-officer-wargear",
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Legion Officer Wargear Melee",
-            "hidden": false,
-            "id": "1e66-9a5b-ac2a-74c5",
-            "type": "selectionEntryGroup",
-            "targetId": "officer-melee"
-          },
-          {
-            "import": true,
-            "name": "Legion Officer Wargear Ranged",
-            "hidden": false,
-            "id": "7852-a782-e82c-a42a",
-            "type": "selectionEntryGroup",
-            "targetId": "officer-ranged"
-          }
-        ],
-        "constraints": [
-          {
-            "type": "min",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "f72d-c82c-9dd5-e8de-min",
-            "includeChildSelections": false
-          },
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "f72d-c82c-9dd5-e8de-max",
-            "includeChildSelections": false
-          }
-        ]
+        "id": "legion-officer-wargear"
       },
       {
         "type": "upgrade",
@@ -102,23 +64,6 @@
             "id": "8e7f-d55f-be51-75eb",
             "type": "selectionEntryGroup",
             "targetId": "legion-pistols"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Legion combi weapons",
-        "hidden": false,
-        "id": "d78f-e0c3-7af3-a9c7",
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Legion Combi-Weapons",
-            "hidden": false,
-            "id": "7bd3-99af-fab4-4226",
-            "type": "selectionEntryGroup",
-            "targetId": "legion-combi-weapons"
           }
         ]
       },
@@ -218,13 +163,13 @@
                 "$text": "A"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "-2"
               },
               {
                 "name": "Armour penetration",
-                "typeId": "12fe-0c2e-ec7d-8f26",
+                "typeId": "armour-penetration",
                 "$text": "2"
               }
             ]
@@ -252,7 +197,8 @@
             "hidden": false,
             "id": "f6b0-7554-9b0d-8efe",
             "targetId": "pistol",
-            "primary": false
+            "primary": false,
+            "type": "rule"
           },
           {
             "targetId": "bolt",
@@ -307,7 +253,7 @@
                 "$text": ""
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": ""
               },
@@ -397,7 +343,7 @@
                 "$text": ""
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": ""
               },
@@ -481,7 +427,7 @@
                 "$text": ""
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": ""
               },
@@ -558,7 +504,7 @@
                 "$text": "Range"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "Range"
               },
@@ -637,7 +583,7 @@
                 "$text": "Range"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "Range"
               },
@@ -721,7 +667,7 @@
                 "$text": "Range"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "Range"
               },
@@ -806,7 +752,7 @@
                 "$text": "A"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "I"
               },
@@ -863,7 +809,7 @@
                 "$text": ""
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": ""
               },
@@ -935,7 +881,7 @@
                 "$text": ""
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": ""
               },
@@ -1013,7 +959,7 @@
                 "$text": "A"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "-1"
               },
@@ -1125,7 +1071,7 @@
                 "$text": ""
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": ""
               },
@@ -1173,7 +1119,7 @@
                 "$text": ""
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": ""
               },
@@ -1230,7 +1176,7 @@
                 "$text": "A"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "-1"
               },
@@ -1294,7 +1240,7 @@
                 "$text": ""
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": ""
               },
@@ -1374,7 +1320,7 @@
                 "$text": ""
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": ""
               },
@@ -1470,7 +1416,7 @@
                 "$text": ""
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": ""
               },
@@ -1519,7 +1465,7 @@
                 "$text": ""
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": ""
               },
@@ -1563,1473 +1509,2367 @@
             "name": "Plasma"
           }
         ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Combi-bolter",
+        "hidden": false,
+        "id": "0a79-986f-b4d7-ab74",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 0
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Combi-bolter",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "91cf-28e5-8c60-fdd0",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "24"
+              },
+              {
+                "name": "Range Strength",
+                "typeId": "range-strength",
+                "$text": "4"
+              },
+              {
+                "name": "Fire Power",
+                "typeId": "fire-power",
+                "$text": "4"
+              },
+              {
+                "name": "Melee Strength",
+                "typeId": "melee-strength",
+                "$text": "Range"
+              },
+              {
+                "name": "Damage",
+                "typeId": "damage",
+                "$text": "1"
+              },
+              {
+                "name": "Attacks",
+                "typeId": "weapon-attacks",
+                "$text": "Range"
+              },
+              {
+                "name": "Initiative modifier",
+                "typeId": "weapon-initiative",
+                "$text": "Range"
+              },
+              {
+                "name": "Armour penetration",
+                "$text": "5"
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Bolt",
+            "hidden": false,
+            "id": "505d-98ae-e8c2-135e",
+            "targetId": "bolt",
+            "primary": false
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Combi-disintegrator",
+        "hidden": false,
+        "id": "a7be-782f-5711-53e7",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 0
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Combi-disintegrator",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "2315-c5b4-86a1-b0c2",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "24"
+              },
+              {
+                "name": "Range Strength",
+                "typeId": "range-strength",
+                "$text": "4"
+              },
+              {
+                "name": "Fire Power",
+                "typeId": "fire-power",
+                "$text": "1"
+              },
+              {
+                "name": "Melee Strength",
+                "typeId": "melee-strength",
+                "$text": "Range"
+              },
+              {
+                "name": "Damage",
+                "typeId": "damage",
+                "$text": "2"
+              },
+              {
+                "name": "Attacks",
+                "typeId": "weapon-attacks",
+                "$text": "Range"
+              },
+              {
+                "name": "Initiative modifier",
+                "typeId": "weapon-initiative",
+                "$text": "Range"
+              },
+              {
+                "name": "Armour penetration",
+                "$text": "3"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Bolter",
+            "hidden": false,
+            "id": "6b34-b05d-9057-f194",
+            "type": "profile",
+            "targetId": "bcaa-f64d-9144-e8dd"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Combi",
+            "hidden": false,
+            "id": "cf36-3b7d-9ebc-9d61",
+            "targetId": "6a69-5de7-f700-23a8",
+            "primary": false
+          },
+          {
+            "name": "Disintegrator",
+            "hidden": false,
+            "id": "6be6-e048-8c49-f44f",
+            "targetId": "Disintegrator",
+            "primary": false
+          },
+          {
+            "name": "Limited (1)",
+            "hidden": false,
+            "id": "2a5a-ebb9-31bf-5c82",
+            "targetId": "b9a6-b799-0a85-4f0c",
+            "primary": false
+          },
+          {
+            "name": "Bolt",
+            "hidden": false,
+            "id": "9518-7fe6-8a38-c55b",
+            "targetId": "bolt",
+            "primary": false
+          }
+        ],
+        "collective": true
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Combi-flamer",
+        "hidden": false,
+        "id": "fc5e-feb7-e7fe-7c96",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 0
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Combi-flamer",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "1717-2fd9-07c4-bd56",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "Template"
+              },
+              {
+                "name": "Range Strength",
+                "typeId": "range-strength",
+                "$text": "4"
+              },
+              {
+                "name": "Fire Power",
+                "typeId": "fire-power",
+                "$text": "1"
+              },
+              {
+                "name": "Melee Strength",
+                "typeId": "melee-strength",
+                "$text": "Range"
+              },
+              {
+                "name": "Damage",
+                "typeId": "damage",
+                "$text": "1"
+              },
+              {
+                "name": "Attacks",
+                "typeId": "weapon-attacks",
+                "$text": "Range"
+              },
+              {
+                "name": "Initiative modifier",
+                "typeId": "weapon-initiative",
+                "$text": "Range"
+              },
+              {
+                "name": "Armour penetration",
+                "$text": "5"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Bolter",
+            "hidden": false,
+            "id": "bb9f-b41c-6e1f-5021",
+            "type": "profile",
+            "targetId": "bcaa-f64d-9144-e8dd"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Flame",
+            "hidden": false,
+            "id": "791e-0c0e-dad4-aa0a",
+            "targetId": "flame",
+            "primary": false
+          },
+          {
+            "name": "Combi",
+            "hidden": false,
+            "id": "ed55-6cb5-58f6-aaf3",
+            "targetId": "6a69-5de7-f700-23a8",
+            "primary": false
+          },
+          {
+            "name": "Limited (1)",
+            "hidden": false,
+            "id": "f066-dffd-84ed-1e29",
+            "targetId": "b9a6-b799-0a85-4f0c",
+            "primary": false
+          },
+          {
+            "name": "Bolt",
+            "hidden": false,
+            "id": "9e42-bb11-32d9-ef14",
+            "targetId": "bolt",
+            "primary": false
+          }
+        ],
+        "collective": true
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Combi-grav",
+        "hidden": false,
+        "id": "c701-17da-d134-6889",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 0
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Combi-grav",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "dd20-f088-fea8-7a9f",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "18"
+              },
+              {
+                "name": "Range Strength",
+                "typeId": "range-strength",
+                "$text": "6"
+              },
+              {
+                "name": "Fire Power",
+                "typeId": "fire-power",
+                "$text": "1"
+              },
+              {
+                "name": "Melee Strength",
+                "typeId": "melee-strength",
+                "$text": "Range"
+              },
+              {
+                "name": "Damage",
+                "typeId": "damage",
+                "$text": "1"
+              },
+              {
+                "name": "Attacks",
+                "typeId": "weapon-attacks",
+                "$text": "Range"
+              },
+              {
+                "name": "Initiative modifier",
+                "typeId": "weapon-initiative",
+                "$text": "Range"
+              },
+              {
+                "name": "Armour penetration",
+                "$text": "4"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Bolter",
+            "hidden": false,
+            "id": "0714-57ed-d04e-5111",
+            "type": "profile",
+            "targetId": "bcaa-f64d-9144-e8dd"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Limited (1)",
+            "hidden": false,
+            "id": "9c5b-c8fd-3f78-1298",
+            "targetId": "b9a6-b799-0a85-4f0c",
+            "primary": false
+          },
+          {
+            "name": "Graviton",
+            "hidden": false,
+            "id": "972f-63aa-34b5-9e05",
+            "targetId": "graviton",
+            "primary": false
+          },
+          {
+            "name": "Combi",
+            "hidden": false,
+            "id": "823d-1811-7c40-0b5f",
+            "targetId": "6a69-5de7-f700-23a8",
+            "primary": false
+          },
+          {
+            "name": "Bolt",
+            "hidden": false,
+            "id": "b3b6-ee26-c3be-e5d6",
+            "targetId": "bolt",
+            "primary": false
+          }
+        ],
+        "collective": true
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Combi-grenade",
+        "hidden": false,
+        "id": "83a1-d99f-3b09-eac7",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 0
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Combi-grenade",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "5e3d-70a3-83cc-668d",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "24"
+              },
+              {
+                "name": "Range Strength",
+                "typeId": "range-strength",
+                "$text": "6"
+              },
+              {
+                "name": "Fire Power",
+                "typeId": "fire-power",
+                "$text": "1"
+              },
+              {
+                "name": "Melee Strength",
+                "typeId": "melee-strength",
+                "$text": "Range"
+              },
+              {
+                "name": "Damage",
+                "typeId": "damage",
+                "$text": "2"
+              },
+              {
+                "name": "Attacks",
+                "typeId": "weapon-attacks",
+                "$text": "Range"
+              },
+              {
+                "name": "Initiative modifier",
+                "typeId": "weapon-initiative",
+                "$text": "Range"
+              },
+              {
+                "name": "Armour penetration",
+                "$text": "4"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Bolter",
+            "hidden": false,
+            "id": "22df-7f7f-975b-6d3f",
+            "type": "profile",
+            "targetId": "bcaa-f64d-9144-e8dd"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Combi",
+            "hidden": false,
+            "id": "3b2c-f75e-19d7-b28d",
+            "targetId": "6a69-5de7-f700-23a8",
+            "primary": false
+          },
+          {
+            "name": "Bolt",
+            "hidden": false,
+            "id": "f264-4866-e686-3c79",
+            "targetId": "bolt",
+            "primary": false
+          }
+        ],
+        "collective": true
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Combi-melta",
+        "hidden": false,
+        "id": "eeee-7602-8381-a6b6",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 0
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Combi-melta",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "907f-15c6-85aa-b128",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "12"
+              },
+              {
+                "name": "Range Strength",
+                "typeId": "range-strength",
+                "$text": "8"
+              },
+              {
+                "name": "Fire Power",
+                "typeId": "fire-power",
+                "$text": "1"
+              },
+              {
+                "name": "Melee Strength",
+                "typeId": "melee-strength",
+                "$text": "Range"
+              },
+              {
+                "name": "Damage",
+                "typeId": "damage",
+                "$text": "3"
+              },
+              {
+                "name": "Attacks",
+                "typeId": "weapon-attacks",
+                "$text": "Range"
+              },
+              {
+                "name": "Initiative modifier",
+                "typeId": "weapon-initiative",
+                "$text": "Range"
+              },
+              {
+                "name": "Armour penetration",
+                "$text": "2"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Bolter",
+            "hidden": false,
+            "id": "fcb7-1dc6-a60b-601a",
+            "type": "profile",
+            "targetId": "bcaa-f64d-9144-e8dd"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Melta (6)",
+            "hidden": false,
+            "id": "b6dd-18bb-cb60-80a9",
+            "targetId": "melta-6",
+            "primary": false
+          },
+          {
+            "name": "Limited (1)",
+            "hidden": false,
+            "id": "8211-6b00-2985-998a",
+            "targetId": "b9a6-b799-0a85-4f0c",
+            "primary": false
+          },
+          {
+            "name": "Bolt",
+            "hidden": false,
+            "id": "1aef-6de9-1740-ae21",
+            "targetId": "bolt",
+            "primary": false
+          },
+          {
+            "name": "Combi",
+            "hidden": false,
+            "id": "6b99-7067-2b2c-74f8",
+            "targetId": "6a69-5de7-f700-23a8",
+            "primary": false
+          }
+        ],
+        "collective": true
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Combi-plasma",
+        "hidden": false,
+        "id": "c862-70aa-7cea-2485",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 0
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Combi-plasma",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "c6c6-aced-5688-e7b7",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "24"
+              },
+              {
+                "name": "Range Strength",
+                "typeId": "range-strength",
+                "$text": "6"
+              },
+              {
+                "name": "Fire Power",
+                "typeId": "fire-power",
+                "$text": "2"
+              },
+              {
+                "name": "Melee Strength",
+                "typeId": "melee-strength",
+                "$text": "Range"
+              },
+              {
+                "name": "Damage",
+                "typeId": "damage",
+                "$text": "1"
+              },
+              {
+                "name": "Attacks",
+                "typeId": "weapon-attacks",
+                "$text": "Range"
+              },
+              {
+                "name": "Initiative modifier",
+                "typeId": "weapon-initiative",
+                "$text": "Range"
+              },
+              {
+                "name": "Armour penetration",
+                "$text": "4"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Bolter",
+            "hidden": false,
+            "id": "8c0b-7154-abf3-5b83",
+            "type": "profile",
+            "targetId": "bcaa-f64d-9144-e8dd"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Combi",
+            "hidden": false,
+            "id": "6640-c084-9414-eb84",
+            "targetId": "6a69-5de7-f700-23a8",
+            "primary": false
+          },
+          {
+            "name": "Bolt",
+            "hidden": false,
+            "id": "2bff-748d-ce2f-a5d8",
+            "targetId": "bolt",
+            "primary": false
+          },
+          {
+            "name": "Breaching (4+)",
+            "hidden": false,
+            "id": "31ec-a41e-ec1b-fc87",
+            "targetId": "e555-ec38-2dda-8be7",
+            "primary": false
+          },
+          {
+            "name": "Limited (1)",
+            "hidden": false,
+            "id": "9767-8705-707e-99d7",
+            "targetId": "b9a6-b799-0a85-4f0c",
+            "primary": false
+          }
+        ],
+        "collective": true
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Combi-volkite",
+        "hidden": false,
+        "id": "Combi-Volkite",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 0
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Combi-volkite",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "105f-9876-4fb7-6626",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "15"
+              },
+              {
+                "name": "Range Strength",
+                "typeId": "range-strength",
+                "$text": "5"
+              },
+              {
+                "name": "Fire Power",
+                "typeId": "fire-power",
+                "$text": "2"
+              },
+              {
+                "name": "Melee Strength",
+                "typeId": "melee-strength",
+                "$text": "Range"
+              },
+              {
+                "name": "Damage",
+                "typeId": "damage",
+                "$text": "1"
+              },
+              {
+                "name": "Attacks",
+                "typeId": "weapon-attacks",
+                "$text": "Range"
+              },
+              {
+                "name": "Initiative modifier",
+                "typeId": "weapon-initiative",
+                "$text": "Range"
+              },
+              {
+                "name": "Armour penetration",
+                "$text": "5"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Bolter",
+            "hidden": false,
+            "id": "881c-f984-9aec-79e3",
+            "type": "profile",
+            "targetId": "bcaa-f64d-9144-e8dd"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Deflagrate (5)",
+            "hidden": false,
+            "id": "4d38-7768-df8f-72ea",
+            "targetId": "73a8-e20f-8a16-d4bc",
+            "primary": false
+          },
+          {
+            "name": "Volkite",
+            "hidden": false,
+            "id": "8f29-77d8-cc8a-3a22",
+            "targetId": "volkite",
+            "primary": false
+          },
+          {
+            "name": "Bolt",
+            "hidden": false,
+            "id": "0811-ed4a-2996-0393",
+            "targetId": "bolt",
+            "primary": false
+          },
+          {
+            "name": "Combi",
+            "hidden": false,
+            "id": "f20a-53de-e078-e7f7",
+            "targetId": "6a69-5de7-f700-23a8",
+            "primary": false
+          }
+        ],
+        "collective": true
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Volkite culverin",
+        "hidden": false,
+        "id": "3e1a-17a8-5ac9-cca4",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 0
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Volkite culverin",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "1912-b3b4-56ae-5515",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "45"
+              },
+              {
+                "name": "Range Strength",
+                "typeId": "range-strength",
+                "$text": "6"
+              },
+              {
+                "name": "Fire Power",
+                "typeId": "fire-power",
+                "$text": "3"
+              },
+              {
+                "name": "Melee Strength",
+                "typeId": "melee-strength",
+                "$text": "Range"
+              },
+              {
+                "name": "Damage",
+                "typeId": "damage",
+                "$text": "1"
+              },
+              {
+                "name": "Attacks",
+                "typeId": "weapon-attacks",
+                "$text": "Range"
+              },
+              {
+                "name": "Initiative modifier",
+                "typeId": "weapon-initiative",
+                "$text": "Range"
+              },
+              {
+                "name": "Armour penetration",
+                "$text": "5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Plasma cannon ",
+        "hidden": false,
+        "id": "4dfd-f332-9e27-2650",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 0
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Sustained fire",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "640d-f86c-ec50-089b",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "36"
+              },
+              {
+                "name": "Range Strength",
+                "typeId": "range-strength",
+                "$text": "6"
+              },
+              {
+                "name": "Fire Power",
+                "typeId": "fire-power",
+                "$text": "1"
+              },
+              {
+                "name": "Melee Strength",
+                "typeId": "melee-strength",
+                "$text": "Range"
+              },
+              {
+                "name": "Damage",
+                "typeId": "damage",
+                "$text": "1"
+              },
+              {
+                "name": "Attacks",
+                "typeId": "weapon-attacks",
+                "$text": "Range"
+              },
+              {
+                "name": "Initiative modifier",
+                "typeId": "weapon-initiative",
+                "$text": "Range"
+              },
+              {
+                "name": "Armour penetration",
+                "$text": "4"
+              }
+            ]
+          },
+          {
+            "name": "Maximal fire",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "36bd-bc46-61a9-d26b",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "36"
+              },
+              {
+                "name": "Range Strength",
+                "typeId": "range-strength",
+                "$text": "6"
+              },
+              {
+                "name": "Fire Power",
+                "typeId": "fire-power",
+                "$text": "1"
+              },
+              {
+                "name": "Melee Strength",
+                "typeId": "melee-strength",
+                "$text": "Range"
+              },
+              {
+                "name": "Damage",
+                "typeId": "damage",
+                "$text": "1"
+              },
+              {
+                "name": "Attacks",
+                "typeId": "weapon-attacks",
+                "$text": "Range"
+              },
+              {
+                "name": "Initiative modifier",
+                "typeId": "weapon-initiative",
+                "$text": "Range"
+              },
+              {
+                "name": "Armour penetration",
+                "$text": "4"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Multi-melta",
+        "hidden": false,
+        "id": "fa60-a260-8c80-08e2",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 0
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Multi-melta",
+            "id": "0558-2938-7a92-ee7c",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "1d66-9ac9-fdc3-9f10"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Missile launcher",
+        "hidden": false,
+        "id": "7daf-3bdf-0458-9738",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 0
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Frag",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "9b3f-9ed7-8bc4-1f15",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "48"
+              },
+              {
+                "name": "Range Strength",
+                "typeId": "range-strength",
+                "$text": "4"
+              },
+              {
+                "name": "Fire Power",
+                "typeId": "fire-power",
+                "$text": "1"
+              },
+              {
+                "name": "Melee Strength",
+                "typeId": "melee-strength",
+                "$text": "Range"
+              },
+              {
+                "name": "Damage",
+                "typeId": "damage",
+                "$text": "1"
+              },
+              {
+                "name": "Attacks",
+                "typeId": "weapon-attacks",
+                "$text": "Range"
+              },
+              {
+                "name": "Initiative modifier",
+                "typeId": "weapon-initiative",
+                "$text": "Range"
+              },
+              {
+                "name": "Armour penetration",
+                "$text": "6"
+              }
+            ]
+          },
+          {
+            "name": "Krak",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "8533-db64-3de9-9ec4",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "48"
+              },
+              {
+                "name": "Range Strength",
+                "typeId": "range-strength",
+                "$text": "8"
+              },
+              {
+                "name": "Fire Power",
+                "typeId": "fire-power",
+                "$text": "1"
+              },
+              {
+                "name": "Melee Strength",
+                "typeId": "melee-strength",
+                "$text": "Range"
+              },
+              {
+                "name": "Damage",
+                "typeId": "damage",
+                "$text": "1"
+              },
+              {
+                "name": "Attacks",
+                "typeId": "weapon-attacks",
+                "$text": "Range"
+              },
+              {
+                "name": "Initiative modifier",
+                "typeId": "weapon-initiative",
+                "$text": "Range"
+              },
+              {
+                "name": "Armour penetration",
+                "$text": "3"
+              }
+            ]
+          },
+          {
+            "name": "Flak",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "61ab-3079-f763-9868",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "48"
+              },
+              {
+                "name": "Range Strength",
+                "typeId": "range-strength",
+                "$text": "8"
+              },
+              {
+                "name": "Fire Power",
+                "typeId": "fire-power",
+                "$text": "1"
+              },
+              {
+                "name": "Melee Strength",
+                "typeId": "melee-strength",
+                "$text": "Range"
+              },
+              {
+                "name": "Damage",
+                "typeId": "damage",
+                "$text": "1"
+              },
+              {
+                "name": "Attacks",
+                "typeId": "weapon-attacks",
+                "$text": "Range"
+              },
+              {
+                "name": "Initiative modifier",
+                "typeId": "weapon-initiative",
+                "$text": "Range"
+              },
+              {
+                "name": "Armour penetration",
+                "$text": "4"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Lascannon",
+        "hidden": false,
+        "id": "a88d-4559-cb92-5405",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 0
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Lascannon",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "8a50-eaa8-88a3-7701",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "48"
+              },
+              {
+                "name": "Range Strength",
+                "typeId": "range-strength",
+                "$text": "9"
+              },
+              {
+                "name": "Fire Power",
+                "typeId": "fire-power",
+                "$text": "1"
+              },
+              {
+                "name": "Melee Strength",
+                "typeId": "melee-strength",
+                "$text": "Range"
+              },
+              {
+                "name": "Damage",
+                "typeId": "damage",
+                "$text": "1"
+              },
+              {
+                "name": "Attacks",
+                "typeId": "weapon-attacks",
+                "$text": "Range"
+              },
+              {
+                "name": "Initiative modifier",
+                "typeId": "weapon-initiative",
+                "$text": "Range"
+              },
+              {
+                "name": "Armour penetration",
+                "$text": "2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Heavy flamer",
+        "hidden": false,
+        "id": "dd74-3f95-8f7a-8d1a",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 0
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Heavy flamer",
+            "id": "9697-c609-8138-2952",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "3ad3-9360-3dc7-8ff4"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Heavy bolter",
+        "hidden": false,
+        "id": "7228-912e-56bc-e003",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 0
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Heavy bolter",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "f1e6-4638-613d-bd0d",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "36"
+              },
+              {
+                "name": "Range Strength",
+                "typeId": "range-strength",
+                "$text": "5"
+              },
+              {
+                "name": "Fire Power",
+                "typeId": "fire-power",
+                "$text": "3"
+              },
+              {
+                "name": "Melee Strength",
+                "typeId": "melee-strength",
+                "$text": "Range"
+              },
+              {
+                "name": "Damage",
+                "typeId": "damage",
+                "$text": "1"
+              },
+              {
+                "name": "Attacks",
+                "typeId": "weapon-attacks",
+                "$text": "Range"
+              },
+              {
+                "name": "Initiative modifier",
+                "typeId": "weapon-initiative",
+                "$text": "Range"
+              },
+              {
+                "name": "Armour penetration",
+                "$text": "4"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Autocannon",
+        "hidden": false,
+        "id": "edf3-6c6a-ef02-dce6",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 0
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Autocannon",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "cfb7-5b1a-8f2d-aca0",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "48"
+              },
+              {
+                "name": "Range Strength",
+                "typeId": "range-strength",
+                "$text": "7"
+              },
+              {
+                "name": "Fire Power",
+                "typeId": "fire-power",
+                "$text": "2"
+              },
+              {
+                "name": "Melee Strength",
+                "typeId": "melee-strength",
+                "$text": "Range"
+              },
+              {
+                "name": "Damage",
+                "typeId": "damage",
+                "$text": "2"
+              },
+              {
+                "name": "Attacks",
+                "typeId": "weapon-attacks",
+                "$text": "Range"
+              },
+              {
+                "name": "Initiative modifier",
+                "typeId": "weapon-initiative",
+                "$text": "Range"
+              },
+              {
+                "name": "Armour penetration",
+                "$text": "4"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Plasma gun",
+        "hidden": false,
+        "id": "c171-e963-803c-eab2",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 0
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Sustained fire",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "a694-99d4-9287-47b8",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "24"
+              },
+              {
+                "name": "Range Strength",
+                "typeId": "range-strength",
+                "$text": "6"
+              },
+              {
+                "name": "Fire Power",
+                "typeId": "fire-power",
+                "$text": "2"
+              },
+              {
+                "name": "Melee Strength",
+                "typeId": "melee-strength",
+                "$text": "Range"
+              },
+              {
+                "name": "Damage",
+                "typeId": "damage",
+                "$text": "1"
+              },
+              {
+                "name": "Attacks",
+                "typeId": "weapon-attacks",
+                "$text": "Range"
+              },
+              {
+                "name": "Initiative modifier",
+                "typeId": "weapon-initiative",
+                "$text": "Range"
+              },
+              {
+                "name": "Armour penetration",
+                "$text": "4"
+              }
+            ]
+          },
+          {
+            "name": "Maximal fire",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "c820-744a-162f-fee4",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "24"
+              },
+              {
+                "name": "Range Strength",
+                "typeId": "range-strength",
+                "$text": "7"
+              },
+              {
+                "name": "Fire Power",
+                "typeId": "fire-power",
+                "$text": "2"
+              },
+              {
+                "name": "Melee Strength",
+                "typeId": "melee-strength",
+                "$text": "Range"
+              },
+              {
+                "name": "Damage",
+                "typeId": "damage",
+                "$text": "1"
+              },
+              {
+                "name": "Attacks",
+                "typeId": "weapon-attacks",
+                "$text": "Range"
+              },
+              {
+                "name": "Initiative modifier",
+                "typeId": "weapon-initiative",
+                "$text": "Range"
+              },
+              {
+                "name": "Armour penetration",
+                "$text": "4"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Rotor cannon",
+        "hidden": false,
+        "id": "6cf6-280f-a36f-876e",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 0
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Rotor cannon",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "6d2f-8b1b-b530-fdb9",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "24"
+              },
+              {
+                "name": "Range Strength",
+                "typeId": "range-strength",
+                "$text": "3"
+              },
+              {
+                "name": "Fire Power",
+                "typeId": "fire-power",
+                "$text": "3"
+              },
+              {
+                "name": "Melee Strength",
+                "typeId": "melee-strength",
+                "$text": "Range"
+              },
+              {
+                "name": "Damage",
+                "typeId": "damage",
+                "$text": "1"
+              },
+              {
+                "name": "Attacks",
+                "typeId": "weapon-attacks",
+                "$text": "Range"
+              },
+              {
+                "name": "Initiative modifier",
+                "typeId": "weapon-initiative",
+                "$text": "Range"
+              },
+              {
+                "name": "Armour penetration",
+                "$text": "-"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Volkite caliver",
+        "hidden": false,
+        "id": "48c0-dd77-d402-73c6",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 10
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Volkite caliver",
+            "id": "cf97-b7a0-7633-5299",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "9d57-e36a-3194-29f2"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Flamer",
+        "hidden": false,
+        "id": "ebb4-13b9-2811-55e8",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 0
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Flamer",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "5d79-3f8a-9541-8555",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "Template"
+              },
+              {
+                "name": "Range Strength",
+                "typeId": "range-strength",
+                "$text": "4"
+              },
+              {
+                "name": "Fire Power",
+                "typeId": "fire-power",
+                "$text": "1"
+              },
+              {
+                "name": "Melee Strength",
+                "typeId": "melee-strength",
+                "$text": "Range"
+              },
+              {
+                "name": "Damage",
+                "typeId": "damage",
+                "$text": "1"
+              },
+              {
+                "name": "Attacks",
+                "typeId": "weapon-attacks",
+                "$text": "Range"
+              },
+              {
+                "name": "Initiative modifier",
+                "typeId": "weapon-initiative",
+                "$text": "Range"
+              },
+              {
+                "name": "Armour penetration",
+                "$text": "5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Meltagun",
+        "hidden": false,
+        "id": "c2ee-523e-42e0-9b00",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 0
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Meltagun",
+            "id": "c24a-3f00-dae5-a887",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "ed33-9df1-5fae-b31a"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Graviton gun",
+        "hidden": false,
+        "id": "astartes-graviton-gun",
+        "categoryLinks": [
+          {
+            "targetId": "graviton",
+            "id": "2aba-d956-ba33-c342",
+            "primary": false,
+            "name": "Graviton"
+          }
+        ],
+        "infoLinks": [
+          {
+            "name": "Graviton gun",
+            "id": "32b3-bb6f-d1b1-e2f9",
+            "hidden": false,
+            "type": "profile",
+            "targetId": "6721-36fb-9047-09f6"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Force sword",
+        "hidden": false,
+        "id": "force-sword",
+        "categoryLinks": [
+          {
+            "targetId": "5628-72c6-448c-7f33",
+            "id": "b512-6caf-c540-2bac",
+            "primary": false,
+            "name": "Force (D)"
+          },
+          {
+            "targetId": "psychic",
+            "id": "6849-8d8c-9b79-e1bd",
+            "primary": false,
+            "name": "Psychic"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Force sword",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "e1f6-478f-222b-b0f3",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": ""
+              },
+              {
+                "name": "Fire Power (FP)",
+                "typeId": "fire-power",
+                "$text": ""
+              },
+              {
+                "name": "Range Strength (RS)",
+                "typeId": "range-strength",
+                "$text": ""
+              },
+              {
+                "name": "Melee Initiative Modifier (IM)",
+                "typeId": "weapon-initiative",
+                "$text": "I"
+              },
+              {
+                "name": "Melee Attacks Modifier (AM)",
+                "typeId": "weapon-attacks",
+                "$text": "A"
+              },
+              {
+                "name": "Melee Strength Modifier (SM)",
+                "typeId": "melee-strength",
+                "$text": "+1"
+              },
+              {
+                "name": "Armour Penetration (AP)",
+                "$text": "3"
+              },
+              {
+                "name": "Damage (D)",
+                "typeId": "damage",
+                "$text": "1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Force axe",
+        "hidden": false,
+        "id": "force-axe",
+        "categoryLinks": [
+          {
+            "targetId": "5628-72c6-448c-7f33",
+            "id": "937d-78f2-65d9-bda3",
+            "primary": false,
+            "name": "Force (D)"
+          },
+          {
+            "targetId": "psychic",
+            "id": "93fe-9c84-8b22-71e2",
+            "primary": false,
+            "name": "Psychic"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Force axe",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "force-axe-profile",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": ""
+              },
+              {
+                "name": "Fire Power (FP)",
+                "typeId": "fire-power",
+                "$text": ""
+              },
+              {
+                "name": "Range Strength (RS)",
+                "typeId": "range-strength",
+                "$text": ""
+              },
+              {
+                "name": "Melee Initiative Modifier (IM)",
+                "typeId": "weapon-initiative",
+                "$text": "-1"
+              },
+              {
+                "name": "Melee Attacks Modifier (AM)",
+                "typeId": "weapon-attacks",
+                "$text": "A"
+              },
+              {
+                "name": "Melee Strength Modifier (SM)",
+                "typeId": "melee-strength",
+                "$text": "+2"
+              },
+              {
+                "name": "Armour Penetration (AP)",
+                "$text": "2"
+              },
+              {
+                "name": "Damage (D)",
+                "typeId": "damage",
+                "$text": "1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Force maul",
+        "hidden": false,
+        "id": "force-maul",
+        "categoryLinks": [
+          {
+            "targetId": "5628-72c6-448c-7f33",
+            "id": "fc5e-c1e2-17c7-3cef",
+            "primary": false,
+            "name": "Force (D)"
+          },
+          {
+            "targetId": "psychic",
+            "id": "d208-7fa6-97d5-bc79",
+            "primary": false,
+            "name": "Psychic"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Force maul",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "f341-8778-882f-fa6e",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": ""
+              },
+              {
+                "name": "Fire Power (FP)",
+                "typeId": "fire-power",
+                "$text": ""
+              },
+              {
+                "name": "Range Strength (RS)",
+                "typeId": "range-strength",
+                "$text": ""
+              },
+              {
+                "name": "Melee Initiative Modifier (IM)",
+                "typeId": "weapon-initiative",
+                "$text": "-1"
+              },
+              {
+                "name": "Melee Attacks Modifier (AM)",
+                "typeId": "weapon-attacks",
+                "$text": "A"
+              },
+              {
+                "name": "Melee Strength Modifier (SM)",
+                "typeId": "melee-strength",
+                "$text": "+3"
+              },
+              {
+                "name": "Armour Penetration (AP)",
+                "$text": "3"
+              },
+              {
+                "name": "Damage (D)",
+                "typeId": "damage",
+                "$text": "1"
+              }
+            ]
+          }
+        ],
+        "comment": "\n"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Force staff",
+        "hidden": false,
+        "id": "force-staff",
+        "categoryLinks": [
+          {
+            "targetId": "5628-72c6-448c-7f33",
+            "id": "e6eb-7615-203c-ca52",
+            "primary": false,
+            "name": "Force (D)"
+          },
+          {
+            "targetId": "psychic",
+            "id": "f36c-0644-6bfd-e49a",
+            "primary": false,
+            "name": "Psychic"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Force staff",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "3ea3-22f6-168e-2e8b",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": ""
+              },
+              {
+                "name": "Fire Power (FP)",
+                "typeId": "fire-power",
+                "$text": ""
+              },
+              {
+                "name": "Range Strength (RS)",
+                "typeId": "range-strength",
+                "$text": ""
+              },
+              {
+                "name": "Melee Initiative Modifier (IM)",
+                "typeId": "weapon-initiative",
+                "$text": "+1"
+              },
+              {
+                "name": "Melee Attacks Modifier (AM)",
+                "typeId": "weapon-attacks",
+                "$text": "A"
+              },
+              {
+                "name": "Melee Strength Modifier (SM)",
+                "typeId": "melee-strength",
+                "$text": "+2"
+              },
+              {
+                "name": "Armour Penetration (AP)",
+                "$text": "4"
+              },
+              {
+                "name": "Damage (D)",
+                "typeId": "damage",
+                "$text": "1"
+              }
+            ]
+          }
+        ],
+        "comment": "\n"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Cyber familiar",
+        "hidden": false,
+        "id": "cyber-familiar",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 10
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "0f49-8b60-2ae0-08c5",
+            "includeChildSelections": false
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Archeotech pistol",
+        "hidden": false,
+        "id": "archeotech-pistol",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 15
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Archeotech pistol",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "d8e8-8b72-0111-3922",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": ""
+              },
+              {
+                "name": "Fire Power (FP)",
+                "typeId": "fire-power",
+                "$text": ""
+              },
+              {
+                "name": "Range Strength (RS)",
+                "typeId": "range-strength",
+                "$text": ""
+              },
+              {
+                "name": "Melee Initiative Modifier (IM)",
+                "typeId": "weapon-initiative",
+                "$text": ""
+              },
+              {
+                "name": "Melee Attacks Modifier (AM)",
+                "typeId": "weapon-attacks",
+                "$text": ""
+              },
+              {
+                "name": "Melee Strength Modifier (SM)",
+                "typeId": "melee-strength",
+                "$text": ""
+              },
+              {
+                "name": "Armour Penetration (AP)",
+                "$text": ""
+              },
+              {
+                "name": "Damage (D)",
+                "typeId": "damage",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Thunder hammer",
+        "hidden": false,
+        "id": "14ad-30d4-6fc4-f6a5",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 15
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Thunder hammer",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "13db-fab7-9124-ceff",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "Melee"
+              },
+              {
+                "name": "Range Strength",
+                "typeId": "range-strength",
+                "$text": "Melee"
+              },
+              {
+                "name": "Fire Power",
+                "typeId": "fire-power",
+                "$text": "Melee"
+              },
+              {
+                "name": "Melee Strength",
+                "typeId": "melee-strength",
+                "$text": "+3"
+              },
+              {
+                "name": "Damage",
+                "typeId": "damage",
+                "$text": "2"
+              },
+              {
+                "name": "Attacks",
+                "typeId": "weapon-attacks",
+                "$text": "A"
+              },
+              {
+                "name": "Initiative modifier",
+                "typeId": "weapon-initiative",
+                "$text": "-2"
+              },
+              {
+                "name": "Armour penetration",
+                "$text": "2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Cognis-signum",
+        "hidden": false,
+        "id": "cognis-signum",
+        "rules": [
+          {
+            "name": "Cognis-signum",
+            "id": "ded5-6a21-42d3-7954",
+            "hidden": false,
+            "description": "A cognis-signum allows more accurate attacks to be made with Barrage Weapons. Instead of making a Shooting Attack with a Model with a cognis-signum, the Controlling Player may instead make an Intelligence Check. If the Check is passed, the Controlling Player may select a single enemy Unit within Line of Sight of the Model with a cognis-signum. The next time the selected enemy Unit is targeted by a Shooting Attack that includes any Weapons with the Barrage (X) Special Rule during the current Shooting Phase, the Controlling Player may make Hit Tests for the attacks that have the Barrage (X) Special Rule as normal, ignoring the limitations of the Barrage (X) Special Rule if the Unit making the Shooting Attack is without Line of Sight to the Target Unit. If the Check is not passed, the cognis-signum has no effect this turn. "
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Augury scanner",
+        "hidden": false,
+        "id": "land-speeder-augury-scanner",
+        "rules": [
+          {
+            "name": "Augury scanner",
+            "id": "d580-6021-28d2-0c5b",
+            "hidden": false,
+            "description": "Augury scanners allow attacks to ignore Shrouded Damage Mitigation Tests. \nWhen a Shooting Attack made by a Unit that includes Models with an augury scanner inflicts any Hits (excluding Hits from attacks made as Snap Shots), Shrouded Damage Mitigation Rolls cannot be made against those Hits. "
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Phosphex bombs",
+        "hidden": false,
+        "id": "phosphex-bombs",
+        "categoryLinks": [
+          {
+            "targetId": "phosphex",
+            "id": "9396-6dd4-1f1a-fdea",
+            "primary": false,
+            "name": "Phospex"
+          },
+          {
+            "targetId": "0f24-9ab2-b239-fcab",
+            "id": "5d64-82d5-f0cc-f80c",
+            "primary": false,
+            "name": "Breaching (5+)"
+          },
+          {
+            "targetId": "211e-76a4-b7e4-ecdd",
+            "id": "afd1-ce34-26e6-3258",
+            "primary": false,
+            "name": "Poisoned (3+)"
+          },
+          {
+            "targetId": "3a7f-1616-3fa9-a71e",
+            "id": "4ddb-4139-edfe-7384",
+            "primary": false,
+            "name": "Blast (3\")"
+          },
+          {
+            "targetId": "6639-8060-dcf4-5878",
+            "id": "1dcf-463d-e734-c579",
+            "primary": false,
+            "name": "Panic (3)"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Phosphex bombs",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "99ee-5cd9-127a-4c28",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "6\""
+              },
+              {
+                "name": "Fire Power (FP)",
+                "typeId": "fire-power",
+                "$text": "1"
+              },
+              {
+                "name": "Range Strength (RS)",
+                "typeId": "range-strength",
+                "$text": "5"
+              },
+              {
+                "name": "Melee Initiative Modifier (IM)",
+                "typeId": "weapon-initiative",
+                "$text": ""
+              },
+              {
+                "name": "Melee Attacks Modifier (AM)",
+                "typeId": "weapon-attacks",
+                "$text": ""
+              },
+              {
+                "name": "Melee Strength Modifier (SM)",
+                "typeId": "melee-strength",
+                "$text": ""
+              },
+              {
+                "name": "Armour Penetration (AP)",
+                "$text": "3"
+              },
+              {
+                "name": "Damage (D)",
+                "typeId": "damage",
+                "$text": "1"
+              }
+            ]
+          }
+        ]
       }
     ],
     "sharedSelectionEntryGroups": [
       {
-        "name": "Legion Combi-Weapons",
-        "id": "legion-combi-weapons",
-        "hidden": false,
-        "selectionEntries": [
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Combi-bolter",
-            "hidden": false,
-            "id": "0a79-986f-b4d7-ab74",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 5
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Combi-bolter",
-                "typeId": "weapon",
-                "typeName": "Weapon",
-                "hidden": false,
-                "id": "91cf-28e5-8c60-fdd0",
-                "characteristics": [
-                  {
-                    "name": "Range",
-                    "typeId": "range",
-                    "$text": "24"
-                  },
-                  {
-                    "name": "Range Strength",
-                    "typeId": "range-strength",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "Fire Power",
-                    "typeId": "fire-power",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "Melee Strength",
-                    "typeId": "melee-strength",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Damage",
-                    "typeId": "damage",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Attacks",
-                    "typeId": "weapon-attacks",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Initiative",
-                    "typeId": "weapon-initiative",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Armour penetration",
-                    "$text": "5"
-                  }
-                ]
-              }
-            ],
-            "categoryLinks": [
-              {
-                "targetId": "bolt",
-                "id": "505d-98ae-e8c2-135e",
-                "primary": false,
-                "name": "Bolt"
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "set",
-                "value": 0,
-                "field": "points",
-                "conditionGroups": [
-                  {
-                    "type": "or",
-                    "conditions": [
-                      {
-                        "type": "instanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "ancestor",
-                        "childId": "f4bc-c275-7e8c-ce89",
-                        "shared": true
-                      },
-                      {
-                        "type": "instanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "ancestor",
-                        "childId": "ebdd-8208-3c41-42f1",
-                        "shared": true
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Combi-disintegrator",
-            "hidden": false,
-            "id": "a7be-782f-5711-53e7",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 10
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Combi-disintegrator",
-                "typeId": "weapon",
-                "typeName": "Weapon",
-                "hidden": false,
-                "id": "2315-c5b4-86a1-b0c2",
-                "characteristics": [
-                  {
-                    "name": "Range",
-                    "typeId": "range",
-                    "$text": "24"
-                  },
-                  {
-                    "name": "Range Strength",
-                    "typeId": "range-strength",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "Fire Power",
-                    "typeId": "fire-power",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Melee Strength",
-                    "typeId": "melee-strength",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Damage",
-                    "typeId": "damage",
-                    "$text": "2"
-                  },
-                  {
-                    "name": "Attacks",
-                    "typeId": "weapon-attacks",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Initiative",
-                    "typeId": "weapon-initiative",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Armour penetration",
-                    "$text": "3"
-                  }
-                ]
-              }
-            ],
-            "entryLinks": [
-              {
-                "import": true,
-                "name": "Bolter",
-                "hidden": false,
-                "id": "6b34-b05d-9057-f194",
-                "type": "profile",
-                "targetId": "bcaa-f64d-9144-e8dd"
-              }
-            ],
-            "categoryLinks": [
-              {
-                "targetId": "6a69-5de7-f700-23a8",
-                "id": "cf36-3b7d-9ebc-9d61",
-                "primary": false,
-                "name": "Combi"
-              },
-              {
-                "targetId": "Disintegrator",
-                "id": "6be6-e048-8c49-f44f",
-                "primary": false,
-                "name": "Disintegrator"
-              },
-              {
-                "targetId": "b9a6-b799-0a85-4f0c",
-                "id": "2a5a-ebb9-31bf-5c82",
-                "primary": false,
-                "name": "Limited (1)"
-              },
-              {
-                "targetId": "bolt",
-                "id": "9518-7fe6-8a38-c55b",
-                "primary": false,
-                "name": "Bolt"
-              }
-            ],
-            "collective": true
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Combi-flamer",
-            "hidden": false,
-            "id": "fc5e-feb7-e7fe-7c96",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 10
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Combi-flamer",
-                "typeId": "weapon",
-                "typeName": "Weapon",
-                "hidden": false,
-                "id": "1717-2fd9-07c4-bd56",
-                "characteristics": [
-                  {
-                    "name": "Range",
-                    "typeId": "range",
-                    "$text": "Template"
-                  },
-                  {
-                    "name": "Range Strength",
-                    "typeId": "range-strength",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "Fire Power",
-                    "typeId": "fire-power",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Melee Strength",
-                    "typeId": "melee-strength",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Damage",
-                    "typeId": "damage",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Attacks",
-                    "typeId": "weapon-attacks",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Initiative",
-                    "typeId": "weapon-initiative",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Armour penetration",
-                    "$text": "5"
-                  }
-                ]
-              }
-            ],
-            "entryLinks": [
-              {
-                "import": true,
-                "name": "Bolter",
-                "hidden": false,
-                "id": "bb9f-b41c-6e1f-5021",
-                "type": "profile",
-                "targetId": "bcaa-f64d-9144-e8dd"
-              }
-            ],
-            "categoryLinks": [
-              {
-                "targetId": "flame",
-                "id": "791e-0c0e-dad4-aa0a",
-                "primary": false,
-                "name": "Flame"
-              },
-              {
-                "targetId": "6a69-5de7-f700-23a8",
-                "id": "ed55-6cb5-58f6-aaf3",
-                "primary": false,
-                "name": "Combi"
-              },
-              {
-                "targetId": "b9a6-b799-0a85-4f0c",
-                "id": "f066-dffd-84ed-1e29",
-                "primary": false,
-                "name": "Limited (1)"
-              },
-              {
-                "targetId": "bolt",
-                "id": "9e42-bb11-32d9-ef14",
-                "primary": false,
-                "name": "Bolt"
-              }
-            ],
-            "collective": true
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Combi-grav",
-            "hidden": false,
-            "id": "c701-17da-d134-6889",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 10
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Combi-grav",
-                "typeId": "weapon",
-                "typeName": "Weapon",
-                "hidden": false,
-                "id": "dd20-f088-fea8-7a9f",
-                "characteristics": [
-                  {
-                    "name": "Range",
-                    "typeId": "range",
-                    "$text": "18"
-                  },
-                  {
-                    "name": "Range Strength",
-                    "typeId": "range-strength",
-                    "$text": "6"
-                  },
-                  {
-                    "name": "Fire Power",
-                    "typeId": "fire-power",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Melee Strength",
-                    "typeId": "melee-strength",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Damage",
-                    "typeId": "damage",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Attacks",
-                    "typeId": "weapon-attacks",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Initiative",
-                    "typeId": "weapon-initiative",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Armour penetration",
-                    "$text": "4"
-                  }
-                ]
-              }
-            ],
-            "entryLinks": [
-              {
-                "import": true,
-                "name": "Bolter",
-                "hidden": false,
-                "id": "0714-57ed-d04e-5111",
-                "type": "profile",
-                "targetId": "bcaa-f64d-9144-e8dd"
-              }
-            ],
-            "categoryLinks": [
-              {
-                "targetId": "b9a6-b799-0a85-4f0c",
-                "id": "9c5b-c8fd-3f78-1298",
-                "primary": false,
-                "name": "Limited (1)"
-              },
-              {
-                "targetId": "graviton",
-                "id": "972f-63aa-34b5-9e05",
-                "primary": false,
-                "name": "Graviton"
-              },
-              {
-                "targetId": "6a69-5de7-f700-23a8",
-                "id": "823d-1811-7c40-0b5f",
-                "primary": false,
-                "name": "Combi"
-              },
-              {
-                "targetId": "bolt",
-                "id": "b3b6-ee26-c3be-e5d6",
-                "primary": false,
-                "name": "Bolt"
-              }
-            ],
-            "collective": true
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Combi-grenade",
-            "hidden": false,
-            "id": "83a1-d99f-3b09-eac7",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 10
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Combi-grenade",
-                "typeId": "weapon",
-                "typeName": "Weapon",
-                "hidden": false,
-                "id": "5e3d-70a3-83cc-668d",
-                "characteristics": [
-                  {
-                    "name": "Range",
-                    "typeId": "range",
-                    "$text": "24"
-                  },
-                  {
-                    "name": "Range Strength",
-                    "typeId": "range-strength",
-                    "$text": "6"
-                  },
-                  {
-                    "name": "Fire Power",
-                    "typeId": "fire-power",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Melee Strength",
-                    "typeId": "melee-strength",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Damage",
-                    "typeId": "damage",
-                    "$text": "2"
-                  },
-                  {
-                    "name": "Attacks",
-                    "typeId": "weapon-attacks",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Initiative",
-                    "typeId": "weapon-initiative",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Armour penetration",
-                    "$text": "4"
-                  }
-                ]
-              }
-            ],
-            "entryLinks": [
-              {
-                "import": true,
-                "name": "Bolter",
-                "hidden": false,
-                "id": "22df-7f7f-975b-6d3f",
-                "type": "profile",
-                "targetId": "bcaa-f64d-9144-e8dd"
-              }
-            ],
-            "categoryLinks": [
-              {
-                "targetId": "6a69-5de7-f700-23a8",
-                "id": "3b2c-f75e-19d7-b28d",
-                "primary": false,
-                "name": "Combi"
-              },
-              {
-                "targetId": "bolt",
-                "id": "f264-4866-e686-3c79",
-                "primary": false,
-                "name": "Bolt"
-              }
-            ],
-            "collective": true
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Combi-melta",
-            "hidden": false,
-            "id": "eeee-7602-8381-a6b6",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 10
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Combi-melta",
-                "typeId": "weapon",
-                "typeName": "Weapon",
-                "hidden": false,
-                "id": "907f-15c6-85aa-b128",
-                "characteristics": [
-                  {
-                    "name": "Range",
-                    "typeId": "range",
-                    "$text": "12"
-                  },
-                  {
-                    "name": "Range Strength",
-                    "typeId": "range-strength",
-                    "$text": "8"
-                  },
-                  {
-                    "name": "Fire Power",
-                    "typeId": "fire-power",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Melee Strength",
-                    "typeId": "melee-strength",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Damage",
-                    "typeId": "damage",
-                    "$text": "3"
-                  },
-                  {
-                    "name": "Attacks",
-                    "typeId": "weapon-attacks",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Initiative",
-                    "typeId": "weapon-initiative",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Armour penetration",
-                    "$text": "2"
-                  }
-                ]
-              }
-            ],
-            "entryLinks": [
-              {
-                "import": true,
-                "name": "Bolter",
-                "hidden": false,
-                "id": "fcb7-1dc6-a60b-601a",
-                "type": "profile",
-                "targetId": "bcaa-f64d-9144-e8dd"
-              }
-            ],
-            "categoryLinks": [
-              {
-                "targetId": "melta-6",
-                "id": "b6dd-18bb-cb60-80a9",
-                "primary": false,
-                "name": "Melta (6)"
-              },
-              {
-                "targetId": "b9a6-b799-0a85-4f0c",
-                "id": "8211-6b00-2985-998a",
-                "primary": false,
-                "name": "Limited (1)"
-              },
-              {
-                "targetId": "bolt",
-                "id": "1aef-6de9-1740-ae21",
-                "primary": false,
-                "name": "Bolt"
-              },
-              {
-                "targetId": "6a69-5de7-f700-23a8",
-                "id": "6b99-7067-2b2c-74f8",
-                "primary": false,
-                "name": "Combi"
-              }
-            ],
-            "collective": true
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Combi-plasma",
-            "hidden": false,
-            "id": "c862-70aa-7cea-2485",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 10
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Combi-plasma",
-                "typeId": "weapon",
-                "typeName": "Weapon",
-                "hidden": false,
-                "id": "c6c6-aced-5688-e7b7",
-                "characteristics": [
-                  {
-                    "name": "Range",
-                    "typeId": "range",
-                    "$text": "24"
-                  },
-                  {
-                    "name": "Range Strength",
-                    "typeId": "range-strength",
-                    "$text": "6"
-                  },
-                  {
-                    "name": "Fire Power",
-                    "typeId": "fire-power",
-                    "$text": "2"
-                  },
-                  {
-                    "name": "Melee Strength",
-                    "typeId": "melee-strength",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Damage",
-                    "typeId": "damage",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Attacks",
-                    "typeId": "weapon-attacks",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Initiative",
-                    "typeId": "weapon-initiative",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Armour penetration",
-                    "$text": "4"
-                  }
-                ]
-              }
-            ],
-            "entryLinks": [
-              {
-                "import": true,
-                "name": "Bolter",
-                "hidden": false,
-                "id": "8c0b-7154-abf3-5b83",
-                "type": "profile",
-                "targetId": "bcaa-f64d-9144-e8dd"
-              }
-            ],
-            "categoryLinks": [
-              {
-                "targetId": "6a69-5de7-f700-23a8",
-                "id": "6640-c084-9414-eb84",
-                "primary": false,
-                "name": "Combi"
-              },
-              {
-                "targetId": "bolt",
-                "id": "2bff-748d-ce2f-a5d8",
-                "primary": false,
-                "name": "Bolt"
-              },
-              {
-                "targetId": "e555-ec38-2dda-8be7",
-                "id": "31ec-a41e-ec1b-fc87",
-                "primary": false,
-                "name": "Breaching (4+)"
-              },
-              {
-                "targetId": "b9a6-b799-0a85-4f0c",
-                "id": "9767-8705-707e-99d7",
-                "primary": false,
-                "name": "Limited (1)"
-              }
-            ],
-            "collective": true
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Combi-volkite",
-            "hidden": false,
-            "id": "Combi-Volkite",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 10
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Combi-volkite",
-                "typeId": "weapon",
-                "typeName": "Weapon",
-                "hidden": false,
-                "id": "105f-9876-4fb7-6626",
-                "characteristics": [
-                  {
-                    "name": "Range",
-                    "typeId": "range",
-                    "$text": "15"
-                  },
-                  {
-                    "name": "Range Strength",
-                    "typeId": "range-strength",
-                    "$text": "5"
-                  },
-                  {
-                    "name": "Fire Power",
-                    "typeId": "fire-power",
-                    "$text": "2"
-                  },
-                  {
-                    "name": "Melee Strength",
-                    "typeId": "melee-strength",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Damage",
-                    "typeId": "damage",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Attacks",
-                    "typeId": "weapon-attacks",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Initiative",
-                    "typeId": "weapon-initiative",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Armour penetration",
-                    "$text": "5"
-                  }
-                ]
-              }
-            ],
-            "entryLinks": [
-              {
-                "import": true,
-                "name": "Bolter",
-                "hidden": false,
-                "id": "881c-f984-9aec-79e3",
-                "type": "profile",
-                "targetId": "bcaa-f64d-9144-e8dd"
-              }
-            ],
-            "categoryLinks": [
-              {
-                "targetId": "73a8-e20f-8a16-d4bc",
-                "id": "4d38-7768-df8f-72ea",
-                "primary": false,
-                "name": "Deflagrate (5)"
-              },
-              {
-                "targetId": "volkite",
-                "id": "8f29-77d8-cc8a-3a22",
-                "primary": false,
-                "name": "Volkite"
-              },
-              {
-                "targetId": "bolt",
-                "id": "0811-ed4a-2996-0393",
-                "primary": false,
-                "name": "Bolt"
-              },
-              {
-                "targetId": "6a69-5de7-f700-23a8",
-                "id": "f20a-53de-e078-e7f7",
-                "primary": false,
-                "name": "Combi"
-              }
-            ],
-            "collective": true
-          }
-        ],
-        "collective": true,
-        "collapsible": true
-      },
-      {
         "name": "Legion Heavy Weapons",
         "id": "legion-heavy-weapons",
         "hidden": false,
-        "selectionEntries": [
+        "entryLinks": [
           {
-            "type": "upgrade",
-            "import": true,
-            "name": "Autocannon",
-            "hidden": false,
-            "id": "edf3-6c6a-ef02-dce6",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 20
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Autocannon",
-                "typeId": "weapon",
-                "typeName": "Weapon",
-                "hidden": false,
-                "id": "cfb7-5b1a-8f2d-aca0",
-                "characteristics": [
-                  {
-                    "name": "Range",
-                    "typeId": "range",
-                    "$text": "48"
-                  },
-                  {
-                    "name": "Range Strength",
-                    "typeId": "range-strength",
-                    "$text": "7"
-                  },
-                  {
-                    "name": "Fire Power",
-                    "typeId": "fire-power",
-                    "$text": "2"
-                  },
-                  {
-                    "name": "Melee Strength",
-                    "typeId": "melee-strength",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Damage",
-                    "typeId": "damage",
-                    "$text": "2"
-                  },
-                  {
-                    "name": "Attacks",
-                    "typeId": "weapon-attacks",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Initiative",
-                    "typeId": "weapon-initiative",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Armour penetration",
-                    "$text": "4"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "upgrade",
             "import": true,
             "name": "Heavy bolter",
             "hidden": false,
-            "id": "7228-912e-56bc-e003",
-            "costs": [
+            "id": "ad3b-35ae-7896-6cb4",
+            "type": "selectionEntry",
+            "targetId": "7228-912e-56bc-e003",
+            "modifiers": [
               {
-                "name": "Points",
-                "typeId": "points",
-                "value": 10
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Heavy bolter",
-                "typeId": "weapon",
-                "typeName": "Weapon",
-                "hidden": false,
-                "id": "f1e6-4638-613d-bd0d",
-                "characteristics": [
-                  {
-                    "name": "Range",
-                    "typeId": "range",
-                    "$text": "36"
-                  },
-                  {
-                    "name": "Range Strength",
-                    "typeId": "range-strength",
-                    "$text": "5"
-                  },
-                  {
-                    "name": "Fire Power",
-                    "typeId": "fire-power",
-                    "$text": "3"
-                  },
-                  {
-                    "name": "Melee Strength",
-                    "typeId": "melee-strength",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Damage",
-                    "typeId": "damage",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Attacks",
-                    "typeId": "weapon-attacks",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Initiative",
-                    "typeId": "weapon-initiative",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Armour penetration",
-                    "$text": "4"
-                  }
-                ]
+                "type": "set",
+                "value": 10,
+                "field": "points"
               }
             ]
           },
           {
-            "type": "upgrade",
             "import": true,
-            "name": "Heavy flamer",
+            "name": "Autocannon",
             "hidden": false,
-            "id": "dd74-3f95-8f7a-8d1a",
-            "costs": [
+            "id": "d53d-d621-5899-8c2e",
+            "type": "selectionEntry",
+            "targetId": "edf3-6c6a-ef02-dce6",
+            "modifiers": [
               {
-                "name": "Points",
-                "typeId": "points",
-                "value": 10
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Heavy flamer",
-                "typeId": "weapon",
-                "typeName": "Weapon",
-                "hidden": false,
-                "id": "3ad3-9360-3dc7-8ff4",
-                "characteristics": [
-                  {
-                    "name": "Range",
-                    "typeId": "range",
-                    "$text": "Template"
-                  },
-                  {
-                    "name": "Range Strength",
-                    "typeId": "range-strength",
-                    "$text": "5"
-                  },
-                  {
-                    "name": "Fire Power",
-                    "typeId": "fire-power",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Melee Strength",
-                    "typeId": "melee-strength",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Damage",
-                    "typeId": "damage",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Attacks",
-                    "typeId": "weapon-attacks",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Initiative",
-                    "typeId": "weapon-initiative",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Armour penetration",
-                    "$text": "4"
-                  }
-                ]
+                "type": "set",
+                "value": 20,
+                "field": "points"
               }
             ]
           },
           {
-            "type": "upgrade",
-            "import": true,
-            "name": "Lascannon",
-            "hidden": false,
-            "id": "a88d-4559-cb92-5405",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 25
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Lascannon",
-                "typeId": "weapon",
-                "typeName": "Weapon",
-                "hidden": false,
-                "id": "8a50-eaa8-88a3-7701",
-                "characteristics": [
-                  {
-                    "name": "Range",
-                    "typeId": "range",
-                    "$text": "48"
-                  },
-                  {
-                    "name": "Range Strength",
-                    "typeId": "range-strength",
-                    "$text": "9"
-                  },
-                  {
-                    "name": "Fire Power",
-                    "typeId": "fire-power",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Melee Strength",
-                    "typeId": "melee-strength",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Damage",
-                    "typeId": "damage",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Attacks",
-                    "typeId": "weapon-attacks",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Initiative",
-                    "typeId": "weapon-initiative",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Armour penetration",
-                    "$text": "2"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Missile launcher",
-            "hidden": false,
-            "id": "7daf-3bdf-0458-9738",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 15
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Frag",
-                "typeId": "weapon",
-                "typeName": "Weapon",
-                "hidden": false,
-                "id": "9b3f-9ed7-8bc4-1f15",
-                "characteristics": [
-                  {
-                    "name": "Range",
-                    "typeId": "range",
-                    "$text": "48"
-                  },
-                  {
-                    "name": "Range Strength",
-                    "typeId": "range-strength",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "Fire Power",
-                    "typeId": "fire-power",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Melee Strength",
-                    "typeId": "melee-strength",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Damage",
-                    "typeId": "damage",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Attacks",
-                    "typeId": "weapon-attacks",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Initiative",
-                    "typeId": "weapon-initiative",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Armour penetration",
-                    "$text": "6"
-                  }
-                ]
-              },
-              {
-                "name": "Krak",
-                "typeId": "weapon",
-                "typeName": "Weapon",
-                "hidden": false,
-                "id": "8533-db64-3de9-9ec4",
-                "characteristics": [
-                  {
-                    "name": "Range",
-                    "typeId": "range",
-                    "$text": "48"
-                  },
-                  {
-                    "name": "Range Strength",
-                    "typeId": "range-strength",
-                    "$text": "8"
-                  },
-                  {
-                    "name": "Fire Power",
-                    "typeId": "fire-power",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Melee Strength",
-                    "typeId": "melee-strength",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Damage",
-                    "typeId": "damage",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Attacks",
-                    "typeId": "weapon-attacks",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Initiative",
-                    "typeId": "weapon-initiative",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Armour penetration",
-                    "$text": "3"
-                  }
-                ]
-              },
-              {
-                "name": "Flak",
-                "typeId": "weapon",
-                "typeName": "Weapon",
-                "hidden": false,
-                "id": "61ab-3079-f763-9868",
-                "characteristics": [
-                  {
-                    "name": "Range",
-                    "typeId": "range",
-                    "$text": "48"
-                  },
-                  {
-                    "name": "Range Strength",
-                    "typeId": "range-strength",
-                    "$text": "8"
-                  },
-                  {
-                    "name": "Fire Power",
-                    "typeId": "fire-power",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Melee Strength",
-                    "typeId": "melee-strength",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Damage",
-                    "typeId": "damage",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Attacks",
-                    "typeId": "weapon-attacks",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Initiative",
-                    "typeId": "weapon-initiative",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Armour penetration",
-                    "$text": "4"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Plasma cannon ",
-            "hidden": false,
-            "id": "4dfd-f332-9e27-2650",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 20
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Sustained fire",
-                "typeId": "weapon",
-                "typeName": "Weapon",
-                "hidden": false,
-                "id": "640d-f86c-ec50-089b",
-                "characteristics": [
-                  {
-                    "name": "Range",
-                    "typeId": "range",
-                    "$text": "36"
-                  },
-                  {
-                    "name": "Range Strength",
-                    "typeId": "range-strength",
-                    "$text": "6"
-                  },
-                  {
-                    "name": "Fire Power",
-                    "typeId": "fire-power",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Melee Strength",
-                    "typeId": "melee-strength",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Damage",
-                    "typeId": "damage",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Attacks",
-                    "typeId": "weapon-attacks",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Initiative",
-                    "typeId": "weapon-initiative",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Armour penetration",
-                    "$text": "4"
-                  }
-                ]
-              },
-              {
-                "name": "Maximal fire",
-                "typeId": "weapon",
-                "typeName": "Weapon",
-                "hidden": false,
-                "id": "36bd-bc46-61a9-d26b",
-                "characteristics": [
-                  {
-                    "name": "Range",
-                    "typeId": "range",
-                    "$text": "36"
-                  },
-                  {
-                    "name": "Range Strength",
-                    "typeId": "range-strength",
-                    "$text": "6"
-                  },
-                  {
-                    "name": "Fire Power",
-                    "typeId": "fire-power",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Melee Strength",
-                    "typeId": "melee-strength",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Damage",
-                    "typeId": "damage",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Attacks",
-                    "typeId": "weapon-attacks",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Initiative",
-                    "typeId": "weapon-initiative",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Armour penetration",
-                    "$text": "4"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Volkite culverin",
-            "hidden": false,
-            "id": "3e1a-17a8-5ac9-cca4",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 15
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Volkite culverin",
-                "typeId": "weapon",
-                "typeName": "Weapon",
-                "hidden": false,
-                "id": "1912-b3b4-56ae-5515",
-                "characteristics": [
-                  {
-                    "name": "Range",
-                    "typeId": "range",
-                    "$text": "45"
-                  },
-                  {
-                    "name": "Range Strength",
-                    "typeId": "range-strength",
-                    "$text": "6"
-                  },
-                  {
-                    "name": "Fire Power",
-                    "typeId": "fire-power",
-                    "$text": "3"
-                  },
-                  {
-                    "name": "Melee Strength",
-                    "typeId": "melee-strength",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Damage",
-                    "typeId": "damage",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Attacks",
-                    "typeId": "weapon-attacks",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Initiative",
-                    "typeId": "weapon-initiative",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Armour penetration",
-                    "$text": "5"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "upgrade",
             "import": true,
             "name": "Multi-melta",
             "hidden": false,
-            "id": "fa60-a260-8c80-08e2",
-            "costs": [
+            "id": "64ee-4e1f-56a2-061e",
+            "type": "selectionEntry",
+            "targetId": "fa60-a260-8c80-08e2",
+            "modifiers": [
               {
-                "name": "Points",
-                "typeId": "points",
-                "value": 25
+                "type": "set",
+                "value": 25,
+                "field": "points"
               }
-            ],
-            "profiles": [
+            ]
+          },
+          {
+            "import": true,
+            "name": "Lascannon",
+            "hidden": false,
+            "id": "cd7e-2a30-05cf-0691",
+            "type": "selectionEntry",
+            "targetId": "a88d-4559-cb92-5405",
+            "modifiers": [
               {
-                "name": "Multi-melta",
-                "typeId": "weapon",
-                "typeName": "Weapon",
-                "hidden": false,
-                "id": "1d66-9ac9-fdc3-9f10",
-                "characteristics": [
-                  {
-                    "name": "Range",
-                    "typeId": "range",
-                    "$text": "24"
-                  },
-                  {
-                    "name": "Range Strength",
-                    "typeId": "range-strength",
-                    "$text": "8"
-                  },
-                  {
-                    "name": "Fire Power",
-                    "typeId": "fire-power",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Melee Strength",
-                    "typeId": "melee-strength",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Damage",
-                    "typeId": "damage",
-                    "$text": "3"
-                  },
-                  {
-                    "name": "Attacks",
-                    "typeId": "weapon-attacks",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Initiative",
-                    "typeId": "weapon-initiative",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Armour penetration",
-                    "$text": "2"
-                  }
-                ]
+                "type": "set",
+                "value": 25,
+                "field": "points"
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Missile launcher",
+            "hidden": false,
+            "id": "fcec-a41d-6a76-e71a",
+            "type": "selectionEntry",
+            "targetId": "7daf-3bdf-0458-9738",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 15,
+                "field": "points"
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Heavy flamer",
+            "hidden": false,
+            "id": "7d98-0267-260f-e71b",
+            "type": "selectionEntry",
+            "targetId": "dd74-3f95-8f7a-8d1a",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 10,
+                "field": "points"
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Volkite culverin",
+            "hidden": false,
+            "id": "ebb5-ef32-c7b9-07ef",
+            "type": "selectionEntry",
+            "targetId": "3e1a-17a8-5ac9-cca4",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 15,
+                "field": "points"
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Plasma cannon ",
+            "hidden": false,
+            "id": "3674-dc31-bb42-e7e5",
+            "type": "selectionEntry",
+            "targetId": "4dfd-f332-9e27-2650",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 20,
+                "field": "points"
               }
             ]
           }
@@ -3159,7 +3999,7 @@
                     "$text": "Range"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "Range"
                   },
@@ -3175,7 +4015,8 @@
                 "targetId": "pistol",
                 "id": "f0b8-1bed-2b8b-4e41",
                 "primary": false,
-                "name": "Pistol"
+                "name": "Pistol",
+                "type": "rule"
               },
               {
                 "targetId": "flame",
@@ -3237,7 +4078,7 @@
                     "$text": "Range"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "Range"
                   },
@@ -3285,7 +4126,7 @@
                     "$text": "Range"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "Range"
                   },
@@ -3333,7 +4174,7 @@
                     "$text": "Range"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "Range"
                   },
@@ -3349,7 +4190,8 @@
                 "targetId": "pistol",
                 "id": "58e4-bf4f-2351-84e0",
                 "primary": false,
-                "name": "Pistol"
+                "name": "Pistol",
+                "type": "rule"
               },
               {
                 "targetId": "plasma",
@@ -3411,7 +4253,7 @@
                     "$text": "Range"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "Range"
                   },
@@ -3427,7 +4269,8 @@
                 "targetId": "pistol",
                 "id": "4caf-a703-cfe2-1696",
                 "primary": false,
-                "name": "Pistol"
+                "name": "Pistol",
+                "type": "rule"
               },
               {
                 "targetId": "volkite",
@@ -3478,382 +4321,13 @@
               }
             ]
           }
-        ]
+        ],
+        "defaultSelectionEntryId": "f867-011d-0934-2e7a"
       },
       {
         "name": "Legion Special Weapons",
         "id": "legion-special-weapons",
         "hidden": false,
-        "selectionEntries": [
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Volkite caliver",
-            "hidden": false,
-            "id": "48c0-dd77-d402-73c6",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 10
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Volkite caliver",
-                "typeId": "weapon",
-                "typeName": "Weapon",
-                "hidden": false,
-                "id": "9d57-e36a-3194-29f2",
-                "characteristics": [
-                  {
-                    "name": "Range",
-                    "typeId": "range",
-                    "$text": "45"
-                  },
-                  {
-                    "name": "Range Strength",
-                    "typeId": "range-strength",
-                    "$text": "6"
-                  },
-                  {
-                    "name": "Fire Power",
-                    "typeId": "fire-power",
-                    "$text": "3"
-                  },
-                  {
-                    "name": "Melee Strength",
-                    "typeId": "melee-strength",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Damage",
-                    "typeId": "damage",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Attacks",
-                    "typeId": "weapon-attacks",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Initiative",
-                    "typeId": "weapon-initiative",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Armour penetration",
-                    "$text": "5"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Rotor cannon",
-            "hidden": false,
-            "id": "6cf6-280f-a36f-876e",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 10
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Rotor cannon",
-                "typeId": "weapon",
-                "typeName": "Weapon",
-                "hidden": false,
-                "id": "6d2f-8b1b-b530-fdb9",
-                "characteristics": [
-                  {
-                    "name": "Range",
-                    "typeId": "range",
-                    "$text": "24"
-                  },
-                  {
-                    "name": "Range Strength",
-                    "typeId": "range-strength",
-                    "$text": "3"
-                  },
-                  {
-                    "name": "Fire Power",
-                    "typeId": "fire-power",
-                    "$text": "3"
-                  },
-                  {
-                    "name": "Melee Strength",
-                    "typeId": "melee-strength",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Damage",
-                    "typeId": "damage",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Attacks",
-                    "typeId": "weapon-attacks",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Initiative",
-                    "typeId": "weapon-initiative",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Armour penetration",
-                    "$text": "-"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Plasma gun",
-            "hidden": false,
-            "id": "c171-e963-803c-eab2",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 10
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Sustained fire",
-                "typeId": "weapon",
-                "typeName": "Weapon",
-                "hidden": false,
-                "id": "a694-99d4-9287-47b8",
-                "characteristics": [
-                  {
-                    "name": "Range",
-                    "typeId": "range",
-                    "$text": "24"
-                  },
-                  {
-                    "name": "Range Strength",
-                    "typeId": "range-strength",
-                    "$text": "6"
-                  },
-                  {
-                    "name": "Fire Power",
-                    "typeId": "fire-power",
-                    "$text": "2"
-                  },
-                  {
-                    "name": "Melee Strength",
-                    "typeId": "melee-strength",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Damage",
-                    "typeId": "damage",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Attacks",
-                    "typeId": "weapon-attacks",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Initiative",
-                    "typeId": "weapon-initiative",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Armour penetration",
-                    "$text": "4"
-                  }
-                ]
-              },
-              {
-                "name": "Maximal fire",
-                "typeId": "weapon",
-                "typeName": "Weapon",
-                "hidden": false,
-                "id": "c820-744a-162f-fee4",
-                "characteristics": [
-                  {
-                    "name": "Range",
-                    "typeId": "range",
-                    "$text": "24"
-                  },
-                  {
-                    "name": "Range Strength",
-                    "typeId": "range-strength",
-                    "$text": "7"
-                  },
-                  {
-                    "name": "Fire Power",
-                    "typeId": "fire-power",
-                    "$text": "2"
-                  },
-                  {
-                    "name": "Melee Strength",
-                    "typeId": "melee-strength",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Damage",
-                    "typeId": "damage",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Attacks",
-                    "typeId": "weapon-attacks",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Initiative",
-                    "typeId": "weapon-initiative",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Armour penetration",
-                    "$text": "4"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Meltagun",
-            "hidden": false,
-            "id": "c2ee-523e-42e0-9b00",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 15
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Meltagun",
-                "typeId": "weapon",
-                "typeName": "Weapon",
-                "hidden": false,
-                "id": "ed33-9df1-5fae-b31a",
-                "characteristics": [
-                  {
-                    "name": "Range",
-                    "typeId": "range",
-                    "$text": "12"
-                  },
-                  {
-                    "name": "Range Strength",
-                    "typeId": "range-strength",
-                    "$text": "8"
-                  },
-                  {
-                    "name": "Fire Power",
-                    "typeId": "fire-power",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Melee Strength",
-                    "typeId": "melee-strength",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Damage",
-                    "typeId": "damage",
-                    "$text": "3"
-                  },
-                  {
-                    "name": "Attacks",
-                    "typeId": "weapon-attacks",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Initiative",
-                    "typeId": "weapon-initiative",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Armour penetration",
-                    "$text": "2"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Flamer",
-            "hidden": false,
-            "id": "ebb4-13b9-2811-55e8",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 5
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Flamer",
-                "typeId": "weapon",
-                "typeName": "Weapon",
-                "hidden": false,
-                "id": "5d79-3f8a-9541-8555",
-                "characteristics": [
-                  {
-                    "name": "Range",
-                    "typeId": "range",
-                    "$text": "Template"
-                  },
-                  {
-                    "name": "Range Strength",
-                    "typeId": "range-strength",
-                    "$text": "4"
-                  },
-                  {
-                    "name": "Fire Power",
-                    "typeId": "fire-power",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Melee Strength",
-                    "typeId": "melee-strength",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Damage",
-                    "typeId": "damage",
-                    "$text": "1"
-                  },
-                  {
-                    "name": "Attacks",
-                    "typeId": "weapon-attacks",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Initiative",
-                    "typeId": "weapon-initiative",
-                    "$text": "Range"
-                  },
-                  {
-                    "name": "Armour penetration",
-                    "$text": "5"
-                  }
-                ]
-              }
-            ]
-          }
-        ],
         "entryLinks": [
           {
             "import": true,
@@ -3869,6 +4343,81 @@
                 "field": "points"
               }
             ]
+          },
+          {
+            "import": true,
+            "name": "Flamer",
+            "hidden": false,
+            "id": "491c-12cf-d1f6-d755",
+            "type": "selectionEntry",
+            "targetId": "ebb4-13b9-2811-55e8",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 5,
+                "field": "points"
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Plasma gun",
+            "hidden": false,
+            "id": "6ee4-87a5-3093-893f",
+            "type": "selectionEntry",
+            "targetId": "c171-e963-803c-eab2",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 10,
+                "field": "points"
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Meltagun",
+            "hidden": false,
+            "id": "f534-529f-ca84-3bf1",
+            "type": "selectionEntry",
+            "targetId": "c2ee-523e-42e0-9b00",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 15,
+                "field": "points"
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Volkite caliver",
+            "hidden": false,
+            "id": "ea5b-11ae-8a38-726b",
+            "type": "selectionEntry",
+            "targetId": "48c0-dd77-d402-73c6",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 10,
+                "field": "points"
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Rotor cannon",
+            "hidden": false,
+            "id": "d23a-6ef8-32c3-2671",
+            "type": "selectionEntry",
+            "targetId": "6cf6-280f-a36f-876e",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 10,
+                "field": "points"
+              }
+            ]
           }
         ]
       },
@@ -3877,70 +4426,6 @@
         "id": "legion-sergeant-melee-weapons",
         "hidden": false,
         "selectionEntries": [
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Thunder hammer",
-            "hidden": false,
-            "id": "14ad-30d4-6fc4-f6a5",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 15
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Thunder hammer",
-                "typeId": "weapon",
-                "typeName": "Weapon",
-                "hidden": false,
-                "id": "13db-fab7-9124-ceff",
-                "characteristics": [
-                  {
-                    "name": "Range",
-                    "typeId": "range",
-                    "$text": "Melee"
-                  },
-                  {
-                    "name": "Range Strength",
-                    "typeId": "range-strength",
-                    "$text": "Melee"
-                  },
-                  {
-                    "name": "Fire Power",
-                    "typeId": "fire-power",
-                    "$text": "Melee"
-                  },
-                  {
-                    "name": "Melee Strength",
-                    "typeId": "melee-strength",
-                    "$text": "+3"
-                  },
-                  {
-                    "name": "Damage",
-                    "typeId": "damage",
-                    "$text": "2"
-                  },
-                  {
-                    "name": "Attacks",
-                    "typeId": "weapon-attacks",
-                    "$text": "A"
-                  },
-                  {
-                    "name": "Initiative",
-                    "typeId": "weapon-initiative",
-                    "$text": "-2"
-                  },
-                  {
-                    "name": "Armour penetration",
-                    "$text": "2"
-                  }
-                ]
-              }
-            ]
-          },
           {
             "type": "upgrade",
             "import": true,
@@ -3993,7 +4478,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "-3"
                   },
@@ -4057,7 +4542,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "I"
                   },
@@ -4121,7 +4606,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "+1"
                   }
@@ -4174,7 +4659,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "I"
                   },
@@ -4231,7 +4716,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "-1"
                   },
@@ -4246,6 +4731,13 @@
         ],
         "defaultSelectionEntryId": "9769-12df-2d8e-83b3",
         "entryLinks": [
+          {
+            "targetId": "14ad-30d4-6fc4-f6a5",
+            "id": "e3d9-e5fa-e277-712c",
+            "type": "selectionEntry",
+            "name": "Thunder hammer",
+            "hidden": false
+          },
           {
             "import": true,
             "name": "Power weapon",
@@ -4325,7 +4817,7 @@
                             "$text": "A"
                           },
                           {
-                            "name": "Initiative",
+                            "name": "Initiative modifier",
                             "typeId": "weapon-initiative",
                             "$text": "-2"
                           },
@@ -4452,7 +4944,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "-3"
                   },
@@ -4527,7 +5019,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "I"
                   },
@@ -4602,7 +5094,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "+1"
                   },
@@ -4627,26 +5119,6 @@
           }
         ],
         "defaultSelectionEntryId": "d2d9-da7d-e599-1df1",
-        "constraints": [
-          {
-            "type": "min",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "45af-35ab-001e-75e0-min",
-            "includeChildSelections": false
-          },
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "45af-35ab-001e-75e0-max",
-            "includeChildSelections": false
-          }
-        ],
         "collective": true,
         "entryLinks": [
           {
@@ -4782,7 +5254,7 @@
                     "$text": "Range"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "Range"
                   },
@@ -4858,7 +5330,7 @@
                     "$text": "Range"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "Range"
                   },
@@ -4906,7 +5378,7 @@
                     "$text": "Range"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "Range"
                   },
@@ -4954,7 +5426,7 @@
                     "$text": "Range"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "Range"
                   },
@@ -5030,7 +5502,7 @@
                     "$text": "Range"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "Range"
                   },
@@ -5056,26 +5528,6 @@
           }
         ],
         "defaultSelectionEntryId": "68d2-db2c-be95-a97d",
-        "constraints": [
-          {
-            "type": "min",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "36cd-6a6b-3df8-520e-min",
-            "includeChildSelections": false
-          },
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "36cd-6a6b-3df8-520e-max",
-            "includeChildSelections": false
-          }
-        ],
         "entryLinks": [
           {
             "import": true,
@@ -5170,7 +5622,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "-2"
                   },
@@ -5234,7 +5686,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "-3"
                   },
@@ -5298,7 +5750,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "I"
                   },
@@ -5362,7 +5814,7 @@
                     "$text": "-1"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "-3"
                   },
@@ -5426,7 +5878,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "I"
                   },
@@ -5441,29 +5893,7 @@
               {
                 "name": "Points",
                 "typeId": "points",
-                "value": 10
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "set",
-                "value": 0,
-                "field": "points",
-                "conditionGroups": [
-                  {
-                    "type": "or",
-                    "conditions": [
-                      {
-                        "type": "instanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "ancestor",
-                        "childId": "f4bc-c275-7e8c-ce89",
-                        "shared": true
-                      }
-                    ]
-                  }
-                ]
+                "value": 0
               }
             ]
           },
@@ -5512,7 +5942,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "-1"
                   },
@@ -5527,29 +5957,7 @@
               {
                 "name": "Points",
                 "typeId": "points",
-                "value": 10
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "set",
-                "value": 0,
-                "field": "points",
-                "conditionGroups": [
-                  {
-                    "type": "or",
-                    "conditions": [
-                      {
-                        "type": "instanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "ancestor",
-                        "childId": "f4bc-c275-7e8c-ce89",
-                        "shared": true
-                      }
-                    ]
-                  }
-                ]
+                "value": 0
               }
             ]
           },
@@ -5598,7 +6006,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "-1"
                   },
@@ -5613,29 +6021,7 @@
               {
                 "name": "Points",
                 "typeId": "points",
-                "value": 10
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "set",
-                "value": 0,
-                "field": "points",
-                "conditionGroups": [
-                  {
-                    "type": "or",
-                    "conditions": [
-                      {
-                        "type": "instanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "ancestor",
-                        "childId": "f4bc-c275-7e8c-ce89",
-                        "shared": true
-                      }
-                    ]
-                  }
-                ]
+                "value": 0
               }
             ]
           },
@@ -5684,7 +6070,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "+1"
                   },
@@ -5699,29 +6085,7 @@
               {
                 "name": "Points",
                 "typeId": "points",
-                "value": 10
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "set",
-                "value": 0,
-                "field": "points",
-                "conditionGroups": [
-                  {
-                    "type": "or",
-                    "conditions": [
-                      {
-                        "type": "instanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "ancestor",
-                        "childId": "f4bc-c275-7e8c-ce89",
-                        "shared": true
-                      }
-                    ]
-                  }
-                ]
+                "value": 0
               }
             ]
           }
@@ -5759,6 +6123,69 @@
                 "value": 1
               }
             ]
+          }
+        ]
+      },
+      {
+        "name": "Force weapons",
+        "id": "force-weapons",
+        "hidden": false,
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Force maul",
+            "hidden": false,
+            "id": "2b0a-2b63-ca95-9c44",
+            "type": "selectionEntry",
+            "targetId": "force-maul"
+          },
+          {
+            "import": true,
+            "name": "Force staff",
+            "hidden": false,
+            "id": "6f3c-8a8f-5444-8f3c",
+            "type": "selectionEntry",
+            "targetId": "force-staff"
+          },
+          {
+            "import": true,
+            "name": "Force sword",
+            "hidden": false,
+            "id": "36a2-883c-2f1f-660d",
+            "type": "selectionEntry",
+            "targetId": "force-sword"
+          },
+          {
+            "import": true,
+            "name": "Force axe",
+            "hidden": false,
+            "id": "d9f6-6376-535a-aedb",
+            "type": "selectionEntry",
+            "targetId": "force-axe"
+          }
+        ],
+        "defaultSelectionEntryId": "36a2-883c-2f1f-660d"
+      },
+      {
+        "name": "Legion Officer Wargear ",
+        "id": "Legion-Officer-Wargear-group",
+        "hidden": false,
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Legion Officer Wargear Melee",
+            "hidden": false,
+            "id": "5875-2e6c-f136-242d",
+            "type": "selectionEntryGroup",
+            "targetId": "officer-melee"
+          },
+          {
+            "import": true,
+            "name": "Legion Officer Wargear Ranged",
+            "hidden": false,
+            "id": "da37-dd5a-1f39-d5a2",
+            "type": "selectionEntryGroup",
+            "targetId": "officer-ranged"
           }
         ]
       }
@@ -5803,7 +6230,7 @@
             "$text": "Range"
           },
           {
-            "name": "Initiative",
+            "name": "Initiative modifier",
             "typeId": "weapon-initiative",
             "$text": "Range"
           },
@@ -5851,13 +6278,253 @@
             "$text": "Range"
           },
           {
-            "name": "Initiative",
+            "name": "Initiative modifier",
             "typeId": "weapon-initiative",
             "$text": "Range"
           },
           {
             "name": "Armour penetration",
             "$text": "5"
+          }
+        ]
+      },
+      {
+        "name": "Graviton gun",
+        "typeId": "weapon",
+        "typeName": "Weapon",
+        "hidden": false,
+        "id": "6721-36fb-9047-09f6",
+        "characteristics": [
+          {
+            "name": "Range",
+            "typeId": "range",
+            "$text": "18"
+          },
+          {
+            "name": "Range Strength",
+            "typeId": "range-strength",
+            "$text": "6"
+          },
+          {
+            "name": "Fire Power",
+            "typeId": "fire-power",
+            "$text": "1"
+          },
+          {
+            "name": "Melee Strength",
+            "typeId": "melee-strength",
+            "$text": "Range"
+          },
+          {
+            "name": "Damage",
+            "typeId": "damage",
+            "$text": "1"
+          },
+          {
+            "name": "Attacks",
+            "typeId": "weapon-attacks",
+            "$text": "Range"
+          },
+          {
+            "name": "Initiative modifier",
+            "typeId": "weapon-initiative",
+            "$text": "Range"
+          },
+          {
+            "name": "Armour penetration",
+            "$text": "4"
+          }
+        ]
+      },
+      {
+        "name": "Meltagun",
+        "typeId": "weapon",
+        "typeName": "Weapon",
+        "hidden": false,
+        "id": "ed33-9df1-5fae-b31a",
+        "characteristics": [
+          {
+            "name": "Range",
+            "typeId": "range",
+            "$text": "12"
+          },
+          {
+            "name": "Range Strength",
+            "typeId": "range-strength",
+            "$text": "8"
+          },
+          {
+            "name": "Fire Power",
+            "typeId": "fire-power",
+            "$text": "1"
+          },
+          {
+            "name": "Melee Strength",
+            "typeId": "melee-strength",
+            "$text": "Range"
+          },
+          {
+            "name": "Damage",
+            "typeId": "damage",
+            "$text": "3"
+          },
+          {
+            "name": "Attacks",
+            "typeId": "weapon-attacks",
+            "$text": "Range"
+          },
+          {
+            "name": "Initiative modifier",
+            "typeId": "weapon-initiative",
+            "$text": "Range"
+          },
+          {
+            "name": "Armour penetration",
+            "$text": "2"
+          }
+        ]
+      },
+      {
+        "name": "Volkite caliver",
+        "typeId": "weapon",
+        "typeName": "Weapon",
+        "hidden": false,
+        "id": "9d57-e36a-3194-29f2",
+        "characteristics": [
+          {
+            "name": "Range",
+            "typeId": "range",
+            "$text": "45"
+          },
+          {
+            "name": "Range Strength",
+            "typeId": "range-strength",
+            "$text": "6"
+          },
+          {
+            "name": "Fire Power",
+            "typeId": "fire-power",
+            "$text": "3"
+          },
+          {
+            "name": "Melee Strength",
+            "typeId": "melee-strength",
+            "$text": "Range"
+          },
+          {
+            "name": "Damage",
+            "typeId": "damage",
+            "$text": "1"
+          },
+          {
+            "name": "Attacks",
+            "typeId": "weapon-attacks",
+            "$text": "Range"
+          },
+          {
+            "name": "Initiative modifier",
+            "typeId": "weapon-initiative",
+            "$text": "Range"
+          },
+          {
+            "name": "Armour penetration",
+            "$text": "5"
+          }
+        ]
+      },
+      {
+        "name": "Multi-melta",
+        "typeId": "weapon",
+        "typeName": "Weapon",
+        "hidden": false,
+        "id": "1d66-9ac9-fdc3-9f10",
+        "characteristics": [
+          {
+            "name": "Range",
+            "typeId": "range",
+            "$text": "24"
+          },
+          {
+            "name": "Range Strength",
+            "typeId": "range-strength",
+            "$text": "8"
+          },
+          {
+            "name": "Fire Power",
+            "typeId": "fire-power",
+            "$text": "1"
+          },
+          {
+            "name": "Melee Strength",
+            "typeId": "melee-strength",
+            "$text": "Range"
+          },
+          {
+            "name": "Damage",
+            "typeId": "damage",
+            "$text": "3"
+          },
+          {
+            "name": "Attacks",
+            "typeId": "weapon-attacks",
+            "$text": "Range"
+          },
+          {
+            "name": "Initiative modifier",
+            "typeId": "weapon-initiative",
+            "$text": "Range"
+          },
+          {
+            "name": "Armour penetration",
+            "$text": "2"
+          }
+        ]
+      },
+      {
+        "name": "Heavy flamer",
+        "typeId": "weapon",
+        "typeName": "Weapon",
+        "hidden": false,
+        "id": "3ad3-9360-3dc7-8ff4",
+        "characteristics": [
+          {
+            "name": "Range",
+            "typeId": "range",
+            "$text": "Template"
+          },
+          {
+            "name": "Range Strength",
+            "typeId": "range-strength",
+            "$text": "5"
+          },
+          {
+            "name": "Fire Power",
+            "typeId": "fire-power",
+            "$text": "1"
+          },
+          {
+            "name": "Melee Strength",
+            "typeId": "melee-strength",
+            "$text": "Range"
+          },
+          {
+            "name": "Damage",
+            "typeId": "damage",
+            "$text": "1"
+          },
+          {
+            "name": "Attacks",
+            "typeId": "weapon-attacks",
+            "$text": "Range"
+          },
+          {
+            "name": "Initiative modifier",
+            "typeId": "weapon-initiative",
+            "$text": "Range"
+          },
+          {
+            "name": "Armour penetration",
+            "$text": "4"
           }
         ]
       }
