@@ -30,7 +30,7 @@
       },
       {
         "name": "Vehicle (Transport)",
-        "id": "transport-category",
+        "id": "transport-tag-category",
         "hidden": false
       },
       {
@@ -178,11 +178,6 @@
             ]
           }
         ]
-      },
-      {
-        "name": "Legion Champion",
-        "id": "champion-category",
-        "hidden": false
       },
       {
         "name": "Support",
@@ -1110,7 +1105,8 @@
           {
             "name": "Shot Selector",
             "id": "a628-5ea3-6339-8f17",
-            "hidden": false
+            "hidden": false,
+            "description": "Some weapons are designed to feed from multiple small magazines loaded with specialist ammunition. The most common of these are the Tempest and Scorpius rounds commonly issued to Seeker Squads, but many other Legion forces may utilise even more esoteric and specialised ammunition. Weapons with this Special Rule gain one optional additional Special Rule when used to attack. When a Shooting Attack is made that includes one or more Weapons with this Special Rule, at the start of Step 3 of the Shooting Attack procedure, the Attacking Player can select one of the following Special Rules for all Weapons with this Special Rule to gain until the end of this Shooting Attack\n• Panic (1) \n• Breaching (4+) \n• Suppressive (2) "
           }
         ]
       },
@@ -1851,6 +1847,38 @@
             "targetId": "6b97-86ae-c085-9899"
           }
         ]
+      },
+      {
+        "name": "Allegiance",
+        "id": "allegiance-category",
+        "hidden": false,
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": false,
+            "id": "eb4a-0f6d-cdd5-6e53-min",
+            "includeChildSelections": false,
+            "includeChildForces": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": false,
+            "id": "eb4a-0f6d-cdd5-6e53-max",
+            "includeChildSelections": false,
+            "includeChildForces": false
+          }
+        ]
+      },
+      {
+        "name": "Transport",
+        "id": "transport-category",
+        "hidden": false
       }
     ],
     "forceEntries": [
@@ -1937,7 +1965,7 @@
             ]
           },
           {
-            "name": "Vehicle (Transport)",
+            "name": "Transport",
             "hidden": false,
             "id": "b9db-568a-a1ea-d7ef",
             "targetId": "transport-category",
@@ -1952,6 +1980,12 @@
                 "includeChildSelections": true
               }
             ]
+          },
+          {
+            "name": "Allegiance",
+            "hidden": false,
+            "id": "a11a-d595-ad13-b239",
+            "targetId": "allegiance-category"
           }
         ],
         "childForcesLabel": "Child Forces"
@@ -2144,7 +2178,7 @@
             ]
           },
           {
-            "name": "Vehicle (Transport)",
+            "name": "Transport",
             "hidden": false,
             "id": "13b1-ce1d-4512-bb67",
             "targetId": "transport-category",
@@ -2521,7 +2555,7 @@
             "targetId": "support-troops-category"
           },
           {
-            "name": "Vehicle (Transport)",
+            "name": "Transport",
             "hidden": false,
             "id": "c4d1-ea95-83e2-fff3",
             "targetId": "transport-category"
@@ -2732,35 +2766,36 @@
             "id": "range"
           },
           {
-            "name": "Range Strength",
-            "id": "range-strength"
-          },
-          {
-            "name": "Fire Power",
+            "name": "Fire Power (FP)",
             "id": "fire-power"
           },
           {
-            "name": "Melee Strength",
-            "id": "melee-strength"
+            "name": "Range Strength (RS)",
+            "id": "range-strength"
           },
           {
-            "name": "Damage",
-            "id": "damage"
-          },
-          {
-            "name": "Attacks",
-            "id": "weapon-attacks"
-          },
-          {
-            "name": "Initiative",
+            "name": "Melee Initiative Modifier (IM)",
             "id": "weapon-initiative"
           },
           {
-            "name": "Armour penetration",
-            "typeId": "12fe-0c2e-ec7d-8f26",
+            "name": "Melee Attacks Modifier (AM)",
+            "id": "weapon-attacks"
+          },
+          {
+            "name": "Melee Strength Modifier (SM)",
+            "id": "melee-strength"
+          },
+          {
+            "name": "Armour Penetration (AP)",
+            "typeId": "armour-penetration",
             "$text": "3"
+          },
+          {
+            "name": "Damage (D)",
+            "id": "damage"
           }
-        ]
+        ],
+        "sortIndex": 1
       }
     ],
     "sharedSelectionEntries": [
@@ -3528,6 +3563,63 @@
             "targetId": "prime-traits"
           }
         ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Loyalist",
+        "hidden": false,
+        "id": "Loyalist",
+        "categoryLinks": [
+          {
+            "name": "Allegiance",
+            "hidden": false,
+            "id": "24e8-9de8-1d88-ae72",
+            "targetId": "allegiance-category",
+            "primary": true
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Traitor",
+        "hidden": false,
+        "id": "traitor",
+        "categoryLinks": [
+          {
+            "name": "Allegiance",
+            "hidden": false,
+            "id": "94c9-757a-a312-c330",
+            "targetId": "allegiance-category",
+            "primary": true
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Melta bombs",
+        "hidden": false,
+        "id": "761a-1b86-42ef-8b5e",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "e9f0-74f0-ffee-61aa",
+            "includeChildSelections": false
+          }
+        ],
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 10
+          }
+        ]
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -3566,28 +3658,127 @@
             "import": true,
             "name": "Master Sergeant",
             "hidden": false,
-            "id": "master-sergeant"
+            "id": "master-sergeant",
+            "rules": [
+              {
+                "name": "Master Sergeant",
+                "id": "cc31-801a-61e6-6763",
+                "hidden": false,
+                "description": "One Model in the Unit selected to fill the Prime Slot that has the Sergeant Sub-Type gains +1 to its Attacks, Weapon Skill and Leadership Characteristics and the Champion Sub-Type (if it already has the Champion Sub-Type it instead increases its Leadership by an additional +1). This Advantage may only be selected once per Detachment..\n\n"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "a88d-0142-5417-ea6f",
+                "includeChildSelections": true
+              }
+            ]
           },
           {
             "type": "upgrade",
             "import": true,
             "name": "Combat Veterans",
             "hidden": false,
-            "id": "combat-veterans"
+            "id": "combat-veterans",
+            "rules": [
+              {
+                "name": "Combat Veterans",
+                "id": "76d3-6a6b-65d2-21af",
+                "hidden": false,
+                "description": "All Models in the Unit selected to fill the Prime Slot gain a bonus of +1 to their Leadership, Cool, Intelligence and Willpower Characteristics to a maximum of 10 (this includes only Models selected as part of the Unit, not Models that later join the Unit either before or during a Battle). .\n"
+              }
+            ]
           },
           {
             "type": "upgrade",
             "import": true,
             "name": "Paragon of Battle",
             "hidden": false,
-            "id": "paragon-of-battle"
+            "id": "paragon-of-battle",
+            "rules": [
+              {
+                "name": "Paragon of Battle",
+                "id": "8b18-e2a7-645f-d9a3",
+                "hidden": false,
+                "description": "One Model in the Unit selected to fill the Prime Slot that has the Command Sub-Type gains a bonus of +1 to its Attacks, Weapon Skill and Ballistic Skill Characteristics."
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d289-6834-9d25-8217"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "d289-6834-9d25-8217",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "command-category",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
           },
           {
             "type": "upgrade",
             "import": true,
             "name": "Special Assignment",
             "hidden": false,
-            "id": "special-assignment"
+            "id": "special-assignment",
+            "rules": [
+              {
+                "name": " Special Assignment",
+                "id": "77e2-37a8-fa0d-41d9",
+                "hidden": false,
+                "description": "This Prime Advantage may only be selected for a Command Slot. A Command Slot for which this Prime Advantage is selected may be filled by a High Command Unit, but remains a Command Slot. Moreover, no additional Detachments of any kind may be selected due to this Slot regardless of their Battlefield Role or any Special Rules that the Unit selected to fill the Slot may have. \n\n\n"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c644-d7bf-9b4b-fe20"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "c644-d7bf-9b4b-fe20",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "command-category",
+                    "shared": true,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
           },
           {
             "type": "upgrade",
@@ -3602,6 +3793,117 @@
                 "id": "357e-2b83-a111-5298",
                 "targetId": "logistical-benefit-category",
                 "primary": true
+              }
+            ],
+            "rules": [
+              {
+                "name": "Logistical Benefit",
+                "id": "4f94-c9c4-eb41-cf1c",
+                "hidden": false,
+                "description": "Add one additional Force Organisation Slot to the Detachment that includes the Prime Slot, this Slot may be of any Battlefield Role other than High Command, Command, Warlord or Lord of War. This Advantage may only be selected once per Detachment. \n"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "0092-b2df-552b-d6d7",
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Interdiction Cadres",
+            "hidden": false,
+            "id": "interdiction-cadres",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "roster",
+                    "childId": "8f15-2483-dfe6-1be2",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "includeChildForces": true
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Interdiction Cadres",
+                "id": "abd2-3079-984c-d80f",
+                "hidden": false,
+                "description": "If a Tactical Squad or Despoilers Army List is selected from the Legiones Astartes to fill a Prime Slot, the Controlling Player can select the following Prime Advantage:\nInterdiction Cadres - All Models in a Unit selected to fill a Prime Force Organisation Slot with this Prime Advantage gain the Concealed Positions and Expendable (1) Special Rules.\n\n"
+              },
+              {
+                "name": "Concealed Positions",
+                "id": "7238-c2f7-a1ba-b9ba",
+                "hidden": false,
+                "description": "This Special Rule allows Models to use an Advanced Reaction to arrive from Reserves in close proximity to an enemy Unit. ail\n\nThe Controlling Player of a Unit that only contains Models with this Special Rule can use the Concealed Ambush Advanced Reaction."
+              },
+              {
+                "name": "CONCEALED AMBUSH ADVANCED Reaction",
+                "id": "5650-17da-7441-5d36",
+                "hidden": false,
+                "description": "Trigger: The Reactive Player may declare the Concealed  Ambush Advanced Reaction in Step 2 of the Movement\nPhase process after an enemy Unit ends a Move. \n\n\nCost: The Reactive Player must spend 1 point of their Reaction Allotment to declare a Concealed Ambush\nReaction, this cost paid as soon as the declaration is made.\nTarget: The Target Unit is always the Unit whose Mo triggered the Reaction. The Reactive Player must select one Unit under their control that only includes Model with the Concealed Positions Special Rule that is in Reserves. That Unit is the Reacting Unit.\n\n\nProcess\n1. The Reactive Player must select one Model from the Reacting Unit and place it anywhere on the Battlefield that is not within their Opponent’s Deployment Zone, within 6\" of the Unit that triggered this Reaction and at least 5” away from an enemy Model and 1\" from any Battlefield Edge or piece of Impassable Terrain. Once this first Model has been placed, the remaining Models in the Unit must be placed within Unit Coherency with at least one other Model in the same Unit and within 6\" of the Last Model placed. No Models may be placed within 5\" of an enemy Model, or within 1\" of any Battlefield or a piece of Impassable Terrain or within their Opponent’s Deployment Zone. Any Models that cannot be placed using these Rules must be Remo as a Casualty immediately. \n2. Once the Reacting Unit has been set up, the Reacting Player can either make a Shooting Attack with the Reacting Unit against the Unit that triggered this Reaction, but any attacks are made as Snap Shots, or make a Disordered Charge for the Reacting Unit that must target the Unit that triggered this Reaction: "
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "True Believers",
+            "hidden": false,
+            "id": "true-believers",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "roster",
+                    "childId": "d957-492f-6764-f288",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "includeChildForces": true
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "Corrupted Legions",
+                "id": "corrupted-legions",
+                "hidden": false,
+                "description": "If a Unit from the Legiones Astartes Army List with the Traitor Allegiance is selected to fill a Prime Slot, the Controlling Player can select the following Prime Advantage:\n"
+              },
+              {
+                "name": "True Believers",
+                "id": "true-believers-rule",
+                "hidden": false,
+                "description": "All Models in the Unit selected to fill the Prime Slot gain the Malefic Sub-Type."
+              },
+              {
+                "name": "Malefic",
+                "id": "Malefic",
+                "hidden": false,
+                "description": "The following Rules apply to all Models with the Malefic Sub-Type:\nWhen a Unit composed entirely of Models with the Malefic Sub-Type would gain a Tactical Status of any kind, that Tactical Status is not applied to the Models in the Unit, but instead the Unit suffers D3 automatic wounds with an AP of 2 and a Damage Characteristic of 1 against which no Saving Throws of any kind may be made.\nOnce these wounds are resolved, no Tactical Status is applied to any Model in the Unit. \nModels with the Malefic Sub-Type are not affected by Special Rules that negatively modify their Leadership, Cool, Willpower or Intelligence Characteristics.\nNo Model that does not also have the Malefic Sub-Type may join or be joined by a Unit that includes one or more Models with the Malefic Sub-Type."
               }
             ]
           }
@@ -3666,6 +3968,22 @@
             "name": "Apex"
           }
         ]
+      },
+      {
+        "import": true,
+        "name": "Traitor",
+        "hidden": false,
+        "id": "8f15-2483-dfe6-1be2",
+        "type": "selectionEntry",
+        "targetId": "traitor"
+      },
+      {
+        "import": true,
+        "name": "Loyalist",
+        "hidden": false,
+        "id": "d957-492f-6764-f288",
+        "type": "selectionEntry",
+        "targetId": "Loyalist"
       }
     ],
     "sharedRules": [

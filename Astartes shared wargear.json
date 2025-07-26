@@ -14,45 +14,7 @@
         "import": true,
         "name": "Legion Officer Wargear List",
         "hidden": false,
-        "id": "legion-officer-wargear",
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Legion Officer Wargear Melee",
-            "hidden": false,
-            "id": "1e66-9a5b-ac2a-74c5",
-            "type": "selectionEntryGroup",
-            "targetId": "officer-melee"
-          },
-          {
-            "import": true,
-            "name": "Legion Officer Wargear Ranged",
-            "hidden": false,
-            "id": "7852-a782-e82c-a42a",
-            "type": "selectionEntryGroup",
-            "targetId": "officer-ranged"
-          }
-        ],
-        "constraints": [
-          {
-            "type": "min",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "f72d-c82c-9dd5-e8de-min",
-            "includeChildSelections": false
-          },
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "f72d-c82c-9dd5-e8de-max",
-            "includeChildSelections": false
-          }
-        ]
+        "id": "legion-officer-wargear"
       },
       {
         "type": "upgrade",
@@ -102,40 +64,6 @@
             "id": "8e7f-d55f-be51-75eb",
             "type": "selectionEntryGroup",
             "targetId": "legion-pistols"
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Legion combi weapons",
-        "hidden": false,
-        "id": "d78f-e0c3-7af3-a9c7",
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Legion Combi-Weapons",
-            "hidden": false,
-            "id": "7bd3-99af-fab4-4226",
-            "type": "selectionEntryGroup",
-            "targetId": "legion-combi-weapons",
-            "entryLinks": [
-              {
-                "import": true,
-                "name": "Combi-melta",
-                "hidden": false,
-                "id": "6a9c-8563-b07c-f883",
-                "type": "selectionEntry",
-                "targetId": "eeee-7602-8381-a6b6",
-                "modifiers": [
-                  {
-                    "type": "set",
-                    "value": 10,
-                    "field": "points"
-                  }
-                ]
-              }
-            ]
           }
         ]
       },
@@ -235,13 +163,13 @@
                 "$text": "A"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "-2"
               },
               {
                 "name": "Armour penetration",
-                "typeId": "12fe-0c2e-ec7d-8f26",
+                "typeId": "armour-penetration",
                 "$text": "2"
               }
             ]
@@ -325,7 +253,7 @@
                 "$text": ""
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": ""
               },
@@ -415,7 +343,7 @@
                 "$text": ""
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": ""
               },
@@ -499,7 +427,7 @@
                 "$text": ""
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": ""
               },
@@ -576,7 +504,7 @@
                 "$text": "Range"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "Range"
               },
@@ -655,7 +583,7 @@
                 "$text": "Range"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "Range"
               },
@@ -739,7 +667,7 @@
                 "$text": "Range"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "Range"
               },
@@ -824,7 +752,7 @@
                 "$text": "A"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "I"
               },
@@ -881,7 +809,7 @@
                 "$text": ""
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": ""
               },
@@ -953,7 +881,7 @@
                 "$text": ""
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": ""
               },
@@ -1031,7 +959,7 @@
                 "$text": "A"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "-1"
               },
@@ -1143,7 +1071,7 @@
                 "$text": ""
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": ""
               },
@@ -1191,7 +1119,7 @@
                 "$text": ""
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": ""
               },
@@ -1248,7 +1176,7 @@
                 "$text": "A"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "-1"
               },
@@ -1312,7 +1240,7 @@
                 "$text": ""
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": ""
               },
@@ -1392,7 +1320,7 @@
                 "$text": ""
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": ""
               },
@@ -1488,7 +1416,7 @@
                 "$text": ""
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": ""
               },
@@ -1537,7 +1465,7 @@
                 "$text": ""
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": ""
               },
@@ -1634,7 +1562,7 @@
                 "$text": "Range"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "Range"
               },
@@ -1707,7 +1635,7 @@
                 "$text": "Range"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "Range"
               },
@@ -1812,7 +1740,7 @@
                 "$text": "Range"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "Range"
               },
@@ -1917,7 +1845,7 @@
                 "$text": "Range"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "Range"
               },
@@ -2022,7 +1950,7 @@
                 "$text": "Range"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "Range"
               },
@@ -2113,7 +2041,7 @@
                 "$text": "Range"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "Range"
               },
@@ -2218,7 +2146,7 @@
                 "$text": "Range"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "Range"
               },
@@ -2323,7 +2251,7 @@
                 "$text": "Range"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "Range"
               },
@@ -2428,7 +2356,7 @@
                 "$text": "Range"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "Range"
               },
@@ -2492,7 +2420,7 @@
                 "$text": "Range"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "Range"
               },
@@ -2540,7 +2468,7 @@
                 "$text": "Range"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "Range"
               },
@@ -2627,7 +2555,7 @@
                 "$text": "Range"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "Range"
               },
@@ -2675,7 +2603,7 @@
                 "$text": "Range"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "Range"
               },
@@ -2723,7 +2651,7 @@
                 "$text": "Range"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "Range"
               },
@@ -2787,7 +2715,7 @@
                 "$text": "Range"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "Range"
               },
@@ -2874,7 +2802,7 @@
                 "$text": "Range"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "Range"
               },
@@ -2938,7 +2866,7 @@
                 "$text": "Range"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "Range"
               },
@@ -3002,7 +2930,7 @@
                 "$text": "Range"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "Range"
               },
@@ -3050,7 +2978,7 @@
                 "$text": "Range"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "Range"
               },
@@ -3114,7 +3042,7 @@
                 "$text": "Range"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "Range"
               },
@@ -3201,7 +3129,7 @@
                 "$text": "Range"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative modifier",
                 "typeId": "weapon-initiative",
                 "$text": "Range"
               },
@@ -3259,151 +3187,567 @@
             "targetId": "6721-36fb-9047-09f6"
           }
         ]
-      }
-    ],
-    "sharedSelectionEntryGroups": [
+      },
       {
-        "name": "Legion Combi-Weapons",
-        "id": "legion-combi-weapons",
+        "type": "upgrade",
+        "import": true,
+        "name": "Force sword",
         "hidden": false,
-        "collective": true,
-        "collapsible": true,
-        "entryLinks": [
+        "id": "force-sword",
+        "categoryLinks": [
           {
-            "import": true,
-            "name": "Combi-bolter",
+            "targetId": "5628-72c6-448c-7f33",
+            "id": "b512-6caf-c540-2bac",
+            "primary": false,
+            "name": "Force (D)"
+          },
+          {
+            "targetId": "psychic",
+            "id": "6849-8d8c-9b79-e1bd",
+            "primary": false,
+            "name": "Psychic"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Force sword",
+            "typeId": "weapon",
+            "typeName": "Weapon",
             "hidden": false,
-            "id": "039b-1f4b-6f30-c1de",
-            "type": "selectionEntry",
-            "targetId": "0a79-986f-b4d7-ab74",
-            "modifiers": [
+            "id": "e1f6-478f-222b-b0f3",
+            "characteristics": [
               {
-                "type": "increment",
-                "value": 5,
-                "field": "points"
+                "name": "Range",
+                "typeId": "range",
+                "$text": ""
               },
               {
-                "type": "decrement",
-                "value": -5,
-                "field": "points",
-                "conditionGroups": [
-                  {
-                    "type": "or",
-                    "conditions": [
-                      {
-                        "type": "instanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "ancestor",
-                        "childId": "f4bc-c275-7e8c-ce89",
-                        "shared": true
-                      },
-                      {
-                        "type": "instanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "ancestor",
-                        "childId": "ebdd-8208-3c41-42f1",
-                        "shared": true
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "import": true,
-            "name": "Combi-flamer",
-            "hidden": false,
-            "id": "fdef-ca4d-82b7-7096",
-            "type": "selectionEntry",
-            "targetId": "fc5e-feb7-e7fe-7c96",
-            "modifiers": [
+                "name": "Fire Power (FP)",
+                "typeId": "fire-power",
+                "$text": ""
+              },
               {
-                "type": "set",
-                "value": 10,
-                "field": "points"
-              }
-            ]
-          },
-          {
-            "import": true,
-            "name": "Combi-grenade",
-            "hidden": false,
-            "id": "debd-4560-1c1b-94e3",
-            "type": "selectionEntry",
-            "targetId": "83a1-d99f-3b09-eac7",
-            "modifiers": [
+                "name": "Range Strength (RS)",
+                "typeId": "range-strength",
+                "$text": ""
+              },
               {
-                "type": "set",
-                "value": 10,
-                "field": "points"
-              }
-            ]
-          },
-          {
-            "import": true,
-            "name": "Combi-disintegrator",
-            "hidden": false,
-            "id": "8393-09ad-f24b-e042",
-            "type": "selectionEntry",
-            "targetId": "a7be-782f-5711-53e7",
-            "modifiers": [
+                "name": "Melee Initiative Modifier (IM)",
+                "typeId": "weapon-initiative",
+                "$text": "I"
+              },
               {
-                "type": "set",
-                "value": 10,
-                "field": "points"
-              }
-            ]
-          },
-          {
-            "import": true,
-            "name": "Combi-grav",
-            "hidden": false,
-            "id": "8d0e-8439-f976-1225",
-            "type": "selectionEntry",
-            "targetId": "c701-17da-d134-6889",
-            "modifiers": [
+                "name": "Melee Attacks Modifier (AM)",
+                "typeId": "weapon-attacks",
+                "$text": "A"
+              },
               {
-                "type": "set",
-                "value": 10,
-                "field": "points"
-              }
-            ]
-          },
-          {
-            "import": true,
-            "name": "Combi-volkite",
-            "hidden": false,
-            "id": "1fcb-9cf5-fb14-3411",
-            "type": "selectionEntry",
-            "targetId": "Combi-Volkite",
-            "modifiers": [
+                "name": "Melee Strength Modifier (SM)",
+                "typeId": "melee-strength",
+                "$text": "+1"
+              },
               {
-                "type": "set",
-                "value": 10,
-                "field": "points"
-              }
-            ]
-          },
-          {
-            "import": true,
-            "name": "Combi-plasma",
-            "hidden": false,
-            "id": "0cba-8d43-cbc0-1073",
-            "type": "selectionEntry",
-            "targetId": "c862-70aa-7cea-2485",
-            "modifiers": [
+                "name": "Armour Penetration (AP)",
+                "$text": "3"
+              },
               {
-                "type": "set",
-                "value": 10,
-                "field": "points"
+                "name": "Damage (D)",
+                "typeId": "damage",
+                "$text": "1"
               }
             ]
           }
         ]
       },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Force axe",
+        "hidden": false,
+        "id": "force-axe",
+        "categoryLinks": [
+          {
+            "targetId": "5628-72c6-448c-7f33",
+            "id": "937d-78f2-65d9-bda3",
+            "primary": false,
+            "name": "Force (D)"
+          },
+          {
+            "targetId": "psychic",
+            "id": "93fe-9c84-8b22-71e2",
+            "primary": false,
+            "name": "Psychic"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Force axe",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "force-axe-profile",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": ""
+              },
+              {
+                "name": "Fire Power (FP)",
+                "typeId": "fire-power",
+                "$text": ""
+              },
+              {
+                "name": "Range Strength (RS)",
+                "typeId": "range-strength",
+                "$text": ""
+              },
+              {
+                "name": "Melee Initiative Modifier (IM)",
+                "typeId": "weapon-initiative",
+                "$text": "-1"
+              },
+              {
+                "name": "Melee Attacks Modifier (AM)",
+                "typeId": "weapon-attacks",
+                "$text": "A"
+              },
+              {
+                "name": "Melee Strength Modifier (SM)",
+                "typeId": "melee-strength",
+                "$text": "+2"
+              },
+              {
+                "name": "Armour Penetration (AP)",
+                "$text": "2"
+              },
+              {
+                "name": "Damage (D)",
+                "typeId": "damage",
+                "$text": "1"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Force maul",
+        "hidden": false,
+        "id": "force-maul",
+        "categoryLinks": [
+          {
+            "targetId": "5628-72c6-448c-7f33",
+            "id": "fc5e-c1e2-17c7-3cef",
+            "primary": false,
+            "name": "Force (D)"
+          },
+          {
+            "targetId": "psychic",
+            "id": "d208-7fa6-97d5-bc79",
+            "primary": false,
+            "name": "Psychic"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Force maul",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "f341-8778-882f-fa6e",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": ""
+              },
+              {
+                "name": "Fire Power (FP)",
+                "typeId": "fire-power",
+                "$text": ""
+              },
+              {
+                "name": "Range Strength (RS)",
+                "typeId": "range-strength",
+                "$text": ""
+              },
+              {
+                "name": "Melee Initiative Modifier (IM)",
+                "typeId": "weapon-initiative",
+                "$text": "-1"
+              },
+              {
+                "name": "Melee Attacks Modifier (AM)",
+                "typeId": "weapon-attacks",
+                "$text": "A"
+              },
+              {
+                "name": "Melee Strength Modifier (SM)",
+                "typeId": "melee-strength",
+                "$text": "+3"
+              },
+              {
+                "name": "Armour Penetration (AP)",
+                "$text": "3"
+              },
+              {
+                "name": "Damage (D)",
+                "typeId": "damage",
+                "$text": "1"
+              }
+            ]
+          }
+        ],
+        "comment": "\n"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Force staff",
+        "hidden": false,
+        "id": "force-staff",
+        "categoryLinks": [
+          {
+            "targetId": "5628-72c6-448c-7f33",
+            "id": "e6eb-7615-203c-ca52",
+            "primary": false,
+            "name": "Force (D)"
+          },
+          {
+            "targetId": "psychic",
+            "id": "f36c-0644-6bfd-e49a",
+            "primary": false,
+            "name": "Psychic"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Force staff",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "3ea3-22f6-168e-2e8b",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": ""
+              },
+              {
+                "name": "Fire Power (FP)",
+                "typeId": "fire-power",
+                "$text": ""
+              },
+              {
+                "name": "Range Strength (RS)",
+                "typeId": "range-strength",
+                "$text": ""
+              },
+              {
+                "name": "Melee Initiative Modifier (IM)",
+                "typeId": "weapon-initiative",
+                "$text": "+1"
+              },
+              {
+                "name": "Melee Attacks Modifier (AM)",
+                "typeId": "weapon-attacks",
+                "$text": "A"
+              },
+              {
+                "name": "Melee Strength Modifier (SM)",
+                "typeId": "melee-strength",
+                "$text": "+2"
+              },
+              {
+                "name": "Armour Penetration (AP)",
+                "$text": "4"
+              },
+              {
+                "name": "Damage (D)",
+                "typeId": "damage",
+                "$text": "1"
+              }
+            ]
+          }
+        ],
+        "comment": "\n"
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Cyber familiar",
+        "hidden": false,
+        "id": "cyber-familiar",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 10
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "0f49-8b60-2ae0-08c5",
+            "includeChildSelections": false
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Archeotech pistol",
+        "hidden": false,
+        "id": "archeotech-pistol",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 15
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Archeotech pistol",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "d8e8-8b72-0111-3922",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": ""
+              },
+              {
+                "name": "Fire Power (FP)",
+                "typeId": "fire-power",
+                "$text": ""
+              },
+              {
+                "name": "Range Strength (RS)",
+                "typeId": "range-strength",
+                "$text": ""
+              },
+              {
+                "name": "Melee Initiative Modifier (IM)",
+                "typeId": "weapon-initiative",
+                "$text": ""
+              },
+              {
+                "name": "Melee Attacks Modifier (AM)",
+                "typeId": "weapon-attacks",
+                "$text": ""
+              },
+              {
+                "name": "Melee Strength Modifier (SM)",
+                "typeId": "melee-strength",
+                "$text": ""
+              },
+              {
+                "name": "Armour Penetration (AP)",
+                "$text": ""
+              },
+              {
+                "name": "Damage (D)",
+                "typeId": "damage",
+                "$text": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Thunder hammer",
+        "hidden": false,
+        "id": "14ad-30d4-6fc4-f6a5",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 15
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Thunder hammer",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "13db-fab7-9124-ceff",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "Melee"
+              },
+              {
+                "name": "Range Strength",
+                "typeId": "range-strength",
+                "$text": "Melee"
+              },
+              {
+                "name": "Fire Power",
+                "typeId": "fire-power",
+                "$text": "Melee"
+              },
+              {
+                "name": "Melee Strength",
+                "typeId": "melee-strength",
+                "$text": "+3"
+              },
+              {
+                "name": "Damage",
+                "typeId": "damage",
+                "$text": "2"
+              },
+              {
+                "name": "Attacks",
+                "typeId": "weapon-attacks",
+                "$text": "A"
+              },
+              {
+                "name": "Initiative modifier",
+                "typeId": "weapon-initiative",
+                "$text": "-2"
+              },
+              {
+                "name": "Armour penetration",
+                "$text": "2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Cognis-signum",
+        "hidden": false,
+        "id": "cognis-signum",
+        "rules": [
+          {
+            "name": "Cognis-signum",
+            "id": "ded5-6a21-42d3-7954",
+            "hidden": false,
+            "description": "A cognis-signum allows more accurate attacks to be made with Barrage Weapons. Instead of making a Shooting Attack with a Model with a cognis-signum, the Controlling Player may instead make an Intelligence Check. If the Check is passed, the Controlling Player may select a single enemy Unit within Line of Sight of the Model with a cognis-signum. The next time the selected enemy Unit is targeted by a Shooting Attack that includes any Weapons with the Barrage (X) Special Rule during the current Shooting Phase, the Controlling Player may make Hit Tests for the attacks that have the Barrage (X) Special Rule as normal, ignoring the limitations of the Barrage (X) Special Rule if the Unit making the Shooting Attack is without Line of Sight to the Target Unit. If the Check is not passed, the cognis-signum has no effect this turn. "
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Augury scanner",
+        "hidden": false,
+        "id": "land-speeder-augury-scanner",
+        "rules": [
+          {
+            "name": "Augury scanner",
+            "id": "d580-6021-28d2-0c5b",
+            "hidden": false,
+            "description": "Augury scanners allow attacks to ignore Shrouded Damage Mitigation Tests. \nWhen a Shooting Attack made by a Unit that includes Models with an augury scanner inflicts any Hits (excluding Hits from attacks made as Snap Shots), Shrouded Damage Mitigation Rolls cannot be made against those Hits. "
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Phosphex bombs",
+        "hidden": false,
+        "id": "phosphex-bombs",
+        "categoryLinks": [
+          {
+            "targetId": "phosphex",
+            "id": "9396-6dd4-1f1a-fdea",
+            "primary": false,
+            "name": "Phospex"
+          },
+          {
+            "targetId": "0f24-9ab2-b239-fcab",
+            "id": "5d64-82d5-f0cc-f80c",
+            "primary": false,
+            "name": "Breaching (5+)"
+          },
+          {
+            "targetId": "211e-76a4-b7e4-ecdd",
+            "id": "afd1-ce34-26e6-3258",
+            "primary": false,
+            "name": "Poisoned (3+)"
+          },
+          {
+            "targetId": "3a7f-1616-3fa9-a71e",
+            "id": "4ddb-4139-edfe-7384",
+            "primary": false,
+            "name": "Blast (3\")"
+          },
+          {
+            "targetId": "6639-8060-dcf4-5878",
+            "id": "1dcf-463d-e734-c579",
+            "primary": false,
+            "name": "Panic (3)"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Phosphex bombs",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "99ee-5cd9-127a-4c28",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "6\""
+              },
+              {
+                "name": "Fire Power (FP)",
+                "typeId": "fire-power",
+                "$text": "1"
+              },
+              {
+                "name": "Range Strength (RS)",
+                "typeId": "range-strength",
+                "$text": "5"
+              },
+              {
+                "name": "Melee Initiative Modifier (IM)",
+                "typeId": "weapon-initiative",
+                "$text": ""
+              },
+              {
+                "name": "Melee Attacks Modifier (AM)",
+                "typeId": "weapon-attacks",
+                "$text": ""
+              },
+              {
+                "name": "Melee Strength Modifier (SM)",
+                "typeId": "melee-strength",
+                "$text": ""
+              },
+              {
+                "name": "Armour Penetration (AP)",
+                "$text": "3"
+              },
+              {
+                "name": "Damage (D)",
+                "typeId": "damage",
+                "$text": "1"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntryGroups": [
       {
         "name": "Legion Heavy Weapons",
         "id": "legion-heavy-weapons",
@@ -3655,7 +3999,7 @@
                     "$text": "Range"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "Range"
                   },
@@ -3734,7 +4078,7 @@
                     "$text": "Range"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "Range"
                   },
@@ -3782,7 +4126,7 @@
                     "$text": "Range"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "Range"
                   },
@@ -3830,7 +4174,7 @@
                     "$text": "Range"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "Range"
                   },
@@ -3909,7 +4253,7 @@
                     "$text": "Range"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "Range"
                   },
@@ -3977,7 +4321,8 @@
               }
             ]
           }
-        ]
+        ],
+        "defaultSelectionEntryId": "f867-011d-0934-2e7a"
       },
       {
         "name": "Legion Special Weapons",
@@ -4084,70 +4429,6 @@
           {
             "type": "upgrade",
             "import": true,
-            "name": "Thunder hammer",
-            "hidden": false,
-            "id": "14ad-30d4-6fc4-f6a5",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 15
-              }
-            ],
-            "profiles": [
-              {
-                "name": "Thunder hammer",
-                "typeId": "weapon",
-                "typeName": "Weapon",
-                "hidden": false,
-                "id": "13db-fab7-9124-ceff",
-                "characteristics": [
-                  {
-                    "name": "Range",
-                    "typeId": "range",
-                    "$text": "Melee"
-                  },
-                  {
-                    "name": "Range Strength",
-                    "typeId": "range-strength",
-                    "$text": "Melee"
-                  },
-                  {
-                    "name": "Fire Power",
-                    "typeId": "fire-power",
-                    "$text": "Melee"
-                  },
-                  {
-                    "name": "Melee Strength",
-                    "typeId": "melee-strength",
-                    "$text": "+3"
-                  },
-                  {
-                    "name": "Damage",
-                    "typeId": "damage",
-                    "$text": "2"
-                  },
-                  {
-                    "name": "Attacks",
-                    "typeId": "weapon-attacks",
-                    "$text": "A"
-                  },
-                  {
-                    "name": "Initiative",
-                    "typeId": "weapon-initiative",
-                    "$text": "-2"
-                  },
-                  {
-                    "name": "Armour penetration",
-                    "$text": "2"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "upgrade",
-            "import": true,
             "name": "Power fist",
             "hidden": false,
             "id": "60c8-9d2e-141e-aadc",
@@ -4197,7 +4478,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "-3"
                   },
@@ -4261,7 +4542,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "I"
                   },
@@ -4325,7 +4606,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "+1"
                   }
@@ -4378,7 +4659,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "I"
                   },
@@ -4435,7 +4716,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "-1"
                   },
@@ -4450,6 +4731,13 @@
         ],
         "defaultSelectionEntryId": "9769-12df-2d8e-83b3",
         "entryLinks": [
+          {
+            "targetId": "14ad-30d4-6fc4-f6a5",
+            "id": "e3d9-e5fa-e277-712c",
+            "type": "selectionEntry",
+            "name": "Thunder hammer",
+            "hidden": false
+          },
           {
             "import": true,
             "name": "Power weapon",
@@ -4529,7 +4817,7 @@
                             "$text": "A"
                           },
                           {
-                            "name": "Initiative",
+                            "name": "Initiative modifier",
                             "typeId": "weapon-initiative",
                             "$text": "-2"
                           },
@@ -4656,7 +4944,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "-3"
                   },
@@ -4731,7 +5019,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "I"
                   },
@@ -4806,7 +5094,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "+1"
                   },
@@ -4831,26 +5119,6 @@
           }
         ],
         "defaultSelectionEntryId": "d2d9-da7d-e599-1df1",
-        "constraints": [
-          {
-            "type": "min",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "45af-35ab-001e-75e0-min",
-            "includeChildSelections": false
-          },
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "45af-35ab-001e-75e0-max",
-            "includeChildSelections": false
-          }
-        ],
         "collective": true,
         "entryLinks": [
           {
@@ -4986,7 +5254,7 @@
                     "$text": "Range"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "Range"
                   },
@@ -5062,7 +5330,7 @@
                     "$text": "Range"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "Range"
                   },
@@ -5110,7 +5378,7 @@
                     "$text": "Range"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "Range"
                   },
@@ -5158,7 +5426,7 @@
                     "$text": "Range"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "Range"
                   },
@@ -5234,7 +5502,7 @@
                     "$text": "Range"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "Range"
                   },
@@ -5260,26 +5528,6 @@
           }
         ],
         "defaultSelectionEntryId": "68d2-db2c-be95-a97d",
-        "constraints": [
-          {
-            "type": "min",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "36cd-6a6b-3df8-520e-min",
-            "includeChildSelections": false
-          },
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "36cd-6a6b-3df8-520e-max",
-            "includeChildSelections": false
-          }
-        ],
         "entryLinks": [
           {
             "import": true,
@@ -5374,7 +5622,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "-2"
                   },
@@ -5438,7 +5686,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "-3"
                   },
@@ -5502,7 +5750,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "I"
                   },
@@ -5566,7 +5814,7 @@
                     "$text": "-1"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "-3"
                   },
@@ -5630,7 +5878,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "I"
                   },
@@ -5694,7 +5942,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "-1"
                   },
@@ -5758,7 +6006,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "-1"
                   },
@@ -5822,7 +6070,7 @@
                     "$text": "A"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative modifier",
                     "typeId": "weapon-initiative",
                     "$text": "+1"
                   },
@@ -5877,6 +6125,69 @@
             ]
           }
         ]
+      },
+      {
+        "name": "Force weapons",
+        "id": "force-weapons",
+        "hidden": false,
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Force maul",
+            "hidden": false,
+            "id": "2b0a-2b63-ca95-9c44",
+            "type": "selectionEntry",
+            "targetId": "force-maul"
+          },
+          {
+            "import": true,
+            "name": "Force staff",
+            "hidden": false,
+            "id": "6f3c-8a8f-5444-8f3c",
+            "type": "selectionEntry",
+            "targetId": "force-staff"
+          },
+          {
+            "import": true,
+            "name": "Force sword",
+            "hidden": false,
+            "id": "36a2-883c-2f1f-660d",
+            "type": "selectionEntry",
+            "targetId": "force-sword"
+          },
+          {
+            "import": true,
+            "name": "Force axe",
+            "hidden": false,
+            "id": "d9f6-6376-535a-aedb",
+            "type": "selectionEntry",
+            "targetId": "force-axe"
+          }
+        ],
+        "defaultSelectionEntryId": "36a2-883c-2f1f-660d"
+      },
+      {
+        "name": "Legion Officer Wargear ",
+        "id": "Legion-Officer-Wargear-group",
+        "hidden": false,
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Legion Officer Wargear Melee",
+            "hidden": false,
+            "id": "5875-2e6c-f136-242d",
+            "type": "selectionEntryGroup",
+            "targetId": "officer-melee"
+          },
+          {
+            "import": true,
+            "name": "Legion Officer Wargear Ranged",
+            "hidden": false,
+            "id": "da37-dd5a-1f39-d5a2",
+            "type": "selectionEntryGroup",
+            "targetId": "officer-ranged"
+          }
+        ]
       }
     ],
     "hidden": true,
@@ -5919,7 +6230,7 @@
             "$text": "Range"
           },
           {
-            "name": "Initiative",
+            "name": "Initiative modifier",
             "typeId": "weapon-initiative",
             "$text": "Range"
           },
@@ -5967,7 +6278,7 @@
             "$text": "Range"
           },
           {
-            "name": "Initiative",
+            "name": "Initiative modifier",
             "typeId": "weapon-initiative",
             "$text": "Range"
           },
@@ -6015,7 +6326,7 @@
             "$text": "Range"
           },
           {
-            "name": "Initiative",
+            "name": "Initiative modifier",
             "typeId": "weapon-initiative",
             "$text": "Range"
           },
@@ -6063,7 +6374,7 @@
             "$text": "Range"
           },
           {
-            "name": "Initiative",
+            "name": "Initiative modifier",
             "typeId": "weapon-initiative",
             "$text": "Range"
           },
@@ -6111,7 +6422,7 @@
             "$text": "Range"
           },
           {
-            "name": "Initiative",
+            "name": "Initiative modifier",
             "typeId": "weapon-initiative",
             "$text": "Range"
           },
@@ -6159,7 +6470,7 @@
             "$text": "Range"
           },
           {
-            "name": "Initiative",
+            "name": "Initiative modifier",
             "typeId": "weapon-initiative",
             "$text": "Range"
           },
@@ -6207,7 +6518,7 @@
             "$text": "Range"
           },
           {
-            "name": "Initiative",
+            "name": "Initiative modifier",
             "typeId": "weapon-initiative",
             "$text": "Range"
           },

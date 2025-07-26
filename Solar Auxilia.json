@@ -3140,6 +3140,18 @@
             "targetId": "transport-category",
             "id": "3f4c-b58b-5d3e-97c7",
             "primary": true,
+            "name": "Transport"
+          },
+          {
+            "targetId": "flyer",
+            "id": "9270-c886-0543-0dd3",
+            "primary": false,
+            "name": "Vehicle (Flyer)"
+          },
+          {
+            "targetId": "transport-tag-category",
+            "id": "7181-1a79-bea1-4b72",
+            "primary": false,
             "name": "Vehicle (Transport)"
           }
         ],
@@ -4460,31 +4472,6 @@
             "name": "Points",
             "typeId": "points",
             "value": 15
-          }
-        ]
-      },
-      {
-        "type": "upgrade",
-        "import": true,
-        "name": "Melta bombs",
-        "hidden": false,
-        "id": "761a-1b86-42ef-8b5e",
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "e9f0-74f0-ffee-61aa",
-            "includeChildSelections": false
-          }
-        ],
-        "costs": [
-          {
-            "name": "Points",
-            "typeId": "points",
-            "value": 10
           }
         ]
       },

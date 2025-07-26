@@ -1,19 +1,21 @@
 {
-    "catalogue": {
-        "library": false,
-        "id": "xx",
-        "name": "Alpha Legion",
-        "gameSystemId": "sys-41d4-b033-8ca9-9bb0",
-        "gameSystemRevision": 1,
-        "revision": 2,
-        "battleScribeVersion": "2.03",
+  "catalogue": {
+    "library": false,
+    "id": "xx",
+    "name": "Alpha Legion",
+    "gameSystemId": "sys-41d4-b033-8ca9-9bb0",
+    "gameSystemRevision": 1,
+    "revision": 2,
+    "battleScribeVersion": "2.03",
+    "type": "catalogue",
+    "catalogueLinks": [
+      {
         "type": "catalogue",
-        "catalogueLinks": [
-            {
-                "type": "catalogue",
-                "name": "New Catalogue (link)",
-                "id": "7074-df75-e2c8-483f"
-            }
-        ]
-    }
+        "name": "Legiones Astartes",
+        "id": "1d3e-a07f-c9f0-649c",
+        "targetId": "la",
+        "importRootEntries": true
+      }
+    ]
+  }
 }
