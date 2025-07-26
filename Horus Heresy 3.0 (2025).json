@@ -29,7 +29,7 @@
         "hidden": false
       },
       {
-        "name": "Transport",
+        "name": "Vehicle (Transport)",
         "id": "transport-category",
         "hidden": false
       },
@@ -217,7 +217,14 @@
       {
         "name": "Graviton",
         "id": "graviton",
-        "hidden": false
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Graviton",
+            "id": "3a8a-4da8-9da8-6ec1",
+            "hidden": false
+          }
+        ]
       },
       {
         "name": "Flame",
@@ -225,9 +232,18 @@
         "hidden": false
       },
       {
-        "name": "Melta",
-        "id": "melta-tag",
-        "hidden": false
+        "name": "Melta (6)",
+        "id": "melta-6",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Melta (X)",
+            "id": "4ad8-a6e4-4fd2-09ff",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "bd31-462d-76bb-0009"
+          }
+        ]
       },
       {
         "name": "Disintegrator",
@@ -392,6 +408,1449 @@
             "targetId": "8822-66c2-a2de-b194"
           }
         ]
+      },
+      {
+        "name": "Ruinstorm Daemon Brutes",
+        "id": "ruinstorm-daemon-brutes-category",
+        "hidden": false
+      },
+      {
+        "name": "Support Unit (1)",
+        "id": "support-unit-1",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Support Unit (X)",
+            "id": "2f43-0da0-434c-2f5f",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a655-5ef0-c276-0351"
+          }
+        ]
+      },
+      {
+        "name": "Support Unit (2)",
+        "id": "support-unit-2",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Support Unit (X)",
+            "id": "796a-657f-8530-cd00",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a655-5ef0-c276-0351"
+          }
+        ]
+      },
+      {
+        "name": "Support Unit (3)",
+        "id": "support-unit-3",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Support Unit (X)",
+            "id": "d59c-2749-52e1-b2d8",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a655-5ef0-c276-0351"
+          }
+        ]
+      },
+      {
+        "name": "Battlesmith (1)",
+        "id": "battlesmith-1",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Battlesmith (X)",
+            "id": "0ddf-8c48-943a-75a8",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "6ea4-2fc8-e5d0-960b"
+          }
+        ]
+      },
+      {
+        "name": "Battlesmith (2)",
+        "id": "battlesmith-2",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Battlesmith (X)",
+            "id": "63d3-eb4c-b227-ce88",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "6ea4-2fc8-e5d0-960b"
+          }
+        ]
+      },
+      {
+        "name": "Infantry",
+        "id": "infantry",
+        "hidden": false
+      },
+      {
+        "name": "Vehicle",
+        "id": "vehicle",
+        "hidden": false
+      },
+      {
+        "name": "Cavalry",
+        "id": "cavalry",
+        "hidden": false
+      },
+      {
+        "name": "Walker",
+        "id": "walker",
+        "hidden": false
+      },
+      {
+        "name": "Vehicle (Flyer)",
+        "id": "flyer",
+        "hidden": false
+      },
+      {
+        "name": "Titan",
+        "id": "titan",
+        "hidden": false
+      },
+      {
+        "name": "Implacable Advance",
+        "id": "implacable-advance",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Implacable Advance",
+            "id": "implacable-advance-rule",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Explodes (3+)",
+        "id": "explodes-3",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Explodes (X)",
+            "id": "3d2c-1246-30e0-1c43",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "bb4b-a76e-3078-cec0"
+          }
+        ]
+      },
+      {
+        "name": "Explodes (5+)",
+        "id": "explodes-5",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Explodes (X)",
+            "id": "7068-aabb-2ce4-bf1e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "bb4b-a76e-3078-cec0"
+          }
+        ]
+      },
+      {
+        "name": "Explodes (4+)",
+        "id": "02e0-47d6-09cf-4f01",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Explodes (X)",
+            "id": "8293-5dc8-d2d1-9b89",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "bb4b-a76e-3078-cec0"
+          }
+        ]
+      },
+      {
+        "name": "Auto-repair 4+",
+        "id": "auto-repair-4",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Auto-Repair (X)",
+            "id": "1915-f7b1-96a2-169a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8a77-cb0c-dbe3-8195"
+          }
+        ]
+      },
+      {
+        "name": "Light Transport",
+        "id": "light-transport",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Light Transport",
+            "id": "0dd2-aae8-1a06-6739",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "5212-f728-8d23-897b"
+          }
+        ]
+      },
+      {
+        "name": "Orbital Assault Vehicle",
+        "id": "orbital-assault-vehicle",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Orbital Assault Vehicle",
+            "id": "orbital-assault-vehicle-rule",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Impact Reactive Doors",
+        "id": "impact-reactive-doors",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Impact Reactive Doors",
+            "id": "impact-reactive-doors-rule",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Deep Strike",
+        "id": "deep-strike",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Deep Strike",
+            "id": "f17f-a9b0-fade-152b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "57fa-8f64-35b9-c9b8"
+          }
+        ]
+      },
+      {
+        "name": "Auto-repair 5+",
+        "id": "auto-repair-5",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Auto-Repair (X)",
+            "id": "9e6e-0cfa-4d1a-492b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8a77-cb0c-dbe3-8195"
+          }
+        ]
+      },
+      {
+        "name": "Assault Vehicle",
+        "id": "assault-vehicle",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Assault Vehicle",
+            "id": "assault-vehicle-rule",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Infiltrate (8)",
+        "id": "infiltrate-8",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Infiltrate (X)",
+            "id": "a950-4747-4b23-4fd3",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "infiltrate"
+          }
+        ]
+      },
+      {
+        "name": "Infiltrate (9)",
+        "id": "infiltrate-9",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Infiltrate (X)",
+            "id": "6121-eec7-12e0-5f8b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "infiltrate"
+          }
+        ]
+      },
+      {
+        "name": "Infantry (Skirmish)",
+        "id": "infantry-skirmish",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Infantry (Skirmish)",
+            "id": "infantry-skirmish-rule",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Sergeant",
+        "id": "sergeant",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Sergeant",
+            "id": "sergeant-rule",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Move Through Cover",
+        "id": "move-through-cover",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Move Through Cover",
+            "id": "MoveThroughCoverRule",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Vehicle (Rapid)",
+        "id": "rapid",
+        "hidden": false
+      },
+      {
+        "name": "Outflank",
+        "id": "outflank-category",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Outflank",
+            "id": "69ea-7ffb-5ad4-fb98",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "133e-f1d4-9569-ff3b"
+          }
+        ]
+      },
+      {
+        "name": "Expendable (3)",
+        "id": "expendable-3",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Expendable (X)",
+            "id": "dfac-4e63-5bef-356a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a3b2-210f-633b-4567"
+          }
+        ]
+      },
+      {
+        "name": "Expendable (1)",
+        "id": "expendable-1",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Expendable (X)",
+            "id": "3378-8ada-0558-df47",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a3b2-210f-633b-4567"
+          }
+        ]
+      },
+      {
+        "name": "Expendable (2)",
+        "id": "cee3-ff69-0be0-f7e2",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Expendable (X)",
+            "id": "7d1d-0aa9-34be-3a9e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "a3b2-210f-633b-4567"
+          }
+        ]
+      },
+      {
+        "name": "Vehicle (Stable)",
+        "id": "vehicle-stable",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Stable",
+            "id": "stable",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Firing Protocols (2)",
+        "id": "firing-protocols-2",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Firing Protocols (X)",
+            "id": "b8c0-3022-d7a1-f27b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "cafb-aa3d-ff9d-9972"
+          }
+        ]
+      },
+      {
+        "name": "Firing Protocols (3)",
+        "id": "firing-protocols-3",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Firing Protocols (X)",
+            "id": "64ec-154d-637b-a4cb",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "cafb-aa3d-ff9d-9972"
+          }
+        ]
+      },
+      {
+        "name": "Anti-grav",
+        "id": "anti-grav-category",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Anti-grav",
+            "id": "anti-grav-rule",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Vehicle (Super-heavy)",
+        "id": "vehicle-super-heavy",
+        "hidden": false
+      },
+      {
+        "name": "Pistol",
+        "id": "pistol",
+        "hidden": false
+      },
+      {
+        "name": "Auto",
+        "id": "249e-8f45-0a94-08d5",
+        "hidden": false
+      },
+      {
+        "name": "Heavy (FP)",
+        "id": "cf9f-84fb-7ee5-9efb",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Heavy (X)",
+            "id": "f502-11cd-e7c0-f604",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "efdd-4341-f4f2-31a0"
+          }
+        ]
+      },
+      {
+        "name": "Heavy (D)",
+        "id": "5f9a-3018-0468-d017",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Heavy (X)",
+            "id": "f35a-9a3d-db76-2eb7",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "efdd-4341-f4f2-31a0"
+          }
+        ]
+      },
+      {
+        "name": "Breaching (4+)",
+        "id": "e555-ec38-2dda-8be7",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Breaching (X)",
+            "id": "cfa9-038b-87c3-ef0f",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "d2a5-12c8-1b61-824c"
+          }
+        ]
+      },
+      {
+        "name": "Stun (0)",
+        "id": "650e-839b-9d8f-a54d",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Stun (X)",
+            "id": "07e1-b6e6-cf38-680f",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e4cf-c188-8974-d320"
+          }
+        ]
+      },
+      {
+        "name": "Stun (1)",
+        "id": "b128-0167-5e63-86be",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Stun (X)",
+            "id": "9f30-205c-276c-3b14",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e4cf-c188-8974-d320"
+          }
+        ]
+      },
+      {
+        "name": "Stun (2)",
+        "id": "09a9-9d35-e59d-e365",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Stun (X)",
+            "id": "266c-1eab-4f34-36c7",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e4cf-c188-8974-d320"
+          }
+        ]
+      },
+      {
+        "name": "Breaching (5+)",
+        "id": "0f24-9ab2-b239-fcab",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Breaching (X)",
+            "id": "0294-2eb9-cef9-2b8c",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "d2a5-12c8-1b61-824c"
+          }
+        ]
+      },
+      {
+        "name": "Breaching (6+)",
+        "id": "bdb6-f99d-a9c6-289b",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Breaching (X)",
+            "id": "466c-1a14-102d-0cd7",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "d2a5-12c8-1b61-824c"
+          }
+        ]
+      },
+      {
+        "name": "Rapid Tracking",
+        "id": "f6bc-5b9b-b35e-c221",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Rapid Tracking",
+            "id": "c7a8-7a49-1b6a-d920",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Skyfire",
+        "id": "bb14-079b-7575-1c7b",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Skyfire (X)",
+            "id": "db9c-216b-a367-f65e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "62c9-b69d-05d5-b9ba"
+          }
+        ]
+      },
+      {
+        "name": "Ordnance (FP)",
+        "id": "4f85-08e5-1ce4-a515",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Ordnance (X)",
+            "id": "995d-085b-6d88-fd48",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "6ad7-ed78-4a6f-5ce5"
+          }
+        ]
+      },
+      {
+        "name": "Overload (1)",
+        "id": "74b7-013a-f22d-18dc",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Overoad",
+            "id": "3005-2b97-6e82-82f6",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "30ea-71f8-081d-6682"
+          }
+        ]
+      },
+      {
+        "name": "Suppressive (1)",
+        "id": "1120-c528-e8aa-fe82",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Suppressive (X)",
+            "id": "6188-c2e7-bf0a-26fc",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "c0b4-d568-f8e4-4053"
+          }
+        ]
+      },
+      {
+        "name": "Suppressive (2)",
+        "id": "c26e-8009-8163-3555",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Suppressive (X)",
+            "id": "d5cc-e14d-8524-5d38",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "c0b4-d568-f8e4-4053"
+          }
+        ]
+      },
+      {
+        "name": "Suppressive (3)",
+        "id": "9d5e-16ed-cc21-4d1e",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Suppressive (X)",
+            "id": "d513-2439-7254-ff32",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "c0b4-d568-f8e4-4053"
+          }
+        ]
+      },
+      {
+        "name": "Precision (4+)",
+        "id": "1fd4-9a12-7b14-ec1f",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Precision (X)",
+            "id": "4800-3ffa-4097-f44e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "484c-a8f3-5628-9dd2"
+          }
+        ]
+      },
+      {
+        "name": "Precision (5+)",
+        "id": "b15e-3802-c074-5676",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Precision (X)",
+            "id": "d105-eaf9-94da-0597",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "484c-a8f3-5628-9dd2"
+          }
+        ]
+      },
+      {
+        "name": "Precision (6+)",
+        "id": "5e91-3f52-ac37-6396",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Precision (X)",
+            "id": "d099-7d39-7603-0577",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "484c-a8f3-5628-9dd2"
+          }
+        ]
+      },
+      {
+        "name": "Shot Selector",
+        "id": "d4f5-224a-56e8-f822",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Shot Selector",
+            "id": "a628-5ea3-6339-8f17",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Pinning (1)",
+        "id": "940f-1283-ffa8-438f",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Pinning (X)",
+            "id": "80b0-5717-fa7a-0d71",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "3984-3bb8-76de-5be0"
+          }
+        ]
+      },
+      {
+        "name": "Pinning (2)",
+        "id": "68bc-4ffa-519e-0ac7",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Pinning (X)",
+            "id": "b251-6bbb-0b96-02c1",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "3984-3bb8-76de-5be0"
+          }
+        ]
+      },
+      {
+        "name": "Pinning (3)",
+        "id": "0afe-55ed-6eb3-07a6",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Pinning (X)",
+            "id": "b533-1604-3916-9eb3",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "3984-3bb8-76de-5be0"
+          }
+        ]
+      },
+      {
+        "name": "Deflagrate (5)",
+        "id": "73a8-e20f-8a16-d4bc",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Deflagrate (X)",
+            "id": "801f-0ea9-4454-0436",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "cf3e-6299-5efe-cf32"
+          }
+        ]
+      },
+      {
+        "name": "Combi",
+        "id": "6a69-5de7-f700-23a8",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Combi",
+            "id": "b58c-865b-49f7-0496",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Limited (1)",
+        "id": "b9a6-b799-0a85-4f0c",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Limited (X)",
+            "id": "2c84-d645-0eb8-3123",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "745a-2dcf-7de5-baca"
+          }
+        ]
+      },
+      {
+        "name": "Limited (2)",
+        "id": "ddf7-e780-8082-9f92",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Limited (X)",
+            "id": "bdce-e0ef-de0f-ffc3",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "745a-2dcf-7de5-baca"
+          }
+        ]
+      },
+      {
+        "name": "Panic (1)",
+        "id": "4873-2d33-a0fe-4937",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Panic (X)",
+            "id": "bc71-afe4-1f0d-002e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "409c-1777-497c-1994"
+          }
+        ]
+      },
+      {
+        "name": "Panic (2)",
+        "id": "3223-9ad5-13a3-0d6d",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Panic (X)",
+            "id": "8adf-8d41-9e9a-aafc",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "409c-1777-497c-1994"
+          }
+        ]
+      },
+      {
+        "name": "Panic (3)",
+        "id": "6639-8060-dcf4-5878",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Panic (X)",
+            "id": "1c2a-b1fa-8515-3d9f",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "409c-1777-497c-1994"
+          }
+        ]
+      },
+      {
+        "name": "Heavy (RS)",
+        "id": "23a1-a4e8-1a3f-7028",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Heavy (X)",
+            "id": "9aa5-5d3b-874b-9991",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "efdd-4341-f4f2-31a0"
+          }
+        ]
+      },
+      {
+        "name": "Melta (8)",
+        "id": "1f39-d21b-6649-8b84",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Melta (X)",
+            "id": "1488-e87b-0c0f-a761",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "bd31-462d-76bb-0009"
+          }
+        ]
+      },
+      {
+        "name": "Melta (12)",
+        "id": "1a9a-8e58-7c0f-12f2",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Melta (X)",
+            "id": "fdaf-9d4a-f5fa-0577",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "bd31-462d-76bb-0009"
+          }
+        ]
+      },
+      {
+        "name": "Melta (24)",
+        "id": "913b-d736-f218-93cb",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Melta (X)",
+            "id": "3eb4-4701-199f-ad76",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "bd31-462d-76bb-0009"
+          }
+        ]
+      },
+      {
+        "name": "Melta (3)",
+        "id": "e4be-41de-7b9c-da93",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Melta (X)",
+            "id": "70fa-f3f6-b805-2eb7",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "bd31-462d-76bb-0009"
+          }
+        ]
+      },
+      {
+        "name": "Blast (3\")",
+        "id": "3a7f-1616-3fa9-a71e",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Blast (X)",
+            "id": "190a-256b-f9fb-803f",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "c8e0-f593-57be-0469"
+          }
+        ]
+      },
+      {
+        "name": "Blast (5\")",
+        "id": "c86d-f162-14c7-3072",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Blast (X)",
+            "id": "1cdf-dfe3-b923-8a7d",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "c8e0-f593-57be-0469"
+          }
+        ]
+      },
+      {
+        "name": "Blast (7\")",
+        "id": "10e2-3fc4-20cb-437b",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Blast (X)",
+            "id": "3ba6-25cc-0766-f164",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "c8e0-f593-57be-0469"
+          }
+        ]
+      },
+      {
+        "name": "Blast (10\")",
+        "id": "07c0-79b5-e264-4685",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Blast (X)",
+            "id": "afe4-ad60-b9e6-5d3d",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "c8e0-f593-57be-0469"
+          }
+        ]
+      },
+      {
+        "name": "Barrage (2)",
+        "id": "1129-f2ff-ff51-5834",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Barrage (X)",
+            "id": "20d2-12f1-a051-5861",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8e78-7f31-d1a1-a107"
+          }
+        ]
+      },
+      {
+        "name": "Barrage (1)",
+        "id": "17cb-b335-3733-b19c",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Barrage (X)",
+            "id": "d4c2-a26e-9173-5f91",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8e78-7f31-d1a1-a107"
+          }
+        ]
+      },
+      {
+        "name": "Barrage (3)",
+        "id": "8043-54b3-bbd6-db67",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Barrage (X)",
+            "id": "237c-d5ca-c0ab-de1c",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8e78-7f31-d1a1-a107"
+          }
+        ]
+      },
+      {
+        "name": "Barrage (4)",
+        "id": "7724-4c3c-bfbc-b43e",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Barrage (X)",
+            "id": "0fec-5aad-d299-afdb",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8e78-7f31-d1a1-a107"
+          }
+        ]
+      },
+      {
+        "name": "Barrage (6)",
+        "id": "ef81-db06-ca9f-af89",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Barrage (X)",
+            "id": "3a9a-5384-f868-4ff3",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "8e78-7f31-d1a1-a107"
+          }
+        ]
+      },
+      {
+        "name": "Overload (2)",
+        "id": "2256-af10-aa81-0979",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Overload (X)",
+            "id": "ed75-1376-cf61-79d4",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "30ea-71f8-081d-6682"
+          }
+        ]
+      },
+      {
+        "name": "Template",
+        "id": "a8ee-1cdd-f68a-831b",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Template",
+            "id": "e408-ed39-af8f-ebf4",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "b5ff-a380-d822-c534"
+          }
+        ]
+      },
+      {
+        "name": "Poisoned (3+)",
+        "id": "211e-76a4-b7e4-ecdd",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Poisoned (X)",
+            "id": "44fc-2009-ff3e-065a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "243a-edd0-f13b-e7a5"
+          }
+        ]
+      },
+      {
+        "name": "Poisoned (4+)",
+        "id": "369f-5e3e-85b8-823c",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Poisoned (X)",
+            "id": "cba6-c068-5517-a69b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "243a-edd0-f13b-e7a5"
+          }
+        ]
+      },
+      {
+        "name": "Poisoned (5+)",
+        "id": "ede3-20d3-9841-b6f2",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Poisoned (X)",
+            "id": "6060-05d9-ab00-3d75",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "243a-edd0-f13b-e7a5"
+          }
+        ]
+      },
+      {
+        "name": "Poisoned (2+)",
+        "id": "eed9-b0e3-0fd6-bfac",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Poisoned (X)",
+            "id": "53e7-6711-b93d-fcfc",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "243a-edd0-f13b-e7a5"
+          }
+        ]
+      },
+      {
+        "name": "Limited (3)",
+        "id": "5748-5337-48af-9a5d",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Limited (X)",
+            "id": "c7ef-aca5-19be-7a5d",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "745a-2dcf-7de5-baca"
+          }
+        ]
+      },
+      {
+        "name": "Shred (6+)",
+        "id": "8540-21d3-160a-ec7f",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Shred (X)",
+            "id": "3a3e-0347-c1d9-f49d",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e144-8fa8-ebd4-f1b6"
+          }
+        ]
+      },
+      {
+        "name": "Shred (4+)",
+        "id": "3ed0-4fd2-fe7a-91b6",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Shred (X)",
+            "id": "1cb1-f59e-9003-fe65",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e144-8fa8-ebd4-f1b6"
+          }
+        ]
+      },
+      {
+        "name": "Shred (5+)",
+        "id": "86a2-c815-345b-e6fa",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Shred (X)",
+            "id": "a95d-e28a-e636-3634",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e144-8fa8-ebd4-f1b6"
+          }
+        ]
+      },
+      {
+        "name": "Duellist's Edge (1)",
+        "id": "d712-db27-8ecc-8713",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Duelist's Edge (X)",
+            "id": "f9f8-0b65-b8d9-e4f9",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ff35-0aa7-82d9-0dbc"
+          }
+        ]
+      },
+      {
+        "name": "Duellist's Edge (2)",
+        "id": "8ef8-b8a6-334c-a818",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Duelist's Edge (X)",
+            "id": "a8f6-8f24-ac43-ff84",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ff35-0aa7-82d9-0dbc"
+          }
+        ]
+      },
+      {
+        "name": "Duellist's Edge (3)",
+        "id": "6b26-ca0f-40d1-faca",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Duelist's Edge (X)",
+            "id": "f893-74d7-dddf-f34a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "ff35-0aa7-82d9-0dbc"
+          }
+        ]
+      },
+      {
+        "name": "Force (D)",
+        "id": "5628-72c6-448c-7f33",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Force (X)",
+            "id": "94a5-6f5a-7fef-adfb",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "3b72-60d0-21ee-d0b7"
+          }
+        ]
+      },
+      {
+        "name": "Reaping Blow (1)",
+        "id": "aae9-88a4-5040-4ba7",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Reaping Blow (X)",
+            "id": "fdc6-98ff-44f6-8f35",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9677-0aa2-a164-7246"
+          }
+        ]
+      },
+      {
+        "name": "Reaping Blow (2)",
+        "id": "c31a-6618-0437-9697",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Reaping Blow (X)",
+            "id": "e102-050f-6dbb-e5c1",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9677-0aa2-a164-7246"
+          }
+        ]
+      },
+      {
+        "name": "Critical Hit (6+)",
+        "id": "78b9-81d2-dc2b-b007",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Critical Hit (X)",
+            "id": "ede3-759d-9fe5-4a17",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e1e6-2634-108c-4426"
+          }
+        ]
+      },
+      {
+        "name": "Critical Hit (4+)",
+        "id": "9eae-52b5-96b8-c0ea",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Critical Hit (X)",
+            "id": "3a48-8a88-8bee-d310",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e1e6-2634-108c-4426"
+          }
+        ]
+      },
+      {
+        "name": "Critical Hit (5+)",
+        "id": "cdbd-7719-a1c7-7f03",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Critical Hit (X)",
+            "id": "6941-64ea-b320-148a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e1e6-2634-108c-4426"
+          }
+        ]
+      },
+      {
+        "name": "Detonation",
+        "id": "7d30-875a-4228-a68f",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Detonation",
+            "id": "c741-ec28-2a68-c3c0",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "c2c8-2aa5-fc6c-4407"
+          }
+        ]
+      },
+      {
+        "name": "Champion",
+        "id": "172d-d157-e3be-5a36",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Champion",
+            "id": "59ce-d46d-681c-0d02",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Bulky (2)",
+        "id": "33e4-2b0a-7ff6-4195",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Bulky (X)",
+            "id": "cb88-a7cc-44e9-ca49",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "d989-16e7-0518-2e53"
+          }
+        ]
+      },
+      {
+        "name": "Bulky (3)",
+        "id": "43d2-d473-bea1-e56f",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Bulky (X)",
+            "id": "035f-ef2e-fa82-1f11",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "d989-16e7-0518-2e53"
+          }
+        ]
+      },
+      {
+        "name": "Bulky (4)",
+        "id": "a0b8-935f-d3b6-d5ed",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Bulky (X)",
+            "id": "5e0b-8684-c710-5b97",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "d989-16e7-0518-2e53"
+          }
+        ]
+      },
+      {
+        "name": "Bulky (5)",
+        "id": "f965-460e-b077-e638",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Bulky (X)",
+            "id": "12c6-8129-9bc2-f0f2",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "d989-16e7-0518-2e53"
+          }
+        ]
+      },
+      {
+        "name": "Bulky (6)",
+        "id": "2c0d-c636-35d0-b948",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Bulky (X)",
+            "id": "5e0c-1e7f-721b-12e0",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "d989-16e7-0518-2e53"
+          }
+        ]
+      },
+      {
+        "name": "Bulky (7)",
+        "id": "bd00-59ce-5cf6-950e",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Bulky (X)",
+            "id": "19fa-2c83-ceda-64e6",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "d989-16e7-0518-2e53"
+          }
+        ]
+      },
+      {
+        "name": "Bulky (8)",
+        "id": "a06f-4df2-c9de-d595",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Bulky (X)",
+            "id": "659f-ad86-14ec-bf05",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "d989-16e7-0518-2e53"
+          }
+        ]
+      },
+      {
+        "name": "Shock (Pinned)",
+        "id": "85c5-2932-23f9-bbf2",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Shock (X)",
+            "id": "5960-a85c-6515-6ae5",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "6b97-86ae-c085-9899"
+          }
+        ]
       }
     ],
     "forceEntries": [
@@ -453,14 +1912,11 @@
             "hidden": false,
             "id": "4499-f296-41ec-3802",
             "targetId": "prime-category",
-            "constraints": [
+            "modifiers": [
               {
-                "type": "max",
+                "type": "increment",
                 "value": 2,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "54bf-16a2-1f68-4da5"
+                "field": "a86a-9575-ce8e-483a"
               }
             ]
           },
@@ -481,7 +1937,7 @@
             ]
           },
           {
-            "name": "Transport",
+            "name": "Vehicle (Transport)",
             "hidden": false,
             "id": "b9db-568a-a1ea-d7ef",
             "targetId": "transport-category",
@@ -688,7 +2144,7 @@
             ]
           },
           {
-            "name": "Transport",
+            "name": "Vehicle (Transport)",
             "hidden": false,
             "id": "13b1-ce1d-4512-bb67",
             "targetId": "transport-category",
@@ -1065,7 +2521,7 @@
             "targetId": "support-troops-category"
           },
           {
-            "name": "Transport",
+            "name": "Vehicle (Transport)",
             "hidden": false,
             "id": "c4d1-ea95-83e2-fff3",
             "targetId": "transport-category"
@@ -2506,6 +3962,21 @@
         "id": "8822-66c2-a2de-b194",
         "hidden": false,
         "page": "339"
+      },
+      {
+        "name": "Infiltrate (X)",
+        "id": "infiltrate",
+        "hidden": false
+      },
+      {
+        "name": "Overload (X)",
+        "id": "30ea-71f8-081d-6682",
+        "hidden": false
+      },
+      {
+        "name": "Melta (X)",
+        "id": "bd31-462d-76bb-0009",
+        "hidden": false
       }
     ]
   }
