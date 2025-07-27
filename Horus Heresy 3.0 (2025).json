@@ -1879,6 +1879,170 @@
         "name": "Transport",
         "id": "transport-category",
         "hidden": false
+      },
+      {
+        "name": "Armourbane",
+        "id": "armourbane-category",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Armourbane",
+            "id": "22d2-57d3-18b4-d5d2",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "b1dc-56fd-25a7-b9c8"
+          }
+        ]
+      },
+      {
+        "name": "Ordnance (D)",
+        "id": "a5a7-a39c-f122-9bc6",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Ordnance (X)",
+            "id": "bd73-50d7-1b31-c6d5",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "6ad7-ed78-4a6f-5ce5"
+          }
+        ]
+      },
+      {
+        "name": "Breaching (3+)",
+        "id": "breaching-3",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Breaching (X)",
+            "id": "e017-7c3e-8602-943a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "d2a5-12c8-1b61-824c"
+          }
+        ]
+      },
+      {
+        "name": "Anathema",
+        "id": "Anathema",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Fear (X)",
+            "id": "f10d-33fe-d032-c468",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "6cf0-65a0-c19f-e443"
+          }
+        ]
+      },
+      {
+        "name": "Feel No Pain (5+)",
+        "id": "fnp5",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Feel No Pain (X)",
+            "id": "ea57-00c9-212d-c8ad",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "542a-5037-12ba-f6e0"
+          }
+        ]
+      },
+      {
+        "name": "Feel No Pain (6+)",
+        "id": "fnp6",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Feel No Pain (X)",
+            "id": "668b-64b5-4bed-1eef",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "542a-5037-12ba-f6e0"
+          }
+        ]
+      },
+      {
+        "name": "Feel No Pain (4+)",
+        "id": "fnp4",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Feel No Pain (X)",
+            "id": "af06-9a58-6d6c-df58",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "542a-5037-12ba-f6e0"
+          }
+        ]
+      },
+      {
+        "name": "Phage (T)",
+        "id": "bf16-1701-e061-976a",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Phage (X)",
+            "id": "5cda-82d4-7584-8366",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "0a34-85d6-1086-f7d1"
+          }
+        ]
+      },
+      {
+        "name": "Phage (M)",
+        "id": "9b10-be8d-c6a7-e4db",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Phage (X)",
+            "id": "fe6d-3a11-ac65-d105",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "0a34-85d6-1086-f7d1"
+          }
+        ]
+      },
+      {
+        "name": "Phage (S)",
+        "id": "3517-8532-4d3f-b525",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Phage (X)",
+            "id": "9bb4-47b1-5408-d18a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "0a34-85d6-1086-f7d1"
+          }
+        ]
+      },
+      {
+        "name": "Fear (1)",
+        "id": "fear1",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Fear (X)",
+            "id": "d195-1394-0680-5aa7",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "6cf0-65a0-c19f-e443"
+          }
+        ]
+      },
+      {
+        "name": "Blessing",
+        "id": "blessing",
+        "hidden": false
+      },
+      {
+        "name": "Curse",
+        "id": "curse",
+        "hidden": false
       }
     ],
     "forceEntries": [
@@ -2070,12 +2234,20 @@
             "targetId": "warlord-category",
             "constraints": [
               {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "17fa-50a3-d910-541b-min"
+              },
+              {
                 "type": "max",
                 "value": 1,
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
-                "id": "17fa-50a3-d910-541b"
+                "id": "17fa-50a3-d910-541b-max"
               }
             ]
           }
@@ -2743,6 +2915,10 @@
           {
             "name": "Attacks",
             "id": "model-attacks"
+          },
+          {
+            "name": "Wounds",
+            "id": "091b-45b8-4b3d-7971"
           }
         ]
       },
@@ -2825,10 +3001,9 @@
             "type": "max",
             "value": 1,
             "field": "selections",
-            "scope": "force",
+            "scope": "parent",
             "shared": true,
-            "id": "1656-f847-3081-6832",
-            "includeChildSelections": true
+            "id": "dc54-5789-e554-6ef3"
           }
         ],
         "sharedRules": [
@@ -3149,10 +3324,9 @@
             "type": "max",
             "value": 1,
             "field": "selections",
-            "scope": "force",
+            "scope": "parent",
             "shared": true,
-            "id": "be60-a624-952d-c782",
-            "includeChildSelections": true
+            "id": "37e4-d1c9-6815-ff5f"
           }
         ],
         "categoryLinks": [
@@ -3547,10 +3721,9 @@
             "type": "max",
             "value": 1,
             "field": "selections",
-            "scope": "force",
+            "scope": "parent",
             "shared": true,
-            "id": "ca64-861a-ca4e-e61b",
-            "includeChildSelections": true
+            "id": "be76-9e98-a757-a7a5"
           }
         ],
         "entryLinks": [
@@ -3608,7 +3781,7 @@
             "value": 1,
             "field": "selections",
             "scope": "parent",
-            "shared": true,
+            "shared": false,
             "id": "e9f0-74f0-ffee-61aa",
             "includeChildSelections": false
           }
@@ -3618,6 +3791,456 @@
             "name": "Points",
             "typeId": "points",
             "value": 10
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Anathemata Discipline",
+        "hidden": false,
+        "id": "Anathemata",
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "de75-2f5f-2e19-f3f2-min"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "de75-2f5f-2e19-f3f2-max"
+          }
+        ],
+        "rules": [
+          {
+            "name": "ANATHEMATA DISCIPLINE",
+            "id": "fa43-2b25-8024-dc51",
+            "hidden": false,
+            "description": "A Model with the Anathemata Discipline gains the following benefits:\n\n¢ The Fear (1) Special Rule. \n« The Void Darts Psychic Weapon. :\n+ If the Model has the Loyalist Trait, it can use the Seal the Veil Psychic Reaction.\n« If the Model has the Traitor Trait, it can use the Breach the Veil Psychic Power."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Rad Grenades",
+        "hidden": false,
+        "id": "rad-grenades",
+        "profiles": [
+          {
+            "name": "Rad Grenades",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "716c-bb77-464e-205c",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "8 "
+              },
+              {
+                "name": "Fire Power (FP)",
+                "typeId": "fire-power",
+                "$text": "1"
+              },
+              {
+                "name": "Range Strength (RS)",
+                "typeId": "range-strength",
+                "$text": "4 "
+              },
+              {
+                "name": "Melee Initiative Modifier (IM)",
+                "typeId": "weapon-initiative",
+                "$text": ""
+              },
+              {
+                "name": "Melee Attacks Modifier (AM)",
+                "typeId": "weapon-attacks",
+                "$text": ""
+              },
+              {
+                "name": "Melee Strength Modifier (SM)",
+                "typeId": "melee-strength",
+                "$text": ""
+              },
+              {
+                "name": "Armour Penetration (AP)",
+                "$text": "3"
+              },
+              {
+                "name": "Damage (D)",
+                "typeId": "damage",
+                "$text": "1"
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "eed9-b0e3-0fd6-bfac",
+            "id": "9aac-9c47-51e3-f327",
+            "primary": false,
+            "name": "Poisoned (2+)"
+          },
+          {
+            "targetId": "bf16-1701-e061-976a",
+            "id": "7a70-ae40-cd9f-3c99",
+            "primary": false,
+            "name": "Phage (T)"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Cortex Controller",
+        "hidden": false,
+        "id": "cortex-controller",
+        "rules": [
+          {
+            "name": "Cortex Controller",
+            "id": "61af-29fc-d9e7-765e",
+            "hidden": false,
+            "description": "This device allows the wielder to witness the battlefield through the senses of the battle-automata under their command, and direct them accordingly.\nCortex controllers allow Automata to make Reactions. A Unit that includes any Models with the Automata Type can ignore the restriction on making Reactions imposed by the Automata Type while it includes one or more Models with a cortex controller."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Prime",
+        "hidden": false,
+        "id": "prime-recon",
+        "categoryLinks": [
+          {
+            "targetId": "prime-category",
+            "id": "c0f9-9aa5-b342-4ada",
+            "primary": true,
+            "name": "Prime"
+          }
+        ],
+        "sharedRules": [
+          {
+            "name": "Armourbane",
+            "id": "17c5-b4cc-ffe1-fdd0",
+            "hidden": false,
+            "page": "326"
+          },
+          {
+            "name": "Assault Vehicle",
+            "id": "6d27-e147-e325-118e",
+            "hidden": false,
+            "page": "326"
+          },
+          {
+            "name": "Auto-Repair (X)",
+            "id": "d902-5b57-59ff-8e33",
+            "hidden": false,
+            "page": "326"
+          },
+          {
+            "name": "Battlesmith (X)",
+            "id": "b49d-7ad1-6668-0ba3",
+            "hidden": false,
+            "page": "326"
+          },
+          {
+            "name": "Bulky (X)",
+            "id": "a071-cdb4-dc61-b3aa",
+            "hidden": false,
+            "page": "328"
+          },
+          {
+            "name": "Barrage (X)",
+            "id": "2990-1dff-fd54-252d",
+            "hidden": false,
+            "page": "326"
+          },
+          {
+            "name": "Blast (X)",
+            "id": "0fa5-05b5-5bdf-9914",
+            "hidden": false,
+            "page": "327"
+          },
+          {
+            "name": "Breaching (X)",
+            "id": "breaching",
+            "hidden": false,
+            "page": "327"
+          },
+          {
+            "name": "Critical Hit (X)",
+            "id": "f77f-b621-07b2-affc",
+            "hidden": false,
+            "page": "328"
+          },
+          {
+            "name": "Deep Strike",
+            "id": "5e9b-83ca-81df-ad7c",
+            "hidden": false,
+            "page": "328"
+          },
+          {
+            "name": "Deflagrate (X)",
+            "id": "fccd-784f-6ab6-d346",
+            "hidden": false,
+            "page": "329"
+          },
+          {
+            "name": "Detonation",
+            "id": "1a0d-5f3a-39bc-e850",
+            "hidden": false,
+            "page": "329"
+          },
+          {
+            "name": "Duelist's Edge (X)",
+            "id": "c3b4-cf4e-a388-03fc",
+            "hidden": false,
+            "page": "329"
+          },
+          {
+            "name": "Eternal Warrior (X)",
+            "id": "ea70-ac27-c605-a462",
+            "hidden": false,
+            "page": "329"
+          },
+          {
+            "name": "Expendable (X)",
+            "id": "95be-884d-7fd0-d67e",
+            "hidden": false,
+            "page": "329"
+          },
+          {
+            "name": "Explodes (X)",
+            "id": "6198-f644-953b-7d44",
+            "hidden": false,
+            "page": "330"
+          },
+          {
+            "name": "Fast (X)",
+            "id": "a175-79f0-9043-187e",
+            "hidden": false,
+            "page": "330"
+          },
+          {
+            "name": "Fear (X)",
+            "id": "fear",
+            "hidden": false,
+            "page": "330"
+          },
+          {
+            "name": "Feel No Pain (X)",
+            "id": "c1e8-ae14-9232-2621",
+            "hidden": false,
+            "page": "330"
+          },
+          {
+            "name": "Firing Protocols (X)",
+            "id": "da09-2d30-2693-4406",
+            "hidden": false,
+            "page": "331"
+          },
+          {
+            "name": "Force (X)",
+            "id": "ebd3-b57d-9b03-41a3",
+            "hidden": false,
+            "page": "331"
+          },
+          {
+            "name": "Hatred (X)",
+            "id": "f9ea-6a3e-7cb3-9c0b",
+            "hidden": false,
+            "page": "331"
+          },
+          {
+            "name": "Heavy (X)",
+            "id": "2fbd-10ab-559e-1f40",
+            "hidden": false,
+            "page": "331"
+          },
+          {
+            "name": "Heedless",
+            "id": "f68c-7e7f-dc22-7efb",
+            "hidden": false,
+            "page": "332"
+          },
+          {
+            "name": "Impact (X)",
+            "id": "75bd-a615-7345-3cad",
+            "hidden": false,
+            "page": "331"
+          },
+          {
+            "name": "Light Transport",
+            "id": "7265-263f-d400-7a68",
+            "hidden": false,
+            "page": "332"
+          },
+          {
+            "name": "Limited (X)",
+            "id": "b938-1b2b-abdd-141d",
+            "hidden": false,
+            "page": "333"
+          },
+          {
+            "name": "Line (X)",
+            "id": "62ee-ec00-660b-2ea2",
+            "hidden": false,
+            "page": "333"
+          },
+          {
+            "name": "Move Through Cover",
+            "id": "d86f-27e5-982f-4d55",
+            "hidden": false,
+            "page": "333"
+          },
+          {
+            "name": "Officer of the Line (X)",
+            "id": "4f4a-5241-c7bd-8c20",
+            "hidden": false,
+            "page": "333"
+          },
+          {
+            "name": "Ordnance (X)",
+            "id": "59ee-14cd-95cf-af59",
+            "hidden": false,
+            "page": "333"
+          },
+          {
+            "name": "Outflank",
+            "id": "75eb-59e9-7361-85ce",
+            "hidden": false,
+            "page": "334"
+          },
+          {
+            "name": "Panic (X)",
+            "id": "3963-55b2-9b8a-481c",
+            "hidden": false,
+            "page": "334"
+          },
+          {
+            "name": "Phage (X)",
+            "id": "0428-832d-3998-7540",
+            "hidden": false,
+            "page": "334"
+          },
+          {
+            "name": "Pinning (X)",
+            "id": "71d2-0d1d-df58-a9ce",
+            "hidden": false,
+            "page": "334"
+          },
+          {
+            "name": "Poisoned (X)",
+            "id": "777c-7450-025a-915d",
+            "hidden": false,
+            "page": "335"
+          },
+          {
+            "name": "Pistol",
+            "id": "0800-aebe-db81-8671",
+            "hidden": false,
+            "page": "335"
+          },
+          {
+            "name": "Precision (X)",
+            "id": "1c31-d271-fc82-e6cb",
+            "hidden": false,
+            "page": "335"
+          },
+          {
+            "name": "Reaping Blow (X)",
+            "id": "e925-66e9-cf14-05d8",
+            "hidden": false,
+            "page": "336"
+          },
+          {
+            "name": "Rending (X)",
+            "id": "77a8-2f4f-4433-f4c3",
+            "hidden": false,
+            "page": "336"
+          },
+          {
+            "name": "Shock (X)",
+            "id": "e5e1-e508-5a83-316f",
+            "hidden": false,
+            "page": "336"
+          },
+          {
+            "name": "Shred (X)",
+            "id": "6477-acb0-4d3e-4347",
+            "hidden": false,
+            "page": "336"
+          },
+          {
+            "name": "Shrouded (X)",
+            "id": "afb0-f885-fcfc-a978",
+            "hidden": false,
+            "page": "337"
+          },
+          {
+            "name": "Skyfire (X)",
+            "id": "8766-8922-c567-dcf2",
+            "hidden": false,
+            "page": "337"
+          },
+          {
+            "name": "Stun (X)",
+            "id": "9bcf-2b76-35b9-72db",
+            "hidden": false,
+            "page": "337"
+          },
+          {
+            "name": "Support Unit (X)",
+            "id": "813c-0a26-41bb-a901",
+            "hidden": false,
+            "page": "337"
+          },
+          {
+            "name": "Suppressive (X)",
+            "id": "a011-6a64-eeda-5ff4",
+            "hidden": false,
+            "page": "338"
+          },
+          {
+            "name": "Template",
+            "id": "d3cd-a3af-6836-a9be",
+            "hidden": false,
+            "page": "338"
+          },
+          {
+            "name": "Vanguard (X)",
+            "id": "1501-1424-9ac3-1a21",
+            "hidden": false,
+            "page": "339"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Prime Traits",
+            "hidden": false,
+            "id": "8fd0-cd41-bc65-11d4",
+            "type": "selectionEntryGroup",
+            "targetId": "prime-traits"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "1a5d-53a1-9a53-2312"
           }
         ]
       }
@@ -3836,6 +4459,14 @@
                     "shared": true,
                     "includeChildSelections": true,
                     "includeChildForces": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "la",
+                    "shared": true
                   }
                 ]
               }
@@ -3851,13 +4482,13 @@
                 "name": "Concealed Positions",
                 "id": "7238-c2f7-a1ba-b9ba",
                 "hidden": false,
-                "description": "This Special Rule allows Models to use an Advanced Reaction to arrive from Reserves in close proximity to an enemy Unit. ail\n\nThe Controlling Player of a Unit that only contains Models with this Special Rule can use the Concealed Ambush Advanced Reaction."
+                "description": "This Special Rule allows Models to use an Advanced Reaction to arrive from Reserves in close proximity to an enemy Unit.\n\nThe Controlling Player of a Unit that only contains Models with this Special Rule can use the Concealed Ambush Advanced Reaction."
               },
               {
-                "name": "CONCEALED AMBUSH ADVANCED Reaction",
+                "name": "Concealed Ambush Advanced Reaction",
                 "id": "5650-17da-7441-5d36",
                 "hidden": false,
-                "description": "Trigger: The Reactive Player may declare the Concealed  Ambush Advanced Reaction in Step 2 of the Movement\nPhase process after an enemy Unit ends a Move. \n\n\nCost: The Reactive Player must spend 1 point of their Reaction Allotment to declare a Concealed Ambush\nReaction, this cost paid as soon as the declaration is made.\nTarget: The Target Unit is always the Unit whose Mo triggered the Reaction. The Reactive Player must select one Unit under their control that only includes Model with the Concealed Positions Special Rule that is in Reserves. That Unit is the Reacting Unit.\n\n\nProcess\n1. The Reactive Player must select one Model from the Reacting Unit and place it anywhere on the Battlefield that is not within their Opponent’s Deployment Zone, within 6\" of the Unit that triggered this Reaction and at least 5” away from an enemy Model and 1\" from any Battlefield Edge or piece of Impassable Terrain. Once this first Model has been placed, the remaining Models in the Unit must be placed within Unit Coherency with at least one other Model in the same Unit and within 6\" of the Last Model placed. No Models may be placed within 5\" of an enemy Model, or within 1\" of any Battlefield or a piece of Impassable Terrain or within their Opponent’s Deployment Zone. Any Models that cannot be placed using these Rules must be Remo as a Casualty immediately. \n2. Once the Reacting Unit has been set up, the Reacting Player can either make a Shooting Attack with the Reacting Unit against the Unit that triggered this Reaction, but any attacks are made as Snap Shots, or make a Disordered Charge for the Reacting Unit that must target the Unit that triggered this Reaction: "
+                "description": "Trigger: The Reactive Player may declare the Concealed Ambush Advanced Reaction in Step 2 of the Movement Phase process after an enemy Unit ends a Move. \n\nCost: The Reactive Player must spend 1 point of their Reaction Allotment to declare a Concealed Ambush Reaction, this cost paid as soon as the declaration is made.\n\nTarget: The Target Unit is always the Unit whose Mo triggered the Reaction. The Reactive Player must select one Unit under their control that only includes Model with the Concealed Positions Special Rule that is in Reserves. That Unit is the Reacting Unit.\n\nProcess\n1. The Reactive Player must select one Model from the Reacting Unit and place it anywhere on the Battlefield that is not within their Opponent’s Deployment Zone, within 6\" of the Unit that triggered this Reaction and at least 5” away from an enemy Model and 1\" from any Battlefield Edge or piece of Impassable Terrain. Once this first Model has been placed, the remaining Models in the Unit must be placed within Unit Coherency with at least one other Model in the same Unit and within 6\" of the Last Model placed. No Models may be placed within 5\" of an enemy Model, or within 1\" of any Battlefield or a piece of Impassable Terrain or within their Opponent’s Deployment Zone. Any Models that cannot be placed using these Rules must be Remo as a Casualty immediately. \n2. Once the Reacting Unit has been set up, the Reacting Player can either make a Shooting Attack with the Reacting Unit against the Unit that triggered this Reaction, but any attacks are made as Snap Shots, or make a Disordered Charge for the Reacting Unit that must target the Unit that triggered this Reaction: "
               }
             ]
           },
@@ -3882,6 +4513,14 @@
                     "shared": true,
                     "includeChildSelections": true,
                     "includeChildForces": true
+                  },
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "la",
+                    "shared": true
                   }
                 ]
               }

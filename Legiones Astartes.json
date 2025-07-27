@@ -53,6 +53,14 @@
                 "field": "points"
               }
             ]
+          },
+          {
+            "import": true,
+            "name": "Prime",
+            "hidden": false,
+            "id": "b0f9-99c1-47e3-9886",
+            "type": "selectionEntry",
+            "targetId": "prime-command"
           }
         ],
         "selectionEntryGroups": [
@@ -431,7 +439,8 @@
                   }
                 ]
               }
-            ]
+            ],
+            "collective": true
           },
           {
             "import": true,
@@ -532,6 +541,14 @@
                 ]
               }
             ]
+          },
+          {
+            "import": true,
+            "name": "Legion Equipment",
+            "hidden": false,
+            "id": "7f4b-8759-df80-2ca5",
+            "type": "selectionEntryGroup",
+            "targetId": "legion-equipment"
           }
         ],
         "selectionEntries": [
@@ -1557,6 +1574,38 @@
                 "value": 20
               }
             ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Legion Standard",
+            "hidden": false,
+            "id": "legion-standard",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 20
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b81a-4ac0-57b2-47b2"
+              }
+            ],
+            "rules": [
+              {
+                "name": "Legion Standard",
+                "id": "2064-b8cb-8a8e-aec3",
+                "hidden": false,
+                "description": "Legion standards grant bonuses to Combat Resolution. \nWhen resolving a Combat in the Resolution Sub-Phase of the Assault Phase, score 2 Combat Resolution Points for each Unit in that Combat that has any Models that have a Legion standard. In addition, a Model with a Legion standard counts as an additional 6 Models for the purposes of Outside Support in a Challenge."
+              }
+            ]
           }
         ],
         "selectionEntryGroups": [
@@ -1570,6 +1619,13 @@
                 "id": "f1ae-4d3c-c4a2-8011",
                 "hidden": false,
                 "entryLinks": [
+                  {
+                    "targetId": "c681-2f43-ad19-050f",
+                    "id": "bb5b-44c6-1124-099f",
+                    "type": "selectionEntry",
+                    "name": "Combat shield",
+                    "hidden": false
+                  },
                   {
                     "import": true,
                     "name": "Legion Pistols",
@@ -1585,50 +1641,6 @@
                     "id": "f95d-4a06-3a71-0fb6",
                     "type": "selectionEntryGroup",
                     "targetId": "legion-sergeant-melee-weapons"
-                  }
-                ],
-                "selectionEntries": [
-                  {
-                    "type": "upgrade",
-                    "import": true,
-                    "name": "Combat shield",
-                    "hidden": false,
-                    "id": "c681-2f43-ad19-050f",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "points",
-                        "value": 2
-                      }
-                    ],
-                    "constraints": [
-                      {
-                        "type": "max",
-                        "value": 0,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "3711-cd4d-3a33-efa2"
-                      }
-                    ],
-                    "modifiers": [
-                      {
-                        "type": "increment",
-                        "value": 1,
-                        "field": "3711-cd4d-3a33-efa2",
-                        "repeats": [
-                          {
-                            "value": 1,
-                            "repeats": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "childId": "f95d-4a06-3a71-0fb6",
-                            "shared": true,
-                            "roundUp": false
-                          }
-                        ]
-                      }
-                    ]
                   }
                 ]
               },
@@ -1993,7 +2005,8 @@
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
-                "id": "361e-18ea-8f27-82f6-min"
+                "id": "361e-18ea-8f27-82f6-max-min",
+                "automatic": true
               },
               {
                 "type": "max",
@@ -2001,14 +2014,15 @@
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
-                "id": "361e-18ea-8f27-82f6-max"
+                "id": "361e-18ea-8f27-82f6-max-max",
+                "automatic": true
               }
             ],
             "modifiers": [
               {
                 "type": "increment",
                 "value": 1,
-                "field": "361e-18ea-8f27-82f6-min",
+                "field": "361e-18ea-8f27-82f6-max-min",
                 "repeats": [
                   {
                     "value": 1,
@@ -2025,7 +2039,7 @@
               {
                 "type": "increment",
                 "value": 1,
-                "field": "361e-18ea-8f27-82f6-max",
+                "field": "361e-18ea-8f27-82f6-max-max",
                 "repeats": [
                   {
                     "value": 1,
@@ -2039,7 +2053,16 @@
                   }
                 ]
               }
-            ]
+            ],
+            "defaultAmount": "4"
+          },
+          {
+            "import": true,
+            "name": "Legion Equipment",
+            "hidden": false,
+            "id": "c168-c7fa-b395-22f8",
+            "type": "selectionEntryGroup",
+            "targetId": "legion-equipment"
           }
         ],
         "selectionEntries": [
@@ -2879,50 +2902,14 @@
                     "id": "8faa-26cc-8ae1-b0b2",
                     "type": "selectionEntryGroup",
                     "targetId": "legion-sergeant-melee-weapons"
-                  }
-                ],
-                "selectionEntries": [
+                  },
                   {
-                    "type": "upgrade",
                     "import": true,
                     "name": "Combat shield",
                     "hidden": false,
-                    "id": "8276-632a-5d36-554b",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "points",
-                        "value": 2
-                      }
-                    ],
-                    "constraints": [
-                      {
-                        "type": "max",
-                        "value": 0,
-                        "field": "selections",
-                        "scope": "parent",
-                        "shared": true,
-                        "id": "d8a6-c338-462d-1b44"
-                      }
-                    ],
-                    "modifiers": [
-                      {
-                        "type": "set",
-                        "value": 1,
-                        "field": "d8a6-c338-462d-1b44",
-                        "repeats": [
-                          {
-                            "value": 1,
-                            "repeats": 1,
-                            "field": "selections",
-                            "scope": "parent",
-                            "childId": "8faa-26cc-8ae1-b0b2",
-                            "shared": true,
-                            "roundUp": false
-                          }
-                        ]
-                      }
-                    ]
+                    "id": "eea9-9b8a-c99d-c338",
+                    "targetId": "c681-2f43-ad19-050f",
+                    "type": "selectionEntry"
                   }
                 ]
               },
@@ -3268,7 +3255,7 @@
         ]
       },
       {
-        "type": "upgrade",
+        "type": "unit",
         "import": true,
         "name": "Esoterist",
         "hidden": false,
@@ -3286,6 +3273,267 @@
             "id": "9dfb-5983-751d-864e",
             "primary": true,
             "name": "Command"
+          },
+          {
+            "targetId": "psychic",
+            "id": "5507-5b1d-5fe5-3929",
+            "primary": false,
+            "name": "Psychic"
+          }
+        ],
+        "entryLinks": [
+          {
+            "targetId": "Anathemata",
+            "id": "562d-8806-39b4-def4",
+            "type": "selectionEntry",
+            "name": "Anathemata Discipline",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Void Darts (Psychic Weapon)",
+                "hidden": false,
+                "id": "7688-8717-4aa8-1aaf",
+                "profiles": [
+                  {
+                    "name": "Void Darts (Psychic Weapon)",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "697f-13b1-0881-faac",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "8 "
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": "D6"
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": " 5 "
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "1"
+                      }
+                    ],
+                    "page": "R FP RS AP D D Special Rules Traits 1"
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "targetId": "86a2-c815-345b-e6fa",
+                    "id": "c1d1-87cd-4189-d399",
+                    "primary": false,
+                    "name": "Shred (5+)"
+                  },
+                  {
+                    "targetId": "5628-72c6-448c-7f33",
+                    "id": "2709-395d-8307-672a",
+                    "primary": false,
+                    "name": "Force (D)"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ede8-ee2f-b1b6-9138-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ede8-ee2f-b1b6-9138-max"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Breach the Veil",
+                "hidden": false,
+                "id": "d946-77db-d566-1338",
+                "rules": [
+                  {
+                    "name": "Breach the Veil",
+                    "id": "8d92-a014-9e13-77e4",
+                    "hidden": false,
+                    "description": "Trigger: The Active Player may choose to Manifest the Breach the Veil Psychic Power at the start of the Reserves Sub-Phase of their Movement Phase. \n\n\nFocus: The Focus of the Power must be a Model with the Anathemata Trait and under the Active Player's control.\n\n\nTarget: This Psychic Power does not have a Target.\n\n\nDuration: If successfully Manifested, the effects of this Psychic Power last until the end of this Reserves Sub-Phase.\n\n\nProcess\n1. Once the Focus has been decided, make a Manifestation Check.\n2. If the Manifestation Check is successful, the Active Player can select one Unit from a Daemonic Manifestation Detachment from the same Army as the Focus that is in Reserves. Reserve Rolls made for that Unit are automatically successful for the duration of this Psychic Power."
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "4d6a-dc2c-5eb7-13bf-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "4d6a-dc2c-5eb7-13bf-max"
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "targetId": "curse",
+                    "id": "0dca-3b2e-8b67-a9b4",
+                    "primary": false,
+                    "name": "Curse"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Seal the Veil ",
+                "hidden": false,
+                "id": "9cc4-d9f8-9cdc-f7a9",
+                "rules": [
+                  {
+                    "name": "Seal the Veil ",
+                    "id": "0bcf-7aa8-8b01-48db",
+                    "hidden": false,
+                    "description": "(Psychic Reaction, Curse)\n\nTrigger: The Reactive Player may choose to declare a Seal the Veil Psychic Reaction at the start of Step 3 of the Charge Procedure for a Charge declared by the Active Player for a Unit which includes any Models with the Malefic Sub-Type.\n\nCost: The Reactive Player must spend 1 point of their Reaction Allotment to declare a Seal the Veil Psychic Reaction, this cost paid as soon as the declaration is made.\n\nFocus: The Focus of this Psychic Reaction must be a Model with the Anathemata Trait and under the Reactive Player's Control, and must be a part of the Unit targeted by the Charge that triggers this Psychic Reaction.\n\n\nTarget: The Target Unit must be the Unit that is making the Charge that triggered the Reaction.\n\n\nDuration: If successfully Manifested, the effects of this Psychic Reaction are resolved immediately.\nProcess\n1.Once the Focus and Target Unit have been decided, make a Manifestation Check.\n2. If the Manifestation Check is successful, then the Target Unit cannot make a Set-Up Move of more than 1\", and when a Charge Roll is made for that Unit in Step 5 of the Charge Procedure, the highest Dice is discarded instead of the lowest."
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "7d61-cba2-8ff4-e256-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "7d61-cba2-8ff4-e256-max"
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "targetId": "blessing",
+                    "id": "06c2-a764-2a4c-69a8",
+                    "primary": false,
+                    "name": "Blessing"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Force weapons",
+            "hidden": false,
+            "id": "a763-9264-03f5-c38d",
+            "type": "selectionEntryGroup",
+            "targetId": "force-weapons",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "024e-ac93-fdea-f507-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "024e-ac93-fdea-f507-max"
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Archeotech pistol",
+            "hidden": false,
+            "id": "215c-e2b6-e39e-18a3",
+            "type": "selectionEntry",
+            "targetId": "archeotech-pistol",
+            "categoryLinks": [
+              {
+                "targetId": "breaching-3",
+                "id": "3e21-d7c5-92f4-3e20",
+                "primary": false,
+                "name": "Breaching (3+)"
+              },
+              {
+                "targetId": "pistol-category",
+                "id": "95a9-81b2-278b-db52",
+                "primary": false,
+                "name": "Pistol"
+              },
+              {
+                "targetId": "assault",
+                "id": "b3da-9184-7509-e40f",
+                "primary": false,
+                "name": "Assault"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "e609-12e5-f13e-0b9b-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "e609-12e5-f13e-0b9b-max"
+              }
+            ]
           }
         ]
       },
@@ -3352,7 +3600,7 @@
             "targetId": "cognis-signum",
             "id": "4450-2db6-c94d-c72f",
             "type": "selectionEntry",
-            "name": "Cognis signum",
+            "name": "Cognis-signum",
             "hidden": false,
             "constraints": [
               {
@@ -3446,6 +3694,14 @@
                 "id": "56fc-65af-181c-c522-max"
               }
             ]
+          },
+          {
+            "import": true,
+            "name": "Prime",
+            "hidden": false,
+            "id": "3956-d893-971d-7d4d",
+            "type": "selectionEntry",
+            "targetId": "prime-command"
           }
         ],
         "selectionEntryGroups": [
@@ -3528,6 +3784,14 @@
             "id": "addc-98e0-af85-4b67",
             "type": "selectionEntry",
             "targetId": "prime-troops"
+          },
+          {
+            "import": true,
+            "name": "Legion Equipment",
+            "hidden": false,
+            "id": "4336-b756-2c8f-34d6",
+            "type": "selectionEntryGroup",
+            "targetId": "legion-equipment"
           }
         ],
         "selectionEntries": [
@@ -4784,7 +5048,89 @@
             "hidden": false,
             "id": "7ff3-5def-5149-afa0",
             "type": "selectionEntry",
-            "targetId": "prime-troops"
+            "targetId": "prime-troops",
+            "sortIndex": 1
+          },
+          {
+            "import": true,
+            "name": "Bolt pistol",
+            "hidden": false,
+            "id": "da21-41f8-4b62-84b2",
+            "type": "selectionEntry",
+            "targetId": "71ed-a313-7178-0e51",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d20c-c13e-b336-01a4-min",
+                "automatic": true
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d20c-c13e-b336-01a4-max",
+                "automatic": true
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "d20c-c13e-b336-01a4-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "breacher-legionary",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": true
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "d20c-c13e-b336-01a4-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "breacher-legionary",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Augury scanner",
+            "hidden": false,
+            "id": "bac3-3449-dd98-9154",
+            "type": "selectionEntry",
+            "targetId": "land-speeder-augury-scanner",
+            "sortIndex": 5
+          },
+          {
+            "import": true,
+            "name": "Legion equipment",
+            "hidden": false,
+            "id": "88ff-dced-833d-b273",
+            "type": "selectionEntry",
+            "targetId": "4fb0-0541-4efb-bd59"
           }
         ],
         "selectionEntries": [
@@ -4808,7 +5154,7 @@
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
-                "id": "6e9a-507c-77c4-e6f2-min",
+                "id": "6e9a-507c-77c4-e6f2-min-min",
                 "includeChildSelections": false
               },
               {
@@ -4817,10 +5163,110 @@
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
-                "id": "6e9a-507c-77c4-e6f2-max",
+                "id": "6e9a-507c-77c4-e6f2-min-max",
                 "includeChildSelections": false
               }
-            ]
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Bolt pistol",
+                "id": "083c-1b01-9b17-bb59",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Legion Pistols",
+                    "hidden": false,
+                    "id": "7025-d58a-0d82-056b",
+                    "type": "selectionEntryGroup",
+                    "targetId": "legion-pistols"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "2e2e-f129-1d52-bb17",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "bd38-65c1-b1bb-a2a2",
+                    "includeChildSelections": false
+                  }
+                ]
+              },
+              {
+                "name": "Bolter",
+                "id": "dab5-d532-c478-8eef",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Legion Combi-Weapons",
+                    "hidden": false,
+                    "id": "4e26-c199-9b93-fbda",
+                    "type": "selectionEntryGroup",
+                    "targetId": "legion-combi-weapons"
+                  },
+                  {
+                    "import": true,
+                    "name": "Legion Sergeant Melee Weapons",
+                    "hidden": false,
+                    "id": "2455-62a0-e306-4328",
+                    "type": "selectionEntryGroup",
+                    "targetId": "legion-sergeant-melee-weapons"
+                  },
+                  {
+                    "import": true,
+                    "name": "Bolter",
+                    "hidden": false,
+                    "id": "a634-05cd-2a66-a436",
+                    "type": "selectionEntry",
+                    "targetId": "68d2-db2c-be95-a97d"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "3a4c-c0f7-d220-8d4f",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "177d-50d3-16f5-b4f2",
+                    "includeChildSelections": false
+                  }
+                ],
+                "defaultSelectionEntryId": "c43c-a4f0-4be2-29c0"
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Melta bombs",
+                "hidden": false,
+                "id": "9246-1859-3e8a-9e82",
+                "type": "selectionEntry",
+                "targetId": "761a-1b86-42ef-8b5e"
+              }
+            ],
+            "sortIndex": 2
           },
           {
             "type": "model",
@@ -4852,7 +5298,305 @@
                 "shared": true,
                 "id": "ca4b-4eed-2268-d704"
               }
-            ]
+            ],
+            "sortIndex": 3
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Bolter",
+            "id": "084a-eff9-5231-2312",
+            "hidden": false,
+            "selectionEntryGroups": [
+              {
+                "name": "For every five Models in this Unit, one Breacher Legionary in this unit may have one of the following options selected for it: ",
+                "id": "9c6f-802b-2cf4-06da",
+                "hidden": false,
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Lascutter",
+                    "hidden": false,
+                    "id": "Lascutter",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 10
+                      }
+                    ],
+                    "categoryLinks": [
+                      {
+                        "name": "Las",
+                        "hidden": false,
+                        "id": "0a35-197e-5e75-daff",
+                        "targetId": "las",
+                        "primary": false
+                      }
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Lascutter (Melee)",
+                        "typeId": "weapon",
+                        "typeName": "Weapon",
+                        "hidden": false,
+                        "id": "eed0-837c-5005-1740",
+                        "characteristics": [
+                          {
+                            "name": "Range",
+                            "typeId": "range",
+                            "$text": ""
+                          },
+                          {
+                            "name": "Fire Power (FP)",
+                            "typeId": "fire-power",
+                            "$text": ""
+                          },
+                          {
+                            "name": "Range Strength (RS)",
+                            "typeId": "range-strength",
+                            "$text": ""
+                          },
+                          {
+                            "name": "Melee Initiative Modifier (IM)",
+                            "typeId": "weapon-initiative",
+                            "$text": "-3"
+                          },
+                          {
+                            "name": "Melee Attacks Modifier (AM)",
+                            "typeId": "weapon-attacks",
+                            "$text": "1"
+                          },
+                          {
+                            "name": "Melee Strength Modifier (SM)",
+                            "typeId": "melee-strength",
+                            "$text": "12"
+                          },
+                          {
+                            "name": "Armour Penetration (AP)",
+                            "$text": "2"
+                          },
+                          {
+                            "name": "Damage (D)",
+                            "typeId": "damage",
+                            "$text": "4"
+                          }
+                        ],
+                        "comment": "The Legiones Astartes also employ a number of other weapons that do not fall int\nMelee Weapon\nLascutter\nIM AM SM AP D Special Rules\n-3  1    12   2   4"
+                      }
+                    ],
+                    "selectionEntries": [
+                      {
+                        "type": "upgrade",
+                        "import": true,
+                        "name": "Lascutter (Ranged)*",
+                        "hidden": false,
+                        "id": "cf1e-e3ba-8e29-783d",
+                        "profiles": [
+                          {
+                            "name": "Lascutter (Ranged)*",
+                            "typeId": "weapon",
+                            "typeName": "Weapon",
+                            "hidden": false,
+                            "id": "92e6-cf99-fb4a-e154",
+                            "characteristics": [
+                              {
+                                "name": "Range",
+                                "typeId": "range",
+                                "$text": "8\""
+                              },
+                              {
+                                "name": "Fire Power (FP)",
+                                "typeId": "fire-power",
+                                "$text": "1"
+                              },
+                              {
+                                "name": "Range Strength (RS)",
+                                "typeId": "range-strength",
+                                "$text": "10"
+                              },
+                              {
+                                "name": "Melee Initiative Modifier (IM)",
+                                "typeId": "weapon-initiative",
+                                "$text": ""
+                              },
+                              {
+                                "name": "Melee Attacks Modifier (AM)",
+                                "typeId": "weapon-attacks",
+                                "$text": ""
+                              },
+                              {
+                                "name": "Melee Strength Modifier (SM)",
+                                "typeId": "melee-strength",
+                                "$text": ""
+                              },
+                              {
+                                "name": "Armour Penetration (AP)",
+                                "$text": "2"
+                              },
+                              {
+                                "name": "Damage (D)",
+                                "typeId": "damage",
+                                "$text": "2"
+                              }
+                            ]
+                          }
+                        ],
+                        "constraints": [
+                          {
+                            "type": "min",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "4128-84d3-dbfe-e395-min",
+                            "includeChildSelections": false
+                          },
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "4128-84d3-dbfe-e395-max",
+                            "includeChildSelections": false
+                          }
+                        ],
+                        "categoryLinks": [
+                          {
+                            "name": "Armourbane",
+                            "hidden": false,
+                            "id": "33a8-fc1d-72b0-759b",
+                            "targetId": "armourbane-category",
+                            "primary": false
+                          },
+                          {
+                            "name": "Ordnance (D)",
+                            "hidden": false,
+                            "id": "cf54-093a-7975-a1ad",
+                            "targetId": "a5a7-a39c-f122-9bc6",
+                            "primary": false
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Graviton gun",
+                    "hidden": false,
+                    "id": "15b7-5533-6a85-1c24",
+                    "type": "selectionEntry",
+                    "targetId": "astartes-graviton-gun",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 10,
+                        "field": "points"
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6452-7661-d6db-fc9f"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "increment",
+                    "value": 1,
+                    "field": "6452-7661-d6db-fc9f",
+                    "repeats": [
+                      {
+                        "value": 5,
+                        "repeats": 1,
+                        "field": "selections",
+                        "scope": "9c43-1439-2dfc-e4c8",
+                        "childId": "model",
+                        "shared": true,
+                        "roundUp": false,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "778e-dad9-6eb4-2d9b-min"
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "778e-dad9-6eb4-2d9b-max"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "778e-dad9-6eb4-2d9b-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "breacher-legionary",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "778e-dad9-6eb4-2d9b-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "breacher-legionary",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Bolter",
+                "hidden": false,
+                "id": "aaf1-db7b-ffc0-22f3",
+                "type": "selectionEntry",
+                "targetId": "68d2-db2c-be95-a97d",
+                "collective": false
+              }
+            ],
+            "defaultSelectionEntryId": "aaf1-db7b-ffc0-22f3",
+            "collective": true,
+            "sortIndex": 4
           }
         ]
       },
@@ -4938,6 +5682,14 @@
                 ]
               }
             ]
+          },
+          {
+            "import": true,
+            "name": "Legion Equipment",
+            "hidden": false,
+            "id": "9a4d-af9a-f81c-41ed",
+            "type": "selectionEntryGroup",
+            "targetId": "legion-equipment"
           }
         ],
         "selectionEntries": [
@@ -5119,6 +5871,14 @@
             "id": "e98b-55f8-bb64-0077",
             "type": "selectionEntryGroup",
             "targetId": "legion-heavy-weapons"
+          },
+          {
+            "import": true,
+            "name": "Legion Equipment",
+            "hidden": false,
+            "id": "6d33-0bf8-9e23-5653",
+            "type": "selectionEntryGroup",
+            "targetId": "legion-equipment"
           }
         ],
         "selectionEntries": [
@@ -7443,18 +8203,6 @@
             "name": "Recon"
           },
           {
-            "targetId": "infantry",
-            "id": "effe-4e3b-2e51-5a27",
-            "primary": false,
-            "name": "Infantry"
-          },
-          {
-            "targetId": "smokescreen",
-            "id": "2df9-8a73-cefc-c234",
-            "primary": false,
-            "name": "Smokescreen"
-          },
-          {
             "targetId": "vanguard-category-one",
             "id": "3f8f-51b2-ba4e-962f",
             "primary": false,
@@ -7471,6 +8219,18 @@
             "id": "f450-c8e2-66f0-0a48",
             "primary": false,
             "name": "Outflank"
+          },
+          {
+            "targetId": "33e4-2b0a-7ff6-4195",
+            "id": "d90a-7404-9c63-29d2",
+            "primary": false,
+            "name": "Bulky (2)"
+          },
+          {
+            "targetId": "firestorm-category",
+            "id": "e156-c946-1dcd-bece",
+            "primary": false,
+            "name": "Firestorm"
           }
         ],
         "entryLinks": [
@@ -7481,6 +8241,74 @@
             "id": "1bf5-e567-4029-6ef6",
             "type": "selectionEntry",
             "targetId": "prime-troops"
+          },
+          {
+            "import": true,
+            "name": "Legion Equipment",
+            "hidden": false,
+            "id": "d015-6d9a-f2ac-b04c",
+            "type": "selectionEntryGroup",
+            "targetId": "legion-equipment"
+          },
+          {
+            "import": true,
+            "name": "Legion Pistols",
+            "hidden": false,
+            "id": "4c5c-5e2b-052e-e396",
+            "type": "selectionEntryGroup",
+            "targetId": "legion-pistols",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "78b9-1ada-9b34-9592-min"
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "78b9-1ada-9b34-9592-max"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "78b9-1ada-9b34-9592-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "78b9-1ada-9b34-9592-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              }
+            ]
           }
         ],
         "selectionEntries": [
@@ -7498,12 +8326,6 @@
               }
             ],
             "categoryLinks": [
-              {
-                "targetId": "infantry-skirmish",
-                "id": "05fb-ce48-24f7-77ad",
-                "primary": false,
-                "name": "Infantry (Skirmish)"
-              },
               {
                 "targetId": "cavalry",
                 "id": "01dc-e123-846f-c20e",
@@ -7533,7 +8355,7 @@
           {
             "type": "model",
             "import": true,
-            "name": "Recon Sergeant",
+            "name": "Outrider Sergeant",
             "hidden": false,
             "id": "d1b4-ff13-4c94-3984",
             "constraints": [
@@ -7556,10 +8378,16 @@
             ],
             "categoryLinks": [
               {
-                "targetId": "infantry-skirmish",
-                "id": "e854-5570-464d-098b",
+                "targetId": "sergeant",
+                "id": "8a93-5d41-1622-783c",
                 "primary": false,
-                "name": "Infantry (Skirmish)"
+                "name": "Sergeant"
+              },
+              {
+                "targetId": "cavalry",
+                "id": "0c1d-85dd-e393-0ba2",
+                "primary": false,
+                "name": "Cavalry"
               }
             ],
             "costs": [
@@ -7568,7 +8396,259 @@
                 "typeId": "points",
                 "value": 35
               }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Legion Sergeant Melee Weapons",
+                "hidden": false,
+                "id": "b5c6-ad01-2dba-6cb9",
+                "type": "selectionEntryGroup",
+                "targetId": "legion-sergeant-melee-weapons"
+              }
             ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Chainsword",
+            "id": "974c-72ec-ea31-edf6",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Chainsword",
+                "hidden": false,
+                "id": "84fb-66f8-7aa9-24c3",
+                "profiles": [
+                  {
+                    "name": "Chainsword",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "95b8-86ac-3247-8d25",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "Melee"
+                      },
+                      {
+                        "name": "Fire Power",
+                        "typeId": "fire-power",
+                        "$text": "Melee"
+                      },
+                      {
+                        "name": "Range Strength",
+                        "typeId": "range-strength",
+                        "$text": "Melee"
+                      },
+                      {
+                        "name": "Initiative modifier",
+                        "typeId": "weapon-initiative",
+                        "$text": "I"
+                      },
+                      {
+                        "name": "Attacks",
+                        "typeId": "weapon-attacks",
+                        "$text": "A"
+                      },
+                      {
+                        "name": "Melee Strength",
+                        "typeId": "melee-strength",
+                        "$text": "S"
+                      },
+                      {
+                        "name": "Armour penetration",
+                        "$text": "5"
+                      },
+                      {
+                        "name": "Damage",
+                        "typeId": "damage",
+                        "$text": "1"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1cd6-705a-c0c8-0a13-min"
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1cd6-705a-c0c8-0a13-max"
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Astartes Shotgun",
+                "hidden": false,
+                "id": "333d-1fbd-eef5-6fc5",
+                "type": "selectionEntry",
+                "targetId": "e14f-a350-f030-210a"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "1cd6-705a-c0c8-0a13-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "1cd6-705a-c0c8-0a13-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Twin bolter",
+            "id": "d3b3-fc8e-2de3-e3ea",
+            "hidden": false,
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b44e-2658-c6a2-f1a4-min"
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b44e-2658-c6a2-f1a4-max"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "b44e-2658-c6a2-f1a4-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "b44e-2658-c6a2-f1a4-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Twin bolters",
+                "hidden": false,
+                "id": "7e57-45e2-16ad-b578",
+                "type": "selectionEntry",
+                "targetId": "1aee-fb08-241f-07e8"
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Twin plasma guns",
+                "hidden": false,
+                "id": "7b4f-80e0-151a-7a7c",
+                "infoLinks": [
+                  {
+                    "name": "Plasma gun Maximal fire",
+                    "id": "8cf1-e299-5534-26e0",
+                    "hidden": false,
+                    "type": "profile",
+                    "targetId": "c820-744a-162f-fee4",
+                    "modifiers": [
+                      {
+                        "type": "increment",
+                        "value": 2,
+                        "field": "fire-power"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Plasma gun Sustained fire",
+                    "id": "4437-c81b-172c-0c54",
+                    "hidden": false,
+                    "type": "profile",
+                    "targetId": "a694-99d4-9287-47b8",
+                    "modifiers": [
+                      {
+                        "type": "increment",
+                        "value": 2,
+                        "field": "fire-power"
+                      }
+                    ]
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 15
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "7e57-45e2-16ad-b578"
           }
         ]
       },
@@ -10524,7 +11604,7 @@
             "hidden": false,
             "id": "de08-a70a-a776-fead",
             "type": "selectionEntry",
-            "targetId": "prime-troops"
+            "targetId": "prime-recon"
           },
           {
             "import": true,
@@ -10540,7 +11620,8 @@
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
-                "id": "d200-e79d-a4d3-efb2-min"
+                "id": "d200-e79d-a4d3-efb2-max-min",
+                "automatic": true
               },
               {
                 "type": "max",
@@ -10548,14 +11629,15 @@
                 "field": "selections",
                 "scope": "parent",
                 "shared": true,
-                "id": "d200-e79d-a4d3-efb2-max"
+                "id": "d200-e79d-a4d3-efb2-max-max",
+                "automatic": true
               }
             ],
             "modifiers": [
               {
                 "type": "increment",
                 "value": 1,
-                "field": "d200-e79d-a4d3-efb2-min",
+                "field": "d200-e79d-a4d3-efb2-max-min",
                 "repeats": [
                   {
                     "value": 1,
@@ -10572,7 +11654,7 @@
               {
                 "type": "increment",
                 "value": 1,
-                "field": "d200-e79d-a4d3-efb2-max",
+                "field": "d200-e79d-a4d3-efb2-max-max",
                 "repeats": [
                   {
                     "value": 1,
@@ -10623,6 +11705,14 @@
                 ]
               }
             ]
+          },
+          {
+            "import": true,
+            "name": "Legion Equipment",
+            "hidden": false,
+            "id": "2380-6181-3f1d-866f",
+            "type": "selectionEntryGroup",
+            "targetId": "legion-equipment"
           }
         ],
         "selectionEntries": [
@@ -10907,7 +11997,8 @@
                 "scope": "parent",
                 "shared": true,
                 "id": "b27d-ba52-3405-cc56-min",
-                "includeChildSelections": false
+                "includeChildSelections": false,
+                "automatic": true
               },
               {
                 "type": "max",
@@ -11414,7 +12505,8 @@
                     "hidden": false,
                     "id": "2c25-7125-1387-df26",
                     "type": "selectionEntry",
-                    "targetId": "68d2-db2c-be95-a97d"
+                    "targetId": "68d2-db2c-be95-a97d",
+                    "collective": true
                   }
                 ],
                 "defaultSelectionEntryId": "2c25-7125-1387-df26"
@@ -11535,401 +12627,12 @@
                 ]
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "unit",
-        "import": true,
-        "name": "Veteran Assault Squad",
-        "hidden": false,
-        "id": "veteran-assault",
-        "categoryLinks": [
-          {
-            "targetId": "vanguard-category-3",
-            "id": "7882-e32f-de1e-1ba5",
-            "primary": false,
-            "name": "Vanguard (3)"
           },
-          {
-            "targetId": "elites-category",
-            "id": "aaf2-359e-2040-019b",
-            "primary": true,
-            "name": "Elite"
-          }
-        ],
-        "selectionEntries": [
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Assault Veteran",
-            "hidden": false,
-            "id": "0537-5d8d-d5d3-a41c",
-            "categoryLinks": [
-              {
-                "targetId": "anti-grav-category",
-                "id": "6449-cbb2-d0c9-db0d",
-                "primary": false,
-                "name": "Anti-grav"
-              },
-              {
-                "targetId": "infantry",
-                "id": "66a2-d0c1-78c6-46e9",
-                "primary": false,
-                "name": "Infantry"
-              },
-              {
-                "targetId": "33e4-2b0a-7ff6-4195",
-                "id": "d514-399b-283f-9251",
-                "primary": false,
-                "name": "Bulky (2)"
-              }
-            ],
-            "constraints": [
-              {
-                "type": "min",
-                "value": 4,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "58fa-9103-2e61-dfee"
-              },
-              {
-                "type": "max",
-                "value": 9,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "ed99-bc9c-7230-f4f8"
-              }
-            ],
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 22
-              }
-            ]
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Veteran Assault Sergeant",
-            "hidden": false,
-            "id": "f672-ca16-262c-1fcb",
-            "categoryLinks": [
-              {
-                "targetId": "sergeant",
-                "id": "b127-fa13-9849-1fb6",
-                "primary": false,
-                "name": "Sergeant"
-              },
-              {
-                "targetId": "anti-grav-category",
-                "id": "d3ea-4c07-140b-2068",
-                "primary": false,
-                "name": "Anti-grav"
-              },
-              {
-                "targetId": "infantry",
-                "id": "e3a0-6c08-7b25-cb6a",
-                "primary": false,
-                "name": "Infantry"
-              },
-              {
-                "targetId": "33e4-2b0a-7ff6-4195",
-                "id": "38c9-0fa2-88a0-b40f",
-                "primary": false,
-                "name": "Bulky (2)"
-              }
-            ],
-            "selectionEntryGroups": [
-              {
-                "name": "Chainsword and bolt pistol",
-                "id": "bba5-07b2-bc63-91a6",
-                "hidden": false,
-                "selectionEntryGroups": [
-                  {
-                    "name": "Bolt pistol",
-                    "id": "f887-7058-44df-059b",
-                    "hidden": false,
-                    "entryLinks": [
-                      {
-                        "import": true,
-                        "name": "Legion Pistols",
-                        "hidden": false,
-                        "id": "e3b7-1c62-db94-bf6a",
-                        "type": "selectionEntryGroup",
-                        "targetId": "legion-pistols"
-                      },
-                      {
-                        "import": true,
-                        "name": "Disintegrator pistol",
-                        "hidden": false,
-                        "id": "0073-1c0e-e3ae-d8f5",
-                        "type": "selectionEntry",
-                        "targetId": "50be-9b04-c67e-3783",
-                        "modifiers": [
-                          {
-                            "type": "set",
-                            "value": 5,
-                            "field": "points"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "selectionEntries": [
-                  {
-                    "type": "upgrade",
-                    "import": true,
-                    "name": "A Pair of Lightning Claws",
-                    "hidden": false,
-                    "id": "cbd8-bcc4-0e4b-e315",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "points",
-                        "value": 10
-                      }
-                    ]
-                  }
-                ],
-                "modifiers": [
-                  {
-                    "type": "decrement",
-                    "value": 1,
-                    "field": "7b5c-901b-1700-c607-min",
-                    "repeats": [
-                      {
-                        "value": 1,
-                        "repeats": 1,
-                        "field": "selections",
-                        "scope": "self",
-                        "childId": "cbd8-bcc4-0e4b-e315",
-                        "shared": true,
-                        "roundUp": false,
-                        "includeChildSelections": true
-                      }
-                    ]
-                  },
-                  {
-                    "type": "decrement",
-                    "value": 1,
-                    "field": "7b5c-901b-1700-c607-max",
-                    "repeats": [
-                      {
-                        "value": 1,
-                        "repeats": 1,
-                        "field": "selections",
-                        "scope": "self",
-                        "childId": "cbd8-bcc4-0e4b-e315",
-                        "shared": true,
-                        "roundUp": false,
-                        "includeChildSelections": true
-                      }
-                    ]
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 2,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "7b5c-901b-1700-c607-min",
-                    "includeChildSelections": false
-                  },
-                  {
-                    "type": "max",
-                    "value": 2,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "7b5c-901b-1700-c607-max",
-                    "includeChildSelections": false
-                  }
-                ],
-                "entryLinks": [
-                  {
-                    "import": true,
-                    "name": "Legion Sergeant Melee Weapons",
-                    "hidden": false,
-                    "id": "9ad6-90a0-8678-1ffb",
-                    "type": "selectionEntryGroup",
-                    "targetId": "legion-sergeant-melee-weapons"
-                  }
-                ]
-              }
-            ],
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "d927-4ff7-46e4-22cc-min",
-                "includeChildSelections": false
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "d927-4ff7-46e4-22cc-max",
-                "includeChildSelections": false
-              }
-            ],
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 42
-              }
-            ]
-          }
-        ],
-        "selectionEntryGroups": [
-          {
-            "name": "Chainsword and bolt pistol",
-            "id": "0c78-a4d9-6182-b7a6",
-            "hidden": false,
-            "selectionEntries": [
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "A Pair of Lightning Claws",
-                "hidden": false,
-                "id": "8902-a5e0-810a-8650",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "points",
-                    "value": 10
-                  }
-                ]
-              }
-            ],
-            "modifiers": [
-              {
-                "type": "increment",
-                "value": 2,
-                "field": "5cd7-225f-73fb-abd7-min",
-                "repeats": [
-                  {
-                    "value": 1,
-                    "repeats": 1,
-                    "field": "selections",
-                    "scope": "veteran-assault",
-                    "childId": "0537-5d8d-d5d3-a41c",
-                    "shared": true,
-                    "roundUp": false,
-                    "includeChildSelections": true
-                  }
-                ]
-              },
-              {
-                "type": "increment",
-                "value": 2,
-                "field": "5cd7-225f-73fb-abd7-max",
-                "repeats": [
-                  {
-                    "value": 1,
-                    "repeats": 1,
-                    "field": "selections",
-                    "scope": "veteran-assault",
-                    "childId": "0537-5d8d-d5d3-a41c",
-                    "shared": true,
-                    "roundUp": false,
-                    "includeChildSelections": true
-                  }
-                ]
-              },
-              {
-                "type": "decrement",
-                "value": 1,
-                "field": "5cd7-225f-73fb-abd7-min",
-                "repeats": [
-                  {
-                    "value": 1,
-                    "repeats": 1,
-                    "field": "selections",
-                    "scope": "self",
-                    "childId": "8902-a5e0-810a-8650",
-                    "shared": true,
-                    "roundUp": false,
-                    "includeChildSelections": true
-                  }
-                ]
-              },
-              {
-                "type": "decrement",
-                "value": 1,
-                "field": "5cd7-225f-73fb-abd7-max",
-                "repeats": [
-                  {
-                    "value": 1,
-                    "repeats": 1,
-                    "field": "selections",
-                    "scope": "self",
-                    "childId": "8902-a5e0-810a-8650",
-                    "shared": true,
-                    "roundUp": false,
-                    "includeChildSelections": true
-                  }
-                ]
-              }
-            ],
-            "constraints": [
-              {
-                "type": "min",
-                "value": 0,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "5cd7-225f-73fb-abd7-min",
-                "includeChildSelections": true
-              },
-              {
-                "type": "max",
-                "value": 0,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "5cd7-225f-73fb-abd7-max",
-                "includeChildSelections": true
-              }
-            ],
-            "entryLinks": [
-              {
-                "import": true,
-                "name": "Legion Sergeant Melee Weapons",
-                "hidden": false,
-                "id": "4394-a133-08d6-eebe",
-                "type": "selectionEntryGroup",
-                "targetId": "legion-sergeant-melee-weapons"
-              },
-              {
-                "import": true,
-                "name": "Legion Pistols",
-                "hidden": false,
-                "id": "1701-2a78-9bda-b017",
-                "type": "selectionEntryGroup",
-                "targetId": "legion-pistols"
-              }
-            ]
-          }
-        ],
-        "entryLinks": [
           {
             "import": true,
             "name": "Prime",
             "hidden": false,
-            "id": "bb34-141e-0198-bad6",
+            "id": "0f19-803f-a4f9-5a79",
             "type": "selectionEntry",
             "targetId": "prime-elites"
           }
@@ -12609,6 +13312,14 @@
                         "field": "points"
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Bolter",
+                    "hidden": false,
+                    "id": "f740-2983-ad39-0b52",
+                    "type": "selectionEntry",
+                    "targetId": "68d2-db2c-be95-a97d"
                   }
                 ],
                 "selectionEntryGroups": [
@@ -12741,6 +13452,16 @@
             "id": "68ed-2756-7c49-8988",
             "primary": true,
             "name": "Retinues"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Legion Equipment",
+            "hidden": false,
+            "id": "e3a4-d7fa-93fa-edb2",
+            "type": "selectionEntryGroup",
+            "targetId": "legion-equipment"
           }
         ]
       },
@@ -14195,6 +14916,16 @@
               }
             ]
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Prime",
+            "hidden": false,
+            "id": "4261-a930-23c8-0e85",
+            "type": "selectionEntry",
+            "targetId": "prime-command"
+          }
         ]
       },
       {
@@ -14351,6 +15082,16 @@
                 ]
               }
             ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Prime",
+            "hidden": false,
+            "id": "5512-f56e-43c5-3265",
+            "type": "selectionEntry",
+            "targetId": "prime-command"
           }
         ]
       },
@@ -14605,6 +15346,14 @@
                 "id": "c640-b74e-4e03-3c8c"
               }
             ]
+          },
+          {
+            "import": true,
+            "name": "Prime",
+            "hidden": false,
+            "id": "9565-b160-8675-f39a",
+            "type": "selectionEntry",
+            "targetId": "prime-command"
           }
         ]
       },
@@ -16042,6 +16791,16 @@
               }
             ]
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Prime",
+            "hidden": false,
+            "id": "cdc8-3345-f987-f5c6",
+            "type": "selectionEntry",
+            "targetId": "prime-command"
+          }
         ]
       },
       {
@@ -16203,6 +16962,16 @@
                 ]
               }
             ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Prime",
+            "hidden": false,
+            "id": "b100-b026-0322-1eaa",
+            "type": "selectionEntry",
+            "targetId": "prime-command"
           }
         ]
       },
@@ -16819,6 +17588,14 @@
               }
             ],
             "targetId": "CommandVoxRelay"
+          },
+          {
+            "import": true,
+            "name": "Prime",
+            "hidden": false,
+            "id": "d507-bf2c-e492-1a62",
+            "type": "selectionEntry",
+            "targetId": "prime-command"
           }
         ],
         "rules": [
@@ -16841,7 +17618,7 @@
             "name": "Command Vox Relay",
             "id": "CommandVoxRelayRule",
             "hidden": false,
-            "description": "A command vox relay grants a bonus to Reserves and can be used to grant other benefits.\n\n\nWhile a Model with a command vox relay is on the Battlefield, before making a Reserves Test for a Unit in Reserves, the Controlling Player can select for that Model to activate that command vox relay. If they do they can modify the result of that Reserves Test by 1\nOnly one command vox relay can be activated for each Reserves Test.\n\nIn addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player of a Model with a command vox\nrelay can make an Intelligence Check for that Model (if that Model has the Vehicle Type, it is treated as having\nan Intelligence Characteristic of 8). If that Check is successful, the Controlling Player can select a friendly\nUnit which includes only Models with the same Faction Trait as the Model with the command vox relay and select\none of the following effects:\nUntil the end of this Turn, Models in that Unit gain the Line (1) and lose the Vanguard (X) Special Rule (if they had it). \nUntil the end of this Turn, Models in that Unit gain the Vanguard (1) and lose the  Line (X) Special Rule (if they had it). "
+            "description": "A command vox relay grants a bonus to Reserves and can be used to grant other benefits.\n\n\nWhile a Model with a command vox relay is on the Battlefield, before making a Reserves Test for a Unit in Reserves, the Controlling Player can select for that Model to activate that command vox relay. If they do they can modify the result of that Reserves Test by 1\nOnly one command vox relay can be activated for each Reserves Test.\n\nIn addition, in the Effects Sub-Phase of the Start Phase, the Controlling Player of a Model with a command vox relay can make an Intelligence Check for that Model (if that Model has the Vehicle Type, it is treated as having an Intelligence Characteristic of 8). If that Check is successful, the Controlling Player can select a friendly Unit which includes only Models with the same Faction Trait as the Model with the command vox relay and select one of the following effects:\n\nUntil the end of this Turn, Models in that Unit gain the Line (1) and lose the Vanguard (X) Special Rule (if they had it). \n\nUntil the end of this Turn, Models in that Unit gain the Vanguard (1) and lose the  Line (X) Special Rule (if they had it). "
           }
         ]
       },
@@ -17075,6 +17852,14 @@
                 "id": "29a1-1924-5cd5-fa49-max"
               }
             ]
+          },
+          {
+            "import": true,
+            "name": "Prime",
+            "hidden": false,
+            "id": "c33c-b235-4d48-f5af",
+            "type": "selectionEntry",
+            "targetId": "prime-command"
           }
         ]
       },
@@ -17124,6 +17909,14 @@
                 "field": "points"
               }
             ]
+          },
+          {
+            "import": true,
+            "name": "Prime",
+            "hidden": false,
+            "id": "ddec-1356-0ebb-be9b",
+            "type": "selectionEntry",
+            "targetId": "prime-command"
           }
         ],
         "costs": [
@@ -17519,11 +18312,2157 @@
                 "id": "ebec-dad1-7ec2-676f-max"
               }
             ]
+          },
+          {
+            "import": true,
+            "name": "Prime",
+            "hidden": false,
+            "id": "6ed4-efbe-aaef-e9a8",
+            "type": "selectionEntry",
+            "targetId": "prime-command"
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Rapier Battery",
+        "hidden": false,
+        "id": "rapier-battery-unit",
+        "categoryLinks": [
+          {
+            "targetId": "support-category",
+            "id": "1952-8b6f-c29d-cad3",
+            "primary": false,
+            "name": "Support"
+          },
+          {
+            "targetId": "rapier-battery-category",
+            "id": "c0de-64ad-e64c-f46d",
+            "primary": true,
+            "name": "Rapier Battery"
+          },
+          {
+            "targetId": "support-unit-1",
+            "id": "423e-1346-a7d4-6cb8",
+            "primary": false,
+            "name": "Support Unit (1)"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Rapier Crew",
+            "hidden": false,
+            "id": "astartes-rapier-crew",
+            "page": "67",
+            "publicationId": "liber-astartes",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 40
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ff30-0b90-5a93-3311"
+              },
+              {
+                "type": "max",
+                "value": 4,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "35b3-c749-a6f6-2ce3"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Each Rapier Carrier in this Unit may have its Gravis heavy bolter battery exchanged for one of the following: ",
+            "id": "rapier-battery-weapon",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Gravis Heavy Bolter Battery",
+                "hidden": false,
+                "id": "gravis-heavy-bolter-battery"
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Laser destroyer",
+                "hidden": false,
+                "id": "rapier-laser-destroyer",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 25
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Graviton cannon",
+                "hidden": false,
+                "id": "rapier-graviton-cannon",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 20
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Quad launcher",
+                "hidden": false,
+                "id": "rapier-quad-launcher",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 20
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Phosphex canister shot",
+                    "hidden": false,
+                    "id": "0d50-1ee2-1f8f-48d5",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 15
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "7e47-8d6c-0a97-4a08"
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 1,
+                        "field": "7e47-8d6c-0a97-4a08",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "roster",
+                            "childId": "siege-breaker-category",
+                            "shared": true,
+                            "includeChildSelections": true,
+                            "includeChildForces": true
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "9e9e-acd1-3c0d-53f6-min"
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "9e9e-acd1-3c0d-53f6-max"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "9e9e-acd1-3c0d-53f6-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "astartes-rapier-crew",
+                    "shared": false,
+                    "roundUp": false,
+                    "includeChildSelections": true
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "9e9e-acd1-3c0d-53f6-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "astartes-rapier-crew",
+                    "shared": false,
+                    "roundUp": false,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "gravis-heavy-bolter-battery"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Prime",
+            "hidden": false,
+            "id": "2da4-e944-4dd7-a340",
+            "type": "selectionEntry",
+            "targetId": "prime-command"
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Praevian",
+        "hidden": false,
+        "id": "praevian",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 95
+          }
+        ],
+        "entryLinks": [
+          {
+            "targetId": "cortex-controller",
+            "id": "21ca-1e3d-c184-5923",
+            "type": "selectionEntry",
+            "name": "Cortex Controller",
+            "hidden": false,
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ed0e-10a8-e875-bf1e-min",
+                "automatic": true
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ed0e-10a8-e875-bf1e-max",
+                "automatic": true
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Legion Pistols",
+            "hidden": false,
+            "id": "a611-60ee-68d9-8c22",
+            "type": "selectionEntryGroup",
+            "targetId": "legion-pistols",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3259-8ef7-cbd7-c75f-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3259-8ef7-cbd7-c75f-max"
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Cyber familiar",
+            "hidden": false,
+            "id": "e08a-4ea3-c292-d570",
+            "type": "selectionEntry",
+            "targetId": "cyber-familiar",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 0,
+                "field": "points"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "33af-f45a-552b-1098-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "33af-f45a-552b-1098-max",
+                "includeChildSelections": false
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Melta bombs",
+            "hidden": false,
+            "id": "7bb0-1a70-5191-b226",
+            "type": "selectionEntry",
+            "targetId": "761a-1b86-42ef-8b5e",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 5,
+                "field": "points"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "2032-0fc2-3f9f-6652",
+                "includeChildSelections": false,
+                "automatic": true
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "command-category",
+            "id": "29b4-96d9-7b9a-b563",
+            "primary": true,
+            "name": "Command"
+          },
+          {
+            "targetId": "infantry",
+            "id": "0098-97f8-3b0e-bd05",
+            "primary": false,
+            "name": "Infantry"
+          },
+          {
+            "targetId": "battlesmith-1",
+            "id": "dfaa-f5b7-28a4-aa88",
+            "primary": false,
+            "name": "Battlesmith (1)"
+          },
+          {
+            "targetId": "fnp5",
+            "id": "eadd-7107-cee1-2753",
+            "primary": false,
+            "name": "Feel No Pain (5+)"
+          }
+        ],
+        "rules": [
+          {
+            "name": "Master of Automata",
+            "id": "217a-c291-8563-9556",
+            "hidden": false,
+            "description": "This Special Rule allows a Praevian to be accompanied by a Unit of Battle-automata.\nWhen a Model with this Special Rule is included in a Detachment, one additional Force Organisation Slot is added to that Detachment. This Slot can only be filled with one Castellax Battle Maniple or Castellax Destructor Maniple Unit selected from Liber Mechanicum. When such a Unit is included in this way, its Cybernetica Trait is replaced with 'Bonded Automata', and this Unit can be included even though it does not have the same Faction Trait as the other Units in that Detachment. In addition, a Model with this Special Rule may join a Friendly Unit that includes Models with the Automata Type. If a Model with this Special Rule joins a Unit with the Automata Type, the Leadership and Cool Characteristics of Models in that Unit are not reduced as a results of this, but may be modified by other rules as normal."
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Moritat",
+        "hidden": false,
+        "id": "moritat",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 95
+          }
+        ],
+        "entryLinks": [
+          {
+            "targetId": "rad-grenades",
+            "id": "11fd-f2a0-00f6-2162",
+            "type": "selectionEntry",
+            "name": "Rad Grenades",
+            "hidden": false,
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "078e-e1ca-1296-328e-min",
+                "includeChildSelections": false,
+                "automatic": true
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "078e-e1ca-1296-328e-max",
+                "includeChildSelections": false,
+                "automatic": true
+              }
+            ]
+          },
+          {
+            "targetId": "cortex-controller",
+            "id": "94dc-0c40-eba4-bddf",
+            "type": "selectionEntry",
+            "name": "Cortex Controller",
+            "hidden": false,
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ff56-fd3c-b437-3a22-min",
+                "automatic": true
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ff56-fd3c-b437-3a22-max",
+                "automatic": true
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Melta bombs",
+            "hidden": false,
+            "id": "2681-aeda-2777-a1b9",
+            "type": "selectionEntry",
+            "targetId": "761a-1b86-42ef-8b5e",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 5,
+                "field": "points"
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "command-category",
+            "id": "8ac8-0ebb-fccd-4020",
+            "primary": true,
+            "name": "Command"
+          },
+          {
+            "targetId": "infantry",
+            "id": "7e77-5375-8e72-14a5",
+            "primary": false,
+            "name": "Infantry"
+          },
+          {
+            "targetId": "anti-grav-category",
+            "id": "5a57-52e8-398a-cb16",
+            "primary": false,
+            "name": "Anti-grav"
+          },
+          {
+            "targetId": "33e4-2b0a-7ff6-4195",
+            "id": "2e42-69b5-728d-9b6f",
+            "primary": false,
+            "name": "Bulky (2)"
+          }
+        ],
+        "rules": [
+          {
+            "name": "Master of Automata",
+            "id": "f146-6177-aff4-a8b1",
+            "hidden": false,
+            "description": "This Special Rule allows a Praevian to be accompanied by a Unit of Battle-automata.\nWhen a Model with this Special Rule is included in a Detachment, one additional Force Organisation Slot is added to that Detachment. This Slot can only be filled with one Castellax Battle Maniple or Castellax Destructor Maniple Unit selected from Liber Mechanicum. When such a Unit is included in this way, its Cybernetica Trait is replaced with 'Bonded Automata', and this Unit can be included even though it does not have the same Faction Trait as the other Units in that Detachment. In addition, a Model with this Special Rule may join a Friendly Unit that includes Models with the Automata Type. If a Model with this Special Rule joins a Unit with the Automata Type, the Leadership and Cool Characteristics of Models in that Unit are not reduced as a results of this, but may be modified by other rules as normal."
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "2 Overcharged Volkite Serpentas",
+            "id": "9db5-c6e7-4985-0f51",
+            "hidden": false,
+            "constraints": [
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "626a-9d07-743e-802f-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "626a-9d07-743e-802f-max",
+                "includeChildSelections": false
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Overcharged volkite serpenta",
+                "hidden": false,
+                "id": "4a03-8d8b-54c9-74c3",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 0
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Overcharged volkite serpenta",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "d9f8-99a1-d1ab-9789",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "10"
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": "6"
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": "5"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "1"
+                      }
+                    ]
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "name": "Volkite",
+                    "hidden": false,
+                    "id": "5e8d-8fd2-3396-4b97",
+                    "targetId": "volkite",
+                    "primary": false
+                  },
+                  {
+                    "targetId": "74b7-013a-f22d-18dc",
+                    "id": "3574-c66f-cf6d-e5db",
+                    "primary": false,
+                    "name": "Overload (1)"
+                  },
+                  {
+                    "targetId": "pistol-category",
+                    "id": "329a-e378-57e4-ccbd",
+                    "primary": false,
+                    "name": "Pistol"
+                  },
+                  {
+                    "targetId": "assault",
+                    "id": "0952-a22a-dc3d-71bc",
+                    "primary": false,
+                    "name": "Assault"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Overcharged plasma pistol",
+                "hidden": false,
+                "id": "b721-fb3d-3e00-23df",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 5
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Overcharged plasma pistol",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "0dfd-4d12-5d73-77ea",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "12"
+                      },
+                      {
+                        "name": "Fire Power",
+                        "typeId": "fire-power",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "Range Strength",
+                        "typeId": "range-strength",
+                        "$text": "8"
+                      },
+                      {
+                        "name": "Initiative modifier",
+                        "typeId": "weapon-initiative",
+                        "$text": "Range"
+                      },
+                      {
+                        "name": "Attacks",
+                        "typeId": "weapon-attacks",
+                        "$text": "Range"
+                      },
+                      {
+                        "name": "Melee Strength",
+                        "typeId": "melee-strength",
+                        "$text": "Range"
+                      },
+                      {
+                        "name": "Armour penetration",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "Damage",
+                        "typeId": "damage",
+                        "$text": "1"
+                      }
+                    ]
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "name": "Plasma",
+                    "hidden": false,
+                    "id": "cd13-4019-13f1-aae5",
+                    "targetId": "plasma",
+                    "primary": false
+                  },
+                  {
+                    "targetId": "pistol-category",
+                    "id": "eefd-cf5d-8be0-2a5e",
+                    "primary": false,
+                    "name": "Pistol"
+                  },
+                  {
+                    "targetId": "74b7-013a-f22d-18dc",
+                    "id": "9c15-f1da-81f0-e327",
+                    "primary": false,
+                    "name": "Overload (1)"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Overseer",
+        "hidden": false,
+        "id": "overseer",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 85
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Legion Pistols",
+            "hidden": false,
+            "id": "2a7d-7cea-db45-6859",
+            "type": "selectionEntryGroup",
+            "targetId": "legion-pistols",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c7e5-3604-bd40-a64a-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c7e5-3604-bd40-a64a-max"
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Melta bombs",
+            "hidden": false,
+            "id": "293b-d051-031c-d6e4",
+            "type": "selectionEntry",
+            "targetId": "761a-1b86-42ef-8b5e",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 5,
+                "field": "points"
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Vexilla",
+            "hidden": false,
+            "id": "8f91-a6ba-0fa7-29a7",
+            "type": "selectionEntry",
+            "targetId": "astartes-vexilla",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 10,
+                "field": "points"
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "command-category",
+            "id": "a9ab-cddf-79f4-3b70",
+            "primary": true,
+            "name": "Command"
+          },
+          {
+            "targetId": "infantry",
+            "id": "c6db-8ccb-4b6c-fc8c",
+            "primary": false,
+            "name": "Infantry"
+          },
+          {
+            "targetId": "fear1",
+            "id": "a358-4488-f8ab-44e0",
+            "primary": false,
+            "name": "Fear (1)"
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Power lash",
+            "id": "e8ce-dd1d-f5c3-bf81",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Power lash",
+                "hidden": false,
+                "id": "eef5-6984-97c6-6898",
+                "profiles": [
+                  {
+                    "name": "Power lash",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "53bb-c59a-384c-ccb5",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": "+1"
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": "A"
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": "-1"
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "1"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Power maul",
+                "hidden": false,
+                "id": "ebc6-9057-3111-aeae",
+                "type": "selectionEntry",
+                "targetId": "7c29-6d52-6f11-1561",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": 0,
+                    "field": "points"
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "eef5-6984-97c6-6898",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1454-51e7-2a10-7c63-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1454-51e7-2a10-7c63-max",
+                "includeChildSelections": false
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Master of Auxilia",
+            "id": "895c-cfa2-6b3b-04c6",
+            "hidden": false,
+            "description": "Overseers can join some Allied Units without penalty to some Characteristics. \nIf a Model with this Special Rule joins a Unit with the Solar Auxilia Trait, the Leadership and Cool Characteristics of Models in that Unit are not reduced as a results of this, but may be modified by other rules as normal."
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Herald",
+        "hidden": false,
+        "id": "astartes-herald",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 100
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Melta bombs",
+            "hidden": false,
+            "id": "0a71-10a7-2d9a-5c16",
+            "type": "selectionEntry",
+            "targetId": "761a-1b86-42ef-8b5e",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 5,
+                "field": "points"
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Bolt pistol",
+            "hidden": false,
+            "id": "f9ad-64e1-d124-f50f",
+            "type": "selectionEntry",
+            "targetId": "71ed-a313-7178-0e51",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "assault-legionary-chainsword-and-bolt-pistol",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "despoiler-legionary-chainsword-and-bolt-pistol",
+                        "shared": true,
+                        "includeChildSelections": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "423d-7df8-0e52-a714-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "423d-7df8-0e52-a714-max"
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "command-category",
+            "id": "1ad4-d319-43c8-389d",
+            "primary": true,
+            "name": "Command"
+          },
+          {
+            "targetId": "infantry",
+            "id": "ad37-c0cc-84e8-06bb",
+            "primary": false,
+            "name": "Infantry"
+          },
+          {
+            "targetId": "fear1",
+            "id": "8b3e-dfaf-d8e0-25db",
+            "primary": false,
+            "name": "Fear (1)"
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Power weapon",
+            "id": "dce4-0925-b9b9-3572",
+            "hidden": false,
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Power weapon",
+                "hidden": false,
+                "id": "5dd2-50df-eb95-7873",
+                "type": "selectionEntryGroup",
+                "targetId": "aba6-6a39-46e0-8d0e"
+              },
+              {
+                "import": true,
+                "name": "Power fist",
+                "hidden": false,
+                "id": "8646-e36f-99e5-93c5",
+                "type": "selectionEntry",
+                "targetId": "18d5-1446-4706-23ed",
+                "modifiers": [
+                  {
+                    "type": "increment",
+                    "value": 10,
+                    "field": "points"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Icon of Allegiance",
+            "id": "a3bf-8a15-24ab-3396",
+            "hidden": false,
+            "description": "A Model with an Icon of Allegiance immediately gains 1 Honour Point each time:\n• That Model is the winner of a Challenge.\n• That Model is part of a Combat that included at least one enemy Model that does not have the Vehicle Type, of\nwhich the Controlling Player is declared the winner.\nAll Honour Points gained by a Model are lost when:\n• That Model is Removed as a Casualty.\n• That Model is part of a Unit in which any Model gains the Disgraced Tactical Status.\nDuring the Decide Victor Step, at the end of the Battle, the Controlling Player of any Models with an Icon of Allegiance scores a number of Victory Points equal to the amount of Honour Points that any one of those Models, selected by the Controlling Player, currently has."
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Chaplain",
+        "hidden": false,
+        "id": "chaplain",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 80
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Melta bombs",
+            "hidden": false,
+            "id": "ab94-f02a-f8c8-c4b2",
+            "type": "selectionEntry",
+            "targetId": "761a-1b86-42ef-8b5e",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 5,
+                "field": "points"
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Legion Pistols",
+            "hidden": false,
+            "id": "8f1d-8ce8-0260-aece",
+            "type": "selectionEntryGroup",
+            "targetId": "legion-pistols"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "command-category",
+            "id": "2826-55a9-f674-6f93",
+            "primary": true,
+            "name": "Command"
+          },
+          {
+            "targetId": "infantry",
+            "id": "0edf-ee74-2ddb-8089",
+            "primary": false,
+            "name": "Infantry"
+          },
+          {
+            "targetId": "fear1",
+            "id": "2d64-0a92-983d-cadc",
+            "primary": false,
+            "name": "Fear (1)"
+          }
+        ],
+        "rules": [
+          {
+            "name": "Icon of Allegiance",
+            "id": "a4d1-e697-94da-d566",
+            "hidden": false,
+            "description": "A Model with an Icon of Allegiance immediately gains 1 Honour Point each time:\n• That Model is the winner of a Challenge.\n• That Model is part of a Combat that included at least one enemy Model that does not have the Vehicle Type, of\nwhich the Controlling Player is declared the winner.\nAll Honour Points gained by a Model are lost when:\n• That Model is Removed as a Casualty.\n• That Model is part of a Unit in which any Model gains the Disgraced Tactical Status.\nDuring the Decide Victor Step, at the end of the Battle, the Controlling Player of any Models with an Icon of Allegiance scores a number of Victory Points equal to the amount of Honour Points that any one of those Models, selected by the Controlling Player, currently has."
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Crozius Arcanum",
+            "hidden": false,
+            "id": "CroziusArcanum",
+            "profiles": [
+              {
+                "name": "Crozius Arcanum",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "7046-5959-525c-6290",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": "\n"
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": "-1"
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": "A"
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": "+1"
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "2"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "bdb6-f99d-a9c6-289b",
+                "id": "3440-ca63-b930-b4f1",
+                "primary": false,
+                "name": "Breaching (6+)"
+              },
+              {
+                "targetId": "power",
+                "id": "01e9-a3bf-07b5-be45",
+                "primary": false,
+                "name": "Power"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c026-c3ef-d3f7-95a6-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c026-c3ef-d3f7-95a6-max"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Master of Descent",
+        "hidden": false,
+        "id": "master-of-descent",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 115
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Command Vox Relay",
+            "hidden": false,
+            "id": "d272-eefc-7229-0fad",
+            "type": "selectionEntry",
+            "targetId": "CommandVoxRelay",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1e39-f970-509a-e804-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1e39-f970-509a-e804-max"
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Legion Officer Wargear ",
+            "hidden": false,
+            "id": "4b32-a04e-7c44-3d6e",
+            "type": "selectionEntryGroup",
+            "targetId": "Legion-Officer-Wargear-group",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "fa93-9a9b-63e4-d7ed-min"
+              },
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "fa93-9a9b-63e4-d7ed-max"
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "command-category",
+            "id": "38f4-1582-8391-8c7e",
+            "primary": true,
+            "name": "Command"
+          },
+          {
+            "targetId": "infantry",
+            "id": "fc52-d912-5107-d4f3",
+            "primary": false,
+            "name": "Infantry"
+          },
+          {
+            "targetId": "33e4-2b0a-7ff6-4195",
+            "id": "8fd1-6766-188f-3941",
+            "primary": false,
+            "name": "Bulky (2)"
+          },
+          {
+            "targetId": "deep-strike-category",
+            "id": "4f6e-5298-75ac-4c99",
+            "primary": false,
+            "name": "Deep Strike"
+          },
+          {
+            "targetId": "anti-grav-category",
+            "id": "25c5-4ead-9817-8f74",
+            "primary": false,
+            "name": "Anti-grav"
+          }
+        ],
+        "rules": [
+          {
+            "name": "Master of Descent",
+            "id": "24dd-5158-89b4-3828",
+            "hidden": false,
+            "description": "A Model with this Special Rule can arrive by Deep Strike in the first Battle Turn.\nIf a Model with this Special Rule is in Reserves, if that Model and every other Model in the same Unit have the Infantry Type and the Antigrav Sub-Type, that Model's Unit can make use of the Deep Strike Special Rule to enter play during the first Battle Turn. Only one Unit from an Army can make use of this Special Rule during the same Battle Turn."
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Master of Signals",
+        "hidden": false,
+        "id": "master-of-signals",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 115
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Legion Pistols",
+            "hidden": false,
+            "id": "4652-51a7-f477-132a",
+            "type": "selectionEntryGroup",
+            "targetId": "legion-pistols",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1446-f9f2-a841-04db-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1446-f9f2-a841-04db-max"
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "command-category",
+            "id": "eecf-c837-159a-3a3d",
+            "primary": true,
+            "name": "Command"
+          },
+          {
+            "targetId": "infantry",
+            "id": "5c5a-1ab0-b72f-a5ce",
+            "primary": false,
+            "name": "Infantry"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Strato-vox",
+            "hidden": false,
+            "id": "strato-vox",
+            "rules": [
+              {
+                "name": "Strato-vox",
+                "id": "68fc-224a-307c-b16a",
+                "hidden": false,
+                "description": "A Model with this Wargear can enable other Deep Striking Units to arrive more reliably.\n\n\nReserves Tests made for a Unit that contains any Models with a strato-vox are automatically successful. While any Models with a strato-vox are on the Battlefield, before making a Reserves Test for a Unit in Reserves that only includes Models with the Deep Strike Special Rule, the Controlling Player can choose to activate that strato-vox. \nIf they do, that Reserves Test is automatically successful, but the Unit it was made for must make a Deep Strike instead of deploying normally."
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "6d3d-302e-22ac-c80a-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "6d3d-302e-22ac-c80a-max"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Augur Command and Control Squad",
+        "hidden": false,
+        "id": "augur-command-and-control-squad",
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Command and Control Legionary",
+            "hidden": false,
+            "id": "a9b6-4b2b-c9d8-49fe",
+            "categoryLinks": [
+              {
+                "name": "Infantry",
+                "hidden": false,
+                "id": "bbb2-73b4-8779-edec",
+                "targetId": "infantry",
+                "primary": false
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 4,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7318-5d6a-ad35-0b7b-min"
+              },
+              {
+                "type": "max",
+                "value": 4,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7318-5d6a-ad35-0b7b-max"
+              }
+            ],
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 0
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "retinues-category",
+            "id": "a57c-509b-ad5b-db0f",
+            "primary": true,
+            "name": "Retinues"
+          },
+          {
+            "targetId": "support-unit-2",
+            "id": "1eaf-3865-7a12-b02e",
+            "primary": false,
+            "name": "Support Unit (2)"
+          },
+          {
+            "targetId": "smokescreen",
+            "id": "9a1d-4d5f-5d7d-012b",
+            "primary": false,
+            "name": "Smokescreen"
+          },
+          {
+            "targetId": "infantry",
+            "id": "71e9-1355-f6a6-5d99",
+            "primary": false,
+            "name": "Infantry"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Bolter",
+            "hidden": false,
+            "id": "f593-417c-9cc2-e2f2",
+            "type": "selectionEntry",
+            "targetId": "68d2-db2c-be95-a97d",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 4,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "139d-5aed-f4c9-c1f3-min"
+              },
+              {
+                "type": "max",
+                "value": 4,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "139d-5aed-f4c9-c1f3-max"
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Bolt pistol",
+            "hidden": false,
+            "id": "1f10-3156-48e1-6105",
+            "type": "selectionEntry",
+            "targetId": "71ed-a313-7178-0e51",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditionGroups": [
+                  {
+                    "type": "or",
+                    "conditions": [
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "assault-legionary-chainsword-and-bolt-pistol",
+                        "shared": true
+                      },
+                      {
+                        "type": "instanceOf",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "ancestor",
+                        "childId": "despoiler-legionary-chainsword-and-bolt-pistol",
+                        "shared": true,
+                        "includeChildSelections": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 4,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5fa4-c4b0-8cbe-9489-min"
+              },
+              {
+                "type": "max",
+                "value": 4,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5fa4-c4b0-8cbe-9489-max"
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Battlefield Coordinators",
+            "id": "f51a-298d-27d8-a8af",
+            "hidden": false,
+            "description": "This Special Rule allows the Controlling Player to reduce the Reaction Point cost of a Reaction once per Turn.\nOnce per Turn, if a Unit that contains any Models with this Special Rule is within 18\" of a Unit that makes a Reaction, the Controlling Player can make an Intelligence Check for this Unit. If a Model from the Unit with this Special Rule has Line of Sight to a Model in the Reacting Unit, the Controlling Player can modify the result of that Check by -1. If the Check is successful, that Reaction costs one fewer."
+          }
+        ],
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 80
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Rhino",
+        "hidden": false,
+        "id": "rhino",
+        "categoryLinks": [
+          {
+            "targetId": "transport-category",
+            "id": "e4a6-04af-1b1f-b936",
+            "primary": true,
+            "name": "Transport"
+          },
+          {
+            "targetId": "vehicle",
+            "id": "360b-31d2-cda9-3490",
+            "primary": false,
+            "name": "Vehicle"
+          },
+          {
+            "targetId": "auto-repair-4",
+            "id": "ef9c-42d5-a901-1748",
+            "primary": false,
+            "name": "Auto-repair 4+"
+          },
+          {
+            "targetId": "transport-tag-category",
+            "id": "aabf-e538-d1f2-6d42",
+            "primary": false,
+            "name": "Vehicle (Transport)"
+          },
+          {
+            "targetId": "light-transport-category",
+            "id": "7951-d7ea-9f44-6395",
+            "primary": false,
+            "name": "Light Transport"
+          },
+          {
+            "targetId": "smokescreen",
+            "id": "203a-6ea8-e48c-2be0",
+            "primary": false,
+            "name": "Smokescreen"
+          }
+        ],
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 50
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Legion Pintle Weapons",
+            "hidden": false,
+            "id": "af36-965e-acc7-85ee",
+            "type": "selectionEntryGroup",
+            "targetId": "legion-pintle-weapons"
+          },
+          {
+            "import": true,
+            "name": "This Model may have one of each of the following selected for it",
+            "hidden": false,
+            "id": "be8c-dacd-6318-8927",
+            "type": "selectionEntryGroup",
+            "targetId": "vehicle-upgrades"
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Veteran Assault Squad",
+        "hidden": false,
+        "id": "veteran-assault",
+        "categoryLinks": [
+          {
+            "targetId": "vanguard-category-3",
+            "id": "7882-e32f-de1e-1ba5",
+            "primary": false,
+            "name": "Vanguard (3)"
+          },
+          {
+            "targetId": "elites-category",
+            "id": "aaf2-359e-2040-019b",
+            "primary": true,
+            "name": "Elite"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Assault Veteran",
+            "hidden": false,
+            "id": "0537-5d8d-d5d3-a41c",
+            "categoryLinks": [
+              {
+                "targetId": "anti-grav-category",
+                "id": "6449-cbb2-d0c9-db0d",
+                "primary": false,
+                "name": "Anti-grav"
+              },
+              {
+                "targetId": "infantry",
+                "id": "66a2-d0c1-78c6-46e9",
+                "primary": false,
+                "name": "Infantry"
+              },
+              {
+                "targetId": "33e4-2b0a-7ff6-4195",
+                "id": "d514-399b-283f-9251",
+                "primary": false,
+                "name": "Bulky (2)"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 4,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "58fa-9103-2e61-dfee"
+              },
+              {
+                "type": "max",
+                "value": 9,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ed99-bc9c-7230-f4f8"
+              }
+            ],
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 22
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Veteran Assault Sergeant",
+            "hidden": false,
+            "id": "f672-ca16-262c-1fcb",
+            "categoryLinks": [
+              {
+                "targetId": "sergeant",
+                "id": "b127-fa13-9849-1fb6",
+                "primary": false,
+                "name": "Sergeant"
+              },
+              {
+                "targetId": "anti-grav-category",
+                "id": "d3ea-4c07-140b-2068",
+                "primary": false,
+                "name": "Anti-grav"
+              },
+              {
+                "targetId": "infantry",
+                "id": "e3a0-6c08-7b25-cb6a",
+                "primary": false,
+                "name": "Infantry"
+              },
+              {
+                "targetId": "33e4-2b0a-7ff6-4195",
+                "id": "38c9-0fa2-88a0-b40f",
+                "primary": false,
+                "name": "Bulky (2)"
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "Chainsword and bolt pistol",
+                "id": "bba5-07b2-bc63-91a6",
+                "hidden": false,
+                "selectionEntryGroups": [
+                  {
+                    "name": "Bolt pistol",
+                    "id": "f887-7058-44df-059b",
+                    "hidden": false,
+                    "entryLinks": [
+                      {
+                        "import": true,
+                        "name": "Legion Pistols",
+                        "hidden": false,
+                        "id": "e3b7-1c62-db94-bf6a",
+                        "type": "selectionEntryGroup",
+                        "targetId": "legion-pistols"
+                      },
+                      {
+                        "import": true,
+                        "name": "Disintegrator pistol",
+                        "hidden": false,
+                        "id": "0073-1c0e-e3ae-d8f5",
+                        "type": "selectionEntry",
+                        "targetId": "50be-9b04-c67e-3783",
+                        "modifiers": [
+                          {
+                            "type": "set",
+                            "value": 5,
+                            "field": "points"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "A Pair of Lightning Claws",
+                    "hidden": false,
+                    "id": "cbd8-bcc4-0e4b-e315",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 10
+                      }
+                    ]
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "decrement",
+                    "value": 1,
+                    "field": "7b5c-901b-1700-c607-min",
+                    "repeats": [
+                      {
+                        "value": 1,
+                        "repeats": 1,
+                        "field": "selections",
+                        "scope": "self",
+                        "childId": "cbd8-bcc4-0e4b-e315",
+                        "shared": true,
+                        "roundUp": false,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  },
+                  {
+                    "type": "decrement",
+                    "value": 1,
+                    "field": "7b5c-901b-1700-c607-max",
+                    "repeats": [
+                      {
+                        "value": 1,
+                        "repeats": 1,
+                        "field": "selections",
+                        "scope": "self",
+                        "childId": "cbd8-bcc4-0e4b-e315",
+                        "shared": true,
+                        "roundUp": false,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "7b5c-901b-1700-c607-min",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "7b5c-901b-1700-c607-max",
+                    "includeChildSelections": false
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Legion Sergeant Melee Weapons",
+                    "hidden": false,
+                    "id": "9ad6-90a0-8678-1ffb",
+                    "type": "selectionEntryGroup",
+                    "targetId": "legion-sergeant-melee-weapons"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d927-4ff7-46e4-22cc-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d927-4ff7-46e4-22cc-max",
+                "includeChildSelections": false
+              }
+            ],
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 42
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Chainsword and bolt pistol",
+            "id": "0c78-a4d9-6182-b7a6",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "A Pair of Lightning Claws",
+                "hidden": false,
+                "id": "8902-a5e0-810a-8650",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 10
+                  }
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 2,
+                "field": "5cd7-225f-73fb-abd7-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "veteran-assault",
+                    "childId": "0537-5d8d-d5d3-a41c",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": true
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 2,
+                "field": "5cd7-225f-73fb-abd7-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "veteran-assault",
+                    "childId": "0537-5d8d-d5d3-a41c",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": true
+                  }
+                ]
+              },
+              {
+                "type": "decrement",
+                "value": 1,
+                "field": "5cd7-225f-73fb-abd7-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "childId": "8902-a5e0-810a-8650",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": true
+                  }
+                ]
+              },
+              {
+                "type": "decrement",
+                "value": 1,
+                "field": "5cd7-225f-73fb-abd7-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "self",
+                    "childId": "8902-a5e0-810a-8650",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5cd7-225f-73fb-abd7-min",
+                "includeChildSelections": true
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5cd7-225f-73fb-abd7-max",
+                "includeChildSelections": true
+              }
+            ],
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Legion Sergeant Melee Weapons",
+                "hidden": false,
+                "id": "4394-a133-08d6-eebe",
+                "type": "selectionEntryGroup",
+                "targetId": "legion-sergeant-melee-weapons"
+              },
+              {
+                "import": true,
+                "name": "Legion Pistols",
+                "hidden": false,
+                "id": "1701-2a78-9bda-b017",
+                "type": "selectionEntryGroup",
+                "targetId": "legion-pistols"
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Prime",
+            "hidden": false,
+            "id": "bb34-141e-0198-bad6",
+            "type": "selectionEntry",
+            "targetId": "prime-elites"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Combat shield",
+        "hidden": false,
+        "id": "c681-2f43-ad19-050f",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 2
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 0,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "3711-cd4d-3a33-efa2"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "3711-cd4d-3a33-efa2",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "parent",
+                "childId": "f95d-4a06-3a71-0fb6",
+                "shared": true,
+                "roundUp": false
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Combat shield ",
+            "id": "4a04-216f-3d84-d5a1",
+            "hidden": false,
+            "description": "A combat shield grants a 5+ Invulnerable Save and a bonus to Focus Rolls.\nA Model with a combat shield has a 5+ Invulnerable Save against attacks made with Melee Weapons. In addition a Model with a combat shield gains a +1 modifier to Focus Rolls made for it."
           }
         ]
       }
     ],
     "entryLinks": [
+      {
+        "targetId": "veteran-assault",
+        "id": "264d-0bc7-37fb-bea3",
+        "type": "selectionEntry",
+        "name": "Veteran Assault Squad",
+        "hidden": false
+      },
+      {
+        "targetId": "rhino",
+        "id": "c1db-2bb2-7d0a-6ee9",
+        "type": "selectionEntry",
+        "name": "Rhino",
+        "hidden": false
+      },
       {
         "import": true,
         "name": "Centurion",
@@ -17539,6 +20478,27 @@
             "name": "Command"
           }
         ]
+      },
+      {
+        "targetId": "master-of-signals",
+        "id": "f5a0-b6b0-34c8-f329",
+        "type": "selectionEntry",
+        "name": "Master of Signals",
+        "hidden": false
+      },
+      {
+        "targetId": "astartes-herald",
+        "id": "2399-a2fd-9a45-6ee3",
+        "type": "selectionEntry",
+        "name": "Herald",
+        "hidden": false
+      },
+      {
+        "targetId": "rapier-battery-unit",
+        "id": "99db-e1cb-b5b3-2211",
+        "type": "selectionEntry",
+        "name": "Rapier Battery",
+        "hidden": false
       },
       {
         "import": true,
@@ -17906,7 +20866,15 @@
         "hidden": false,
         "id": "a61a-0d55-9044-ef82",
         "targetId": "veteran-assault",
-        "type": "selectionEntry"
+        "type": "selectionEntry",
+        "categoryLinks": [
+          {
+            "targetId": "da23-50df-0b2c-8426",
+            "id": "6dfc-c731-0674-ee74",
+            "primary": true,
+            "name": "Veteran Assault Squad"
+          }
+        ]
       },
       {
         "import": true,
@@ -18099,6 +21067,70 @@
         "id": "3082-024e-9791-ca27",
         "targetId": "vigilator",
         "type": "selectionEntry"
+      },
+      {
+        "import": true,
+        "name": "Praevian",
+        "hidden": false,
+        "id": "48ff-a66e-7aea-5a7b",
+        "targetId": "praevian",
+        "type": "selectionEntry"
+      },
+      {
+        "import": true,
+        "name": "Master of Descent",
+        "hidden": false,
+        "id": "6c96-aa6d-8318-b61d",
+        "targetId": "master-of-descent",
+        "type": "selectionEntry"
+      },
+      {
+        "import": true,
+        "name": "Centurion Command Squad",
+        "hidden": false,
+        "id": "0209-5376-25d6-8b0f",
+        "targetId": "centurion-command-squad",
+        "type": "selectionEntry"
+      },
+      {
+        "import": true,
+        "name": "Augur Command and Control Squad",
+        "hidden": false,
+        "id": "6e30-0353-ea4e-e0f4",
+        "targetId": "augur-command-and-control-squad",
+        "type": "selectionEntry"
+      },
+      {
+        "import": true,
+        "name": "Heavy Support Squad",
+        "hidden": false,
+        "id": "e849-95a9-51a7-bd8c",
+        "targetId": "heavy-support-squad",
+        "type": "selectionEntry"
+      },
+      {
+        "import": true,
+        "name": "Outrider Squadron",
+        "hidden": false,
+        "id": "452c-37e3-2a6c-5d7b",
+        "targetId": "outrider-squadron",
+        "type": "selectionEntry"
+      },
+      {
+        "import": true,
+        "name": "Praetorian Command Squad With Jump Packs",
+        "hidden": false,
+        "id": "8de3-b6be-bf12-ac3b",
+        "targetId": "praetorian-command-squad-with-jump-packs",
+        "type": "selectionEntry",
+        "categoryLinks": [
+          {
+            "targetId": "56be-0061-f7e1-f2a4",
+            "id": "84cd-f454-2afe-07b3",
+            "primary": true,
+            "name": "Praetorian Command Squad with Jump Pack"
+          }
+        ]
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -19335,6 +22367,13 @@
             ]
           },
           {
+            "targetId": "1aee-fb08-241f-07e8",
+            "id": "fdd6-27d7-5f0b-53ec",
+            "type": "selectionEntry",
+            "name": "Twin bolters",
+            "hidden": false
+          },
+          {
             "import": true,
             "name": "Combi-flamer",
             "hidden": false,
@@ -19486,51 +22525,6 @@
                   {
                     "name": "Armour penetration",
                     "$text": "5"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Twin bolters",
-            "hidden": false,
-            "id": "1aee-fb08-241f-07e8",
-            "modifiers": [
-              {
-                "type": "set",
-                "value": true,
-                "field": "hidden",
-                "conditionGroups": [
-                  {
-                    "type": "and",
-                    "conditions": [
-                      {
-                        "type": "notInstanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "ancestor",
-                        "childId": "rhino",
-                        "shared": true
-                      },
-                      {
-                        "type": "notInstanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "ancestor",
-                        "childId": "925b-767f-7351-03ab",
-                        "shared": true
-                      },
-                      {
-                        "type": "notInstanceOf",
-                        "value": 1,
-                        "field": "selections",
-                        "scope": "ancestor",
-                        "childId": "Hyperios-missile-tank",
-                        "shared": true
-                      }
-                    ]
                   }
                 ]
               }
@@ -20122,7 +23116,7 @@
             "targetId": "storm-battery-armour",
             "constraints": [
               {
-                "type": "min",
+                "type": "max",
                 "value": 2,
                 "field": "selections",
                 "scope": "parent",
@@ -20138,7 +23132,7 @@
             "targetId": "rapier-battery-category",
             "constraints": [
               {
-                "type": "min",
+                "type": "max",
                 "value": 2,
                 "field": "selections",
                 "scope": "parent",
@@ -20199,6 +23193,128 @@
                 "field": "selections",
                 "scope": "roster",
                 "childId": "esoterist",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Planetfall Speartip",
+        "id": "planetfall-speartip",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Auxillary",
+            "hidden": false,
+            "id": "c31f-6e49-70aa-120b",
+            "targetId": "auxillary-category",
+            "type": "categoryEntry"
+          },
+          {
+            "name": "Prime",
+            "hidden": false,
+            "id": "4dff-4843-0db4-b344",
+            "targetId": "prime-category",
+            "type": "categoryEntry",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "4e2e-a4fa-1387-897a",
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "name": "Veteran Assault Squad",
+            "hidden": false,
+            "id": "449d-1daf-b0ab-4381",
+            "targetId": "da23-50df-0b2c-8426",
+            "type": "categoryEntry",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "76e2-4957-20a2-19f7"
+              }
+            ]
+          },
+          {
+            "name": "Praetorian Command Squad with Jump Pack",
+            "hidden": false,
+            "id": "d7f7-d52e-793e-50bd",
+            "targetId": "56be-0061-f7e1-f2a4",
+            "type": "categoryEntry",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "cfcc-369e-8cbb-e37e"
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 0,
+            "field": "forces",
+            "scope": "roster",
+            "shared": true,
+            "id": "157d-1d42-449c-cb5e-min"
+          },
+          {
+            "type": "max",
+            "value": 0,
+            "field": "forces",
+            "scope": "roster",
+            "shared": true,
+            "id": "157d-1d42-449c-cb5e-max"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "157d-1d42-449c-cb5e-min",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "master-of-descent",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
+          },
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "157d-1d42-449c-cb5e-max",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "master-of-descent",
                 "shared": true,
                 "roundUp": false,
                 "includeChildSelections": true,
@@ -20340,13 +23456,13 @@
               {
                 "value": 1,
                 "repeats": 1,
-                "field": "selections",
+                "field": "forces",
                 "scope": "roster",
                 "childId": "recon-demi-company",
                 "shared": true,
                 "roundUp": false,
-                "includeChildSelections": true,
-                "includeChildForces": true
+                "includeChildSelections": false,
+                "includeChildForces": false
               }
             ]
           }
@@ -20414,17 +23530,27 @@
               {
                 "value": 1,
                 "repeats": 1,
-                "field": "selections",
+                "field": "forces",
                 "scope": "roster",
                 "childId": "storm-battery-unit",
-                "shared": true,
+                "shared": false,
                 "roundUp": false,
-                "includeChildSelections": true,
+                "includeChildSelections": false,
                 "includeChildForces": true
               }
             ]
           }
         ]
+      },
+      {
+        "name": "Praetorian Command Squad with Jump Pack",
+        "id": "56be-0061-f7e1-f2a4",
+        "hidden": false
+      },
+      {
+        "name": "Veteran Assault Squad",
+        "id": "da23-50df-0b2c-8426",
+        "hidden": false
       }
     ],
     "catalogueLinks": [
@@ -20550,294 +23676,6 @@
         "hidden": false,
         "publicationId": "liber-astartes",
         "description": "A Model with this Special Rule ignores Penetrating Hits as long as it still has active void shields. \nA Model with this Special Rule has a number of void shields equal to the value of X. While a Model with this Special Rule still has void shields, each time that Model suffers a Penetrating Hit as a result of a Shooting Attack, reduce the Damage of that Penetrating Hit to ‘0’ and reduce the number of void shields this Model has by 1. If the number of void shields a Model has is reduced to 0, this Special Rule has no further effect during that battle. "
-      }
-    ],
-    "selectionEntries": [
-      {
-        "type": "unit",
-        "import": true,
-        "name": "Rhino",
-        "hidden": false,
-        "id": "rhino",
-        "categoryLinks": [
-          {
-            "targetId": "transport-category",
-            "id": "e4a6-04af-1b1f-b936",
-            "primary": true,
-            "name": "Transport"
-          },
-          {
-            "targetId": "vehicle",
-            "id": "360b-31d2-cda9-3490",
-            "primary": false,
-            "name": "Vehicle"
-          },
-          {
-            "targetId": "auto-repair-4",
-            "id": "ef9c-42d5-a901-1748",
-            "primary": false,
-            "name": "Auto-repair 4+"
-          },
-          {
-            "targetId": "transport-tag-category",
-            "id": "aabf-e538-d1f2-6d42",
-            "primary": false,
-            "name": "Vehicle (Transport)"
-          },
-          {
-            "targetId": "light-transport-category",
-            "id": "7951-d7ea-9f44-6395",
-            "primary": false,
-            "name": "Light Transport"
-          },
-          {
-            "targetId": "smokescreen",
-            "id": "203a-6ea8-e48c-2be0",
-            "primary": false,
-            "name": "Smokescreen"
-          }
-        ],
-        "costs": [
-          {
-            "name": "Points",
-            "typeId": "points",
-            "value": 50
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Legion Pintle Weapons",
-            "hidden": false,
-            "id": "af36-965e-acc7-85ee",
-            "type": "selectionEntryGroup",
-            "targetId": "legion-pintle-weapons"
-          },
-          {
-            "import": true,
-            "name": "This Model may have one of each of the following selected for it",
-            "hidden": false,
-            "id": "be8c-dacd-6318-8927",
-            "type": "selectionEntryGroup",
-            "targetId": "vehicle-upgrades"
-          }
-        ]
-      },
-      {
-        "type": "unit",
-        "import": true,
-        "name": "Rapier Battery",
-        "hidden": false,
-        "id": "rapier-battery-unit",
-        "categoryLinks": [
-          {
-            "targetId": "support-category",
-            "id": "1952-8b6f-c29d-cad3",
-            "primary": false,
-            "name": "Support"
-          },
-          {
-            "targetId": "rapier-battery-category",
-            "id": "c0de-64ad-e64c-f46d",
-            "primary": true,
-            "name": "Rapier Battery"
-          },
-          {
-            "targetId": "support-unit-1",
-            "id": "423e-1346-a7d4-6cb8",
-            "primary": false,
-            "name": "Support Unit (1)"
-          }
-        ],
-        "selectionEntries": [
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Rapier Crew",
-            "hidden": false,
-            "id": "astartes-rapier-crew",
-            "page": "67",
-            "publicationId": "liber-astartes",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 40
-              }
-            ],
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "ff30-0b90-5a93-3311"
-              },
-              {
-                "type": "max",
-                "value": 4,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "35b3-c749-a6f6-2ce3"
-              }
-            ],
-            "selectionEntryGroups": [
-              {
-                "name": "Each Rapier Carrier in this Unit may have its Gravis heavy bolter battery exchanged for one of the following: ",
-                "id": "rapier-battery-weapon",
-                "hidden": false,
-                "selectionEntries": [
-                  {
-                    "type": "upgrade",
-                    "import": true,
-                    "name": "Gravis Heavy Bolter Battery",
-                    "hidden": false,
-                    "id": "gravis-heavy-bolter-battery"
-                  },
-                  {
-                    "type": "upgrade",
-                    "import": true,
-                    "name": "Laser destroyer",
-                    "hidden": false,
-                    "id": "rapier-laser-destroyer",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "points",
-                        "value": 25
-                      }
-                    ]
-                  },
-                  {
-                    "type": "upgrade",
-                    "import": true,
-                    "name": "Graviton cannon",
-                    "hidden": false,
-                    "id": "rapier-graviton-cannon",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "points",
-                        "value": 20
-                      }
-                    ]
-                  },
-                  {
-                    "type": "upgrade",
-                    "import": true,
-                    "name": "Quad launcher",
-                    "hidden": false,
-                    "id": "rapier-quad-launcher",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "points",
-                        "value": 20
-                      }
-                    ],
-                    "selectionEntries": [
-                      {
-                        "type": "upgrade",
-                        "import": true,
-                        "name": "Phosphex canister shot",
-                        "hidden": false,
-                        "id": "0d50-1ee2-1f8f-48d5",
-                        "costs": [
-                          {
-                            "name": "Points",
-                            "typeId": "points",
-                            "value": 15
-                          }
-                        ],
-                        "constraints": [
-                          {
-                            "type": "max",
-                            "value": 0,
-                            "field": "selections",
-                            "scope": "parent",
-                            "shared": true,
-                            "id": "7e47-8d6c-0a97-4a08"
-                          }
-                        ],
-                        "modifiers": [
-                          {
-                            "type": "set",
-                            "value": 1,
-                            "field": "7e47-8d6c-0a97-4a08",
-                            "conditions": [
-                              {
-                                "type": "atLeast",
-                                "value": 1,
-                                "field": "selections",
-                                "scope": "parent",
-                                "childId": "any",
-                                "shared": true
-                              }
-                            ]
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 0,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "d658-2368-0c6a-c114-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 0,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "d658-2368-0c6a-c114-max"
-                  }
-                ],
-                "modifiers": [
-                  {
-                    "type": "increment",
-                    "value": 1,
-                    "field": "d658-2368-0c6a-c114-min",
-                    "repeats": [
-                      {
-                        "value": 1,
-                        "repeats": 1,
-                        "field": "selections",
-                        "scope": "fbda-ded2-60e6-9a78",
-                        "childId": "astartes-rapier-crew",
-                        "shared": true,
-                        "roundUp": false
-                      }
-                    ]
-                  },
-                  {
-                    "type": "increment",
-                    "value": 1,
-                    "field": "d658-2368-0c6a-c114-max",
-                    "repeats": [
-                      {
-                        "value": 1,
-                        "repeats": 1,
-                        "field": "selections",
-                        "scope": "fbda-ded2-60e6-9a78",
-                        "childId": "astartes-rapier-crew",
-                        "shared": true,
-                        "roundUp": false
-                      }
-                    ]
-                  }
-                ]
-              }
-            ]
-          }
-        ]
       }
     ]
   }
