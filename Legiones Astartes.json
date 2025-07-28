@@ -17643,164 +17643,14 @@
             "value": 85
           }
         ],
-        "selectionEntryGroups": [
-          {
-            "name": "• This Model may have up to two of the following Psychic Disciplines selected for it:",
-            "id": "psycho-powers",
-            "hidden": false,
-            "selectionEntries": [
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Biomancy",
-                "hidden": false,
-                "id": "Biomancy",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "points",
-                    "value": 20
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "43ef-ec88-acec-235b"
-                  }
-                ]
-              },
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Pyromancy",
-                "hidden": false,
-                "id": "Pyromancy",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "points",
-                    "value": 10
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "7ff9-a603-733a-5f49"
-                  }
-                ]
-              },
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Telekinesis",
-                "hidden": false,
-                "id": "Telekinesis",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "points",
-                    "value": 20
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "4ee2-1bd5-71b1-d9af"
-                  }
-                ]
-              },
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Divination",
-                "hidden": false,
-                "id": "Divination",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "points",
-                    "value": 20
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "67d0-4fcf-0a77-d0fb"
-                  }
-                ]
-              },
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Thaumaturgy",
-                "hidden": false,
-                "id": "Thaumaturgy",
-                "comment": "Yes, it is free.",
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "a3d8-c2c6-8b30-ab2e"
-                  }
-                ]
-              },
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Telepathy",
-                "hidden": false,
-                "id": "Telepathy",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "points",
-                    "value": 10
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "2ec6-060f-a46e-da49"
-                  }
-                ]
-              }
-            ],
-            "constraints": [
-              {
-                "type": "max",
-                "value": 2,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "ff46-0ca0-3d71-6031"
-              }
-            ]
-          }
-        ],
         "entryLinks": [
+          {
+            "targetId": "psycho-powers",
+            "id": "503f-e450-408a-1d39",
+            "type": "selectionEntryGroup",
+            "name": "• This Model may have up to two of the following Psychic Disciplines selected for it:",
+            "hidden": false
+          },
           {
             "import": true,
             "name": "Legion Pistols",
@@ -23211,15 +23061,13 @@
             "name": "Auxillary",
             "hidden": false,
             "id": "c31f-6e49-70aa-120b",
-            "targetId": "auxillary-category",
-            "type": "categoryEntry"
+            "targetId": "auxillary-category"
           },
           {
             "name": "Prime",
             "hidden": false,
             "id": "4dff-4843-0db4-b344",
             "targetId": "prime-category",
-            "type": "categoryEntry",
             "constraints": [
               {
                 "type": "max",
@@ -23237,7 +23085,6 @@
             "hidden": false,
             "id": "449d-1daf-b0ab-4381",
             "targetId": "da23-50df-0b2c-8426",
-            "type": "categoryEntry",
             "constraints": [
               {
                 "type": "max",
@@ -23254,7 +23101,6 @@
             "hidden": false,
             "id": "d7f7-d52e-793e-50bd",
             "targetId": "56be-0061-f7e1-f2a4",
-            "type": "categoryEntry",
             "constraints": [
               {
                 "type": "max",
@@ -23612,70 +23458,6 @@
             "$text": "I"
           }
         ]
-      }
-    ],
-    "sharedRules": [
-      {
-        "name": "Firestorm",
-        "id": "firestorm",
-        "hidden": false,
-        "description": "A Model with this Special Rule does not have to make Volley Attacks as Snap Shots.\nWhen a Model with this Special Rule makes Volley Attacks, it is not required to fire Snap Shots. In addition, after making Volley Attacks in Step 4 of the Charge Procedure, a Unit containing any Models with this Special Rule is not required to make a Charge Roll in Step 5. If the Controlling Player chooses not to make a Charge Roll in Step 5 of the Charge Procedure then the Charge Procedure ends immediately. ",
-        "publicationId": "liber-astartes"
-      },
-      {
-        "name": "Melta (X)",
-        "id": "melta",
-        "hidden": false,
-        "publicationId": "liber-astartes",
-        "description": "This Special Rule increases the amount of Damage against Vehicles when Shooting Attacks are made\nwithin a specific range.\nIf at least one Model in a Unit with the Vehicle Type that is targeted by a Shooting Attack made by a Model using a Weapon with this Special Rule is within a range equal to\nor less than the value specified by X, that attack has the Armourbane Special Rule and the Damage of Penetrating Hits caused by that attack is doubled. \n\n"
-      },
-      {
-        "name": "Aflame",
-        "id": "aflame",
-        "hidden": false,
-        "publicationId": "liber-astartes",
-        "description": "A Weapon with this Special Rule causes additional modifiers to a Target's Leadership Characteristic,\nIf a Melee Attack made for a Weapon or Mode] with this Special Rule inflicts one or more wounds on a Target Unit, regardless of whether any Damage is inflicted until the end of the Phase, that Unit is considered to be ‘flame’. If the Controlling Player of a Unit that is aflame is required to make a Leadership Check during that Phase for a Combat that includes that Unit, the value of x on this Special Rule is applied as an additional negative modifier to the Leadership Characteristic being used for that Check. "
-      },
-      {
-        "name": "Overload (X)",
-        "id": "overload",
-        "hidden": false,
-        "publicationId": "liber-astartes"
-      },
-      {
-        "name": "Medic (X)",
-        "id": "medic",
-        "hidden": false,
-        "description": "This Special Rule determines the difficulty of any Recovery Tests made due to other Reactions or Special Rules. \nIf a Unit includes one or more Models with the Medic Special Rule, then certain other Special Rules, or Gambits may allow the Controlling Player Recovery Tests for other Models in the same that the Medic (X) Special Rule does not allow Tests to be made, but simply establishes the Target Number for such Tests - Recovery Tests may\nmade if another Special Rule, Reaction or Gambit allows them (see, for example, the Medic Advanced Reaction).",
-        "publicationId": "liber-astartes"
-      },
-      {
-        "name": "Recovery Tests",
-        "id": "recovery-tests",
-        "hidden": false,
-        "publicationId": "liber-astartes",
-        "description": " A Recovery Test is made when one or m Wounds are allocated to a Model, and is resolved rolling a Dice and comparing the result to.\nIf there is more than one variant of the Special Rule present in a Unit, then the Player chooses which is used to determine Target Number. If the Recovery Test is success single Unsaved Wound allocated the its Damage reduced by 1(to a minimum of 0) If a Recovery Test is failed, then any Unsaved Wounds allocated to the Model are resolved as normal."
-      },
-      {
-        "name": "Shot Selector",
-        "id": "shot-selector",
-        "hidden": false,
-        "publicationId": "liber-astartes",
-        "description": "Weapons with this Special Rule gain one optional additional Special Rule when used to attack.\nWhen a Shooting Attack is made that include Weapons with this Special Rule, at the start of Step 3 of the Shooting Attack procedure, the Attacking Player can select one of the following Special Rules for all Weapons with this Special Rules to gain until the end of this Shooting Attack:\n- Panic (1)\n- Breaching (4+)\n- Suppressive (2) \n\n"
-      },
-      {
-        "name": "Slow and Purposeful",
-        "id": "slow-and-purposeful-rule",
-        "hidden": false,
-        "publicationId": "liber-astartes",
-        "description": "Models with this Special Rule cannot Pursue fleeing enemy Units.\nIn Step 4 of the Resolution Sub-Phase, a Player that has won Combat cannot choose for a Unit that includes and Models with this Special Rule to Pursue, and must instead select another eligible option for that Unit."
-      },
-      {
-        "name": "Void Shields",
-        "id": "void-shields",
-        "hidden": false,
-        "publicationId": "liber-astartes",
-        "description": "A Model with this Special Rule ignores Penetrating Hits as long as it still has active void shields. \nA Model with this Special Rule has a number of void shields equal to the value of X. While a Model with this Special Rule still has void shields, each time that Model suffers a Penetrating Hit as a result of a Shooting Attack, reduce the Damage of that Penetrating Hit to ‘0’ and reduce the number of void shields this Model has by 1. If the number of void shields a Model has is reduced to 0, this Special Rule has no further effect during that battle. "
       }
     ]
   }
