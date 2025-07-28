@@ -17643,164 +17643,14 @@
             "value": 85
           }
         ],
-        "selectionEntryGroups": [
-          {
-            "name": "• This Model may have up to two of the following Psychic Disciplines selected for it:",
-            "id": "psycho-powers",
-            "hidden": false,
-            "selectionEntries": [
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Biomancy",
-                "hidden": false,
-                "id": "Biomancy",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "points",
-                    "value": 20
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "43ef-ec88-acec-235b"
-                  }
-                ]
-              },
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Pyromancy",
-                "hidden": false,
-                "id": "Pyromancy",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "points",
-                    "value": 10
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "7ff9-a603-733a-5f49"
-                  }
-                ]
-              },
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Telekinesis",
-                "hidden": false,
-                "id": "Telekinesis",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "points",
-                    "value": 20
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "4ee2-1bd5-71b1-d9af"
-                  }
-                ]
-              },
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Divination",
-                "hidden": false,
-                "id": "Divination",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "points",
-                    "value": 20
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "67d0-4fcf-0a77-d0fb"
-                  }
-                ]
-              },
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Thaumaturgy",
-                "hidden": false,
-                "id": "Thaumaturgy",
-                "comment": "Yes, it is free.",
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "a3d8-c2c6-8b30-ab2e"
-                  }
-                ]
-              },
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Telepathy",
-                "hidden": false,
-                "id": "Telepathy",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "points",
-                    "value": 10
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "2ec6-060f-a46e-da49"
-                  }
-                ]
-              }
-            ],
-            "constraints": [
-              {
-                "type": "max",
-                "value": 2,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "ff46-0ca0-3d71-6031"
-              }
-            ]
-          }
-        ],
         "entryLinks": [
+          {
+            "targetId": "psycho-powers",
+            "id": "503f-e450-408a-1d39",
+            "type": "selectionEntryGroup",
+            "name": "• This Model may have up to two of the following Psychic Disciplines selected for it:",
+            "hidden": false
+          },
           {
             "import": true,
             "name": "Legion Pistols",
@@ -23211,15 +23061,13 @@
             "name": "Auxillary",
             "hidden": false,
             "id": "c31f-6e49-70aa-120b",
-            "targetId": "auxillary-category",
-            "type": "categoryEntry"
+            "targetId": "auxillary-category"
           },
           {
             "name": "Prime",
             "hidden": false,
             "id": "4dff-4843-0db4-b344",
             "targetId": "prime-category",
-            "type": "categoryEntry",
             "constraints": [
               {
                 "type": "max",
@@ -23237,7 +23085,6 @@
             "hidden": false,
             "id": "449d-1daf-b0ab-4381",
             "targetId": "da23-50df-0b2c-8426",
-            "type": "categoryEntry",
             "constraints": [
               {
                 "type": "max",
@@ -23254,7 +23101,6 @@
             "hidden": false,
             "id": "d7f7-d52e-793e-50bd",
             "targetId": "56be-0061-f7e1-f2a4",
-            "type": "categoryEntry",
             "constraints": [
               {
                 "type": "max",
