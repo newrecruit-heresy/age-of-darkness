@@ -547,7 +547,17 @@
       {
         "name": "Titan",
         "id": "titan",
-        "hidden": false
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Titan",
+            "id": "f566-1650-ca50-368b",
+            "hidden": false,
+            "description": "The following Rules apply to all Models with the Titan Sub-Type:\n• Models with this Sub-Type are not affected in any way by Difficult Terrain or Dangerous Terrain, and may pass through Impassable Terrain as long as they do not end a Move on or within an area of Impassable Terrain.\n• When making multiple Shooting Attacks in the same Shooting Phase, a Model with this Sub-Type does not have to make all attacks as Snap Shots.\n• A Model with this Sub-Type is limited on when and which Reactions may be made for it, see page 71.\n• The Rules for applying Damage to a Model with this Sub-Type vary from those used with other Models with the Vehicle Type, see page 75. The Rules for Shooting Attacks and Combats that involve Titans are changed as noted on pages 73 and 75.\n•If a Model with this Sub-Type has a Transport Capacity, then it may transport any number of Units, so long as the number of Models in the transported Units does not exceed the Vehicle's Transport Capacity.\n•A Model with this Sub-Type cannot gain any Tactical Statuses or Cybertheurgic Statuses.\n•A Model with this Sub-Type cannot be affected by any Psychic Weapon, Psychic Reaction or Psychic Power.\n• A Model with this Sub-Type may not be targeted by the Battlesmith (X) Special Rule.",
+            "publicationId": "liber-questoris",
+            "page": "70"
+          }
+        ]
       },
       {
         "name": "Implacable Advance",
@@ -3229,7 +3239,33 @@
       {
         "name": "Titan",
         "id": "d860-f22b-3660-6175",
-        "hidden": false
+        "hidden": false,
+        "characteristicTypes": [
+          {
+            "name": "Movement (M)",
+            "id": "91d5-bac9-5631-6ba5"
+          },
+          {
+            "name": "Ballistic Skill (BS)",
+            "id": "0238-5094-0919-6e9b"
+          },
+          {
+            "name": "Primary Armour",
+            "id": "5e7a-d9a9-69be-3e26"
+          },
+          {
+            "name": "Exposed Armour",
+            "id": "cce2-2c8e-f155-b91a"
+          },
+          {
+            "name": "Hull Points",
+            "id": "7410-6cdc-bdbf-e41b"
+          },
+          {
+            "name": "Transport Capacity",
+            "id": "c0c2-6474-5aec-5d0c"
+          }
+        ]
       },
       {
         "name": "Weapon",
@@ -6254,6 +6290,14 @@
         "hidden": false,
         "publicationId": "liber-astartes",
         "description": "A Weapon with this Special Rule causes additional modifiers to a Target's Leadership Characteristic,\nIf a Melee Attack made for a Weapon or Mode] with this Special Rule inflicts one or more wounds on a Target Unit, regardless of whether any Damage is inflicted until the end of the Phase, that Unit is considered to be ‘flame’. If the Controlling Player of a Unit that is aflame is required to make a Leadership Check during that Phase for a Combat that includes that Unit, the value of x on this Special Rule is applied as an additional negative modifier to the Leadership Characteristic being used for that Check. "
+      },
+      {
+        "name": "Shieldbreaker (X)",
+        "id": "eaf0-a756-7a27-b7c1",
+        "hidden": false,
+        "description": "A Weapon with this Special Rule can collapse more than one Void Shield with a single attack.\n\n\nA Weapon with this Special Rule that successfully collapses a void shield (either from the Void Shields (X) or Titan Void Shield Array (X) Special Rules), collapses a number of void shields equal to the value of X attached to the specific variant of this Special Rule that it has instead of just 1",
+        "publicationId": "liber-questoris",
+        "page": "103"
       }
     ]
   }
