@@ -1,12 +1,3787 @@
 {
-    "catalogue": {
-        "library": false,
-        "id": "5923-1098-1490-4c6f",
-        "name": "Collegia Titanica",
-        "gameSystemId": "sys-41d4-b033-8ca9-9bb0",
-        "gameSystemRevision": 1,
-        "revision": 1,
-        "battleScribeVersion": "2.03",
-        "type": "catalogue"
-    }
+  "catalogue": {
+    "library": false,
+    "id": "5923-1098-1490-4c6f",
+    "name": "Collegia Titanica",
+    "gameSystemId": "sys-41d4-b033-8ca9-9bb0",
+    "gameSystemRevision": 1,
+    "revision": 1,
+    "battleScribeVersion": "2.03",
+    "type": "catalogue",
+    "sharedSelectionEntries": [
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Apocalypse Missile Launcher",
+        "hidden": false,
+        "id": "6b1e-6b3e-2338-1adc",
+        "profiles": [
+          {
+            "name": "Apocalypse Missile Launcher",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "221d-8f3d-91c2-52a2",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "150"
+              },
+              {
+                "name": "Fire Power (FP)",
+                "typeId": "fire-power",
+                "$text": "1"
+              },
+              {
+                "name": "Range Strength (RS)",
+                "typeId": "range-strength",
+                "$text": "9"
+              },
+              {
+                "name": "Melee Initiative Modifier (IM)",
+                "typeId": "weapon-initiative",
+                "$text": ""
+              },
+              {
+                "name": "Melee Attacks Modifier (AM)",
+                "typeId": "weapon-attacks",
+                "$text": ""
+              },
+              {
+                "name": "Melee Strength Modifier (SM)",
+                "typeId": "melee-strength",
+                "$text": ""
+              },
+              {
+                "name": "Armour Penetration (AP)",
+                "$text": "3"
+              },
+              {
+                "name": "Damage (D)",
+                "typeId": "damage",
+                "$text": "4"
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "07c0-79b5-e264-4685",
+            "id": "d739-38de-3b91-feaf",
+            "primary": false,
+            "name": "Blast (10\")"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Titan Laser Blaster",
+        "hidden": false,
+        "id": "f732-14b0-d3b5-2685",
+        "profiles": [
+          {
+            "name": "Titan Laser Blaster",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "1643-a763-625c-7e57",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "82"
+              },
+              {
+                "name": "Fire Power (FP)",
+                "typeId": "fire-power",
+                "$text": "3"
+              },
+              {
+                "name": "Range Strength (RS)",
+                "typeId": "range-strength",
+                "$text": "10"
+              },
+              {
+                "name": "Melee Initiative Modifier (IM)",
+                "typeId": "weapon-initiative",
+                "$text": ""
+              },
+              {
+                "name": "Melee Attacks Modifier (AM)",
+                "typeId": "weapon-attacks",
+                "$text": ""
+              },
+              {
+                "name": "Melee Strength Modifier (SM)",
+                "typeId": "melee-strength",
+                "$text": ""
+              },
+              {
+                "name": "Armour Penetration (AP)",
+                "$text": "2"
+              },
+              {
+                "name": "Damage (D)",
+                "typeId": "damage",
+                "$text": "5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Mori quake cannon",
+        "hidden": false,
+        "id": "815f-3c64-523a-5431",
+        "profiles": [
+          {
+            "name": "Mori quake cannon",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "8b3f-8d72-2b39-17bd",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "150"
+              },
+              {
+                "name": "Fire Power (FP)",
+                "typeId": "fire-power",
+                "$text": "1"
+              },
+              {
+                "name": "Range Strength (RS)",
+                "typeId": "range-strength",
+                "$text": "12"
+              },
+              {
+                "name": "Melee Initiative Modifier (IM)",
+                "typeId": "weapon-initiative",
+                "$text": ""
+              },
+              {
+                "name": "Melee Attacks Modifier (AM)",
+                "typeId": "weapon-attacks",
+                "$text": ""
+              },
+              {
+                "name": "Melee Strength Modifier (SM)",
+                "typeId": "melee-strength",
+                "$text": ""
+              },
+              {
+                "name": "Armour Penetration (AP)",
+                "$text": "2"
+              },
+              {
+                "name": "Damage (D)",
+                "typeId": "damage",
+                "$text": "10"
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "c86d-f162-14c7-3072",
+            "id": "9569-0159-3721-59e8",
+            "primary": false,
+            "name": "Blast (5\")"
+          },
+          {
+            "targetId": "c8bd-a69e-d7ac-b22a",
+            "id": "771e-9ec7-efd3-52e1",
+            "primary": false,
+            "name": "Macro-auspex"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Belicosa volcano cannon",
+        "hidden": false,
+        "id": "3b98-f7b4-55e1-5291",
+        "profiles": [
+          {
+            "name": "Belicosa volcano cannon",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "989b-c072-0a39-2c19",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "150"
+              },
+              {
+                "name": "Fire Power (FP)",
+                "typeId": "fire-power",
+                "$text": "1"
+              },
+              {
+                "name": "Range Strength (RS)",
+                "typeId": "range-strength",
+                "$text": "13"
+              },
+              {
+                "name": "Melee Initiative Modifier (IM)",
+                "typeId": "weapon-initiative",
+                "$text": ""
+              },
+              {
+                "name": "Melee Attacks Modifier (AM)",
+                "typeId": "weapon-attacks",
+                "$text": ""
+              },
+              {
+                "name": "Melee Strength Modifier (SM)",
+                "typeId": "melee-strength",
+                "$text": ""
+              },
+              {
+                "name": "Armour Penetration (AP)",
+                "$text": "2"
+              },
+              {
+                "name": "Damage (D)",
+                "typeId": "damage",
+                "$text": "12"
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "3a7f-1616-3fa9-a71e",
+            "id": "910e-f1e3-4870-f7c1",
+            "primary": false,
+            "name": "Blast (3\")"
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Warlord Titan",
+        "hidden": false,
+        "id": "warlord-titan",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 3000
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Warlord Titan Head",
+            "typeId": "d860-f22b-3660-6175",
+            "typeName": "Titan",
+            "hidden": false,
+            "id": "8a5e-dc7c-8788-4d1c",
+            "page": "66",
+            "publicationId": "liber-questoris",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "91d5-bac9-5631-6ba5",
+                "$text": "-"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "0238-5094-0919-6e9b",
+                "$text": "-"
+              },
+              {
+                "name": "Primary Armour",
+                "typeId": "5e7a-d9a9-69be-3e26",
+                "$text": "14"
+              },
+              {
+                "name": "Exposed Armour",
+                "typeId": "cce2-2c8e-f155-b91a",
+                "$text": "12"
+              },
+              {
+                "name": "Hull Points",
+                "typeId": "7410-6cdc-bdbf-e41b",
+                "$text": "14"
+              },
+              {
+                "name": "Transport Capacity",
+                "typeId": "c0c2-6474-5aec-5d0c",
+                "$text": "-"
+              }
+            ]
+          },
+          {
+            "name": "Warlord Titan Carapace",
+            "typeId": "d860-f22b-3660-6175",
+            "typeName": "Titan",
+            "hidden": false,
+            "id": "2a74-6517-dd55-ee48",
+            "page": "66",
+            "publicationId": "liber-questoris",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "91d5-bac9-5631-6ba5",
+                "$text": "-"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "0238-5094-0919-6e9b",
+                "$text": "3"
+              },
+              {
+                "name": "Primary Armour",
+                "typeId": "5e7a-d9a9-69be-3e26",
+                "$text": "15"
+              },
+              {
+                "name": "Exposed Armour",
+                "typeId": "cce2-2c8e-f155-b91a",
+                "$text": "14"
+              },
+              {
+                "name": "Hull Points",
+                "typeId": "7410-6cdc-bdbf-e41b",
+                "$text": "18"
+              },
+              {
+                "name": "Transport Capacity",
+                "typeId": "c0c2-6474-5aec-5d0c",
+                "$text": "-"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "4",
+                "field": "0238-5094-0919-6e9b",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "4ad5-3a53-9e2a-186c",
+                    "shared": true
+                  }
+                ]
+              },
+              {
+                "type": "set",
+                "value": "5",
+                "field": "0238-5094-0919-6e9b",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "ffa0-3c50-3307-16e0",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Warlord Titan Arms",
+            "typeId": "d860-f22b-3660-6175",
+            "typeName": "Titan",
+            "hidden": false,
+            "id": "7932-5da0-e99d-e3c9",
+            "page": "66",
+            "publicationId": "liber-questoris",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "91d5-bac9-5631-6ba5",
+                "$text": "-"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "0238-5094-0919-6e9b",
+                "$text": "3"
+              },
+              {
+                "name": "Primary Armour",
+                "typeId": "5e7a-d9a9-69be-3e26",
+                "$text": "14"
+              },
+              {
+                "name": "Exposed Armour",
+                "typeId": "cce2-2c8e-f155-b91a",
+                "$text": "12"
+              },
+              {
+                "name": "Hull Points",
+                "typeId": "7410-6cdc-bdbf-e41b",
+                "$text": "14"
+              },
+              {
+                "name": "Transport Capacity",
+                "typeId": "c0c2-6474-5aec-5d0c",
+                "$text": "-"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "4",
+                "field": "0238-5094-0919-6e9b",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "4ad5-3a53-9e2a-186c",
+                    "shared": true
+                  }
+                ]
+              },
+              {
+                "type": "set",
+                "value": "5",
+                "field": "0238-5094-0919-6e9b",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "ffa0-3c50-3307-16e0",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Warlord Titan Legs",
+            "typeId": "d860-f22b-3660-6175",
+            "typeName": "Titan",
+            "hidden": false,
+            "id": "65eb-ce6d-b04e-048a",
+            "page": "66",
+            "publicationId": "liber-questoris",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "91d5-bac9-5631-6ba5",
+                "$text": "12"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "0238-5094-0919-6e9b",
+                "$text": "-"
+              },
+              {
+                "name": "Primary Armour",
+                "typeId": "5e7a-d9a9-69be-3e26",
+                "$text": "15"
+              },
+              {
+                "name": "Exposed Armour",
+                "typeId": "cce2-2c8e-f155-b91a",
+                "$text": "14"
+              },
+              {
+                "name": "Hull Points",
+                "typeId": "7410-6cdc-bdbf-e41b",
+                "$text": "16"
+              },
+              {
+                "name": "Transport Capacity",
+                "typeId": "c0c2-6474-5aec-5d0c",
+                "$text": "-"
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "battle",
+            "id": "cf93-4ac6-96c8-b59a",
+            "primary": false,
+            "name": "Battle"
+          },
+          {
+            "targetId": "0258-f5e4-8efd-0a0a",
+            "id": "603e-6a0d-4b56-20b8",
+            "primary": false,
+            "name": "Repair Crew (D6+1)"
+          },
+          {
+            "targetId": "56b8-b902-9d82-1064",
+            "id": "098b-22a7-d2b8-f60f",
+            "primary": false,
+            "name": "Titan War Horn (4)"
+          },
+          {
+            "targetId": "7dac-c6b9-bd6f-02e8",
+            "id": "f9b7-5d65-34ea-f4ad",
+            "primary": false,
+            "name": "Reinforced Structure (3)"
+          },
+          {
+            "targetId": "68ae-f681-b691-90fb",
+            "id": "57e5-4a45-6bd4-ef74",
+            "primary": false,
+            "name": "Titan Void Shield Array (8)"
+          },
+          {
+            "targetId": "lord-of-war-category",
+            "id": "94ef-7473-88d8-76c0",
+            "primary": true,
+            "name": "Lord of War"
+          },
+          {
+            "targetId": "titan",
+            "id": "16fd-9f99-3acf-a4a6",
+            "primary": false,
+            "name": "Titan"
+          },
+          {
+            "targetId": "vehicle",
+            "id": "3344-ff11-0cc0-13c2",
+            "primary": false,
+            "name": "Vehicle"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "[Crew]",
+            "hidden": false,
+            "id": "198c-83f0-84d2-8cb3",
+            "type": "selectionEntryGroup",
+            "targetId": "d49f-9744-ad90-fa56"
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Arm Mounted",
+            "id": "097e-27dc-9760-557a",
+            "hidden": false,
+            "comment": "\n\n",
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Macro-gatling blaster",
+                "hidden": false,
+                "id": "5769-97e9-1162-4465",
+                "profiles": [
+                  {
+                    "name": "Macro-gatling blaster",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "ac83-59ab-7f32-9354",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "96"
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": "5"
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": "10"
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "5"
+                      }
+                    ]
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "targetId": "armourbane-category",
+                    "id": "f858-b26e-20cc-79a6",
+                    "primary": false,
+                    "name": "Armourbane"
+                  },
+                  {
+                    "targetId": "c8bd-a69e-d7ac-b22a",
+                    "id": "80e2-712f-85db-39a2",
+                    "primary": false,
+                    "name": "Macro-auspex"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Sunfury plasma annihilator",
+                "hidden": false,
+                "id": "c191-86cf-4df4-7509",
+                "profiles": [
+                  {
+                    "name": "Sunfury plasma annihilator maximal",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "4c25-578e-1992-6bd2",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "82"
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": "12"
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "9"
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "Powerhungery",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Sunfury plasma annihilator sustained",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "e870-cf60-f98f-fe7f",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "82"
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": "9"
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "6"
+                      }
+                    ]
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "targetId": "c8bd-a69e-d7ac-b22a",
+                    "id": "641b-bb81-2676-a075",
+                    "primary": false,
+                    "name": "Macro-auspex"
+                  },
+                  {
+                    "targetId": "c86d-f162-14c7-3072",
+                    "id": "81ef-f571-3518-032d",
+                    "primary": false,
+                    "name": "Blast (5\")"
+                  },
+                  {
+                    "targetId": "10e2-3fc4-20cb-437b",
+                    "id": "59d6-0965-1952-975d",
+                    "primary": false,
+                    "name": "Blast (7\")"
+                  },
+                  {
+                    "targetId": "b8c5-8628-bd03-6c9d",
+                    "id": "b347-3241-0b7b-f9a7",
+                    "primary": false,
+                    "name": "Powerhungry"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Arioch power claw with an Arm Mounted Vulcan mega-bolter (these two Weapons count as a single selection)",
+                "hidden": false,
+                "id": "dafa-8c20-1cd8-5f03",
+                "profiles": [
+                  {
+                    "name": "Arioch power claw with an Arm Mounted Vulcan mega-bolter (these two Weapons count as a single selection)",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "7f9d-d6ad-d794-e64f",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "8"
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": "13"
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "12"
+                      }
+                    ]
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "targetId": "armourbane-category",
+                    "id": "279f-a7ca-6342-9c7f",
+                    "primary": false,
+                    "name": "Armourbane"
+                  }
+                ]
+              }
+            ],
+            "entryLinks": [
+              {
+                "targetId": "3b98-f7b4-55e1-5291",
+                "id": "739e-20e5-a45c-813a",
+                "type": "selectionEntry",
+                "name": "Belicosa volcano cannon",
+                "hidden": false,
+                "categoryLinks": [
+                  {
+                    "targetId": "c8bd-a69e-d7ac-b22a",
+                    "id": "3931-61c1-35df-adfc",
+                    "primary": false,
+                    "name": "Macro-auspex"
+                  },
+                  {
+                    "targetId": "3a7f-1616-3fa9-a71e",
+                    "id": "8513-c079-421a-a6f3",
+                    "primary": false,
+                    "name": "Blast (3\")"
+                  }
+                ]
+              },
+              {
+                "targetId": "815f-3c64-523a-5431",
+                "id": "efa3-f1d3-59c2-443e",
+                "type": "selectionEntry",
+                "name": "Mori quake cannon",
+                "hidden": false
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7325-126f-4b63-2450-min"
+              },
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7325-126f-4b63-2450-max"
+              }
+            ]
+          },
+          {
+            "name": "Carapace Mounted",
+            "id": "919f-ba54-859a-889c",
+            "hidden": false,
+            "entryLinks": [
+              {
+                "targetId": "f732-14b0-d3b5-2685",
+                "id": "32ee-b504-7c05-59bb",
+                "type": "selectionEntry",
+                "name": "Titan Laser Blasters",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": false,
+                    "id": "b19c-2ec0-0867-acf6",
+                    "includeChildSelections": true
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": 0,
+                    "field": "b19c-2ec0-0867-acf6",
+                    "conditions": [
+                      {
+                        "type": "greaterThan",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "919f-ba54-859a-889c",
+                        "childId": "fcbf-3062-88d7-edac",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "targetId": "6b1e-6b3e-2338-1adc",
+                "id": "fcbf-3062-88d7-edac",
+                "type": "selectionEntry",
+                "name": "Apocalypse Missile Launcher",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 2,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": false,
+                    "id": "6faf-e002-92ee-1905",
+                    "includeChildSelections": true
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "2",
+                    "field": "name",
+                    "conditions": [
+                      {
+                        "type": "greaterThan",
+                        "value": 0,
+                        "field": "selections",
+                        "scope": "919f-ba54-859a-889c",
+                        "childId": "0b21-195c-5c7d-4b68",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ],
+                    "affects": "self.entries"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "a2b0-5ec0-dc17-d5eb-min"
+              },
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "a2b0-5ec0-dc17-d5eb-max"
+              }
+            ],
+            "collective": false,
+            "comment": "\n",
+            "defaultSelectionEntryId": "fcbf-3062-88d7-edac"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Front mounted defensor bolt cannon",
+            "hidden": false,
+            "id": "49e4-130f-7548-5b86",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "24ef-f860-366b-c1bc-min"
+              },
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "24ef-f860-366b-c1bc-max"
+              }
+            ],
+            "infoLinks": [
+              {
+                "targetId": "7729-77d4-2829-64aa",
+                "id": "682f-3d52-22b3-b983",
+                "type": "profile",
+                "name": "Defensor bolt cannon",
+                "hidden": false
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Rear mounted defensor lascannon",
+            "hidden": false,
+            "id": "c649-f1a2-9c6c-bb6e",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f9dc-9b14-0361-0b3f-min"
+              },
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f9dc-9b14-0361-0b3f-max"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Rear mounted defensor lascannon",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "2d5f-3c62-6add-a46d",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": "48\""
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": "9"
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "2"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "armourbane-category",
+                "id": "76c8-b4ae-445a-649d",
+                "primary": false,
+                "name": "Armourbane"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Reaver Titan",
+        "hidden": false,
+        "id": "38fd-b6b3-6c32-dc16",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 1500
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Reaver Titan Head",
+            "typeId": "d860-f22b-3660-6175",
+            "typeName": "Titan",
+            "hidden": false,
+            "id": "9a9d-f2a8-8f64-cfd5",
+            "page": "66",
+            "publicationId": "liber-questoris",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "91d5-bac9-5631-6ba5",
+                "$text": "-"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "0238-5094-0919-6e9b",
+                "$text": "-"
+              },
+              {
+                "name": "Primary Armour",
+                "typeId": "5e7a-d9a9-69be-3e26",
+                "$text": "14"
+              },
+              {
+                "name": "Exposed Armour",
+                "typeId": "cce2-2c8e-f155-b91a",
+                "$text": "12"
+              },
+              {
+                "name": "Hull Points",
+                "typeId": "7410-6cdc-bdbf-e41b",
+                "$text": "10"
+              },
+              {
+                "name": "Transport Capacity",
+                "typeId": "c0c2-6474-5aec-5d0c",
+                "$text": "-"
+              }
+            ]
+          },
+          {
+            "name": "Reaver Titan Carapace",
+            "typeId": "d860-f22b-3660-6175",
+            "typeName": "Titan",
+            "hidden": false,
+            "id": "198e-f301-a673-1619",
+            "page": "66",
+            "publicationId": "liber-questoris",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "91d5-bac9-5631-6ba5",
+                "$text": "-"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "0238-5094-0919-6e9b",
+                "$text": "3"
+              },
+              {
+                "name": "Primary Armour",
+                "typeId": "5e7a-d9a9-69be-3e26",
+                "$text": "15"
+              },
+              {
+                "name": "Exposed Armour",
+                "typeId": "cce2-2c8e-f155-b91a",
+                "$text": "14"
+              },
+              {
+                "name": "Hull Points",
+                "typeId": "7410-6cdc-bdbf-e41b",
+                "$text": "12"
+              },
+              {
+                "name": "Transport Capacity",
+                "typeId": "c0c2-6474-5aec-5d0c",
+                "$text": "-"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "4",
+                "field": "0238-5094-0919-6e9b",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "4ad5-3a53-9e2a-186c",
+                    "shared": true
+                  }
+                ]
+              },
+              {
+                "type": "set",
+                "value": "5",
+                "field": "0238-5094-0919-6e9b",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "ffa0-3c50-3307-16e0",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Reaver Titan Arms",
+            "typeId": "d860-f22b-3660-6175",
+            "typeName": "Titan",
+            "hidden": false,
+            "id": "ea4f-3e44-f3be-4fab",
+            "page": "64",
+            "publicationId": "liber-questoris",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "91d5-bac9-5631-6ba5",
+                "$text": "-"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "0238-5094-0919-6e9b",
+                "$text": "3"
+              },
+              {
+                "name": "Primary Armour",
+                "typeId": "5e7a-d9a9-69be-3e26",
+                "$text": "14"
+              },
+              {
+                "name": "Exposed Armour",
+                "typeId": "cce2-2c8e-f155-b91a",
+                "$text": "12"
+              },
+              {
+                "name": "Hull Points",
+                "typeId": "7410-6cdc-bdbf-e41b",
+                "$text": "10"
+              },
+              {
+                "name": "Transport Capacity",
+                "typeId": "c0c2-6474-5aec-5d0c",
+                "$text": "-"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "4",
+                "field": "0238-5094-0919-6e9b",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "4ad5-3a53-9e2a-186c",
+                    "shared": true
+                  }
+                ]
+              },
+              {
+                "type": "set",
+                "value": "5",
+                "field": "0238-5094-0919-6e9b",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "ffa0-3c50-3307-16e0",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Reaver Titan Legs",
+            "typeId": "d860-f22b-3660-6175",
+            "typeName": "Titan",
+            "hidden": false,
+            "id": "967c-5fcc-a3d7-115d",
+            "page": "66",
+            "publicationId": "liber-questoris",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "91d5-bac9-5631-6ba5",
+                "$text": "15"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "0238-5094-0919-6e9b",
+                "$text": "-"
+              },
+              {
+                "name": "Primary Armour",
+                "typeId": "5e7a-d9a9-69be-3e26",
+                "$text": "15"
+              },
+              {
+                "name": "Exposed Armour",
+                "typeId": "cce2-2c8e-f155-b91a",
+                "$text": "14"
+              },
+              {
+                "name": "Hull Points",
+                "typeId": "7410-6cdc-bdbf-e41b",
+                "$text": "12"
+              },
+              {
+                "name": "Transport Capacity",
+                "typeId": "c0c2-6474-5aec-5d0c",
+                "$text": "-"
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "battle",
+            "id": "e497-c816-af0e-ec77",
+            "primary": false,
+            "name": "Battle"
+          },
+          {
+            "targetId": "lord-of-war-category",
+            "id": "87b9-9c8f-cba5-d5f8",
+            "primary": true,
+            "name": "Lord of War"
+          },
+          {
+            "targetId": "661b-5678-dc80-91f7",
+            "id": "2696-727d-0737-d58e",
+            "primary": false,
+            "name": "Titan War Horn (2)"
+          },
+          {
+            "targetId": "7f5c-30e3-5315-03e0",
+            "id": "a367-d7b0-5088-f393",
+            "primary": false,
+            "name": "Titan Void Shield Array (4)"
+          },
+          {
+            "targetId": "72f2-72bd-0917-5f1e",
+            "id": "8277-b6be-d554-366d",
+            "primary": false,
+            "name": "Repair Crew (D3+1)"
+          },
+          {
+            "targetId": "460b-806a-87c2-6e58",
+            "id": "bca2-3411-4b01-a13f",
+            "primary": false,
+            "name": "Reinforced Structure (1)"
+          },
+          {
+            "targetId": "titan",
+            "id": "5d5b-09e0-76c8-d701",
+            "primary": false,
+            "name": "Titan"
+          },
+          {
+            "targetId": "vehicle",
+            "id": "4c40-10fc-ff65-7c98",
+            "primary": false,
+            "name": "Vehicle"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "[Crew]",
+            "hidden": false,
+            "id": "ca29-531d-3469-afb1",
+            "type": "selectionEntryGroup",
+            "targetId": "d49f-9744-ad90-fa56"
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Arm Mounted",
+            "id": "e081-abef-9fb3-db3f",
+            "hidden": false,
+            "comment": "\n\n",
+            "entryLinks": [
+              {
+                "targetId": "61f8-6c4b-a4e9-3476",
+                "id": "93d8-dd3d-df92-66f2",
+                "type": "selectionEntry",
+                "name": "Vulcan mega-bolter",
+                "hidden": false
+              },
+              {
+                "import": true,
+                "name": "Titan Laser Blaster",
+                "hidden": false,
+                "id": "8dc0-cd29-0eed-2e82",
+                "type": "selectionEntry",
+                "targetId": "f732-14b0-d3b5-2685",
+                "categoryLinks": [
+                  {
+                    "targetId": "armourbane-category",
+                    "id": "cea0-7c92-6620-a517",
+                    "primary": false,
+                    "name": "Armourbane"
+                  }
+                ]
+              },
+              {
+                "targetId": "e3c2-9672-88c9-cfe3",
+                "id": "56e0-f0a8-c01b-5b68",
+                "type": "selectionEntry",
+                "name": "Titan Volcano Cannon",
+                "hidden": false
+              },
+              {
+                "targetId": "1758-478f-16a2-bc23",
+                "id": "da7e-c29a-3212-3741",
+                "type": "selectionEntry",
+                "name": "Titan Power Fist",
+                "hidden": false
+              },
+              {
+                "targetId": "969c-3740-ccad-3af3",
+                "id": "d1d3-8005-2c30-8ed4",
+                "type": "selectionEntry",
+                "name": "Titan Melta Cannon",
+                "hidden": false,
+                "categoryLinks": [
+                  {
+                    "targetId": "3ee8-2fb3-be52-2f3b",
+                    "id": "40a7-ed18-4a99-7cc9",
+                    "primary": false,
+                    "name": "Melta (48)"
+                  },
+                  {
+                    "targetId": "c86d-f162-14c7-3072",
+                    "id": "9095-03ba-6dfe-80ec",
+                    "primary": false,
+                    "name": "Blast (5\")"
+                  }
+                ]
+              },
+              {
+                "targetId": "9995-b740-59e2-600c",
+                "id": "0a46-0bbc-43b1-707d",
+                "type": "selectionEntry",
+                "name": "Titan Gatling Blaster",
+                "hidden": false,
+                "categoryLinks": [
+                  {
+                    "targetId": "armourbane-category",
+                    "id": "c0f8-45c2-e350-54d8",
+                    "primary": false,
+                    "name": "Armourbane"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "0206-6996-f407-4552-min"
+              },
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "0206-6996-f407-4552-max"
+              }
+            ]
+          },
+          {
+            "name": "Carapace Mounted",
+            "id": "963f-ed20-c110-2bf7",
+            "hidden": false,
+            "entryLinks": [
+              {
+                "targetId": "f732-14b0-d3b5-2685",
+                "id": "0b21-195c-5c7d-4b68",
+                "type": "selectionEntry",
+                "name": "Titan Laser Blaster",
+                "hidden": false
+              },
+              {
+                "targetId": "6b1e-6b3e-2338-1adc",
+                "id": "e5a8-9e51-6dde-4fe6",
+                "type": "selectionEntry",
+                "name": "Apocalypse Missile Launcher",
+                "hidden": false
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": false,
+                "id": "30b2-db37-f134-6a86-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": false,
+                "id": "30b2-db37-f134-6a86-max"
+              }
+            ],
+            "collective": false,
+            "comment": "\n",
+            "defaultSelectionEntryId": "fcbf-3062-88d7-edac"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Titan Gatling Blaster",
+        "hidden": false,
+        "id": "9995-b740-59e2-600c",
+        "profiles": [
+          {
+            "name": "Titan Gatling Blaster",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "8373-98e4-dddc-e409",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "82"
+              },
+              {
+                "name": "Fire Power (FP)",
+                "typeId": "fire-power",
+                "$text": "5"
+              },
+              {
+                "name": "Range Strength (RS)",
+                "typeId": "range-strength",
+                "$text": "9"
+              },
+              {
+                "name": "Melee Initiative Modifier (IM)",
+                "typeId": "weapon-initiative",
+                "$text": ""
+              },
+              {
+                "name": "Melee Attacks Modifier (AM)",
+                "typeId": "weapon-attacks",
+                "$text": ""
+              },
+              {
+                "name": "Melee Strength Modifier (SM)",
+                "typeId": "melee-strength",
+                "$text": ""
+              },
+              {
+                "name": "Armour Penetration (AP)",
+                "$text": "2"
+              },
+              {
+                "name": "Damage (D)",
+                "typeId": "damage",
+                "$text": "4"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Titan Melta Cannon",
+        "hidden": false,
+        "id": "969c-3740-ccad-3af3",
+        "profiles": [
+          {
+            "name": "Titan Melta Cannon",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "fdb1-ad79-fbe1-297e",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "60"
+              },
+              {
+                "name": "Fire Power (FP)",
+                "typeId": "fire-power",
+                "$text": "1"
+              },
+              {
+                "name": "Range Strength (RS)",
+                "typeId": "range-strength",
+                "$text": "12"
+              },
+              {
+                "name": "Melee Initiative Modifier (IM)",
+                "typeId": "weapon-initiative",
+                "$text": ""
+              },
+              {
+                "name": "Melee Attacks Modifier (AM)",
+                "typeId": "weapon-attacks",
+                "$text": ""
+              },
+              {
+                "name": "Melee Strength Modifier (SM)",
+                "typeId": "melee-strength",
+                "$text": ""
+              },
+              {
+                "name": "Armour Penetration (AP)",
+                "$text": "2"
+              },
+              {
+                "name": "Damage (D)",
+                "typeId": "damage",
+                "$text": "8"
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "c86d-f162-14c7-3072",
+            "id": "711c-bb8b-a5f8-3437",
+            "primary": false,
+            "name": "Blast (5\")"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Titan Power Fist",
+        "hidden": false,
+        "id": "1758-478f-16a2-bc23",
+        "profiles": [
+          {
+            "name": "Titan Power Fist",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "1126-da1b-8ae5-3779",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "6"
+              },
+              {
+                "name": "Fire Power (FP)",
+                "typeId": "fire-power",
+                "$text": "1"
+              },
+              {
+                "name": "Range Strength (RS)",
+                "typeId": "range-strength",
+                "$text": "12"
+              },
+              {
+                "name": "Melee Initiative Modifier (IM)",
+                "typeId": "weapon-initiative",
+                "$text": ""
+              },
+              {
+                "name": "Melee Attacks Modifier (AM)",
+                "typeId": "weapon-attacks",
+                "$text": ""
+              },
+              {
+                "name": "Melee Strength Modifier (SM)",
+                "typeId": "melee-strength",
+                "$text": ""
+              },
+              {
+                "name": "Armour Penetration (AP)",
+                "$text": "2"
+              },
+              {
+                "name": "Damage (D)",
+                "typeId": "damage",
+                "$text": "10"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Titan Volcano Cannon",
+        "hidden": false,
+        "id": "e3c2-9672-88c9-cfe3",
+        "profiles": [
+          {
+            "name": "Titan Volcano Cannon",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "10f6-18b9-957a-ad48",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "120"
+              },
+              {
+                "name": "Fire Power (FP)",
+                "typeId": "fire-power",
+                "$text": "1"
+              },
+              {
+                "name": "Range Strength (RS)",
+                "typeId": "range-strength",
+                "$text": "13"
+              },
+              {
+                "name": "Melee Initiative Modifier (IM)",
+                "typeId": "weapon-initiative",
+                "$text": ""
+              },
+              {
+                "name": "Melee Attacks Modifier (AM)",
+                "typeId": "weapon-attacks",
+                "$text": ""
+              },
+              {
+                "name": "Melee Strength Modifier (SM)",
+                "typeId": "melee-strength",
+                "$text": ""
+              },
+              {
+                "name": "Armour Penetration (AP)",
+                "$text": "2"
+              },
+              {
+                "name": "Damage (D)",
+                "typeId": "damage",
+                "$text": "12"
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "3a7f-1616-3fa9-a71e",
+            "id": "1c03-7a91-715f-4b85",
+            "primary": false,
+            "name": "Blast (3\")"
+          },
+          {
+            "targetId": "b8c5-8628-bd03-6c9d",
+            "id": "ae73-9bae-4777-5f4f",
+            "primary": false,
+            "name": "Powerhungry"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Vulcan mega-bolter",
+        "hidden": false,
+        "id": "61f8-6c4b-a4e9-3476",
+        "profiles": [
+          {
+            "name": "Vulcan mega-bolter",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "281c-68a5-18e1-80ef",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "48\n"
+              },
+              {
+                "name": "Fire Power (FP)",
+                "typeId": "fire-power",
+                "$text": "12"
+              },
+              {
+                "name": "Range Strength (RS)",
+                "typeId": "range-strength",
+                "$text": "7"
+              },
+              {
+                "name": "Melee Initiative Modifier (IM)",
+                "typeId": "weapon-initiative",
+                "$text": ""
+              },
+              {
+                "name": "Melee Attacks Modifier (AM)",
+                "typeId": "weapon-attacks",
+                "$text": ""
+              },
+              {
+                "name": "Melee Strength Modifier (SM)",
+                "typeId": "melee-strength",
+                "$text": ""
+              },
+              {
+                "name": "Armour Penetration (AP)",
+                "$text": "3"
+              },
+              {
+                "name": "Damage (D)",
+                "typeId": "damage",
+                "$text": "2"
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "9d5e-16ed-cc21-4d1e",
+            "id": "133e-aa32-6514-7714",
+            "primary": false,
+            "name": "Suppressive (3)"
+          },
+          {
+            "targetId": "bolt",
+            "id": "a27d-b6f8-4338-2eff",
+            "primary": false,
+            "name": "Bolt"
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Warmonger Titan",
+        "hidden": false,
+        "id": "warmonger-titan",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 2000
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Warmonger Titan Head",
+            "typeId": "d860-f22b-3660-6175",
+            "typeName": "Titan",
+            "hidden": false,
+            "id": "4cc0-b119-2474-50a8",
+            "page": "65",
+            "publicationId": "liber-questoris",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "91d5-bac9-5631-6ba5",
+                "$text": "-"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "0238-5094-0919-6e9b",
+                "$text": "-"
+              },
+              {
+                "name": "Primary Armour",
+                "typeId": "5e7a-d9a9-69be-3e26",
+                "$text": "14"
+              },
+              {
+                "name": "Exposed Armour",
+                "typeId": "cce2-2c8e-f155-b91a",
+                "$text": "12"
+              },
+              {
+                "name": "Hull Points",
+                "typeId": "7410-6cdc-bdbf-e41b",
+                "$text": "12"
+              },
+              {
+                "name": "Transport Capacity",
+                "typeId": "c0c2-6474-5aec-5d0c",
+                "$text": "-"
+              }
+            ]
+          },
+          {
+            "name": "Warmonger Titan Carapace",
+            "typeId": "d860-f22b-3660-6175",
+            "typeName": "Titan",
+            "hidden": false,
+            "id": "bd53-5b85-ba5e-ee11",
+            "page": "65",
+            "publicationId": "liber-questoris",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "91d5-bac9-5631-6ba5",
+                "$text": "-"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "0238-5094-0919-6e9b",
+                "$text": "3"
+              },
+              {
+                "name": "Primary Armour",
+                "typeId": "5e7a-d9a9-69be-3e26",
+                "$text": "16"
+              },
+              {
+                "name": "Exposed Armour",
+                "typeId": "cce2-2c8e-f155-b91a",
+                "$text": "14"
+              },
+              {
+                "name": "Hull Points",
+                "typeId": "7410-6cdc-bdbf-e41b",
+                "$text": "18"
+              },
+              {
+                "name": "Transport Capacity",
+                "typeId": "c0c2-6474-5aec-5d0c",
+                "$text": "-"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "4",
+                "field": "0238-5094-0919-6e9b",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "4ad5-3a53-9e2a-186c",
+                    "shared": true
+                  }
+                ]
+              },
+              {
+                "type": "set",
+                "value": "5",
+                "field": "0238-5094-0919-6e9b",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "ffa0-3c50-3307-16e0",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Warmonger Titan Arms",
+            "typeId": "d860-f22b-3660-6175",
+            "typeName": "Titan",
+            "hidden": false,
+            "id": "1827-47f9-2321-3226",
+            "page": "65",
+            "publicationId": "liber-questoris",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "91d5-bac9-5631-6ba5",
+                "$text": "-"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "0238-5094-0919-6e9b",
+                "$text": "3"
+              },
+              {
+                "name": "Primary Armour",
+                "typeId": "5e7a-d9a9-69be-3e26",
+                "$text": "14"
+              },
+              {
+                "name": "Exposed Armour",
+                "typeId": "cce2-2c8e-f155-b91a",
+                "$text": "12"
+              },
+              {
+                "name": "Hull Points",
+                "typeId": "7410-6cdc-bdbf-e41b",
+                "$text": "12"
+              },
+              {
+                "name": "Transport Capacity",
+                "typeId": "c0c2-6474-5aec-5d0c",
+                "$text": "-"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "4",
+                "field": "0238-5094-0919-6e9b",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "4ad5-3a53-9e2a-186c",
+                    "shared": true
+                  }
+                ]
+              },
+              {
+                "type": "set",
+                "value": "5",
+                "field": "0238-5094-0919-6e9b",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "ffa0-3c50-3307-16e0",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Warmonger Titan Legs",
+            "typeId": "d860-f22b-3660-6175",
+            "typeName": "Titan",
+            "hidden": false,
+            "id": "ce6a-ff8c-4c88-0ab3",
+            "page": "65",
+            "publicationId": "liber-questoris",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "91d5-bac9-5631-6ba5",
+                "$text": "10"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "0238-5094-0919-6e9b",
+                "$text": "-"
+              },
+              {
+                "name": "Primary Armour",
+                "typeId": "5e7a-d9a9-69be-3e26",
+                "$text": "15"
+              },
+              {
+                "name": "Exposed Armour",
+                "typeId": "cce2-2c8e-f155-b91a",
+                "$text": "14"
+              },
+              {
+                "name": "Hull Points",
+                "typeId": "7410-6cdc-bdbf-e41b",
+                "$text": "14"
+              },
+              {
+                "name": "Transport Capacity",
+                "typeId": "c0c2-6474-5aec-5d0c",
+                "$text": "-"
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "battle",
+            "id": "f57d-67b5-2e7b-7488",
+            "primary": false,
+            "name": "Battle"
+          },
+          {
+            "targetId": "lord-of-war-category",
+            "id": "ba2a-dd8f-a4fd-3357",
+            "primary": true,
+            "name": "Lord of War"
+          },
+          {
+            "targetId": "d8aa-bc50-6cca-a84a",
+            "id": "0a49-b87e-d857-cb8d",
+            "primary": false,
+            "name": "Titan War Horn (3)"
+          },
+          {
+            "targetId": "6ed7-133e-0461-d0d2",
+            "id": "02b0-7b2f-e61c-e03e",
+            "primary": false,
+            "name": "Titan Void Shield Array (6)"
+          },
+          {
+            "targetId": "61a0-a235-1b25-ed87",
+            "id": "4992-067f-b66a-3268",
+            "primary": false,
+            "name": "Repair Crew (D6)"
+          },
+          {
+            "targetId": "titan",
+            "id": "6c30-6b18-76bb-105e",
+            "primary": false,
+            "name": "Titan"
+          },
+          {
+            "targetId": "vehicle",
+            "id": "efa6-ede3-4db2-fe99",
+            "primary": false,
+            "name": "Vehicle"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "[Crew]",
+            "hidden": false,
+            "id": "44b8-879c-2460-ad9e",
+            "type": "selectionEntryGroup",
+            "targetId": "d49f-9744-ad90-fa56"
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Arm Mounted",
+            "id": "0cab-4371-5c3c-274a",
+            "hidden": false,
+            "comment": "\n\n",
+            "entryLinks": [
+              {
+                "targetId": "61f8-6c4b-a4e9-3476",
+                "id": "011a-1e8f-bbfc-bdf2",
+                "type": "selectionEntry",
+                "name": "Vulcan mega-bolter",
+                "hidden": false
+              },
+              {
+                "import": true,
+                "name": "Titan Laser Blaster",
+                "hidden": false,
+                "id": "7339-b4ee-23d8-54c1",
+                "type": "selectionEntry",
+                "targetId": "f732-14b0-d3b5-2685"
+              },
+              {
+                "targetId": "e3c2-9672-88c9-cfe3",
+                "id": "d661-6ca8-d130-2644",
+                "type": "selectionEntry",
+                "name": "Titan Volcano Cannon",
+                "hidden": false
+              },
+              {
+                "targetId": "1758-478f-16a2-bc23",
+                "id": "56cb-28ed-dcce-38c4",
+                "type": "selectionEntry",
+                "name": "Titan Power Fist",
+                "hidden": false,
+                "categoryLinks": [
+                  {
+                    "targetId": "armourbane-category",
+                    "id": "ee58-1281-de13-a4e7",
+                    "primary": false,
+                    "name": "Armourbane"
+                  }
+                ]
+              },
+              {
+                "targetId": "969c-3740-ccad-3af3",
+                "id": "fde9-11f1-03da-88d4",
+                "type": "selectionEntry",
+                "name": "Titan Melta Cannon",
+                "hidden": false
+              },
+              {
+                "targetId": "9995-b740-59e2-600c",
+                "id": "bbc1-5b20-0691-6132",
+                "type": "selectionEntry",
+                "name": "Titan Gatling Blaster",
+                "hidden": false
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "13be-389d-ea19-aada-min"
+              },
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "13be-389d-ea19-aada-max"
+              }
+            ]
+          },
+          {
+            "name": "Carapace Boresight Mounted",
+            "id": "9681-157b-ecd2-4d2d",
+            "hidden": false,
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Belicosa volcano cannon",
+                "hidden": false,
+                "id": "ac0a-71cd-6fff-8fc5",
+                "type": "selectionEntry",
+                "targetId": "3b98-f7b4-55e1-5291",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "Powerhungery",
+                    "field": "annotation"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Mori quake cannon",
+                "hidden": false,
+                "id": "065f-dd9c-c400-1503",
+                "type": "selectionEntry",
+                "targetId": "815f-3c64-523a-5431",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": "Powerhungery",
+                    "field": "annotation"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": false,
+                "id": "9e99-442b-f3c9-b3fb-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": false,
+                "id": "9e99-442b-f3c9-b3fb-max"
+              }
+            ],
+            "collective": false,
+            "comment": "\n",
+            "defaultSelectionEntryId": "fcbf-3062-88d7-edac"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Carapace Mounted Defensive Autocannon",
+            "hidden": false,
+            "id": "bf65-a30a-9e57-c4ef",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "565b-2679-a5f4-497c-min"
+              },
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "565b-2679-a5f4-497c-max"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Carapace Mounted Defensive Autocannon",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "aafc-4df7-50d5-1e3d",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": "48"
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "2"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Rear mounted defensor bolt cannon",
+            "hidden": false,
+            "id": "6bdb-6a9a-efe2-6385",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "14ca-6905-0d67-c26f-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "14ca-6905-0d67-c26f-max"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Defensor bolt cannon",
+                "id": "ed5a-aa2f-226a-a187",
+                "hidden": false,
+                "type": "profile",
+                "targetId": "7729-77d4-2829-64aa"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Warhound Titan",
+        "hidden": false,
+        "id": "82c8-c6e2-7810-1c09",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 750
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Warhound Titan Head",
+            "typeId": "d860-f22b-3660-6175",
+            "typeName": "Titan",
+            "hidden": false,
+            "id": "31c1-c6dc-eb20-ffe7",
+            "page": "62",
+            "publicationId": "liber-questoris",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "91d5-bac9-5631-6ba5",
+                "$text": "-"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "0238-5094-0919-6e9b",
+                "$text": "-"
+              },
+              {
+                "name": "Primary Armour",
+                "typeId": "5e7a-d9a9-69be-3e26",
+                "$text": "14"
+              },
+              {
+                "name": "Exposed Armour",
+                "typeId": "cce2-2c8e-f155-b91a",
+                "$text": "12"
+              },
+              {
+                "name": "Hull Points",
+                "typeId": "7410-6cdc-bdbf-e41b",
+                "$text": "8"
+              },
+              {
+                "name": "Transport Capacity",
+                "typeId": "c0c2-6474-5aec-5d0c",
+                "$text": "-"
+              }
+            ]
+          },
+          {
+            "name": "Warhound Titan Carapace",
+            "typeId": "d860-f22b-3660-6175",
+            "typeName": "Titan",
+            "hidden": false,
+            "id": "33d7-d7a0-aa7f-1701",
+            "page": "62",
+            "publicationId": "liber-questoris",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "91d5-bac9-5631-6ba5",
+                "$text": "-"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "0238-5094-0919-6e9b",
+                "$text": "3"
+              },
+              {
+                "name": "Primary Armour",
+                "typeId": "5e7a-d9a9-69be-3e26",
+                "$text": "14"
+              },
+              {
+                "name": "Exposed Armour",
+                "typeId": "cce2-2c8e-f155-b91a",
+                "$text": "12"
+              },
+              {
+                "name": "Hull Points",
+                "typeId": "7410-6cdc-bdbf-e41b",
+                "$text": "10"
+              },
+              {
+                "name": "Transport Capacity",
+                "typeId": "c0c2-6474-5aec-5d0c",
+                "$text": "-"
+              }
+            ]
+          },
+          {
+            "name": "Warhound Titan Arms",
+            "typeId": "d860-f22b-3660-6175",
+            "typeName": "Titan",
+            "hidden": false,
+            "id": "333f-c5e3-4d10-7479",
+            "page": "62",
+            "publicationId": "liber-questoris",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "91d5-bac9-5631-6ba5",
+                "$text": "-"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "0238-5094-0919-6e9b",
+                "$text": "3"
+              },
+              {
+                "name": "Primary Armour",
+                "typeId": "5e7a-d9a9-69be-3e26",
+                "$text": "12"
+              },
+              {
+                "name": "Exposed Armour",
+                "typeId": "cce2-2c8e-f155-b91a",
+                "$text": "10"
+              },
+              {
+                "name": "Hull Points",
+                "typeId": "7410-6cdc-bdbf-e41b",
+                "$text": "8"
+              },
+              {
+                "name": "Transport Capacity",
+                "typeId": "c0c2-6474-5aec-5d0c",
+                "$text": "-"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": "4",
+                "field": "0238-5094-0919-6e9b",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "4ad5-3a53-9e2a-186c",
+                    "shared": true
+                  }
+                ]
+              },
+              {
+                "type": "set",
+                "value": "5",
+                "field": "0238-5094-0919-6e9b",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "ffa0-3c50-3307-16e0",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Warhound Titan Legs",
+            "typeId": "d860-f22b-3660-6175",
+            "typeName": "Titan",
+            "hidden": false,
+            "id": "5807-56d1-8554-9155",
+            "page": "62",
+            "publicationId": "liber-questoris",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "91d5-bac9-5631-6ba5",
+                "$text": "20"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "0238-5094-0919-6e9b",
+                "$text": "-"
+              },
+              {
+                "name": "Primary Armour",
+                "typeId": "5e7a-d9a9-69be-3e26",
+                "$text": "14"
+              },
+              {
+                "name": "Exposed Armour",
+                "typeId": "cce2-2c8e-f155-b91a",
+                "$text": "12"
+              },
+              {
+                "name": "Hull Points",
+                "typeId": "7410-6cdc-bdbf-e41b",
+                "$text": "10"
+              },
+              {
+                "name": "Transport Capacity",
+                "typeId": "c0c2-6474-5aec-5d0c",
+                "$text": "-"
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "lord-of-war-category",
+            "id": "cfbe-3d38-4bab-8a75",
+            "primary": true,
+            "name": "Lord of War"
+          },
+          {
+            "targetId": "2c8d-4f15-662b-8aa4",
+            "id": "190c-90d1-5fac-2fe3",
+            "primary": false,
+            "name": "Titan War Horn (1)"
+          },
+          {
+            "targetId": "5812-fad8-6c58-fa06",
+            "id": "0867-3158-7bef-3bab",
+            "primary": false,
+            "name": "Titan Void Shield Array (2)"
+          },
+          {
+            "targetId": "85b9-dea1-e399-87f4",
+            "id": "fac5-184b-30c8-d2f4",
+            "primary": false,
+            "name": "Repair Crew (D3)"
+          },
+          {
+            "targetId": "titan",
+            "id": "4403-f72f-737a-2de7",
+            "primary": false,
+            "name": "Titan"
+          },
+          {
+            "targetId": "vehicle",
+            "id": "06c4-21c5-aa68-edbd",
+            "primary": false,
+            "name": "Vehicle"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "[Crew]",
+            "hidden": false,
+            "id": "44f5-ea90-618d-7b46",
+            "type": "selectionEntryGroup",
+            "targetId": "d49f-9744-ad90-fa56"
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Arm Mounted",
+            "id": "458b-8b14-9e60-7da9",
+            "hidden": false,
+            "comment": "\n\n",
+            "entryLinks": [
+              {
+                "targetId": "61f8-6c4b-a4e9-3476",
+                "id": "7e23-3593-8d4d-951a",
+                "type": "selectionEntry",
+                "name": "Vulcan mega-bolter",
+                "hidden": false
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1433-f6f5-e638-8750-min"
+              },
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1433-f6f5-e638-8750-max"
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Titan plasma blastgun",
+                "hidden": false,
+                "id": "2138-4083-4014-ac2f",
+                "profiles": [
+                  {
+                    "name": "Titan plasma blastgun maximal",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "5d42-27dc-df4b-c3be",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "60"
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": "9"
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "7"
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "Powerhungery",
+                        "field": "annotation"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Titan plasma blastgun sustained",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "f315-88fd-f354-b2ce",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "60"
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": "8"
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "5"
+                      }
+                    ]
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "targetId": "3a7f-1616-3fa9-a71e",
+                    "id": "1dd1-949e-1555-728a",
+                    "primary": false,
+                    "name": "Blast (3\")"
+                  },
+                  {
+                    "targetId": "c86d-f162-14c7-3072",
+                    "id": "87a5-5795-ba68-8ca6",
+                    "primary": false,
+                    "name": "Blast (5\")"
+                  },
+                  {
+                    "targetId": "b8c5-8628-bd03-6c9d",
+                    "id": "915d-007f-1275-c221",
+                    "primary": false,
+                    "name": "Powerhungry"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Titan inferno cannon",
+                "hidden": false,
+                "id": "4248-7e5a-eda3-ed9b",
+                "profiles": [
+                  {
+                    "name": "Titan inferno cannon",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "f4e8-0bf2-d953-b68d",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "Template"
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": "7"
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "3"
+                      }
+                    ]
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "targetId": "a8ee-1cdd-f68a-831b",
+                    "id": "2693-8d79-f3fc-25d7",
+                    "primary": false,
+                    "name": "Template"
+                  },
+                  {
+                    "targetId": "6639-8060-dcf4-5878",
+                    "id": "4aa0-90a4-221a-4f2c",
+                    "primary": false,
+                    "name": "Panic (3)"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Titan turbo laser destructor",
+                "hidden": false,
+                "id": "faaf-0cc1-8234-c0f5",
+                "profiles": [
+                  {
+                    "name": "Titan turbo laser destructor",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "8f7a-4f4f-b541-fdbf",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "96"
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": "12"
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "6"
+                      }
+                    ]
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "targetId": "3a7f-1616-3fa9-a71e",
+                    "id": "871d-56c9-359e-feb5",
+                    "primary": false,
+                    "name": "Blast (3\")"
+                  },
+                  {
+                    "targetId": "armourbane-category",
+                    "id": "56a3-e630-29af-86fb",
+                    "primary": false,
+                    "name": "Armourbane"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "categoryEntries": [
+      {
+        "name": "Battle",
+        "id": "battle",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Battle",
+            "id": "08b6-ea88-6da7-27fa",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Reinforced Structure (3)",
+        "id": "7dac-c6b9-bd6f-02e8",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Reinforced Structure (X)",
+            "id": "9155-0c55-d0b9-59f6",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9e30-ff10-af8e-7ec6"
+          }
+        ]
+      },
+      {
+        "name": "Titan War Horn (4)",
+        "id": "56b8-b902-9d82-1064",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Titan War Horn (X)",
+            "id": "4951-1af1-f564-f2a5",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9432-263f-6b7e-d27c"
+          }
+        ]
+      },
+      {
+        "name": "Repair Crew (D6+1)",
+        "id": "0258-f5e4-8efd-0a0a",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Repair Crew (X)",
+            "id": "b680-c961-e83b-2456",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "bd65-fc2a-5815-b6fa"
+          }
+        ]
+      },
+      {
+        "name": "Titan Void Shield Array (8)",
+        "id": "68ae-f681-b691-90fb",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Titan Void Shield Array (X)",
+            "id": "7cd3-a9d2-1825-8f9e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2fde-1dcd-a26a-d92a"
+          }
+        ]
+      },
+      {
+        "name": "Reinforced Structure (1)",
+        "id": "460b-806a-87c2-6e58",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Reinforced Structure (X)",
+            "id": "3ce7-78ee-ed15-7d63",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9e30-ff10-af8e-7ec6"
+          }
+        ]
+      },
+      {
+        "name": "Repair Crew (D3+1)",
+        "id": "72f2-72bd-0917-5f1e",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Repair Crew (X)",
+            "id": "153c-732d-aac0-8259",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "bd65-fc2a-5815-b6fa"
+          }
+        ]
+      },
+      {
+        "name": "Titan Void Shield Array (4)",
+        "id": "7f5c-30e3-5315-03e0",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Titan Void Shield Array (X)",
+            "id": "6e32-4e3e-2ddf-ac93",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2fde-1dcd-a26a-d92a"
+          }
+        ]
+      },
+      {
+        "name": "Titan War Horn (2)",
+        "id": "661b-5678-dc80-91f7",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Titan War Horn (X)",
+            "id": "1714-f756-fdcb-7778",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9432-263f-6b7e-d27c"
+          }
+        ]
+      },
+      {
+        "name": "Reinforced Structure (2)",
+        "id": "3442-3360-b51a-821d",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Reinforced Structure (X)",
+            "id": "8360-0ca2-6057-bea4",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9e30-ff10-af8e-7ec6"
+          }
+        ]
+      },
+      {
+        "name": "Repair Crew (D6)",
+        "id": "61a0-a235-1b25-ed87",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Repair Crew (X)",
+            "id": "ca1b-c9cb-25f0-7a5c",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "bd65-fc2a-5815-b6fa"
+          }
+        ]
+      },
+      {
+        "name": "Titan Void Shield Array (6)",
+        "id": "6ed7-133e-0461-d0d2",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Titan Void Shield Array (X)",
+            "id": "5897-477c-4df6-230b",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2fde-1dcd-a26a-d92a"
+          }
+        ]
+      },
+      {
+        "name": "Titan War Horn (3)",
+        "id": "d8aa-bc50-6cca-a84a",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Titan War Horn (X)",
+            "id": "bac2-22e4-6b0d-87c6",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9432-263f-6b7e-d27c"
+          }
+        ]
+      },
+      {
+        "name": "Light Battle",
+        "id": "126d-62e4-ab58-8b81",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Light Battle",
+            "id": "5aa4-02ef-5124-5a37",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Repair Crew (D3)",
+        "id": "85b9-dea1-e399-87f4",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Repair Crew (X)",
+            "id": "116d-6513-595d-6326",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "bd65-fc2a-5815-b6fa"
+          }
+        ]
+      },
+      {
+        "name": "Titan Void Shield Array (2)",
+        "id": "5812-fad8-6c58-fa06",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Titan Void Shield Array (X)",
+            "id": "b007-f3b3-9ad7-8197",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "2fde-1dcd-a26a-d92a"
+          }
+        ]
+      },
+      {
+        "name": "Titan War Horn (1)",
+        "id": "2c8d-4f15-662b-8aa4",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Titan War Horn (X)",
+            "id": "26b7-50ac-adce-716e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "9432-263f-6b7e-d27c"
+          }
+        ]
+      },
+      {
+        "name": "Scout",
+        "id": "a0ed-3054-28d9-ba21",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Scout",
+            "id": "7a03-772f-c0e9-fb70",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Powerhungry",
+        "id": "b8c5-8628-bd03-6c9d",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Powerhungry",
+            "id": "3bba-27e3-5884-5419",
+            "hidden": false,
+            "description": "A Weapon with this Special Rule makes other Weapons attack as Snap Shots when used. \n\n\nIf a Weapon with this Special Rule is used as part of a Model's Shooting Attack, then all other Weapons used in that or any other Shooting Attack made by that Model in the same Phase, must attack as Snap Shots. If other Shooting Attacks have already been made in the same Phase by a Model with a Weapon that has this Special Rule and those attacks were not made as Snap Shots, then a Weapon with this Special Rule may not be fired in the same Shooting Phase. Furthermore, a Weapon with this Special Rule may not be used to attack as part of any Shooting Attack made as part of any Reaction.",
+            "publicationId": "liber-questoris",
+            "page": "101"
+          }
+        ]
+      },
+      {
+        "name": "Melta (48)",
+        "id": "3ee8-2fb3-be52-2f3b",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Melta (X)",
+            "id": "f599-e195-a616-da70",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "bd31-462d-76bb-0009"
+          }
+        ]
+      },
+      {
+        "name": "Macro-auspex",
+        "id": "c8bd-a69e-d7ac-b22a",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Macro-auspex",
+            "id": "ee5b-fbce-8db5-ee92",
+            "hidden": false,
+            "description": "When not attacking Titans, Knights or Super-heavies, a Weapon with this Special Rule must make Snap Shots. \nIf the target of a Shooting Attack is not a Unit entirely composed of Models with the Titan, Knight or Super-heavy Sub-Type or other Models with a Base Wounds Characteristic of 10 or more, then all attacks made for Weapon with this Special Rule must be made as Snap Shots",
+            "publicationId": "liber-questoris",
+            "page": "99"
+          }
+        ]
+      },
+      {
+        "name": "Shieldbreaker (3)",
+        "id": "7718-5385-0e77-2564",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "targetId": "eaf0-a756-7a27-b7c1",
+            "id": "b02b-29e2-1a63-592b",
+            "type": "rule",
+            "name": "Shieldbreaker (X)",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "name": "Legio Armsmen",
+        "id": "7517-dae4-5819-358d",
+        "hidden": false,
+        "publicationId": "liber-questoris",
+        "page": "98",
+        "rules": [
+          {
+            "name": "Legio Armsmen",
+            "id": "57eb-e671-51b1-d1eb",
+            "hidden": false,
+            "description": "LEGIO ARMSMEN\nThe Secutarii are trained to fight as a screening force for the\ntitans of their legio, and are inured to the many hardships of\nfighting on the same buttlefield as a walking god of wa\nModels with this Special Rule gain benefits when\nfighting alongside a friendly Titan.\nA Unit composed entirely of Models with this Special\nRule ignores all penalties applied by the Titan War Hom\n(X) Special Rule. Furthermore, while a friendly Titan\nis on the Battlefield, all Models with this Special Rule\nadd a modifier of +1 to their Leadership Characteristic\nHowever, whenever a friendly Titan is Removed as a\nCasualty or otherwise destroyed then all Units that\ninclude any Models with this Special Rule must make an\nimmediate Panic Check.",
+            "page": "98",
+            "publicationId": "liber-questoris"
+          }
+        ]
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "Repair Crew (X)",
+        "id": "bd65-fc2a-5815-b6fa",
+        "hidden": false,
+        "description": "A Model with the Repair Crew (X) Special Rule can repair itself. In the Controlling Player's Start Phase, during the Effects Sub-Phase they may choose to activate this Special Rule. \n\nOnce activated, the Controlling Player of a Model with the Repair Crew (X) Special Rule, may restore a number of Hull Points equal to the value of the variant of this Special Rule possessed by a Model to any one of that Model's Profiles. \n\n\nIf the value of the variant of this Special Rule is greater than the number of lost Hull Points on the chosen Profile then the excess Hull Points may not be transferred to another Profile and cannot increase the value of the chosen Profile's Hull Point Characteristic above its Base Value. \n\nThis Special Rule can restore Hull Points to a Profile that has been Crippled, and if a Profile is restored to one or more Hull Points then it is no longer Crippled. Activating the Repair Crew (X) Special Rule does not limit the Model with that Special Rule when moving or attacking in the same Turn.\n\n\nIf, in the Effects Sub-Phase of the Controlling Player's End Phase, a Titan has any collapsed void shields, the Controlling Player may roll a Dice for each collapsed void shield. Any Dice whose result is equal to or higher than the target number restores one void shield - with the target number decided by checking the [Crew) Trait of the Titan using the table below:\n Minoris: 6 \n Senioris: 5+ \n Majoris: 4+ \n Ultima: 3+",
+        "publicationId": "liber-questoris",
+        "page": "103"
+      },
+      {
+        "name": "Titan War Horn (X)",
+        "id": "9432-263f-6b7e-d27c",
+        "hidden": false,
+        "description": "Models near a Model that activates the Titan War Horn (X) Special Rule must reduce their Advanced Characteristics. \n\n\nOnce per Battle, the Controlling Player of a Model with this Special Rule may choose to activate it in the Effects Sub-Phase of the End Phase of their Turn. When any Model from a Unit is within 24\" of any part of a Model that has activated this Special Rule, all Models in that Unit must reduce their Leadership, Willpower, Cool and Intelligence Characteristics by the value of X. This negative modifier is removed as soon as no Models in a given Unit are within 24\" of any Model with the Titan War Horn (X) Special Rule. If a Unit would be affected by multiple instances of this Special Rule or the Fear (X) Special Rule, the value of X is not stacked and instead the single highest value is used as a negative modifier. Once activated, the effects of this Special Rule last until the Effects Sub-Phase of the Controlling Player's next Start Phase, or until the Titan is removed from play for any reason."
+      },
+      {
+        "name": "Titan Void Shield Array (X)",
+        "id": "2fde-1dcd-a26a-d92a",
+        "hidden": false,
+        "description": "A Model with this Special Rule gains an extra layer of defence against Shooting Attacks. A Model with this Special Rule has a number of void shields equal to the value of X. While a Model with this Special Rule still has void shields, each time that Model suffers a Hit from a Shooting Attack it must be allocated to the void shields. Once all void shields have collapsed, any remaining Hits from Shooting Attacks must be allocated to the Titan Profile targeted by the attack. \n\n\nA void shield has an Armour Value of 13, and any Glancing Hit or Penetrating Hit inflicted on it will cause that void shield to collapse. Regardless of the Damage value of a Hit it may not collapse more than one void shield, and once a Hit has collapsed a void shield or failed an Armour Penetration Test made against once it is discarded.",
+        "publicationId": "liber-questoris",
+        "page": "107"
+      },
+      {
+        "name": "Reinforced Structure (X)",
+        "id": "9e30-ff10-af8e-7ec6",
+        "hidden": false,
+        "description": "A Model with this Special Rule suffers less Damage from most Weapons. \nA Model with this Special Rule reduces the Damage of all Hits inflicted by Weapons that do not have the Strategic Trait or the Ordnance (X) Special Rule by the value of X attached to that variant of this Special Rule. This cannot reduce the Damage of a Hit below 1.",
+        "publicationId": "liber-questoris",
+        "page": "103"
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "[Crew]",
+        "id": "d49f-9744-ad90-fa56",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Minoris",
+            "hidden": false,
+            "id": "f799-2ded-a1ea-308a"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Senioris",
+            "hidden": false,
+            "id": "4ad5-3a53-9e2a-186c",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 300,
+                "field": "points",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "warlord-titan",
+                    "shared": true
+                  }
+                ]
+              },
+              {
+                "type": "set",
+                "value": 200,
+                "field": "points",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "warmonger-titan",
+                    "shared": true
+                  }
+                ]
+              },
+              {
+                "type": "set",
+                "value": 100,
+                "field": "points",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "81d0-15b5-d579-ba35",
+                    "shared": true
+                  }
+                ]
+              },
+              {
+                "type": "set",
+                "value": 50,
+                "field": "points",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "82c8-c6e2-7810-1c09",
+                    "shared": true
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 0
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Majoris",
+            "hidden": false,
+            "id": "ffa0-3c50-3307-16e0",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 500,
+                "field": "points",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "warlord-titan",
+                    "shared": true
+                  }
+                ]
+              },
+              {
+                "type": "set",
+                "value": 350,
+                "field": "points",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "warmonger-titan",
+                    "shared": true
+                  }
+                ]
+              },
+              {
+                "type": "set",
+                "value": 300,
+                "field": "points",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "81d0-15b5-d579-ba35",
+                    "shared": true
+                  }
+                ]
+              },
+              {
+                "type": "set",
+                "value": 100,
+                "field": "points",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "82c8-c6e2-7810-1c09",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "d0f1-dc15-bb03-3029-min"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "d0f1-dc15-bb03-3029-max"
+          }
+        ],
+        "defaultSelectionEntryId": "f799-2ded-a1ea-308a"
+      }
+    ],
+    "entryLinks": [
+      {
+        "targetId": "82c8-c6e2-7810-1c09",
+        "id": "a87f-8fff-04e5-5830",
+        "type": "selectionEntry",
+        "name": "Warhound Titan",
+        "hidden": false
+      },
+      {
+        "targetId": "warmonger-titan",
+        "id": "c3e3-b197-0f3c-b524",
+        "type": "selectionEntry",
+        "name": "Warmonger Titan",
+        "hidden": false
+      },
+      {
+        "targetId": "38fd-b6b3-6c32-dc16",
+        "id": "81d0-15b5-d579-ba35",
+        "type": "selectionEntry",
+        "name": "Reaver Titan",
+        "hidden": false
+      },
+      {
+        "targetId": "warlord-titan",
+        "id": "bcb5-4f9e-5e3e-4f93",
+        "type": "selectionEntry",
+        "name": "Warlord Titan",
+        "hidden": false
+      }
+    ],
+    "forceEntries": [
+      {
+        "name": "Titan Ordinal",
+        "id": "titan-ordinal",
+        "hidden": false,
+        "page": "54",
+        "publicationId": "liber-questoris",
+        "categoryLinks": [
+          {
+            "name": "Primary Detachment",
+            "hidden": false,
+            "id": "bfef-1359-9e91-5a0f",
+            "targetId": "primary-detachment",
+            "type": "categoryEntry",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "0390-fb38-b95f-c80e-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "0390-fb38-b95f-c80e-max"
+              }
+            ]
+          },
+          {
+            "name": "Lord of War",
+            "hidden": false,
+            "id": "bf38-d867-6996-0e23",
+            "targetId": "lord-of-war-category",
+            "type": "categoryEntry",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "80e8-e8df-e117-4041"
+              }
+            ]
+          },
+          {
+            "name": "Command",
+            "hidden": false,
+            "id": "3c9f-197d-d109-2179",
+            "targetId": "command-category",
+            "type": "categoryEntry",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "a746-886b-6405-bef0"
+              }
+            ]
+          },
+          {
+            "name": "Troops",
+            "hidden": false,
+            "id": "8ff5-b262-1ac6-7ce1",
+            "targetId": "troops-category",
+            "type": "categoryEntry",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 4,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "194a-83f9-0cbf-97cb"
+              }
+            ]
+          },
+          {
+            "name": "Transport",
+            "hidden": false,
+            "id": "1fdf-7628-e8b6-1db2",
+            "targetId": "transport-category",
+            "type": "categoryEntry",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 4,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c11c-4125-0834-8170"
+              }
+            ]
+          },
+          {
+            "name": "Allegiance",
+            "hidden": false,
+            "id": "8309-7354-6edd-8b27",
+            "targetId": "allegiance-category",
+            "type": "categoryEntry"
+          }
+        ]
+      }
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Rear mounted defensor bolt cannon",
+        "typeId": "weapon",
+        "typeName": "Weapon",
+        "hidden": false,
+        "id": "f350-cacf-fb77-26bf",
+        "characteristics": [
+          {
+            "name": "Range",
+            "typeId": "range",
+            "$text": ""
+          },
+          {
+            "name": "Fire Power (FP)",
+            "typeId": "fire-power",
+            "$text": ""
+          },
+          {
+            "name": "Range Strength (RS)",
+            "typeId": "range-strength",
+            "$text": ""
+          },
+          {
+            "name": "Melee Initiative Modifier (IM)",
+            "typeId": "weapon-initiative",
+            "$text": ""
+          },
+          {
+            "name": "Melee Attacks Modifier (AM)",
+            "typeId": "weapon-attacks",
+            "$text": ""
+          },
+          {
+            "name": "Melee Strength Modifier (SM)",
+            "typeId": "melee-strength",
+            "$text": ""
+          },
+          {
+            "name": "Armour Penetration (AP)",
+            "$text": ""
+          },
+          {
+            "name": "Damage (D)",
+            "typeId": "damage",
+            "$text": ""
+          }
+        ]
+      },
+      {
+        "name": "Defensor bolt cannon",
+        "typeId": "weapon",
+        "typeName": "Weapon",
+        "hidden": false,
+        "id": "7729-77d4-2829-64aa",
+        "characteristics": [
+          {
+            "name": "Range",
+            "typeId": "range",
+            "$text": "36 "
+          },
+          {
+            "name": "Fire Power (FP)",
+            "typeId": "fire-power",
+            "$text": "6"
+          },
+          {
+            "name": "Range Strength (RS)",
+            "typeId": "range-strength",
+            "$text": "5"
+          },
+          {
+            "name": "Melee Initiative Modifier (IM)",
+            "typeId": "weapon-initiative",
+            "$text": ""
+          },
+          {
+            "name": "Melee Attacks Modifier (AM)",
+            "typeId": "weapon-attacks",
+            "$text": ""
+          },
+          {
+            "name": "Melee Strength Modifier (SM)",
+            "typeId": "melee-strength",
+            "$text": ""
+          },
+          {
+            "name": "Armour Penetration (AP)",
+            "$text": "4"
+          },
+          {
+            "name": "Damage (D)",
+            "typeId": "damage",
+            "$text": "1"
+          }
+        ]
+      }
+    ]
+  }
 }
