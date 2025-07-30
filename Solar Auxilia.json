@@ -5586,6 +5586,135 @@
             "includeChildSelections": true
           }
         ]
+      },
+      {
+        "name": "Yeomanry Mesnie",
+        "id": "8b3b-7bf0-39d1-fda5",
+        "hidden": false,
+        "constraints": [
+          {
+            "type": "max",
+            "value": 0,
+            "field": "forces",
+            "scope": "roster",
+            "shared": true,
+            "id": "b5af-3e0f-9c6b-546b",
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "b5af-3e0f-9c6b-546b",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "8f22-36ad-d601-aa8f",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
+          },
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "b5af-3e0f-9c6b-546b",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "primary-catalogue",
+                "childId": "questoris-imperialis",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": false,
+                "includeChildForces": false
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Troops",
+            "hidden": false,
+            "id": "6693-d862-5c68-883c",
+            "targetId": "troops-category",
+            "type": "categoryEntry",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "51ca-4ba1-f432-e8ae",
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "name": "Heavy Transport",
+            "hidden": false,
+            "id": "0b7f-cd0b-6420-7fc2",
+            "targetId": "heavy-transport-category",
+            "type": "categoryEntry",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "b245-0d0b-51c7-e9f4",
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "name": "Elite",
+            "hidden": false,
+            "id": "8a99-4ac0-4686-08fb",
+            "targetId": "elites-category",
+            "type": "categoryEntry",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "644c-04ad-afde-feb5",
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "name": "Recon",
+            "hidden": false,
+            "id": "c06d-4d05-41ba-890c",
+            "targetId": "recon-category",
+            "type": "categoryEntry",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "1ff6-335b-ccd2-fadf",
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ]
       }
     ],
     "categoryEntries": [

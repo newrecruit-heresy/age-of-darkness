@@ -7511,58 +7511,68 @@
                     "id": "2656-2096-b8af-7275",
                     "characteristics": [
                       {
-                        "name": "Movement",
+                        "name": "Movement (M)",
                         "typeId": "bdbb-da13-eeff-50f3",
                         "$text": ""
                       },
                       {
-                        "name": "Weapon Skill",
+                        "name": "Weapon Skill (WS)",
                         "typeId": "80f9-ff23-cf6b-a774",
                         "$text": ""
                       },
                       {
-                        "name": "Ballistic Skill",
+                        "name": "Ballistic Skill (BS)",
                         "typeId": "0725-6d62-4136-1f56",
                         "$text": ""
                       },
                       {
-                        "name": "Strength",
+                        "name": "Strength (S)",
                         "typeId": "model-strength",
                         "$text": ""
                       },
                       {
-                        "name": "Toughness",
+                        "name": "Toughness (T)",
                         "typeId": "0f0e-1166-667c-6b8d",
                         "$text": ""
                       },
                       {
-                        "name": "Leadership",
+                        "name": "Leadership (LD)",
                         "typeId": "5e98-cab2-59ac-168b",
                         "$text": ""
                       },
                       {
-                        "name": "Cool",
+                        "name": "Cool (CL)",
                         "typeId": "7f44-7a96-7a38-aa52",
                         "$text": ""
                       },
                       {
-                        "name": "Willpower",
+                        "name": "Willpower (WP)",
                         "typeId": "30ba-3375-7bae-99b4",
                         "$text": ""
                       },
                       {
-                        "name": "Intelligence",
+                        "name": "Intelligence (INT)",
                         "typeId": "91ef-626b-7f89-c3d6",
                         "$text": ""
                       },
                       {
-                        "name": "Initiative",
+                        "name": "Initiative (I)",
                         "typeId": "model-initiative",
                         "$text": ""
                       },
                       {
-                        "name": "Attacks",
+                        "name": "Attacks (A)",
                         "typeId": "model-attacks",
+                        "$text": ""
+                      },
+                      {
+                        "typeId": "b66c-6835-eb9e-8a19",
+                        "name": "Save (SAV)",
+                        "$text": ""
+                      },
+                      {
+                        "typeId": "b052-bfb0-212a-a270",
+                        "name": "Invulnerable Save (INV)",
                         "$text": ""
                       }
                     ]
@@ -23244,21 +23254,6 @@
             "id": "smokescreen-rule",
             "hidden": false,
             "description": "This Reaction allows for a Model with Shrouded Damage Mitigation Rolls with the Smokescreen Trait.\n\n\nTrigger: The Reactive Player may declare a Smokecreen Reaction in the Shooting Phase, at the start of Step 3 of the Shooting Attack sequence of any Shooting Attack made by the Active Player.\n\n\nCost: The Reactive Player must spend 1 point of their Reaction Allotment to declare a Smokescreen Reaction, this cost paid as soon as the declaration is made.\n\n\nTarget: For a Smokescreen Reaction, the Reacting Unit is always the Unit that was the target of the Shooting Attack that triggered the Reaction. This Unit must include a majority of Models with the Smokescreen Trait at the point the Reaction is declared.",
-            "publicationId": "liber-astartes"
-          }
-        ]
-      },
-      {
-        "name": "Firestorm",
-        "id": "firestorm-category",
-        "hidden": false,
-        "infoLinks": [
-          {
-            "name": "Firestorm",
-            "id": "firestorm-link",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "firestorm",
             "publicationId": "liber-astartes"
           }
         ]

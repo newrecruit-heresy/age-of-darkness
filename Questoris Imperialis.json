@@ -1,0 +1,40 @@
+{
+  "catalogue": {
+    "library": false,
+    "id": "questoris-imperialis",
+    "name": "Questoris Imperialis",
+    "gameSystemId": "sys-41d4-b033-8ca9-9bb0",
+    "gameSystemRevision": 1,
+    "revision": 1,
+    "battleScribeVersion": "2.03",
+    "catalogueLinks": [
+      {
+        "type": "catalogue",
+        "name": "Questoris Household",
+        "id": "6361-80ed-2bd4-a093",
+        "targetId": "questoris-household",
+        "importRootEntries": true
+      }
+    ],
+    "type": "catalogue",
+    "entryLinks": [
+      {
+        "targetId": "0443-e988-528d-c2bb",
+        "id": "dab6-7bae-f115-252f",
+        "type": "selectionEntry",
+        "name": "Vow of Dominion",
+        "hidden": false
+      }
+    ],
+    "rules": [
+      {
+        "name": "Baronial Court",
+        "id": "36c7-67c6-eea4-179f",
+        "hidden": false,
+        "description": "A single Yeomanry Mesnie Additional Detachment may be added to an Army with the Imperial House Household Paradigm without requiring a specific corresponding Household Rank Prime Advantage to have been selected for a Unit in that Army. This Additional Detachment is linked to either a Knight Households Primary Detachment or a Lord of War Additional Detachment\n(chosen by the Player), as long as that Detachment contains at least one Model with the Questoris Imperialis Faction Trait. Additionally, an Army with the Imperial House Household Paradigm is not subject to the 0-1 per Army restriction on the Lord Scion Household Rank Prime Advantage.",
+        "page": "14",
+        "publicationId": "liber-questoris"
+      }
+    ]
+  }
+}
