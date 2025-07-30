@@ -2721,6 +2721,44 @@
             "targetId": "1570-0a55-15de-b34c"
           }
         ]
+      },
+      {
+        "name": "Stun (3)",
+        "id": "9120-812b-5890-da2f",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Stun (X)",
+            "id": "6750-eea5-dd9b-4d8e",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "e4cf-c188-8974-d320"
+          }
+        ]
+      },
+      {
+        "name": "Stasis",
+        "id": "6e00-0587-7e8b-b12f",
+        "hidden": false
+      },
+      {
+        "name": "Dreadwing Interremptors",
+        "id": "103d-91db-9c34-9284",
+        "hidden": false
+      },
+      {
+        "name": "Eternal Warriors (1)",
+        "id": "c1d1-6526-47d3-6722",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Eternal Warrior (X)",
+            "id": "c32c-f6c0-2680-7025",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "3006-a236-ee60-b654"
+          }
+        ]
       }
     ],
     "forceEntries": [
@@ -5503,17 +5541,6 @@
               }
             ]
           }
-        ],
-        "constraints": [
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "7ce3-6b74-1dd3-3e56",
-            "includeChildSelections": false
-          }
         ]
       },
       {
@@ -6058,6 +6085,512 @@
             "shared": true,
             "id": "aa3c-2255-a1d2-bd7e-max",
             "includeChildSelections": false
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Prime",
+        "hidden": false,
+        "id": "prime-fast-attack",
+        "categoryLinks": [
+          {
+            "targetId": "prime-category",
+            "id": "c440-691d-08cc-7a9e",
+            "primary": true,
+            "name": "Prime"
+          }
+        ],
+        "sharedRules": [
+          {
+            "name": "Armourbane",
+            "id": "9568-ca6f-4abf-3b48",
+            "hidden": false,
+            "page": "326"
+          },
+          {
+            "name": "Assault Vehicle",
+            "id": "75d7-d14a-9442-fdba",
+            "hidden": false,
+            "page": "326"
+          },
+          {
+            "name": "Auto-Repair (X)",
+            "id": "262a-319e-8c27-58ae",
+            "hidden": false,
+            "page": "326"
+          },
+          {
+            "name": "Battlesmith (X)",
+            "id": "b0ab-ec73-458e-ea93",
+            "hidden": false,
+            "page": "326"
+          },
+          {
+            "name": "Bulky (X)",
+            "id": "882e-09a0-143d-ab11",
+            "hidden": false,
+            "page": "328"
+          },
+          {
+            "name": "Barrage (X)",
+            "id": "c64f-e108-150a-f55e",
+            "hidden": false,
+            "page": "326"
+          },
+          {
+            "name": "Blast (X)",
+            "id": "feb7-41b9-c0d8-c775",
+            "hidden": false,
+            "page": "327"
+          },
+          {
+            "name": "Breaching (X)",
+            "id": "63d6-aca5-476f-8497",
+            "hidden": false,
+            "page": "327"
+          },
+          {
+            "name": "Critical Hit (X)",
+            "id": "0d3a-d167-3da7-cc07",
+            "hidden": false,
+            "page": "328"
+          },
+          {
+            "name": "Deep Strike",
+            "id": "59c0-9640-ea6c-6c81",
+            "hidden": false,
+            "page": "328"
+          },
+          {
+            "name": "Deflagrate (X)",
+            "id": "a4ec-98d5-feb1-29cc",
+            "hidden": false,
+            "page": "329"
+          },
+          {
+            "name": "Detonation",
+            "id": "7143-5fcf-0820-fa95",
+            "hidden": false,
+            "page": "329"
+          },
+          {
+            "name": "Duelist's Edge (X)",
+            "id": "acd3-b11e-e1b3-d87d",
+            "hidden": false,
+            "page": "329"
+          },
+          {
+            "name": "Eternal Warrior (X)",
+            "id": "d7a3-d282-7c24-b335",
+            "hidden": false,
+            "page": "329"
+          },
+          {
+            "name": "Expendable (X)",
+            "id": "70e3-d891-ed2d-aedc",
+            "hidden": false,
+            "page": "329"
+          },
+          {
+            "name": "Explodes (X)",
+            "id": "dd9b-0d35-91d5-4e55",
+            "hidden": false,
+            "page": "330"
+          },
+          {
+            "name": "Fast (X)",
+            "id": "222d-3ebd-b8d8-e15f",
+            "hidden": false,
+            "page": "330"
+          },
+          {
+            "name": "Fear (X)",
+            "id": "5b22-9b7d-f202-8c7b",
+            "hidden": false,
+            "page": "330"
+          },
+          {
+            "name": "Feel No Pain (X)",
+            "id": "a166-f0b7-19de-9a56",
+            "hidden": false,
+            "page": "330"
+          },
+          {
+            "name": "Firing Protocols (X)",
+            "id": "8208-26e1-aed1-0e1b",
+            "hidden": false,
+            "page": "331"
+          },
+          {
+            "name": "Force (X)",
+            "id": "6d0b-7e26-1947-a113",
+            "hidden": false,
+            "page": "331"
+          },
+          {
+            "name": "Hatred (X)",
+            "id": "5f4c-1d8f-066e-98eb",
+            "hidden": false,
+            "page": "331"
+          },
+          {
+            "name": "Heavy (X)",
+            "id": "45c4-dd7e-3579-69e6",
+            "hidden": false,
+            "page": "331"
+          },
+          {
+            "name": "Heedless",
+            "id": "37a8-357b-4916-f304",
+            "hidden": false,
+            "page": "332"
+          },
+          {
+            "name": "Impact (X)",
+            "id": "d174-e5cc-7ea2-b8d2",
+            "hidden": false,
+            "page": "331"
+          },
+          {
+            "name": "Light Transport",
+            "id": "38cf-7469-0500-3fc9",
+            "hidden": false,
+            "page": "332"
+          },
+          {
+            "name": "Limited (X)",
+            "id": "3c93-87be-da67-d497",
+            "hidden": false,
+            "page": "333"
+          },
+          {
+            "name": "Line (X)",
+            "id": "96e5-ffb2-1a1c-f5c7",
+            "hidden": false,
+            "page": "333"
+          },
+          {
+            "name": "Move Through Cover",
+            "id": "edaa-8e30-d948-6450",
+            "hidden": false,
+            "page": "333"
+          },
+          {
+            "name": "Officer of the Line (X)",
+            "id": "1d9e-7b96-691f-0513",
+            "hidden": false,
+            "page": "333"
+          },
+          {
+            "name": "Ordnance (X)",
+            "id": "f947-bc0e-81b7-88af",
+            "hidden": false,
+            "page": "333"
+          },
+          {
+            "name": "Outflank",
+            "id": "3c68-bca7-4923-a084",
+            "hidden": false,
+            "page": "334"
+          },
+          {
+            "name": "Panic (X)",
+            "id": "a07c-6515-e961-85f2",
+            "hidden": false,
+            "page": "334"
+          },
+          {
+            "name": "Phage (X)",
+            "id": "d555-e223-1283-6b71",
+            "hidden": false,
+            "page": "334"
+          },
+          {
+            "name": "Pinning (X)",
+            "id": "30fe-4102-313f-8edc",
+            "hidden": false,
+            "page": "334"
+          },
+          {
+            "name": "Poisoned (X)",
+            "id": "52b4-4d99-4da2-11c5",
+            "hidden": false,
+            "page": "335"
+          },
+          {
+            "name": "Pistol",
+            "id": "5f91-f76d-30b6-c7ac",
+            "hidden": false,
+            "page": "335"
+          },
+          {
+            "name": "Precision (X)",
+            "id": "4a7f-6389-6d70-154f",
+            "hidden": false,
+            "page": "335"
+          },
+          {
+            "name": "Reaping Blow (X)",
+            "id": "17d1-656b-3d28-23eb",
+            "hidden": false,
+            "page": "336"
+          },
+          {
+            "name": "Rending (X)",
+            "id": "f756-3e96-6a44-831b",
+            "hidden": false,
+            "page": "336"
+          },
+          {
+            "name": "Shock (X)",
+            "id": "f547-1033-6a8d-8062",
+            "hidden": false,
+            "page": "336"
+          },
+          {
+            "name": "Shred (X)",
+            "id": "567d-686b-11c3-a468",
+            "hidden": false,
+            "page": "336"
+          },
+          {
+            "name": "Shrouded (X)",
+            "id": "c084-3bc2-df4d-fb44",
+            "hidden": false,
+            "page": "337"
+          },
+          {
+            "name": "Skyfire (X)",
+            "id": "7ae2-5e0c-d2fa-061e",
+            "hidden": false,
+            "page": "337"
+          },
+          {
+            "name": "Stun (X)",
+            "id": "5cba-a7ae-9980-3d01",
+            "hidden": false,
+            "page": "337"
+          },
+          {
+            "name": "Support Unit (X)",
+            "id": "3283-044f-f420-9681",
+            "hidden": false,
+            "page": "337"
+          },
+          {
+            "name": "Suppressive (X)",
+            "id": "7daf-cb9f-28ea-5772",
+            "hidden": false,
+            "page": "338"
+          },
+          {
+            "name": "Template",
+            "id": "a0ac-c59c-4b1c-8bca",
+            "hidden": false,
+            "page": "338"
+          },
+          {
+            "name": "Vanguard (X)",
+            "id": "4b0f-223e-057d-f2d0",
+            "hidden": false,
+            "page": "339"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Prime Traits",
+            "hidden": false,
+            "id": "2f44-29ae-b909-9885",
+            "type": "selectionEntryGroup",
+            "targetId": "prime-traits"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "3755-8e2c-2a51-a952"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Plasma pistol",
+        "hidden": false,
+        "id": "3391-2681-d850-0564",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 5
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Sustained fire",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "fc72-9d0f-ff49-ee5c",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "12"
+              },
+              {
+                "name": "Range Strength",
+                "typeId": "range-strength",
+                "$text": "6"
+              },
+              {
+                "name": "Fire Power",
+                "typeId": "fire-power",
+                "$text": "1"
+              },
+              {
+                "name": "Melee Strength",
+                "typeId": "melee-strength",
+                "$text": "Range"
+              },
+              {
+                "name": "Damage",
+                "typeId": "damage",
+                "$text": "1"
+              },
+              {
+                "name": "Attacks",
+                "typeId": "weapon-attacks",
+                "$text": "Range"
+              },
+              {
+                "name": "Initiative modifier",
+                "typeId": "weapon-initiative",
+                "$text": "Range"
+              },
+              {
+                "name": "Armour penetration",
+                "$text": "4"
+              }
+            ]
+          },
+          {
+            "name": "Overcharged plasma pistol",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "0fff-fa57-deaf-0d70",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "12"
+              },
+              {
+                "name": "Range Strength",
+                "typeId": "range-strength",
+                "$text": "8"
+              },
+              {
+                "name": "Fire Power",
+                "typeId": "fire-power",
+                "$text": "3"
+              },
+              {
+                "name": "Melee Strength",
+                "typeId": "melee-strength",
+                "$text": "Range"
+              },
+              {
+                "name": "Damage",
+                "typeId": "damage",
+                "$text": "1"
+              },
+              {
+                "name": "Attacks",
+                "typeId": "weapon-attacks",
+                "$text": "Range"
+              },
+              {
+                "name": "Initiative modifier",
+                "typeId": "weapon-initiative",
+                "$text": "Range"
+              },
+              {
+                "name": "Armour penetration",
+                "$text": "4"
+              }
+            ]
+          },
+          {
+            "name": "Maximal fire",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "e998-627c-f853-bab9",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "12"
+              },
+              {
+                "name": "Range Strength",
+                "typeId": "range-strength",
+                "$text": "7"
+              },
+              {
+                "name": "Fire Power",
+                "typeId": "fire-power",
+                "$text": "1"
+              },
+              {
+                "name": "Melee Strength",
+                "typeId": "melee-strength",
+                "$text": "Range"
+              },
+              {
+                "name": "Damage",
+                "typeId": "damage",
+                "$text": "1"
+              },
+              {
+                "name": "Attacks",
+                "typeId": "weapon-attacks",
+                "$text": "Range"
+              },
+              {
+                "name": "Initiative modifier",
+                "typeId": "weapon-initiative",
+                "$text": "Range"
+              },
+              {
+                "name": "Armour penetration",
+                "$text": "4"
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "pistol",
+            "id": "58e4-bf4f-2351-84e0",
+            "primary": false,
+            "name": "Pistol",
+            "type": "rule"
+          },
+          {
+            "targetId": "plasma",
+            "id": "59c0-4e0e-9ad3-77b0",
+            "primary": false,
+            "name": "Plasma"
           }
         ]
       }
