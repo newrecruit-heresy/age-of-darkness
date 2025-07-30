@@ -23245,20 +23245,6 @@
         "hidden": false
       },
       {
-        "name": "Smokescreen",
-        "id": "smokescreen",
-        "hidden": false,
-        "rules": [
-          {
-            "name": "Smokescreen",
-            "id": "smokescreen-rule",
-            "hidden": false,
-            "description": "This Reaction allows for a Model with Shrouded Damage Mitigation Rolls with the Smokescreen Trait.\n\n\nTrigger: The Reactive Player may declare a Smokecreen Reaction in the Shooting Phase, at the start of Step 3 of the Shooting Attack sequence of any Shooting Attack made by the Active Player.\n\n\nCost: The Reactive Player must spend 1 point of their Reaction Allotment to declare a Smokescreen Reaction, this cost paid as soon as the declaration is made.\n\n\nTarget: For a Smokescreen Reaction, the Reacting Unit is always the Unit that was the target of the Shooting Attack that triggered the Reaction. This Unit must include a majority of Models with the Smokescreen Trait at the point the Reaction is declared.",
-            "publicationId": "liber-astartes"
-          }
-        ]
-      },
-      {
         "name": "Slow and Purposeful",
         "id": "slow-and-purposeful",
         "hidden": false,

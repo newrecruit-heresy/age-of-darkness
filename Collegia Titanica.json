@@ -910,7 +910,7 @@
                 "targetId": "f732-14b0-d3b5-2685",
                 "id": "32ee-b504-7c05-59bb",
                 "type": "selectionEntry",
-                "name": "Titan Laser Blasters",
+                "name": "Titan Laser Blaster",
                 "hidden": false,
                 "constraints": [
                   {
@@ -3007,6 +3007,1042 @@
             ]
           }
         ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Secutarii Cohort",
+        "hidden": false,
+        "id": "5686-202c-e66d-7369",
+        "publicationId": "liber-questoris",
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Secutarii",
+            "hidden": false,
+            "id": "59d7-d9f7-3b48-9251",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 15
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 9,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "0e78-0d8b-625a-c04a",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 19,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1abc-75ab-d1b8-038b",
+                "includeChildSelections": false
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Secutarii",
+                "typeId": "877a-f15d-4830-fd7a",
+                "typeName": "Infantry/Cavalry/Walker",
+                "hidden": false,
+                "id": "0507-064c-0bb6-fd3d",
+                "characteristics": [
+                  {
+                    "name": "Movement (M)",
+                    "typeId": "bdbb-da13-eeff-50f3",
+                    "$text": "6 "
+                  },
+                  {
+                    "name": "Weapon Skill (WS)",
+                    "typeId": "80f9-ff23-cf6b-a774",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Ballistic Skill (BS)",
+                    "typeId": "0725-6d62-4136-1f56",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Strength (S)",
+                    "typeId": "model-strength",
+                    "$text": "4 "
+                  },
+                  {
+                    "name": "Toughness (T)",
+                    "typeId": "0f0e-1166-667c-6b8d",
+                    "$text": "3 "
+                  },
+                  {
+                    "name": "Wounds (W)",
+                    "typeId": "091b-45b8-4b3d-7971",
+                    "$text": "1 "
+                  },
+                  {
+                    "name": "Initiative (I)",
+                    "typeId": "model-initiative",
+                    "$text": "3 "
+                  },
+                  {
+                    "name": "Attacks (A)",
+                    "typeId": "model-attacks",
+                    "$text": "2 "
+                  },
+                  {
+                    "name": "Leadership (LD)",
+                    "typeId": "5e98-cab2-59ac-168b",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "Cool (CL)",
+                    "typeId": "7f44-7a96-7a38-aa52",
+                    "$text": "8"
+                  },
+                  {
+                    "name": "Willpower (WP)",
+                    "typeId": "30ba-3375-7bae-99b4",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "Intelligence (INT)",
+                    "typeId": "91ef-626b-7f89-c3d6",
+                    "$text": "8 "
+                  },
+                  {
+                    "name": "Save (SAV)",
+                    "typeId": "b66c-6835-eb9e-8a19",
+                    "$text": "4+ "
+                  },
+                  {
+                    "name": "Invulnerable Save (INV)",
+                    "typeId": "b052-bfb0-212a-a270",
+                    "$text": "6+ "
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "model",
+            "import": true,
+            "name": "Secutarii Alpha",
+            "hidden": false,
+            "id": "23c5-16e4-39fe-d0af",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 15
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Secutarii Alpha",
+                "typeId": "877a-f15d-4830-fd7a",
+                "typeName": "Infantry/Cavalry/Walker",
+                "hidden": false,
+                "id": "f712-30d8-f569-4953",
+                "characteristics": [
+                  {
+                    "name": "Movement (M)",
+                    "typeId": "bdbb-da13-eeff-50f3",
+                    "$text": "6 "
+                  },
+                  {
+                    "name": "Weapon Skill (WS)",
+                    "typeId": "80f9-ff23-cf6b-a774",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Ballistic Skill (BS)",
+                    "typeId": "0725-6d62-4136-1f56",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Strength (S)",
+                    "typeId": "model-strength",
+                    "$text": "4 "
+                  },
+                  {
+                    "name": "Toughness (T)",
+                    "typeId": "0f0e-1166-667c-6b8d",
+                    "$text": "3 "
+                  },
+                  {
+                    "name": "Wounds (W)",
+                    "typeId": "091b-45b8-4b3d-7971",
+                    "$text": "1 "
+                  },
+                  {
+                    "name": "Initiative (I)",
+                    "typeId": "model-initiative",
+                    "$text": "3 "
+                  },
+                  {
+                    "name": "Attacks (A)",
+                    "typeId": "model-attacks",
+                    "$text": "2 "
+                  },
+                  {
+                    "name": "Leadership (LD)",
+                    "typeId": "5e98-cab2-59ac-168b",
+                    "$text": "8"
+                  },
+                  {
+                    "name": "Cool (CL)",
+                    "typeId": "7f44-7a96-7a38-aa52",
+                    "$text": "9"
+                  },
+                  {
+                    "name": "Willpower (WP)",
+                    "typeId": "30ba-3375-7bae-99b4",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "Intelligence (INT)",
+                    "typeId": "91ef-626b-7f89-c3d6",
+                    "$text": "8"
+                  },
+                  {
+                    "name": "Save (SAV)",
+                    "typeId": "b66c-6835-eb9e-8a19",
+                    "$text": "4+ "
+                  },
+                  {
+                    "name": "Invulnerable Save (INV)",
+                    "typeId": "b052-bfb0-212a-a270",
+                    "$text": "6+ "
+                  }
+                ]
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "• The Secutarii Alpha may have any of the following options selected for it:",
+                "id": "1d87-550d-a5d2-148a",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "targetId": "6e6d-992b-a534-d654",
+                    "id": "7500-2ba3-9ccf-5e3a",
+                    "type": "selectionEntry",
+                    "name": "Arc Pistol",
+                    "hidden": false
+                  },
+                  {
+                    "import": true,
+                    "name": "Volkite serpenta",
+                    "hidden": false,
+                    "id": "2285-406f-d33b-c9eb",
+                    "type": "selectionEntry",
+                    "targetId": "9763-5a9a-9146-93a1",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 2
+                      }
+                    ]
+                  },
+                  {
+                    "targetId": "8479-9898-023d-e3cf",
+                    "id": "7969-2c31-a428-d2dc",
+                    "type": "selectionEntry",
+                    "name": "Arc Maul",
+                    "hidden": false
+                  },
+                  {
+                    "import": true,
+                    "name": "Power sword",
+                    "hidden": false,
+                    "id": "9261-a1df-a557-15cc",
+                    "type": "selectionEntry",
+                    "targetId": "db80-7390-7e7b-118e",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 0
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "bc55-9a3d-d5e2-e4e1",
+                        "includeChildSelections": false
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "name": "Arc Lance and Mag-inverter Shield",
+                "id": "1979-dbe8-a303-c308",
+                "hidden": false,
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": false,
+                    "id": "aaed-cbf4-2a94-fc2c-min",
+                    "includeChildSelections": false,
+                    "automatic": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": false,
+                    "id": "aaed-cbf4-2a94-fc2c-max",
+                    "includeChildSelections": false,
+                    "automatic": false
+                  }
+                ],
+                "defaultSelectionEntryId": "4457-3306-242a-eda5",
+                "entryLinks": [
+                  {
+                    "targetId": "46d0-b434-414e-4c23",
+                    "id": "0292-87fa-98b4-6d1d",
+                    "type": "selectionEntry",
+                    "name": "Arc Lance and Inverter Shield",
+                    "hidden": false,
+                    "collective": false,
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "faa2-7107-2349-3c7a-min"
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "faa2-7107-2349-3c7a-max"
+                      }
+                    ],
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 0,
+                        "field": "faa2-7107-2349-3c7a-min",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "5686-202c-e66d-7369",
+                            "childId": "09b7-7828-b72f-9f0c",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      },
+                      {
+                        "type": "set",
+                        "value": 0,
+                        "field": "faa2-7107-2349-3c7a-max",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "5686-202c-e66d-7369",
+                            "childId": "09b7-7828-b72f-9f0c",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "targetId": "e42a-e519-c6d1-27f9",
+                    "id": "defe-2383-4ba0-a76a",
+                    "type": "selectionEntry",
+                    "name": "Galvanic Caster",
+                    "hidden": false,
+                    "collective": true,
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": 0,
+                        "field": "6af2-1146-9ee7-955f-min",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "5686-202c-e66d-7369",
+                            "childId": "fe87-7ae6-301c-5ff7",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      },
+                      {
+                        "type": "set",
+                        "value": 0,
+                        "field": "6af2-1146-9ee7-955f-max",
+                        "conditions": [
+                          {
+                            "type": "atLeast",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "5686-202c-e66d-7369",
+                            "childId": "fe87-7ae6-301c-5ff7",
+                            "shared": true,
+                            "includeChildSelections": true
+                          }
+                        ]
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "6af2-1146-9ee7-955f-min",
+                        "includeChildSelections": false,
+                        "automatic": false
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "6af2-1146-9ee7-955f-max",
+                        "includeChildSelections": false,
+                        "automatic": false
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3686-89dc-b153-677c-min-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3686-89dc-b153-677c-min-max",
+                "includeChildSelections": false
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Arc Lance and Inverter Shield",
+            "id": "aea2-c6c7-27c1-8b32",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Arc Lance and Inverter Shield",
+                "hidden": false,
+                "id": "fe87-7ae6-301c-5ff7",
+                "categoryLinks": [
+                  {
+                    "name": "Shield",
+                    "hidden": false,
+                    "id": "2a50-0742-e226-b009",
+                    "targetId": "8304-be5e-319b-fc54",
+                    "primary": false
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": -1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6a13-1af4-d5f8-ba21"
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": 0,
+                    "field": "6a13-1af4-d5f8-ba21",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "5686-202c-e66d-7369",
+                        "childId": "09b7-7828-b72f-9f0c",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ],
+                "collective": true,
+                "collapsible": false,
+                "infoLinks": [
+                  {
+                    "name": "Arc Lance",
+                    "id": "a267-b9e3-14ac-5fdf",
+                    "hidden": false,
+                    "type": "profile",
+                    "targetId": "220a-bece-9433-ce91"
+                  },
+                  {
+                    "name": "Mag-inverter Shield",
+                    "id": "97f8-3f56-7efe-c18e",
+                    "hidden": false,
+                    "type": "rule",
+                    "targetId": "3080-011f-33eb-9604"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Galvanic Caster",
+                "hidden": false,
+                "id": "09b7-7828-b72f-9f0c",
+                "categoryLinks": [
+                  {
+                    "name": "Smokescreen",
+                    "hidden": false,
+                    "id": "1e8e-d543-f198-d59a",
+                    "targetId": "smokescreen",
+                    "primary": false
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": -1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "6fca-a590-96e9-85e4",
+                    "includeChildSelections": false
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": 0,
+                    "field": "6fca-a590-96e9-85e4",
+                    "conditions": [
+                      {
+                        "type": "atLeast",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "5686-202c-e66d-7369",
+                        "childId": "fe87-7ae6-301c-5ff7",
+                        "shared": true,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ],
+                "collective": true,
+                "infoLinks": [
+                  {
+                    "targetId": "0f13-3209-ddf0-14a7",
+                    "id": "9205-ee20-ee39-3fb9",
+                    "type": "profile",
+                    "name": "Galvanic Caster",
+                    "hidden": false
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": false,
+                "id": "27b8-88fd-8fe4-7f08-min",
+                "includeChildSelections": false,
+                "automatic": true
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": false,
+                "id": "27b8-88fd-8fe4-7f08-max",
+                "includeChildSelections": false,
+                "automatic": true
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "27b8-88fd-8fe4-7f08-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "5686-202c-e66d-7369",
+                    "childId": "59d7-d9f7-3b48-9251",
+                    "shared": false,
+                    "roundUp": false,
+                    "includeChildSelections": false
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "27b8-88fd-8fe4-7f08-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "5686-202c-e66d-7369",
+                    "childId": "59d7-d9f7-3b48-9251",
+                    "shared": false,
+                    "roundUp": false,
+                    "includeChildSelections": false
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "fe87-7ae6-301c-5ff7",
+            "collective": true
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "troops-category",
+            "id": "3dfa-8d54-834b-2339",
+            "primary": true,
+            "name": "Troops"
+          },
+          {
+            "targetId": "infantry",
+            "id": "226d-55f1-165c-ab99",
+            "primary": false,
+            "name": "Infantry"
+          },
+          {
+            "targetId": "7517-dae4-5819-358d",
+            "id": "3460-c021-120f-1686",
+            "primary": false,
+            "name": "Legio Armsmen"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Arc Lance",
+        "hidden": false,
+        "id": "46d0-b434-414e-4c23",
+        "categoryLinks": [
+          {
+            "targetId": "04a5-8fcd-8001-2ec0",
+            "id": "3a0f-f9a3-19af-1b29",
+            "primary": false,
+            "name": "Arc"
+          },
+          {
+            "targetId": "5e91-3f52-ac37-6396",
+            "id": "7962-9ee6-f9b7-f366",
+            "primary": false,
+            "name": "Precision (6+)"
+          },
+          {
+            "targetId": "c7c0-c92f-beee-333a",
+            "id": "3f6e-f12d-78d4-b2e2",
+            "primary": false,
+            "name": "Shock (Suppressed)"
+          }
+        ],
+        "collective": false,
+        "infoLinks": [
+          {
+            "targetId": "220a-bece-9433-ce91",
+            "id": "5fab-3fe3-7dbf-a5a6",
+            "type": "profile",
+            "name": "Arc Lance",
+            "hidden": false
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Secutarii Axiarch",
+        "hidden": false,
+        "id": "6422-1d79-367a-39e5",
+        "categoryLinks": [
+          {
+            "targetId": "command-category",
+            "id": "66ba-e205-3202-03d3",
+            "primary": true,
+            "name": "Command"
+          },
+          {
+            "targetId": "infantry",
+            "id": "8c93-00d7-a590-412a",
+            "primary": false,
+            "name": "Infantry"
+          },
+          {
+            "targetId": "8304-be5e-319b-fc54",
+            "id": "7768-66da-cc33-e5fd",
+            "primary": false,
+            "name": "Shield"
+          },
+          {
+            "targetId": "7517-dae4-5819-358d",
+            "id": "d936-f015-e8f1-cee5",
+            "primary": false,
+            "name": "Legio Armsmen"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Secutarii Axiarch",
+            "typeId": "877a-f15d-4830-fd7a",
+            "typeName": "Infantry/Cavalry/Walker",
+            "hidden": false,
+            "id": "9bf9-e3e3-7e49-dc7d",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "bdbb-da13-eeff-50f3",
+                "$text": "6"
+              },
+              {
+                "name": "Weapon Skill (WS)",
+                "typeId": "80f9-ff23-cf6b-a774",
+                "$text": "5"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "0725-6d62-4136-1f56",
+                "$text": "5"
+              },
+              {
+                "name": "Strength (S)",
+                "typeId": "model-strength",
+                "$text": "4 "
+              },
+              {
+                "name": "Toughness (T)",
+                "typeId": "0f0e-1166-667c-6b8d",
+                "$text": "3 "
+              },
+              {
+                "name": "Wounds (W)",
+                "typeId": "091b-45b8-4b3d-7971",
+                "$text": "3"
+              },
+              {
+                "name": "Initiative (I)",
+                "typeId": "model-initiative",
+                "$text": "4 "
+              },
+              {
+                "name": "Attacks (A)",
+                "typeId": "model-attacks",
+                "$text": "4 "
+              },
+              {
+                "name": "Leadership (LD)",
+                "typeId": "5e98-cab2-59ac-168b",
+                "$text": "9 "
+              },
+              {
+                "name": "Cool (CL)",
+                "typeId": "7f44-7a96-7a38-aa52",
+                "$text": "10 "
+              },
+              {
+                "name": "Willpower (WP)",
+                "typeId": "30ba-3375-7bae-99b4",
+                "$text": "8 "
+              },
+              {
+                "name": "Intelligence (INT)",
+                "typeId": "91ef-626b-7f89-c3d6",
+                "$text": "9"
+              },
+              {
+                "name": "Save (SAV)",
+                "typeId": "b66c-6835-eb9e-8a19",
+                "$text": "2+"
+              },
+              {
+                "name": "Invulnerable Save (INV)",
+                "typeId": "b052-bfb0-212a-a270",
+                "$text": "5+"
+              }
+            ],
+            "page": "",
+            "comment": "• Axiarch WARGEAR\n• Arc lance \nMag-inverter shield\n• Frag grenades ΣΟ \nM WS BS S T W I A LD CL \nSPECIAL RULES\n\n• Legio Armsmen TYPE\n• Infantry (Command) WP IN SAV INV"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Cyber familiar",
+            "hidden": false,
+            "id": "3781-0cb5-7887-dc18",
+            "type": "selectionEntry",
+            "targetId": "cyber-familiar",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 5
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Rad Grenades",
+            "hidden": false,
+            "id": "492c-05e8-0bee-3ba2",
+            "type": "selectionEntry",
+            "targetId": "rad-grenades",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 10
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "fdac-3c28-9d58-be70",
+                "includeChildSelections": false
+              }
+            ]
+          }
+        ],
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 95
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "This model may have its arc lance exchanged for the following:",
+            "id": "28d3-f423-d60b-d484",
+            "hidden": false,
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Arc Lance",
+                "hidden": false,
+                "id": "2b6c-5f5b-e376-ca59",
+                "type": "selectionEntry",
+                "targetId": "46d0-b434-414e-4c23",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "937d-2f61-3c58-b4bf",
+                    "includeChildSelections": false
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Power sword",
+                "hidden": false,
+                "id": "ba9f-1a5a-e4d6-74ea",
+                "type": "selectionEntry",
+                "targetId": "db80-7390-7e7b-118e",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 0
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "b1e4-699b-60bf-8de3",
+                    "includeChildSelections": false
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Arc Maul",
+                "hidden": false,
+                "id": "f4bd-4876-286b-e04d",
+                "targetId": "8479-9898-023d-e3cf",
+                "type": "selectionEntry"
+              }
+            ],
+            "defaultSelectionEntryId": "2b6c-5f5b-e376-ca59",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "63b6-2aa7-ed7a-73c3-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "63b6-2aa7-ed7a-73c3-max",
+                "includeChildSelections": false
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Mag-inverter shield",
+            "hidden": false,
+            "id": "f5c7-eb34-5907-c3cf",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f1bb-003a-9c68-39af-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f1bb-003a-9c68-39af-max",
+                "includeChildSelections": false
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Mag-inverter Shield",
+                "id": "a17a-48c3-fb3a-7c2b",
+                "hidden": false,
+                "type": "rule",
+                "targetId": "3080-011f-33eb-9604"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Arc Maul",
+        "hidden": false,
+        "id": "8479-9898-023d-e3cf",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 0
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "4498-eeba-4987-978a",
+            "includeChildSelections": false
+          }
+        ],
+        "infoLinks": [
+          {
+            "targetId": "3bf8-4051-4fcc-1a76",
+            "id": "c30a-8ff5-00f8-80b7",
+            "type": "profile",
+            "name": "Arc Maul",
+            "hidden": false
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "c7c0-c92f-beee-333a",
+            "id": "c1bb-c598-e3a7-cfe6",
+            "primary": false,
+            "name": "Shock (Suppressed)"
+          },
+          {
+            "targetId": "04a5-8fcd-8001-2ec0",
+            "id": "efe5-d042-f1a1-4389",
+            "primary": false,
+            "name": "Arc"
+          }
+        ]
       }
     ],
     "categoryEntries": [
@@ -3325,7 +4361,7 @@
             "name": "Legio Armsmen",
             "id": "57eb-e671-51b1-d1eb",
             "hidden": false,
-            "description": "LEGIO ARMSMEN\nThe Secutarii are trained to fight as a screening force for the\ntitans of their legio, and are inured to the many hardships of\nfighting on the same buttlefield as a walking god of wa\nModels with this Special Rule gain benefits when\nfighting alongside a friendly Titan.\nA Unit composed entirely of Models with this Special\nRule ignores all penalties applied by the Titan War Hom\n(X) Special Rule. Furthermore, while a friendly Titan\nis on the Battlefield, all Models with this Special Rule\nadd a modifier of +1 to their Leadership Characteristic\nHowever, whenever a friendly Titan is Removed as a\nCasualty or otherwise destroyed then all Units that\ninclude any Models with this Special Rule must make an\nimmediate Panic Check.",
+            "description": "The Secutarii are trained to fight as a screening force for the titans of their legio, and are inured to the many hardships of fighting on the same buttlefield as a walking god of wa Models with this Special Rule gain benefits when fighting alongside a friendly Titan. A Unit composed entirely of Models with this Special Rule ignores all penalties applied by the Titan War Hom\n(X) Special Rule. Furthermore, while a friendly Titan is on the Battlefield, all Models with this Special Rule add a modifier of +1 to their Leadership Characteristic However, whenever a friendly Titan is Removed as a Casualty or otherwise destroyed then all Units that include any Models with this Special Rule must make an immediate Panic Check.",
             "page": "98",
             "publicationId": "liber-questoris"
           }
@@ -3362,6 +4398,14 @@
         "description": "A Model with this Special Rule suffers less Damage from most Weapons. \nA Model with this Special Rule reduces the Damage of all Hits inflicted by Weapons that do not have the Strategic Trait or the Ordnance (X) Special Rule by the value of X attached to that variant of this Special Rule. This cannot reduce the Damage of a Hit below 1.",
         "publicationId": "liber-questoris",
         "page": "103"
+      },
+      {
+        "name": "Mag-inverter Shield",
+        "id": "3080-011f-33eb-9604",
+        "hidden": false,
+        "page": "109",
+        "publicationId": "liber-questoris",
+        "description": "A mag-inverter shield reduces the distance moved by enemy Units that Charge. A Model with a mag-inverter shield gains the Shield Trait. If a Unit that includes a majority of Models that have mag-inverter shields is the target of a Charge, reduce the distance moved by the Charging Unit by 1\", to a minimum of 1\"."
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -3546,6 +4590,20 @@
     ],
     "entryLinks": [
       {
+        "targetId": "6422-1d79-367a-39e5",
+        "id": "8bf9-900d-186e-3ab5",
+        "type": "selectionEntry",
+        "name": "Secutarii Axiarch",
+        "hidden": false
+      },
+      {
+        "targetId": "5686-202c-e66d-7369",
+        "id": "3a13-a7c8-ca1b-ed81",
+        "type": "selectionEntry",
+        "name": "Secutarii Cohort",
+        "hidden": false
+      },
+      {
         "targetId": "82c8-c6e2-7810-1c09",
         "id": "a87f-8fff-04e5-5830",
         "type": "selectionEntry",
@@ -3587,23 +4645,24 @@
             "hidden": false,
             "id": "bfef-1359-9e91-5a0f",
             "targetId": "primary-detachment",
-            "type": "categoryEntry",
             "constraints": [
               {
                 "type": "min",
                 "value": 1,
                 "field": "selections",
-                "scope": "parent",
+                "scope": "force",
                 "shared": true,
-                "id": "0390-fb38-b95f-c80e-min"
+                "id": "0390-fb38-b95f-c80e-min-min",
+                "includeChildSelections": true
               },
               {
                 "type": "max",
                 "value": 1,
                 "field": "selections",
-                "scope": "parent",
+                "scope": "force",
                 "shared": true,
-                "id": "0390-fb38-b95f-c80e-max"
+                "id": "0390-fb38-b95f-c80e-min-max",
+                "includeChildSelections": true
               }
             ]
           },
@@ -3612,15 +4671,15 @@
             "hidden": false,
             "id": "bf38-d867-6996-0e23",
             "targetId": "lord-of-war-category",
-            "type": "categoryEntry",
             "constraints": [
               {
                 "type": "max",
                 "value": 1,
                 "field": "selections",
-                "scope": "parent",
+                "scope": "force",
                 "shared": true,
-                "id": "80e8-e8df-e117-4041"
+                "id": "80e8-e8df-e117-4041",
+                "includeChildSelections": true
               }
             ]
           },
@@ -3629,15 +4688,15 @@
             "hidden": false,
             "id": "3c9f-197d-d109-2179",
             "targetId": "command-category",
-            "type": "categoryEntry",
             "constraints": [
               {
                 "type": "max",
                 "value": 1,
                 "field": "selections",
-                "scope": "parent",
+                "scope": "force",
                 "shared": true,
-                "id": "a746-886b-6405-bef0"
+                "id": "a746-886b-6405-bef0",
+                "includeChildSelections": true
               }
             ]
           },
@@ -3646,15 +4705,15 @@
             "hidden": false,
             "id": "8ff5-b262-1ac6-7ce1",
             "targetId": "troops-category",
-            "type": "categoryEntry",
             "constraints": [
               {
                 "type": "max",
                 "value": 4,
                 "field": "selections",
-                "scope": "parent",
+                "scope": "force",
                 "shared": true,
-                "id": "194a-83f9-0cbf-97cb"
+                "id": "194a-83f9-0cbf-97cb",
+                "includeChildSelections": true
               }
             ]
           },
@@ -3663,15 +4722,15 @@
             "hidden": false,
             "id": "1fdf-7628-e8b6-1db2",
             "targetId": "transport-category",
-            "type": "categoryEntry",
             "constraints": [
               {
                 "type": "max",
                 "value": 4,
                 "field": "selections",
-                "scope": "parent",
+                "scope": "force",
                 "shared": true,
-                "id": "c11c-4125-0834-8170"
+                "id": "c11c-4125-0834-8170",
+                "includeChildSelections": true
               }
             ]
           },
@@ -3679,8 +4738,7 @@
             "name": "Allegiance",
             "hidden": false,
             "id": "8309-7354-6edd-8b27",
-            "targetId": "allegiance-category",
-            "type": "categoryEntry"
+            "targetId": "allegiance-category"
           }
         ]
       }
@@ -3774,6 +4832,102 @@
           {
             "name": "Armour Penetration (AP)",
             "$text": "4"
+          },
+          {
+            "name": "Damage (D)",
+            "typeId": "damage",
+            "$text": "1"
+          }
+        ]
+      },
+      {
+        "name": "Arc Lance",
+        "typeId": "weapon",
+        "typeName": "Weapon",
+        "hidden": false,
+        "id": "220a-bece-9433-ce91",
+        "characteristics": [
+          {
+            "name": "Range",
+            "typeId": "range",
+            "$text": ""
+          },
+          {
+            "name": "Fire Power (FP)",
+            "typeId": "fire-power",
+            "$text": ""
+          },
+          {
+            "name": "Range Strength (RS)",
+            "typeId": "range-strength",
+            "$text": ""
+          },
+          {
+            "name": "Melee Initiative Modifier (IM)",
+            "typeId": "weapon-initiative",
+            "$text": "I"
+          },
+          {
+            "name": "Melee Attacks Modifier (AM)",
+            "typeId": "weapon-attacks",
+            "$text": "A"
+          },
+          {
+            "name": "Melee Strength Modifier (SM)",
+            "typeId": "melee-strength",
+            "$text": "+1"
+          },
+          {
+            "name": "Armour Penetration (AP)",
+            "$text": "3"
+          },
+          {
+            "name": "Damage (D)",
+            "typeId": "damage",
+            "$text": "1"
+          }
+        ]
+      },
+      {
+        "name": "Arc Maul",
+        "typeId": "weapon",
+        "typeName": "Weapon",
+        "hidden": false,
+        "id": "3bf8-4051-4fcc-1a76",
+        "characteristics": [
+          {
+            "name": "Range",
+            "typeId": "range",
+            "$text": ""
+          },
+          {
+            "name": "Fire Power (FP)",
+            "typeId": "fire-power",
+            "$text": ""
+          },
+          {
+            "name": "Range Strength (RS)",
+            "typeId": "range-strength",
+            "$text": ""
+          },
+          {
+            "name": "Melee Initiative Modifier (IM)",
+            "typeId": "weapon-initiative",
+            "$text": "-1"
+          },
+          {
+            "name": "Melee Attacks Modifier (AM)",
+            "typeId": "weapon-attacks",
+            "$text": "A"
+          },
+          {
+            "name": "Melee Strength Modifier (SM)",
+            "typeId": "melee-strength",
+            "$text": "+3"
+          },
+          {
+            "name": "Armour Penetration (AP)",
+            "$text": "3"
           },
           {
             "name": "Damage (D)",

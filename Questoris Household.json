@@ -5595,6 +5595,869 @@
             "name": "Questoris Vow"
           }
         ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Armiger Moirax",
+        "hidden": false,
+        "id": "65c9-e41a-d4f5-6cfa",
+        "profiles": [
+          {
+            "name": "Armiger Warglaive",
+            "typeId": "877a-f15d-4830-fd7a",
+            "typeName": "Infantry/Cavalry/Walker",
+            "hidden": false,
+            "id": "712c-c635-aeff-325c",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "bdbb-da13-eeff-50f3",
+                "$text": "10"
+              },
+              {
+                "name": "Weapon Skill (WS)",
+                "typeId": "80f9-ff23-cf6b-a774",
+                "$text": "4"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "0725-6d62-4136-1f56",
+                "$text": "4"
+              },
+              {
+                "name": "Strength (S)",
+                "typeId": "model-strength",
+                "$text": "7"
+              },
+              {
+                "name": "Toughness (T)",
+                "typeId": "0f0e-1166-667c-6b8d",
+                "$text": "7"
+              },
+              {
+                "name": "Wounds (W)",
+                "typeId": "091b-45b8-4b3d-7971",
+                "$text": "7"
+              },
+              {
+                "name": "Initiative (I)",
+                "typeId": "model-initiative",
+                "$text": "4"
+              },
+              {
+                "name": "Attacks (A)",
+                "typeId": "model-attacks",
+                "$text": "2"
+              },
+              {
+                "name": "Leadership (LD)",
+                "typeId": "5e98-cab2-59ac-168b",
+                "$text": "10"
+              },
+              {
+                "name": "Cool (CL)",
+                "typeId": "7f44-7a96-7a38-aa52",
+                "$text": "10"
+              },
+              {
+                "name": "Willpower (WP)",
+                "typeId": "30ba-3375-7bae-99b4",
+                "$text": "5"
+              },
+              {
+                "name": "Intelligence (INT)",
+                "typeId": "91ef-626b-7f89-c3d6",
+                "$text": "5"
+              },
+              {
+                "name": "Save (SAV)",
+                "typeId": "b66c-6835-eb9e-8a19",
+                "$text": "3"
+              },
+              {
+                "name": "Invulnerable Save (INV)",
+                "typeId": "b052-bfb0-212a-a270",
+                "$text": "6"
+              }
+            ]
+          }
+        ],
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 165
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "a06f-4df2-c9de-d595",
+            "id": "f5a4-813c-7987-0820",
+            "primary": false,
+            "name": "Bulky (8)"
+          },
+          {
+            "targetId": "implacable-advance",
+            "id": "9e95-6402-6d85-8d30",
+            "primary": false,
+            "name": "Implacable Advance"
+          },
+          {
+            "targetId": "move-through-cover-category",
+            "id": "7c77-dad8-1904-5463",
+            "primary": false,
+            "name": "Move Through Cover"
+          },
+          {
+            "targetId": "war-machines-category",
+            "id": "8e31-4b62-0185-8cbe",
+            "primary": true,
+            "name": "War Machine"
+          },
+          {
+            "targetId": "explodes-5",
+            "id": "9198-8ee3-41f4-0c30",
+            "primary": false,
+            "name": "Explodes (5+)"
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Two options from the following list:",
+            "id": "3029-e7a4-2bf2-9e66",
+            "hidden": false,
+            "constraints": [
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c6bc-d0b0-e8d1-0fc2-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c6bc-d0b0-e8d1-0fc2-max",
+                "includeChildSelections": false
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Gyges siege claw and irad-cleanser",
+                "hidden": false,
+                "id": "b6e9-5ea7-051b-39e3",
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Irad-cleanser",
+                    "hidden": false,
+                    "id": "b308-0763-67d5-4fc2",
+                    "categoryLinks": [
+                      {
+                        "targetId": "8ad3-363d-41c7-67ec",
+                        "id": "e20a-a6e6-2b4e-e090",
+                        "primary": false,
+                        "name": "Rad"
+                      }
+                    ],
+                    "infoLinks": [
+                      {
+                        "targetId": "775f-78c4-60bd-c234",
+                        "id": "0291-33af-0647-1137",
+                        "type": "profile",
+                        "name": "Irad-cleanser",
+                        "hidden": false
+                      }
+                    ]
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Gyges siege claw",
+                    "hidden": false,
+                    "id": "27d9-8731-305d-733c",
+                    "infoLinks": [
+                      {
+                        "targetId": "92a0-424d-cbb7-72fc",
+                        "id": "cdc6-ae1c-733b-3f54",
+                        "type": "profile",
+                        "name": "Gyges siege claw",
+                        "hidden": false
+                      }
+                    ],
+                    "categoryLinks": [
+                      {
+                        "targetId": "c5ee-3f1c-4b94-9394",
+                        "id": "34a2-5e3f-aefc-30ec",
+                        "primary": false,
+                        "name": "Armour-Breaker (5)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Volkite veuglaire",
+                "hidden": false,
+                "id": "1739-14b8-ddc8-8b0e",
+                "profiles": [
+                  {
+                    "name": "Volkite veuglaire",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "ef32-c070-68ac-ea8e",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "30"
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": "5"
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": "7"
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": "5"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "1"
+                      }
+                    ]
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "targetId": "volkite",
+                    "id": "484c-efec-6c33-abdc",
+                    "primary": false,
+                    "name": "Volkite"
+                  },
+                  {
+                    "targetId": "6d88-3b4a-a079-635a",
+                    "id": "51e7-4d46-cea6-b257",
+                    "primary": false,
+                    "name": "Deflagrate (7)"
+                  },
+                  {
+                    "targetId": "cf9f-84fb-7ee5-9efb",
+                    "id": "b9df-6290-d794-d441",
+                    "primary": false,
+                    "name": "Heavy (FP)"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Lightning lock",
+                "hidden": false,
+                "id": "8270-9fb3-e064-8cd6",
+                "profiles": [
+                  {
+                    "name": "Lightning lock",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "b7fe-83b5-b58b-5aef",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "36"
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": "7"
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "2"
+                      }
+                    ]
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "targetId": "04a5-8fcd-8001-2ec0",
+                    "id": "d8b4-4c20-ed7b-3e7b",
+                    "primary": false,
+                    "name": "Arc"
+                  },
+                  {
+                    "targetId": "3a7f-1616-3fa9-a71e",
+                    "id": "20c6-b84c-bf39-0c3f",
+                    "primary": false,
+                    "name": "Blast (3\")"
+                  },
+                  {
+                    "targetId": "0f24-9ab2-b239-fcab",
+                    "id": "8c3e-910f-462f-e388",
+                    "primary": false,
+                    "name": "Breaching (5+)"
+                  },
+                  {
+                    "targetId": "86a2-c815-345b-e6fa",
+                    "id": "4036-75bb-ec29-fe52",
+                    "primary": false,
+                    "name": "Shred (5+)"
+                  },
+                  {
+                    "targetId": "67f2-7c63-3e6b-57d0",
+                    "id": "d2fd-6bb6-b11f-d4df",
+                    "primary": false,
+                    "name": "Suppressive (0)"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 5
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Graviton pulsar",
+                "hidden": false,
+                "id": "d2f9-f11b-52ac-4b8f",
+                "profiles": [
+                  {
+                    "name": "Graviton pulsar",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "0c1f-1b93-adbb-2522",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "24"
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": "6"
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "1"
+                      }
+                    ]
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "targetId": "graviton",
+                    "id": "44db-e3d3-e757-47b4",
+                    "primary": false,
+                    "name": "Graviton"
+                  },
+                  {
+                    "targetId": "3a7f-1616-3fa9-a71e",
+                    "id": "b554-f21d-11c7-f14a",
+                    "primary": false,
+                    "name": "Blast (3\")"
+                  },
+                  {
+                    "targetId": "bdb6-f99d-a9c6-289b",
+                    "id": "81d0-7134-b007-a1d8",
+                    "primary": false,
+                    "name": "Breaching (6+)"
+                  },
+                  {
+                    "targetId": "85c5-2932-23f9-bbf2",
+                    "id": "edbf-f1c7-ad7f-b1af",
+                    "primary": false,
+                    "name": "Shock (Pinned)"
+                  },
+                  {
+                    "targetId": "68bc-4ffa-519e-0ac7",
+                    "id": "c204-623c-664d-0574",
+                    "primary": false,
+                    "name": "Pinning (2)"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 15
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Moirax conversion beamer",
+                "hidden": false,
+                "id": "f4aa-487b-2024-66ff",
+                "profiles": [
+                  {
+                    "name": "Moirax conversion beamer <15",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "ea13-faf2-20d7-910b",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "<15"
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": "6"
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "1"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Moirax conversion beamer >30-45",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "91aa-1624-91eb-e7e7",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": ">30-45"
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": "8"
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "3"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "Moirax conversion beamer 15-30",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "0200-1d61-0fe0-a266",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "15-30"
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": "7"
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "2"
+                      }
+                    ]
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "targetId": "23a1-a4e8-1a3f-7028",
+                    "id": "c774-52ea-608c-ee5e",
+                    "primary": false,
+                    "name": "Heavy (RS)"
+                  },
+                  {
+                    "targetId": "3a7f-1616-3fa9-a71e",
+                    "id": "c708-3fa0-0136-b603",
+                    "primary": false,
+                    "name": "Blast (3\")"
+                  },
+                  {
+                    "targetId": "1120-c528-e8aa-fe82",
+                    "id": "94d3-1a10-a63a-8731",
+                    "primary": false,
+                    "name": "Suppressive (1)"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 20
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Paired Gyges siege claws and two irad-cleansers",
+                "hidden": false,
+                "id": "7624-4192-24aa-6adb",
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Irad-cleanser",
+                    "hidden": false,
+                    "id": "f38c-15d7-ea40-e359",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "7055-5bfa-63c9-6061-min",
+                        "includeChildSelections": false
+                      },
+                      {
+                        "type": "max",
+                        "value": 2,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "7055-5bfa-63c9-6061-max",
+                        "includeChildSelections": false
+                      }
+                    ],
+                    "categoryLinks": [
+                      {
+                        "targetId": "a8ee-1cdd-f68a-831b",
+                        "id": "fd6a-f000-ea18-9047",
+                        "primary": false,
+                        "name": "Template"
+                      },
+                      {
+                        "targetId": "4873-2d33-a0fe-4937",
+                        "id": "d32f-3510-2023-fba8",
+                        "primary": false,
+                        "name": "Panic (1)"
+                      },
+                      {
+                        "targetId": "bf16-1701-e061-976a",
+                        "id": "41c1-ec9a-b26c-cf4d",
+                        "primary": false,
+                        "name": "Phage (T)"
+                      },
+                      {
+                        "targetId": "eed9-b0e3-0fd6-bfac",
+                        "id": "05be-44dd-dfbe-fb85",
+                        "primary": false,
+                        "name": "Poisoned (2+)"
+                      }
+                    ],
+                    "infoLinks": [
+                      {
+                        "name": "Irad-cleanser",
+                        "id": "01f1-e4cb-402f-6f60",
+                        "hidden": false,
+                        "targetId": "775f-78c4-60bd-c234",
+                        "type": "profile"
+                      }
+                    ]
+                  },
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Paired Gyges siege claws ",
+                    "hidden": false,
+                    "id": "f61b-1c77-28b3-b35e",
+                    "profiles": [
+                      {
+                        "name": "Paired Gyges siege claws",
+                        "typeId": "weapon",
+                        "typeName": "Weapon",
+                        "hidden": false,
+                        "id": "0323-afab-c699-acdf",
+                        "characteristics": [
+                          {
+                            "name": "Range",
+                            "typeId": "range",
+                            "$text": ""
+                          },
+                          {
+                            "name": "Fire Power (FP)",
+                            "typeId": "fire-power",
+                            "$text": ""
+                          },
+                          {
+                            "name": "Range Strength (RS)",
+                            "typeId": "range-strength",
+                            "$text": ""
+                          },
+                          {
+                            "name": "Melee Initiative Modifier (IM)",
+                            "typeId": "weapon-initiative",
+                            "$text": "I"
+                          },
+                          {
+                            "name": "Melee Attacks Modifier (AM)",
+                            "typeId": "weapon-attacks",
+                            "$text": "A"
+                          },
+                          {
+                            "name": "Melee Strength Modifier (SM)",
+                            "typeId": "melee-strength",
+                            "$text": "+6"
+                          },
+                          {
+                            "name": "Armour Penetration (AP)",
+                            "$text": "3"
+                          },
+                          {
+                            "name": "Damage (D)",
+                            "typeId": "damage",
+                            "$text": "4"
+                          }
+                        ]
+                      }
+                    ],
+                    "categoryLinks": [
+                      {
+                        "targetId": "c5ee-3f1c-4b94-9394",
+                        "id": "087d-c022-b14b-9dc0",
+                        "primary": false,
+                        "name": "Armour-Breaker (5)"
+                      },
+                      {
+                        "targetId": "0f24-9ab2-b239-fcab",
+                        "id": "2d34-4b79-2eb4-ebfb",
+                        "primary": false,
+                        "name": "Breaching (5+)"
+                      }
+                    ]
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 10
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "7a45-9cd8-59ff-1f3d",
+                    "includeChildSelections": false
+                  }
+                ]
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 1,
+                "field": "c6bc-d0b0-e8d1-0fc2-min",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "7624-4192-24aa-6adb",
+                    "shared": true
+                  }
+                ]
+              },
+              {
+                "type": "set",
+                "value": 1,
+                "field": "c6bc-d0b0-e8d1-0fc2-max",
+                "conditions": [
+                  {
+                    "type": "atLeast",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "7624-4192-24aa-6adb",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "targetId": "456f-f2b4-ecc2-abc5",
+            "id": "faca-5a89-a3ac-ffde",
+            "type": "selectionEntry",
+            "name": "Rad Furnace",
+            "hidden": false
+          }
+        ]
       }
     ],
     "type": "catalogue",
@@ -5614,13 +6477,6 @@
         "hidden": false
       },
       {
-        "targetId": "2b40-5e36-ecd4-cbff",
-        "id": "431f-3dd3-dac2-891f",
-        "type": "selectionEntry",
-        "name": "Armiger Helverin",
-        "hidden": false
-      },
-      {
         "targetId": "f63e-9320-1ed8-4967",
         "id": "121c-0639-7db4-9d2d",
         "type": "selectionEntry",
@@ -5632,6 +6488,13 @@
         "id": "806f-ef47-27c0-69a2",
         "type": "selectionEntry",
         "name": "Additional Entry",
+        "hidden": false
+      },
+      {
+        "targetId": "65c9-e41a-d4f5-6cfa",
+        "id": "af6c-169d-0971-9292",
+        "type": "selectionEntry",
+        "name": "Armiger Moirax",
         "hidden": false
       },
       {
@@ -5726,6 +6589,13 @@
             "name": "War Machine"
           }
         ]
+      },
+      {
+        "targetId": "2b40-5e36-ecd4-cbff",
+        "id": "2911-2c4e-c63c-f6d3",
+        "type": "selectionEntry",
+        "name": "Armiger Helverin",
+        "hidden": false
       }
     ],
     "publicationId": "liber-questoris",
@@ -5841,6 +6711,56 @@
             "id": "b82a-eae6-7467-8af0",
             "primary": true,
             "name": "Questoris Vow"
+          }
+        ]
+      }
+    ],
+    "sharedProfiles": [
+      {
+        "name": "Gyges siege claw",
+        "typeId": "weapon",
+        "typeName": "Weapon",
+        "hidden": false,
+        "id": "92a0-424d-cbb7-72fc",
+        "characteristics": [
+          {
+            "name": "Range",
+            "typeId": "range",
+            "$text": ""
+          },
+          {
+            "name": "Fire Power (FP)",
+            "typeId": "fire-power",
+            "$text": ""
+          },
+          {
+            "name": "Range Strength (RS)",
+            "typeId": "range-strength",
+            "$text": ""
+          },
+          {
+            "name": "Melee Initiative Modifier (IM)",
+            "typeId": "weapon-initiative",
+            "$text": "I"
+          },
+          {
+            "name": "Melee Attacks Modifier (AM)",
+            "typeId": "weapon-attacks",
+            "$text": "A"
+          },
+          {
+            "name": "Melee Strength Modifier (SM)",
+            "typeId": "melee-strength",
+            "$text": "+5"
+          },
+          {
+            "name": "Armour Penetration (AP)",
+            "$text": "3"
+          },
+          {
+            "name": "Damage (D)",
+            "typeId": "damage",
+            "$text": "3"
           }
         ]
       }
