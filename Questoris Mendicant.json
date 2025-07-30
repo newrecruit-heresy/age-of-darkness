@@ -1,0 +1,58 @@
+{
+  "catalogue": {
+    "library": false,
+    "id": "questoris-mendicant",
+    "name": "Questoris Mendicant",
+    "gameSystemId": "sys-41d4-b033-8ca9-9bb0",
+    "gameSystemRevision": 1,
+    "revision": 1,
+    "battleScribeVersion": "2.03",
+    "catalogueLinks": [
+      {
+        "type": "catalogue",
+        "name": "Questoris Household",
+        "id": "7f31-53f0-0e8b-bd26",
+        "targetId": "questoris-household",
+        "importRootEntries": true
+      }
+    ],
+    "type": "catalogue",
+    "selectionEntries": [
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Vow of Belligerance",
+        "hidden": false,
+        "id": "4834-5536-598f-3384",
+        "categoryLinks": [
+          {
+            "targetId": "questoris-vow",
+            "id": "594a-edf5-a924-7aec",
+            "primary": true,
+            "name": "Questoris Vow"
+          }
+        ],
+        "page": "18",
+        "publicationId": "liber-questoris",
+        "rules": [
+          {
+            "name": "Vow of Belligerence",
+            "id": "dff8-6b99-5d08-8376",
+            "hidden": false,
+            "description": "If a Model with this Questoris Vow is part of the first Combat in a Battle for which the Controlling Player is declared the winner, the Controlling Player gains 2 Victory Points.",
+            "publicationId": "liber-questoris",
+            "page": "18"
+          }
+        ]
+      }
+    ],
+    "rules": [
+      {
+        "name": "Loyal Retainers",
+        "id": "d777-53e9-6a22-9eb9",
+        "hidden": false,
+        "description": "A single Armiger Talon Additional Detachment may be added to an Army with the Freeblade Company Household Paradigm without requiring a specific corresponding Household Rank Prime Advantage to have been selected for a Unit in that Army. This Additional Detachment is linked to either a Knight Households Primary Detachment or a Lord of War Additional Detachment (chosen by the Player), as long as that Detachment contains at least one Model with the Questoris Mendicant Faction Trait."
+      }
+    ]
+  }
+}

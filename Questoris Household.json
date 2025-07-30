@@ -1,0 +1,5849 @@
+{
+  "catalogue": {
+    "library": true,
+    "id": "questoris-household",
+    "name": "Questoris Household",
+    "gameSystemId": "sys-41d4-b033-8ca9-9bb0",
+    "gameSystemRevision": 1,
+    "revision": 1,
+    "battleScribeVersion": "2.03",
+    "forceEntries": [
+      {
+        "name": "Knight Household",
+        "id": "knight-household",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Prime",
+            "hidden": false,
+            "id": "a67b-e415-706b-b62c",
+            "targetId": "prime-category",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 4,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "58be-db51-38da-7619",
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "name": "Lord of War",
+            "hidden": false,
+            "id": "46d9-4f89-2975-843f",
+            "targetId": "lord-of-war-category",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 4,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "acb8-ee0f-1568-1f17",
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "name": "Primary Detachment",
+            "hidden": false,
+            "id": "90bd-8d4b-c4dc-10c8",
+            "targetId": "primary-detachment",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "0e85-bec8-059e-27c0-min",
+                "includeChildSelections": true
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "0e85-bec8-059e-27c0-max",
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "name": "Allegiance",
+            "hidden": false,
+            "id": "7114-164f-46bd-8a20",
+            "targetId": "allegiance-category"
+          },
+          {
+            "name": "Questoris Vow",
+            "hidden": false,
+            "id": "c608-453b-d115-4605",
+            "targetId": "questoris-vow",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "a3ed-de00-b28b-d395-min",
+                "includeChildSelections": true
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "a3ed-de00-b28b-d395-max",
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Armiger Talon",
+        "id": "armiger-talon",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Additional Detachment",
+            "hidden": false,
+            "id": "5277-50dc-48d0-bdee",
+            "targetId": "additional-detachment",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "fcea-e942-71c1-455a-min",
+                "includeChildSelections": true
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "fcea-e942-71c1-455a-max",
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "name": "War Machine",
+            "hidden": false,
+            "id": "8f10-d6ab-ea3d-f653",
+            "targetId": "war-machines-category",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 4,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d777-9e86-3a3d-4ff1"
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 0,
+            "field": "forces",
+            "scope": "roster",
+            "shared": true,
+            "id": "f272-651b-038d-4e82",
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "f272-651b-038d-4e82",
+            "affects": "self.entries.forces",
+            "scope": "roster",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "scion-aspirant",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
+          },
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "f272-651b-038d-4e82",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "forces",
+                "scope": "roster",
+                "childId": "questoris-mendicant",
+                "shared": false,
+                "roundUp": false,
+                "includeChildSelections": false,
+                "includeChildForces": false
+              }
+            ],
+            "conditionGroups": [
+              {
+                "type": "or",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "lord-of-war-detachment",
+                    "shared": true,
+                    "includeChildSelections": true
+                  },
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "force",
+                    "childId": "knight-household",
+                    "shared": true,
+                    "includeChildSelections": false,
+                    "includeChildForces": true
+                  }
+                ]
+              }
+            ],
+            "affects": "forces"
+          }
+        ]
+      },
+      {
+        "name": "Support Banner",
+        "id": "support-banner",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Lord of War",
+            "hidden": false,
+            "id": "d689-1176-0846-6982",
+            "targetId": "lord-of-war-category",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "6a55-39c0-ac08-6461"
+              }
+            ]
+          },
+          {
+            "name": "Additional Detachment",
+            "hidden": false,
+            "id": "f00c-39d9-9189-644e",
+            "targetId": "additional-detachment",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "ddae-4dd1-a50d-e5df-min",
+                "includeChildSelections": true
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "ddae-4dd1-a50d-e5df-max",
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "name": "Prime",
+            "hidden": false,
+            "id": "4312-b15b-bf55-dd2c",
+            "targetId": "prime-category",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "09ca-fb5e-9ba3-f685",
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 0,
+            "field": "forces",
+            "scope": "roster",
+            "shared": true,
+            "id": "270e-8c81-1b4e-5084",
+            "includeChildSelections": true,
+            "includeChildForces": true
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "increment",
+            "value": 1,
+            "field": "270e-8c81-1b4e-5084",
+            "affects": "self.entries.forces",
+            "scope": "roster",
+            "repeats": [
+              {
+                "value": 1,
+                "repeats": 1,
+                "field": "selections",
+                "scope": "roster",
+                "childId": "1050-9569-9fbb-2d35",
+                "shared": true,
+                "roundUp": false,
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "categoryEntries": [
+      {
+        "name": "Questoris Vow",
+        "id": "questoris-vow",
+        "hidden": false,
+        "publicationId": "liber-questoris",
+        "page": "14"
+      }
+    ],
+    "sharedSelectionEntryGroups": [
+      {
+        "name": "Household Rank",
+        "id": "household-rank",
+        "hidden": false,
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "1668-ea68-008e-d480"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Aucteller",
+            "hidden": false,
+            "id": "959a-3e5f-49ee-1608",
+            "rules": [
+              {
+                "name": "Aucteller",
+                "id": "8ea7-f794-ff7c-9e2c",
+                "hidden": false,
+                "description": "All Models in a Unit selected to fill a Prime Slot with this Household Rank Prime Advantage gain the Precision (5+) Special Rule on any Melee Weapons they have. Any Model in a Unit selected to fill a Prime Slot with this Household Rank Prime Advantage may not have any Questoris Vow declared for it other than the Vow of Execution."
+              }
+            ],
+            "publicationId": "liber-questoris",
+            "page": "24",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "5f19-0465-afb7-7a46",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Scion Dolorous",
+            "hidden": false,
+            "id": "42b7-0508-33b6-c473",
+            "rules": [
+              {
+                "name": "Scion Dolorous",
+                "id": "c667-c941-7687-92b2",
+                "hidden": false,
+                "description": "Models in a Unit selected to fill a Prime Slot with this Household Rank Prime Advantage gain the Fear (2) Special Rule. Any Model in a Unit selected to fill a Prime Slot with this Household Rank Prime Advantage may not have any Questoris Vow declared for it other than the Vow of Slaying."
+              }
+            ],
+            "publicationId": "liber-questoris",
+            "page": "24",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "d3f7-8200-2ba6-b383",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Scion Implacable",
+            "hidden": false,
+            "id": "e308-55a2-824b-d1ba",
+            "rules": [
+              {
+                "name": "Scion Implacable",
+                "id": "97f6-f367-dffb-c0a0",
+                "hidden": false,
+                "description": "All Models in a Unit selected to fill a Prime Slot with this Household Rank Prime Advantage gain the Firestorm Special Rule. Any Model in a Unit selected to fill a Prime Slot with this Household Rank Prime Advantage may not have any Questoris Vow declared for it other than the Vow of Resolve."
+              }
+            ],
+            "publicationId": "liber-questoris",
+            "page": "24",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "32a2-fefb-997e-2306",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Scion Martial",
+            "hidden": false,
+            "id": "1050-9569-9fbb-2d35",
+            "rules": [
+              {
+                "name": "Scion Martial",
+                "id": "8f2b-69ff-19c7-0ff1",
+                "hidden": false,
+                "description": "The Scions Martial represent the meridian of skill and power on which the Unit Profiles in the Questoris Familia Army List are based, and therefore, the Scion Martial Household Rank Prime Advantage does not modify the profile of any Models in a Unit for which it is selected."
+              }
+            ],
+            "publicationId": "liber-questoris",
+            "page": "25"
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Scion Uhlan",
+            "hidden": false,
+            "id": "13a9-c4e3-8798-430f",
+            "rules": [
+              {
+                "name": "Scion Uhlan",
+                "id": "7179-a0a7-0ea4-958a",
+                "hidden": false,
+                "description": "All Models in a Unit selected to fill a Prime Slot with this Household Rank Prime Advantage gain the Fast (2) and the Impact (A) Special Rules. Any Model in a Unit selected to fill a Prime Slot with this Household Rank Prime Advantage may not have any Questoris Vow declared for it other than the Vow of Alacrity."
+              }
+            ],
+            "publicationId": "liber-questoris",
+            "page": "25",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "88ba-dd09-9bb7-ea94",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Scion Aspirant",
+            "hidden": false,
+            "id": "scion-aspirant",
+            "rules": [
+              {
+                "name": "Scion Aspirant",
+                "id": "50ba-17bf-2ecf-f213",
+                "hidden": false,
+                "description": "All Models in a Unit selected to fill a Prime Slot with this Household Rank Prime Advantage gain the Expendable (1) Special Rule and modify the value of X on any version of the Auto-repair (X) Special Rule they have by -1.",
+                "page": "23",
+                "publicationId": "liber-questoris"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Seneschal",
+            "hidden": false,
+            "id": "4138-fadc-8d35-9e0a",
+            "rules": [
+              {
+                "name": "Seneschal",
+                "id": "045a-e6ac-6e1b-0974",
+                "hidden": false,
+                "page": "23",
+                "publicationId": "liber-questoris",
+                "description": "When a Model in a Unit selected to fill a Prime Slot with this Household Rank Prime Advantage is allocated a Penetrating Hit, the Damage of the Penetrating Hit is modified by -1, to a minimum of 1. Additionally, a Unit with this Household Rank Prime Advantage counts as being a High Command Choice for the purposes of any version of the Slay the Warlord (X) Secondary Objective."
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "7125-7e4c-ff04-9941",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Scion Arbalester",
+            "hidden": false,
+            "id": "510c-674d-a54d-9aca",
+            "rules": [
+              {
+                "name": "Scion Arbalester",
+                "id": "60fb-a708-144b-1350",
+                "hidden": false,
+                "description": "When a Model in a Unit selected to fill a Prime Slot with this Household Rank Prime Advantage moves a distance equal to no more than half of its Movement Characteristic in inches in the Movement Phase, it may still benefit from any variant of the Heavy (X) or Ordnance (X) Special Rule on any Weapons it has.",
+                "page": "23",
+                "publicationId": "liber-questoris"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "roster",
+                "shared": true,
+                "id": "6158-e52e-8ad6-1dcc",
+                "includeChildSelections": true,
+                "includeChildForces": true
+              }
+            ]
+          }
+        ],
+        "defaultSelectionEntryId": "1050-9569-9fbb-2d35",
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Prime Traits",
+            "hidden": false,
+            "id": "43be-5a2c-83cf-7d94",
+            "type": "selectionEntryGroup",
+            "targetId": "prime-traits",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "knight-household",
+                    "shared": true
+                  },
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "support-banner",
+                    "shared": true
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "targetId": "8f22-36ad-d601-aa8f",
+            "id": "27ab-31db-99e3-4df1",
+            "type": "selectionEntry",
+            "name": "Lord Scion",
+            "hidden": false
+          },
+          {
+            "targetId": "6e23-90ff-706b-fc88",
+            "id": "607b-1b45-e56f-b127",
+            "type": "selectionEntry",
+            "name": "Preceptor",
+            "hidden": false
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditionGroups": [
+              {
+                "type": "and",
+                "conditions": [
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "lord-of-war-detachment",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "includeChildForces": true
+                  },
+                  {
+                    "type": "lessThan",
+                    "value": 1,
+                    "field": "forces",
+                    "scope": "roster",
+                    "childId": "questoris-mendicant",
+                    "shared": true,
+                    "includeChildSelections": true,
+                    "includeChildForces": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Household Paradigms",
+        "id": "88b5-119d-0bc4-a13f",
+        "hidden": false,
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Baronial Court",
+            "hidden": false,
+            "id": "17e0-d774-a3d0-120a",
+            "rules": [
+              {
+                "name": "Baronial Court",
+                "id": "7b09-fbc6-fc2d-3385",
+                "hidden": false,
+                "description": "A single Yeomanry Mesnie Additional Detachment may be added to an Army with the Imperial House Household Paradigm without requiring a specific corresponding Household Rank Prime Advantage to have been selected for a Unit in that Army. This Additional Detachment is linked to either a Knight Households Primary Detachment or a Lord of War Additional Detachment\n(chosen by the Player), as long as that Detachment contains at least one Model with the Questoris Imperialis Faction Trait. Additionally, an Army with the Imperial House Household Paradigm is not subject to the 0-1 per Army restriction on the Lord Scion Household Rank Prime Advantage.",
+                "page": "14",
+                "publicationId": "liber-questoris"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "sharedSelectionEntries": [
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Ion Shield",
+        "hidden": false,
+        "id": "443f-cb15-2672-b032",
+        "rules": [
+          {
+            "name": "Ion Shield",
+            "id": "9adb-db00-b155-6758",
+            "hidden": false,
+            "description": "lon shields provide a different Invulnerable Save against Shooting Attacks made against a Model's Front and Rear Facings, including against Glancing Hits. A Model with an ion shield has a 5+ Invulnerable Save against Shooting Attacks made against its Front Facing and a 6+ Invulnerable Save against Shooting Attacks made against its Rear Facing. Additionally, a Model with an ion shield may have Invulnerable Saves made for it against any Glancing Hits it has suffered in Step 11 of a Shooting Attack, before any rolls on the Vehicle Damage Chart are made, discarding a single Glancing Hit for each successful save.",
+            "publicationId": "liber-questoris",
+            "page": "108"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "9e44-5a28-9f49-99e3-min",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "9e44-5a28-9f49-99e3-max",
+            "includeChildSelections": false
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Cerastus Knight Atrapos",
+        "hidden": false,
+        "id": "364f-53c4-1da4-7887",
+        "publicationId": "liber-questoris",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 600
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Cerastus Knight Atrapos",
+            "typeId": "382a-b6a2-b2bf-6f79",
+            "typeName": "Knight",
+            "hidden": false,
+            "id": "59ec-96c0-fb55-b6ff",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "94cf-7a5f-8bc2-f255",
+                "$text": "14"
+              },
+              {
+                "name": "Weapon Skill (WS)",
+                "typeId": "3436-c067-d49c-6f9e",
+                "$text": "4"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "e65f-3857-0678-73fd",
+                "$text": "4"
+              },
+              {
+                "name": "Strength (S)",
+                "typeId": "baaa-7faf-8ce5-e915",
+                "$text": "9"
+              },
+              {
+                "name": "Front Armour",
+                "typeId": "3e22-b5e1-6789-aff5",
+                "$text": "13"
+              },
+              {
+                "name": "Rear Armour",
+                "typeId": "81c0-3005-8e13-01a0",
+                "$text": "11"
+              },
+              {
+                "name": "Initiative (I)",
+                "typeId": "7228-b04d-729d-f81f",
+                "$text": "4"
+              },
+              {
+                "name": "Attacks (A)",
+                "typeId": "02cb-0c1c-2665-055c",
+                "$text": "4"
+              },
+              {
+                "name": "Hull Points (HP)",
+                "typeId": "dfa6-eb80-539c-3936",
+                "$text": "12"
+              }
+            ],
+            "page": ""
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "vanguard-category-2",
+            "id": "1e1a-aa52-c83f-061b",
+            "primary": false,
+            "name": "Vanguard (2)"
+          },
+          {
+            "targetId": "explodes-5",
+            "id": "5319-49a9-9ee2-4c7a",
+            "primary": false,
+            "name": "Explodes (5+)"
+          },
+          {
+            "targetId": "auto-repair-4",
+            "id": "a9b4-eb15-507d-c8df",
+            "primary": false,
+            "name": "Auto-repair 4+"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Ionic Flare Shield",
+            "hidden": false,
+            "id": "59b1-dc1b-21f7-7cf4",
+            "type": "selectionEntry",
+            "targetId": "8259-67c6-04e0-7d84"
+          },
+          {
+            "import": true,
+            "name": "Household Rank",
+            "hidden": false,
+            "id": "431a-d680-9b36-34a9",
+            "type": "selectionEntryGroup",
+            "targetId": "household-rank"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Hull mounted (Front) graviton singularity cannon",
+            "hidden": false,
+            "id": "0269-4918-9095-117e",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c426-da08-ff1f-e6e2",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3c13-3c32-b5fd-5f01",
+                "includeChildSelections": false
+              },
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "2f4c-27f8-3493-b2e2-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "2f4c-27f8-3493-b2e2-max"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Hull mounted (Front) graviton singularity cannon",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "f1b8-1e01-1bff-5b72",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": "36\""
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": "1 "
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": "9 "
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "2 "
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "8"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "74b7-013a-f22d-18dc",
+                "id": "48ec-1601-7afa-1303",
+                "primary": false,
+                "name": "Overload (1)"
+              },
+              {
+                "targetId": "78b9-81d2-dc2b-b007",
+                "id": "9823-c5de-b337-0b8b",
+                "primary": false,
+                "name": "Critical Hit (6+)"
+              },
+              {
+                "targetId": "c86d-f162-14c7-3072",
+                "id": "c390-3632-53b4-fe0e",
+                "primary": false,
+                "name": "Blast (5\")"
+              },
+              {
+                "targetId": "5f9a-3018-0468-d017",
+                "id": "510e-54d4-bf0f-9811",
+                "primary": false,
+                "name": "Heavy (D)"
+              },
+              {
+                "targetId": "armourbane-category",
+                "id": "3bf4-c0a5-9513-4a42",
+                "primary": false,
+                "name": "Armourbane"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Hull mounted (Front) phase cutter",
+            "hidden": false,
+            "id": "5177-83bb-6fdc-c324",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7967-97c9-7f2f-8f5a",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "df8f-1d03-4e4d-987d",
+                "includeChildSelections": false
+              },
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3385-b67b-7357-912a-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3385-b67b-7357-912a-max"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Hull mounted (Front) phase cutter",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "6648-2a5e-d8f1-ae1a",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": "12"
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": "10"
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": "\n"
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "6"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "a5a7-a39c-f122-9bc6",
+                "id": "fc1e-b46e-4a9c-db56",
+                "primary": false,
+                "name": "Ordnance (D)"
+              },
+              {
+                "targetId": "armourbane-category",
+                "id": "9142-ce85-0953-d484",
+                "primary": false,
+                "name": "Armourbane"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Hull mounted (Front) phase cutter (Melee)",
+            "hidden": false,
+            "id": "05bb-1916-7a56-4bfe",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "9e7c-c247-b535-c28e",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "0026-16d0-10e6-4c2c",
+                "includeChildSelections": false
+              },
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "02e0-2410-8995-b752"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "da19-cf8c-9da1-d551"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Hull mounted (Front) phase cutter (Melee)",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "2442-3852-3737-8aa2",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": "-2"
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": "12"
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "6"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "armourbane-category",
+                "id": "2c3e-deb1-a934-66cd",
+                "primary": false,
+                "name": "Armourbane"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Knight Questoris",
+        "hidden": false,
+        "id": "Knight Questoris",
+        "publicationId": "liber-questoris",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 400
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Knight Questoris",
+            "typeId": "382a-b6a2-b2bf-6f79",
+            "typeName": "Knight",
+            "hidden": false,
+            "id": "e61b-fa8b-3a1c-f079",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "94cf-7a5f-8bc2-f255",
+                "$text": "12"
+              },
+              {
+                "name": "Weapon Skill (WS)",
+                "typeId": "3436-c067-d49c-6f9e",
+                "$text": "4"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "e65f-3857-0678-73fd",
+                "$text": "4"
+              },
+              {
+                "name": "Strength (S)",
+                "typeId": "baaa-7faf-8ce5-e915",
+                "$text": "8"
+              },
+              {
+                "name": "Front Armour",
+                "typeId": "3e22-b5e1-6789-aff5",
+                "$text": "13"
+              },
+              {
+                "name": "Rear Armour",
+                "typeId": "81c0-3005-8e13-01a0",
+                "$text": "11"
+              },
+              {
+                "name": "Initiative (I)",
+                "typeId": "7228-b04d-729d-f81f",
+                "$text": "4"
+              },
+              {
+                "name": "Attacks (A)",
+                "typeId": "02cb-0c1c-2665-055c",
+                "$text": "4"
+              },
+              {
+                "name": "Hull Points (HP)",
+                "typeId": "dfa6-eb80-539c-3936",
+                "$text": "10"
+              }
+            ],
+            "page": "M2 WS BS 12 4 4 S∞ Front Rear I 8 A HP 13 11 4 4 10"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "auto-repair-5",
+            "id": "c2fe-a085-bc45-00c3",
+            "primary": false,
+            "name": "Auto-repair 5+"
+          },
+          {
+            "targetId": "vanguard-category-2",
+            "id": "3399-09b4-588d-ec4f",
+            "primary": false,
+            "name": "Vanguard (2)"
+          },
+          {
+            "targetId": "8eeb-ddb2-feb2-74a5",
+            "id": "9f21-f4b5-0adb-676c",
+            "primary": false,
+            "name": "Explodes (6+)"
+          }
+        ],
+        "entryLinks": [
+          {
+            "targetId": "443f-cb15-2672-b032",
+            "id": "bd74-2236-5bf2-f3e7",
+            "type": "selectionEntry",
+            "name": "Ion Shield",
+            "hidden": false
+          },
+          {
+            "import": true,
+            "name": "Household Rank",
+            "hidden": false,
+            "id": "f9fc-1d10-0dca-6118",
+            "type": "selectionEntryGroup",
+            "targetId": "household-rank"
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "This Model must have two options from the following list selected for it:",
+            "id": "e32c-d8bc-3976-75c0",
+            "hidden": false,
+            "constraints": [
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7110-2e57-ca0d-b90e-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7110-2e57-ca0d-b90e-max",
+                "includeChildSelections": false
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Reaper chainsword",
+                "hidden": false,
+                "id": "3e15-518c-0685-31a2",
+                "profiles": [
+                  {
+                    "name": "Reaper chainsword",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "2c2a-cf3d-0c30-fd54",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": "I"
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": "A"
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": "+1"
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "2"
+                      }
+                    ]
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "targetId": "chain",
+                    "id": "7d2d-676b-aff6-d87b",
+                    "primary": false,
+                    "name": "Chain"
+                  },
+                  {
+                    "targetId": "c31a-6618-0437-9697",
+                    "id": "5204-486c-0cda-bac6",
+                    "primary": false,
+                    "name": "Reaping Blow (2)"
+                  },
+                  {
+                    "targetId": "86a2-c815-345b-e6fa",
+                    "id": "e2e5-832d-5ee2-84ee",
+                    "primary": false,
+                    "name": "Shred (5+)"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Thunderstrike gauntlet",
+                "hidden": false,
+                "id": "e5c2-59e8-e2ec-c7c3",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 10
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Thunderstrike gauntlet",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "ede6-95aa-ffe1-27c6",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": "-2"
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": "-1"
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": "+3"
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "4"
+                      }
+                    ]
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "targetId": "78b9-81d2-dc2b-b007",
+                    "id": "7795-54b9-ea55-f216",
+                    "primary": false,
+                    "name": "Critical Hit (6+)"
+                  },
+                  {
+                    "targetId": "b1e9-3a4d-4c6c-d243",
+                    "id": "9b5e-797a-6275-463e",
+                    "primary": false,
+                    "name": "Impact (S)"
+                  },
+                  {
+                    "targetId": "c7c0-c92f-beee-333a",
+                    "id": "4153-e8f6-3c34-9654",
+                    "primary": false,
+                    "name": "Shock (Suppressed)"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Hull (Front) Mounted las-impulsor",
+                "hidden": false,
+                "id": "0947-4012-6b9e-5f42",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 15
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Hull (Front) Mounted las-impulsor",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "d29b-e790-7df9-b234",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "8\""
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": "9"
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "4"
+                      }
+                    ]
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "targetId": "a5a7-a39c-f122-9bc6",
+                    "id": "b62d-64d4-51a8-5554",
+                    "primary": false,
+                    "name": "Ordnance (D)"
+                  },
+                  {
+                    "targetId": "armourbane-category",
+                    "id": "4d71-80e8-8dce-f48e",
+                    "primary": false,
+                    "name": "Armourbane"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Hull (Front) Mounted rapid-fire battlecannon and one Co-axial (rapid-fire battlecannon) Mounted heavy stubber",
+                "hidden": false,
+                "id": "fcc9-a8f9-9068-5b7c",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 5
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Hull (Front) Mounted rapid-fire battlecannon",
+                    "hidden": false,
+                    "id": "599b-6a0c-ecd9-fb5a",
+                    "profiles": [
+                      {
+                        "name": "Hull (Front) Mounted rapid-fire battlecannon",
+                        "typeId": "weapon",
+                        "typeName": "Weapon",
+                        "hidden": false,
+                        "id": "8996-0685-f1c0-1cad",
+                        "characteristics": [
+                          {
+                            "name": "Range",
+                            "typeId": "range",
+                            "$text": "48\""
+                          },
+                          {
+                            "name": "Fire Power (FP)",
+                            "typeId": "fire-power",
+                            "$text": "1"
+                          },
+                          {
+                            "name": "Range Strength (RS)",
+                            "typeId": "range-strength",
+                            "$text": ""
+                          },
+                          {
+                            "name": "Melee Initiative Modifier (IM)",
+                            "typeId": "weapon-initiative",
+                            "$text": ""
+                          },
+                          {
+                            "name": "Melee Attacks Modifier (AM)",
+                            "typeId": "weapon-attacks",
+                            "$text": ""
+                          },
+                          {
+                            "name": "Melee Strength Modifier (SM)",
+                            "typeId": "melee-strength",
+                            "$text": ""
+                          },
+                          {
+                            "name": "Armour Penetration (AP)",
+                            "$text": "8"
+                          },
+                          {
+                            "name": "Damage (D)",
+                            "typeId": "damage",
+                            "$text": "4"
+                          }
+                        ]
+                      }
+                    ],
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "144d-82ef-71bf-0035-min",
+                        "includeChildSelections": false
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "144d-82ef-71bf-0035-max",
+                        "includeChildSelections": false
+                      }
+                    ],
+                    "categoryLinks": [
+                      {
+                        "targetId": "3a7f-1616-3fa9-a71e",
+                        "id": "3016-8509-634d-c3e5",
+                        "primary": false,
+                        "name": "Blast (3\")"
+                      },
+                      {
+                        "targetId": "940f-1283-ffa8-438f",
+                        "id": "ad5a-e833-03de-f84d",
+                        "primary": false,
+                        "name": "Pinning (1)"
+                      },
+                      {
+                        "targetId": "cf9f-84fb-7ee5-9efb",
+                        "id": "3b29-fe58-b899-fdd8",
+                        "primary": false,
+                        "name": "Heavy (FP)"
+                      }
+                    ]
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Heavy Stubber",
+                    "id": "9263-e3f5-2ae7-322d",
+                    "hidden": false,
+                    "type": "profile",
+                    "targetId": "9686-d723-2e2a-9a82",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "Co-axial (rapid-fire battlecannon) Mounted heavy stubber",
+                        "field": "name"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Hull (Front) Mounted avenger gatling cannon and one Co-axial (avenger gatling cannon) Mounted heavy flamer",
+                "hidden": false,
+                "id": "a2a8-43bd-40d1-6560",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 10
+                  }
+                ],
+                "infoLinks": [
+                  {
+                    "name": "Heavy flamer",
+                    "id": "7df7-f363-fb47-0953",
+                    "hidden": false,
+                    "type": "profile",
+                    "targetId": "3ad3-9360-3dc7-8ff4",
+                    "modifiers": [
+                      {
+                        "type": "set",
+                        "value": "Co-axial (avenger gatling cannon) Mounted heavy flamer",
+                        "field": "name"
+                      }
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Hull (Front) Mounted avenger gatling cannon",
+                    "hidden": false,
+                    "id": "0def-9857-a918-46c6",
+                    "constraints": [
+                      {
+                        "type": "min",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "2a8f-b56e-580b-82d5-min",
+                        "includeChildSelections": false
+                      },
+                      {
+                        "type": "max",
+                        "value": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "shared": true,
+                        "id": "2a8f-b56e-580b-82d5-max",
+                        "includeChildSelections": false
+                      }
+                    ],
+                    "profiles": [
+                      {
+                        "name": "Hull (Front) Mounted avenger gatling cannon",
+                        "typeId": "weapon",
+                        "typeName": "Weapon",
+                        "hidden": false,
+                        "id": "c318-d788-bad1-5d62",
+                        "characteristics": [
+                          {
+                            "name": "Range",
+                            "typeId": "range",
+                            "$text": "36\"\n"
+                          },
+                          {
+                            "name": "Fire Power (FP)",
+                            "typeId": "fire-power",
+                            "$text": "7 "
+                          },
+                          {
+                            "name": "Range Strength (RS)",
+                            "typeId": "range-strength",
+                            "$text": "6"
+                          },
+                          {
+                            "name": "Melee Initiative Modifier (IM)",
+                            "typeId": "weapon-initiative",
+                            "$text": ""
+                          },
+                          {
+                            "name": "Melee Attacks Modifier (AM)",
+                            "typeId": "weapon-attacks",
+                            "$text": ""
+                          },
+                          {
+                            "name": "Melee Strength Modifier (SM)",
+                            "typeId": "melee-strength",
+                            "$text": ""
+                          },
+                          {
+                            "name": "Armour Penetration (AP)",
+                            "$text": "4 "
+                          },
+                          {
+                            "name": "Damage (D)",
+                            "typeId": "damage",
+                            "$text": "1"
+                          }
+                        ]
+                      }
+                    ],
+                    "categoryLinks": [
+                      {
+                        "targetId": "4f85-08e5-1ce4-a515",
+                        "id": "8988-fe00-21a5-e1cd",
+                        "primary": false,
+                        "name": "Ordnance (FP)"
+                      },
+                      {
+                        "targetId": "bdb6-f99d-a9c6-289b",
+                        "id": "35d5-3752-877e-61f6",
+                        "primary": false,
+                        "name": "Breaching (6+)"
+                      },
+                      {
+                        "targetId": "c26e-8009-8163-3555",
+                        "id": "7206-5753-efde-71f0",
+                        "primary": false,
+                        "name": "Suppressive (2)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Hull (Front) Mounted thermal cannon",
+                "hidden": false,
+                "id": "eebb-23c5-8883-47bc",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 20
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Hull (Front) Mounted thermal cannon",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "4ca2-1796-c9bb-c952",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "36"
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": "10"
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "6"
+                      }
+                    ]
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "targetId": "23a1-a4e8-1a3f-7028",
+                    "id": "0c77-2352-7540-be13",
+                    "primary": false,
+                    "name": "Heavy (RS)"
+                  },
+                  {
+                    "targetId": "3a7f-1616-3fa9-a71e",
+                    "id": "f82d-8ce7-9b08-1ca5",
+                    "primary": false,
+                    "name": "Blast (3\")"
+                  },
+                  {
+                    "targetId": "1a9a-8e58-7c0f-12f2",
+                    "id": "5bc4-e97a-d30a-80de",
+                    "primary": false,
+                    "name": "Melta (12)"
+                  }
+                ]
+              }
+            ],
+            "collective": true
+          },
+          {
+            "name": "This Model may have its Hull (Front) Mounted heavy stubber exchanged for one of the following options:",
+            "id": "08da-a321-8d26-13c1",
+            "hidden": false,
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Heavy Stubber",
+                "hidden": false,
+                "id": "a3ad-9c92-657a-a4a0",
+                "type": "selectionEntry",
+                "targetId": "heavy-stubber"
+              },
+              {
+                "import": true,
+                "name": "Multi laser",
+                "hidden": false,
+                "id": "a6ba-429c-7157-ca02",
+                "type": "selectionEntry",
+                "targetId": "multi-laser",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": 5,
+                    "field": "points"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Meltagun",
+                "hidden": false,
+                "id": "fd55-579c-dbe2-2860",
+                "type": "selectionEntry",
+                "targetId": "c2ee-523e-42e0-9b00",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": 10,
+                    "field": "points"
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "a3ad-9c92-657a-a4a0",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7018-3a71-f308-4dd4-min",
+                "automatic": true
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7018-3a71-f308-4dd4-max",
+                "automatic": true
+              }
+            ]
+          },
+          {
+            "name": "This Model may have one of the following options selected for it:",
+            "id": "6007-de09-d02e-3659",
+            "hidden": false,
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Dorsal (Front, Rear) Mounted twin Icarus autocannon",
+                "hidden": false,
+                "id": "2d55-abfd-4533-4cf2",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 20
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Dorsal (Front, Rear) Mounted twin Icarus autocannon",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "201e-b23c-f685-9165",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "48\""
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": " 4"
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": " 7"
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "3"
+                      }
+                    ]
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "targetId": "cf9f-84fb-7ee5-9efb",
+                    "id": "1117-da2a-02d3-98e7",
+                    "primary": false,
+                    "name": "Heavy (FP)"
+                  },
+                  {
+                    "targetId": "bdb6-f99d-a9c6-289b",
+                    "id": "9ed0-bd72-9a7c-a960",
+                    "primary": false,
+                    "name": "Breaching (6+)"
+                  },
+                  {
+                    "targetId": "bb14-079b-7575-1c7b",
+                    "id": "6499-d69b-d7d2-b5dc",
+                    "primary": false,
+                    "name": "Skyfire"
+                  },
+                  {
+                    "targetId": "f6bc-5b9b-b35e-c221",
+                    "id": "ca1c-b4c9-36e9-8441",
+                    "primary": false,
+                    "name": "Rapid Tracking"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Dorsal (Front, Rear) Mounted Ironstorm missile pod",
+                "hidden": false,
+                "id": "842c-5835-9978-50bb",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 15
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Dorsal (Front, Rear) Mounted Ironstorm missile pod",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "7497-8ae8-e379-5968",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "72\"\n"
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": "5"
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "1"
+                      }
+                    ],
+                    "page": ""
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "targetId": "c86d-f162-14c7-3072",
+                    "id": "b0a0-1670-abc8-1fc1",
+                    "primary": false,
+                    "name": "Blast (5\")"
+                  },
+                  {
+                    "targetId": "a5a7-a39c-f122-9bc6",
+                    "id": "623f-f921-bb44-65a6",
+                    "primary": false,
+                    "name": "Ordnance (D)"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Dorsal (Front, Rear) Mounted Stormspear rocket pod",
+                "hidden": false,
+                "id": "a578-4113-9132-7174",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 10
+                  }
+                ],
+                "profiles": [
+                  {
+                    "name": "Dorsal (Front, Rear) Mounted Stormspear rocket pod ",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "dc9f-c0a4-7537-ede2",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "48\""
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": " 7"
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": " 3"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "1"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "a83a-36d2-73e2-b8dc"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Ionic Flare Shield",
+        "hidden": false,
+        "id": "8259-67c6-04e0-7d84",
+        "rules": [
+          {
+            "name": "lonic flare shield",
+            "id": "6b79-cd9e-5f20-47f3",
+            "hidden": false,
+            "description": "lonic flare shields provide a different Invulnerable Save against Shooting Attacks made against a Model's Front and Rear Facings, including against Glancing Hits, and nullify the effect of the Armourbane Special Rule on any Shooting Attacks made against the Model. \n\n\nWhen making Armour Penetration Tests against a Model with an ionic flare shield, no Weapon may make use of the Armourbane Special Rule. \n\n\nA Model with an ionic flare shield has a 5+ Invulnerable Save against Shooting Attacks made against its Front Facing and a 6+ Invulnerable Save against Shooting Attacks made against its Rear Facing. Additionally, a Model with an ionic flare shield may have Invulnerable Saves made for it against any Glancing Hits it has suffered in Step 11 of a Shooting Attack, before any rolls on the Vehicle Damage Chart are made, discarding a single Glancing Hit for each successful save.",
+            "publicationId": "liber-questoris",
+            "page": "108"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "9f6d-4ad5-83de-a7ef",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "2bd4-90a5-c94e-a3e5",
+            "includeChildSelections": false
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Hekaton siege claw",
+        "hidden": false,
+        "id": "e36b-7296-d11d-5a83",
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "26ec-772c-b97e-69d1-min-min"
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "26ec-772c-b97e-69d1-min-max"
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Hekaton siege claw",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "eabe-604b-a5bf-43e6",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "\n"
+              },
+              {
+                "name": "Fire Power (FP)",
+                "typeId": "fire-power",
+                "$text": ""
+              },
+              {
+                "name": "Range Strength (RS)",
+                "typeId": "range-strength",
+                "$text": ""
+              },
+              {
+                "name": "Melee Initiative Modifier (IM)",
+                "typeId": "weapon-initiative",
+                "$text": "-1"
+              },
+              {
+                "name": "Melee Attacks Modifier (AM)",
+                "typeId": "weapon-attacks",
+                "$text": "A"
+              },
+              {
+                "name": "Melee Strength Modifier (SM)",
+                "typeId": "melee-strength",
+                "$text": "x2"
+              },
+              {
+                "name": "Armour Penetration (AP)",
+                "$text": "3"
+              },
+              {
+                "name": "Damage (D)",
+                "typeId": "damage",
+                "$text": "3"
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "e555-ec38-2dda-8be7",
+            "id": "66cb-0d03-195b-cf06",
+            "primary": false,
+            "name": "Breaching (4+)"
+          },
+          {
+            "targetId": "85c5-2932-23f9-bbf2",
+            "id": "c123-25a7-7888-89a8",
+            "primary": false,
+            "name": "Shock (Pinned)"
+          },
+          {
+            "targetId": "8a2a-2cde-ee0e-f356",
+            "id": "0b76-a488-6c44-b462",
+            "primary": false,
+            "name": "Armour-breaker (4+)"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Hull mounted (Front) i-rad scourer",
+        "hidden": false,
+        "id": "3355-148e-c60c-8a21",
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "4ceb-3442-0dbd-1a30-min",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "4ceb-3442-0dbd-1a30-max",
+            "includeChildSelections": false
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Hull mounted (Front) i-rad scourer",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "e2f3-4f7d-2049-a580",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": "Template"
+              },
+              {
+                "name": "Fire Power (FP)",
+                "typeId": "fire-power",
+                "$text": "1"
+              },
+              {
+                "name": "Range Strength (RS)",
+                "typeId": "range-strength",
+                "$text": "5"
+              },
+              {
+                "name": "Melee Initiative Modifier (IM)",
+                "typeId": "weapon-initiative",
+                "$text": ""
+              },
+              {
+                "name": "Melee Attacks Modifier (AM)",
+                "typeId": "weapon-attacks",
+                "$text": ""
+              },
+              {
+                "name": "Melee Strength Modifier (SM)",
+                "typeId": "melee-strength",
+                "$text": ""
+              },
+              {
+                "name": "Armour Penetration (AP)",
+                "$text": "4"
+              },
+              {
+                "name": "Damage (D)",
+                "typeId": "damage",
+                "$text": "2"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Cerastus Knight Lancer",
+        "hidden": false,
+        "id": "d3df-be52-b673-0fc8",
+        "publicationId": "liber-questoris",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 480
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Cerastus Knight Lancer",
+            "typeId": "382a-b6a2-b2bf-6f79",
+            "typeName": "Knight",
+            "hidden": false,
+            "id": "a7b4-c39b-7604-f949",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "94cf-7a5f-8bc2-f255",
+                "$text": "14"
+              },
+              {
+                "name": "Weapon Skill (WS)",
+                "typeId": "3436-c067-d49c-6f9e",
+                "$text": "4"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "e65f-3857-0678-73fd",
+                "$text": "4"
+              },
+              {
+                "name": "Strength (S)",
+                "typeId": "baaa-7faf-8ce5-e915",
+                "$text": "9"
+              },
+              {
+                "name": "Front Armour",
+                "typeId": "3e22-b5e1-6789-aff5",
+                "$text": "13"
+              },
+              {
+                "name": "Rear Armour",
+                "typeId": "81c0-3005-8e13-01a0",
+                "$text": "11"
+              },
+              {
+                "name": "Initiative (I)",
+                "typeId": "7228-b04d-729d-f81f",
+                "$text": "4"
+              },
+              {
+                "name": "Attacks (A)",
+                "typeId": "02cb-0c1c-2665-055c",
+                "$text": "4"
+              },
+              {
+                "name": "Hull Points (HP)",
+                "typeId": "dfa6-eb80-539c-3936",
+                "$text": "12"
+              }
+            ],
+            "page": ""
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "vanguard-category-2",
+            "id": "bd58-bccd-9bee-abaa",
+            "primary": false,
+            "name": "Vanguard (2)"
+          },
+          {
+            "targetId": "explodes-5",
+            "id": "d151-de68-54cf-aa3a",
+            "primary": false,
+            "name": "Explodes (5+)"
+          },
+          {
+            "targetId": "auto-repair-4",
+            "id": "7aca-de40-b0a8-ddf8",
+            "primary": false,
+            "name": "Auto-repair 4+"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Household Rank",
+            "hidden": false,
+            "id": "9c66-d85b-40b2-5479",
+            "type": "selectionEntryGroup",
+            "targetId": "household-rank"
+          },
+          {
+            "import": true,
+            "name": "Ion Shield",
+            "hidden": false,
+            "id": "6a0c-3a46-0f07-cdea",
+            "targetId": "443f-cb15-2672-b032",
+            "type": "selectionEntry"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Hull mounted (Front) Shock lance",
+            "hidden": false,
+            "id": "7e57-ed35-2e35-2af8",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "8418-7079-3b17-1a52",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1cc9-4cfa-9773-a9c8",
+                "includeChildSelections": false
+              },
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1fb6-c544-bf9e-ffc3-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1fb6-c544-bf9e-ffc3-max"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Hull mounted (Front) Shock lance",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "68ea-f5ec-84ec-5553",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": "18\""
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": "6 "
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "1"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "09a9-9d35-e59d-e365",
+                "id": "4ed8-2f29-5f49-d91f",
+                "primary": false,
+                "name": "Stun (2)"
+              },
+              {
+                "targetId": "04a5-8fcd-8001-2ec0",
+                "id": "b320-6be3-a69f-90b1",
+                "primary": false,
+                "name": "Arc"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Hull mounted (Front) Shock lance  (Melee)",
+            "hidden": false,
+            "id": "2162-d0d9-888d-e18f",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "470e-c75d-bba1-43aa",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "bd60-b22f-3ab5-f99b",
+                "includeChildSelections": false
+              },
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "a08e-7729-b7c3-b15d-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "a08e-7729-b7c3-b15d-max"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Hull mounted (Front) Shock lance (Melee)",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "2114-4128-2950-8213",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": "I"
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": "A"
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": "+1"
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "4"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "09a9-9d35-e59d-e365",
+                "id": "cd84-a130-8c4c-973a",
+                "primary": false,
+                "name": "Stun (2)"
+              },
+              {
+                "targetId": "04a5-8fcd-8001-2ec0",
+                "id": "5043-8fe2-67fb-0ba6",
+                "primary": false,
+                "name": "Arc"
+              },
+              {
+                "targetId": "d55e-cf35-3ba2-3274",
+                "id": "b50e-daf6-8f00-355c",
+                "primary": false,
+                "name": "Impact (D)"
+              },
+              {
+                "targetId": "6d9f-0bc1-3d9f-5f29",
+                "id": "e269-482b-bb2e-d48a",
+                "primary": false,
+                "name": "Impact (IM)"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Ion Gauntlet Shield",
+            "hidden": false,
+            "id": "83b3-ac45-51a5-b537",
+            "rules": [
+              {
+                "name": "lon gauntlet shield",
+                "id": "2126-cd0c-90cc-94c1",
+                "hidden": false,
+                "description": "lon gauntlet shields provide an Invulnerable Save against Melee Attacks. \n\n\nA Model with an ion gauntlet shield has a 5+ Invulnerable Save against Penetrating Hits inflicted with Melee Weapons. Additionally, a Model with an ion gauntlet shield may have Invulnerable Saves made for it against any Glancing Hits it has suffered in Step 10 of an Initiative Step, before any rolls on the Vehicle Damage Chart are made, discarding a single Glancing Hit for each successful save. ",
+                "page": "109",
+                "publicationId": "liber-questoris"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ae73-be9a-42a9-ab15-min",
+                "automatic": true
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ae73-be9a-42a9-ab15-max",
+                "automatic": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Cerastus Knight Acheron",
+        "hidden": false,
+        "id": "e48d-85b8-275e-19be",
+        "publicationId": "liber-questoris",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 500
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Cerastus Knight Acheron",
+            "typeId": "382a-b6a2-b2bf-6f79",
+            "typeName": "Knight",
+            "hidden": false,
+            "id": "4975-6014-d41b-7640",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "94cf-7a5f-8bc2-f255",
+                "$text": "14"
+              },
+              {
+                "name": "Weapon Skill (WS)",
+                "typeId": "3436-c067-d49c-6f9e",
+                "$text": "4"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "e65f-3857-0678-73fd",
+                "$text": "4"
+              },
+              {
+                "name": "Strength (S)",
+                "typeId": "baaa-7faf-8ce5-e915",
+                "$text": "9"
+              },
+              {
+                "name": "Front Armour",
+                "typeId": "3e22-b5e1-6789-aff5",
+                "$text": "13"
+              },
+              {
+                "name": "Rear Armour",
+                "typeId": "81c0-3005-8e13-01a0",
+                "$text": "11"
+              },
+              {
+                "name": "Initiative (I)",
+                "typeId": "7228-b04d-729d-f81f",
+                "$text": "4"
+              },
+              {
+                "name": "Attacks (A)",
+                "typeId": "02cb-0c1c-2665-055c",
+                "$text": "4"
+              },
+              {
+                "name": "Hull Points (HP)",
+                "typeId": "dfa6-eb80-539c-3936",
+                "$text": "12"
+              }
+            ],
+            "page": ""
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "vanguard-category-2",
+            "id": "891e-05a8-6264-65e6",
+            "primary": false,
+            "name": "Vanguard (2)"
+          },
+          {
+            "targetId": "explodes-5",
+            "id": "8da6-4388-55df-32b7",
+            "primary": false,
+            "name": "Explodes (5+)"
+          },
+          {
+            "targetId": "auto-repair-4",
+            "id": "d551-abe7-63db-4a57",
+            "primary": false,
+            "name": "Auto-repair 4+"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Household Rank",
+            "hidden": false,
+            "id": "6d64-51ea-d7ab-6798",
+            "type": "selectionEntryGroup",
+            "targetId": "household-rank"
+          },
+          {
+            "import": true,
+            "name": "Ion Shield",
+            "hidden": false,
+            "id": "9c84-5a7d-743c-8be3",
+            "targetId": "443f-cb15-2672-b032",
+            "type": "selectionEntry"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Hull mounted (Front) Acheron infernus cannon ",
+            "hidden": false,
+            "id": "61be-f392-d228-377b",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7fd4-4938-4884-f007-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7fd4-4938-4884-f007-max"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Hull mounted (Front) Acheron infernus cannon ",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "0352-94ee-a3c3-a89f",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": "Template"
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": " 1 "
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": "7 "
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "4 "
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "1"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "86a2-c815-345b-e6fa",
+                "id": "959e-d578-e5e2-ad06",
+                "primary": false,
+                "name": "Shred (5+)"
+              },
+              {
+                "targetId": "3223-9ad5-13a3-0d6d",
+                "id": "bfb8-9f2c-e330-87ec",
+                "primary": false,
+                "name": "Panic (2)"
+              },
+              {
+                "targetId": "flame",
+                "id": "e6e0-39cb-8e94-7d64",
+                "primary": false,
+                "name": "Flame"
+              },
+              {
+                "targetId": "aba8-fa85-7352-72ad",
+                "id": "ebe2-020c-a5b0-710d",
+                "primary": false,
+                "name": "Template (Hellstorm)"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Hull mounted (Front) Reaper chainfist",
+            "hidden": false,
+            "id": "eac2-cf61-ba2f-87a0",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "57c3-4e4f-5ed1-5bd7-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "57c3-4e4f-5ed1-5bd7-max"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Hull mounted (Front) Reaper chainfist",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "b4a2-63bb-4c85-5028",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": "-3"
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": "A"
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": "+3"
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "6"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "armourbane-category",
+                "id": "e826-e221-55b8-a21d",
+                "primary": false,
+                "name": "Armourbane"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Questoris Knight Magaera",
+        "hidden": false,
+        "id": "6e5e-8303-cc8b-094d",
+        "publicationId": "liber-questoris",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 460
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Knight Questoris Magaera",
+            "typeId": "382a-b6a2-b2bf-6f79",
+            "typeName": "Knight",
+            "hidden": false,
+            "id": "025c-9312-2345-2028",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "94cf-7a5f-8bc2-f255",
+                "$text": "10"
+              },
+              {
+                "name": "Weapon Skill (WS)",
+                "typeId": "3436-c067-d49c-6f9e",
+                "$text": "4"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "e65f-3857-0678-73fd",
+                "$text": "4"
+              },
+              {
+                "name": "Strength (S)",
+                "typeId": "baaa-7faf-8ce5-e915",
+                "$text": "8"
+              },
+              {
+                "name": "Front Armour",
+                "typeId": "3e22-b5e1-6789-aff5",
+                "$text": "13"
+              },
+              {
+                "name": "Rear Armour",
+                "typeId": "81c0-3005-8e13-01a0",
+                "$text": "11"
+              },
+              {
+                "name": "Initiative (I)",
+                "typeId": "7228-b04d-729d-f81f",
+                "$text": "4"
+              },
+              {
+                "name": "Attacks (A)",
+                "typeId": "02cb-0c1c-2665-055c",
+                "$text": "4"
+              },
+              {
+                "name": "Hull Points (HP)",
+                "typeId": "dfa6-eb80-539c-3936",
+                "$text": "10"
+              }
+            ],
+            "page": ""
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "vanguard-category-2",
+            "id": "0a25-4f58-3656-55b2",
+            "primary": false,
+            "name": "Vanguard (2)"
+          },
+          {
+            "targetId": "explodes-5",
+            "id": "f78c-a6ad-3003-c296",
+            "primary": false,
+            "name": "Explodes (5+)"
+          },
+          {
+            "targetId": "auto-repair-4",
+            "id": "e163-77e8-ac4b-34f4",
+            "primary": false,
+            "name": "Auto-repair 4+"
+          },
+          {
+            "targetId": "lord-of-war-category",
+            "id": "0512-6dbe-b87b-986f",
+            "primary": true,
+            "name": "Lord of War"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Ionic Flare Shield",
+            "hidden": false,
+            "id": "8ed0-9c80-8abf-ec49",
+            "type": "selectionEntry",
+            "targetId": "8259-67c6-04e0-7d84"
+          },
+          {
+            "targetId": "3355-148e-c60c-8a21",
+            "id": "a312-df7b-2a25-8583",
+            "type": "selectionEntry",
+            "name": "Hull mounted (Front) i-rad scourer",
+            "hidden": false
+          },
+          {
+            "import": true,
+            "name": "Phased plasma fusil",
+            "hidden": false,
+            "id": "750e-9d39-6f0b-c784",
+            "type": "selectionEntry",
+            "targetId": "3c55-32ab-1c73-a4d8",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f8eb-b106-8c36-ad54-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f8eb-b106-8c36-ad54-max"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "prepend",
+                "value": "Heavy (Front) mounted\n",
+                "field": "name",
+                "join": " "
+              }
+            ]
+          },
+          {
+            "targetId": "e36b-7296-d11d-5a83",
+            "id": "40ff-e328-c12f-8d79",
+            "type": "selectionEntry",
+            "name": "Hekaton siege claw",
+            "hidden": false,
+            "categoryLinks": [
+              {
+                "targetId": "85c5-2932-23f9-bbf2",
+                "id": "6bbd-89e9-c1d6-31c9",
+                "primary": false,
+                "name": "Shock (Pinned)"
+              },
+              {
+                "targetId": "power",
+                "id": "23e1-b416-d6fb-2a20",
+                "primary": false,
+                "name": "Power"
+              },
+              {
+                "targetId": "e555-ec38-2dda-8be7",
+                "id": "8038-d908-31d4-699c",
+                "primary": false,
+                "name": "Breaching (4+)"
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Household Rank",
+            "hidden": false,
+            "id": "9453-fb73-563d-c364",
+            "type": "selectionEntryGroup",
+            "targetId": "household-rank"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Hull mounted (Front) Lightning cannon",
+            "hidden": false,
+            "id": "9594-1249-4f72-f59b",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7017-2fe2-49cb-a0ef",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "57d2-3132-9e39-4b39",
+                "includeChildSelections": false
+              },
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "724e-b823-d0bc-75c7-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "724e-b823-d0bc-75c7-max"
+              }
+            ],
+            "infoLinks": [
+              {
+                "targetId": "e5bc-b95f-df0e-29d2",
+                "id": "c9fc-bb76-162d-7dee",
+                "type": "profile",
+                "name": "Hull mounted (Front) Lightning cannon",
+                "hidden": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Cerastus Knight Castigator",
+        "hidden": false,
+        "id": "0cff-6425-8c0e-0d6a",
+        "publicationId": "liber-questoris",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 480
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Cerastus Knight Castigator",
+            "typeId": "382a-b6a2-b2bf-6f79",
+            "typeName": "Knight",
+            "hidden": false,
+            "id": "4394-ebfc-2e9d-c286",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "94cf-7a5f-8bc2-f255",
+                "$text": "14"
+              },
+              {
+                "name": "Weapon Skill (WS)",
+                "typeId": "3436-c067-d49c-6f9e",
+                "$text": "4"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "e65f-3857-0678-73fd",
+                "$text": "4"
+              },
+              {
+                "name": "Strength (S)",
+                "typeId": "baaa-7faf-8ce5-e915",
+                "$text": "9"
+              },
+              {
+                "name": "Front Armour",
+                "typeId": "3e22-b5e1-6789-aff5",
+                "$text": "13"
+              },
+              {
+                "name": "Rear Armour",
+                "typeId": "81c0-3005-8e13-01a0",
+                "$text": "11"
+              },
+              {
+                "name": "Initiative (I)",
+                "typeId": "7228-b04d-729d-f81f",
+                "$text": "4"
+              },
+              {
+                "name": "Attacks (A)",
+                "typeId": "02cb-0c1c-2665-055c",
+                "$text": "4"
+              },
+              {
+                "name": "Hull Points (HP)",
+                "typeId": "dfa6-eb80-539c-3936",
+                "$text": "12"
+              }
+            ],
+            "page": ""
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "vanguard-category-2",
+            "id": "6d0a-9f26-af24-0ac9",
+            "primary": false,
+            "name": "Vanguard (2)"
+          },
+          {
+            "targetId": "explodes-5",
+            "id": "664b-5f6a-4e28-d529",
+            "primary": false,
+            "name": "Explodes (5+)"
+          },
+          {
+            "targetId": "auto-repair-4",
+            "id": "ae9d-06aa-3389-1a14",
+            "primary": false,
+            "name": "Auto-repair 4+"
+          },
+          {
+            "targetId": "lord-of-war-category",
+            "id": "769f-b42e-55dd-5212",
+            "primary": true,
+            "name": "Lord of War"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Household Rank",
+            "hidden": false,
+            "id": "2358-71bb-cfe8-20fd",
+            "type": "selectionEntryGroup",
+            "targetId": "household-rank"
+          },
+          {
+            "import": true,
+            "name": "Ion Shield",
+            "hidden": false,
+            "id": "15b2-ed49-b508-30c8",
+            "targetId": "443f-cb15-2672-b032",
+            "type": "selectionEntry"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Hull mounted (Front) Avenger gatling cannon",
+            "hidden": false,
+            "id": "e6ca-445c-bc5a-1689",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "2c9b-eccd-7a0f-bcc7",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f698-d2ed-00f4-4653",
+                "includeChildSelections": false
+              },
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7c2c-5c20-80ed-b990-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7c2c-5c20-80ed-b990-max"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Hull mounted (Front) Avenger gatling cannon ",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "61cb-ddba-2622-b8e7",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": "36 "
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": "7 "
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "4 "
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "1"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "86a2-c815-345b-e6fa",
+                "id": "67c3-0311-9d65-d607",
+                "primary": false,
+                "name": "Shred (5+)"
+              },
+              {
+                "targetId": "3223-9ad5-13a3-0d6d",
+                "id": "fe79-a697-d7da-e18a",
+                "primary": false,
+                "name": "Panic (2)"
+              },
+              {
+                "targetId": "flame",
+                "id": "2d9a-282e-aba1-d5e6",
+                "primary": false,
+                "name": "Flame"
+              },
+              {
+                "targetId": "aba8-fa85-7352-72ad",
+                "id": "b764-0236-915e-7f6b",
+                "primary": false,
+                "name": "Template (Hellstorm)"
+              },
+              {
+                "targetId": "249e-8f45-0a94-08d5",
+                "id": "6e6a-3c68-f5f0-4997",
+                "primary": false,
+                "name": "Auto"
+              },
+              {
+                "targetId": "c26e-8009-8163-3555",
+                "id": "cb12-85a6-b573-af01",
+                "primary": false,
+                "name": "Suppressive (2)"
+              },
+              {
+                "targetId": "bdb6-f99d-a9c6-289b",
+                "id": "4941-6e25-bffa-de1f",
+                "primary": false,
+                "name": "Breaching (6+)"
+              },
+              {
+                "targetId": "4f85-08e5-1ce4-a515",
+                "id": "4ac4-276b-dee6-d776",
+                "primary": false,
+                "name": "Ordnance (FP)"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Hull mounted (Front) Tempest warblade",
+            "hidden": false,
+            "id": "47e6-1905-77b8-2948",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "0c2e-8a57-5301-084f-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "0c2e-8a57-5301-084f-max"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Hull mounted (Front) Tempest warblade",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "eb09-8273-c770-5b51",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": "I"
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": "A"
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": "S"
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "2"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "aflame2",
+                "id": "8e4b-4ea6-a483-2b29",
+                "primary": false,
+                "name": "Aflame (2)"
+              },
+              {
+                "targetId": "f242-cc07-0dc0-a716",
+                "id": "a13c-bf86-b597-6359",
+                "primary": false,
+                "name": "Reaping Blow (6)"
+              },
+              {
+                "targetId": "power",
+                "id": "f45e-d1a8-4910-c3cf",
+                "primary": false,
+                "name": "Power"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Additional Entry",
+        "hidden": false,
+        "id": "04cd-a87e-e06a-3cc0",
+        "categoryLinks": [
+          {
+            "targetId": "additional-detachment",
+            "id": "855d-c81d-417b-d0db",
+            "primary": true,
+            "name": "Additional Detachment"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "625c-8cc2-4810-c479-min",
+            "automatic": true,
+            "includeChildSelections": true
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "625c-8cc2-4810-c479-max",
+            "automatic": true,
+            "includeChildSelections": true
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Armiger Warglaive",
+        "hidden": false,
+        "id": "685e-5a14-e8c6-f0e3",
+        "profiles": [
+          {
+            "name": "Armiger Warglaive",
+            "typeId": "877a-f15d-4830-fd7a",
+            "typeName": "Infantry/Cavalry/Walker",
+            "hidden": false,
+            "id": "0dfb-212d-af95-6ede",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "bdbb-da13-eeff-50f3",
+                "$text": "10"
+              },
+              {
+                "name": "Weapon Skill (WS)",
+                "typeId": "80f9-ff23-cf6b-a774",
+                "$text": "4"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "0725-6d62-4136-1f56",
+                "$text": "4"
+              },
+              {
+                "name": "Strength (S)",
+                "typeId": "model-strength",
+                "$text": "7"
+              },
+              {
+                "name": "Toughness (T)",
+                "typeId": "0f0e-1166-667c-6b8d",
+                "$text": "7"
+              },
+              {
+                "name": "Wounds (W)",
+                "typeId": "091b-45b8-4b3d-7971",
+                "$text": "7"
+              },
+              {
+                "name": "Initiative (I)",
+                "typeId": "model-initiative",
+                "$text": "4"
+              },
+              {
+                "name": "Attacks (A)",
+                "typeId": "model-attacks",
+                "$text": "2"
+              },
+              {
+                "name": "Leadership (LD)",
+                "typeId": "5e98-cab2-59ac-168b",
+                "$text": "10"
+              },
+              {
+                "name": "Cool (CL)",
+                "typeId": "7f44-7a96-7a38-aa52",
+                "$text": "10"
+              },
+              {
+                "name": "Willpower (WP)",
+                "typeId": "30ba-3375-7bae-99b4",
+                "$text": "5"
+              },
+              {
+                "name": "Intelligence (INT)",
+                "typeId": "91ef-626b-7f89-c3d6",
+                "$text": "5"
+              },
+              {
+                "name": "Save (SAV)",
+                "typeId": "b66c-6835-eb9e-8a19",
+                "$text": "3"
+              },
+              {
+                "name": "Invulnerable Save (INV)",
+                "typeId": "b052-bfb0-212a-a270",
+                "$text": "6"
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Thermal Lance",
+            "hidden": false,
+            "id": "d2af-8822-bd9c-68d2",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "23db-60ea-23ed-f6ab-min",
+                "automatic": true
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "23db-60ea-23ed-f6ab-max",
+                "automatic": true
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Thermal Lance",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "a7bf-2b67-f0db-c0fb",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": "24"
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": "9"
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "4"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "23a1-a4e8-1a3f-7028",
+                "id": "bfb8-d172-4cf3-a593",
+                "primary": false,
+                "name": "Heavy (RS)"
+              },
+              {
+                "targetId": "1a9a-8e58-7c0f-12f2",
+                "id": "63a9-f69f-f074-dd2d",
+                "primary": false,
+                "name": "Melta (12)"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Reaper chainblade",
+            "hidden": false,
+            "id": "4782-9dbd-4caa-66bc",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3ddf-3c38-c538-46f4-min",
+                "automatic": true
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3ddf-3c38-c538-46f4-max",
+                "automatic": true
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Reaper chainblade",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "8ae0-21a7-71c3-0310",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": "A"
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": "+1"
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "2"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "c31a-6618-0437-9697",
+                "id": "301c-1650-64c0-20f0",
+                "primary": false,
+                "name": "Reaping Blow (2)"
+              },
+              {
+                "targetId": "86a2-c815-345b-e6fa",
+                "id": "8388-de71-802d-6f56",
+                "primary": false,
+                "name": "Shred (5+)"
+              }
+            ]
+          }
+        ],
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 150
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "a06f-4df2-c9de-d595",
+            "id": "eed3-e928-b931-ae5f",
+            "primary": false,
+            "name": "Bulky (8)"
+          },
+          {
+            "targetId": "8eeb-ddb2-feb2-74a5",
+            "id": "c9f7-2669-a0ca-2203",
+            "primary": false,
+            "name": "Explodes (6+)"
+          },
+          {
+            "targetId": "implacable-advance",
+            "id": "02d8-c662-4fb5-f6d6",
+            "primary": false,
+            "name": "Implacable Advance"
+          },
+          {
+            "targetId": "move-through-cover-category",
+            "id": "4745-9249-a21c-73e5",
+            "primary": false,
+            "name": "Move Through Cover"
+          },
+          {
+            "targetId": "outflank-category",
+            "id": "f2af-ae8b-45d5-0f1d",
+            "primary": false,
+            "name": "Outflank"
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "This Model may have its heavy stubber exchanged for:",
+            "id": "d49f-81c3-de54-d01d",
+            "hidden": false,
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Heavy Stubber",
+                "hidden": false,
+                "id": "eb6e-4fea-805f-471b",
+                "type": "selectionEntry",
+                "targetId": "heavy-stubber",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "4d9c-3323-90aa-b749",
+                    "automatic": true
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Meltagun",
+                "hidden": false,
+                "id": "0051-c964-d5ca-4631",
+                "type": "selectionEntry",
+                "targetId": "c2ee-523e-42e0-9b00",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": 10,
+                    "field": "points"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "fc83-a14d-2e64-31a7"
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "eb6e-4fea-805f-471b",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "06a7-505f-5cb8-7a65-min",
+                "automatic": true
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "06a7-505f-5cb8-7a65-max",
+                "automatic": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Armiger Helverin",
+        "hidden": false,
+        "id": "2b40-5e36-ecd4-cbff",
+        "profiles": [
+          {
+            "name": "Armiger Warglaive",
+            "typeId": "877a-f15d-4830-fd7a",
+            "typeName": "Infantry/Cavalry/Walker",
+            "hidden": false,
+            "id": "9325-0ebb-7633-b34b",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "bdbb-da13-eeff-50f3",
+                "$text": "10"
+              },
+              {
+                "name": "Weapon Skill (WS)",
+                "typeId": "80f9-ff23-cf6b-a774",
+                "$text": "4"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "0725-6d62-4136-1f56",
+                "$text": "4"
+              },
+              {
+                "name": "Strength (S)",
+                "typeId": "model-strength",
+                "$text": "7"
+              },
+              {
+                "name": "Toughness (T)",
+                "typeId": "0f0e-1166-667c-6b8d",
+                "$text": "7"
+              },
+              {
+                "name": "Wounds (W)",
+                "typeId": "091b-45b8-4b3d-7971",
+                "$text": "7"
+              },
+              {
+                "name": "Initiative (I)",
+                "typeId": "model-initiative",
+                "$text": "4"
+              },
+              {
+                "name": "Attacks (A)",
+                "typeId": "model-attacks",
+                "$text": "2"
+              },
+              {
+                "name": "Leadership (LD)",
+                "typeId": "5e98-cab2-59ac-168b",
+                "$text": "10"
+              },
+              {
+                "name": "Cool (CL)",
+                "typeId": "7f44-7a96-7a38-aa52",
+                "$text": "10"
+              },
+              {
+                "name": "Willpower (WP)",
+                "typeId": "30ba-3375-7bae-99b4",
+                "$text": "5"
+              },
+              {
+                "name": "Intelligence (INT)",
+                "typeId": "91ef-626b-7f89-c3d6",
+                "$text": "5"
+              },
+              {
+                "name": "Save (SAV)",
+                "typeId": "b66c-6835-eb9e-8a19",
+                "$text": "3"
+              },
+              {
+                "name": "Invulnerable Save (INV)",
+                "typeId": "b052-bfb0-212a-a270",
+                "$text": "6"
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Phaeton autocannon",
+            "hidden": false,
+            "id": "8ad2-51ce-ce85-4087",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "41aa-7cb2-0715-2467-min",
+                "automatic": true
+              },
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "41aa-7cb2-0715-2467-max",
+                "automatic": true
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Phaeton autocannon",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "c067-b691-f23d-457e",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": "30"
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "2"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "9fec-ff74-fe04-0857",
+                "id": "4ca6-8266-9b88-6956",
+                "primary": false,
+                "name": "Ordnance (R)"
+              },
+              {
+                "targetId": "0f24-9ab2-b239-fcab",
+                "id": "b851-b1ab-9eb0-ddc4",
+                "primary": false,
+                "name": "Breaching (5+)"
+              }
+            ]
+          }
+        ],
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 150
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "a06f-4df2-c9de-d595",
+            "id": "d88b-fbec-0d75-4552",
+            "primary": false,
+            "name": "Bulky (8)"
+          },
+          {
+            "targetId": "8eeb-ddb2-feb2-74a5",
+            "id": "306b-555d-102f-d5ca",
+            "primary": false,
+            "name": "Explodes (6+)"
+          },
+          {
+            "targetId": "implacable-advance",
+            "id": "cc80-ae66-2548-7f8e",
+            "primary": false,
+            "name": "Implacable Advance"
+          },
+          {
+            "targetId": "move-through-cover-category",
+            "id": "9dbf-242a-2dce-d2ce",
+            "primary": false,
+            "name": "Move Through Cover"
+          },
+          {
+            "targetId": "outflank-category",
+            "id": "e6b6-dfcd-1ab4-6f47",
+            "primary": false,
+            "name": "Outflank"
+          },
+          {
+            "targetId": "war-machines-category",
+            "id": "1561-9093-71f0-caa7",
+            "primary": true,
+            "name": "War Machine"
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "This Model may have its heavy stubber exchanged for:",
+            "id": "7913-f8fb-0c6c-fd10",
+            "hidden": false,
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Heavy Stubber",
+                "hidden": false,
+                "id": "6a18-f334-4067-5867",
+                "type": "selectionEntry",
+                "targetId": "heavy-stubber",
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "cf6e-c947-55bf-935a",
+                    "automatic": false
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Meltagun",
+                "hidden": false,
+                "id": "4626-6a98-a2f1-0a2d",
+                "type": "selectionEntry",
+                "targetId": "c2ee-523e-42e0-9b00",
+                "modifiers": [
+                  {
+                    "type": "set",
+                    "value": 10,
+                    "field": "points"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "230c-191c-f9fd-3aa7",
+                    "automatic": true
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "6a18-f334-4067-5867",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "dc5a-8625-4273-6161-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "dc5a-8625-4273-6161-max"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Acastus Knight Porphyrion",
+        "hidden": false,
+        "id": "f63e-9320-1ed8-4967",
+        "publicationId": "liber-questoris",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 725
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Acastus Knight Porphyrion",
+            "typeId": "382a-b6a2-b2bf-6f79",
+            "typeName": "Knight",
+            "hidden": false,
+            "id": "5846-f0b1-70fb-333c",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "94cf-7a5f-8bc2-f255",
+                "$text": "10"
+              },
+              {
+                "name": "Weapon Skill (WS)",
+                "typeId": "3436-c067-d49c-6f9e",
+                "$text": "3"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "e65f-3857-0678-73fd",
+                "$text": "4"
+              },
+              {
+                "name": "Strength (S)",
+                "typeId": "baaa-7faf-8ce5-e915",
+                "$text": "10"
+              },
+              {
+                "name": "Front Armour",
+                "typeId": "3e22-b5e1-6789-aff5",
+                "$text": "14"
+              },
+              {
+                "name": "Rear Armour",
+                "typeId": "81c0-3005-8e13-01a0",
+                "$text": "11"
+              },
+              {
+                "name": "Initiative (I)",
+                "typeId": "7228-b04d-729d-f81f",
+                "$text": "2"
+              },
+              {
+                "name": "Attacks (A)",
+                "typeId": "02cb-0c1c-2665-055c",
+                "$text": "3"
+              },
+              {
+                "name": "Hull Points (HP)",
+                "typeId": "dfa6-eb80-539c-3936",
+                "$text": "18"
+              }
+            ],
+            "page": ""
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "explodes-5",
+            "id": "3725-b96c-f5b6-46f1",
+            "primary": false,
+            "name": "Explodes (5+)"
+          },
+          {
+            "targetId": "auto-repair-5",
+            "id": "7fa5-53e1-b265-c47c",
+            "primary": false,
+            "name": "Auto-repair 5+"
+          },
+          {
+            "targetId": "675c-63a1-9fa8-096d",
+            "id": "dd95-4295-1b49-410c",
+            "primary": false,
+            "name": "Knight"
+          },
+          {
+            "targetId": "fc98-a348-933c-8487",
+            "id": "70d0-1e4e-5f09-f4c8",
+            "primary": false,
+            "name": "Colossus"
+          },
+          {
+            "targetId": "6e36-d9ec-5931-5869",
+            "id": "bd72-3168-1920-c2a9",
+            "primary": false,
+            "name": "Independent Fire"
+          },
+          {
+            "targetId": "lord-of-war-category",
+            "id": "3411-66b8-4ecc-285b",
+            "primary": true,
+            "name": "Lord of War"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Ionic Flare Shield",
+            "hidden": false,
+            "id": "acba-4473-ff1d-d9e3",
+            "type": "selectionEntry",
+            "targetId": "8259-67c6-04e0-7d84"
+          },
+          {
+            "import": true,
+            "name": "Household Rank",
+            "hidden": false,
+            "id": "627b-9093-0363-41db",
+            "type": "selectionEntryGroup",
+            "targetId": "household-rank"
+          },
+          {
+            "import": true,
+            "name": "Ion Shield",
+            "hidden": false,
+            "id": "ea83-1cb1-ad45-2788",
+            "targetId": "443f-cb15-2672-b032",
+            "type": "selectionEntry"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Hull mounted (Front) neutron wave battery",
+            "hidden": false,
+            "id": "1e97-15d4-9b38-0c45",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "5c42-dcc3-dd41-835e"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "fbbf-76a4-e993-f053"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Hull mounted (Front) neutron wave battery",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "5223-db8c-29cf-c7b1",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": "120"
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": "4 "
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": "12 "
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "4"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "a5a7-a39c-f122-9bc6",
+                "id": "54bf-a92e-1c04-ff17",
+                "primary": false,
+                "name": "Ordnance (D)"
+              },
+              {
+                "targetId": "armourbane-category",
+                "id": "30de-30cd-304a-8896",
+                "primary": false,
+                "name": "Armourbane"
+              },
+              {
+                "targetId": "las",
+                "id": "2718-f73b-6ddc-9f30",
+                "primary": false,
+                "name": "Las"
+              },
+              {
+                "targetId": "940b-c0b1-322f-f783",
+                "id": "d78e-3e3b-269f-edd6",
+                "primary": false,
+                "name": "Shock (Stunned)"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Hull mounted (Front) lascannon",
+            "hidden": false,
+            "id": "044b-2ce1-1042-72b0",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "46f3-e20a-6516-4fc7-min"
+              },
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "46f3-e20a-6516-4fc7-max"
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "armourbane-category",
+                "id": "af33-4ce8-e609-e608",
+                "primary": false,
+                "name": "Armourbane"
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Lascannon",
+                "id": "5d4a-2ccc-09d2-61c1",
+                "hidden": false,
+                "type": "profile",
+                "targetId": "8a50-eaa8-88a3-7701"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Ironstorm missile battery",
+            "hidden": false,
+            "id": "6226-f4ac-0c40-cc35",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1b4e-b2f9-cb05-2d36-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1b4e-b2f9-cb05-2d36-max",
+                "includeChildSelections": false
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Ironstorm missile battery",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "e149-8276-e5cf-894b",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": "72"
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "1"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "a5a7-a39c-f122-9bc6",
+                "id": "35b6-8688-f946-f360",
+                "primary": false,
+                "name": "Ordnance (D)"
+              },
+              {
+                "targetId": "c86d-f162-14c7-3072",
+                "id": "ea20-b802-5df0-d6dd",
+                "primary": false,
+                "name": "Blast (5\")"
+              },
+              {
+                "targetId": "missile",
+                "id": "be65-0faf-cc9c-7ce1",
+                "primary": false,
+                "name": "Missile"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Acastus Knight Asterius",
+        "hidden": false,
+        "id": "f82a-4d77-a1b6-820b",
+        "publicationId": "liber-questoris",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 750
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Acastus Knight Asterius",
+            "typeId": "382a-b6a2-b2bf-6f79",
+            "typeName": "Knight",
+            "hidden": false,
+            "id": "ab4e-96dd-a649-84b4",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "94cf-7a5f-8bc2-f255",
+                "$text": "10"
+              },
+              {
+                "name": "Weapon Skill (WS)",
+                "typeId": "3436-c067-d49c-6f9e",
+                "$text": "3"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "e65f-3857-0678-73fd",
+                "$text": "4"
+              },
+              {
+                "name": "Strength (S)",
+                "typeId": "baaa-7faf-8ce5-e915",
+                "$text": "10"
+              },
+              {
+                "name": "Front Armour",
+                "typeId": "3e22-b5e1-6789-aff5",
+                "$text": "14"
+              },
+              {
+                "name": "Rear Armour",
+                "typeId": "81c0-3005-8e13-01a0",
+                "$text": "11"
+              },
+              {
+                "name": "Initiative (I)",
+                "typeId": "7228-b04d-729d-f81f",
+                "$text": "2"
+              },
+              {
+                "name": "Attacks (A)",
+                "typeId": "02cb-0c1c-2665-055c",
+                "$text": "3"
+              },
+              {
+                "name": "Hull Points (HP)",
+                "typeId": "dfa6-eb80-539c-3936",
+                "$text": "18"
+              }
+            ],
+            "page": ""
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "auto-repair-4",
+            "id": "2080-7bb2-352a-7003",
+            "primary": false,
+            "name": "Auto-repair 4+"
+          },
+          {
+            "targetId": "02e0-47d6-09cf-4f01",
+            "id": "d401-28e9-12a1-2574",
+            "primary": false,
+            "name": "Explodes (4+)"
+          },
+          {
+            "targetId": "fc98-a348-933c-8487",
+            "id": "9be2-28f3-1f7a-69b4",
+            "primary": false,
+            "name": "Colossus"
+          },
+          {
+            "targetId": "675c-63a1-9fa8-096d",
+            "id": "b95b-a25e-2143-34a9",
+            "primary": false,
+            "name": "Knight"
+          },
+          {
+            "targetId": "6e36-d9ec-5931-5869",
+            "id": "697b-78a4-3a37-e3bb",
+            "primary": false,
+            "name": "Independent Fire"
+          },
+          {
+            "targetId": "lord-of-war-category",
+            "id": "f021-5f96-fe69-adc8",
+            "primary": true,
+            "name": "Lord of War"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Ionic Flare Shield",
+            "hidden": false,
+            "id": "9e68-7f1a-8a6a-a8c7",
+            "type": "selectionEntry",
+            "targetId": "8259-67c6-04e0-7d84"
+          },
+          {
+            "import": true,
+            "name": "Household Rank",
+            "hidden": false,
+            "id": "e90c-1af7-ab60-a32d",
+            "type": "selectionEntryGroup",
+            "targetId": "household-rank"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Hull mounted (Front) Conversion beam desolator array",
+            "hidden": false,
+            "id": "dfc5-c37f-ae7a-bc7b",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "82b7-ee19-8f16-c514"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "9eec-3f26-f272-c93c"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Hull mounted (Front) Conversion beam desolator array  <18",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "d025-6ea9-0940-b2f0",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": "<18\n"
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": "8"
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "4 "
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "2"
+                  }
+                ]
+              },
+              {
+                "name": "Hull mounted (Front) Conversion beam desolator array 18-42",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "75e3-395d-9ec9-42db",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": "18-42"
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": "9"
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "3"
+                  }
+                ]
+              },
+              {
+                "name": "Hull mounted (Front) Conversion beam desolator array >42-72",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "baff-9aad-8c33-34ef",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": ">42-72"
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": "10"
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "4"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "a5a7-a39c-f122-9bc6",
+                "id": "ae48-022a-50fc-685c",
+                "primary": false,
+                "name": "Ordnance (D)"
+              },
+              {
+                "targetId": "10e2-3fc4-20cb-437b",
+                "id": "7910-9c89-0bd0-4fb5",
+                "primary": false,
+                "name": "Blast (7\")"
+              },
+              {
+                "targetId": "conversion-category",
+                "id": "473e-5207-a0e4-f9cf",
+                "primary": false,
+                "name": "Conversion"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Dorsal (Front) Mounted Karacnos mortar battery",
+            "hidden": false,
+            "id": "9a0e-283b-e5a9-4570",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b2e5-6e17-a231-c6b7"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "486e-b68f-e9d2-3fdc"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Karacnos mortar battery",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "c98d-46f7-ee54-e377",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": "60"
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "1"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "c86d-f162-14c7-3072",
+                "id": "39a4-140d-cf41-231e",
+                "primary": false,
+                "name": "Blast (5\")"
+              },
+              {
+                "targetId": "1129-f2ff-ff51-5834",
+                "id": "09d5-a0a4-a9ee-805a",
+                "primary": false,
+                "name": "Barrage (2)"
+              },
+              {
+                "targetId": "eed9-b0e3-0fd6-bfac",
+                "id": "6dcf-519f-76b2-4b2e",
+                "primary": false,
+                "name": "Poisoned (2+)"
+              },
+              {
+                "targetId": "bf16-1701-e061-976a",
+                "id": "111c-5dc1-4bfa-92ef",
+                "primary": false,
+                "name": "Phage (T)"
+              },
+              {
+                "targetId": "0afe-55ed-6eb3-07a6",
+                "id": "576e-0a67-7f06-7a1b",
+                "primary": false,
+                "name": "Pinning (3)"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Hull mounted (Front) volkite culverin",
+            "hidden": false,
+            "id": "ca35-f82f-1c11-3d99",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1c6d-0582-18c1-b60b-min"
+              },
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1c6d-0582-18c1-b60b-max"
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Armourbane",
+                "hidden": false,
+                "id": "2f2a-d092-f638-a743",
+                "targetId": "armourbane-category",
+                "primary": false
+              }
+            ],
+            "infoLinks": [
+              {
+                "name": "Volkite culverin",
+                "id": "aaf5-fa60-686e-777f",
+                "hidden": false,
+                "type": "profile",
+                "targetId": "1912-b3b4-56ae-5515"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Questoris Knight Styrix",
+        "hidden": false,
+        "id": "9b0f-d453-178a-4faa",
+        "publicationId": "liber-questoris",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 455
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Knight Questoris Styrix",
+            "typeId": "382a-b6a2-b2bf-6f79",
+            "typeName": "Knight",
+            "hidden": false,
+            "id": "2842-2e43-605c-767a",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "94cf-7a5f-8bc2-f255",
+                "$text": "10"
+              },
+              {
+                "name": "Weapon Skill (WS)",
+                "typeId": "3436-c067-d49c-6f9e",
+                "$text": "4"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "e65f-3857-0678-73fd",
+                "$text": "4"
+              },
+              {
+                "name": "Strength (S)",
+                "typeId": "baaa-7faf-8ce5-e915",
+                "$text": "8"
+              },
+              {
+                "name": "Front Armour",
+                "typeId": "3e22-b5e1-6789-aff5",
+                "$text": "13"
+              },
+              {
+                "name": "Rear Armour",
+                "typeId": "81c0-3005-8e13-01a0",
+                "$text": "11"
+              },
+              {
+                "name": "Initiative (I)",
+                "typeId": "7228-b04d-729d-f81f",
+                "$text": "4"
+              },
+              {
+                "name": "Attacks (A)",
+                "typeId": "02cb-0c1c-2665-055c",
+                "$text": "4"
+              },
+              {
+                "name": "Hull Points (HP)",
+                "typeId": "dfa6-eb80-539c-3936",
+                "$text": "10"
+              }
+            ],
+            "page": ""
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "vanguard-category-2",
+            "id": "b316-f05a-6159-7163",
+            "primary": false,
+            "name": "Vanguard (2)"
+          },
+          {
+            "targetId": "explodes-5",
+            "id": "d53a-77a4-048e-e478",
+            "primary": false,
+            "name": "Explodes (5+)"
+          },
+          {
+            "targetId": "auto-repair-4",
+            "id": "10d5-f1d7-6c72-4af6",
+            "primary": false,
+            "name": "Auto-repair 4+"
+          },
+          {
+            "targetId": "lord-of-war-category",
+            "id": "6879-b164-c716-b6fe",
+            "primary": true,
+            "name": "Lord of War"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Ionic Flare Shield",
+            "hidden": false,
+            "id": "35ba-14fa-b2b6-1ec0",
+            "type": "selectionEntry",
+            "targetId": "8259-67c6-04e0-7d84"
+          },
+          {
+            "targetId": "3355-148e-c60c-8a21",
+            "id": "4c69-7dad-6104-7325",
+            "type": "selectionEntry",
+            "name": "Hull mounted (Front) i-rad scourer",
+            "hidden": false,
+            "categoryLinks": [
+              {
+                "targetId": "a8ee-1cdd-f68a-831b",
+                "id": "52d6-16a2-3ccc-af00",
+                "primary": false,
+                "name": "Template"
+              },
+              {
+                "targetId": "3223-9ad5-13a3-0d6d",
+                "id": "b402-282d-0b7b-3520",
+                "primary": false,
+                "name": "Panic (2)"
+              },
+              {
+                "targetId": "bf16-1701-e061-976a",
+                "id": "ecee-f6c3-3cc0-4f5b",
+                "primary": false,
+                "name": "Phage (T)"
+              },
+              {
+                "targetId": "eed9-b0e3-0fd6-bfac",
+                "id": "76bd-9e58-9481-da79",
+                "primary": false,
+                "name": "Poisoned (2+)"
+              },
+              {
+                "targetId": "bdb6-f99d-a9c6-289b",
+                "id": "3a9f-c589-7e88-966e",
+                "primary": false,
+                "name": "Breaching (6+)"
+              }
+            ]
+          },
+          {
+            "targetId": "e36b-7296-d11d-5a83",
+            "id": "0815-fc2e-764a-16f2",
+            "type": "selectionEntry",
+            "name": "Hekaton siege claw",
+            "hidden": false
+          },
+          {
+            "import": true,
+            "name": "Graviton gun",
+            "hidden": false,
+            "id": "93e1-9b6e-a5ac-6711",
+            "type": "selectionEntry",
+            "targetId": "astartes-graviton-gun",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "bae0-a8e9-976a-1a8f-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "bae0-a8e9-976a-1a8f-max"
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "prepend",
+                "value": "Heavy (Front) mounted\n",
+                "field": "name",
+                "join": " "
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Household Rank",
+            "hidden": false,
+            "id": "f9d8-fadd-5b30-8404",
+            "type": "selectionEntryGroup",
+            "targetId": "household-rank"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Hull mounted (Front) Volkite chieorovile",
+            "hidden": false,
+            "id": "cb16-7f18-7d3f-5bcd",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "4fde-c8b8-2f31-28c8-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "4fde-c8b8-2f31-28c8-max",
+                "includeChildSelections": false
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Hull mounted (Front) Volkite chieorovile",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "2c83-4d5b-0117-af72",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": "45 "
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": "5 "
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": "7 "
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "2 "
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "4f85-08e5-1ce4-a515",
+                "id": "91d3-6984-bc1d-9e79",
+                "primary": false,
+                "name": "Ordnance (FP)"
+              },
+              {
+                "targetId": "3ed0-4fd2-fe7a-91b6",
+                "id": "3dd4-8c03-e75c-fa94",
+                "primary": false,
+                "name": "Shred (4+)"
+              },
+              {
+                "targetId": "6d88-3b4a-a079-635a",
+                "id": "7913-1f71-3f73-f06a",
+                "primary": false,
+                "name": "Deflagrate (7)"
+              },
+              {
+                "targetId": "volkite",
+                "id": "8e63-095d-29c3-f3a5",
+                "primary": false,
+                "name": "Volkite"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Vow of Obeisance",
+        "hidden": false,
+        "id": "vow-of-obeisance",
+        "categoryLinks": [
+          {
+            "targetId": "questoris-vow",
+            "id": "8a8e-a121-b543-6faa",
+            "primary": true,
+            "name": "Questoris Vow"
+          }
+        ],
+        "page": "16",
+        "publicationId": "liber-questoris",
+        "rules": [
+          {
+            "name": "Vow of Obeisance",
+            "id": "ffe5-7a12-0505-7133",
+            "hidden": false,
+            "page": "17",
+            "publicationId": "liber-questoris",
+            "description": "The first time in a Battle a friendly Unit with at least one Model within 12\" of a Model with this Questoris Vow scores an Objective, the value of that Objective is modifie by +2 for the duration of the Victory Sub-Phase of that End Phase."
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Vow of Dominion",
+        "hidden": false,
+        "id": "0443-e988-528d-c2bb",
+        "rules": [
+          {
+            "name": "Vow of Dominion",
+            "id": "b61a-6713-6c57-bdd7",
+            "hidden": false,
+            "description": "The first time in a Battle each Model with this Questoris Vow scores Victory Points due to the Vanguard (X) Special Rule, the number of Victory Points gained by the Controlling Player is increased by 2.",
+            "page": "14",
+            "publicationId": "liber-questoris"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "questoris-vow",
+            "id": "13ef-1ad1-cc4c-ca0c",
+            "primary": true,
+            "name": "Questoris Vow"
+          }
+        ]
+      }
+    ],
+    "type": "catalogue",
+    "entryLinks": [
+      {
+        "targetId": "9b0f-d453-178a-4faa",
+        "id": "c7d8-3aec-864e-0609",
+        "type": "selectionEntry",
+        "name": "Questoris Knight Styrix",
+        "hidden": false
+      },
+      {
+        "targetId": "f82a-4d77-a1b6-820b",
+        "id": "44dd-61a6-3c78-88d9",
+        "type": "selectionEntry",
+        "name": "Acastus Knight Asterius",
+        "hidden": false
+      },
+      {
+        "targetId": "2b40-5e36-ecd4-cbff",
+        "id": "431f-3dd3-dac2-891f",
+        "type": "selectionEntry",
+        "name": "Armiger Helverin",
+        "hidden": false
+      },
+      {
+        "targetId": "f63e-9320-1ed8-4967",
+        "id": "121c-0639-7db4-9d2d",
+        "type": "selectionEntry",
+        "name": "Acastus Knight Porphyrion",
+        "hidden": false
+      },
+      {
+        "targetId": "04cd-a87e-e06a-3cc0",
+        "id": "806f-ef47-27c0-69a2",
+        "type": "selectionEntry",
+        "name": "Additional Entry",
+        "hidden": false
+      },
+      {
+        "import": true,
+        "name": "Cerastus Knight Atrapos",
+        "hidden": false,
+        "id": "88af-f5ec-1d22-6070",
+        "targetId": "364f-53c4-1da4-7887",
+        "type": "selectionEntry",
+        "categoryLinks": [
+          {
+            "targetId": "lord-of-war-category",
+            "id": "ff27-9f00-e1a9-3948",
+            "primary": true,
+            "name": "Lord of War"
+          }
+        ]
+      },
+      {
+        "targetId": "0cff-6425-8c0e-0d6a",
+        "id": "de5b-d754-413d-777d",
+        "type": "selectionEntry",
+        "name": "Cerastus Knight Castigator",
+        "hidden": false
+      },
+      {
+        "targetId": "6e5e-8303-cc8b-094d",
+        "id": "c818-e92c-c7f5-9b58",
+        "type": "selectionEntry",
+        "name": "Questoris Knight Magaera",
+        "hidden": false
+      },
+      {
+        "targetId": "Knight Questoris",
+        "id": "8f20-5a50-c9a0-7518",
+        "type": "selectionEntry",
+        "name": "Knight Questoris",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "targetId": "lord-of-war-category",
+            "id": "2df2-a076-3bd4-2a92",
+            "primary": true,
+            "name": "Lord of War"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Cerastus Knight Acheron",
+        "hidden": false,
+        "id": "5dd5-49b7-f00d-a84a",
+        "targetId": "e48d-85b8-275e-19be",
+        "type": "selectionEntry",
+        "categoryLinks": [
+          {
+            "targetId": "lord-of-war-category",
+            "id": "805e-b70f-8cca-0e09",
+            "primary": true,
+            "name": "Lord of War"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Cerastus Knight Lancer",
+        "hidden": false,
+        "id": "5967-e09d-9451-6e68",
+        "targetId": "d3df-be52-b673-0fc8",
+        "type": "selectionEntry",
+        "categoryLinks": [
+          {
+            "targetId": "lord-of-war-category",
+            "id": "e3f6-4c33-1d01-dea6",
+            "primary": true,
+            "name": "Lord of War"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Armiger Warglaive",
+        "hidden": false,
+        "id": "ad06-1c8d-24a1-dae0",
+        "targetId": "685e-5a14-e8c6-f0e3",
+        "type": "selectionEntry",
+        "categoryLinks": [
+          {
+            "targetId": "war-machines-category",
+            "id": "4ecd-146f-f0a0-0b96",
+            "primary": true,
+            "name": "War Machine"
+          }
+        ]
+      }
+    ],
+    "publicationId": "liber-questoris",
+    "catalogueLinks": [
+      {
+        "type": "catalogue",
+        "name": "Solar Auxilia",
+        "id": "a74d-070e-f83d-77ed",
+        "targetId": "SolarAuxilia"
+      },
+      {
+        "type": "catalogue",
+        "name": "Mechanicum",
+        "id": "e5d5-78cc-fbda-64e2",
+        "targetId": "1125-d5e8-713a-70b4"
+      }
+    ],
+    "selectionEntries": [
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Vow of Execution",
+        "hidden": false,
+        "id": "0c0d-aaa3-886e-e47a",
+        "rules": [
+          {
+            "name": "Vow of Execution",
+            "id": "d699-53a7-7b4a-3c92",
+            "hidden": false,
+            "description": "If an attack made by a Model with this Questoris View causes the last Model in an enemy Unit selected to fill a High Command Force Organisation Slot to be Removed a Casualty, the amount of Victory Points that would be scored by the Controlling Player as a result for achieving any version of the Slay the Warlord 00) Secondary Objective is increased by 2.",
+            "page": "43",
+            "publicationId": "liber-questoris"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "questoris-vow",
+            "id": "86d3-f3da-511d-5782",
+            "primary": true,
+            "name": "Questoris Vow"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Vow of Slaying",
+        "hidden": false,
+        "id": "297b-5ad8-bb67-bd6a",
+        "rules": [
+          {
+            "name": "Vow of Slaying",
+            "id": "381a-b904-99b0-f17a",
+            "hidden": false,
+            "description": "If an attack made by a Model with this Questors Vow causes the last Model in an enemy Unit selected to fill a Lord of War or Warlord Force Organisation Slot to be Removed as a Casualty, then the amount of Victory Points that would be scored by the Controlling Player as a result for achieving any version of the Glant Killer 00 Secondary Objective is increased by 2.",
+            "page": "43",
+            "publicationId": "liber-questoris"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "questoris-vow",
+            "id": "863b-4595-5f00-0ca4",
+            "primary": true,
+            "name": "Questoris Vow"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Vow of Resolve",
+        "hidden": false,
+        "id": "191a-300c-3021-1ada",
+        "rules": [
+          {
+            "name": "Vow of Resolve",
+            "id": "4cd0-49fa-60c9-ef3d",
+            "hidden": false,
+            "description": "If a Model with this Questors Vow remains on the Battlefield at the end of the Battle, then the amount of Victory Points that would be scored by the Controlling Player for achieving any version of the Last Man Standing 00 Secondary Objective is increased by 2",
+            "page": "43",
+            "publicationId": "liber-questoris"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "questoris-vow",
+            "id": "ce10-4f2a-bb93-0d06",
+            "primary": true,
+            "name": "Questoris Vow"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Vow of Alacrity",
+        "hidden": false,
+        "id": "0eb5-b055-8a5c-f819",
+        "rules": [
+          {
+            "name": "Vow of Alacrity",
+            "id": "2c8d-a7fb-3b71-dc17",
+            "hidden": false,
+            "description": "If, during the Controlling Player's fest Player Tum an attack made by a Model with this Questoris Vow causes the last Model in an enemy Unit to be Removed as a Casualty, or causes an enemy Unit to Fall Back off the Battlefield, then the amount of Victory Points that would be scored by the Controlling Player for achieving any version of the First Strike 00 Secondary Objective is increased by 2",
+            "page": "43",
+            "publicationId": "liber-questoris"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "questoris-vow",
+            "id": "b82a-eae6-7467-8af0",
+            "primary": true,
+            "name": "Questoris Vow"
+          }
+        ]
+      }
+    ]
+  }
+}

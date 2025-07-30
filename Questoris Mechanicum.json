@@ -1,0 +1,38 @@
+{
+  "catalogue": {
+    "library": false,
+    "id": "questoris-mechanicum",
+    "name": "Questoris Mechanicum",
+    "gameSystemId": "sys-41d4-b033-8ca9-9bb0",
+    "gameSystemRevision": 1,
+    "revision": 1,
+    "battleScribeVersion": "2.03",
+    "catalogueLinks": [
+      {
+        "type": "catalogue",
+        "name": "Questoris Household",
+        "id": "6901-0687-909e-d442",
+        "targetId": "questoris-household",
+        "importRootEntries": true
+      }
+    ],
+    "type": "catalogue",
+    "rules": [
+      {
+        "name": "Servants of the Machine",
+        "id": "a7f0-e7c9-006c-50a2",
+        "hidden": false,
+        "description": "A single Automata Talon Additional Detachment may be added to an Army with the Mechanicum Vassals Household Paradigm without requiring a specific corresponding Household Rank Prime Advantage to have been selected for a Unit in that Army. This Additional Detachment is linked to either a Knight Households Primary Detachment or a Lord of War Additional Detachment (chosen by the Player), as long that Detachment contains at least one Model with the Questoris Mechanicum Faction Trait. Additionally, an Army with the Mechanicum Vassals Household Paradigm is not subject to the 0-1 per Army restriction on the Preceptor Household Rank."
+      }
+    ],
+    "entryLinks": [
+      {
+        "targetId": "vow-of-obeisance",
+        "id": "c7aa-f6a2-44f7-65d3",
+        "type": "selectionEntry",
+        "name": "Vow of Obeisance",
+        "hidden": false
+      }
+    ]
+  }
+}

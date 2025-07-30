@@ -48,62 +48,62 @@
             "id": "99ed-464e-3989-e8ee",
             "characteristics": [
               {
-                "name": "Movement",
+                "name": "Movement (M)",
                 "typeId": "bdbb-da13-eeff-50f3",
                 "$text": "7"
               },
               {
-                "name": "Weapon Skill",
+                "name": "Weapon Skill (WS)",
                 "typeId": "80f9-ff23-cf6b-a774",
                 "$text": "7"
               },
               {
-                "name": "Ballistic Skill",
+                "name": "Ballistic Skill (BS)",
                 "typeId": "0725-6d62-4136-1f56",
                 "$text": "7"
               },
               {
-                "name": "Strength",
+                "name": "Strength (S)",
                 "typeId": "model-strength",
                 "$text": "6"
               },
               {
-                "name": "Toughness",
+                "name": "Toughness (T)",
                 "typeId": "0f0e-1166-667c-6b8d",
                 "$text": "7"
               },
               {
-                "name": "Leadership",
+                "name": "Leadership (LD)",
                 "typeId": "5e98-cab2-59ac-168b",
                 "$text": "12"
               },
               {
-                "name": "Cool",
+                "name": "Cool (CL)",
                 "typeId": "7f44-7a96-7a38-aa52",
                 "$text": "10"
               },
               {
-                "name": "Willpower",
+                "name": "Willpower (WP)",
                 "typeId": "30ba-3375-7bae-99b4",
                 "$text": "10"
               },
               {
-                "name": "Intelligence",
+                "name": "Intelligence (INT)",
                 "typeId": "91ef-626b-7f89-c3d6",
                 "$text": "10"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative (I)",
                 "typeId": "model-initiative",
                 "$text": "5"
               },
               {
-                "name": "Attacks",
+                "name": "Attacks (A)",
                 "typeId": "model-attacks",
                 "$text": "6"
               },
               {
-                "name": "Wounds",
+                "name": "Wounds (W)",
                 "typeId": "091b-45b8-4b3d-7971",
                 "$text": "6"
               },
@@ -116,6 +116,16 @@
                 "name": "Invuln",
                 "typeId": "ba64-e5f4-1a11-32e9",
                 "$text": "4+"
+              },
+              {
+                "typeId": "b66c-6835-eb9e-8a19",
+                "name": "Save (SAV)",
+                "$text": ""
+              },
+              {
+                "typeId": "b052-bfb0-212a-a270",
+                "name": "Invulnerable Save (INV)",
+                "$text": ""
               }
             ]
           },
@@ -431,62 +441,62 @@
                 "id": "fbe0-f268-a930-c039",
                 "characteristics": [
                   {
-                    "name": "Movement",
+                    "name": "Movement (M)",
                     "typeId": "bdbb-da13-eeff-50f3",
                     "$text": "7"
                   },
                   {
-                    "name": "Weapon Skill",
+                    "name": "Weapon Skill (WS)",
                     "typeId": "80f9-ff23-cf6b-a774",
                     "$text": "4"
                   },
                   {
-                    "name": "Ballistic Skill",
+                    "name": "Ballistic Skill (BS)",
                     "typeId": "0725-6d62-4136-1f56",
                     "$text": "4"
                   },
                   {
-                    "name": "Strength",
+                    "name": "Strength (S)",
                     "typeId": "model-strength",
                     "$text": "7"
                   },
                   {
-                    "name": "Toughness",
+                    "name": "Toughness (T)",
                     "typeId": "0f0e-1166-667c-6b8d",
                     "$text": "7"
                   },
                   {
-                    "name": "Leadership",
+                    "name": "Leadership (LD)",
                     "typeId": "5e98-cab2-59ac-168b",
                     "$text": "8"
                   },
                   {
-                    "name": "Cool",
+                    "name": "Cool (CL)",
                     "typeId": "7f44-7a96-7a38-aa52",
                     "$text": "12"
                   },
                   {
-                    "name": "Willpower",
+                    "name": "Willpower (WP)",
                     "typeId": "30ba-3375-7bae-99b4",
                     "$text": "5"
                   },
                   {
-                    "name": "Intelligence",
+                    "name": "Intelligence (INT)",
                     "typeId": "91ef-626b-7f89-c3d6",
                     "$text": "5"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative (I)",
                     "typeId": "model-initiative",
                     "$text": "3"
                   },
                   {
-                    "name": "Attacks",
+                    "name": "Attacks (A)",
                     "typeId": "model-attacks",
                     "$text": "3"
                   },
                   {
-                    "name": "Wounds",
+                    "name": "Wounds (W)",
                     "typeId": "091b-45b8-4b3d-7971",
                     "$text": "4"
                   },
@@ -499,6 +509,16 @@
                     "name": "Invuln",
                     "typeId": "ba64-e5f4-1a11-32e9",
                     "$text": "5+"
+                  },
+                  {
+                    "typeId": "b66c-6835-eb9e-8a19",
+                    "name": "Save (SAV)",
+                    "$text": ""
+                  },
+                  {
+                    "typeId": "b052-bfb0-212a-a270",
+                    "name": "Invulnerable Save (INV)",
+                    "$text": ""
                   }
                 ]
               },
@@ -568,62 +588,62 @@
             "id": "c3c6-404b-003d-1539",
             "characteristics": [
               {
-                "name": "Movement",
+                "name": "Movement (M)",
                 "typeId": "bdbb-da13-eeff-50f3",
                 "$text": "6"
               },
               {
-                "name": "Weapon Skill",
+                "name": "Weapon Skill (WS)",
                 "typeId": "80f9-ff23-cf6b-a774",
                 "$text": "4"
               },
               {
-                "name": "Ballistic Skill",
+                "name": "Ballistic Skill (BS)",
                 "typeId": "0725-6d62-4136-1f56",
                 "$text": "4"
               },
               {
-                "name": "Strength",
+                "name": "Strength (S)",
                 "typeId": "model-strength",
                 "$text": "4"
               },
               {
-                "name": "Toughness",
+                "name": "Toughness (T)",
                 "typeId": "0f0e-1166-667c-6b8d",
                 "$text": "5"
               },
               {
-                "name": "Leadership",
+                "name": "Leadership (LD)",
                 "typeId": "5e98-cab2-59ac-168b",
                 "$text": "9"
               },
               {
-                "name": "Cool",
+                "name": "Cool (CL)",
                 "typeId": "7f44-7a96-7a38-aa52",
                 "$text": "8"
               },
               {
-                "name": "Willpower",
+                "name": "Willpower (WP)",
                 "typeId": "30ba-3375-7bae-99b4",
                 "$text": "7"
               },
               {
-                "name": "Intelligence",
+                "name": "Intelligence (INT)",
                 "typeId": "91ef-626b-7f89-c3d6",
                 "$text": "7"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative (I)",
                 "typeId": "model-initiative",
                 "$text": "4"
               },
               {
-                "name": "Attacks",
+                "name": "Attacks (A)",
                 "typeId": "model-attacks",
                 "$text": "2"
               },
               {
-                "name": "Wounds",
+                "name": "Wounds (W)",
                 "typeId": "091b-45b8-4b3d-7971",
                 "$text": "2"
               },
@@ -636,6 +656,16 @@
                 "name": "Invuln",
                 "typeId": "ba64-e5f4-1a11-32e9",
                 "$text": "4+"
+              },
+              {
+                "typeId": "b66c-6835-eb9e-8a19",
+                "name": "Save (SAV)",
+                "$text": ""
+              },
+              {
+                "typeId": "b052-bfb0-212a-a270",
+                "name": "Invulnerable Save (INV)",
+                "$text": ""
               }
             ]
           }
@@ -663,62 +693,62 @@
                 "id": "0aa4-3b53-a842-f1fa",
                 "characteristics": [
                   {
-                    "name": "Movement",
+                    "name": "Movement (M)",
                     "typeId": "bdbb-da13-eeff-50f3",
                     "$text": "6"
                   },
                   {
-                    "name": "Weapon Skill",
+                    "name": "Weapon Skill (WS)",
                     "typeId": "80f9-ff23-cf6b-a774",
                     "$text": "4"
                   },
                   {
-                    "name": "Ballistic Skill",
+                    "name": "Ballistic Skill (BS)",
                     "typeId": "0725-6d62-4136-1f56",
                     "$text": "4"
                   },
                   {
-                    "name": "Strength",
+                    "name": "Strength (S)",
                     "typeId": "model-strength",
                     "$text": "4"
                   },
                   {
-                    "name": "Toughness",
+                    "name": "Toughness (T)",
                     "typeId": "0f0e-1166-667c-6b8d",
                     "$text": "5"
                   },
                   {
-                    "name": "Leadership",
+                    "name": "Leadership (LD)",
                     "typeId": "5e98-cab2-59ac-168b",
                     "$text": "8"
                   },
                   {
-                    "name": "Cool",
+                    "name": "Cool (CL)",
                     "typeId": "7f44-7a96-7a38-aa52",
                     "$text": "8"
                   },
                   {
-                    "name": "Willpower",
+                    "name": "Willpower (WP)",
                     "typeId": "30ba-3375-7bae-99b4",
                     "$text": "7"
                   },
                   {
-                    "name": "Intelligence",
+                    "name": "Intelligence (INT)",
                     "typeId": "91ef-626b-7f89-c3d6",
                     "$text": "7"
                   },
                   {
-                    "name": "Initiative",
+                    "name": "Initiative (I)",
                     "typeId": "model-initiative",
                     "$text": "4"
                   },
                   {
-                    "name": "Attacks",
+                    "name": "Attacks (A)",
                     "typeId": "model-attacks",
                     "$text": "2"
                   },
                   {
-                    "name": "Wounds",
+                    "name": "Wounds (W)",
                     "typeId": "091b-45b8-4b3d-7971",
                     "$text": "2"
                   },
@@ -731,6 +761,16 @@
                     "name": "Invuln",
                     "typeId": "ba64-e5f4-1a11-32e9",
                     "$text": "4+"
+                  },
+                  {
+                    "typeId": "b66c-6835-eb9e-8a19",
+                    "name": "Save (SAV)",
+                    "$text": ""
+                  },
+                  {
+                    "typeId": "b052-bfb0-212a-a270",
+                    "name": "Invulnerable Save (INV)",
+                    "$text": ""
                   }
                 ]
               },
@@ -940,59 +980,69 @@
             "id": "0588-de01-09c7-5421",
             "characteristics": [
               {
-                "name": "Movement",
+                "name": "Movement (M)",
                 "typeId": "bdbb-da13-eeff-50f3",
                 "$text": "6"
               },
               {
-                "name": "Weapon Skill",
+                "name": "Weapon Skill (WS)",
                 "typeId": "80f9-ff23-cf6b-a774",
                 "$text": "6"
               },
               {
-                "name": "Ballistic Skill",
+                "name": "Ballistic Skill (BS)",
                 "typeId": "0725-6d62-4136-1f56",
                 "$text": "5"
               },
               {
-                "name": "Strength",
+                "name": "Strength (S)",
                 "typeId": "model-strength",
                 "$text": "4"
               },
               {
-                "name": "Toughness",
+                "name": "Toughness (T)",
                 "typeId": "0f0e-1166-667c-6b8d",
                 "$text": "5"
               },
               {
-                "name": "Leadership",
+                "name": "Leadership (LD)",
                 "typeId": "5e98-cab2-59ac-168b",
                 "$text": "10"
               },
               {
-                "name": "Cool",
+                "name": "Cool (CL)",
                 "typeId": "7f44-7a96-7a38-aa52",
                 "$text": "9"
               },
               {
-                "name": "Willpower",
+                "name": "Willpower (WP)",
                 "typeId": "30ba-3375-7bae-99b4",
                 "$text": "9"
               },
               {
-                "name": "Intelligence",
+                "name": "Intelligence (INT)",
                 "typeId": "91ef-626b-7f89-c3d6",
                 "$text": "10"
               },
               {
-                "name": "Initiative",
+                "name": "Initiative (I)",
                 "typeId": "model-initiative",
                 "$text": "5"
               },
               {
-                "name": "Attacks",
+                "name": "Attacks (A)",
                 "typeId": "model-attacks",
                 "$text": "5"
+              },
+              {
+                "typeId": "b66c-6835-eb9e-8a19",
+                "name": "Save (SAV)",
+                "$text": ""
+              },
+              {
+                "typeId": "b052-bfb0-212a-a270",
+                "name": "Invulnerable Save (INV)",
+                "$text": ""
               }
             ]
           }
