@@ -8928,6 +8928,16 @@
             "primary": false,
             "name": "Vehicle (Flyer)"
           }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Prime",
+            "hidden": false,
+            "id": "686a-5fff-2aa8-ca11",
+            "type": "selectionEntry",
+            "targetId": "prime-fast-attack"
+          }
         ]
       },
       {
@@ -9273,249 +9283,6 @@
       {
         "type": "unit",
         "import": true,
-        "name": "Scimitar Jetbike Squadron",
-        "hidden": false,
-        "id": "scimitar-jetbike-squadron",
-        "categoryLinks": [
-          {
-            "targetId": "infantry",
-            "id": "07b5-82e9-2fe5-a24a",
-            "primary": false,
-            "name": "Infantry"
-          },
-          {
-            "targetId": "implacable-advance",
-            "id": "f1bf-ace2-cf05-0ca0",
-            "primary": false,
-            "name": "Implacable Advance"
-          },
-          {
-            "targetId": "fast-attack-category",
-            "id": "78c2-06ec-dbfe-cd1f",
-            "primary": true,
-            "name": "Fast Attack"
-          },
-          {
-            "targetId": "deep-strike",
-            "id": "9028-febf-af51-92d5",
-            "primary": false,
-            "name": "Deep Strike",
-            "type": "rule"
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Prime",
-            "hidden": false,
-            "id": "8740-9e40-f034-18b9",
-            "type": "selectionEntry",
-            "targetId": "prime-troops"
-          }
-        ],
-        "selectionEntries": [
-          {
-            "type": "model",
-            "import": true,
-            "name": "Scimitar Hunter",
-            "hidden": false,
-            "id": "scimitar-hunter",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 30
-              }
-            ],
-            "categoryLinks": [
-              {
-                "targetId": "infantry-skirmish",
-                "id": "3c79-0d43-7e0e-7796",
-                "primary": false,
-                "name": "Infantry (Skirmish)"
-              },
-              {
-                "targetId": "cavalry",
-                "id": "ccdb-c38d-f8fb-ea46",
-                "primary": false,
-                "name": "Cavalry"
-              }
-            ],
-            "constraints": [
-              {
-                "type": "min",
-                "value": 2,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "e897-10d8-f84c-52f0"
-              },
-              {
-                "type": "max",
-                "value": 7,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "ce6c-7d56-df6c-b2ac"
-              }
-            ]
-          },
-          {
-            "type": "model",
-            "import": true,
-            "name": "Scimitar Sergeant",
-            "hidden": false,
-            "id": "scimitar-sergeant",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "74b7-247f-636c-e1d8-min"
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "74b7-247f-636c-e1d8-max"
-              }
-            ],
-            "categoryLinks": [
-              {
-                "targetId": "infantry-skirmish",
-                "id": "a696-3f44-eaa8-02f2",
-                "primary": false,
-                "name": "Infantry (Skirmish)"
-              }
-            ],
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 35
-              }
-            ]
-          }
-        ],
-        "selectionEntryGroups": [
-          {
-            "name": "Any Model in this Unit may have its Heavy bolter exchanged for one of the following:",
-            "id": "2d79-35ba-2b35-f9fc",
-            "hidden": false,
-            "constraints": [
-              {
-                "type": "min",
-                "value": 0,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "42e7-cb1b-d599-54d4-min"
-              },
-              {
-                "type": "max",
-                "value": 0,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "42e7-cb1b-d599-54d4-max"
-              }
-            ],
-            "selectionEntries": [
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Heavy bolter",
-                "hidden": false,
-                "id": "9328-253e-d9fa-a54c"
-              },
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Volkite culverin",
-                "hidden": false,
-                "id": "6eb3-0152-c152-ac88",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "points",
-                    "value": 5
-                  }
-                ]
-              },
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Multi-melta",
-                "hidden": false,
-                "id": "70dc-2283-6390-80dc",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "points",
-                    "value": 15
-                  }
-                ]
-              },
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Plasma cannon",
-                "hidden": false,
-                "id": "17eb-d25a-4c01-c7b3",
-                "costs": [
-                  {
-                    "name": "Points",
-                    "typeId": "points",
-                    "value": 10
-                  }
-                ]
-              }
-            ],
-            "defaultSelectionEntryId": "e250-b11c-5a91-696e",
-            "modifiers": [
-              {
-                "type": "increment",
-                "value": 1,
-                "field": "42e7-cb1b-d599-54d4-min",
-                "repeats": [
-                  {
-                    "value": 1,
-                    "repeats": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "childId": "model",
-                    "shared": true,
-                    "roundUp": false
-                  }
-                ]
-              },
-              {
-                "type": "increment",
-                "value": 1,
-                "field": "42e7-cb1b-d599-54d4-max",
-                "repeats": [
-                  {
-                    "value": 1,
-                    "repeats": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "childId": "model",
-                    "shared": true,
-                    "roundUp": false
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "type": "unit",
-        "import": true,
         "name": "Javelin Squadron",
         "hidden": false,
         "id": "javelin-squadron",
@@ -9571,7 +9338,7 @@
             "hidden": false,
             "id": "73f1-5121-3114-5d6d",
             "type": "selectionEntry",
-            "targetId": "prime-troops"
+            "targetId": "prime-fast-attack"
           }
         ],
         "selectionEntries": [
@@ -9806,7 +9573,7 @@
             "hidden": false,
             "id": "e381-c628-6244-2a65",
             "type": "selectionEntry",
-            "targetId": "prime-troops"
+            "targetId": "prime-fast-attack"
           }
         ],
         "selectionEntries": [
@@ -11601,10 +11368,10 @@
             "name": "Infiltrate (9)"
           },
           {
-            "targetId": "recon-category",
-            "id": "6273-4b47-7b5f-43b9",
+            "targetId": "elites-category",
+            "id": "c74e-479b-cf83-8fc3",
             "primary": true,
-            "name": "Recon"
+            "name": "Elite"
           }
         ],
         "entryLinks": [
@@ -11614,7 +11381,7 @@
             "hidden": false,
             "id": "de08-a70a-a776-fead",
             "type": "selectionEntry",
-            "targetId": "prime-recon"
+            "targetId": "prime-elites"
           },
           {
             "import": true,
@@ -19243,6 +19010,17 @@
                     "value": 10,
                     "field": "points"
                   }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "7ce3-6b74-1dd3-3e56",
+                    "includeChildSelections": false
+                  }
                 ]
               }
             ]
@@ -20306,9 +20084,259 @@
             "description": "A combat shield grants a 5+ Invulnerable Save and a bonus to Focus Rolls.\nA Model with a combat shield has a 5+ Invulnerable Save against attacks made with Melee Weapons. In addition a Model with a combat shield gains a +1 modifier to Focus Rolls made for it."
           }
         ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Scimitar Jetbike Squadron",
+        "hidden": false,
+        "id": "scimitar-jetbike-squadron",
+        "categoryLinks": [
+          {
+            "targetId": "infantry",
+            "id": "07b5-82e9-2fe5-a24a",
+            "primary": false,
+            "name": "Infantry"
+          },
+          {
+            "targetId": "implacable-advance",
+            "id": "f1bf-ace2-cf05-0ca0",
+            "primary": false,
+            "name": "Implacable Advance"
+          },
+          {
+            "targetId": "fast-attack-category",
+            "id": "78c2-06ec-dbfe-cd1f",
+            "primary": true,
+            "name": "Fast Attack"
+          },
+          {
+            "targetId": "deep-strike",
+            "id": "9028-febf-af51-92d5",
+            "primary": false,
+            "name": "Deep Strike",
+            "type": "rule"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Prime",
+            "hidden": false,
+            "id": "8740-9e40-f034-18b9",
+            "type": "selectionEntry",
+            "targetId": "prime-troops"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Scimitar Hunter",
+            "hidden": false,
+            "id": "scimitar-hunter",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 30
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "infantry-skirmish",
+                "id": "3c79-0d43-7e0e-7796",
+                "primary": false,
+                "name": "Infantry (Skirmish)"
+              },
+              {
+                "targetId": "cavalry",
+                "id": "ccdb-c38d-f8fb-ea46",
+                "primary": false,
+                "name": "Cavalry"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 2,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "e897-10d8-f84c-52f0"
+              },
+              {
+                "type": "max",
+                "value": 7,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ce6c-7d56-df6c-b2ac"
+              }
+            ]
+          },
+          {
+            "type": "model",
+            "import": true,
+            "name": "Scimitar Sergeant",
+            "hidden": false,
+            "id": "scimitar-sergeant",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "74b7-247f-636c-e1d8-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "74b7-247f-636c-e1d8-max"
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "infantry-skirmish",
+                "id": "a696-3f44-eaa8-02f2",
+                "primary": false,
+                "name": "Infantry (Skirmish)"
+              }
+            ],
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 35
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Any Model in this Unit may have its Heavy bolter exchanged for one of the following:",
+            "id": "2d79-35ba-2b35-f9fc",
+            "hidden": false,
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "42e7-cb1b-d599-54d4-min"
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "42e7-cb1b-d599-54d4-max"
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Heavy bolter",
+                "hidden": false,
+                "id": "9328-253e-d9fa-a54c"
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Volkite culverin",
+                "hidden": false,
+                "id": "6eb3-0152-c152-ac88",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 5
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Multi-melta",
+                "hidden": false,
+                "id": "70dc-2283-6390-80dc",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 15
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Plasma cannon",
+                "hidden": false,
+                "id": "17eb-d25a-4c01-c7b3",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 10
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "e250-b11c-5a91-696e",
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "42e7-cb1b-d599-54d4-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "42e7-cb1b-d599-54d4-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ],
     "entryLinks": [
+      {
+        "targetId": "scimitar-jetbike-squadron",
+        "id": "61f1-19a5-36f9-6048",
+        "type": "selectionEntry",
+        "name": "Scimitar Jetbike Squadron",
+        "hidden": false
+      },
       {
         "targetId": "veteran-assault",
         "id": "264d-0bc7-37fb-bea3",
@@ -20638,7 +20666,17 @@
         "hidden": false,
         "id": "53b7-f4a0-69cf-c2fe",
         "targetId": "storm-eagle",
-        "type": "selectionEntry"
+        "type": "selectionEntry",
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Prime",
+            "hidden": false,
+            "id": "13fe-40d0-ef61-096e",
+            "type": "selectionEntry",
+            "targetId": "prime-fast-attack"
+          }
+        ]
       },
       {
         "import": true,
@@ -20710,7 +20748,17 @@
         "hidden": false,
         "id": "bec2-b24b-3851-0380",
         "targetId": "fire-raptor",
-        "type": "selectionEntry"
+        "type": "selectionEntry",
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Prime",
+            "hidden": false,
+            "id": "1720-4572-9f3d-fdd0",
+            "type": "selectionEntry",
+            "targetId": "prime-fast-attack"
+          }
+        ]
       },
       {
         "import": true,
@@ -23377,6 +23425,11 @@
       {
         "name": "Veteran Assault Squad",
         "id": "da23-50df-0b2c-8426",
+        "hidden": false
+      },
+      {
+        "name": "Seeker",
+        "id": "f701-44ad-3567-898c",
         "hidden": false
       }
     ],

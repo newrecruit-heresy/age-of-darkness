@@ -5,7 +5,7 @@
     "name": "Dark Angels",
     "gameSystemId": "sys-41d4-b033-8ca9-9bb0",
     "gameSystemRevision": 1,
-    "revision": 2,
+    "revision": 1,
     "battleScribeVersion": "2.03",
     "type": "catalogue",
     "catalogueLinks": [
@@ -37,6 +37,18 @@
             "id": "ac88-7144-6498-a6d7",
             "primary": true,
             "name": "Warlord"
+          },
+          {
+            "targetId": "unique",
+            "id": "49e9-9872-2e52-167e",
+            "primary": false,
+            "name": "Unique"
+          },
+          {
+            "targetId": "a0b8-935f-d3b6-d5ed",
+            "id": "b37a-e5fd-53ca-4caa",
+            "primary": false,
+            "name": "Bulky (4)"
           }
         ],
         "constraints": [
@@ -54,7 +66,7 @@
           {
             "name": "Lion el'jonson",
             "typeId": "877a-f15d-4830-fd7a",
-            "typeName": "Infantry/Cavalry/Dreadnought",
+            "typeName": "Infantry/Cavalry/Walker",
             "hidden": false,
             "id": "038c-fc6e-307f-1561",
             "characteristics": [
@@ -84,6 +96,21 @@
                 "$text": "6"
               },
               {
+                "name": "Wounds (W)",
+                "typeId": "091b-45b8-4b3d-7971",
+                "$text": "6"
+              },
+              {
+                "name": "Initiative (I)",
+                "typeId": "model-initiative",
+                "$text": "7"
+              },
+              {
+                "name": "Attacks (A)",
+                "typeId": "model-attacks",
+                "$text": "7"
+              },
+              {
                 "name": "Leadership (LD)",
                 "typeId": "5e98-cab2-59ac-168b",
                 "$text": "12"
@@ -104,186 +131,343 @@
                 "$text": "10"
               },
               {
-                "name": "Initiative (I)",
-                "typeId": "model-initiative",
-                "$text": "7"
-              },
-              {
-                "name": "Attacks (A)",
-                "typeId": "model-attacks",
-                "$text": "7"
-              },
-              {
-                "name": "Wounds (W)",
-                "typeId": "091b-45b8-4b3d-7971",
-                "$text": "6"
-              },
-              {
-                "name": "Save",
-                "typeId": "ad33-3932-7b72-a5ce",
-                "$text": "2+"
-              },
-              {
-                "name": "Invuln",
-                "typeId": "ba64-e5f4-1a11-32e9",
-                "$text": "4+"
-              },
-              {
-                "typeId": "b66c-6835-eb9e-8a19",
                 "name": "Save (SAV)",
-                "$text": ""
+                "typeId": "b66c-6835-eb9e-8a19",
+                "$text": "2"
               },
               {
-                "typeId": "b052-bfb0-212a-a270",
                 "name": "Invulnerable Save (INV)",
-                "$text": ""
+                "typeId": "b052-bfb0-212a-a270",
+                "$text": "4"
               }
             ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "The Lion's Choler",
+            "id": "8278-8a57-7bd0-f9c9",
+            "hidden": false,
+            "description": "The Lion gains a bonus to Focus Rolls when he is wounded.dent While a Model with this Special Rule is engaged in a Challenge, if it has 2 or fewer Wounds remaining, its Controlling Player can select the following Gambit: The Lion's Choler: If this Gambit is selected, the Model for which this Gambit has been selected's Controlling Player adds a +2 Modifier to the Focus Roll, and does not suffer a -1 modifier for each point of difference between this Model's Base Wounds Characteristic and its current Wounds Characteristic.",
+            "page": "130",
+            "publicationId": "liber-astartes"
           },
           {
+            "name": "Sire of the Dark Angels",
+            "id": "f762-897b-7c0f-634e",
+            "hidden": false,
+            "description": "If a Model with this Special Rule is part of an Army, then the Controlling Player may apply the following additional Special Rules to all Auxiliary, Apex and Primary Detachments that have the same Faction Trait as the Model with this Special Rule: \n\n\nIf four or more Troops Battlefield Role Slots in the Primary Detachment of this Army are filled and these Slots contain at least one Tactical Squad Unit, at least one Assault Squad Unit and at least one Breacher Squad Unit, then all Force Organisation Slots with the Troops Battlefield Role in the Primary Detachment are considered Prime Slots \n\n\nFurthermore, if a Model with this Special Rule is part of an Army, then the following Special Rules are granted to all Outrider Squadron Units and all Scimitar Jetbike Squadron Units in the same Army: \n\n\nWhen the Controlling Player of a Model with this Special Rule makes a Reserve Roll for a Outrider Squadron Unit which only includes Models with the Dark Angels Trait or a Scimitar Jetbike Squadron Unit which only includes Models with the Dark Angels Trait, that Roll is modified by +1.",
+            "publicationId": "liber-astartes",
+            "page": "131"
+          },
+          {
+            "name": "Stasis grenades",
+            "id": "aa8e-8248-b080-367d",
+            "hidden": false,
+            "publicationId": "liber-astartes",
+            "page": "131",
+            "description": "Stasis grenades reduce the Combat Initiative of enemies. \n\n\nOnce per Battle, the first time a Model with stasis grenades and any Unit that it has joined is successfully Charged, the Combat Initiative of all Models in the Charging Unit is modified by -2 for the duration of the current Assault Phase. This modifier does not affect Models in the Charging Unit that are engaged in a challenge."
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
             "name": "The fusil actinaeus",
-            "typeId": "weapon",
-            "typeName": "Weapon",
             "hidden": false,
-            "id": "dfe6-39d5-7c31-5da2",
-            "characteristics": [
+            "id": "8167-5e38-b7f7-0d1e",
+            "constraints": [
               {
-                "name": "Range",
-                "typeId": "range",
-                "$text": "18"
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3bb5-5fc4-da3c-bdc4-min",
+                "includeChildSelections": false
               },
               {
-                "name": "Range Strength",
-                "typeId": "range-strength",
-                "$text": "7"
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3bb5-5fc4-da3c-bdc4-max",
+                "includeChildSelections": false
+              }
+            ],
+            "profiles": [
+              {
+                "name": "The fusil actinaeus",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "dfe6-39d5-7c31-5da2",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": "18"
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "2"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "e555-ec38-2dda-8be7",
+                "id": "cd4a-d9c1-5e06-ef20",
+                "primary": false,
+                "name": "Breaching (4+)"
               },
               {
-                "name": "Fire Power",
-                "typeId": "fire-power",
-                "$text": "2"
+                "targetId": "plasma",
+                "id": "f130-367e-1e80-a36d",
+                "primary": false,
+                "name": "Plasma"
               },
               {
-                "name": "Melee Strength",
-                "typeId": "melee-strength",
-                "$text": "Range"
-              },
-              {
-                "name": "Damage",
-                "typeId": "damage",
-                "$text": "2"
-              },
-              {
-                "name": "Attacks",
-                "typeId": "weapon-attacks",
-                "$text": "Range"
-              },
-              {
-                "name": "Initiative modifier",
-                "typeId": "weapon-initiative",
-                "$text": "Range"
-              },
-              {
-                "name": "Armour penetration",
-                "typeId": "armour-penetration",
-                "$text": "3"
+                "targetId": "assault",
+                "id": "d173-d6df-42c0-2b61",
+                "primary": false,
+                "name": "Assault"
               }
             ]
-          },
+          }
+        ],
+        "selectionEntryGroups": [
           {
-            "name": "The lion sword",
-            "typeId": "weapon",
-            "typeName": "Weapon",
+            "name": "This Model may have its The Lion Sword exchanged for one The Wolf Blade for free.",
+            "id": "7c1a-c242-c803-2175",
             "hidden": false,
-            "id": "64dc-d900-8996-1ced",
-            "characteristics": [
+            "selectionEntries": [
               {
-                "name": "Range",
-                "typeId": "range",
-                "$text": "Melee"
+                "type": "upgrade",
+                "import": true,
+                "name": "The lion sword",
+                "hidden": false,
+                "id": "bd5a-e370-d9e3-d64d",
+                "profiles": [
+                  {
+                    "name": "The lion sword",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "64dc-d900-8996-1ced",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "Melee"
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": "i"
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": "a"
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": "+2"
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": "2"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "3"
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ce4f-104c-5d89-38fe-min",
+                    "includeChildSelections": false
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "ce4f-104c-5d89-38fe-max",
+                    "includeChildSelections": false
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "targetId": "power",
+                    "id": "4c9f-ad2e-ceb1-d2ab",
+                    "primary": false,
+                    "name": "Power"
+                  },
+                  {
+                    "targetId": "755e-8047-81b7-638f",
+                    "id": "3c9d-1b78-9d7d-dffc",
+                    "primary": false,
+                    "name": "Sword of the Order"
+                  }
+                ]
               },
               {
-                "name": "Range Strength",
-                "typeId": "range-strength",
-                "$text": "Melee"
-              },
-              {
-                "name": "Fire Power",
-                "typeId": "fire-power",
-                "$text": "Melee"
-              },
-              {
-                "name": "Melee Strength",
-                "typeId": "melee-strength",
-                "$text": "+2"
-              },
-              {
-                "name": "Damage",
-                "typeId": "damage",
-                "$text": "3"
-              },
-              {
-                "name": "Attacks",
-                "typeId": "weapon-attacks",
-                "$text": "A"
-              },
-              {
-                "name": "Initiative modifier",
-                "typeId": "weapon-initiative",
-                "$text": "I"
-              },
-              {
-                "name": "Armour penetration",
-                "typeId": "armour-penetration",
-                "$text": "2"
+                "type": "upgrade",
+                "import": true,
+                "name": "The wolf blade",
+                "hidden": false,
+                "id": "c5ff-2de8-06c0-1940",
+                "profiles": [
+                  {
+                    "name": "The wolf blade",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "5a17-f161-047e-0b36",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "Melee"
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": "i"
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": "a"
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": "s"
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": "3"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "1"
+                      }
+                    ]
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "targetId": "3ed0-4fd2-fe7a-91b6",
+                    "id": "793a-0c0b-5954-5fb9",
+                    "primary": false,
+                    "name": "Shred (4+)"
+                  },
+                  {
+                    "targetId": "e555-ec38-2dda-8be7",
+                    "id": "ccee-39c3-bbad-01f3",
+                    "primary": false,
+                    "name": "Breaching (4+)"
+                  },
+                  {
+                    "targetId": "c31a-6618-0437-9697",
+                    "id": "c69a-7b84-f660-8dad",
+                    "primary": false,
+                    "name": "Reaping Blow (2)"
+                  },
+                  {
+                    "targetId": "755e-8047-81b7-638f",
+                    "id": "5f59-a102-e25c-f11d",
+                    "primary": false,
+                    "name": "Sword of the Order"
+                  }
+                ]
               }
-            ]
-          },
-          {
-            "name": "The wolf blade",
-            "typeId": "weapon",
-            "typeName": "Weapon",
-            "hidden": false,
-            "id": "5a17-f161-047e-0b36",
-            "characteristics": [
+            ],
+            "defaultSelectionEntryId": "bd5a-e370-d9e3-d64d",
+            "constraints": [
               {
-                "name": "Range",
-                "typeId": "range",
-                "$text": "Melee"
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "36cb-5c02-6ac3-f121-min",
+                "includeChildSelections": false
               },
               {
-                "name": "Range Strength",
-                "typeId": "range-strength",
-                "$text": "Melee"
-              },
-              {
-                "name": "Fire Power",
-                "typeId": "fire-power",
-                "$text": " Melee"
-              },
-              {
-                "name": "Melee Strength",
-                "typeId": "melee-strength",
-                "$text": "S"
-              },
-              {
-                "name": "Damage",
-                "typeId": "damage",
-                "$text": "1"
-              },
-              {
-                "name": "Attacks",
-                "typeId": "weapon-attacks",
-                "$text": "A"
-              },
-              {
-                "name": "Initiative modifier",
-                "typeId": "weapon-initiative",
-                "$text": "I"
-              },
-              {
-                "name": "Armour penetration",
-                "typeId": "armour-penetration",
-                "$text": "3"
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "36cb-5c02-6ac3-f121-max",
+                "includeChildSelections": false
               }
             ]
           }
@@ -308,6 +492,12 @@
             "id": "76e8-1052-cc30-3379",
             "primary": true,
             "name": "High Command"
+          },
+          {
+            "targetId": "infantry",
+            "id": "d89f-87b1-0ba4-65e8",
+            "primary": false,
+            "name": "Infantry"
           }
         ],
         "constraints": [
@@ -317,7 +507,7 @@
             "field": "selections",
             "scope": "roster",
             "shared": true,
-            "id": "8e5c-e1e9-de49-9720",
+            "id": "821d-9e42-8bf0-a92b",
             "includeChildSelections": true
           }
         ],
@@ -325,7 +515,7 @@
           {
             "name": "Corswain",
             "typeId": "877a-f15d-4830-fd7a",
-            "typeName": "Infantry/Cavalry/Dreadnought",
+            "typeName": "Infantry/Cavalry/Walker",
             "hidden": false,
             "id": "be05-671e-4ef7-136e",
             "characteristics": [
@@ -355,6 +545,21 @@
                 "$text": "4"
               },
               {
+                "name": "Wounds (W)",
+                "typeId": "091b-45b8-4b3d-7971",
+                "$text": "4"
+              },
+              {
+                "name": "Initiative (I)",
+                "typeId": "model-initiative",
+                "$text": "5"
+              },
+              {
+                "name": "Attacks (A)",
+                "typeId": "model-attacks",
+                "$text": "5"
+              },
+              {
                 "name": "Leadership (LD)",
                 "typeId": "5e98-cab2-59ac-168b",
                 "$text": "10"
@@ -375,6 +580,281 @@
                 "$text": "9"
               },
               {
+                "name": "Save (SAV)",
+                "typeId": "b66c-6835-eb9e-8a19",
+                "$text": "2"
+              },
+              {
+                "name": "Invulnerable Save (INV)",
+                "typeId": "b052-bfb0-212a-a270",
+                "$text": "4"
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "The blade",
+            "hidden": false,
+            "id": "b00d-1a1c-d64f-0776",
+            "profiles": [
+              {
+                "name": "The blade",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "0f9d-8427-efb9-3700",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": "i"
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": "a"
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": "+2"
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "2"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "46ee-52a3-7fa1-1a76-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "46ee-52a3-7fa1-1a76-max",
+                "includeChildSelections": false
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "power",
+                "id": "20db-1f3c-e276-1170",
+                "primary": false,
+                "name": "Power"
+              },
+              {
+                "targetId": "755e-8047-81b7-638f",
+                "id": "6628-3096-57d1-c17e",
+                "primary": false,
+                "name": "Sword of the Order"
+              },
+              {
+                "targetId": "8ef8-b8a6-334c-a818",
+                "id": "9586-83b5-b605-37d4",
+                "primary": false,
+                "name": "Duellist's Edge (2)"
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Armour of the Forest",
+            "id": "b71b-8fda-50da-ce3a",
+            "hidden": false,
+            "description": "This Wargear reduces the amount of Damage suffered from any wound inflicted in a Challenge.\n\nWhen a Model with this Special Rule is engaged in a Challenge, the Damage Characteristic of any wound inflicted on that Model is reduced by 1, to a minimum of 1.",
+            "publicationId": "liber-astartes",
+            "page": "132"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Bolt pistol",
+            "hidden": false,
+            "id": "4537-f8d5-279a-c04b",
+            "type": "selectionEntry",
+            "targetId": "71ed-a313-7178-0e51",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1a18-1d6e-b343-481b-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "1a18-1d6e-b343-481b-max",
+                "includeChildSelections": false
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Bolter",
+            "hidden": false,
+            "id": "fe09-2353-8906-21cc",
+            "type": "selectionEntry",
+            "targetId": "68d2-db2c-be95-a97d",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "742a-d5ae-a772-a959-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "742a-d5ae-a772-a959-max",
+                "includeChildSelections": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Marduk Sedras",
+        "hidden": false,
+        "id": "2bf9-f4cb-ea73-cec0",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 220
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "high-command",
+            "id": "8088-8d5a-d7f9-1121",
+            "primary": true,
+            "name": "High Command"
+          },
+          {
+            "targetId": "infantry",
+            "id": "e77d-521b-ed19-2087",
+            "primary": false,
+            "name": "Infantry"
+          },
+          {
+            "targetId": "33e4-2b0a-7ff6-4195",
+            "id": "ea30-12ef-78c4-d55e",
+            "primary": false,
+            "name": "Bulky (2)"
+          },
+          {
+            "targetId": "unique",
+            "id": "0d86-faac-3ed0-705d",
+            "primary": false,
+            "name": "Unique"
+          },
+          {
+            "targetId": "slow-and-purposeful",
+            "id": "986d-d21b-c61b-262c",
+            "primary": false,
+            "name": "Slow and Purposeful"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "roster",
+            "shared": true,
+            "id": "afd5-3176-667c-2775",
+            "includeChildSelections": true
+          }
+        ],
+        "profiles": [
+          {
+            "name": "Marduk Sedras",
+            "typeId": "877a-f15d-4830-fd7a",
+            "typeName": "Infantry/Cavalry/Walker",
+            "hidden": false,
+            "id": "d142-f441-badc-89df",
+            "characteristics": [
+              {
+                "name": "Movement (M)",
+                "typeId": "bdbb-da13-eeff-50f3",
+                "$text": "6"
+              },
+              {
+                "name": "Weapon Skill (WS)",
+                "typeId": "80f9-ff23-cf6b-a774",
+                "$text": "6"
+              },
+              {
+                "name": "Ballistic Skill (BS)",
+                "typeId": "0725-6d62-4136-1f56",
+                "$text": "5"
+              },
+              {
+                "name": "Strength (S)",
+                "typeId": "model-strength",
+                "$text": "4"
+              },
+              {
+                "name": "Toughness (T)",
+                "typeId": "0f0e-1166-667c-6b8d",
+                "$text": "5"
+              },
+              {
+                "name": "Wounds (W)",
+                "typeId": "091b-45b8-4b3d-7971",
+                "$text": "5"
+              },
+              {
                 "name": "Initiative (I)",
                 "typeId": "model-initiative",
                 "$text": "5"
@@ -385,78 +865,198 @@
                 "$text": "5"
               },
               {
-                "name": "Wounds (W)",
-                "typeId": "091b-45b8-4b3d-7971",
-                "$text": "4"
+                "name": "Leadership (LD)",
+                "typeId": "5e98-cab2-59ac-168b",
+                "$text": "10"
               },
               {
-                "name": "Save",
-                "typeId": "ad33-3932-7b72-a5ce",
-                "$text": "2+"
+                "name": "Cool (CL)",
+                "typeId": "7f44-7a96-7a38-aa52",
+                "$text": "9"
               },
               {
-                "name": "Invuln",
-                "typeId": "ba64-e5f4-1a11-32e9",
-                "$text": "4+"
+                "name": "Willpower (WP)",
+                "typeId": "30ba-3375-7bae-99b4",
+                "$text": "9"
               },
               {
-                "typeId": "b66c-6835-eb9e-8a19",
+                "name": "Intelligence (INT)",
+                "typeId": "91ef-626b-7f89-c3d6",
+                "$text": "9"
+              },
+              {
                 "name": "Save (SAV)",
-                "$text": ""
+                "typeId": "b66c-6835-eb9e-8a19",
+                "$text": "2"
               },
               {
-                "typeId": "b052-bfb0-212a-a270",
                 "name": "Invulnerable Save (INV)",
-                "$text": ""
+                "typeId": "b052-bfb0-212a-a270",
+                "$text": "4"
+              }
+            ]
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "The Death of Worlds",
+            "hidden": false,
+            "id": "87bf-f314-2685-308d",
+            "profiles": [
+              {
+                "name": "The Death of Worlds",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "3fe0-b218-166e-79f5",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": "-2"
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": "a"
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": "+5"
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "3"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "0393-8e02-6398-f826-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "0393-8e02-6398-f826-max",
+                "includeChildSelections": false
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "8ef8-b8a6-334c-a818",
+                "id": "b750-f851-17f2-97d3",
+                "primary": false,
+                "name": "Duellist's Edge (2)"
+              },
+              {
+                "targetId": "power",
+                "id": "3ab5-b3f9-8856-92ee",
+                "primary": false,
+                "name": "Power"
+              },
+              {
+                "targetId": "755e-8047-81b7-638f",
+                "id": "6a0c-8cfd-ed39-8965",
+                "primary": false,
+                "name": "Sword of the Order"
+              }
+            ]
+          }
+        ],
+        "rules": [
+          {
+            "name": "Ancient of War",
+            "id": "254d-9214-2142-5b08",
+            "hidden": false,
+            "description": "While Marduk Sedras is part of a Unit that includes only Models with the Dark Angels Trait, all Models in the Unit gain the Hatred (Traitor) Special Rule.",
+            "publicationId": "liber-astartes",
+            "page": "133"
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Phosphex bombs",
+            "hidden": false,
+            "id": "223b-d100-cf1b-0629",
+            "type": "selectionEntry",
+            "targetId": "phosphex-bombs",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7c5f-e1a3-e0b4-0a57-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7c5f-e1a3-e0b4-0a57-max",
+                "includeChildSelections": false
               }
             ]
           },
           {
-            "name": "The blade",
-            "typeId": "weapon",
-            "typeName": "Weapon",
+            "targetId": "3aba-4188-e773-9ee1",
+            "id": "83eb-0939-b663-f69e",
+            "type": "selectionEntry",
+            "name": "Plasma burner",
             "hidden": false,
-            "id": "0f9d-8427-efb9-3700",
-            "characteristics": [
+            "constraints": [
               {
-                "name": "Range",
-                "typeId": "range",
-                "$text": "Melee"
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "98d7-1b9c-5107-d73f-min"
               },
               {
-                "name": "Range Strength",
-                "typeId": "range-strength",
-                "$text": "Melee"
-              },
-              {
-                "name": "Fire Power",
-                "typeId": "fire-power",
-                "$text": "Melee"
-              },
-              {
-                "name": "Melee Strength",
-                "typeId": "melee-strength",
-                "$text": "+2"
-              },
-              {
-                "name": "Damage",
-                "typeId": "damage",
-                "$text": "2"
-              },
-              {
-                "name": "Attacks",
-                "typeId": "weapon-attacks",
-                "$text": "A"
-              },
-              {
-                "name": "Initiative modifier",
-                "typeId": "weapon-initiative",
-                "$text": "I"
-              },
-              {
-                "name": "Armour penetration",
-                "typeId": "armour-penetration",
-                "$text": "2"
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "98d7-1b9c-5107-d73f-max"
               }
             ]
           }
@@ -465,12 +1065,2535 @@
       {
         "type": "upgrade",
         "import": true,
-        "name": "New Entry",
+        "name": "Plasma burner",
         "hidden": false,
-        "id": "c548-e02a-1273-d472"
+        "id": "3aba-4188-e773-9ee1",
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Sustained",
+            "hidden": false,
+            "id": "62b9-2c13-acf9-2a93",
+            "profiles": [
+              {
+                "name": "Plasma burner Sustained",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "dc44-b9d8-d4f0-e2a1",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": "Template"
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "1"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "a8ee-1cdd-f68a-831b",
+                "id": "4d73-66c2-7f06-26b0",
+                "primary": false,
+                "name": "Template"
+              },
+              {
+                "targetId": "bdb6-f99d-a9c6-289b",
+                "id": "2ca9-244c-fbe1-98a2",
+                "primary": false,
+                "name": "Breaching (6+)"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "0690-0aca-5de9-9d23-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "0690-0aca-5de9-9d23-max",
+                "includeChildSelections": false
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Maximal",
+            "hidden": false,
+            "id": "3b55-11f2-3ef9-4cf7",
+            "profiles": [
+              {
+                "name": "Plasma burner Maximal",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "f1c6-99d4-caa6-1cdd",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": "Template"
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "1"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "0f24-9ab2-b239-fcab",
+                "id": "af1f-507f-e0fd-9cf3",
+                "primary": false,
+                "name": "Breaching (5+)"
+              },
+              {
+                "targetId": "74b7-013a-f22d-18dc",
+                "id": "fd84-df98-c4d0-2d36",
+                "primary": false,
+                "name": "Overload (1)"
+              },
+              {
+                "targetId": "plasma",
+                "id": "78bb-988f-ad2c-6a2a",
+                "primary": false,
+                "name": "Plasma"
+              },
+              {
+                "targetId": "a8ee-1cdd-f68a-831b",
+                "id": "53b4-33e6-1a3b-cc0f",
+                "primary": false,
+                "name": "Template"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "0988-edba-b19f-afb2-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "0988-edba-b19f-afb2-max",
+                "includeChildSelections": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Plasma incinerator",
+        "hidden": false,
+        "id": "33eb-2442-360e-024b",
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Sustained",
+            "hidden": false,
+            "id": "a6de-906d-e13c-3973",
+            "profiles": [
+              {
+                "name": "Plasma incinerator Sustained",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "8ad8-ba6c-d301-1e12",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": "Template"
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "2"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "a8ee-1cdd-f68a-831b",
+                "id": "c2d3-2517-3e32-75a1",
+                "primary": false,
+                "name": "Template"
+              },
+              {
+                "targetId": "bdb6-f99d-a9c6-289b",
+                "id": "2689-3ec4-1c8e-f747",
+                "primary": false,
+                "name": "Breaching (6+)"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3be7-3502-6142-cdab-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3be7-3502-6142-cdab-max",
+                "includeChildSelections": false
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Maximal",
+            "hidden": false,
+            "id": "806c-8ef2-0f7e-42af",
+            "profiles": [
+              {
+                "name": "Plasma incinerator Maximal",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "1413-48c4-9112-7ff8",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": "Template"
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "2"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "0f24-9ab2-b239-fcab",
+                "id": "f80e-2b86-a5ce-d194",
+                "primary": false,
+                "name": "Breaching (5+)"
+              },
+              {
+                "targetId": "74b7-013a-f22d-18dc",
+                "id": "b29d-bdd1-acf8-b98d",
+                "primary": false,
+                "name": "Overload (1)"
+              },
+              {
+                "targetId": "plasma",
+                "id": "3b43-4346-f53d-1868",
+                "primary": false,
+                "name": "Plasma"
+              },
+              {
+                "targetId": "a8ee-1cdd-f68a-831b",
+                "id": "41e9-4750-205d-c971",
+                "primary": false,
+                "name": "Template"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b100-cbc9-f134-e4e9-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b100-cbc9-f134-e4e9-max",
+                "includeChildSelections": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Dreadwing Interremptors",
+        "hidden": false,
+        "id": "cf40-06c9-99aa-635a",
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Dreadwing Interremptor",
+            "hidden": false,
+            "id": "87bd-2da2-d153-791f",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 20
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 4,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "2758-7476-970b-b804"
+              },
+              {
+                "type": "max",
+                "value": 9,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "09bb-24bc-1ec8-cb8e"
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Dreadwing Interremptor",
+                "typeId": "877a-f15d-4830-fd7a",
+                "typeName": "Infantry/Cavalry/Walker",
+                "hidden": false,
+                "id": "f383-3176-92e4-ed6d",
+                "characteristics": [
+                  {
+                    "name": "Movement (M)",
+                    "typeId": "bdbb-da13-eeff-50f3",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "Weapon Skill (WS)",
+                    "typeId": "80f9-ff23-cf6b-a774",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Ballistic Skill (BS)",
+                    "typeId": "0725-6d62-4136-1f56",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Strength (S)",
+                    "typeId": "model-strength",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Toughness (T)",
+                    "typeId": "0f0e-1166-667c-6b8d",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Wounds (W)",
+                    "typeId": "091b-45b8-4b3d-7971",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Initiative (I)",
+                    "typeId": "model-initiative",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Attacks (A)",
+                    "typeId": "model-attacks",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Leadership (LD)",
+                    "typeId": "5e98-cab2-59ac-168b",
+                    "$text": "8"
+                  },
+                  {
+                    "name": "Cool (CL)",
+                    "typeId": "7f44-7a96-7a38-aa52",
+                    "$text": "8"
+                  },
+                  {
+                    "name": "Willpower (WP)",
+                    "typeId": "30ba-3375-7bae-99b4",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "Intelligence (INT)",
+                    "typeId": "91ef-626b-7f89-c3d6",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "Save (SAV)",
+                    "typeId": "b66c-6835-eb9e-8a19",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Invulnerable Save (INV)",
+                    "typeId": "b052-bfb0-212a-a270",
+                    "$text": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "model",
+            "import": true,
+            "name": "Interremptor Praefectus",
+            "hidden": false,
+            "id": "b420-6ed7-0411-d307",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 25
+              }
+            ],
+            "profiles": [
+              {
+                "name": "Interremptor Praefectus",
+                "typeId": "877a-f15d-4830-fd7a",
+                "typeName": "Infantry/Cavalry/Walker",
+                "hidden": false,
+                "id": "9cb2-2966-ab7e-121f",
+                "characteristics": [
+                  {
+                    "name": "Movement (M)",
+                    "typeId": "bdbb-da13-eeff-50f3",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "Weapon Skill (WS)",
+                    "typeId": "80f9-ff23-cf6b-a774",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Ballistic Skill (BS)",
+                    "typeId": "0725-6d62-4136-1f56",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Strength (S)",
+                    "typeId": "model-strength",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Toughness (T)",
+                    "typeId": "0f0e-1166-667c-6b8d",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Wounds (W)",
+                    "typeId": "091b-45b8-4b3d-7971",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Initiative (I)",
+                    "typeId": "model-initiative",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Attacks (A)",
+                    "typeId": "model-attacks",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Leadership (LD)",
+                    "typeId": "5e98-cab2-59ac-168b",
+                    "$text": "9"
+                  },
+                  {
+                    "name": "Cool (CL)",
+                    "typeId": "7f44-7a96-7a38-aa52",
+                    "$text": "8"
+                  },
+                  {
+                    "name": "Willpower (WP)",
+                    "typeId": "30ba-3375-7bae-99b4",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "Intelligence (INT)",
+                    "typeId": "91ef-626b-7f89-c3d6",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "Save (SAV)",
+                    "typeId": "b66c-6835-eb9e-8a19",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Invulnerable Save (INV)",
+                    "typeId": "b052-bfb0-212a-a270",
+                    "$text": ""
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "a229-941d-2a38-758d-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "a229-941d-2a38-758d-max"
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "sergeant",
+                "id": "8062-d4bf-9f15-34f6",
+                "primary": false,
+                "name": "Sergeant"
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Plasma burner",
+            "id": "4fb9-d097-20ba-e037",
+            "hidden": false,
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Plasma burner",
+                "hidden": false,
+                "id": "2a54-3c61-f1d9-eced",
+                "type": "selectionEntry",
+                "targetId": "3aba-4188-e773-9ee1"
+              }
+            ],
+            "selectionEntryGroups": [
+              {
+                "name": "For every five Models in this Unit, one Interemptor's plasma burner may be exchanged for one of the following:",
+                "id": "bd88-f858-d3ba-8d17",
+                "hidden": false,
+                "entryLinks": [
+                  {
+                    "import": true,
+                    "name": "Plasma incinerator",
+                    "hidden": false,
+                    "id": "c72b-7d35-872b-b80b",
+                    "type": "selectionEntry",
+                    "targetId": "33eb-2442-360e-024b",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 15
+                      }
+                    ]
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": 0,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": false,
+                    "id": "interremptor-special",
+                    "includeChildSelections": false
+                  }
+                ],
+                "modifiers": [
+                  {
+                    "type": "increment",
+                    "value": 1,
+                    "field": "interremptor-special",
+                    "repeats": [
+                      {
+                        "value": 5,
+                        "repeats": 1,
+                        "field": "selections",
+                        "scope": "c8ff-b501-6b5d-bb44",
+                        "childId": "model",
+                        "shared": false,
+                        "roundUp": false,
+                        "includeChildSelections": true
+                      }
+                    ]
+                  }
+                ],
+                "selectionEntries": [
+                  {
+                    "type": "upgrade",
+                    "import": true,
+                    "name": "Destroyer missile launcher",
+                    "hidden": false,
+                    "id": "7705-b910-ace1-2f00",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 15
+                      }
+                    ],
+                    "selectionEntries": [
+                      {
+                        "type": "upgrade",
+                        "import": true,
+                        "name": "Destroyer missile launcher rad missile",
+                        "hidden": false,
+                        "id": "8e34-0c34-11b9-79a5",
+                        "profiles": [
+                          {
+                            "name": "Destroyer missile launcher rad missile",
+                            "typeId": "weapon",
+                            "typeName": "Weapon",
+                            "hidden": false,
+                            "id": "60d8-c0f9-d726-ad37",
+                            "characteristics": [
+                              {
+                                "name": "Range",
+                                "typeId": "range",
+                                "$text": "24"
+                              },
+                              {
+                                "name": "Fire Power (FP)",
+                                "typeId": "fire-power",
+                                "$text": "2"
+                              },
+                              {
+                                "name": "Range Strength (RS)",
+                                "typeId": "range-strength",
+                                "$text": "4"
+                              },
+                              {
+                                "name": "Melee Initiative Modifier (IM)",
+                                "typeId": "weapon-initiative",
+                                "$text": ""
+                              },
+                              {
+                                "name": "Melee Attacks Modifier (AM)",
+                                "typeId": "weapon-attacks",
+                                "$text": ""
+                              },
+                              {
+                                "name": "Melee Strength Modifier (SM)",
+                                "typeId": "melee-strength",
+                                "$text": ""
+                              },
+                              {
+                                "name": "Armour Penetration (AP)",
+                                "$text": "3"
+                              },
+                              {
+                                "name": "Damage (D)",
+                                "typeId": "damage",
+                                "$text": ""
+                              }
+                            ]
+                          }
+                        ],
+                        "constraints": [
+                          {
+                            "type": "min",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "548e-191f-249a-2ddb-min",
+                            "includeChildSelections": false
+                          },
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "548e-191f-249a-2ddb-max",
+                            "includeChildSelections": false
+                          }
+                        ],
+                        "categoryLinks": [
+                          {
+                            "targetId": "eed9-b0e3-0fd6-bfac",
+                            "id": "4222-2db3-90cc-f519",
+                            "primary": false,
+                            "name": "Poisoned (2+)"
+                          },
+                          {
+                            "targetId": "bf16-1701-e061-976a",
+                            "id": "f48e-924f-4320-dcb0",
+                            "primary": false,
+                            "name": "Phage (T)"
+                          },
+                          {
+                            "targetId": "assault",
+                            "id": "7c31-a1fa-1b6a-8dc4",
+                            "primary": false,
+                            "name": "Assault"
+                          },
+                          {
+                            "targetId": "8ad3-363d-41c7-67ec",
+                            "id": "dc30-f21e-1367-89db",
+                            "primary": false,
+                            "name": "Rad"
+                          }
+                        ]
+                      },
+                      {
+                        "type": "upgrade",
+                        "import": true,
+                        "name": "Destroyer missile launcher stasis missile",
+                        "hidden": false,
+                        "id": "5ce0-fd56-cddb-ab29",
+                        "profiles": [
+                          {
+                            "name": "Destroyer missile launcher stasis missile",
+                            "typeId": "weapon",
+                            "typeName": "Weapon",
+                            "hidden": false,
+                            "id": "650f-f387-dbf3-ba7d",
+                            "characteristics": [
+                              {
+                                "name": "Range",
+                                "typeId": "range",
+                                "$text": "24"
+                              },
+                              {
+                                "name": "Fire Power (FP)",
+                                "typeId": "fire-power",
+                                "$text": "1"
+                              },
+                              {
+                                "name": "Range Strength (RS)",
+                                "typeId": "range-strength",
+                                "$text": ""
+                              },
+                              {
+                                "name": "Melee Initiative Modifier (IM)",
+                                "typeId": "weapon-initiative",
+                                "$text": ""
+                              },
+                              {
+                                "name": "Melee Attacks Modifier (AM)",
+                                "typeId": "weapon-attacks",
+                                "$text": ""
+                              },
+                              {
+                                "name": "Melee Strength Modifier (SM)",
+                                "typeId": "melee-strength",
+                                "$text": ""
+                              },
+                              {
+                                "name": "Armour Penetration (AP)",
+                                "$text": "4"
+                              },
+                              {
+                                "name": "Damage (D)",
+                                "typeId": "damage",
+                                "$text": "2"
+                              }
+                            ]
+                          }
+                        ],
+                        "constraints": [
+                          {
+                            "type": "min",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "5ece-8368-74a5-2d62-min",
+                            "includeChildSelections": false
+                          },
+                          {
+                            "type": "max",
+                            "value": 1,
+                            "field": "selections",
+                            "scope": "parent",
+                            "shared": true,
+                            "id": "5ece-8368-74a5-2d62-max",
+                            "includeChildSelections": false
+                          }
+                        ],
+                        "categoryLinks": [
+                          {
+                            "targetId": "assault",
+                            "id": "393d-bd4e-3d67-39e5",
+                            "primary": false,
+                            "name": "Assault"
+                          },
+                          {
+                            "targetId": "3a7f-1616-3fa9-a71e",
+                            "id": "87fd-8f44-b0a1-0e01",
+                            "primary": false,
+                            "name": "Blast (3\")"
+                          },
+                          {
+                            "targetId": "9120-812b-5890-da2f",
+                            "id": "2356-bb40-63a1-c1a0",
+                            "primary": false,
+                            "name": "Stun (3)"
+                          },
+                          {
+                            "targetId": "6e00-0587-7e8b-b12f",
+                            "id": "85e7-ddb2-dee1-c883",
+                            "primary": false,
+                            "name": "Stasis"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": false,
+                "id": "interremptor-plasma-burners-min",
+                "includeChildSelections": true
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": false,
+                "id": "interremptor-plasma-burners-max",
+                "includeChildSelections": true
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "interremptor-plasma-burners-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "cf40-06c9-99aa-635a",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "interremptor-plasma-burners-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "cf40-06c9-99aa-635a",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              }
+            ],
+            "collective": true
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Bolt pistol",
+            "hidden": false,
+            "id": "19f1-3051-99b5-7036",
+            "type": "selectionEntry",
+            "targetId": "71ed-a313-7178-0e51",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c2a3-85fd-8475-1515-min",
+                "automatic": true
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c2a3-85fd-8475-1515-max",
+                "automatic": true
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "c2a3-85fd-8475-1515-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "c2a3-85fd-8475-1515-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Rad Grenades",
+            "hidden": false,
+            "id": "3178-2f95-abb2-2e19",
+            "type": "selectionEntry",
+            "targetId": "rad-grenades",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "8407-ba53-a48c-cd48-min",
+                "automatic": true
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "8407-ba53-a48c-cd48-max",
+                "automatic": true
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "set",
+                "value": 1,
+                "field": "8407-ba53-a48c-cd48-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              },
+              {
+                "type": "set",
+                "value": 1,
+                "field": "8407-ba53-a48c-cd48-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "import": true,
+            "name": "Prime",
+            "hidden": false,
+            "id": "2541-fb53-d570-f622",
+            "type": "selectionEntry",
+            "targetId": "prime-troops"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "support-category",
+            "id": "61ae-74bd-c1ae-a832",
+            "primary": true,
+            "name": "Support"
+          },
+          {
+            "targetId": "support-unit-1",
+            "id": "c9f3-15dc-ec09-1738",
+            "primary": false,
+            "name": "Support Unit (1)"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Inner Circle Knights Cenobium",
+        "hidden": false,
+        "id": "b9bf-901d-c5e8-3212",
+        "categoryLinks": [
+          {
+            "targetId": "elites-category",
+            "id": "2b49-a9bc-320d-fdb3",
+            "primary": true,
+            "name": "Elite"
+          },
+          {
+            "targetId": "implacable-advance",
+            "id": "904a-7fcb-f045-d881",
+            "primary": false,
+            "name": "Implacable Advance"
+          },
+          {
+            "targetId": "slow-and-purposeful",
+            "id": "682c-47ed-a00a-1416",
+            "primary": false,
+            "name": "Slow and Purposeful"
+          },
+          {
+            "targetId": "infantry",
+            "id": "07d0-b7f0-be4a-784b",
+            "primary": false,
+            "name": "Infantry"
+          },
+          {
+            "targetId": "heavy",
+            "id": "2635-611e-d62c-5d96",
+            "primary": false,
+            "name": "Heavy"
+          }
+        ],
+        "rules": [
+          {
+            "name": "Order Exemplars",
+            "id": "194c-9243-e753-7d59",
+            "hidden": false,
+            "page": "136",
+            "publicationId": "liber-astartes",
+            "description": "When a Unit that includes any Models with this Special Rule is selected as part of a Detachment, during Army selection, a single option from the Orders of the Hekatonystika presented below must be selected for all Models in that Unit."
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Order Cenobite",
+            "hidden": false,
+            "id": "a13b-9d6a-312f-26c4",
+            "profiles": [
+              {
+                "name": "Order Cenobite",
+                "typeId": "877a-f15d-4830-fd7a",
+                "typeName": "Infantry/Cavalry/Walker",
+                "hidden": false,
+                "id": "7374-0fe9-eb29-ce51",
+                "characteristics": [
+                  {
+                    "name": "Movement (M)",
+                    "typeId": "bdbb-da13-eeff-50f3",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "Weapon Skill (WS)",
+                    "typeId": "80f9-ff23-cf6b-a774",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "Ballistic Skill (BS)",
+                    "typeId": "0725-6d62-4136-1f56",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Strength (S)",
+                    "typeId": "model-strength",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Toughness (T)",
+                    "typeId": "0f0e-1166-667c-6b8d",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "Wounds (W)",
+                    "typeId": "091b-45b8-4b3d-7971",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Initiative (I)",
+                    "typeId": "model-initiative",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Attacks (A)",
+                    "typeId": "model-attacks",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Leadership (LD)",
+                    "typeId": "5e98-cab2-59ac-168b",
+                    "$text": "8"
+                  },
+                  {
+                    "name": "Cool (CL)",
+                    "typeId": "7f44-7a96-7a38-aa52",
+                    "$text": "8"
+                  },
+                  {
+                    "name": "Willpower (WP)",
+                    "typeId": "30ba-3375-7bae-99b4",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "Intelligence (INT)",
+                    "typeId": "91ef-626b-7f89-c3d6",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "Save (SAV)",
+                    "typeId": "b66c-6835-eb9e-8a19",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Invulnerable Save (INV)",
+                    "typeId": "b052-bfb0-212a-a270",
+                    "$text": "4"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 50
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 4,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "8d89-d43e-8a3e-7a56"
+              },
+              {
+                "type": "max",
+                "value": 9,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "6241-310c-d5bb-8043"
+              }
+            ]
+          },
+          {
+            "type": "model",
+            "import": true,
+            "name": "Order Preceptor",
+            "hidden": false,
+            "id": "e10b-2bc4-de19-58d5",
+            "profiles": [
+              {
+                "name": "Order Preceptor",
+                "typeId": "877a-f15d-4830-fd7a",
+                "typeName": "Infantry/Cavalry/Walker",
+                "hidden": false,
+                "id": "1f52-fbe4-c6c9-898d",
+                "characteristics": [
+                  {
+                    "name": "Movement (M)",
+                    "typeId": "bdbb-da13-eeff-50f3",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "Weapon Skill (WS)",
+                    "typeId": "80f9-ff23-cf6b-a774",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "Ballistic Skill (BS)",
+                    "typeId": "0725-6d62-4136-1f56",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Strength (S)",
+                    "typeId": "model-strength",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Toughness (T)",
+                    "typeId": "0f0e-1166-667c-6b8d",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "Wounds (W)",
+                    "typeId": "091b-45b8-4b3d-7971",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Initiative (I)",
+                    "typeId": "model-initiative",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Attacks (A)",
+                    "typeId": "model-attacks",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Leadership (LD)",
+                    "typeId": "5e98-cab2-59ac-168b",
+                    "$text": "9"
+                  },
+                  {
+                    "name": "Cool (CL)",
+                    "typeId": "7f44-7a96-7a38-aa52",
+                    "$text": "8"
+                  },
+                  {
+                    "name": "Willpower (WP)",
+                    "typeId": "30ba-3375-7bae-99b4",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "Intelligence (INT)",
+                    "typeId": "91ef-626b-7f89-c3d6",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "Save (SAV)",
+                    "typeId": "b66c-6835-eb9e-8a19",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Invulnerable Save (INV)",
+                    "typeId": "b052-bfb0-212a-a270",
+                    "$text": "4"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 75
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ce74-5271-2837-f8c7-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ce74-5271-2837-f8c7-max"
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "sergeant",
+                "id": "0a0c-dd4b-4d79-16b5",
+                "primary": false,
+                "name": "Sergeant"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Plasma caster",
+            "hidden": false,
+            "id": "5126-e53f-d834-292e",
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Plasma caster Sustained fire",
+                "hidden": false,
+                "id": "8aa3-6c6a-93be-5029",
+                "profiles": [
+                  {
+                    "name": "Plasma caster Sustained fire",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "6bf7-7a59-3736-a6e7",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "Template"
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "1"
+                      }
+                    ]
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "targetId": "a8ee-1cdd-f68a-831b",
+                    "id": "564e-1e30-1212-7cb2",
+                    "primary": false,
+                    "name": "Template"
+                  },
+                  {
+                    "targetId": "bdb6-f99d-a9c6-289b",
+                    "id": "0b7b-57c4-43c9-cc58",
+                    "primary": false,
+                    "name": "Breaching (6+)"
+                  },
+                  {
+                    "targetId": "plasma",
+                    "id": "a6ec-fd04-fdcd-0b3e",
+                    "primary": false,
+                    "name": "Plasma"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "047f-0c01-b2ba-229a-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "047f-0c01-b2ba-229a-max"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Plasma caster Maximal fire",
+                "hidden": false,
+                "id": "babb-0e20-a728-d8e6",
+                "profiles": [
+                  {
+                    "name": "Plasma caster Maximal fire",
+                    "typeId": "weapon",
+                    "typeName": "Weapon",
+                    "hidden": false,
+                    "id": "e14e-7e68-33a4-c0fb",
+                    "characteristics": [
+                      {
+                        "name": "Range",
+                        "typeId": "range",
+                        "$text": "Template"
+                      },
+                      {
+                        "name": "Fire Power (FP)",
+                        "typeId": "fire-power",
+                        "$text": "1"
+                      },
+                      {
+                        "name": "Range Strength (RS)",
+                        "typeId": "range-strength",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "Melee Initiative Modifier (IM)",
+                        "typeId": "weapon-initiative",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Attacks Modifier (AM)",
+                        "typeId": "weapon-attacks",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Melee Strength Modifier (SM)",
+                        "typeId": "melee-strength",
+                        "$text": ""
+                      },
+                      {
+                        "name": "Armour Penetration (AP)",
+                        "$text": "4"
+                      },
+                      {
+                        "name": "Damage (D)",
+                        "typeId": "damage",
+                        "$text": "1"
+                      }
+                    ]
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "targetId": "a8ee-1cdd-f68a-831b",
+                    "id": "f36b-1781-6109-7673",
+                    "primary": false,
+                    "name": "Template"
+                  },
+                  {
+                    "targetId": "0f24-9ab2-b239-fcab",
+                    "id": "fd6c-746e-15d8-5596",
+                    "primary": false,
+                    "name": "Breaching (5+)"
+                  },
+                  {
+                    "targetId": "74b7-013a-f22d-18dc",
+                    "id": "dc8e-b857-90f3-560d",
+                    "primary": false,
+                    "name": "Overload (1)"
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "min",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "a15d-9b81-b77b-4987-min"
+                  },
+                  {
+                    "type": "max",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "a15d-9b81-b77b-4987-max"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": false,
+                "id": "fead-2ed3-b845-8b49-min",
+                "automatic": false
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": false,
+                "id": "fead-2ed3-b845-8b49-max",
+                "automatic": false
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "fead-2ed3-b845-8b49-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "root-entry",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": true
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "fead-2ed3-b845-8b49-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "root-entry",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ],
+            "collective": true
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Terranic greatsword",
+            "hidden": false,
+            "id": "8779-5eac-04dd-700f",
+            "type": "selectionEntry",
+            "targetId": "98cc-839a-c5a5-60a6",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": false,
+                "id": "0bb0-d778-d4ad-14d5-min",
+                "automatic": false
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": false,
+                "id": "0bb0-d778-d4ad-14d5-max",
+                "automatic": false
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "0bb0-d778-d4ad-14d5-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "root-entry",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": true
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "0bb0-d778-d4ad-14d5-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "root-entry",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false,
+                    "includeChildSelections": true
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Orders of the Hekatonystika",
+            "id": "ba47-699c-b09e-b587",
+            "hidden": false,
+            "comment": "\n\n\n\n.Icons of Resolve: When part of a Unit that is successfully Charged by an enemy Unit, Models with the Order\nExemplars Special Rule set their Leadership Characteristic to 10 for the duration of the current Assault Phase.\nSlayers of Kings: Whilst part of a Unit that is Locked in Combat with an enemy Unit that includes at least one\nModel with a Weapon Skill Characteristic of 6 or higher, the Attacks Characteristic of Models with the Order\nExemplars Special Rule may be set to 1. If this option is used then the Terranic greatswords those Models have\ngain the Critical Hit (6+) Special Rule until the Combat ends.\nHunters of Beasts: Whilst part of a Unit that is Locked in Combat with an enemy Unit that includes one or more\nModels with a Toughness Characteristic of 6 or higher, the Damage Characteristic of Wounds caused by a Model\nwith this Special Rule is modified by +1.\nReapers of Hosts: Whilst part of a Unit that is Locked in Combat with one or more enemy Units that\noutnumbers it, then all Models in that Unit with the Order Exemplars Special Rule modify their Attacks\nCharacteristic by +1.\nBreakers of Witches: Whilst part of a Unit that is Locked in Combat with an enemy Unit that has one or more\nModels with the Malefic Sub-Type or Psyker Trait, Hit and Wound Tests made for Models with the Order\nExempla Special Rule in that Combat are modified by +1.",
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Augurs of Weakness",
+                "hidden": false,
+                "id": "c050-3f1e-e0d3-e94f",
+                "rules": [
+                  {
+                    "name": "Augurs of Weakness",
+                    "id": "136c-e3c0-6ccf-b28c",
+                    "hidden": false,
+                    "description": " When making attacks targeting a Unit that includes one or more Models with the Vehicle Type, Models with the Order Exemplars Special Rule gain the Armourbane Special Rule.",
+                    "page": "137",
+                    "publicationId": "liber-astartes"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Icons of Resolve",
+                "hidden": false,
+                "id": "8d68-0400-918f-ff81",
+                "rules": [
+                  {
+                    "name": "Icons of Resolve",
+                    "id": "8401-89f3-bfc9-fd4d",
+                    "hidden": false,
+                    "description": " When part of a Unit that is successfully Charged by an enemy Unit, Models with the Order Exemplars Special Rule set their Leadership Characteristic to 10 for the duration of the current Assault Phase.",
+                    "page": "137",
+                    "publicationId": "liber-astartes"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Slayers of Kings",
+                "hidden": false,
+                "id": "c720-6af7-ba04-7eee",
+                "rules": [
+                  {
+                    "name": "Slayers of Kings",
+                    "id": "67e3-5d86-33c9-20ff",
+                    "hidden": false,
+                    "description": ": Whilst part of a Unit that is Locked in Combat with an enemy Unit that includes at least one Model with a Weapon Skill Characteristic of 6 or higher, the Attacks Characteristic of Models with the Order Exemplars Special Rule may be set to 1. If this option is used then the Terranic greatswords those Models have gain the Critical Hit (6+) Special Rule until the Combat ends. ",
+                    "page": "137",
+                    "publicationId": "liber-astartes"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Hunters of Beasts:",
+                "hidden": false,
+                "id": "5f55-d471-9c9c-a561",
+                "rules": [
+                  {
+                    "name": "Hunters of Beasts",
+                    "id": "7e97-4b75-6443-c009",
+                    "hidden": false,
+                    "description": " Whilst part of a Unit that is Locked in Combat with an enemy Unit that includes one or more Models with a Toughness Characteristic of 6 or higher, the Damage Characteristic of Wounds caused by a Model with this Special Rule is modified by +1. ",
+                    "page": "137",
+                    "publicationId": "liber-astartes"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Reapers of Hosts",
+                "hidden": false,
+                "id": "f71e-93ad-9e49-a624",
+                "rules": [
+                  {
+                    "name": "Reapers of Hosts",
+                    "id": "7f9d-994a-3fa1-6863",
+                    "hidden": false,
+                    "description": "Whilst part of a Unit that is Locked in Combat with one or more enemy Units that outnumbers it, then all Models in that Unit with the Order Exemplars Special Rule modify their Attacks Characteristic by +1. ",
+                    "page": "137",
+                    "publicationId": "liber-astartes"
+                  }
+                ]
+              },
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Breakers of Witches:",
+                "hidden": false,
+                "id": "466b-0af8-dec2-bb77",
+                "rules": [
+                  {
+                    "name": "Breakers of Witches",
+                    "id": "384f-6851-3b40-b614",
+                    "hidden": false,
+                    "description": " Whilst part of a Unit that is Locked in Combat with an enemy Unit that has one or more Models with the Malefic Sub-Type or Psyker Trait, Hit and Wound Tests made for Models with the Order Exempla Special Rule in that Combat are modified by +1.",
+                    "page": "137",
+                    "publicationId": "liber-astartes"
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "fc31-1ef5-d23a-0c10-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "fc31-1ef5-d23a-0c10-max",
+                "includeChildSelections": false
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Deathwing Companion Detachment",
+        "hidden": false,
+        "id": "74c3-11b5-c191-86c9",
+        "selectionEntries": [
+          {
+            "type": "model",
+            "import": true,
+            "name": "Deathwing Companion",
+            "hidden": false,
+            "id": "08e7-e6b7-2c0e-0e02",
+            "profiles": [
+              {
+                "name": "Deathwing Companion",
+                "typeId": "877a-f15d-4830-fd7a",
+                "typeName": "Infantry/Cavalry/Walker",
+                "hidden": false,
+                "id": "cd57-7405-e7d1-e62a",
+                "characteristics": [
+                  {
+                    "name": "Movement (M)",
+                    "typeId": "bdbb-da13-eeff-50f3",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "Weapon Skill (WS)",
+                    "typeId": "80f9-ff23-cf6b-a774",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "Ballistic Skill (BS)",
+                    "typeId": "0725-6d62-4136-1f56",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Strength (S)",
+                    "typeId": "model-strength",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Toughness (T)",
+                    "typeId": "0f0e-1166-667c-6b8d",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Wounds (W)",
+                    "typeId": "091b-45b8-4b3d-7971",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Initiative (I)",
+                    "typeId": "model-initiative",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Attacks (A)",
+                    "typeId": "model-attacks",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Leadership (LD)",
+                    "typeId": "5e98-cab2-59ac-168b",
+                    "$text": "8"
+                  },
+                  {
+                    "name": "Cool (CL)",
+                    "typeId": "7f44-7a96-7a38-aa52",
+                    "$text": "8"
+                  },
+                  {
+                    "name": "Willpower (WP)",
+                    "typeId": "30ba-3375-7bae-99b4",
+                    "$text": "8"
+                  },
+                  {
+                    "name": "Intelligence (INT)",
+                    "typeId": "91ef-626b-7f89-c3d6",
+                    "$text": "8"
+                  },
+                  {
+                    "name": "Save (SAV)",
+                    "typeId": "b66c-6835-eb9e-8a19",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Invulnerable Save (INV)",
+                    "typeId": "b052-bfb0-212a-a270",
+                    "$text": ""
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 4,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c6fe-90c8-1066-f920"
+              },
+              {
+                "type": "max",
+                "value": 9,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "ed59-17f3-a787-13c1"
+              }
+            ],
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 30
+              }
+            ]
+          },
+          {
+            "type": "model",
+            "import": true,
+            "name": "Deathwing Oathbearer",
+            "hidden": false,
+            "id": "4879-8618-64e6-2e45",
+            "profiles": [
+              {
+                "name": "Deathwing Oathbearer",
+                "typeId": "877a-f15d-4830-fd7a",
+                "typeName": "Infantry/Cavalry/Walker",
+                "hidden": false,
+                "id": "9725-4609-69a8-6549",
+                "characteristics": [
+                  {
+                    "name": "Movement (M)",
+                    "typeId": "bdbb-da13-eeff-50f3",
+                    "$text": "7"
+                  },
+                  {
+                    "name": "Weapon Skill (WS)",
+                    "typeId": "80f9-ff23-cf6b-a774",
+                    "$text": "5"
+                  },
+                  {
+                    "name": "Ballistic Skill (BS)",
+                    "typeId": "0725-6d62-4136-1f56",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Strength (S)",
+                    "typeId": "model-strength",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Toughness (T)",
+                    "typeId": "0f0e-1166-667c-6b8d",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Wounds (W)",
+                    "typeId": "091b-45b8-4b3d-7971",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Initiative (I)",
+                    "typeId": "model-initiative",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Attacks (A)",
+                    "typeId": "model-attacks",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Leadership (LD)",
+                    "typeId": "5e98-cab2-59ac-168b",
+                    "$text": "9"
+                  },
+                  {
+                    "name": "Cool (CL)",
+                    "typeId": "7f44-7a96-7a38-aa52",
+                    "$text": "8"
+                  },
+                  {
+                    "name": "Willpower (WP)",
+                    "typeId": "30ba-3375-7bae-99b4",
+                    "$text": "8"
+                  },
+                  {
+                    "name": "Intelligence (INT)",
+                    "typeId": "91ef-626b-7f89-c3d6",
+                    "$text": "8"
+                  },
+                  {
+                    "name": "Save (SAV)",
+                    "typeId": "b66c-6835-eb9e-8a19",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Invulnerable Save (INV)",
+                    "typeId": "b052-bfb0-212a-a270",
+                    "$text": "5"
+                  }
+                ]
+              }
+            ],
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 55
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b4d3-474e-3fc3-31e0-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "b4d3-474e-3fc3-31e0-max",
+                "includeChildSelections": false
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Melta bombs",
+            "hidden": false,
+            "id": "050e-e27e-9695-3ede",
+            "type": "selectionEntry",
+            "targetId": "761a-1b86-42ef-8b5e",
+            "costs": [
+              {
+                "name": "Points",
+                "typeId": "points",
+                "value": 25
+              }
+            ]
+          }
+        ],
+        "selectionEntryGroups": [
+          {
+            "name": "Any Model in this Unit may have its Calibanite warblade exchanged for one of the following:",
+            "id": "9c9f-5674-239c-811f",
+            "hidden": false,
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Terranic greatsword",
+                "hidden": false,
+                "id": "f9fd-cff6-0868-fc03",
+                "type": "selectionEntry",
+                "targetId": "98cc-839a-c5a5-60a6",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 5
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Power fist",
+                "hidden": false,
+                "id": "2915-e97f-ea7c-5ffb",
+                "type": "selectionEntry",
+                "targetId": "18d5-1446-4706-23ed",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 5
+                  }
+                ],
+                "constraints": [
+                  {
+                    "type": "max",
+                    "value": -1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "shared": true,
+                    "id": "1ca7-ee71-f2a6-c345"
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Calibanite warblade",
+                "hidden": false,
+                "id": "9078-d4ed-8ce4-bb08",
+                "type": "selectionEntry",
+                "targetId": "c548-e02a-1273-d472",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 0
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "9078-d4ed-8ce4-bb08",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "e255-7f32-c8c8-8653-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "e255-7f32-c8c8-8653-max",
+                "includeChildSelections": false
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "e255-7f32-c8c8-8653-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "e255-7f32-c8c8-8653-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "name": "Bolt pistol",
+            "id": "bd44-8d81-8182-a089",
+            "hidden": false,
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Bolt pistol",
+                "hidden": false,
+                "id": "1b7d-af65-057a-39f3",
+                "type": "selectionEntry",
+                "targetId": "71ed-a313-7178-0e51",
+                "modifiers": [
+                  {
+                    "type": "increment",
+                    "value": 1,
+                    "field": "7e23-4c90-43db-2c96",
+                    "repeats": [
+                      {
+                        "value": 1,
+                        "repeats": 1,
+                        "field": "selections",
+                        "scope": "parent",
+                        "childId": "model",
+                        "shared": true,
+                        "roundUp": false
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "import": true,
+                "name": "Plasma pistol",
+                "hidden": false,
+                "id": "dd7a-318c-3576-3867",
+                "type": "selectionEntry",
+                "targetId": "3391-2681-d850-0564",
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 10
+                  }
+                ]
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7474-884b-ffb3-0578-min",
+                "includeChildSelections": false,
+                "automatic": true
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "7474-884b-ffb3-0578-max",
+                "includeChildSelections": false,
+                "automatic": true
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "7474-884b-ffb3-0578-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "7474-884b-ffb3-0578-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "1b7d-af65-057a-39f3"
+          },
+          {
+            "name": "Bolter",
+            "id": "b2b5-2aa9-990e-1e96",
+            "hidden": false,
+            "entryLinks": [
+              {
+                "import": true,
+                "name": "Bolter",
+                "hidden": false,
+                "id": "0544-2db9-4bd6-8a67",
+                "type": "selectionEntry",
+                "targetId": "68d2-db2c-be95-a97d"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "e31b-3067-38b1-68af-min",
+                "includeChildSelections": false,
+                "automatic": true
+              },
+              {
+                "type": "max",
+                "value": 0,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "e31b-3067-38b1-68af-max",
+                "includeChildSelections": false,
+                "automatic": true
+              }
+            ],
+            "modifiers": [
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "e31b-3067-38b1-68af-min",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              },
+              {
+                "type": "increment",
+                "value": 1,
+                "field": "e31b-3067-38b1-68af-max",
+                "repeats": [
+                  {
+                    "value": 1,
+                    "repeats": 1,
+                    "field": "selections",
+                    "scope": "parent",
+                    "childId": "model",
+                    "shared": true,
+                    "roundUp": false
+                  }
+                ]
+              }
+            ],
+            "selectionEntries": [
+              {
+                "type": "upgrade",
+                "import": true,
+                "name": "Cytheron pattern Aegis",
+                "hidden": false,
+                "id": "56a6-63da-a29e-8ad6",
+                "rules": [
+                  {
+                    "name": "Cytheron pattern aegis ",
+                    "id": "30a1-6fa0-260b-2305",
+                    "hidden": false,
+                    "description": "A Model with a Cytheron pattern aegis has a 5+ Invulnerable Save and gains the Shield Trait. In addition, the Controlling Player of a Unit that includes any Models with a Cytheron pattern aegis may declare the Shieldwall! Advanced Reaction for that Unit. This is an exception to the normal Rules for the Shieldwall! Advanced Reaction.",
+                    "publicationId": "liber-astartes",
+                    "page": "134"
+                  }
+                ],
+                "costs": [
+                  {
+                    "name": "Points",
+                    "typeId": "points",
+                    "value": 10
+                  }
+                ],
+                "categoryLinks": [
+                  {
+                    "name": "Shield",
+                    "hidden": false,
+                    "id": "efd3-2b25-b592-f200",
+                    "targetId": "8304-be5e-319b-fc54",
+                    "primary": false
+                  }
+                ]
+              }
+            ],
+            "defaultSelectionEntryId": "0544-2db9-4bd6-8a67"
+          }
+        ],
+        "categoryLinks": [
+          {
+            "name": "Infantry",
+            "hidden": false,
+            "id": "b7e7-c64d-7b68-285b",
+            "targetId": "infantry",
+            "primary": false
+          },
+          {
+            "name": "Eternal Warriors (1)",
+            "hidden": false,
+            "id": "cf6b-956d-8005-f47f",
+            "targetId": "c1d1-6526-47d3-6722",
+            "primary": false
+          },
+          {
+            "name": "Retinues",
+            "hidden": false,
+            "id": "e5b1-9383-8715-6e2a",
+            "targetId": "retinues-category",
+            "primary": true
+          },
+          {
+            "name": "Companions",
+            "hidden": false,
+            "id": "5685-e58b-3ef4-7fb2",
+            "targetId": "8f26-c4e8-3fdc-8fa5",
+            "primary": false
+          }
+        ]
       }
     ],
     "entryLinks": [
+      {
+        "targetId": "74c3-11b5-c191-86c9",
+        "id": "d8dc-fe37-7d40-b1df",
+        "type": "selectionEntry",
+        "name": "Deathwing Companion Detachment",
+        "hidden": false
+      },
+      {
+        "targetId": "cf40-06c9-99aa-635a",
+        "id": "f68a-b2d8-af35-bea7",
+        "type": "selectionEntry",
+        "name": "Dreadwing Interremptors",
+        "hidden": false
+      },
+      {
+        "targetId": "cf40-06c9-99aa-635a",
+        "id": "c8ff-b501-6b5d-bb44",
+        "type": "selectionEntry",
+        "name": "Dreadwing Interremptors",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "targetId": "103d-91db-9c34-9284",
+            "id": "bdac-2eef-5cf6-c053",
+            "primary": true,
+            "name": "Dreadwing Interremptors"
+          }
+        ]
+      },
       {
         "import": true,
         "name": "Lion el'jonson",
@@ -486,6 +3609,457 @@
         "id": "03ce-0f82-e0b5-424e",
         "type": "selectionEntry",
         "targetId": "b4de-5f0b-e712-b1c5"
+      },
+      {
+        "import": true,
+        "name": "Rapier Battery",
+        "hidden": false,
+        "id": "4cbc-bd3b-78b8-8fce",
+        "type": "selectionEntry",
+        "targetId": "rapier-battery-unit",
+        "categoryLinks": [
+          {
+            "targetId": "103d-91db-9c34-9284",
+            "id": "fa05-baec-609a-1f5e",
+            "primary": true,
+            "name": "Dreadwing Interremptors"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "min",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "f38e-f42c-d1de-4420-min",
+            "includeChildSelections": false
+          },
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "force",
+            "shared": true,
+            "id": "f38e-f42c-d1de-4420-max",
+            "includeChildSelections": false
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Outrider Squadron",
+        "hidden": false,
+        "id": "11a2-bb7f-4b9a-8c55",
+        "type": "selectionEntry",
+        "targetId": "outrider-squadron",
+        "categoryLinks": [
+          {
+            "targetId": "7fdc-74d3-f44f-1adb",
+            "id": "ede3-b57a-cb46-cb01",
+            "primary": true,
+            "name": "Outrider"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Seeker Squad",
+        "hidden": false,
+        "id": "b3f6-6e7f-c69b-ab46",
+        "type": "selectionEntry",
+        "targetId": "seeker-squad",
+        "categoryLinks": [
+          {
+            "targetId": "f701-44ad-3567-898c",
+            "id": "e16d-2e62-4862-2a19",
+            "primary": true,
+            "name": "Seeker"
+          }
+        ]
+      },
+      {
+        "import": true,
+        "name": "Inner Circle Knights Cenobium",
+        "hidden": false,
+        "id": "209f-353b-65a4-0583",
+        "targetId": "b9bf-901d-c5e8-3212",
+        "type": "selectionEntry"
+      }
+    ],
+    "categoryEntries": [
+      {
+        "name": "Outrider",
+        "id": "7fdc-74d3-f44f-1adb",
+        "hidden": false
+      },
+      {
+        "name": "Companions",
+        "id": "8f26-c4e8-3fdc-8fa5",
+        "hidden": false,
+        "rules": [
+          {
+            "name": "Companions ",
+            "id": "dff5-4023-aa71-a64f",
+            "hidden": false,
+            "description": "Companion Detachments oath themselves to their charge, ensuring their continued survival on the battlefield, even at cost of their own lives. While a Model with both the Dark Angels Trait and either the Paragon Type or Command Sub-Type is part of a Unit that includes any Models with this Special Rule, Precision Wounds caused as part of a Shooting Attack cam be allocated to that Model.",
+            "publicationId": "liber-astartes",
+            "page": "134"
+          }
+        ]
+      }
+    ],
+    "sharedRules": [
+      {
+        "name": "The Angels of Death",
+        "id": "5147-e082-519f-4ecf",
+        "hidden": false,
+        "page": "126",
+        "publicationId": "liber-astartes",
+        "description": "Negative modifiers to Dark Angels' Leadership, Willpower, Cool and Intelligence are limited. \n\n\nModels with this Special Rule may never have their Leadership Characteristic modified to less than 6. Additionally, any variant of the Fear (X) Special Rule may only reduce the Leadership, Willpower, Cool and Intelligence Characteristics of any Model with this Special Rule by a maximum of 1, regardless of the value of X."
+      }
+    ],
+    "forceEntries": [
+      {
+        "name": "Ironwing Gauntlet",
+        "id": "5c1d-c724-1f30-612f",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Heavy Transport",
+            "hidden": false,
+            "id": "1fd5-10ab-4326-11c2",
+            "targetId": "heavy-transport-category",
+            "type": "categoryEntry",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "31c3-faf9-8082-0956",
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "name": "Armour",
+            "hidden": false,
+            "id": "cfa6-1658-07b5-d34c",
+            "targetId": "armour-category",
+            "type": "categoryEntry",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "8865-527b-9944-9d2a",
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "name": "Auxillary",
+            "hidden": false,
+            "id": "4829-549b-f868-bb09",
+            "targetId": "auxillary-category",
+            "type": "categoryEntry"
+          }
+        ]
+      },
+      {
+        "name": "Dreadwing Cadre",
+        "id": "53d0-e1fa-1004-ee1e",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Prime",
+            "hidden": false,
+            "id": "4814-0632-28aa-2830",
+            "targetId": "prime-category",
+            "type": "categoryEntry",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "a472-b82d-6c98-4dff",
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "name": "Dreadwing Interremptors",
+            "hidden": false,
+            "id": "2d38-2d00-5093-14a5",
+            "targetId": "103d-91db-9c34-9284"
+          }
+        ]
+      },
+      {
+        "name": "Stormwing Muster",
+        "id": "2d28-3e1b-b503-5c54",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Prime",
+            "hidden": false,
+            "id": "0a84-2af9-c725-85cc",
+            "targetId": "prime-category",
+            "type": "categoryEntry",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "30e1-ab06-c6e2-8da2",
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "name": "Transport",
+            "hidden": false,
+            "id": "9571-8592-8b2e-6e38",
+            "targetId": "transport-category",
+            "type": "categoryEntry",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "f95b-8048-e7c9-2321",
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "name": "Troops",
+            "hidden": false,
+            "id": "e0ec-dbe2-d291-1e9a",
+            "targetId": "troops-category",
+            "type": "categoryEntry",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "bb57-8f09-30e7-914a",
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ravenwing Lance",
+        "id": "0ccb-940b-3f8f-392d",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Fast Attack",
+            "hidden": false,
+            "id": "0f37-14a3-b508-6e73",
+            "targetId": "fast-attack-category",
+            "type": "categoryEntry",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "40f8-d618-165b-ca5f",
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "name": "Outrider",
+            "hidden": false,
+            "id": "0a6d-5212-cf7f-53f6",
+            "targetId": "7fdc-74d3-f44f-1adb",
+            "type": "categoryEntry",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "8f64-3cb6-8d1b-80c9",
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "name": "Prime",
+            "hidden": false,
+            "id": "f987-ae3a-2ff0-2237",
+            "targetId": "prime-category",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "2e8d-7a81-a076-009a",
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Deathwing Conclave",
+        "id": "ebbd-00c8-5d7e-63fc",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Prime",
+            "hidden": false,
+            "id": "8c4c-bab4-2b2e-d52f",
+            "targetId": "prime-category",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "4b3f-7688-f0b3-5d8a",
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "name": "Retinues",
+            "hidden": false,
+            "id": "4b84-ae68-3136-525c",
+            "targetId": "retinues-category",
+            "type": "categoryEntry",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "e1b9-1ecc-0d78-b029",
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "name": "Elite",
+            "hidden": false,
+            "id": "c16b-3788-2ab7-efb8",
+            "targetId": "elites-category",
+            "type": "categoryEntry",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "68be-6a95-d35c-d7c3",
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "name": "Heavy Assault",
+            "hidden": false,
+            "id": "9ae3-d0e2-f68b-7916",
+            "targetId": "heavy-assault-category",
+            "type": "categoryEntry",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "3e36-dedd-aacb-a2c5",
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Firewing Echelon",
+        "id": "ccc3-cbea-05ae-29b5",
+        "hidden": false,
+        "categoryLinks": [
+          {
+            "name": "Seeker",
+            "hidden": false,
+            "id": "bdc1-4966-c9db-e7e8",
+            "targetId": "f701-44ad-3567-898c",
+            "type": "categoryEntry",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "e387-5fc7-a424-de9f",
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "name": "Recon",
+            "hidden": false,
+            "id": "1a38-aff0-7583-c897",
+            "targetId": "recon-category",
+            "type": "categoryEntry",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 2,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "b370-920a-6024-e090",
+                "includeChildSelections": true
+              }
+            ]
+          },
+          {
+            "name": "Prime",
+            "hidden": false,
+            "id": "9fb5-4de8-4fa4-43bb",
+            "targetId": "prime-category",
+            "type": "categoryEntry",
+            "constraints": [
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "shared": true,
+                "id": "b292-bbb9-86bd-383d",
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ]
       }
     ]
   }
