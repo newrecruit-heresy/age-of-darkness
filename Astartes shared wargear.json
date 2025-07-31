@@ -3764,6 +3764,101 @@
             ]
           }
         ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Power glaive",
+        "hidden": false,
+        "id": "fcf7-549b-1b36-72cd",
+        "profiles": [
+          {
+            "name": "Power glaive",
+            "typeId": "weapon",
+            "typeName": "Weapon",
+            "hidden": false,
+            "id": "e21d-beba-27f1-dc3a",
+            "characteristics": [
+              {
+                "name": "Range",
+                "typeId": "range",
+                "$text": ""
+              },
+              {
+                "name": "Fire Power (FP)",
+                "typeId": "fire-power",
+                "$text": ""
+              },
+              {
+                "name": "Range Strength (RS)",
+                "typeId": "range-strength",
+                "$text": ""
+              },
+              {
+                "name": "Melee Initiative Modifier (IM)",
+                "typeId": "weapon-initiative",
+                "$text": "i"
+              },
+              {
+                "name": "Melee Attacks Modifier (AM)",
+                "typeId": "weapon-attacks",
+                "$text": "a"
+              },
+              {
+                "name": "Melee Strength Modifier (SM)",
+                "typeId": "melee-strength",
+                "$text": "+1"
+              },
+              {
+                "name": "Armour Penetration (AP)",
+                "$text": "3"
+              },
+              {
+                "name": "Damage (D)",
+                "typeId": "damage",
+                "$text": "1"
+              }
+            ]
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "power",
+            "id": "2dd1-c5a6-3bce-ae07",
+            "primary": false,
+            "name": "Power"
+          },
+          {
+            "targetId": "da70-adec-959d-5cb9",
+            "id": "1b44-7251-4130-889f",
+            "primary": false,
+            "name": "Impact (AP)"
+          },
+          {
+            "targetId": "0f24-9ab2-b239-fcab",
+            "id": "740f-9df4-1c10-7ea9",
+            "primary": false,
+            "name": "Breaching (5+)"
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "notInstanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "v",
+                "shared": true,
+                "includeChildSelections": true
+              }
+            ]
+          }
+        ]
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -4907,6 +5002,21 @@
                         "field": "points"
                       }
                     ]
+                  },
+                  {
+                    "import": true,
+                    "name": "Power glaive",
+                    "hidden": false,
+                    "id": "dd36-e0be-511e-6d3e",
+                    "type": "selectionEntry",
+                    "targetId": "fcf7-549b-1b36-72cd",
+                    "costs": [
+                      {
+                        "name": "Points",
+                        "typeId": "points",
+                        "value": 20
+                      }
+                    ]
                   }
                 ]
               }
@@ -5649,14 +5759,6 @@
             "type": "selectionEntry",
             "name": "Power lance",
             "hidden": false
-          },
-          {
-            "import": true,
-            "name": "Power sword",
-            "hidden": false,
-            "id": "6567-d5b7-8856-8010",
-            "type": "selectionEntry",
-            "targetId": "db80-7390-7e7b-118e"
           }
         ]
       },
