@@ -61,6 +61,14 @@
             "id": "b0f9-99c1-47e3-9886",
             "type": "selectionEntry",
             "targetId": "prime-command"
+          },
+          {
+            "import": true,
+            "name": "Cyber-hawk",
+            "hidden": false,
+            "id": "a7ac-840f-ebf4-be73",
+            "targetId": "c2b1-a2c2-4efe-8afb",
+            "type": "selectionEntry"
           }
         ],
         "selectionEntryGroups": [
@@ -255,6 +263,14 @@
                 "field": "points"
               }
             ]
+          },
+          {
+            "import": true,
+            "name": "Cyber-hawk",
+            "hidden": false,
+            "id": "3d6d-45e6-928a-11b8",
+            "targetId": "c2b1-a2c2-4efe-8afb",
+            "type": "selectionEntry"
           }
         ],
         "costs": [
@@ -859,6 +875,14 @@
             "id": "8999-70c7-b461-f9dc",
             "type": "selectionEntry",
             "targetId": "761a-1b86-42ef-8b5e"
+          },
+          {
+            "import": true,
+            "name": "Cyber-hawk",
+            "hidden": false,
+            "id": "0f51-1ff2-7169-f1f6",
+            "targetId": "c2b1-a2c2-4efe-8afb",
+            "type": "selectionEntry"
           }
         ],
         "selectionEntryGroups": [
@@ -3534,6 +3558,14 @@
                 "id": "e609-12e5-f13e-0b9b-max"
               }
             ]
+          },
+          {
+            "import": true,
+            "name": "Cyber-hawk",
+            "hidden": false,
+            "id": "9918-3629-70d8-3108",
+            "targetId": "c2b1-a2c2-4efe-8afb",
+            "type": "selectionEntry"
           }
         ]
       },
@@ -8665,58 +8697,6 @@
       {
         "type": "unit",
         "import": true,
-        "name": "Land Raider Explorator",
-        "hidden": false,
-        "id": "land-raider-explorator",
-        "categoryLinks": [
-          {
-            "targetId": "auto-repair-5",
-            "id": "3326-2624-d30d-582c",
-            "primary": false,
-            "name": "Auto-repair 5+"
-          },
-          {
-            "targetId": "smokescreen",
-            "id": "ee0e-b6a6-38ff-a986",
-            "primary": false,
-            "name": "Smokescreen"
-          },
-          {
-            "targetId": "recon-category",
-            "id": "3c14-0ccf-d5b7-98d2",
-            "primary": true,
-            "name": "Recon"
-          },
-          {
-            "targetId": "outflank-category",
-            "id": "c07d-7149-93d1-920f",
-            "primary": false,
-            "name": "Outflank"
-          },
-          {
-            "targetId": "assault-vehicle-category",
-            "id": "c333-6691-d007-42be",
-            "primary": false,
-            "name": "Assault Vehicle"
-          },
-          {
-            "targetId": "transport-tag-category",
-            "id": "2c9c-91f3-9a1c-a4b6",
-            "primary": false,
-            "name": "Vehicle (Transport)"
-          }
-        ],
-        "costs": [
-          {
-            "name": "Points",
-            "typeId": "points",
-            "value": 220
-          }
-        ]
-      },
-      {
-        "type": "unit",
-        "import": true,
         "name": "Tarantula Battery",
         "hidden": false,
         "id": "tarantula-battery",
@@ -10313,6 +10293,14 @@
             "id": "a565-d103-d119-301b",
             "type": "selectionEntryGroup",
             "targetId": "decurion"
+          },
+          {
+            "import": true,
+            "name": "Legion Pintle Weapons",
+            "hidden": false,
+            "id": "9212-c6ea-d01f-fda0",
+            "type": "selectionEntryGroup",
+            "targetId": "legion-pintle-weapons"
           }
         ],
         "selectionEntryGroups": [
@@ -10441,7 +10429,7 @@
               {
                 "type": "upgrade",
                 "import": true,
-                "name": " Hull (Front, Left) Mounted lacannon and its Hull (Front, Right) Mounted lascannon ",
+                "name": " Hull (Front, Left) Mounted lascannon and its Hull (Front, Right) Mounted lascannon ",
                 "hidden": false,
                 "id": "5e0b-5d04-f3f4-f735",
                 "costs": [
@@ -10666,7 +10654,27 @@
             "import": true,
             "name": "Centreline Mounted neutron laser battery",
             "hidden": false,
-            "id": "0db7-5e43-8d33-c8e5"
+            "id": "0db7-5e43-8d33-c8e5",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "358f-5094-22a2-1156-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "358f-5094-22a2-1156-max",
+                "includeChildSelections": false
+              }
+            ]
           }
         ],
         "entryLinks": [
@@ -10768,95 +10776,6 @@
             "id": "4893-9d86-556f-b106",
             "type": "selectionEntryGroup",
             "targetId": "vehicle-upgrades"
-          }
-        ]
-      },
-      {
-        "type": "unit",
-        "import": true,
-        "name": "Glave Super-Heavy Special Weapons Tank",
-        "hidden": false,
-        "id": "145b-f674-cbf2-9490",
-        "costs": [
-          {
-            "name": "Points",
-            "typeId": "points",
-            "value": 650
-          }
-        ],
-        "categoryLinks": [
-          {
-            "targetId": "lord-of-war-category",
-            "id": "1c47-7e1f-dc75-81a9",
-            "primary": true,
-            "name": "Lord of War"
-          },
-          {
-            "targetId": "vehicle-super-heavy",
-            "id": "75c1-fbcd-1fc6-82db",
-            "primary": false,
-            "name": "Vehicle (Super-heavy)"
-          },
-          {
-            "targetId": "smokescreen",
-            "id": "82de-958f-a09a-e768",
-            "primary": false,
-            "name": "Smokescreen"
-          }
-        ],
-        "selectionEntries": [
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Turret Mounted volkite carronade",
-            "hidden": false,
-            "id": "3fe5-cc2a-5957-db66",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "27c9-0fb5-afe7-bde7-min",
-                "includeChildSelections": false
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "27c9-0fb5-afe7-bde7-max",
-                "includeChildSelections": false
-              }
-            ]
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Legion Pintle Weapons",
-            "hidden": false,
-            "id": "2ae8-41d3-20e2-ca56",
-            "type": "selectionEntryGroup",
-            "targetId": "legion-pintle-weapons"
-          },
-          {
-            "import": true,
-            "name": "This Model may have one of each of the following selected for it",
-            "hidden": false,
-            "id": "396e-6050-2138-efb8",
-            "type": "selectionEntryGroup",
-            "targetId": "vehicle-upgrades"
-          },
-          {
-            "import": true,
-            "name": "This Model may have both its Sponson Mounted lascannon arrays exchanged for one of the following:",
-            "hidden": false,
-            "id": "28c0-a137-0952-b26a",
-            "type": "selectionEntryGroup",
-            "targetId": "heavy-sponsons"
           }
         ]
       },
@@ -11010,95 +10929,6 @@
                 "id": "190d-55cf-adaa-5035-max"
               }
             ]
-          }
-        ]
-      },
-      {
-        "type": "unit",
-        "import": true,
-        "name": "Falchion Super-Heavy Tank Destroyer",
-        "hidden": false,
-        "id": "4a0c-1630-30a0-76f6",
-        "costs": [
-          {
-            "name": "Points",
-            "typeId": "points",
-            "value": 650
-          }
-        ],
-        "categoryLinks": [
-          {
-            "targetId": "lord-of-war-category",
-            "id": "3e31-fb9a-ce22-4f23",
-            "primary": true,
-            "name": "Lord of War"
-          },
-          {
-            "targetId": "vehicle-super-heavy",
-            "id": "185c-9050-7f62-0f51",
-            "primary": false,
-            "name": "Vehicle (Super-heavy)"
-          },
-          {
-            "targetId": "smokescreen",
-            "id": "9d42-85ef-3f36-4195",
-            "primary": false,
-            "name": "Smokescreen"
-          }
-        ],
-        "selectionEntries": [
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Centerline Mounted neutron-wave cannon ",
-            "hidden": false,
-            "id": "f539-b7af-b9c1-0e23",
-            "constraints": [
-              {
-                "type": "min",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "59eb-1347-0aa7-a877-min",
-                "includeChildSelections": false
-              },
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "59eb-1347-0aa7-a877-max",
-                "includeChildSelections": false
-              }
-            ]
-          }
-        ],
-        "entryLinks": [
-          {
-            "import": true,
-            "name": "Legion Pintle Weapons",
-            "hidden": false,
-            "id": "725a-801a-b46b-6195",
-            "type": "selectionEntryGroup",
-            "targetId": "legion-pintle-weapons"
-          },
-          {
-            "import": true,
-            "name": "This Model may have one of each of the following selected for it",
-            "hidden": false,
-            "id": "c316-1f90-a9a9-2339",
-            "type": "selectionEntryGroup",
-            "targetId": "vehicle-upgrades"
-          },
-          {
-            "import": true,
-            "name": "This Model may have both its Sponson Mounted lascannon arrays exchanged for one of the following:",
-            "hidden": false,
-            "id": "d346-8cd0-5316-f734",
-            "type": "selectionEntryGroup",
-            "targetId": "heavy-sponsons"
           }
         ]
       },
@@ -14390,20 +14220,6 @@
                   {
                     "type": "upgrade",
                     "import": true,
-                    "name": "Reaper autocannon",
-                    "hidden": false,
-                    "id": "c62f-28e9-4936-a599",
-                    "costs": [
-                      {
-                        "name": "Points",
-                        "typeId": "points",
-                        "value": 15
-                      }
-                    ]
-                  },
-                  {
-                    "type": "upgrade",
-                    "import": true,
                     "name": "Heavy flamer",
                     "hidden": false,
                     "id": "3b34-1422-5681-c9e6",
@@ -14450,6 +14266,15 @@
                         "roundUp": false
                       }
                     ]
+                  }
+                ],
+                "entryLinks": [
+                  {
+                    "targetId": "c62f-28e9-4936-a599",
+                    "id": "1920-a914-6e01-1910",
+                    "type": "selectionEntry",
+                    "name": "Reaper autocannon",
+                    "hidden": false
                   }
                 ]
               }
@@ -14598,6 +14423,30 @@
                     "id": "842a-1684-aa7a-545f",
                     "type": "selectionEntry",
                     "targetId": "paragon-blade-astartes"
+                  },
+                  {
+                    "import": true,
+                    "name": "Calibanite warblade",
+                    "hidden": false,
+                    "id": "b7bd-7755-fcab-4102",
+                    "type": "selectionEntry",
+                    "targetId": "c548-e02a-1273-d472"
+                  },
+                  {
+                    "import": true,
+                    "name": "Power glaive",
+                    "hidden": false,
+                    "id": "fc8c-3ac0-9bf8-1fcf",
+                    "type": "selectionEntry",
+                    "targetId": "fcf7-549b-1b36-72cd"
+                  },
+                  {
+                    "import": true,
+                    "name": "Terranic greatsword",
+                    "hidden": false,
+                    "id": "d48f-a2fe-55fd-6613",
+                    "type": "selectionEntry",
+                    "targetId": "98cc-839a-c5a5-60a6"
                   }
                 ]
               },
@@ -14702,6 +14551,14 @@
             "id": "4261-a930-23c8-0e85",
             "type": "selectionEntry",
             "targetId": "prime-command"
+          },
+          {
+            "import": true,
+            "name": "Cyber-hawk",
+            "hidden": false,
+            "id": "2cfa-fbc4-28c5-6643",
+            "targetId": "c2b1-a2c2-4efe-8afb",
+            "type": "selectionEntry"
           }
         ]
       },
@@ -14765,6 +14622,30 @@
                     "id": "be27-1c32-3913-5bc5",
                     "type": "selectionEntry",
                     "targetId": "paragon-blade-astartes"
+                  },
+                  {
+                    "import": true,
+                    "name": "Calibanite warblade",
+                    "hidden": false,
+                    "id": "5232-3467-29c1-6711",
+                    "type": "selectionEntry",
+                    "targetId": "c548-e02a-1273-d472"
+                  },
+                  {
+                    "import": true,
+                    "name": "Power glaive",
+                    "hidden": false,
+                    "id": "f341-0154-ae7e-aff3",
+                    "type": "selectionEntry",
+                    "targetId": "fcf7-549b-1b36-72cd"
+                  },
+                  {
+                    "import": true,
+                    "name": "Terranic greatsword",
+                    "hidden": false,
+                    "id": "0ad7-d6de-3a32-f3d2",
+                    "type": "selectionEntry",
+                    "targetId": "98cc-839a-c5a5-60a6"
                   }
                 ]
               },
@@ -14869,6 +14750,14 @@
             "id": "5512-f56e-43c5-3265",
             "type": "selectionEntry",
             "targetId": "prime-command"
+          },
+          {
+            "import": true,
+            "name": "Cyber-hawk",
+            "hidden": false,
+            "id": "7e69-22f3-de4a-f197",
+            "targetId": "c2b1-a2c2-4efe-8afb",
+            "type": "selectionEntry"
           }
         ]
       },
@@ -15131,6 +15020,14 @@
             "id": "9565-b160-8675-f39a",
             "type": "selectionEntry",
             "targetId": "prime-command"
+          },
+          {
+            "import": true,
+            "name": "Cyber-hawk",
+            "hidden": false,
+            "id": "2cb1-db43-12ee-86c6",
+            "targetId": "c2b1-a2c2-4efe-8afb",
+            "type": "selectionEntry"
           }
         ]
       },
@@ -16577,6 +16474,14 @@
             "id": "cdc8-3345-f987-f5c6",
             "type": "selectionEntry",
             "targetId": "prime-command"
+          },
+          {
+            "import": true,
+            "name": "Cyber-hawk",
+            "hidden": false,
+            "id": "2f33-fabe-e232-e150",
+            "targetId": "c2b1-a2c2-4efe-8afb",
+            "type": "selectionEntry"
           }
         ]
       },
@@ -16645,6 +16550,30 @@
                     "id": "7476-7b86-d8fe-a3ef",
                     "type": "selectionEntryGroup",
                     "targetId": "aba6-6a39-46e0-8d0e"
+                  },
+                  {
+                    "import": true,
+                    "name": "Power glaive",
+                    "hidden": false,
+                    "id": "c78a-ccf5-253e-c9b2",
+                    "type": "selectionEntry",
+                    "targetId": "fcf7-549b-1b36-72cd"
+                  },
+                  {
+                    "import": true,
+                    "name": "Calibanite warblade",
+                    "hidden": false,
+                    "id": "ab06-cca5-b412-88c0",
+                    "type": "selectionEntry",
+                    "targetId": "c548-e02a-1273-d472"
+                  },
+                  {
+                    "import": true,
+                    "name": "Terranic greatsword",
+                    "hidden": false,
+                    "id": "8dc5-85f0-ee51-442e",
+                    "type": "selectionEntry",
+                    "targetId": "98cc-839a-c5a5-60a6"
                   }
                 ]
               },
@@ -16749,6 +16678,14 @@
             "id": "b100-b026-0322-1eaa",
             "type": "selectionEntry",
             "targetId": "prime-command"
+          },
+          {
+            "import": true,
+            "name": "Cyber-hawk",
+            "hidden": false,
+            "id": "cdf0-b2f5-e9ea-1640",
+            "targetId": "c2b1-a2c2-4efe-8afb",
+            "type": "selectionEntry"
           }
         ]
       },
@@ -16818,6 +16755,14 @@
                 ]
               }
             ]
+          },
+          {
+            "import": true,
+            "name": "Cyber-hawk",
+            "hidden": false,
+            "id": "cbed-46b9-3b71-140f",
+            "targetId": "c2b1-a2c2-4efe-8afb",
+            "type": "selectionEntry"
           }
         ],
         "costs": [
@@ -17084,6 +17029,14 @@
                 ]
               }
             ]
+          },
+          {
+            "import": true,
+            "name": "Cyber-hawk",
+            "hidden": false,
+            "id": "716a-d90a-79a6-683b",
+            "targetId": "c2b1-a2c2-4efe-8afb",
+            "type": "selectionEntry"
           }
         ],
         "costs": [
@@ -17373,6 +17326,14 @@
             "id": "d507-bf2c-e492-1a62",
             "type": "selectionEntry",
             "targetId": "prime-command"
+          },
+          {
+            "import": true,
+            "name": "Cyber-hawk",
+            "hidden": false,
+            "id": "e4e9-4366-6374-6dea",
+            "targetId": "c2b1-a2c2-4efe-8afb",
+            "type": "selectionEntry"
           }
         ],
         "rules": [
@@ -17487,6 +17448,14 @@
             "id": "c33c-b235-4d48-f5af",
             "type": "selectionEntry",
             "targetId": "prime-command"
+          },
+          {
+            "import": true,
+            "name": "Cyber-hawk",
+            "hidden": false,
+            "id": "f507-5982-cdea-75d6",
+            "targetId": "c2b1-a2c2-4efe-8afb",
+            "type": "selectionEntry"
           }
         ]
       },
@@ -17544,6 +17513,14 @@
             "id": "ddec-1356-0ebb-be9b",
             "type": "selectionEntry",
             "targetId": "prime-command"
+          },
+          {
+            "import": true,
+            "name": "Cyber-hawk",
+            "hidden": false,
+            "id": "4da7-0c17-163f-48cd",
+            "targetId": "c2b1-a2c2-4efe-8afb",
+            "type": "selectionEntry"
           }
         ],
         "costs": [
@@ -17699,6 +17676,14 @@
                 "field": "points"
               }
             ]
+          },
+          {
+            "import": true,
+            "name": "Cyber-hawk",
+            "hidden": false,
+            "id": "1cd5-1949-7372-fe8b",
+            "targetId": "c2b1-a2c2-4efe-8afb",
+            "type": "selectionEntry"
           }
         ],
         "selectionEntryGroups": [
@@ -18309,6 +18294,14 @@
                 "automatic": true
               }
             ]
+          },
+          {
+            "import": true,
+            "name": "Cyber-hawk",
+            "hidden": false,
+            "id": "aaa5-bbe4-43de-cef2",
+            "targetId": "c2b1-a2c2-4efe-8afb",
+            "type": "selectionEntry"
           }
         ],
         "categoryLinks": [
@@ -18430,6 +18423,14 @@
                 "field": "points"
               }
             ]
+          },
+          {
+            "import": true,
+            "name": "Cyber-hawk",
+            "hidden": false,
+            "id": "6864-9534-19ad-bced",
+            "targetId": "c2b1-a2c2-4efe-8afb",
+            "type": "selectionEntry"
           }
         ],
         "categoryLinks": [
@@ -18741,6 +18742,14 @@
                 "field": "points"
               }
             ]
+          },
+          {
+            "import": true,
+            "name": "Cyber-hawk",
+            "hidden": false,
+            "id": "20d4-0b62-f3e4-6c24",
+            "targetId": "c2b1-a2c2-4efe-8afb",
+            "type": "selectionEntry"
           }
         ],
         "categoryLinks": [
@@ -19071,6 +19080,14 @@
             "id": "8f1d-8ce8-0260-aece",
             "type": "selectionEntryGroup",
             "targetId": "legion-pistols"
+          },
+          {
+            "import": true,
+            "name": "Cyber-hawk",
+            "hidden": false,
+            "id": "e898-416a-86b2-e113",
+            "targetId": "c2b1-a2c2-4efe-8afb",
+            "type": "selectionEntry"
           }
         ],
         "categoryLinks": [
@@ -19258,6 +19275,14 @@
                 "id": "fa93-9a9b-63e4-d7ed-max"
               }
             ]
+          },
+          {
+            "import": true,
+            "name": "Cyber-hawk",
+            "hidden": false,
+            "id": "5b36-ac1e-1dba-d1d4",
+            "targetId": "c2b1-a2c2-4efe-8afb",
+            "type": "selectionEntry"
           }
         ],
         "categoryLinks": [
@@ -19340,6 +19365,14 @@
                 "id": "1446-f9f2-a841-04db-max"
               }
             ]
+          },
+          {
+            "import": true,
+            "name": "Cyber-hawk",
+            "hidden": false,
+            "id": "d014-fc9d-a9b7-b1f9",
+            "targetId": "c2b1-a2c2-4efe-8afb",
+            "type": "selectionEntry"
           }
         ],
         "categoryLinks": [
@@ -20327,6 +20360,249 @@
             ]
           }
         ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Falchion Super-Heavy Tank Destroyer",
+        "hidden": false,
+        "id": "4a0c-1630-30a0-76f6",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 650
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "lord-of-war-category",
+            "id": "3e31-fb9a-ce22-4f23",
+            "primary": true,
+            "name": "Lord of War"
+          },
+          {
+            "targetId": "vehicle-super-heavy",
+            "id": "185c-9050-7f62-0f51",
+            "primary": false,
+            "name": "Vehicle (Super-heavy)"
+          },
+          {
+            "targetId": "smokescreen",
+            "id": "9d42-85ef-3f36-4195",
+            "primary": false,
+            "name": "Smokescreen"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Centerline Mounted neutron-wave cannon ",
+            "hidden": false,
+            "id": "f539-b7af-b9c1-0e23",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "59eb-1347-0aa7-a877-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "59eb-1347-0aa7-a877-max",
+                "includeChildSelections": false
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Legion Pintle Weapons",
+            "hidden": false,
+            "id": "725a-801a-b46b-6195",
+            "type": "selectionEntryGroup",
+            "targetId": "legion-pintle-weapons"
+          },
+          {
+            "import": true,
+            "name": "This Model may have one of each of the following selected for it",
+            "hidden": false,
+            "id": "c316-1f90-a9a9-2339",
+            "type": "selectionEntryGroup",
+            "targetId": "vehicle-upgrades"
+          },
+          {
+            "import": true,
+            "name": "This Model may have both its Sponson Mounted lascannon arrays exchanged for one of the following:",
+            "hidden": false,
+            "id": "d346-8cd0-5316-f734",
+            "type": "selectionEntryGroup",
+            "targetId": "heavy-sponsons"
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Glave Super-Heavy Special Weapons Tank",
+        "hidden": false,
+        "id": "145b-f674-cbf2-9490",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 650
+          }
+        ],
+        "categoryLinks": [
+          {
+            "targetId": "lord-of-war-category",
+            "id": "1c47-7e1f-dc75-81a9",
+            "primary": true,
+            "name": "Lord of War"
+          },
+          {
+            "targetId": "vehicle-super-heavy",
+            "id": "75c1-fbcd-1fc6-82db",
+            "primary": false,
+            "name": "Vehicle (Super-heavy)"
+          },
+          {
+            "targetId": "smokescreen",
+            "id": "82de-958f-a09a-e768",
+            "primary": false,
+            "name": "Smokescreen"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Turret Mounted volkite carronade",
+            "hidden": false,
+            "id": "3fe5-cc2a-5957-db66",
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "27c9-0fb5-afe7-bde7-min",
+                "includeChildSelections": false
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "27c9-0fb5-afe7-bde7-max",
+                "includeChildSelections": false
+              }
+            ]
+          }
+        ],
+        "entryLinks": [
+          {
+            "import": true,
+            "name": "Legion Pintle Weapons",
+            "hidden": false,
+            "id": "2ae8-41d3-20e2-ca56",
+            "type": "selectionEntryGroup",
+            "targetId": "legion-pintle-weapons"
+          },
+          {
+            "import": true,
+            "name": "This Model may have one of each of the following selected for it",
+            "hidden": false,
+            "id": "396e-6050-2138-efb8",
+            "type": "selectionEntryGroup",
+            "targetId": "vehicle-upgrades"
+          },
+          {
+            "import": true,
+            "name": "This Model may have both its Sponson Mounted lascannon arrays exchanged for one of the following:",
+            "hidden": false,
+            "id": "28c0-a137-0952-b26a",
+            "type": "selectionEntryGroup",
+            "targetId": "heavy-sponsons"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Reaper autocannon",
+        "hidden": false,
+        "id": "c62f-28e9-4936-a599",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 15
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Cyber-hawk",
+        "hidden": false,
+        "id": "c2b1-a2c2-4efe-8afb",
+        "categoryLinks": [
+          {
+            "targetId": "move-through-cover-category",
+            "id": "5308-3693-d32a-1918",
+            "primary": false,
+            "name": "Move Through Cover"
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "7a09-5f05-d8b4-f533",
+            "includeChildSelections": false
+          }
+        ],
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 10
+          }
+        ],
+        "modifiers": [
+          {
+            "type": "set",
+            "value": true,
+            "field": "hidden",
+            "conditions": [
+              {
+                "type": "notInstanceOf",
+                "value": 1,
+                "field": "selections",
+                "scope": "force",
+                "childId": "v",
+                "shared": true,
+                "includeChildSelections": false
+              }
+            ]
+          }
+        ]
       }
     ],
     "entryLinks": [
@@ -20335,6 +20611,20 @@
         "id": "61f1-19a5-36f9-6048",
         "type": "selectionEntry",
         "name": "Scimitar Jetbike Squadron",
+        "hidden": false
+      },
+      {
+        "targetId": "145b-f674-cbf2-9490",
+        "id": "b48f-bdf4-ed04-7dc5",
+        "type": "selectionEntry",
+        "name": "Glave Super-Heavy Special Weapons Tank",
+        "hidden": false
+      },
+      {
+        "targetId": "4a0c-1630-30a0-76f6",
+        "id": "00d6-a7e5-4aea-0578",
+        "type": "selectionEntry",
+        "name": "Falchion Super-Heavy Tank Destroyer",
         "hidden": false
       },
       {
@@ -20654,10 +20944,10 @@
       },
       {
         "import": true,
-        "name": "Typhon Heavy Siege Tank",
+        "name": "Cerberus Heavy Tank Destroyer",
         "hidden": false,
         "id": "dfa0-718d-28d5-b0bd",
-        "targetId": "cefc-b748-a477-8514",
+        "targetId": "cerberus",
         "type": "selectionEntry"
       },
       {
@@ -21039,6 +21329,14 @@
             "name": "Praetorian Command Squad with Jump Pack"
           }
         ]
+      },
+      {
+        "import": true,
+        "name": "Fellblade Super-Heavy Battle Tank",
+        "hidden": false,
+        "id": "5ebb-9adb-fd79-67c3",
+        "targetId": "a40c-2a32-6f33-0fa7",
+        "type": "selectionEntry"
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -21711,7 +22009,7 @@
           {
             "type": "upgrade",
             "import": true,
-            "name": "One Turrent Mounter hunter-killer missile",
+            "name": "One Turret Mounter hunter-killer missile",
             "hidden": false,
             "id": "eef0-5f91-e6ae-6f36",
             "costs": [
@@ -21877,26 +22175,6 @@
                 ]
               }
             ]
-          }
-        ],
-        "constraints": [
-          {
-            "type": "min",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "b096-fa67-6e53-597a-min",
-            "includeChildSelections": false
-          },
-          {
-            "type": "max",
-            "value": 1,
-            "field": "selections",
-            "scope": "parent",
-            "shared": true,
-            "id": "b096-fa67-6e53-597a-max",
-            "includeChildSelections": false
           }
         ]
       },
@@ -23431,6 +23709,16 @@
         "name": "Seeker",
         "id": "f701-44ad-3567-898c",
         "hidden": false
+      },
+      {
+        "name": "Outrider",
+        "id": "7fdc-74d3-f44f-1adb",
+        "hidden": false
+      },
+      {
+        "name": "Scimitar",
+        "id": "d284-7a4f-ca57-39e7",
+        "hidden": false
       }
     ],
     "catalogueLinks": [
@@ -23490,6 +23778,60 @@
             "name": "Initiative modifier",
             "typeId": "weapon-initiative",
             "$text": "I"
+          }
+        ]
+      }
+    ],
+    "selectionEntries": [
+      {
+        "type": "unit",
+        "import": true,
+        "name": "Land Raider Explorator",
+        "hidden": false,
+        "id": "land-raider-explorator",
+        "categoryLinks": [
+          {
+            "targetId": "auto-repair-5",
+            "id": "3326-2624-d30d-582c",
+            "primary": false,
+            "name": "Auto-repair 5+"
+          },
+          {
+            "targetId": "smokescreen",
+            "id": "ee0e-b6a6-38ff-a986",
+            "primary": false,
+            "name": "Smokescreen"
+          },
+          {
+            "targetId": "recon-category",
+            "id": "3c14-0ccf-d5b7-98d2",
+            "primary": true,
+            "name": "Recon"
+          },
+          {
+            "targetId": "outflank-category",
+            "id": "c07d-7149-93d1-920f",
+            "primary": false,
+            "name": "Outflank"
+          },
+          {
+            "targetId": "assault-vehicle-category",
+            "id": "c333-6691-d007-42be",
+            "primary": false,
+            "name": "Assault Vehicle"
+          },
+          {
+            "targetId": "transport-tag-category",
+            "id": "2c9c-91f3-9a1c-a4b6",
+            "primary": false,
+            "name": "Vehicle (Transport)"
+          }
+        ],
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 220
           }
         ]
       }

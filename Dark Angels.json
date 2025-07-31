@@ -2244,7 +2244,8 @@
             "targetId": "heavy",
             "id": "2635-611e-d62c-5d96",
             "primary": false,
-            "name": "Heavy"
+            "name": "Heavy (X)",
+            "type": "rule"
           }
         ],
         "rules": [
@@ -3689,11 +3690,6 @@
     ],
     "categoryEntries": [
       {
-        "name": "Outrider",
-        "id": "7fdc-74d3-f44f-1adb",
-        "hidden": false
-      },
-      {
         "name": "Companions",
         "id": "8f26-c4e8-3fdc-8fa5",
         "hidden": false,
@@ -3730,7 +3726,6 @@
             "hidden": false,
             "id": "1fd5-10ab-4326-11c2",
             "targetId": "heavy-transport-category",
-            "type": "categoryEntry",
             "constraints": [
               {
                 "type": "max",
@@ -3748,7 +3743,6 @@
             "hidden": false,
             "id": "cfa6-1658-07b5-d34c",
             "targetId": "armour-category",
-            "type": "categoryEntry",
             "constraints": [
               {
                 "type": "max",
@@ -3765,8 +3759,7 @@
             "name": "Auxillary",
             "hidden": false,
             "id": "4829-549b-f868-bb09",
-            "targetId": "auxillary-category",
-            "type": "categoryEntry"
+            "targetId": "auxillary-category"
           }
         ]
       },
@@ -3780,7 +3773,6 @@
             "hidden": false,
             "id": "4814-0632-28aa-2830",
             "targetId": "prime-category",
-            "type": "categoryEntry",
             "constraints": [
               {
                 "type": "max",
@@ -3811,7 +3803,6 @@
             "hidden": false,
             "id": "0a84-2af9-c725-85cc",
             "targetId": "prime-category",
-            "type": "categoryEntry",
             "constraints": [
               {
                 "type": "max",
@@ -3829,7 +3820,6 @@
             "hidden": false,
             "id": "9571-8592-8b2e-6e38",
             "targetId": "transport-category",
-            "type": "categoryEntry",
             "constraints": [
               {
                 "type": "max",
@@ -3847,7 +3837,6 @@
             "hidden": false,
             "id": "e0ec-dbe2-d291-1e9a",
             "targetId": "troops-category",
-            "type": "categoryEntry",
             "constraints": [
               {
                 "type": "max",
@@ -3872,7 +3861,6 @@
             "hidden": false,
             "id": "0f37-14a3-b508-6e73",
             "targetId": "fast-attack-category",
-            "type": "categoryEntry",
             "constraints": [
               {
                 "type": "max",
@@ -3890,7 +3878,6 @@
             "hidden": false,
             "id": "0a6d-5212-cf7f-53f6",
             "targetId": "7fdc-74d3-f44f-1adb",
-            "type": "categoryEntry",
             "constraints": [
               {
                 "type": "max",
@@ -3949,7 +3936,6 @@
             "hidden": false,
             "id": "4b84-ae68-3136-525c",
             "targetId": "retinues-category",
-            "type": "categoryEntry",
             "constraints": [
               {
                 "type": "max",
@@ -3967,7 +3953,6 @@
             "hidden": false,
             "id": "c16b-3788-2ab7-efb8",
             "targetId": "elites-category",
-            "type": "categoryEntry",
             "constraints": [
               {
                 "type": "max",
@@ -3985,7 +3970,6 @@
             "hidden": false,
             "id": "9ae3-d0e2-f68b-7916",
             "targetId": "heavy-assault-category",
-            "type": "categoryEntry",
             "constraints": [
               {
                 "type": "max",
@@ -4010,7 +3994,6 @@
             "hidden": false,
             "id": "bdc1-4966-c9db-e7e8",
             "targetId": "f701-44ad-3567-898c",
-            "type": "categoryEntry",
             "constraints": [
               {
                 "type": "max",
@@ -4028,7 +4011,6 @@
             "hidden": false,
             "id": "1a38-aff0-7583-c897",
             "targetId": "recon-category",
-            "type": "categoryEntry",
             "constraints": [
               {
                 "type": "max",
@@ -4046,7 +4028,6 @@
             "hidden": false,
             "id": "9fb5-4de8-4fa4-43bb",
             "targetId": "prime-category",
-            "type": "categoryEntry",
             "constraints": [
               {
                 "type": "max",

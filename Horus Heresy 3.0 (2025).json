@@ -2255,7 +2255,7 @@
         "hidden": false
       },
       {
-        "name": "Force (S)",
+        "name": "Force (RS)",
         "id": "1f90-92c8-a26a-20a4",
         "hidden": false,
         "infoLinks": [
@@ -2432,20 +2432,6 @@
             "name": "Arc",
             "id": "642a-7f74-44b9-1c3b",
             "hidden": false
-          }
-        ]
-      },
-      {
-        "name": "Impact (IM)",
-        "id": "6d9f-0bc1-3d9f-5f29",
-        "hidden": false,
-        "infoLinks": [
-          {
-            "name": "Impact (X)",
-            "id": "9dee-c8b2-4877-639b",
-            "hidden": false,
-            "type": "rule",
-            "targetId": "3b0a-49b8-0762-c612"
           }
         ]
       },
@@ -2757,6 +2743,81 @@
             "hidden": false,
             "type": "rule",
             "targetId": "3006-a236-ee60-b654"
+          }
+        ]
+      },
+      {
+        "name": "Impact (IM)",
+        "id": "5b1c-a524-e056-48ed",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Impact (X)",
+            "id": "8bd8-f7f7-1a86-88e1",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "3b0a-49b8-0762-c612"
+          }
+        ]
+      },
+      {
+        "name": "Impact (AM)",
+        "id": "ff97-3315-5fc5-cace",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Impact (X)",
+            "id": "561e-6947-fe60-594a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "3b0a-49b8-0762-c612"
+          }
+        ]
+      },
+      {
+        "name": "Deflagrate (6)",
+        "id": "c1fa-6a8f-bd46-7bde",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Deflagrate (X)",
+            "id": "27ea-ddf2-b0c6-2ec0",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "cf3e-6299-5efe-cf32"
+          }
+        ]
+      },
+      {
+        "name": "Eternal Warrior (2)",
+        "id": "3239-f3c2-c3de-0f34",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Eternal Warrior (X)",
+            "id": "35f1-6a9f-aa08-b32a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "3006-a236-ee60-b654"
+          }
+        ]
+      },
+      {
+        "name": "Precision (3)",
+        "id": "9bb6-2ee7-d34c-51b3",
+        "hidden": false
+      },
+      {
+        "name": "Impact (AP)",
+        "id": "da70-adec-959d-5cb9",
+        "hidden": false,
+        "infoLinks": [
+          {
+            "name": "Impact (X)",
+            "id": "50e7-8fd4-ef14-f93a",
+            "hidden": false,
+            "type": "rule",
+            "targetId": "3b0a-49b8-0762-c612"
           }
         ]
       }
@@ -5857,6 +5918,14 @@
                     "scope": "ancestor",
                     "childId": "astartes-herald",
                     "shared": true
+                  },
+                  {
+                    "type": "instanceOf",
+                    "value": 1,
+                    "field": "selections",
+                    "scope": "ancestor",
+                    "childId": "0f02-5833-555e-81b1",
+                    "shared": true
                   }
                 ]
               }
@@ -6593,6 +6662,904 @@
             "name": "Plasma"
           }
         ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Biomancy",
+        "hidden": false,
+        "id": "Biomancy",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 20
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "43ef-ec88-acec-235b"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Biomantic Slam",
+            "hidden": false,
+            "id": "204f-61ad-7d0a-fb20",
+            "profiles": [
+              {
+                "name": "Biomantic Slam",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "2f2a-4dd3-1a28-a8a5",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": "\n"
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": "-3"
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": "12"
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "2"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "2"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "armourbane-category",
+                "id": "f65a-1b2a-b4b1-90e7",
+                "primary": false,
+                "name": "Armourbane"
+              },
+              {
+                "targetId": "5628-72c6-448c-7f33",
+                "id": "34a4-3a5b-851e-49f9",
+                "primary": false,
+                "name": "Force (D)"
+              },
+              {
+                "targetId": "melee",
+                "id": "8e4d-8843-29c2-968d",
+                "primary": false,
+                "name": "Melee"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "4f01-5fde-0054-13a1-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "4f01-5fde-0054-13a1-max"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Biomantic Rage",
+            "hidden": false,
+            "id": "4758-5041-2b62-f3b1",
+            "categoryLinks": [
+              {
+                "targetId": "armourbane-category",
+                "id": "8b4f-4582-21b9-4d11",
+                "primary": false,
+                "name": "Armourbane"
+              },
+              {
+                "targetId": "5628-72c6-448c-7f33",
+                "id": "8603-221b-8c8d-fc39",
+                "primary": false,
+                "name": "Force (D)"
+              },
+              {
+                "targetId": "melee",
+                "id": "548e-29dd-6d80-b249",
+                "primary": false,
+                "name": "Melee"
+              },
+              {
+                "targetId": "blessing",
+                "id": "e8eb-5b95-dea5-07a4",
+                "primary": false,
+                "name": "Blessing"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d734-67b2-c589-c686-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d734-67b2-c589-c686-max"
+              }
+            ],
+            "rules": [
+              {
+                "name": "Biomantic Rage",
+                "id": "c1bd-9994-7979-8f61",
+                "hidden": false,
+                "description": "This Power is used in the Charge Sub-Phase to add a bonus to a Unit's Strength and Toughness.\nTrigger: The Active Player may choose to Manifest the Biomantic Rage Psychic Power in the Charge Sub-Phase, at Step 4 of the Charge process before any Unit makes a Volley Attack.\n\nFocus: The Focus of the Power must be a Model with the Biomancer Trait under the Active Player's control, and must\nbe either part of the Unit making a Charge or within 18\" and with Line of Sight to one or more Models in that Unit.\nTarget: The Target Unit must be the Unit currently selected and in the process of making a Charge.\nDuration: If successfully Manifested, the effects of this Psychic Power last until the end of the current Assault Phase.\n\n\nProcess\n1. Once the Focus and Target Unit have been decided, make a Manifestation Check.\n2. If the Manifestation Check is successful, then no Volley Attack may be made for the Target Unit, but all\nModels in the Target Unit gain a bonus of +2 to their Strength and Toughness Characteristics.\n3. If the Manifestation Check fails then there is no further effect."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Divination",
+        "hidden": false,
+        "id": "Divination",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 20
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "67d0-4fcf-0a77-d0fb"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Foresight's Blessing",
+            "hidden": false,
+            "id": "b26a-0992-2502-3bc2",
+            "categoryLinks": [
+              {
+                "name": "Blessing",
+                "hidden": false,
+                "id": "0ee2-8ac4-11eb-7520",
+                "targetId": "blessing",
+                "primary": false
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "27ba-27ab-54b0-7710-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "27ba-27ab-54b0-7710-max"
+              }
+            ],
+            "rules": [
+              {
+                "name": "Foresight's Blessing",
+                "id": "4aa7-28d6-4474-b480",
+                "hidden": false,
+                "description": "This Power is used as part of a Shooting Attack to grant a Unit the Precision (5+) Special Rule. \n\n\nTrigger: The Active Player may choose to Manifest the Foresight's Blessing Psychic Power in the Shooting\nPhase, at Step 4 of any Shooting Attack made by the Active Player.\nFocus: The Focus of the Power must be a Model with the Diviner Trait under the Active Player's control, and must\nbe either part of the Unit making the Shooting Attack or within 18\" and with Line of Sight to one or more Models\nin that Unit.\n\n\nTarget: The Target Unit must be the Unit currently selected and in the process of making a Shooting Attack.\nDuration: If successfully Manifested, the effects of this Psychic Power last until the end of the Shooting Attack\nbeing resolved. \n\n\nProcess\n1. Once the Focus and Target Unit have been decided, make a Manifestation Check.\n2. If the Manifestation Check is successful, then all Models in the Target Unit gain the Precision (5+)\nSpecial Rule.\n3. If the Manifestation Check fails then there is nofurther effect."
+              }
+            ],
+            "comment": "\n"
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Pyromancy",
+        "hidden": false,
+        "id": "Pyromancy",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 10
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "7ff9-a603-733a-5f49"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Wildfire",
+            "hidden": false,
+            "id": "b78b-79ec-d8eb-db99",
+            "profiles": [
+              {
+                "name": "Wildfire",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "b787-8984-fdc5-61db",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": "18\""
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": "1"
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "1"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Armourbane",
+                "hidden": false,
+                "id": "5bf9-3c5d-b762-5e90",
+                "targetId": "armourbane-category",
+                "primary": false
+              },
+              {
+                "name": "Melee",
+                "hidden": false,
+                "id": "8d8c-18ef-f5bb-ab17",
+                "targetId": "melee",
+                "primary": false
+              },
+              {
+                "targetId": "c86d-f162-14c7-3072",
+                "id": "bcf0-912a-92cb-9cd5",
+                "primary": false,
+                "name": "Blast (5\")"
+              },
+              {
+                "targetId": "psychic",
+                "id": "930d-d242-f977-5ad2",
+                "primary": false,
+                "name": "Psychic"
+              },
+              {
+                "targetId": "1f90-92c8-a26a-20a4",
+                "id": "cd1a-7154-32bb-577a",
+                "primary": false,
+                "name": "Force (S)"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "4519-f345-0687-89bb-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "4519-f345-0687-89bb-max"
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Conflagration",
+            "hidden": false,
+            "id": "7236-0ca3-d62f-33c1",
+            "profiles": [
+              {
+                "name": "Conflagration",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "4c86-27c2-99a7-21f0",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": "\n"
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": "-1"
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": "+D3"
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "1"
+                  }
+                ]
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Melee",
+                "hidden": false,
+                "id": "8233-7490-19b5-c70e",
+                "targetId": "melee",
+                "primary": false
+              },
+              {
+                "targetId": "psychic",
+                "id": "be09-0c9f-9bd0-edcb",
+                "primary": false,
+                "name": "Psychic"
+              },
+              {
+                "targetId": "73a8-e20f-8a16-d4bc",
+                "id": "bfb9-48f8-a226-dbd8",
+                "primary": false,
+                "name": "Deflagrate (5)"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c7a7-73fb-f54a-cc97-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "c7a7-73fb-f54a-cc97-max"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Telekinesis",
+        "hidden": false,
+        "id": "Telekinesis",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 20
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "4ee2-1bd5-71b1-d9af"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Force Barrier",
+            "hidden": false,
+            "id": "22ef-b615-5ef9-1a4b",
+            "categoryLinks": [
+              {
+                "name": "Blessing",
+                "hidden": false,
+                "id": "52cb-a70d-79f9-7c3c",
+                "targetId": "blessing",
+                "primary": false
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f664-8798-80f9-631f-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "f664-8798-80f9-631f-max"
+              }
+            ],
+            "rules": [
+              {
+                "name": "Force Barrier",
+                "id": "46af-fe21-c18c-72c0",
+                "hidden": false,
+                "description": "This Power can be used in either the Shooting or Assault Phase and grants a Shrouded Damage Mitigation Test.\n\nTrigger: The Reactive Player may choose to declare a Force Barrier Psychic Reaction in either the Assault Phase, at the start of Step 4 of the Charge Process, or in the Shooting Phase, at the start of Step 3 of a Shooting Attack made by the Active Player.\n\nCost: The Reactive Player must spend 1 point of their Reaction Allotment to declare a Force Barrier Psychic Reaction - this cost paid as soon as the declaration is made.\n\n\nFocus: The Focus of this Psychic Reaction must be a Model with the Telekine Trait under the Reactive Player's control, and must be a part of the Unit targeted by the Charge or Shooting Attack that triggers this Psychic Reaction.\n\n\nTarget: The Target Unit must be the Unit that is the target of the Shooting Attack or Charge that triggered the Reaction.\nDuration: If successfully Manifested, the effects of this Psychic Reaction last until the end of the Sub-Phase in which it was declared. \n\n\nProcess\n1. Once the Focus and Target Unit have been decided, make a Manifestation Check.\n2. If the Manifestation Check is successful, then all Models in the Target Unit gain a 3+ Shrouded Damage Mitigation Test against any wounds inflicted during a Volley or Shooting Attack. \n3 .If the Manifestation Check fails then there is no further effect."
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Immovable Force",
+            "hidden": false,
+            "id": "7323-e956-f10e-58ca",
+            "profiles": [
+              {
+                "name": "Immovable Force",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "6a92-3e38-8efd-9c0c",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": "18"
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": "6"
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "4"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "1"
+                  }
+                ],
+                "page": ""
+              }
+            ],
+            "categoryLinks": [
+              {
+                "targetId": "68bc-4ffa-519e-0ac7",
+                "id": "c54b-6f82-ea89-9780",
+                "primary": false,
+                "name": "Pinning (2)"
+              },
+              {
+                "targetId": "64c6-d4ab-866a-d8e0",
+                "id": "4a59-0c9a-9130-4b02",
+                "primary": false,
+                "name": "Force (FP)"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "201a-7290-0676-9b55-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "201a-7290-0676-9b55-max"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Telepathy",
+        "hidden": false,
+        "id": "Telepathy",
+        "costs": [
+          {
+            "name": "Points",
+            "typeId": "points",
+            "value": 10
+          }
+        ],
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "2ec6-060f-a46e-da49"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Mind Burst",
+            "hidden": false,
+            "id": "188c-17da-796a-9ed9",
+            "categoryLinks": [
+              {
+                "targetId": "curse",
+                "id": "2d50-2260-8ce0-bd66",
+                "primary": false,
+                "name": "Curse"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d495-d22c-fee5-3991-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "d495-d22c-fee5-3991-max"
+              }
+            ],
+            "rules": [
+              {
+                "name": "Mind Burst",
+                "id": "7e9e-d1a2-8296-a4f2",
+                "hidden": false,
+                "description": "This Power is used in the Movement Phase and can force the target to Fall Back or become Routed.\n\nTrigger: The Active Player may choose to Manifest the Mind-burst Psychic Power in the Movement Phase, when selecting a Unit under their control that includes at least one Model with the Telepath Trait to move and before any move is made for that Unit.\n\nFocus: The Focus of the Power must be a Model with the Telepath Trait that is part of the Unit that was selected to move.\n\nTarget: The Target Unit must be a Unit under the control of the Reactive Player with at least one Model within 18\" of the Focus and with Line of Sight to the Focus. The target may not be a Unit that is Locked in Combat or otherwise ineligible to be the target of a Shooting Attack and may not include any Models with the Vehicle Type. \n\nDuration: If successfully Manifested, the effects of this Psychic Power are resolved immediately.\n\n\nProcess\n1. Once the Focus and Target Unit have been decided, make a Manifestation Check.\n2. If the Manifestation Check is successful, then all Statuses are removed from all Models in the Target Unit, and then the Target Unit must immediately make a Fall Back Move. Once that Fall Back Move has been resolved, a Leadership Check must be made for the Target Unit by its Controlling Player, this Check may not be modified by any effect or Special Rule. If the Leadership Check is successful, then there is no further effect, if it is unsuccessful then all Models in the Target Unit gain the Routed Status.\n3. If the Manifestation Check fails then there is no further effect to the Target Unit.\n4. Regardless of whether the Manifestation Check succeeds or fails, the Unit that includes the Focus of this Psychic Power may not make a move or Rush in this Movement Phase."
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Cursed Whispers",
+            "hidden": false,
+            "id": "6dba-caad-6cbf-14c9",
+            "profiles": [
+              {
+                "name": "Cursed Whispers",
+                "typeId": "weapon",
+                "typeName": "Weapon",
+                "hidden": false,
+                "id": "e9fd-81cf-ca7c-5b08",
+                "characteristics": [
+                  {
+                    "name": "Range",
+                    "typeId": "range",
+                    "$text": "18"
+                  },
+                  {
+                    "name": "Fire Power (FP)",
+                    "typeId": "fire-power",
+                    "$text": "2D6"
+                  },
+                  {
+                    "name": "Range Strength (RS)",
+                    "typeId": "range-strength",
+                    "$text": "3"
+                  },
+                  {
+                    "name": "Melee Initiative Modifier (IM)",
+                    "typeId": "weapon-initiative",
+                    "$text": "\n"
+                  },
+                  {
+                    "name": "Melee Attacks Modifier (AM)",
+                    "typeId": "weapon-attacks",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Melee Strength Modifier (SM)",
+                    "typeId": "melee-strength",
+                    "$text": ""
+                  },
+                  {
+                    "name": "Armour Penetration (AP)",
+                    "$text": "-"
+                  },
+                  {
+                    "name": "Damage (D)",
+                    "typeId": "damage",
+                    "$text": "1"
+                  }
+                ],
+                "page": ""
+              }
+            ],
+            "categoryLinks": [
+              {
+                "name": "Force (FP)",
+                "hidden": false,
+                "id": "730f-431f-f920-a659",
+                "targetId": "64c6-d4ab-866a-d8e0",
+                "primary": false
+              },
+              {
+                "targetId": "650e-839b-9d8f-a54d",
+                "id": "15bf-4695-a4f5-aae6",
+                "primary": false,
+                "name": "Stun (0)"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "11f4-6617-6373-6877-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "11f4-6617-6373-6877-max"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "upgrade",
+        "import": true,
+        "name": "Thaumaturgy",
+        "hidden": false,
+        "id": "Thaumaturgy",
+        "comment": "Yes, it is free.",
+        "constraints": [
+          {
+            "type": "max",
+            "value": 1,
+            "field": "selections",
+            "scope": "parent",
+            "shared": true,
+            "id": "a3d8-c2c6-8b30-ab2e"
+          }
+        ],
+        "selectionEntries": [
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Resurrection",
+            "hidden": false,
+            "id": "b640-f7f9-5b08-b9e0",
+            "categoryLinks": [
+              {
+                "targetId": "blessing",
+                "id": "4d8b-e905-4375-7846",
+                "primary": false,
+                "name": "Blessing"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3e0b-2e30-de95-5b9d-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "3e0b-2e30-de95-5b9d-max"
+              }
+            ],
+            "rules": [
+              {
+                "name": "Resurrection",
+                "id": "02c6-45d7-9029-2b29",
+                "hidden": false,
+                "description": "This Power can be used in the Shooting Phase and can return a single Casualty to the Unit with all Wounds restored.\n\nTrigger: The Reactive Player may choose to declare a Resurrection Psychic Reaction in the Shooting Phase, at the start of Step 11 of any Shooting Attack made by the Active Player.\n\nCost: The Reactive Player must spend 1 point of their Reaction Allotment to declare a Resurrection Psychic Reaction-this cost paid as soon as the declaration is made.\n\nFocus: The Focus of this Psychic Reaction must be a Model with the Thaumaturge Trait and under the Reactive Player's Control, and must be a part of the Unit targeted by the Shooting Attack that triggers this Psychic Reaction.\n\nTarget: The Target Unit must be the Unit that is the target of the Shooting Attack that triggered the Reaction.\n\nDuration: If successfully Manifested, the effects of this Psychic Reaction are resolved immediately.\n\n\nProcess\n1. Once the Focus and Target Unit have been decided, make a Manifestation Check. \n2. If the Manifestation Check is successful then, before any Models in the Target Unit are Removed as\nCasualties, the Controlling Player of the Target Unit must select one Model being Removed as a Casualty\nand roll a Dice. If the Dice roll for the chosen Model is equal to or higher than a '4', then that Model is not Removed as a Casualty and is returned to play in Unit Coherency with its Unit and with its Wounds Characteristic set to its Base Value, as listed on that\nModel's profile. This Psychic Reaction has no effect on Models that do not have a Wounds Characteristic and if the result of the Manifestation Check causes Perils of the Warp, then this instance of Perils of the Warp is resolved after any Models are returned to the Unit.\n3. If the Manifestation Check fails then there is nofurther effect."
+              }
+            ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "Tranquility",
+            "hidden": false,
+            "id": "9e63-b10d-777e-f322",
+            "categoryLinks": [
+              {
+                "targetId": "curse",
+                "id": "6ece-1e83-f104-1d60",
+                "primary": false,
+                "name": "Curse"
+              }
+            ],
+            "constraints": [
+              {
+                "type": "min",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "37c9-8b60-98f7-b9be-min"
+              },
+              {
+                "type": "max",
+                "value": 1,
+                "field": "selections",
+                "scope": "parent",
+                "shared": true,
+                "id": "37c9-8b60-98f7-b9be-max"
+              }
+            ],
+            "rules": [
+              {
+                "name": "Tranquility",
+                "id": "1ace-3629-3fe6-bc94",
+                "hidden": false,
+                "description": "This Power is used in the Start Phase and makes it harder for the Target Unit to use Psychic Powers, Psychic Reactions or to attack with Psychic Weapons.\n\n\nTrigger: The Active Player may choose to Manifest the Tranquility Psychic Power in the Effects Sub-Phase of the Start Phase.\n\n\nFocus: The Focus of the Power must be a Model with the Thaumaturge Trait and must be controlled by the Active Player.\n\n\nTarget: The Target Unit must be a Unit under the control of the Reactive Player with at least one Model within 18\"\nof the Focus and with Line of Sight to the Focus. The Target Unit must include at least one Model with the Psyker Trait\n\n\nDuration: If successfully Manifested, the effects of this Psychic Power last until the start of the Active Player's next Turn as the Active Player.\n\n\nProcess\n1. Once the Focus and Target Unit have been decided, make a Manifestation Check.\n2. If the Manifestation Check is successful, then all 3. Models in the Target Unit suffer a penalty of -2 to\ntheir Willpower Characteristic when attempting to Manifest any Psychic Power or Psychic Reaction. If any Model in the Target Unit makes attacks with a Weapon that has the Psychic Trait, then the Strength Characteristic of all Hits inflicted is reduced by 1.\n3. If the Manifestation Check fails then there is no further effect.\n\n"
+              }
+            ]
+          }
+        ]
       }
     ],
     "sharedSelectionEntryGroups": [
@@ -6885,6 +7852,40 @@
                 "description": "The following Rules apply to all Models with the Malefic Sub-Type:\nWhen a Unit composed entirely of Models with the Malefic Sub-Type would gain a Tactical Status of any kind, that Tactical Status is not applied to the Models in the Unit, but instead the Unit suffers D3 automatic wounds with an AP of 2 and a Damage Characteristic of 1 against which no Saving Throws of any kind may be made.\nOnce these wounds are resolved, no Tactical Status is applied to any Model in the Unit. \nModels with the Malefic Sub-Type are not affected by Special Rules that negatively modify their Leadership, Cool, Willpower or Intelligence Characteristics.\nNo Model that does not also have the Malefic Sub-Type may join or be joined by a Unit that includes one or more Models with the Malefic Sub-Type."
               }
             ]
+          },
+          {
+            "type": "upgrade",
+            "import": true,
+            "name": "The Sagyar Mazan",
+            "hidden": false,
+            "id": "fc24-d8b0-88c4-7a9b",
+            "modifiers": [
+              {
+                "type": "set",
+                "value": true,
+                "field": "hidden",
+                "conditions": [
+                  {
+                    "type": "notInstanceOf",
+                    "value": 1,
+                    "field": "forces",
+                    "scope": "roster",
+                    "childId": "v",
+                    "shared": true
+                  }
+                ]
+              }
+            ],
+            "rules": [
+              {
+                "name": "The Sagyar Mazan",
+                "id": "042d-491a-f83b-bc9a",
+                "hidden": false,
+                "description": "All in the Unit selected to fill a Prime Force Organisation Slot with this Prime Advantage gain the Expendable (2) Special Rule.",
+                "publicationId": "liber-astartes",
+                "page": "145"
+              }
+            ]
           }
         ],
         "constraints": [
@@ -6902,906 +7903,6 @@
         "name": "• This Model may have up to two of the following Psychic Disciplines selected for it:",
         "id": "psycho-powers",
         "hidden": false,
-        "selectionEntries": [
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Biomancy",
-            "hidden": false,
-            "id": "Biomancy",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 20
-              }
-            ],
-            "constraints": [
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "43ef-ec88-acec-235b"
-              }
-            ],
-            "selectionEntries": [
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Biomantic Slam",
-                "hidden": false,
-                "id": "204f-61ad-7d0a-fb20",
-                "profiles": [
-                  {
-                    "name": "Biomantic Slam",
-                    "typeId": "weapon",
-                    "typeName": "Weapon",
-                    "hidden": false,
-                    "id": "2f2a-4dd3-1a28-a8a5",
-                    "characteristics": [
-                      {
-                        "name": "Range",
-                        "typeId": "range",
-                        "$text": "\n"
-                      },
-                      {
-                        "name": "Fire Power (FP)",
-                        "typeId": "fire-power",
-                        "$text": ""
-                      },
-                      {
-                        "name": "Range Strength (RS)",
-                        "typeId": "range-strength",
-                        "$text": ""
-                      },
-                      {
-                        "name": "Melee Initiative Modifier (IM)",
-                        "typeId": "weapon-initiative",
-                        "$text": "-3"
-                      },
-                      {
-                        "name": "Melee Attacks Modifier (AM)",
-                        "typeId": "weapon-attacks",
-                        "$text": "1"
-                      },
-                      {
-                        "name": "Melee Strength Modifier (SM)",
-                        "typeId": "melee-strength",
-                        "$text": "12"
-                      },
-                      {
-                        "name": "Armour Penetration (AP)",
-                        "$text": "2"
-                      },
-                      {
-                        "name": "Damage (D)",
-                        "typeId": "damage",
-                        "$text": "2"
-                      }
-                    ]
-                  }
-                ],
-                "categoryLinks": [
-                  {
-                    "targetId": "armourbane-category",
-                    "id": "f65a-1b2a-b4b1-90e7",
-                    "primary": false,
-                    "name": "Armourbane"
-                  },
-                  {
-                    "targetId": "5628-72c6-448c-7f33",
-                    "id": "34a4-3a5b-851e-49f9",
-                    "primary": false,
-                    "name": "Force (D)"
-                  },
-                  {
-                    "targetId": "melee",
-                    "id": "8e4d-8843-29c2-968d",
-                    "primary": false,
-                    "name": "Melee"
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "4f01-5fde-0054-13a1-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "4f01-5fde-0054-13a1-max"
-                  }
-                ]
-              },
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Biomantic Rage",
-                "hidden": false,
-                "id": "4758-5041-2b62-f3b1",
-                "categoryLinks": [
-                  {
-                    "targetId": "armourbane-category",
-                    "id": "8b4f-4582-21b9-4d11",
-                    "primary": false,
-                    "name": "Armourbane"
-                  },
-                  {
-                    "targetId": "5628-72c6-448c-7f33",
-                    "id": "8603-221b-8c8d-fc39",
-                    "primary": false,
-                    "name": "Force (D)"
-                  },
-                  {
-                    "targetId": "melee",
-                    "id": "548e-29dd-6d80-b249",
-                    "primary": false,
-                    "name": "Melee"
-                  },
-                  {
-                    "targetId": "blessing",
-                    "id": "e8eb-5b95-dea5-07a4",
-                    "primary": false,
-                    "name": "Blessing"
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "d734-67b2-c589-c686-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "d734-67b2-c589-c686-max"
-                  }
-                ],
-                "rules": [
-                  {
-                    "name": "Biomantic Rage",
-                    "id": "c1bd-9994-7979-8f61",
-                    "hidden": false,
-                    "description": "This Power is used in the Charge Sub-Phase to add a bonus to a Unit's Strength and Toughness.\nTrigger: The Active Player may choose to Manifest the Biomantic Rage Psychic Power in the Charge Sub-Phase, at Step 4 of the Charge process before any Unit makes a Volley Attack.\n\nFocus: The Focus of the Power must be a Model with the Biomancer Trait under the Active Player's control, and must\nbe either part of the Unit making a Charge or within 18\" and with Line of Sight to one or more Models in that Unit.\nTarget: The Target Unit must be the Unit currently selected and in the process of making a Charge.\nDuration: If successfully Manifested, the effects of this Psychic Power last until the end of the current Assault Phase.\n\n\nProcess\n1. Once the Focus and Target Unit have been decided, make a Manifestation Check.\n2. If the Manifestation Check is successful, then no Volley Attack may be made for the Target Unit, but all\nModels in the Target Unit gain a bonus of +2 to their Strength and Toughness Characteristics.\n3. If the Manifestation Check fails then there is no further effect."
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Pyromancy",
-            "hidden": false,
-            "id": "Pyromancy",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 10
-              }
-            ],
-            "constraints": [
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "7ff9-a603-733a-5f49"
-              }
-            ],
-            "selectionEntries": [
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Wildfire",
-                "hidden": false,
-                "id": "b78b-79ec-d8eb-db99",
-                "profiles": [
-                  {
-                    "name": "Wildfire",
-                    "typeId": "weapon",
-                    "typeName": "Weapon",
-                    "hidden": false,
-                    "id": "b787-8984-fdc5-61db",
-                    "characteristics": [
-                      {
-                        "name": "Range",
-                        "typeId": "range",
-                        "$text": "18\""
-                      },
-                      {
-                        "name": "Fire Power (FP)",
-                        "typeId": "fire-power",
-                        "$text": "1"
-                      },
-                      {
-                        "name": "Range Strength (RS)",
-                        "typeId": "range-strength",
-                        "$text": "4"
-                      },
-                      {
-                        "name": "Melee Initiative Modifier (IM)",
-                        "typeId": "weapon-initiative",
-                        "$text": ""
-                      },
-                      {
-                        "name": "Melee Attacks Modifier (AM)",
-                        "typeId": "weapon-attacks",
-                        "$text": ""
-                      },
-                      {
-                        "name": "Melee Strength Modifier (SM)",
-                        "typeId": "melee-strength",
-                        "$text": ""
-                      },
-                      {
-                        "name": "Armour Penetration (AP)",
-                        "$text": "4"
-                      },
-                      {
-                        "name": "Damage (D)",
-                        "typeId": "damage",
-                        "$text": "1"
-                      }
-                    ]
-                  }
-                ],
-                "categoryLinks": [
-                  {
-                    "name": "Armourbane",
-                    "hidden": false,
-                    "id": "5bf9-3c5d-b762-5e90",
-                    "targetId": "armourbane-category",
-                    "primary": false
-                  },
-                  {
-                    "name": "Melee",
-                    "hidden": false,
-                    "id": "8d8c-18ef-f5bb-ab17",
-                    "targetId": "melee",
-                    "primary": false
-                  },
-                  {
-                    "targetId": "c86d-f162-14c7-3072",
-                    "id": "bcf0-912a-92cb-9cd5",
-                    "primary": false,
-                    "name": "Blast (5\")"
-                  },
-                  {
-                    "targetId": "psychic",
-                    "id": "930d-d242-f977-5ad2",
-                    "primary": false,
-                    "name": "Psychic"
-                  },
-                  {
-                    "targetId": "1f90-92c8-a26a-20a4",
-                    "id": "cd1a-7154-32bb-577a",
-                    "primary": false,
-                    "name": "Force (S)"
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "4519-f345-0687-89bb-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "4519-f345-0687-89bb-max"
-                  }
-                ]
-              },
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Conflagration",
-                "hidden": false,
-                "id": "7236-0ca3-d62f-33c1",
-                "profiles": [
-                  {
-                    "name": "Conflagration",
-                    "typeId": "weapon",
-                    "typeName": "Weapon",
-                    "hidden": false,
-                    "id": "4c86-27c2-99a7-21f0",
-                    "characteristics": [
-                      {
-                        "name": "Range",
-                        "typeId": "range",
-                        "$text": "\n"
-                      },
-                      {
-                        "name": "Fire Power (FP)",
-                        "typeId": "fire-power",
-                        "$text": ""
-                      },
-                      {
-                        "name": "Range Strength (RS)",
-                        "typeId": "range-strength",
-                        "$text": ""
-                      },
-                      {
-                        "name": "Melee Initiative Modifier (IM)",
-                        "typeId": "weapon-initiative",
-                        "$text": "-1"
-                      },
-                      {
-                        "name": "Melee Attacks Modifier (AM)",
-                        "typeId": "weapon-attacks",
-                        "$text": "6"
-                      },
-                      {
-                        "name": "Melee Strength Modifier (SM)",
-                        "typeId": "melee-strength",
-                        "$text": "+D3"
-                      },
-                      {
-                        "name": "Armour Penetration (AP)",
-                        "$text": "4"
-                      },
-                      {
-                        "name": "Damage (D)",
-                        "typeId": "damage",
-                        "$text": "1"
-                      }
-                    ]
-                  }
-                ],
-                "categoryLinks": [
-                  {
-                    "name": "Melee",
-                    "hidden": false,
-                    "id": "8233-7490-19b5-c70e",
-                    "targetId": "melee",
-                    "primary": false
-                  },
-                  {
-                    "targetId": "psychic",
-                    "id": "be09-0c9f-9bd0-edcb",
-                    "primary": false,
-                    "name": "Psychic"
-                  },
-                  {
-                    "targetId": "73a8-e20f-8a16-d4bc",
-                    "id": "bfb9-48f8-a226-dbd8",
-                    "primary": false,
-                    "name": "Deflagrate (5)"
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "c7a7-73fb-f54a-cc97-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "c7a7-73fb-f54a-cc97-max"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Telekinesis",
-            "hidden": false,
-            "id": "Telekinesis",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 20
-              }
-            ],
-            "constraints": [
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "4ee2-1bd5-71b1-d9af"
-              }
-            ],
-            "selectionEntries": [
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Force Barrier",
-                "hidden": false,
-                "id": "22ef-b615-5ef9-1a4b",
-                "categoryLinks": [
-                  {
-                    "name": "Blessing",
-                    "hidden": false,
-                    "id": "52cb-a70d-79f9-7c3c",
-                    "targetId": "blessing",
-                    "primary": false
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "f664-8798-80f9-631f-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "f664-8798-80f9-631f-max"
-                  }
-                ],
-                "rules": [
-                  {
-                    "name": "Force Barrier",
-                    "id": "46af-fe21-c18c-72c0",
-                    "hidden": false,
-                    "description": "This Power can be used in either the Shooting or Assault Phase and grants a Shrouded Damage Mitigation Test.\n\nTrigger: The Reactive Player may choose to declare a Force Barrier Psychic Reaction in either the Assault Phase, at the start of Step 4 of the Charge Process, or in the Shooting Phase, at the start of Step 3 of a Shooting Attack made by the Active Player.\n\nCost: The Reactive Player must spend 1 point of their Reaction Allotment to declare a Force Barrier Psychic Reaction - this cost paid as soon as the declaration is made.\n\n\nFocus: The Focus of this Psychic Reaction must be a Model with the Telekine Trait under the Reactive Player's control, and must be a part of the Unit targeted by the Charge or Shooting Attack that triggers this Psychic Reaction.\n\n\nTarget: The Target Unit must be the Unit that is the target of the Shooting Attack or Charge that triggered the Reaction.\nDuration: If successfully Manifested, the effects of this Psychic Reaction last until the end of the Sub-Phase in which it was declared. \n\n\nProcess\n1. Once the Focus and Target Unit have been decided, make a Manifestation Check.\n2. If the Manifestation Check is successful, then all Models in the Target Unit gain a 3+ Shrouded Damage Mitigation Test against any wounds inflicted during a Volley or Shooting Attack. \n3 .If the Manifestation Check fails then there is no further effect."
-                  }
-                ]
-              },
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Immovable Force",
-                "hidden": false,
-                "id": "7323-e956-f10e-58ca",
-                "profiles": [
-                  {
-                    "name": "Immovable Force",
-                    "typeId": "weapon",
-                    "typeName": "Weapon",
-                    "hidden": false,
-                    "id": "6a92-3e38-8efd-9c0c",
-                    "characteristics": [
-                      {
-                        "name": "Range",
-                        "typeId": "range",
-                        "$text": "18"
-                      },
-                      {
-                        "name": "Fire Power (FP)",
-                        "typeId": "fire-power",
-                        "$text": "3"
-                      },
-                      {
-                        "name": "Range Strength (RS)",
-                        "typeId": "range-strength",
-                        "$text": "6"
-                      },
-                      {
-                        "name": "Melee Initiative Modifier (IM)",
-                        "typeId": "weapon-initiative",
-                        "$text": ""
-                      },
-                      {
-                        "name": "Melee Attacks Modifier (AM)",
-                        "typeId": "weapon-attacks",
-                        "$text": ""
-                      },
-                      {
-                        "name": "Melee Strength Modifier (SM)",
-                        "typeId": "melee-strength",
-                        "$text": ""
-                      },
-                      {
-                        "name": "Armour Penetration (AP)",
-                        "$text": "4"
-                      },
-                      {
-                        "name": "Damage (D)",
-                        "typeId": "damage",
-                        "$text": "1"
-                      }
-                    ],
-                    "page": ""
-                  }
-                ],
-                "categoryLinks": [
-                  {
-                    "targetId": "68bc-4ffa-519e-0ac7",
-                    "id": "c54b-6f82-ea89-9780",
-                    "primary": false,
-                    "name": "Pinning (2)"
-                  },
-                  {
-                    "targetId": "64c6-d4ab-866a-d8e0",
-                    "id": "4a59-0c9a-9130-4b02",
-                    "primary": false,
-                    "name": "Force (FP)"
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "201a-7290-0676-9b55-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "201a-7290-0676-9b55-max"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Divination",
-            "hidden": false,
-            "id": "Divination",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 20
-              }
-            ],
-            "constraints": [
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "67d0-4fcf-0a77-d0fb"
-              }
-            ],
-            "selectionEntries": [
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Foresight's Blessing",
-                "hidden": false,
-                "id": "b26a-0992-2502-3bc2",
-                "categoryLinks": [
-                  {
-                    "name": "Blessing",
-                    "hidden": false,
-                    "id": "0ee2-8ac4-11eb-7520",
-                    "targetId": "blessing",
-                    "primary": false
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "27ba-27ab-54b0-7710-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "27ba-27ab-54b0-7710-max"
-                  }
-                ],
-                "rules": [
-                  {
-                    "name": "Foresight's Blessing",
-                    "id": "4aa7-28d6-4474-b480",
-                    "hidden": false,
-                    "description": "This Power is used as part of a Shooting Attack to grant a Unit the Precision (5+) Special Rule. \n\n\nTrigger: The Active Player may choose to Manifest the Foresight's Blessing Psychic Power in the Shooting\nPhase, at Step 4 of any Shooting Attack made by the Active Player.\nFocus: The Focus of the Power must be a Model with the Diviner Trait under the Active Player's control, and must\nbe either part of the Unit making the Shooting Attack or within 18\" and with Line of Sight to one or more Models\nin that Unit.\n\n\nTarget: The Target Unit must be the Unit currently selected and in the process of making a Shooting Attack.\nDuration: If successfully Manifested, the effects of this Psychic Power last until the end of the Shooting Attack\nbeing resolved. \n\n\nProcess\n1. Once the Focus and Target Unit have been decided, make a Manifestation Check.\n2. If the Manifestation Check is successful, then all Models in the Target Unit gain the Precision (5+)\nSpecial Rule.\n3. If the Manifestation Check fails then there is nofurther effect."
-                  }
-                ],
-                "comment": "\n"
-              }
-            ]
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Thaumaturgy",
-            "hidden": false,
-            "id": "Thaumaturgy",
-            "comment": "Yes, it is free.",
-            "constraints": [
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "a3d8-c2c6-8b30-ab2e"
-              }
-            ],
-            "selectionEntries": [
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Resurrection",
-                "hidden": false,
-                "id": "b640-f7f9-5b08-b9e0",
-                "categoryLinks": [
-                  {
-                    "targetId": "blessing",
-                    "id": "4d8b-e905-4375-7846",
-                    "primary": false,
-                    "name": "Blessing"
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "3e0b-2e30-de95-5b9d-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "3e0b-2e30-de95-5b9d-max"
-                  }
-                ],
-                "rules": [
-                  {
-                    "name": "Resurrection",
-                    "id": "02c6-45d7-9029-2b29",
-                    "hidden": false,
-                    "description": "This Power can be used in the Shooting Phase and can return a single Casualty to the Unit with all Wounds restored.\n\nTrigger: The Reactive Player may choose to declare a Resurrection Psychic Reaction in the Shooting Phase, at the start of Step 11 of any Shooting Attack made by the Active Player.\n\nCost: The Reactive Player must spend 1 point of their Reaction Allotment to declare a Resurrection Psychic Reaction-this cost paid as soon as the declaration is made.\n\nFocus: The Focus of this Psychic Reaction must be a Model with the Thaumaturge Trait and under the Reactive Player's Control, and must be a part of the Unit targeted by the Shooting Attack that triggers this Psychic Reaction.\n\nTarget: The Target Unit must be the Unit that is the target of the Shooting Attack that triggered the Reaction.\n\nDuration: If successfully Manifested, the effects of this Psychic Reaction are resolved immediately.\n\n\nProcess\n1. Once the Focus and Target Unit have been decided, make a Manifestation Check. \n2. If the Manifestation Check is successful then, before any Models in the Target Unit are Removed as\nCasualties, the Controlling Player of the Target Unit must select one Model being Removed as a Casualty\nand roll a Dice. If the Dice roll for the chosen Model is equal to or higher than a '4', then that Model is not Removed as a Casualty and is returned to play in Unit Coherency with its Unit and with its Wounds Characteristic set to its Base Value, as listed on that\nModel's profile. This Psychic Reaction has no effect on Models that do not have a Wounds Characteristic and if the result of the Manifestation Check causes Perils of the Warp, then this instance of Perils of the Warp is resolved after any Models are returned to the Unit.\n3. If the Manifestation Check fails then there is nofurther effect."
-                  }
-                ]
-              },
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Tranquility",
-                "hidden": false,
-                "id": "9e63-b10d-777e-f322",
-                "categoryLinks": [
-                  {
-                    "targetId": "curse",
-                    "id": "6ece-1e83-f104-1d60",
-                    "primary": false,
-                    "name": "Curse"
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "37c9-8b60-98f7-b9be-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "37c9-8b60-98f7-b9be-max"
-                  }
-                ],
-                "rules": [
-                  {
-                    "name": "Tranquility",
-                    "id": "1ace-3629-3fe6-bc94",
-                    "hidden": false,
-                    "description": "This Power is used in the Start Phase and makes it harder for the Target Unit to use Psychic Powers, Psychic Reactions or to attack with Psychic Weapons.\n\n\nTrigger: The Active Player may choose to Manifest the Tranquility Psychic Power in the Effects Sub-Phase of the Start Phase.\n\n\nFocus: The Focus of the Power must be a Model with the Thaumaturge Trait and must be controlled by the Active Player.\n\n\nTarget: The Target Unit must be a Unit under the control of the Reactive Player with at least one Model within 18\"\nof the Focus and with Line of Sight to the Focus. The Target Unit must include at least one Model with the Psyker Trait\n\n\nDuration: If successfully Manifested, the effects of this Psychic Power last until the start of the Active Player's next Turn as the Active Player.\n\n\nProcess\n1. Once the Focus and Target Unit have been decided, make a Manifestation Check.\n2. If the Manifestation Check is successful, then all 3. Models in the Target Unit suffer a penalty of -2 to\ntheir Willpower Characteristic when attempting to Manifest any Psychic Power or Psychic Reaction. If any Model in the Target Unit makes attacks with a Weapon that has the Psychic Trait, then the Strength Characteristic of all Hits inflicted is reduced by 1.\n3. If the Manifestation Check fails then there is no further effect.\n\n"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "type": "upgrade",
-            "import": true,
-            "name": "Telepathy",
-            "hidden": false,
-            "id": "Telepathy",
-            "costs": [
-              {
-                "name": "Points",
-                "typeId": "points",
-                "value": 10
-              }
-            ],
-            "constraints": [
-              {
-                "type": "max",
-                "value": 1,
-                "field": "selections",
-                "scope": "parent",
-                "shared": true,
-                "id": "2ec6-060f-a46e-da49"
-              }
-            ],
-            "selectionEntries": [
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Mind Burst",
-                "hidden": false,
-                "id": "188c-17da-796a-9ed9",
-                "categoryLinks": [
-                  {
-                    "targetId": "curse",
-                    "id": "2d50-2260-8ce0-bd66",
-                    "primary": false,
-                    "name": "Curse"
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "d495-d22c-fee5-3991-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "d495-d22c-fee5-3991-max"
-                  }
-                ],
-                "rules": [
-                  {
-                    "name": "Mind Burst",
-                    "id": "7e9e-d1a2-8296-a4f2",
-                    "hidden": false,
-                    "description": "This Power is used in the Movement Phase and can force the target to Fall Back or become Routed.\n\nTrigger: The Active Player may choose to Manifest the Mind-burst Psychic Power in the Movement Phase, when selecting a Unit under their control that includes at least one Model with the Telepath Trait to move and before any move is made for that Unit.\n\nFocus: The Focus of the Power must be a Model with the Telepath Trait that is part of the Unit that was selected to move.\n\nTarget: The Target Unit must be a Unit under the control of the Reactive Player with at least one Model within 18\" of the Focus and with Line of Sight to the Focus. The target may not be a Unit that is Locked in Combat or otherwise ineligible to be the target of a Shooting Attack and may not include any Models with the Vehicle Type. \n\nDuration: If successfully Manifested, the effects of this Psychic Power are resolved immediately.\n\n\nProcess\n1. Once the Focus and Target Unit have been decided, make a Manifestation Check.\n2. If the Manifestation Check is successful, then all Statuses are removed from all Models in the Target Unit, and then the Target Unit must immediately make a Fall Back Move. Once that Fall Back Move has been resolved, a Leadership Check must be made for the Target Unit by its Controlling Player, this Check may not be modified by any effect or Special Rule. If the Leadership Check is successful, then there is no further effect, if it is unsuccessful then all Models in the Target Unit gain the Routed Status.\n3. If the Manifestation Check fails then there is no further effect to the Target Unit.\n4. Regardless of whether the Manifestation Check succeeds or fails, the Unit that includes the Focus of this Psychic Power may not make a move or Rush in this Movement Phase."
-                  }
-                ]
-              },
-              {
-                "type": "upgrade",
-                "import": true,
-                "name": "Cursed Whispers",
-                "hidden": false,
-                "id": "6dba-caad-6cbf-14c9",
-                "profiles": [
-                  {
-                    "name": "Cursed Whispers",
-                    "typeId": "weapon",
-                    "typeName": "Weapon",
-                    "hidden": false,
-                    "id": "e9fd-81cf-ca7c-5b08",
-                    "characteristics": [
-                      {
-                        "name": "Range",
-                        "typeId": "range",
-                        "$text": "18"
-                      },
-                      {
-                        "name": "Fire Power (FP)",
-                        "typeId": "fire-power",
-                        "$text": "2D6"
-                      },
-                      {
-                        "name": "Range Strength (RS)",
-                        "typeId": "range-strength",
-                        "$text": "3"
-                      },
-                      {
-                        "name": "Melee Initiative Modifier (IM)",
-                        "typeId": "weapon-initiative",
-                        "$text": "\n"
-                      },
-                      {
-                        "name": "Melee Attacks Modifier (AM)",
-                        "typeId": "weapon-attacks",
-                        "$text": ""
-                      },
-                      {
-                        "name": "Melee Strength Modifier (SM)",
-                        "typeId": "melee-strength",
-                        "$text": ""
-                      },
-                      {
-                        "name": "Armour Penetration (AP)",
-                        "$text": "-"
-                      },
-                      {
-                        "name": "Damage (D)",
-                        "typeId": "damage",
-                        "$text": "1"
-                      }
-                    ],
-                    "page": ""
-                  }
-                ],
-                "categoryLinks": [
-                  {
-                    "name": "Force (FP)",
-                    "hidden": false,
-                    "id": "730f-431f-f920-a659",
-                    "targetId": "64c6-d4ab-866a-d8e0",
-                    "primary": false
-                  },
-                  {
-                    "targetId": "650e-839b-9d8f-a54d",
-                    "id": "15bf-4695-a4f5-aae6",
-                    "primary": false,
-                    "name": "Stun (0)"
-                  }
-                ],
-                "constraints": [
-                  {
-                    "type": "min",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "11f4-6617-6373-6877-min"
-                  },
-                  {
-                    "type": "max",
-                    "value": 1,
-                    "field": "selections",
-                    "scope": "parent",
-                    "shared": true,
-                    "id": "11f4-6617-6373-6877-max"
-                  }
-                ]
-              }
-            ]
-          }
-        ],
         "constraints": [
           {
             "type": "max",
@@ -7810,6 +7911,50 @@
             "scope": "parent",
             "shared": true,
             "id": "ff46-0ca0-3d71-6031"
+          }
+        ],
+        "entryLinks": [
+          {
+            "targetId": "Thaumaturgy",
+            "id": "45a7-e02f-4a48-96e8",
+            "type": "selectionEntry",
+            "name": "Thaumaturgy",
+            "hidden": false
+          },
+          {
+            "targetId": "Telekinesis",
+            "id": "ed79-5906-b683-c034",
+            "type": "selectionEntry",
+            "name": "Telekinesis",
+            "hidden": false
+          },
+          {
+            "targetId": "Telepathy",
+            "id": "8507-fc67-73cd-3e5b",
+            "type": "selectionEntry",
+            "name": "Telepathy",
+            "hidden": false
+          },
+          {
+            "targetId": "Pyromancy",
+            "id": "fbed-e0df-b20f-a070",
+            "type": "selectionEntry",
+            "name": "Pyromancy",
+            "hidden": false
+          },
+          {
+            "targetId": "Biomancy",
+            "id": "dac9-c84b-33cd-36e2",
+            "type": "selectionEntry",
+            "name": "Biomancy",
+            "hidden": false
+          },
+          {
+            "targetId": "Divination",
+            "id": "541d-b312-8293-190d",
+            "type": "selectionEntry",
+            "name": "Divination",
+            "hidden": false
           }
         ]
       }
